@@ -84,13 +84,13 @@
     /**
      * BORDER RADIUS
      */
-    --rounded-none: 0;
-    --rounded-sm: 2px;
-    --rounded-md: 4px;
-    --rounded-lg: 8px;
-    --rounded-xl: 12px;
-    --rounded-2xl: 16px;
-    --rounded-3xl: 24px;
+    --rounded-0: 0;
+    --rounded-2: 2px;
+    --rounded-4: 4px;
+    --rounded-8: 8px;
+    --rounded-12: 12px;
+    --rounded-16: 16px;
+    --rounded-24: 24px;
     --rounded-full: 9999px;
 }
 
