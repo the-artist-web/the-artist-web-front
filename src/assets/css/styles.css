@@ -30,25 +30,25 @@
 
     /* DARK */
     --dark-bg-color: #000000;
-    --dark-second-bg-color: #080808;
-    --dark-third-bg-color: #101010;
-    --dark-fourd-bg-color: #131313;
+    --dark-second-bg-color: #ffffff10;
+    --dark-third-bg-color: #ffffff15;
+    --dark-fourd-bg-color: #ffffff20;
     --dark-text-color: #ffffff;
     --dark-second-color: #737373;
     --dark-third-color: #908f90;
-    --dark-border-color: #151515;
-    --dark-second-border-color: #202020;
+    --dark-border-color: #ffffff20;
+    --dark-second-border-color: #ffffff25;
 
     /* LIGHT */
     --light-bg-color: #ffffff;
-    --light-second-bg-color: #fafafa;
-    --light-third-bg-color: #f5f5f5;
-    --light-fourd-bg-color: #eeeeee;
+    --light-second-bg-color: #00000010;
+    --light-third-bg-color: #00000015;
+    --light-fourd-bg-color: #00000020;
     --light-text-color: #111111;
     --light-second-color: #555555;
     --light-third-color: #777777;
-    --light-border-color: #e0e0e0;
-    --light-second-border-color: #cfcfcf;
+    --light-border-color: #00000020;
+    --light-second-border-color: #00000025;
 
     /**
      * TYPOGRAPHY

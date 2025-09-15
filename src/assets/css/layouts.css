@@ -7,10 +7,70 @@
  */
 
 /* Form Box */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  height: max-content;
+  position: relative;
+}
 
 /* Label */
+.form-label {
+  text-transform: capitalize;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-regular) !important;
+  line-height: 14px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 /* Input */
+.form-control {
+  background-color: var(--second-bg-color) !important;
+  border: 1.8px solid var(--border-color) !important;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-regular) !important;
+  border-radius: 10px;
+  min-height: 36px;
+  max-height: 36px;
+  padding-inline: 12px !important;
+  transition: all 0.4s;
+}
+
+.form-control:where(:hover, :focus-visible) {
+  background-color: var(--third-bg-color) !important;
+  border: 1.8px solid var(--second-border-color) !important;
+}
+
+.form-control.success {
+  background-color: var(--soft-green-dark-color) !important;
+  border: 1.8px solid var(--green-dark-color) !important;
+}
+
+.form-control.success::placeholder { color: var(--green-dark-color) !important; }
+
+.form-control.warning {
+  background-color: var(--soft-orange-dark-color) !important;
+  border: 1.8px solid var(--orange-dark-color) !important;
+}
+
+.form-control.warning::placeholder { color: var(--orange-dark-color) !important; }
+
+.form-control.rosy {
+  background-color: var(--soft-rosy-dark-color) !important;
+  border: 1.8px solid var(--rosy-dark-color) !important;
+}
+
+.form-control.rosy::placeholder { color: var(--rosy-dark-color) !important; }
+
+.form-control.error {
+  background-color: var(--soft-red-dark-color) !important;
+  border: 1.8px solid var(--red-dark-color) !important;
+}
+
+.form-control.error::placeholder { color: var(--red-dark-color) !important; }
 
 /* Input Group */
 
@@ -23,6 +83,23 @@
 /* Checks & Radios */
 
 /* Validation */
+.validation {
+  font-size: var(--fs-small) !important;
+  font-weight: var(--fw-regular) !important;
+  line-height: 12px !important;
+  color: var(--third-color) !important;
+  display: none;
+}
+
+.validation.show { display: block; }
+
+.validation.success { color: var(--green-dark-color) !important; }
+
+.validation.warning { color: var(--orange-dark-color) !important; }
+
+.validation.rosy { color: var(--rosy-dark-color) !important; }
+
+.validation.error { color: var(--red-dark-color) !important; }
 
 /**
  * COMPONENTS
