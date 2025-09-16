@@ -265,6 +265,18 @@ body {
     width: 100%;
 }
 
+.custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
+
+.custom-scrollbar::-webkit-scrollbar {}
+
+.custom-scrollbar::-webkit-scrollbar-track {}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {}
+
 .main { min-height: 100vh; }
 
 .title-section { margin-block-end: 40px; }
