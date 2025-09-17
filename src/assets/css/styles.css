@@ -246,6 +246,11 @@ body {
     padding-inline: 0;
 }
 
+::selection {
+  background-color: var(--orange-color);
+  color: black;
+}
+
 /* ------------------------------------------------------------ *\
  * REUSED STYLE
 \* ------------------------------------------------------------ */
@@ -265,6 +270,10 @@ body {
     width: 100%;
 }
 
+.main { min-height: 100vh; }
+
+.title-section { margin-block-end: 40px; }
+
 .custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
 
 .custom-scrollbar::-webkit-scrollbar {}
@@ -277,9 +286,28 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb:active {}
 
-.main { min-height: 100vh; }
+:has(> .state-layer) {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  user-select: none;
+  -webkit-user-select: none;
+}
 
-.title-section { margin-block-end: 40px; }
+.state-layer {
+  position: absolute;
+  inset: 0;
+  background-color: var(--state-layer-bg);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+:has(> .state-layer):hover > .state-layer { opacity: 0.08; }
+
+:has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.12; }
+
+:has(> .state-layer):active > .state-layer { opacity: 0.16; }
 
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY

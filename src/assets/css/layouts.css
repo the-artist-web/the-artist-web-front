@@ -17,7 +17,7 @@
 }
 
 /* Label */
-.form-label {
+.form-box .form-label {
   text-transform: capitalize;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-regular) !important;
@@ -27,50 +27,6 @@
 }
 
 /* Input */
-.form-control {
-  background-color: var(--second-bg-color) !important;
-  border: 1.8px solid var(--border-color) !important;
-  font-size: var(--fs-p) !important;
-  font-weight: var(--fw-regular) !important;
-  border-radius: 10px;
-  min-height: 36px;
-  max-height: 36px;
-  padding-inline: 12px !important;
-  transition: all 0.4s;
-}
-
-.form-control:where(:hover, :focus-visible) {
-  background-color: var(--third-bg-color) !important;
-  border: 1.8px solid var(--second-border-color) !important;
-}
-
-.form-control.success {
-  background-color: var(--soft-green-dark-color) !important;
-  border: 1.8px solid var(--green-dark-color) !important;
-}
-
-.form-control.success::placeholder { color: var(--green-dark-color) !important; }
-
-.form-control.warning {
-  background-color: var(--soft-orange-dark-color) !important;
-  border: 1.8px solid var(--orange-dark-color) !important;
-}
-
-.form-control.warning::placeholder { color: var(--orange-dark-color) !important; }
-
-.form-control.rosy {
-  background-color: var(--soft-rosy-dark-color) !important;
-  border: 1.8px solid var(--rosy-dark-color) !important;
-}
-
-.form-control.rosy::placeholder { color: var(--rosy-dark-color) !important; }
-
-.form-control.error {
-  background-color: var(--soft-red-dark-color) !important;
-  border: 1.8px solid var(--red-dark-color) !important;
-}
-
-.form-control.error::placeholder { color: var(--red-dark-color) !important; }
 
 /* Input Group */
 
@@ -83,7 +39,7 @@
 /* Checks & Radios */
 
 /* Validation */
-.validation {
+.form-box .validation {
   font-size: var(--fs-small) !important;
   font-weight: var(--fw-regular) !important;
   line-height: 12px !important;
@@ -91,15 +47,15 @@
   display: none;
 }
 
-.validation.show { display: block; }
+.form-box .validation.show { display: block; }
 
-.validation.success { color: var(--green-dark-color) !important; }
+.form-box .validation.success { color: var(--green-dark-color) !important; }
 
-.validation.warning { color: var(--orange-dark-color) !important; }
+.form-box .validation.warning { color: var(--orange-dark-color) !important; }
 
-.validation.rosy { color: var(--rosy-dark-color) !important; }
+.form-box .validation.rosy { color: var(--rosy-dark-color) !important; }
 
-.validation.error { color: var(--red-dark-color) !important; }
+.form-box .validation.error { color: var(--red-dark-color) !important; }
 
 /**
  * COMPONENTS
@@ -168,22 +124,22 @@
   overflow-wrap: anywhere;
 }
 
-.line-clamp-1  { -webkit-line-clamp: 1; }
+.line-clamp.line-clamp-1  { -webkit-line-clamp: 1; }
 
-.line-clamp-2  { -webkit-line-clamp: 2; }
+.line-clamp.line-clamp-2  { -webkit-line-clamp: 2; }
 
-.line-clamp-3  { -webkit-line-clamp: 3; }
+.line-clamp.line-clamp-3  { -webkit-line-clamp: 3; }
 
-.line-clamp-4  { -webkit-line-clamp: 4; }
+.line-clamp.line-clamp-4  { -webkit-line-clamp: 4; }
 
-.line-clamp-5  { -webkit-line-clamp: 5; }
+.line-clamp.line-clamp-5  { -webkit-line-clamp: 5; }
 
-.line-clamp-6  { -webkit-line-clamp: 6; }
+.line-clamp.line-clamp-6  { -webkit-line-clamp: 6; }
 
-.line-clamp-7  { -webkit-line-clamp: 7; }
+.line-clamp.line-clamp-7  { -webkit-line-clamp: 7; }
 
-.line-clamp-8  { -webkit-line-clamp: 8; }
+.line-clamp.line-clamp-8  { -webkit-line-clamp: 8; }
 
-.line-clamp-9  { -webkit-line-clamp: 9; }
+.line-clamp.line-clamp-9  { -webkit-line-clamp: 9; }
 
-.line-clamp-10 { -webkit-line-clamp: 10; }
+.line-clamp.line-clamp-10 { -webkit-line-clamp: 10; }
