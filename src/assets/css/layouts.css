@@ -27,6 +27,54 @@
 }
 
 /* Input */
+.form-box .input-wrapper { --state-layer-bg: var(--second-border-color) !important; }
+
+.form-box .form-control {
+  border: 1.8px solid var(--border-color) !important;
+  background-color: var(--second-bg-color) !important;
+  padding-inline: 10px !important;
+  border-radius: 10px;
+  min-height: 36px;
+  max-height: 36px;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-regular) !important;
+}
+
+.form-box .form-control.error {
+  border: 1.8px solid var(--red-dark-color) !important;
+  background-color: var(--soft-red-dark-color) !important;
+}
+
+.form-box .form-control.error::placeholder { color: var(--red-color) !important; }
+
+.form-box .input-wrapper:has(.form-control.error) { --state-layer-bg: var(--red-color) !important; }
+
+.form-box .form-control.success {
+  border: 1.8px solid var(--green-dark-color) !important;
+  background-color: var(--soft-green-dark-color) !important;
+}
+
+.form-box .form-control.success::placeholder { color: var(--green-color) !important; }
+
+.form-box .input-wrapper:has(.form-control.success) { --state-layer-bg: var(--green-color) !important; }
+
+.form-box .form-control.rosy {
+  border: 1.8px solid var(--rosy-dark-color) !important;
+  background-color: var(--soft-rosy-dark-color) !important;
+}
+
+.form-box .form-control.rosy::placeholder { color: var(--rosy-color) !important; }
+
+.form-box .input-wrapper:has(.form-control.rosy) { --state-layer-bg: var(--rosy-color) !important; }
+
+.form-box .form-control.warning {
+  border: 1.8px solid var(--orange-dark-color) !important;
+  background-color: var(--soft-orange-dark-color) !important;
+}
+
+.form-box .form-control.warning::placeholder { color: var(--orange-color) !important; }
+
+.form-box .input-wrapper:has(.form-control.warning) { --state-layer-bg: var(--orange-color) !important; }
 
 /* Input Group */
 
