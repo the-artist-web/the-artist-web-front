@@ -56,69 +56,72 @@
         lang="en"
     >
         <main class="main">
-            <article>
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col px-3 relative">
-                        <div 
-                            class="d-flex align-items-center justify-content-center overflow-y-auto custom-scrollbar-hidden" 
-                            style="height: 100dvh;"
-                        >
-                            <div 
-                                class="d-flex flex-column align-items-center justify-content-center gap-4 w-100" 
-                                style="max-width: 386px;"
-                            >
-                                <div class="d-flex flex-column align-items-center gap-2 text-center">
-                                    <h2>Create new account</h2>
-
-                                    <p class="text-third-color">Welcome to <b class="text-capitalize text-orange-color">the artist web</b> Our educational platform is 100% free — create your account now and start learning without limits!</p>
-                                </div>
-
-                                <form 
-                                    action="#" 
-                                    method="post" 
-                                    class="d-flex flex-column gap-3"
-                                    data-form-create-account
-                                >
-                                    <div class="form-box">
-                                        <label 
-                                            for="username" 
-                                            class="form-label"
-                                        >Username</label>
-
-                                        <div class="input-wrapper">
-                                            <input
-                                                type="text"
-                                                placeholder="Enter your username"
-                                                name="username"
-                                                value=""
-                                                class="form-control"
-                                            />
-
-                                            <div class="state-layer"></div>
-                                        </div>
-
-                                        <small class="validation">fdsfdsf</small>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div 
-                            class="relative d-none d-lg-flex align-items-center justify-content-center p-3"
-                            style="height: 100dvh;"
-                        >
-                            <img 
-                                src="https://cdn.dribbble.com/userupload/34227985/file/original-03830101bbe5d0811f3e7e9c64b5a575.gif"
-                                loading="lazy"
-                                class="rounded-3 img-cover"
-                                style="height: calc(100dvh - 20px);"
-                            />
-                        </div>
-                    </div>
+            <div class="auth-wrapper">
+                <div class="wrapper">
+                    <img
+                        src="https://cdn.dribbble.com/userupload/34227985/file/original-03830101bbe5d0811f3e7e9c64b5a575.gif"
+                        alt="The Artist Web"
+                        loading="lazy"
+                        class="img-auth img-cover"
+                    />
                 </div>
-            </article>
+
+                <div class="wrapper wrapper-2">
+                    <!-- Header -->
+                    <div class="header">
+                        <a 
+                            href="../index.html" 
+                            class="logo"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="bottom"
+                            data-bs-title="The Artist Web"
+                        >
+                            <img
+                                src="../src/assets/images/logo-dark.png"
+                                alt="The Artist Web"
+                                loading="lazy"
+                                class="logo-dark img-cover"
+                            />
+
+                            <img
+                                src="../src/assets/images/logo-light.png"
+                                alt="The Artist Web"
+                                loading="lazy"
+                                class="logo-light img-cover"
+                            />
+
+                            <div class="state-layer"></div>
+                        </a>
+
+                        <div class="d-flex align-items-center gap-4">
+                            <button
+                                type="button"
+                                class="icon-btn large"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="Toggle Theme"
+                                data-toggle-theme
+                            >
+                                <span class="light">
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+                                </span>
+
+                                <span class="dark">
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                                </span>
+                                
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Box Form -->
+                    <div>Box Form</div>
+
+                    <!-- Footer -->
+                    <div>Footer</div>
+                </div>
+            </div>
         </main>
 
         <!-- custom bootstrap bundle min js link -->

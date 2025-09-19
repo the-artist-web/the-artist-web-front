@@ -10,6 +10,38 @@
  * MAIN – INSIDE
 \* ------------------------------------------------------------ */
 
+/* Auth Wrapper */
+.auth-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.auth-wrapper .wrapper { padding: 16px 16px 0; }
+
+.auth-wrapper .img-auth {
+    border-radius: 12px;
+    height: 100%;
+}
+
+.auth-wrapper .wrapper-2 {
+    padding-block-start: 0px;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    gap: 16px;
+}
+
+.auth-wrapper .header {
+    background-color: var(--bg-color);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
 /* Hero Section */
 
 /* About Section */

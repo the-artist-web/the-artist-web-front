@@ -109,6 +109,35 @@
  * COMPONENTS
  */
 
+/* Logo */
+.logo {
+  background-color: var(--text-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  max-width: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  --state-layer-bg: var(--bg-color) !important;
+}
+
+.logo img {
+  min-width: 25px;
+  max-width: 25px;
+  min-height: 25px;
+  max-height: 25px;
+}
+
+[data-theme="light"] .logo .logo-dark { display: none; }
+
+[data-theme="light"] .logo .logo-light { display: block; }
+
+[data-theme="dark"] .logo .logo-light { display: none; }
+
+[data-theme="dark"] .logo .logo-dark { display: block; }
+
 /* Icon button */
 
 /* Accordion */
@@ -160,6 +189,16 @@
 /* Toasts */
 
 /* Tooltips */
+.tooltip-inner {
+  background-color: var(--text-color) !important;
+  color: var(--bg-color) !important;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-small);
+  padding-inline: 6px;
+}
+
+.tooltip .tooltip-arrow { display: none; }
 
 /* Line Clamp */
 .line-clamp {

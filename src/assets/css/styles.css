@@ -221,7 +221,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     /* overflow-x: hidden; */
 }
 
@@ -304,11 +304,11 @@ body {
   transition: all 0.4s;
 }
 
-:has(> .state-layer):hover > .state-layer { opacity: 0.08; }
+:has(> .state-layer):hover > .state-layer { opacity: 0.12; }
 
-:has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.12; }
+:has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.16; }
 
-:has(> .state-layer):active > .state-layer { opacity: 0.16; }
+:has(> .state-layer):active > .state-layer { opacity: 0.20; }
 
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY
