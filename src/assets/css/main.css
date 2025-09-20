@@ -13,26 +13,24 @@
 /* Auth Wrapper */
 .auth-wrapper {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    min-height: 100vh;
+    grid-template-rows: max-content 1fr;
     min-height: 100dvh;
 }
 
 .auth-wrapper .wrapper { padding: 16px 16px 0; }
 
 .auth-wrapper .img-auth {
-    border-radius: 12px;
-    height: 100%;
+    border-radius: var(--rounded-12);
+    height: 50dvh;
 }
 
 .auth-wrapper .wrapper-2 {
-    padding-block-start: 0px;
     display: grid;
-    grid-template-rows: max-content 1fr max-content;
+    grid-template-rows: max-content 1fr;
     gap: 16px;
 }
 
-.auth-wrapper .header {
+.auth-wrapper header {
     background-color: var(--bg-color);
     padding: 10px 0;
     display: flex;
@@ -41,6 +39,16 @@
     position: sticky;
     top: 0;
 }
+
+[data-theme="light"] .icon-btn .light { display: none; }
+
+[data-theme="light"] .icon-btn .dark { display: block; }
+
+[data-theme="dark"] .icon-btn .light { display: block; }
+
+[data-theme="dark"] .icon-btn .dark { display: none; }
+
+.auth-wrapper footer { padding-block: 16px 10px; }
 
 /* Hero Section */
 

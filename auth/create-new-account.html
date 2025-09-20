@@ -2,7 +2,7 @@
 <html 
     lang="en" 
     dir="ltr" 
-    data-theme="dark"
+    data-theme="light"
 >
     <head>
         <meta charset="UTF-8" />
@@ -55,20 +55,25 @@
         id="up"
         lang="en"
     >
+        <!-- Start Load -->
+        <div class="start-load" data-start-load>
+            
+        </div>
+
         <main class="main">
             <div class="auth-wrapper">
                 <div class="wrapper">
                     <img
-                        src="https://cdn.dribbble.com/userupload/34227985/file/original-03830101bbe5d0811f3e7e9c64b5a575.gif"
+                        src="https://media1.tenor.com/m/Wakk9-QWiLIAAAAC/dokkan-battle-top.gif"
                         alt="The Artist Web"
                         loading="lazy"
                         class="img-auth img-cover"
                     />
                 </div>
 
-                <div class="wrapper wrapper-2">
+                <div class="wrapper wrapper-2 container container-lg">
                     <!-- Header -->
-                    <div class="header">
+                    <header>
                         <a 
                             href="../index.html" 
                             class="logo"
@@ -93,7 +98,7 @@
                             <div class="state-layer"></div>
                         </a>
 
-                        <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex align-items-center gap-2">
                             <button
                                 type="button"
                                 class="icon-btn large"
@@ -112,14 +117,265 @@
                                 
                                 <div class="state-layer"></div>
                             </button>
+
+                            <div class="dropdown dropdown-small">
+                                <button 
+                                    type="button" 
+                                    class="icon-btn large" 
+                                    data-bs-toggle="dropdown"
+                                >
+                                    <span
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom"
+                                        data-bs-title="Languages"
+                                    >
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                                    </span>
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a 
+                                            href="#"
+                                            class="dropdown-item" 
+                                            data-languages="en"
+                                        >
+                                            English
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a 
+                                            href="#"
+                                            class="dropdown-item" 
+                                            data-languages="ar"
+                                        >
+                                            Arabic
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </header>
+
+                    <div
+                        class="d-grid gap-4 overflow-y-auto custom-scrollbar"
+                        style="grid-template-rows: 1fr max-content;"
+                    >
+                        <!-- Box Form -->
+                        <div class="d-flex align-items-center justify-content-center">
+                            <form 
+                                action=""
+                                method="POST"
+                                class="d-flex flex-column w-100"
+                                style="
+                                    max-width: 386px; 
+                                    gap: 20px;
+                                "
+                            >
+                                <div class="d-flex flex-column text-center gap-2">
+                                    <h2>Create new account</h2>
+
+                                    <p class="text-third-color">
+                                        Welcome to <strong class="text-orange-color">the artist web</strong> Our educational platform is 100% free — create your account now and start learning without limits!
+                                    </p>
+                                </div>
+
+                                <div class="d-flex flex-column gap-4">
+                                    <div class="form-box">
+                                        <label 
+                                            for="username" 
+                                            class="form-label"
+                                        >username</label>
+
+                                        <div class="input-wrapper">
+                                            <input
+                                                type="text"
+                                                placeholder="Enter your username"
+                                                id="username"
+                                                name="username"
+                                                value=""
+                                                class="form-control"
+                                            />
+
+                                            <div class="state-layer"></div>
+                                        </div>
+
+                                        <div class="validation"></div>
+                                    </div>
+
+                                    <div class="form-box">
+                                        <label 
+                                            for="email" 
+                                            class="form-label"
+                                        >email address</label>
+
+                                        <div class="input-wrapper">
+                                            <input
+                                                type="email"
+                                                placeholder="Enter your email address"
+                                                id="email"
+                                                name="email"
+                                                value=""
+                                                class="form-control"
+                                            />
+
+                                            <div class="state-layer"></div>
+                                        </div>
+
+                                        <div class="validation"></div>
+                                    </div>
+
+                                    <div class="form-box">
+                                        <label 
+                                            for="password" 
+                                            class="form-label"
+                                        >password</label>
+
+                                        <div class="input-wrapper" data-passwords>
+                                            <input
+                                                type="password"
+                                                placeholder="Enter your password"
+                                                id="password"
+                                                name="password"
+                                                value=""
+                                                class="form-control"
+                                            />
+
+                                            <button
+                                                type="button"
+                                                class="icon-btn small"
+                                                data-toggle-password
+                                            ></button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+
+                                        <div class="validation"></div>
+                                    </div>
+
+                                    <div class="form-box">
+                                        <label 
+                                            for="confirm_password" 
+                                            class="form-label"
+                                        >confirm password</label>
+
+                                        <div class="input-wrapper" data-passwords>
+                                            <input
+                                                type="password"
+                                                placeholder="Enter your confirm password"
+                                                id="confirm_password"
+                                                name="password_confirmation"
+                                                value=""
+                                                class="form-control"
+                                            />
+
+                                            <button
+                                                type="button"
+                                                class="icon-btn small"
+                                                data-toggle-password
+                                            ></button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+
+                                        <div class="validation"></div>
+                                    </div>
+
+                                    <div class="form-checkbox">
+                                        <input 
+                                            type="checkbox"
+                                            id="terms_of_use" 
+                                            value="1"
+                                            class="form-check-input"
+                                        />
+
+                                        <label 
+                                            for="terms_of_use"
+                                            class="form-check-label"
+                                        >
+                                            I gree to the
+
+                                            <a 
+                                                href="../terms-of-use.html"
+                                                class="text-orange-color"
+                                            >Terms of use</a>
+                                        </label>
+                                    </div>
+
+                                    <!-- ابقا اعملة disabled من js -->
+                                    <button
+                                        type="submit"
+                                        class="btn btn-light"
+                                    >
+                                        Create new account
+
+                                        <div class="state-layer"></div>
+                                    </button>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-4 w-100">
+                                    <div 
+                                        class="w-100"
+                                        style="border: 1px solid var(--border-color) !important;"
+                                    ></div>
+
+                                    <p class="text-nowrap text-third-color">Or continue with</p>
+
+                                    <div 
+                                        class="w-100"
+                                        style="border: 1px solid var(--border-color) !important;"
+                                    ></div>
+                                </div>
+
+                                <div class="d-flex flex-nowrap align-items-center gap-3 w-100">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-secondary w-100"
+                                    >
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z" /></svg>
+
+                                        Google
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                
+                                    <a 
+                                        href="#"
+                                        class="btn btn-secondary w-100"
+                                    >
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+
+                                        Github
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </div>
+
+                                <p class="text-center">
+                                    Already have an account? 
+                                    <a 
+                                        href="./login.html"
+                                        class="d-inline text-orange-color"
+                                    >Login</a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <!-- Footer -->
+                        <footer>
+                            <p 
+                                class="text-third-color" 
+                                data-copyright="The Artist Web"
+                            ></p>
+                        </footer>
                     </div>
-
-                    <!-- Box Form -->
-                    <div>Box Form</div>
-
-                    <!-- Footer -->
-                    <div>Footer</div>
                 </div>
             </div>
         </main>
