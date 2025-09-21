@@ -7,11 +7,14 @@ import { Tooltip } from "./components/Tooltip.js";
 import { Languages } from "./components/Languages.js";
 import { Password } from "./components/Password.js";
 import { Copyright } from "./components/Copyright.js";
+import { StartLoad } from "./components/StartLoad.js";
 
 /**
  * Start load
  */
 const $startLoad = document.querySelector("[data-start-load]");
+const $imgLoad = $startLoad.querySelector(".img-load");
+window.addEventListener("load", StartLoad($startLoad, $imgLoad));
 
 /**
  * Toggle direction web

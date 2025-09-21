@@ -189,6 +189,7 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   align-items: center;
   justify-content: center;
   border-radius: var(--rounded-full);
+  opacity: 0.8 !important;
   --state-layer-bg: var(--text-color);
 }
 
