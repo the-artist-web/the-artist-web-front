@@ -9,7 +9,7 @@ import { Password } from "./components/Password.js";
 import { Copyright } from "./components/Copyright.js";
 import { StartLoad } from "./components/StartLoad.js";
 import {
-    createNewAccount,
+    submitCreateNewAccount,
     validatationCreateNewAccount
 } from "./user.js";
 
@@ -49,4 +49,4 @@ Copyright($copyrightAll);
  */
 const $createNewAccountForm = document.querySelector("[data-create-new-account]");
 validatationCreateNewAccount($createNewAccountForm)
-$createNewAccountForm.addEventListener("submit", (e) => createNewAccount(e, $createNewAccountForm));
+$createNewAccountForm.addEventListener("submit", (e) => submitCreateNewAccount(e, $createNewAccountForm));

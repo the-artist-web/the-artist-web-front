@@ -19,8 +19,10 @@ const validatationCreateNewAccount = ($form) => {
     $inputUsername.addEventListener("input", () => inputEmailAddress($inputEmail));
 };
 
-const createNewAccount = (e, $form) => {
+const submitCreateNewAccount = (e, $form) => {
     e.preventDefault();
+
+    let allValid = true;
 
     // Inputs in form
     const $inputUsername = $form.querySelector("[data-field='username']");
@@ -29,11 +31,25 @@ const createNewAccount = (e, $form) => {
     const $inputConfirmPassword = $form.querySelector("[data-field='confirmPassword']");
     const $checkTermsOfUse = $form.querySelector("[data-field='checkTermsOfUse']");
 
-    inputUsername($inputUsername);
-    inputEmailAddress($inputEmail);
+    // functions
+    if (!inputUsername($inputUsername)) 
+        allValid = false;
+
+    if (!inputEmailAddress($inputEmail))
+        allValid = false;
+
+    // reset input & validation
+    if (allValid) {
+        $form.querySelectorAll("input").forEach(elem => {
+            elem.value = "";
+            elem.classList.remove("success", "warning", "error");
+        });
+    
+        $form.querySelectorAll(".validation").forEach(elem => elem.classList.remove("show"));
+    }
 };
 
 export {
-    createNewAccount,
+    submitCreateNewAccount,
     validatationCreateNewAccount
 }
