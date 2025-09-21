@@ -133,10 +133,11 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 
 /* Validation */
 .form-box .validation {
-  font-size: var(--fs-small) !important;
-  font-weight: var(--fw-regular) !important;
-  line-height: 12px !important;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-p) !important;
   color: var(--third-color) !important;
+  margin-block-start: -5px;
   display: none;
 }
 

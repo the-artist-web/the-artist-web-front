@@ -210,6 +210,7 @@
                                                 name="username"
                                                 value=""
                                                 class="form-control"
+                                                data-field="username"
                                             />
 
                                             <div class="state-layer"></div>
@@ -232,6 +233,7 @@
                                                 name="email"
                                                 value=""
                                                 class="form-control"
+                                                data-field="email"
                                             />
 
                                             <div class="state-layer"></div>
@@ -254,6 +256,7 @@
                                                 name="password"
                                                 value=""
                                                 class="form-control"
+                                                data-field="password"
                                             />
 
                                             <button
@@ -282,6 +285,7 @@
                                                 name="password_confirmation"
                                                 value=""
                                                 class="form-control"
+                                                data-field="confirmPassword"
                                             />
 
                                             <button
@@ -296,25 +300,30 @@
                                         <div class="validation"></div>
                                     </div>
 
-                                    <div class="form-checkbox">
-                                        <input 
-                                            type="checkbox"
-                                            id="terms_of_use" 
-                                            value="1"
-                                            class="form-check-input"
-                                        />
+                                    <div class="form-box">
+                                        <div class="form-checkbox">
+                                            <input 
+                                                type="checkbox"
+                                                id="terms_of_use" 
+                                                value="1"
+                                                class="form-check-input"
+                                                data-field="checkTermsOfUse"
+                                            />
+    
+                                            <label 
+                                                for="terms_of_use"
+                                                class="form-check-label"
+                                            >
+                                                I gree to the
+    
+                                                <a 
+                                                    href="../terms-of-use.html"
+                                                    class="text-orange-color"
+                                                >Terms of use</a>
+                                            </label>
+                                        </div>
 
-                                        <label 
-                                            for="terms_of_use"
-                                            class="form-check-label"
-                                        >
-                                            I gree to the
-
-                                            <a 
-                                                href="../terms-of-use.html"
-                                                class="text-orange-color"
-                                            >Terms of use</a>
-                                        </label>
+                                        <div class="validation"></div>
                                     </div>
 
                                     <!-- ابقا اعملة disabled من js -->

@@ -8,6 +8,10 @@ import { Languages } from "./components/Languages.js";
 import { Password } from "./components/Password.js";
 import { Copyright } from "./components/Copyright.js";
 import { StartLoad } from "./components/StartLoad.js";
+import {
+    createNewAccount,
+    validatationCreateNewAccount
+} from "./user.js";
 
 /**
  * Start load
@@ -39,3 +43,10 @@ Tooltip($tooltipTriggerList);
  */
 const $copyrightAll = document.querySelectorAll("[data-copyright]");
 Copyright($copyrightAll);
+
+/**
+ * Create new account
+ */
+const $createNewAccountForm = document.querySelector("[data-create-new-account]");
+validatationCreateNewAccount($createNewAccountForm)
+$createNewAccountForm.addEventListener("submit", (e) => createNewAccount(e, $createNewAccountForm));
