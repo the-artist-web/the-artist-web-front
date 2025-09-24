@@ -13,42 +13,42 @@
     --soft-orange-color: #f9ad3515;
     --soft-orange-dark-color: #F1971215;
 
-    --green-color: #70f842;
-    --green-dark-color: #45ff34;
-    --soft-green-color: #70f84215;
-    --soft-green-dark-color: #45ff3415;
+    --green-color: #21c063;
+    --green-dark-color: #1e9f54;
+    --soft-green-color: #21c06315;
+    --soft-green-dark-color: #1e9f5415;
 
-    --rosy-color: #FB64B6;
-    --rosy-dark-color: #E9419C;
-    --soft-rosy-color: #FB64B615;
-    --soft-rosy-dark-color: #E9419C15;
+    --rosy-color: #fb64b6;
+    --rosy-dark-color: #d94b98;
+    --soft-rosy-color: #fb64b615;
+    --soft-rosy-dark-color: #d94b9815;
 
-    --red-color: #FF394C;
-    --red-dark-color: #DD182B;
-    --soft-red-color: #FF394C15;
-    --soft-red-dark-color: #DD182B15;
+    --red-color: #ff394c;
+    --red-dark-color: #dd182b;
+    --soft-red-color: #ff394c15;
+    --soft-red-dark-color: #dd182b15;
 
     /* DARK */
-    --dark-bg-color: #000000;
-    --dark-second-bg-color: #ffffff10;
-    --dark-third-bg-color: #ffffff15;
-    --dark-fourd-bg-color: #ffffff20;
-    --dark-text-color: #f2f2f2;
-    --dark-second-color: #737373;
-    --dark-third-color: #908f90;
-    --dark-border-color: #ffffff20;
-    --dark-second-border-color: #ffffff25;
+    --dark-bg-color: #161717;
+    --dark-second-bg-color: #1d1f1f;
+    --dark-third-bg-color: #242626;
+    --dark-fourd-bg-color: #2e2f2f;
+    --dark-text-color: #fafafa;
+    --dark-second-color: #999999;
+    --dark-third-color: #a7a8a8;
+    --dark-border-color: #343636;
+    --dark-second-border-color: #444646;
 
     /* LIGHT */
     --light-bg-color: #ffffff;
-    --light-second-bg-color: #00000010;
-    --light-third-bg-color: #00000015;
-    --light-fourd-bg-color: #00000020;
-    --light-text-color: #111111;
-    --light-second-color: #555555;
-    --light-third-color: #777777;
-    --light-border-color: #00000020;
-    --light-second-border-color: #00000025;
+    --light-second-bg-color: #f6f5f4;
+    --light-third-bg-color: #f7f5f3;
+    --light-fourd-bg-color: #f1eeeb;
+    --light-text-color: #0a0a0a;
+    --light-second-color: #666666;
+    --light-third-color: #7e7e7e;
+    --light-border-color: #dedcda;
+    --light-second-border-color: #d0cfcd;
 
     /**
      * TYPOGRAPHY

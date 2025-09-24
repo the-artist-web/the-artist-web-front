@@ -59,8 +59,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 }
 
 .form-box .form-control.error {
-  border: 1.8px solid var(--red-dark-color) !important;
-  background-color: var(--soft-red-dark-color) !important;
+  border: 1.8px solid var(--red-color) !important;
+  background-color: var(--soft-red-color) !important;
 }
 
 .form-box .form-control.error::placeholder { color: var(--red-color) !important; }
@@ -68,8 +68,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 .form-box .input-wrapper:has(.form-control.error) { --state-layer-bg: var(--red-color); }
 
 .form-box .form-control.success {
-  border: 1.8px solid var(--green-dark-color) !important;
-  background-color: var(--soft-green-dark-color) !important;
+  border: 1.8px solid var(--green-color) !important;
+  background-color: var(--soft-green-color) !important;
 }
 
 .form-box .form-control.success::placeholder { color: var(--green-color) !important; }
@@ -77,8 +77,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 .form-box .input-wrapper:has(.form-control.success) { --state-layer-bg: var(--green-color); }
 
 .form-box .form-control.rosy {
-  border: 1.8px solid var(--rosy-dark-color) !important;
-  background-color: var(--soft-rosy-dark-color) !important;
+  border: 1.8px solid var(--rosy-color) !important;
+  background-color: var(--soft-rosy-color) !important;
 }
 
 .form-box .form-control.rosy::placeholder { color: var(--rosy-color) !important; }
@@ -86,8 +86,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 .form-box .input-wrapper:has(.form-control.rosy) { --state-layer-bg: var(--rosy-color); }
 
 .form-box .form-control.warning {
-  border: 1.8px solid var(--orange-dark-color) !important;
-  background-color: var(--soft-orange-dark-color) !important;
+  border: 1.8px solid var(--orange-color) !important;
+  background-color: var(--soft-orange-color) !important;
 }
 
 .form-box .form-control.warning::placeholder { color: var(--orange-color) !important; }
@@ -143,13 +143,13 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 
 .form-box .validation.show { display: block; }
 
-.form-box .validation.success { color: var(--green-dark-color) !important; }
+.form-box .validation.success { color: var(--green-color) !important; }
 
-.form-box .validation.warning { color: var(--orange-dark-color) !important; }
+.form-box .validation.warning { color: var(--orange-color) !important; }
 
-.form-box .validation.rosy { color: var(--rosy-dark-color) !important; }
+.form-box .validation.rosy { color: var(--rosy-color) !important; }
 
-.form-box .validation.error { color: var(--red-dark-color) !important; }
+.form-box .validation.error { color: var(--red-color) !important; }
 
 /**
  * COMPONENTS
@@ -312,6 +312,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   line-height: var(--lh-p) !important;
   --state-layer-bg: var(--text-color);
 }
+
+.dropdown .dropdown-menu .dropdown-item.active .state-layer { opacity: 0.12; }
 
 .dropdown .dropdown-menu .dropdown-item.active .state-layer {
   background-color: var(--text-color); 

@@ -49,13 +49,13 @@ const inputUsername = ($field) => {
 
         return false;
     } else if (!regex.test(value)) {
-        $validation.innerHTML = dir === "ltr" ? "username must be small letters + numbers + - or _ only" : "يجب أن يتكون اسم المستخدم من أحرف صغيرة + أرقام + - أو _ فقط";
+        $validation.innerHTML = dir === "ltr" ? "Username must be small letters + numbers + - or _ only" : "يجب أن يتكون اسم المستخدم من أحرف صغيرة + أرقام + - أو _ فقط";
         $field.classList.add("error");
         $validation.classList.add("show", "error");
 
         return false;
     } else {
-        $validation.innerHTML = dir === "ltr" ? "username valid" : "اسم المستخدم صالح";
+        $validation.innerHTML = dir === "ltr" ? "Username valid" : "اسم المستخدم صالح";
         $field.classList.add("success");
         $validation.classList.add("show", "success");
 
