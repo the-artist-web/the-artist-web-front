@@ -35,8 +35,8 @@ Password($passwords);
 /**
  * Run tooltip
  */
-const $tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-Tooltip($tooltipTriggerList);
+const $tooltips = document.querySelectorAll("[data-bs-toggle='tooltip']");
+Tooltip($tooltips);
 
 /**
  * Run Copyright

@@ -1,8 +1,13 @@
 'use strict';
 
-export const Tooltip = (tooltipTriggerList) => 
+export const Tooltip = ($elements) => 
 {
-  tooltipTriggerList.map((tooltipTriggerEl) => {
-    return new bootstrap.Tooltip(tooltipTriggerEl);
-  });
+    $elements.forEach($elem => {
+        const tooltip = bootstrap.Tooltip.getOrCreateInstance($elem);
+
+        $elem.addEventListener("click", () => {
+            tooltip.show();
+            tooltip.hide();
+        });
+    });
 }

@@ -5,7 +5,14 @@
 /**
  * FIT SIZE: 768PX
  */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    /**
+    * COMPONENTS
+    */
+
+    /* Tooltips */
+    .tooltip { display: flex; }
+}
 
 /**
  * FIT SIZE: 992px

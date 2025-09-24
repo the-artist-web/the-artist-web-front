@@ -358,6 +358,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 /* Toasts */
 
 /* Tooltips */
+.tooltip { display: none; }
+
 .tooltip-inner {
   background-color: var(--text-color) !important;
   color: var(--bg-color) !important;

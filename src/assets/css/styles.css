@@ -146,8 +146,8 @@ menu {
 
 li { 
     list-style: none !important; 
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    margin: 0;
 }
 
 a,
@@ -237,12 +237,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-}
-
-.row,
-.col { 
-    margin-inline: 0; 
-    padding-inline: 0;
 }
 
 ::selection {
