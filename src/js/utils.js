@@ -78,24 +78,39 @@ const inputEmailAddress = ($field) => {
     $validation.classList.remove("show", "error", "success", "warning");
 
     if (value === "") {
+        $validation.innerHTML = dir === "ltr" ? "Email cannot be left blank" : "لا يمكن ترك الايميل فارغ";
         $field.classList.add("warning");
         $validation.classList.add("show", "warning");
-        $validation.innerHTML = dir === "ltr" ? "Email address cannot be left blank." : "لا يمكن ترك عنوان البريد الالكتروني فارغًا.";
-
-        return false;
-    } else if (value !== value.split(" ").join("")) {
 
         return false;
     } else if (value.startsWith("_") || value.startsWith("-")) {
+        $validation.innerHTML = dir === "ltr" ? "The name cannot start with `_` or `-` " : "لا يمكن أن يبدأ الاسم بـ `_` أو `-`";
+        $field.classList.add("warning");
+        $validation.classList.add("show", "warning");
 
         return false;
     } else if (value.endsWith("_") || value.endsWith("-")) {
+        $validation.innerHTML = dir === "ltr" ? "The name cannot end with `_` or `-` " : "لا يمكن أن ينتهي الاسم بـ `_` أو `-`";
+        $field.classList.add("warning");
+        $validation.classList.add("show", "warning");
+
+        return false;
+    } else if (value !== value.split(" ").join("")) {
+        $validation.innerHTML = dir === "ltr" ? "Spaces cannot be left in the email." : "لا يمكن ترك مسافات في الايميل";
+        $field.classList.add("warning");
+        $validation.classList.add("show", "warning");
 
         return false;
     } else if (!regex.test(value)) {
+        $validation.innerHTML = dir === "ltr" ? "Please enter a valid email address" : "من فضلك أدخل بريد إلكتروني صالح";
+        $field.classList.add("error");
+        $validation.classList.add("show", "error");
 
         return false;
     } else {
+        $validation.innerHTML = dir === "ltr" ? "Email valid" : "الايميل صالح";
+        $field.classList.add("success");
+        $validation.classList.add("show", "success");
 
         return true;
     }
