@@ -261,7 +261,7 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 .btn.btn-secondary {
   border-color: var(--border-color) !important;
   background-color: var(--second-bg-color) !important;
-  --state-layer-bg: var(--text-color);
+  --state-layer-bg: var(--second-color);
 }
 
 /* Button group */

@@ -16,7 +16,7 @@ const validatationCreateNewAccount = ($form) => {
     const $checkTermsOfUse = $form.querySelector("[data-field='checkTermsOfUse']");
 
     $inputUsername.addEventListener("input", () => inputUsername($inputUsername));
-    $inputUsername.addEventListener("input", () => inputEmailAddress($inputEmail));
+    $inputEmail.addEventListener("input", () => inputEmailAddress($inputEmail));
 };
 
 const submitCreateNewAccount = (e, $form) => {
