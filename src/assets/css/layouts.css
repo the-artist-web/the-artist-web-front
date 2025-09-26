@@ -125,6 +125,21 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   background-color: var(--orange-color) !important;
 }
 
+.form-checkbox .form-check-input.success {
+  border: 1.8px solid var(--green-color) !important;
+  background-color: var(--soft-green-color) !important;
+}
+
+.form-checkbox .form-check-input.warning {
+  border: 1.8px solid var(--orange-color) !important;
+  background-color: var(--soft-orange-color) !important;
+}
+
+.form-checkbox .form-check-input.error {
+  border: 1.8px solid var(--red-color) !important;
+  background-color: var(--soft-red-color) !important;
+}
+
 .form-checkbox .form-check-label {
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
