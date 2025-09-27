@@ -312,6 +312,8 @@ body {
 
 :has(> .state-layer):active > .state-layer { opacity: 0.18; }
 
+html[dir="rtl"] .dir { transform: rotate(180deg); }
+
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY
 \* ------------------------------------------------------------ */

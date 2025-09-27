@@ -51,9 +51,9 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   border: 1.8px solid var(--border-color) !important;
   background-color: var(--second-bg-color) !important;
   padding-inline: 10px !important;
-  border-radius: var(--rounded-10);
-  min-height: 36px;
-  max-height: 36px;
+  border-radius: var(--rounded-8);
+  min-height: 38px;
+  max-height: 38px;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
 }
@@ -152,7 +152,7 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   font-weight: var(--fw-medium) !important;
   line-height: var(--lh-p) !important;
   color: var(--third-color) !important;
-  margin-block-start: -5px;
+  margin-block-start: -3px;
   display: none;
 }
 
@@ -177,18 +177,18 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 36px;
-  max-width: 36px;
-  min-height: 36px;
-  max-height: 36px;
+  min-width: 38px;
+  max-width: 38px;
+  min-height: 38px;
+  max-height: 38px;
   --state-layer-bg: var(--bg-color);
 }
 
 .logo img {
-  min-width: 25px;
-  max-width: 25px;
-  min-height: 25px;
-  max-height: 25px;
+  min-width: 28px;
+  max-width: 28px;
+  min-height: 28px;
+  max-height: 28px;
 }
 
 [data-theme="light"] .logo .logo-dark { display: none; }
@@ -210,10 +210,10 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 }
 
 .icon-btn.large {
-  min-width: 36px;
-  max-width: 36px;
-  min-height: 36px;
-  max-height: 36px;
+  min-width: 38px;
+  max-width: 38px;
+  min-height: 38px;
+  max-height: 38px;
 }
 
 .icon-btn.large svg {
@@ -247,9 +247,9 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 .btn {
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
-  border-radius: var(--rounded-10);
-  min-height: 36px;
-  max-height: 36px;
+  border-radius: var(--rounded-8);
+  min-height: 38px;
+  max-height: 38px;
   padding-inline: 16px;
   display: flex;
   align-items: center;
@@ -320,8 +320,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  min-height: 36px;
-  max-height: 36px;
+  min-height: 38px;
+  max-height: 38px;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
   line-height: var(--lh-p) !important;
@@ -346,8 +346,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   font-weight: var(--fw-regular) !important;
   line-height: var(--lh-small) !important;
   padding-inline: 10px !important;
-  min-height: 28px;
-  max-height: 28px;
+  min-height: 30px;
+  max-height: 30px;
 }
 
 /* List group */

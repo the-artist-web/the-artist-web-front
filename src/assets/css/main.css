@@ -52,7 +52,10 @@
     min-height: 100dvh;
 }
 
-.auth-wrapper .wrapper { padding: 16px 16px 0; }
+.auth-wrapper .wrapper { 
+    width: 100%;
+    padding: 16px 16px 0; 
+}
 
 .auth-wrapper .img-auth {
     border-radius: var(--rounded-12);
@@ -63,6 +66,7 @@
     display: grid;
     grid-template-rows: max-content 1fr;
     gap: 30px;
+    width: 100%;
 }
 
 .auth-wrapper header {
@@ -73,6 +77,7 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 [data-theme="light"] .icon-btn .light { display: none; }

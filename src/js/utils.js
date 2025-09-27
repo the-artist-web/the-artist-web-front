@@ -329,11 +329,109 @@ const inputCheckTermsOfUse = ($field, $btn) => {
     }
 }
 
+/**
+ * Otp
+ */
+const inputsOTP = ($otp1, $otp2, $otp3, $otp4, $otp5, $otp6, $otpValue, $validation) => {
+    $validation.innerHTML = "";
+    $validation.classList.remove("show", "error", "success");
+
+    const fields = [$otp1, $otp2, $otp3, $otp4, $otp5, $otp6];
+
+    const updateValue = () => {
+        if ($otpValue)
+            $otpValue.value = fields.map(f => f.value).join("");
+    };
+
+    const validate = () => {
+        const values = fields.map(f => f.value.trim());
+
+        if (values.every(v => v === "")) {
+            $validation.classList.remove("success");
+            $validation.classList.add("show", "error");
+            $validation.innerHTML = dir === "ltr" ? "OTP cannot be empty." : "لا يمكن أن يكون رمز التحقق فارغًا.";
+            fields.forEach(f => f.classList.add("error"));
+            return false;
+        }
+
+        if (values.some(v => v === "")) {
+            $validation.classList.remove("success");
+            $validation.classList.add("show", "error");
+            $validation.innerHTML = dir === "ltr" ? "All fields must be filled." : "يجب ملء جميع الخانات.";
+            fields.forEach(f => {
+                if (f.value.trim() === "") f.classList.add("error");
+            });
+            return false;
+        }
+
+        if (values.some(v => v.length > 1)) {
+            $validation.classList.remove("success");
+            $validation.classList.add("show", "error");
+            $validation.innerHTML = dir === "ltr" ? "Each field must contain exactly 1 character." : "يجب أن تحتوي كل خانة على رقم واحد فقط.";
+            fields.forEach(f => {
+                if (f.value.length !== 1) f.classList.add("error");
+            });
+            return false;
+        }
+
+        $validation.classList.remove("error");
+        $validation.classList.add("success");
+        $validation.innerHTML = dir === "ltr" ? "OTP Valid" : "كلمة مرور لمرة واحدة صحيحة";
+        fields.forEach(f => f.classList.remove("error"));
+        return true;
+    };
+
+    fields.forEach(($field, index, arr) => {
+        $field.addEventListener("input", (e) => {
+            if (e.target.value.trim() !== "") {
+                $field.classList.add("success");
+                $field.classList.remove("error");
+            } else {
+                $field.classList.remove("success");
+                $field.classList.add("error");
+            }
+
+            if (e.target.value && index < arr.length - 1) {
+                arr[index + 1].focus();
+            }
+
+            updateValue();
+            validate();
+        });
+
+        $field.addEventListener("keydown", (e) => {
+            if (e.key === "Backspace" && !e.target.value && index > 0)
+                arr[index - 1].focus();
+        });
+    });
+
+    $otp1.addEventListener("paste", (e) => {
+        e.preventDefault();
+
+        const pasteData = (e.clipboardData || window.clipboardData).getData("text");
+
+        if (/^[A-Za-z0-9]{4,6}$/.test(pasteData)) {
+            fields.forEach((f, i) => {
+                f.value = pasteData[i] || "";
+                f.classList.add("success");
+            });
+
+            fields[Math.min(pasteData.length, fields.length) - 1].focus();
+
+            updateValue();
+            validate();
+        }
+    });
+
+    return validate;
+};
+
 export {
     addEventOnElements,
     inputUsername,
     inputEmailAddress,
     inputPassword,
     inputConfirmPassword,
-    inputCheckTermsOfUse
+    inputCheckTermsOfUse,
+    inputsOTP
 }
