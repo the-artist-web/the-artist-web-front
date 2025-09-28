@@ -45,15 +45,15 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   left: 5px;
 }
 
-.form-box .input-wrapper:has(.icon-btn) .form-control { padding-inline-end: 38px !important; }
+.form-box .input-wrapper:has(.icon-btn) .form-control { padding-inline-end: 40px !important; }
 
 .form-box .form-control {
   border: 1.8px solid var(--border-color) !important;
   background-color: var(--second-bg-color) !important;
   padding-inline: 10px !important;
   border-radius: var(--rounded-8);
-  min-height: 38px;
-  max-height: 38px;
+  min-height: 40px;
+  max-height: 40px;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
 }
@@ -95,6 +95,17 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 .form-box .input-wrapper:has(.form-control.warning) { --state-layer-bg: var(--orange-color); }
 
 /* Input Group */
+.input-group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.input-group .input-wrapper:first-child .form-control { border-radius: var(--rounded-8) 0 0 var(--rounded-8) !important; }
+
+.input-group .input-wrapper:last-child .form-control { border-radius: 0 var(--rounded-8) var(--rounded-8) 0 !important; }
+
+.input-group .form-control { border-radius: var(--rounded-0) !important; }
 
 /* Range */
 
@@ -177,10 +188,10 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 38px;
-  max-width: 38px;
-  min-height: 38px;
-  max-height: 38px;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
   --state-layer-bg: var(--bg-color);
 }
 
@@ -210,10 +221,10 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
 }
 
 .icon-btn.large {
-  min-width: 38px;
-  max-width: 38px;
-  min-height: 38px;
-  max-height: 38px;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
 }
 
 .icon-btn.large svg {
@@ -248,8 +259,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
   border-radius: var(--rounded-8);
-  min-height: 38px;
-  max-height: 38px;
+  min-height: 40px;
+  max-height: 40px;
   padding-inline: 16px;
   display: flex;
   align-items: center;
@@ -320,8 +331,8 @@ html[dir="rtl"] .form-box .input-wrapper .icon-btn {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  min-height: 38px;
-  max-height: 38px;
+  min-height: 40px;
+  max-height: 40px;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-medium) !important;
   line-height: var(--lh-p) !important;
