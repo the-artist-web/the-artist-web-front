@@ -1,6 +1,6 @@
 'use strict';
 
-const dirCopyright = localStorage.getItem("dir") || document.documentElement;
+const dirCopyright = localStorage.getItem("dir") || document.documentElement.dir;
 
 export const Copyright = ($elements) => {
     $elements.forEach(elem => {
