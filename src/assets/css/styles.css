@@ -1,0 +1,339 @@
+/* ---------------------------------- *\
+ * STYLE GUIDE
+\* ---------------------------------- */
+
+:root {
+    /**
+     * Colors
+     */
+    
+    /* Light Theme */
+
+    /* Dark Theme */
+
+    /**
+     * Typography
+     */
+    
+    /* Font Scale */
+
+    /* Font Weight */
+
+    /* Line Height */
+
+    /* Letter Spacing */
+
+    /* Font */
+    --font-family: "Nunito", sans-serif;
+
+    /**
+     * Spacing
+     */
+    
+
+    /**
+     * Box Shadows
+     */
+    
+
+    /**
+     * Border Radius
+     */
+
+
+    /**
+     * Transition
+     */
+
+
+    /**
+     * Others
+     */
+    --navigation-rail-width: 72px;
+    --navigation-bar-height: 72px;
+    --header-height: 72px;
+}
+
+/* ---------------------------------- *\
+ * RESET
+\* ---------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- *\
+ * BASE
+\* ---------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- *\
+ * REUSED STYLE
+\* ---------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- *\
+ * COMPONENTS
+\* ---------------------------------- */
+
+/** 
+ * App bars 
+ */
+
+
+
+/** 
+ * Badges
+ */
+
+
+
+/**
+ * Button groups
+ */
+
+
+
+/**
+ * Buttons
+ */
+
+
+
+/**
+ * Extended FABs
+ */
+
+
+
+/**
+ * FAB menu
+ */
+
+
+
+/**
+ * FABs
+ */
+
+
+
+/**
+ * Icon buttons
+ */
+
+
+
+/**
+ * Segmented buttons
+ */
+
+
+
+/**
+ * Split button
+ */
+
+
+
+/**
+ * Cards
+ */
+
+
+
+/**
+ * Carousel
+ */
+
+
+
+/**
+ * Checkbox
+ */
+
+
+
+/**
+ * Chips
+ */
+
+
+
+/**
+ * Date pickers
+ */
+
+
+
+/**
+ * Time pickers
+ */
+
+
+
+/**
+ * Dialogs
+ */
+
+
+
+/**
+ * Divider
+ */
+
+
+
+/**
+ * Lists
+ */
+
+
+
+/**
+ * Loading indicator
+ */
+
+
+
+/**
+ * Progress indicators
+ */
+
+
+
+/**
+ * Menus
+ */
+
+
+
+/**
+ * Navigation bar
+ */
+
+
+
+/**
+ * Navigation drawer
+ */
+
+
+
+/**
+ * Navigation rail
+ */
+
+
+
+/**
+ * Radio button
+ */
+
+
+
+/**
+ * Search
+ */
+
+
+
+/**
+ * Bottom sheets
+ */
+
+
+
+/**
+ * Side sheets
+ */
+
+
+
+/**
+ * Sliders
+ */
+
+
+
+/**
+ * Snackbar
+ */
+
+
+
+/**
+ * Switch
+ */
+
+
+
+/**
+ * Tabs
+ */
+
+
+
+/**
+ * Text fields
+ */
+
+
+
+/**
+ * Toolbars
+ */
+
+
+
+/**
+ * Tooltips
+ */
+
+
+
+/* ---------------------------------- *\
+ * OTHERS
+\* ---------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- *\
+ * MAIN
+\* ---------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- *\
+ * MEDIA QUERY
+\* ---------------------------------- */
+
+/**
+ * Fit Size: 786px
+ */
+@media screen and (min-width: 786px) {}
+
+/**
+ * Fit Size: 992px
+ */
+@media screen and (min-width: 992px) {}
+
+/**
+ * Fit Size: 1440px
+ */
+@media screen and (min-width: 1440px) {}
