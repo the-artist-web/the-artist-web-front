@@ -349,7 +349,11 @@ body {
     line-height: var(--lh-body-medium);
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
+
+body.load { overflow-y: visible; }
 
 ::selection {
     background-color: var(--primary-container);
@@ -645,7 +649,7 @@ svg {
     border-bottom: 1px solid var(--outline);
     display: inline;
     gap: var(--spacing-3);
-    transition-property: color, border-bottom, border-botttom-color;
+    transition-property: color, border-botttom-color;
     transition-duration: var(--transition-duration-shorts);
 }
 
@@ -653,6 +657,13 @@ svg {
     color: var(--primary-container); 
     border-bottom-color: var(--primary-container);
 }
+
+.btn-hover {
+    color: var(--on-backgorund);
+    transition: color var(--transition-duration-shorts);
+}
+
+.btn-hover:hover { color: var(--primary-container); }
 
 /**
  * Extended FABs
@@ -974,7 +985,13 @@ html[dir="rtl"] .menu .menu-content.end {
  */
 .form-box {
     display: grid;
-    gap: var(--spacing-1);
+    gap: var(--spacing-2);
+}
+
+.form-box .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .form-box .form-label { text-transform: capitalize; }

@@ -11,7 +11,13 @@ import { addEventOnElements } from "./utils.js";
  * Start loading
  */
 const $startLoading = document.querySelector("[data-start-loading]");
-if ($startLoading) window.addEventListener("load", () => setTimeout(() => $startLoading.classList.add("active"), 800));
+const $body = document.body;
+if ($startLoading) window.addEventListener("load", () => {
+    setTimeout(() => {
+        $startLoading.classList.add("active");
+        $body.classList.add("load");
+    }, 800);
+});
 
 /**
  * Fixed scrolling
@@ -30,14 +36,20 @@ if ($menusToggler) addEventOnElements($menusToggler, "click", function (e, $elem
     const $menuContent = $menu.querySelector(".menu-content");
 
     document.querySelectorAll(".menu-content.active").forEach($elemContent => {
-        if ($elemContent !== $menuContent)
+        if ($elemContent !== $menuContent) {
             $elemContent.classList.remove("active");
+            $body.classList.add("load");
+        }
     });
 
     $menuContent.classList.toggle("active");
+    $body.classList.toggle("load");
 });
 
-document.addEventListener("click", () => document.querySelectorAll(".menu-content.active").forEach($elem => $elem.classList.remove("active", "show")));
+document.addEventListener("click", () => document.querySelectorAll(".menu-content.active").forEach($elem => { 
+    $elem.classList.remove("active", "show");
+    $body.classList.add("load");
+}));
 
 /**
  * Tooltip
