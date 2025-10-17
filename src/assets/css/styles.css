@@ -1,3 +1,12 @@
+/**
+ * Button: 
+ *    XS - height => 32px
+ *    S - height => 40px
+ *    M - height => 48px
+ *    L - height => 56px
+ *    XL - height => 6596px
+ */
+
 /* ---------------------------------- *\
  * STYLE GUIDE
 \* ---------------------------------- */
@@ -166,6 +175,10 @@
   --outline-variant: var(--light-outline-variant);
   --inverse: var(--light-inverse);
   --on-inverse: var(--light-on-inverse);
+
+  .theme-light { display: block; }
+
+  .theme-dark { display: none; }
 }
 
 [data-theme="dark"] {
@@ -180,6 +193,10 @@
   --outline-variant: var(--dark-outline-variant);
   --inverse: var(--dark-inverse);
   --on-inverse: var(--dark-on-inverse);
+
+  .theme-dark { display: block; }
+  
+  .theme-light { display: none; }
 }
 
 [data-theme-primary] { --primary: #f8ac35; }
@@ -560,31 +577,13 @@ svg { color: var(--on-background-variant); }
 /**
  * Logo
  */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-3);
-}
-
-.logo .logo-box {
-  background-color: var(--primary);
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-full);
-  min-width: var(--spacing-12);
-  max-width: var(--spacing-12);
+.logo,
+.logo .img-logo {
+  min-width: max-content;
+  max-width: max-content;
   min-height: var(--spacing-12);
   max-height: var(--spacing-12);
 }
-
-.logo .logo-box .img-logo {
-  min-width: var(--spacing-7);
-  max-width: var(--spacing-7);
-  min-height: var(--spacing-7);
-  max-height: var(--spacing-7);
-}
-
-.logo .site-name { font-weight: var(--fw-bold); }
 
 /** 
  * App bars 
