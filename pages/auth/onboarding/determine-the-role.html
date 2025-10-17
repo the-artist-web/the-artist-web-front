@@ -76,9 +76,9 @@
     
                     <div class="content">
     
-                        <h3 class="text-headline-small">What is your role on our platform?</h3>
+                        <h3 class="text-headline-small">Select your role</h3>
         
-                        <p class="text-on-background-variant text-body-large">Choose whether you are a learner, a seller, or a business owner to start your journey with us in the right way.</p>
+                        <p class="text-on-background-variant text-body-large">Choose if you’re joining as a learner, seller, or business owner.</p>
     
                     </div>
 
@@ -88,9 +88,69 @@
 
                     <div class="list" data-selects>
 
-                        <label for="" class="card-select" data-options>
+                        <label for="learner" class="card-select active" data-options>
 
-                            
+                            <div class="check">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-school"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>
+
+                            <div class="card-body">
+
+                                <h4 class="title text-title-large">Learner</h4>
+    
+                                <p class="text-on-background-variant text-body-large">Learn programming and improve your skills</p>
+
+                            </div>
+
+                            <input type="radio" id="learner" name="role" value="learner" checked hidden />
+
+                            <div class="state-layer"></div>
+
+                        </label>
+
+                        <label for="seller" class="card-select" data-options>
+
+                            <div class="check">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /></svg>
+
+                            <div class="card-body">
+
+                                <h4 class="title text-title-large">seller</h4>
+    
+                                <p class="text-on-background-variant text-body-large">Sell the websites or themes you’ve created</p>
+
+                            </div>
+
+                            <input type="radio" id="seller" name="role" value="seller" hidden />
+
+                            <div class="state-layer"></div>
+
+                        </label>
+
+                        <label for="business_owner" class="card-select" data-options>
+
+                            <div class="check">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
+
+                            <div class="card-body">
+
+                                <h4 class="title text-title-large">business owner</h4>
+    
+                                <p class="text-on-background-variant text-body-large">Buy ready-made websites for your business</p>
+
+                            </div>
+
+                            <input type="radio" id="business_owner" name="role" value="business_owner" hidden />
+
+                            <div class="state-layer"></div>
 
                         </label>
 
