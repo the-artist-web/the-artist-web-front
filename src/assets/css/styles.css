@@ -717,7 +717,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: var(--spacing-3);
   --state-layer-bg: var(--on-background);
   transition: border-color var(--tr-duration-medium);
 }
