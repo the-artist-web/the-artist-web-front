@@ -32,21 +32,21 @@
   --light-background: #ffffff;
   --light-on-background: #1a1a1a;
   --light-on-background-variant: #6e6e6e;
-  --light-surface: #f0f0f0;
-  --light-surface-variant: #e3e3e3;
-  --light-outline: #d0d0d0;
-  --light-outline-variant: #c0c0c0;
+  --light-surface: #f6f6f6;
+  --light-surface-variant: #f0f0f0;
+  --light-outline: #d9d9d9;
+  --light-outline-variant: #a8a8a8;
   --light-inverse: #2a2a2a;
   --light-on-inverse: #fafafa;
 
   /* Theme Dark */
-  --dark-background: #000000;
+  --dark-background: #0f0f0f;
   --dark-on-background: #e3e3e3;
-  --dark-on-background-variant: #969696;
-  --dark-surface: #1a1a1a;
+  --dark-on-background-variant: #9b9b9b;
+  --dark-surface: #1c1c1c;
   --dark-surface-variant: #303030;
-  --dark-outline: #2a2a2a;
-  --dark-outline-variant: #4a4a4a;
+  --dark-outline: #2c2c2c;
+  --dark-outline-variant: #404040;
   --dark-inverse: #e2e2e2;
   --dark-on-inverse: #303030;
 
