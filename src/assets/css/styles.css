@@ -228,6 +228,8 @@
 
 [data-theme-primary="brown"] { --primary: #ac7865; }
 
+[data-theme-primary="greenyellow"] { --primary: greenyellow; }
+
 /**
 * Typography
 */
