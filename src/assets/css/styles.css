@@ -163,8 +163,8 @@
   /**
    * Others
    */
-  --header-height: 80px;
-  --navigation-rail-width: 80px;
+  --header-height: 72px;
+  --navigation-rail-width: 72px;
   --navigation-bar-height: 72px;
   --footer-bottom-height: 60px;
   --width-base: 300px;
@@ -210,25 +210,55 @@
   .theme-light { display: none; }
 }
 
-[data-theme-primary] { --primary: #f8ac35; }
+[data-theme-primary] {
+  --primary: #f8ac35;
+  --secondary: #d8922f;
+}
 
-[data-theme-primary="blue"] { --primary: #5086fb; }
+[data-theme-primary="blue"] {
+  --primary: #5086fb;
+  --secondary: #3c6ee0;
+}
 
-[data-theme-primary="green"] { --primary: #10b981; }
+[data-theme-primary="green"] {
+  --primary: #10b981;
+  --secondary: #0d9b6c;
+}
 
-[data-theme-primary="red"] { --primary: #f55b5b; }
+[data-theme-primary="red"] {
+  --primary: #f55b5b;
+  --secondary: #d94a4a;
+}
 
-[data-theme-primary="purple"] { --primary: #9364ff; }
+[data-theme-primary="purple"] {
+  --primary: #9364ff;
+  --secondary: #7a4fe0;
+}
 
-[data-theme-primary="orange"] { --primary: #f97316; }
+[data-theme-primary="orange"] {
+  --primary: #f97316;
+  --secondary: #d65e10;
+}
 
-[data-theme-primary="rosy"] { --primary: #ec4899; }
+[data-theme-primary="rosy"] {
+  --primary: #ec4899;
+  --secondary: #c83b80;
+}
 
-[data-theme-primary="yellow"] { --primary: #eab308; }
+[data-theme-primary="yellow"] {
+  --primary: #eab308;
+  --secondary: #c79a06;
+}
 
-[data-theme-primary="brown"] { --primary: #ac7865; }
+[data-theme-primary="brown"] {
+  --primary: #ac7865;
+  --secondary: #8d5f4e;
+}
 
-[data-theme-primary="greenyellow"] { --primary: greenyellow; }
+[data-theme-primary="greenyellow"] {
+  --primary: #adff2f;
+  --secondary: #8acc25;
+}
 
 /**
 * Typography
@@ -352,8 +382,6 @@ body {
 }
 
 body.load { overflow-y: visible; }
-
-body.page { padding-block-end: var(--navigation-bar-height); }
 
 svg { color: var(--on-background-variant); }
 
@@ -506,13 +534,8 @@ svg { color: var(--on-background-variant); }
 }
 
 .main {
-  padding-block-start: var(--header-height);
-  min-height: calc(100dvh - var(--navigation-bar-height));
-}
-
-.main.auth { 
+  padding-block: var(--header-height) var(--navigation-bar-height);
   min-height: 100dvh;
-  padding: 0;
 }
 
 :has(> .state-layer) {
@@ -966,7 +989,7 @@ html[dir="rtl"] .card-select .check {
 /**
  * Line Clamp
  */
-/* line-clamp line-clamp-1 */
+
 
 
 /* ---------------------------------- *\
@@ -983,48 +1006,12 @@ html[dir="rtl"] .card-select .check {
 \* ---------------------------------- */
 
 /**
- * Auth
+ * Auth Page
  */
-.main.auth {
-  display: grid;
-  place-items: center;
-}
 
-.main.auth .container { padding: var(--spacing-8) var(--spacing-4); }
 
-.main.auth .div-base {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-9);
-}
 
-.main.auth .div-base .auth-header {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-8);
-}
 
-.main.auth .div-base .auth-header .content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-2);
-}
-
-.main.auth .div-base .auth-content .list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-4);
-}
-
-.main.auth .div-base .auth-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-4);
-}
-
-.main.auth .div-base .auth-footer.end { justify-content: end; }
 
 /* ---------------------------------- *\
  * MEDIA QUERY
@@ -1042,15 +1029,6 @@ html[dir="rtl"] .card-select .check {
     border-radius: var(--radius-extra-large);
     background-color: var(--surface);
   }
-
-  /**
-   * MAIN
-   */
-  
-  /* AUTH */
-  .main.auth .div-base { padding: var(--spacing-9); }
-
-  .main.auth .div-base .auth-content .list { grid-template-columns: repeat(2, 1fr); }
 }
 
 /**
@@ -1058,22 +1036,12 @@ html[dir="rtl"] .card-select .check {
  */
 @media screen and (min-width: 992px) {
   /**
-   * BASE
-   */
-  body.auth {
-    padding-block: var(--spacing-4);
-    padding-inline-start: calc(var(--width-base) + var(--spacing-4));
-  }
-
-  body.page {
-    padding-inline-start: calc(var(--navigation-rail-width) + var(--spacing-4));
-    padding-block-end: var(--spacing-4);
-  }
-
-  /**
    * REUSED STYLE
    */
-  .main { min-height: calc(100dvh - var(--spacing-4)); }
+  .main {
+    padding-block: var(--header-height) var(--spacing-4);
+    padding-inline-start: var(--navigation-rail-width);
+  }
 }
 
 /**
