@@ -186,8 +186,8 @@
   --height-large: 56px;
   --height-extra-largel: 96px;
 
-  --header-height: 72px;
-  --navigation-rail-width: 72px;
+  --header-height: 80px;
+  --navigation-rail-width: 80px;
   --navigation-bar-height: 72px;
   --footer-bottom-height: 60px;
   --width-base: 300px;
@@ -764,8 +764,76 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 /**
  * Menus
  */
+.menu { position: relative; }
 
+.menu .menu-content {
+  box-shadow: var(--shadow-1);
+  position: absolute;
+  background-color: var(--surface);
+  padding-block: var(--spacing-2);
+  border-radius: var(--radius-small);
+  min-width: 100%;
+}
 
+.menu .menu-content.up { top: 0; }
+
+.menu .menu-content.down { bottom: 0; }
+
+.menu .menu-content.start { left: 0; }
+
+html[dir="rtl"] .menu .menu-content.start {
+  left: auto;
+  right: 0;
+}
+
+.menu .menu-content.end { right: 0; }
+
+html[dir="rtl"] .menu .menu-content.end {
+  left: 0;
+  right: auto;
+}
+
+.menu .menu-content.top { bottom: calc(100% + 5px); }
+
+.menu .menu-content.right { left: calc(100% + 5px); }
+
+html[dir="rtl"] .menu .menu-content.right {
+  right: calc(100% + 5px);
+  left: auto;
+}
+
+.menu .menu-content.left { right: calc(100% + 5px); }
+
+html[dir="rtl"] .menu .menu-content.left {
+  left: calc(100% + 5px);
+  right: auto;
+}
+
+.menu .menu-content.bottom { top: calc(100% + 5px); }
+
+.menu .menu-content.small { width: 100px; }
+
+.menu .menu-content.medium { width: 200px; }
+
+.menu .menu-content.large { width: 300px; }
+
+.menu .menu-content.extra-large { width: 400px; }
+
+.menu .menu-content .menu-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding-inline: var(--spacing-4);
+  min-height: var(--height-extra-small);
+  max-height: var(--height-extra-small);
+  color: var(--on-background-variant);
+  transition: color var(--tr-duration-short);
+  --state-layer-bg: var(--on-background);
+}
+
+.menu .menu-content .menu-item:hover { color: var(--on-background); }
+
+.menu .menu-content .menu-item.active { color: var(--on-background); }
 
 /**
  * Navigation bar
@@ -900,7 +968,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .auth-page .header .container .wrapper {
   display: flex;
   align-items: center;
-  gap: var(--spacing-3);
+  gap: var(--spacing-2);
 }
 
 /* ---------------------------------- *\
