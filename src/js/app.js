@@ -11,6 +11,7 @@ import { Menu } from "./components/Menu.js";
 import { Dismiss } from "./components/Dismiss.js";
 import { Tooltip } from "./components/Tooltip.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
+import { Password } from "./components/Password.js";
 
 /**
  * Get overlay & body
@@ -47,6 +48,12 @@ if ($selects) $selects.forEach($elem => Select($elem));
  */
 const $togglerMenus = document.querySelectorAll("[data-toggler-menus]");
 addEventOnElements($togglerMenus, "click", function (e, $elem) { Menu(e, $elem, $body) });
+
+/**
+ * Password
+ */
+const $passwords = document.querySelectorAll("[data-passwords]");
+if ($passwords) $passwords.forEach($elem => Password($elem));
 
 /**
  * Tooltips
