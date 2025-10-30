@@ -19,13 +19,13 @@
   /* Theme Light */
   --light-background: #ffffff;
   --light-on-background: #1a1a1a;
-  --light-on-background-variant: #6e6e6e;
-  --light-surface: #f6f6f6;
-  --light-surface-variant: #f0f0f0;
-  --light-outline: #d9d9d9;
-  --light-outline-variant: #a8a8a8;
-  --light-inverse: #2a2a2a;
-  --light-on-inverse: #fafafa;
+  --light-on-background-variant: #666666;
+  --light-surface: #f1edec;
+  --light-surface-variant: #e5e8ec;
+  --light-outline: #747878;
+  --light-outline-variant: #c4c7c8;
+  --light-inverse: #202124;
+  --light-on-inverse: #f9fafb;
 
   /* Theme Dark */
   --dark-background: #0f0f0f;
@@ -163,6 +163,7 @@
   --radius-medium: 12px;
   --radius-large: 16px;
   --radius-extra-large: 24px;
+  --radius-circle: 50%;
   --radius-full: 1000px;
 
   /**
@@ -204,6 +205,10 @@
   --outline-variant: var(--light-outline-variant);
   --inverse: var(--light-inverse);
   --on-inverse: var(--light-on-inverse);
+
+  .theme-dark { display: none; }  
+  
+  .theme-light { display: block; }
 }
 
 [data-theme="dark"] {
@@ -218,6 +223,10 @@
   --outline-variant: var(--dark-outline-variant);
   --inverse: var(--dark-inverse);
   --on-inverse: var(--dark-on-inverse);
+
+  .theme-dark { display: block; }  
+  
+  .theme-light { display: none; }
 }
 
 /* ---------------------------------- *\
@@ -310,7 +319,11 @@ body {
   line-height: var(--lh-body-large);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
+
+body.load { overflow-y: visible; }
 
 svg {
   min-width: var(--spacing-6);
@@ -571,6 +584,16 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 \* ---------------------------------- */
 
 /**
+ * Logo
+ */
+.logo.extra-large {
+  min-width: var(--width-extra-largel);
+  max-width: var(--width-extra-largel);
+  min-height: var(--height-extra-largel);
+  max-height: var(--height-extra-largel);
+}
+
+/**
  * App bars
  */
 
@@ -691,10 +714,42 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 
 
 /**
- * Loading indicator
+ * Start loading
  */
+.start-loading {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: var(--primary);
+  color: var(--black);
+  width: 100%;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr max-content;
+  padding-block-end: var(--spacing-9);
+  transition-duration: var(--tr-duration-medium);
+  transition-property: opacity, visibility;
+}
 
+.start-loading.active {
+  opacity: 0;
+  visibility: hidden;
+}
 
+.start-loading .img-logo {
+  min-width: auto;
+  max-width: max-content;
+  min-height: 115px;
+  max-height: 115px;
+  transition: transform var(--tr-duration-long);
+}
+
+.start-loading.active .img-logo { transform: scale(1.5); }
+
+.start-loading .site_name { transition: letter-spacing var(--tr-duration-long); }
+
+.start-loading.active .site_name { letter-spacing: var(--spacing-2); }
 
 /**
  * Progress indicators
@@ -811,16 +866,71 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
  * MAIN
 \* ---------------------------------- */
 
+/**
+ * Start Coding
+ */
+.start-coding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100dvh;
+  padding-block: var(--header-height) 130px;
+}
 
+.start-coding .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-20);
+  text-align: center;
+  max-width: 386px;
+}
 
+.start-coding .start-coding-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
 
+.start-coding .start-coding-body .wrapper {
+  margin-block-start: var(--spacing-8);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-3);
+}
 
+.start-coding .start-coding-body .circle {
+  background-color: var(--surface);
+  border-radius: var(--radius-full);
+  min-width: var(--spacing-2);
+  max-width: var(--spacing-2);
+  min-height: var(--spacing-2);
+  max-height: var(--spacing-2);
+}
 
+.start-coding .start-coding-body .circle.active { background-color: var(--primary); }
 
-
-
-
-
+.start-coding .btn-start-coding {
+  background-color: var(--primary);
+  color: var(--black);
+  border-radius: var(--radius-circle) var(--radius-circle) 0 0;
+  position: fixed;
+  left: 50%;
+  right: 0;
+  bottom: -110px;
+  z-index: 30;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  padding: var(--spacing-10);
+  --state-layer-bg: var(--black);
+}
 
 /* ---------------------------------- *\
  * MEDIA QUERY
