@@ -180,12 +180,12 @@
   --width-small: 40px;
   --width-medium: 48px;
   --width-large: 56px;
-  --width-extra-largel: 96px;
+  --width-extra-large: 96px;
   --height-extra-small: 32px;
   --height-small: 40px;
   --height-medium: 48px;
   --height-large: 56px;
-  --height-extra-largel: 96px;
+  --height-extra-large: 96px;
 
   --header-height: 80px;
   --navigation-rail-width: 80px;
@@ -586,11 +586,18 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 /**
  * Logo
  */
+.logo.medium {
+  min-width: var(--width-medium);
+  max-width: var(--width-medium);
+  min-height: var(--height-medium);
+  max-height: var(--height-medium);
+}
+
 .logo.extra-large {
-  min-width: var(--width-extra-largel);
-  max-width: var(--width-extra-largel);
-  min-height: var(--height-extra-largel);
-  max-height: var(--height-extra-largel);
+  min-width: var(--width-extra-large);
+  max-width: var(--width-extra-large);
+  min-height: var(--height-extra-large);
+  max-height: var(--height-extra-large);
 }
 
 /**
@@ -606,12 +613,6 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 
 
 /**
- * All buttons
- */
-
-
-
-/**
  * Button groups
  */
 
@@ -620,8 +621,39 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 /**
  * Buttons
  */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  border-radius: var(--radius-full);
+  text-transform: capitalize;
+}
 
+.btn.medium {
+  padding-inline: var(--spacing-5);
+  min-height: var(--height-medium);
+  max-height: var(--height-medium);
+}
 
+.btn.text { --state-layer-bg: var(--on-background); }
+
+.btn.filled {
+  background-color: var(--primary);
+  color: var(--black);
+  --state-layer-bg: var(--black);
+}
+
+.btn.tonal {
+  background-color: var(--soft-primary);
+  color: var(--primary);
+  --state-layer-bg: var(--primary);
+}
+
+.btn.outline {
+  border: 2px solid var(--outline);
+  --state-layer-bg: var(--on-background);
+}
 
 /**
  * Extended FABs
@@ -876,7 +908,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   text-align: center;
   width: 100%;
   min-height: 100dvh;
-  padding-block: var(--header-height) 130px;
+  padding-block: var(--header-height) var(--spacing-4);
 }
 
 .start-coding .container {
@@ -914,23 +946,6 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 }
 
 .start-coding .start-coding-body .circle.active { background-color: var(--primary); }
-
-.start-coding .btn-start-coding {
-  background-color: var(--primary);
-  color: var(--black);
-  border-radius: var(--radius-circle) var(--radius-circle) 0 0;
-  position: fixed;
-  left: 50%;
-  right: 0;
-  bottom: -110px;
-  z-index: 30;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 400px;
-  height: 200px;
-  padding: var(--spacing-10);
-  --state-layer-bg: var(--black);
-}
 
 /* ---------------------------------- *\
  * MEDIA QUERY
