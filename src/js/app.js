@@ -14,9 +14,10 @@ import { MinusTime } from "./components/MinusTime.js";
 import { OTP } from "./components/Otp.js";
 
 /**
- * Get Overlay & Body
+ * Get Overlay & Body & Main
  */
 const $overlay = document.querySelector("[data-overlay]");
+const $main = document.querySelector("[data-main]");
 const $body = document.body;
 
 /**

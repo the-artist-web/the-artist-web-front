@@ -532,7 +532,7 @@ svg {
 
 .hover { transition: color var(--tr-duration-short); }
 
-.hover:hover { color: var(--primary); }
+.hover:hover { color: var(--primary) !important; }
 
 .arrow-dir {
   min-width: var(--spacing-7);
@@ -613,7 +613,6 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   grid-template-columns: 1fr;
   gap: var(--spacing-6);
 }
-
 
 /* ---------------------------------- *\
  * COMPONENTS
@@ -1037,11 +1036,9 @@ html[dir="rtl"] .menu .menu-content.right {
 
 .menu .menu-content .menu-item:hover { color: var(--on-background); }
 
-.menu .menu-content .menu-item.active {
-  background-color: var(--soft-primary);
-  color: var(--primary);
-  --state-layer-bg: var(--primary);
-}
+.menu .menu-content .menu-item.active { color: var(--on-background); }
+
+.menu .menu-content .menu-item.active .state-layer { opacity: 0.12; }
 
 /**
  * Navigation bar
@@ -1389,8 +1386,10 @@ html[dir="rtl"] .menu .menu-content.right {
    */
   .main {
     padding-block: var(--header-height) var(--spacing-4);
-    padding-inline-start: var(--navigation-rail-width);
+    padding-inline-start: calc(var(--navigation-rail-width) + var(--spacing-4));
   }
+
+  .main.active { padding-inline-start: calc(var(--width-base) + var(--spacing-4)); }
 
   /**
    * OTHERS
@@ -1398,13 +1397,23 @@ html[dir="rtl"] .menu .menu-content.right {
 
   /* Header */
   .header {
-    left: var(--navigation-rail-width);
-    width: calc(100% - var(--navigation-rail-width));
+    left: calc(var(--navigation-rail-width) + var(--spacing-4));
+    width: calc(100% - calc(var(--navigation-rail-width) + var(--spacing-4)));
   }
 
   html[dir="rtl"] .header {
     left: auto;
-    right: var(--navigation-rail-width);
+    right: calc(var(--navigation-rail-width) + var(--spacing-4));
+  }
+
+  body:has(.main.active) .header {
+    left: calc(var(--width-base) + var(--spacing-4));
+    width: calc(100% - calc(var(--width-base) + var(--spacing-4)));
+  }
+
+  html[dir="rtl"] body:has(.main.active) .header {
+    right: calc(var(--width-base) + var(--spacing-4));
+    left: auto;
   }
 }
 
