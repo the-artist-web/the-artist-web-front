@@ -12,6 +12,7 @@ import { Select } from "./components/Select.js";
 import { Password } from "./components/Password.js";
 import { MinusTime } from "./components/MinusTime.js";
 import { OTP } from "./components/Otp.js";
+import { Collapse } from "./components/Collapse.js";
 
 /**
  * Get Overlay & Body & Main
@@ -67,6 +68,12 @@ $minusTimes.forEach($elem => MinusTime($elem));
  */
 const $otps = document.querySelectorAll("[data-otps]");
 $otps.forEach($elem => OTP($elem));
+
+/**
+ * Collapses
+ */
+const $togglerCollapses = document.querySelectorAll("[data-toggler-collapses]");
+if ($togglerCollapses) $togglerCollapses.forEach($elem => Collapse($elem));
 
 /**
  * Dismiss
