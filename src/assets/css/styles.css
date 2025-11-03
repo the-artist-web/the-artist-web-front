@@ -260,6 +260,7 @@ a {
   font: inherit;
   text-decoration: none;
   color: inherit;
+  width: max-content;
 }
 
 img { height: auto; }
