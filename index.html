@@ -75,17 +75,25 @@
     </header>
 
     <!-- NAVIGATION RAIL -->
-    <aside class="navigation-rail" id="navigation-rail">
+    <aside class="navigation-rail active" id="navigation-rail">
 
-        <a href="../../index.html" class="logo medium">
-            <img src="../../src/assets/images/logo-dark.png" alt="The Artist Web" loading="lazy" class="theme-light img-cover" />
+        <div class="wrapper">
 
-            <img src="../../src/assets/images/logo-light.png" alt="The Artist Web" loading="lazy" class="theme-dark img-cover" />
-        </a>
+            <a href="../../index.html" class="logo medium">
+                <img src="../../src/assets/images/logo-dark.png" alt="The Artist Web" loading="lazy" class="theme-light img-cover" />
+    
+                <img src="../../src/assets/images/logo-light.png" alt="The Artist Web" loading="lazy" class="theme-dark img-cover" />
+            </a>
+
+            <h3 class="text-active text-headline-small">
+                <strong>The Artist Web</strong>
+            </h3>
+
+        </div>
 
         <ul class="nav-list custom-scrollbar">
 
-            <li>
+            <li class="nav-item">
                 <a href="./index.html" class="nav-link active">
 
                     <div class="wrapper-item">
@@ -98,7 +106,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="nav-item">
                 <a href="./pages/docs/index.html" class="nav-link">
 
                     <div class="wrapper-item">
@@ -111,7 +119,7 @@
                 </a>
             </li>
 
-            <li class="menu">
+            <li class="nav-item">
 
                 <button type="button" class="nav-link" data-collapses="#explore">
 
@@ -227,7 +235,7 @@
 
             </li>
 
-            <li class="menu">
+            <li class="nav-item">
 
                 <button type="button" class="nav-link" data-collapses="#company">
 
@@ -311,10 +319,12 @@
             <button type="button" class="fab filled medium">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
 
+                <div class="text-active text-body-large">Add New</div>
+
                 <div class="state-layer"></div>
             </button>
 
-            <ul class="fab-menu">
+            <ul class="fab-menu top left">
 
                 <li>
                     <button type="button" class="btn tonal medium" data-dialogs="#subject">
@@ -342,7 +352,7 @@
 
     </aside>
 
-    <main class="main" data-main>
+    <main class="main active" data-main>
 
         <article>
 
