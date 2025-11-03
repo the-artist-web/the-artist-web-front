@@ -653,14 +653,14 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 /**
  * Collapses
  */
-[data-toggler-collapses] [data-arrow] { transition: transform var(--tr-duration-medium) !important; }
+[data-toggler-collapses] [data-arrow] { transition: transform var(--tr-duration-long) !important; }
 
 [data-toggler-collapses] [data-arrow].active { transform: rotate(180deg) !important; }
 
 .collapse-content {
   height: 0;
   overflow: hidden;
-  transition: height var(--tr-duration-medium) !important;
+  transition: height var(--tr-duration-long);
 }
 
 /**
