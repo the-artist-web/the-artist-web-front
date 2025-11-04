@@ -13,6 +13,7 @@ import { Password } from "./components/Password.js";
 import { MinusTime } from "./components/MinusTime.js";
 import { OTP } from "./components/Otp.js";
 import { Collapse } from "./components/Collapse.js";
+import { FabMenu } from "./components/FabMenu.js";
 
 /**
  * Get Overlay & Body & Main
@@ -74,6 +75,12 @@ $otps.forEach($elem => OTP($elem));
  */
 const $togglerCollapses = document.querySelectorAll("[data-toggler-collapses]");
 if ($togglerCollapses) $togglerCollapses.forEach($elem => Collapse($elem));
+
+/**
+ * Fab Menus
+ */
+const $togglerFabsMenu = document.querySelectorAll("[data-toggler-fabs-menu]");
+if ($togglerFabsMenu) $togglerFabsMenu.forEach($elem => FabMenu($elem, $body));
 
 /**
  * Dismiss

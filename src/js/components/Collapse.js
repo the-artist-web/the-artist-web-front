@@ -5,13 +5,13 @@ export const Collapse = ($element) => {
     const $arrow = $element.querySelector("[data-arrow]");
 
     $element.addEventListener("click", () => {
-        $collapseContent.classList.toggle("active");
+        $element.classList.toggle("show");
+        $collapseContent.classList.toggle("show");
+        $arrow?.classList.toggle("active");
 
-        if ($collapseContent.classList.contains("active"))
+        if ($collapseContent.classList.contains("show"))
             $collapseContent.style.height = $collapseContent.scrollHeight + "px";
         else
             $collapseContent.style.height = "0px";
-
-        $arrow?.classList.toggle("active");
     });
 };
