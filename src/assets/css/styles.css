@@ -1086,6 +1086,13 @@ html[dir="rtl"] .card-select .check {
  */
 .menu { position: relative; }
 
+.menu svg {
+  min-width: var(--spacing-6);
+  max-width: var(--spacing-6);
+  min-height: var(--spacing-6);
+  max-height: var(--spacing-6);
+}
+
 .menu .menu-content {
   position: absolute;
   z-index: 30;
