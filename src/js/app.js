@@ -14,6 +14,7 @@ import { MinusTime } from "./components/MinusTime.js";
 import { OTP } from "./components/Otp.js";
 import { Collapse } from "./components/Collapse.js";
 import { FabMenu } from "./components/FabMenu.js";
+import { NavigationRail } from "./components/NavigationRail.js";
 
 /**
  * Get Overlay & Body & Main
@@ -81,6 +82,14 @@ if ($togglerCollapses) $togglerCollapses.forEach($elem => Collapse($elem));
  */
 const $togglerFabsMenu = document.querySelectorAll("[data-toggler-fabs-menu]");
 if ($togglerFabsMenu) $togglerFabsMenu.forEach($elem => FabMenu($elem, $body));
+
+/**
+ * Toggler Navigation Rail
+ */
+const $togglerNavigationRail = document.querySelector("[data-toggler-navigation-rail]");
+const $navigationRail = document.querySelector("[data-navigation-rail]");
+
+if ($togglerNavigationRail, $navigationRail) NavigationRail($togglerNavigationRail, $navigationRail, $main);
 
 /**
  * Dismiss
