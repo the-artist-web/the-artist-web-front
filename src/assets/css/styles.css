@@ -1209,26 +1209,11 @@ html[dir="rtl"] .card-select .check {
 }
 
 .item .img-item {
-  position: relative;
-  min-width: 100px;
-  max-width: 100px;
-  min-height: 60px;
-  max-height: 60px;
-}
-
-.item .img-item .img-item {
   border-radius: var(--radius-extra-small);
   min-width: 100px;
   max-width: 100px;
   min-height: 60px;
   max-height: 60px;
-}
-
-.item .img-item .icon-btn.error {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  z-index: 10;
 }
 
 .item .item-content {
