@@ -7,7 +7,7 @@
    * Colors
    */
   --scrim: #00000075;
-  --success: #10b981;
+  --success: #00dc82;
   --warning: #ffb300;
   --error: #e53935;
   --primary: #f8ac35;
@@ -212,6 +212,10 @@
   .theme-dark { display: none; }  
   
   .theme-light { display: block; }
+
+  .text-theme-dark { display: none; }  
+  
+  .text-theme-light { display: block; }
 }
 
 [data-theme="dark"] {
@@ -231,6 +235,10 @@
   .theme-dark { display: block; }  
   
   .theme-light { display: none; }
+
+  .text-theme-dark { display: block; }  
+  
+  .text-theme-light { display: none; }
 }
 
 /* ---------------------------------- *\
@@ -724,6 +732,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   min-height: var(--height-medium);
   max-height: var(--height-medium);
   padding-inline-start: var(--spacing-4);
+  text-wrap: nowrap;
 }
 
 .wallet .icon-wallet {
@@ -744,8 +753,22 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 /**
  * Badges
  */
+.badge {
+  padding-inline: var(--spacing-1);
+  min-width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: var(--radius-full);
+  color: var(--black);
+}
 
+.badge.success { background-color: var(--success); }
 
+.badge.warning { background-color: var(--warning); }
+
+.badge.error { background-color: var(--error); }
 
 /**
  * Button groups
@@ -925,6 +948,37 @@ html[dir="rtl"] .fab-menu .menu.right {
   justify-content: center;
   gap: var(--spacing-05);
   border-radius: var(--radius-full);
+  position: relative;
+}
+
+.icon-btn .badge {
+  position: absolute;
+  top: var(--spacing-1);
+  right: var(--spacing-1);
+}
+
+.icon-btn.extra-small {
+  min-width: var(--width-extra-small);
+  max-width: var(--width-extra-small);
+  min-height: var(--height-extra-small);
+  max-height: var(--height-extra-small);
+}
+
+.icon-btn.extra-small svg,
+.icon-btn.extra-small .arrow-dir,
+.icon-btn.extra-small .theme-light,
+.icon-btn.extra-small .theme-dark {
+  min-width: var(--spacing-5) !important;
+  max-width: var(--spacing-5) !important;
+  min-height: var(--spacing-5) !important;
+  max-height: var(--spacing-5) !important;
+}
+
+.icon-btn.small {
+  min-width: var(--width-small);
+  max-width: var(--width-small);
+  min-height: var(--height-small);
+  max-height: var(--height-small);
 }
 
 .icon-btn.medium {
@@ -1211,6 +1265,14 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
 
 .menu .menu-content.extra-large { width: 450px; }
 
+.menu .menu-content .wrapper-between {
+  padding: var(--spacing-2) var(--spacing-4);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu .menu-content .user-wrapper {
   display: flex;
   align-items: center;
@@ -1223,7 +1285,7 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
-  height: var(--height-small);
+  height: var(--height-medium);
   padding-inline: var(--spacing-4);
   color: var(--on-background-variant);
   width: 100%;
@@ -1240,6 +1302,11 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
   --state-layer-bg: var(--primary);
 }
 
+.menu .menu-content .menu-item p {
+  flex-grow: 1;
+  text-align: start;
+}
+
 .menu .menu-content .menu-item.red {
   color: var(--error);
   --state-layer-bg: var(--error);
@@ -1252,7 +1319,9 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
 .menu .menu-content .separator.x { margin-block: var(--spacing-2); }
 
 .menu .menu-content svg,
-.menu .menu-content .arrow-dir {
+.menu .menu-content .arrow-dir,
+.menu .menu-content .theme-light,
+.menu .menu-content .theme-dark {
   min-width: var(--spacing-6);
   max-width: var(--spacing-6);
   min-height: var(--spacing-6);
@@ -1403,6 +1472,7 @@ html[dir="rtl"] .navigation-rail {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-05);
+  min-width: calc(var(--width-base) - var(--spacing-14) - var(--width-large) - var(--width-large));
 }
 
 /**
@@ -1414,8 +1484,30 @@ html[dir="rtl"] .navigation-rail {
 /**
  * Search
  */
+.search {
+  position: relative;
+  width: 100%;
+  max-width: var(--width-base);
+}
 
+.search .search-wrapper {
+  background-color: var(--surface);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: var(--height-medium);
+  padding-inline: 10px;
+  width: 100%;
+  --state-layer-bg: var(--on-background);
+}
 
+.search .search-wrapper button {
+  min-width: var(--spacing-7);
+  max-width: var(--spacing-7);
+  min-height: var(--spacing-7);
+  max-height: var(--spacing-7);
+}
 
 /**
  * Bottom sheets
@@ -1487,10 +1579,17 @@ html[dir="rtl"] .navigation-rail {
 .form-box .input-wrapper {
   display: flex;
   align-items: center;
+  gap: var(--spacing-2);
   border-radius: var(--radius-full);
 }
 
 .form-box .input-wrapper[data-passwords] { padding-inline-end: 0 !important; }
+
+.form-box .input-wrapper.medium {
+  padding-inline: var(--spacing-3);
+  min-height: var(--height-medium);
+  max-height: var(--height-medium);
+}
 
 .form-box .input-wrapper.large {
   padding-inline: var(--spacing-6);
@@ -1614,6 +1713,8 @@ html[dir="rtl"] .navigation-rail {
 
 .header .desctop { display: none; }
 
+.header .icon-btn { background-color: var(--surface); }
+
 .header .container {
   display: flex;
   align-items: center;
@@ -1624,10 +1725,13 @@ html[dir="rtl"] .navigation-rail {
 .header .wrapper {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2);
+  gap: var(--spacing-3);
 }
 
-.header .text-logo { font-weight: var(--fw-large) !important; }
+.header .text-logo {
+  display: none;
+  font-weight: var(--fw-large) !important;
+}
 
 /**
  * Floating Fab
@@ -1803,6 +1907,9 @@ html[dir="rtl"] .floating-fab {
   /* Navigation rail */
   .navigation-rail { display: grid; }
 
+  /* Search */
+  .search { width: var(--width-base); }
+
   /**
    * OTHERS
    */
@@ -1841,7 +1948,14 @@ html[dir="rtl"] .floating-fab {
 /**
  * Fit size: 992px
  */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  /**
+   * OTHERS
+   */
+
+  /* Header */
+  .header .text-logo { display: -webkit-box; }
+}
 
 /**
  * Fit size: 1200px

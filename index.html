@@ -45,6 +45,7 @@
     <!-- custom js link -->
     <script type="module" src="./src/js/theme.js"></script>
     <script type="module" src="./src/js/subject.js"></script>
+    <script type="module" src="./src/js/search.js"></script>
     <script type="module" src="./src/js/app.js"></script>
 
 </head>
@@ -84,58 +85,60 @@
                     <img src="../../src/assets/images/logo-light.png" alt="The Artist Web" loading="lazy" class="theme-dark img-cover" />
                 </a>
 
-                <h3 class="text-logo text-headline-small desctop">The Artist Web</h3>
+                <a href="./index.html" class="text-logo line-clamp line-clamp-1 text-headline-small">The Artist Web</a>
 
             </div>
 
             <div class="wrapper">
 
-                <button type="button" class="icon-btn text medium" data-toggler-themes data-tooltips="Theme Dark">
-                    <div class="theme-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
-                    </div>
-                    
-                    <div class="theme-dark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
-                    </div>
+                <form action="" method="GET" class="search" data-search>
 
-                    <div class="state-layer"></div>
-                </button>
+                    <button type="button" class="search-wrapper desctop" data-open>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
 
-                <div class="menu">
-
-                    <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Languages">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                        <p class="text-on-background-variant text-body-large">Search...</p>
 
                         <div class="state-layer"></div>
                     </button>
 
-                    <ul class="menu-content small end">
+                    <button type="button" class="icon-btn text medium mobile" data-open data-tooltips="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <!-- <ul class="searchbar">
 
                         <li>
-                            <a href="#" class="menu-item active">
-                                <p class="text-body-large">English</p>
-
-                                <div class="state-layer"></div>
-                            </a>
+                            gfdgfd
                         </li>
 
-                        <li>
-                            <a href="#" class="menu-item">
-                                <p class="text-body-large">Arabic</p>
+                    </ul> -->
 
-                                <div class="state-layer"></div>
-                            </a>
-                        </li>
+                </form>
 
-                    </ul>
+                <a href="./pages/users/dashboard/notifications/index.html" class="icon-btn text medium mobile" data-tooltips="Notifications">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
 
-                </div>
+                    <span class="badge warning text-label-small">1</span>
 
-                <div class="menu">
+                    <div class="state-layer"></div>
+                </a>
+                
+                <a href="./pages/showcaseStore/store/shopping-cart.html" class="icon-btn text medium mobile" data-tooltips="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
-                    <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Shopping Cart">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                    <span class="badge warning text-label-small">1</span>
+
+                    <div class="state-layer"></div>
+                </a>
+
+                <div class="menu desctop">
+
+                    <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+
+                        <span class="badge warning text-label-small">1</span>
 
                         <div class="state-layer"></div>
                     </button>
@@ -146,7 +149,82 @@
 
                 </div>
 
-                <div class="wallet">
+                <div class="menu desctop">
+
+                    <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Shopping Cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+
+                        <span class="badge warning text-label-small">1</span>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <div class="menu-content extra-large end">
+                        gfgfd
+                    </div>
+
+                </div>
+
+                <div class="menu">
+
+                    <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Setting UI">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <div class="menu-content medium end" onclick="event.stopPropagation()">
+                        <div class="wrapper-between">
+                            <p class="text-on-background-variant text-body-large">Appearance</p>
+
+                            <button type="button" class="icon-btn outline extra-small" data-toggler-themes>
+                                <div class="theme-light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                                </div>
+                                
+                                <div class="theme-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-between">
+                            <p class="text-on-background-variant text-body-large">Languages</p>
+
+                            <button type="button" class="icon-btn outline extra-small" data-toggler-collapses="#collapses-languages">
+                                <div class="icon-btn extra-small" data-arrow>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+
+                        <ul class="collapse-content" id="collapses-languages">
+                            <li>
+                                <a href="#" class="menu-item active">
+                                    <p class="text-body-large">English</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <p class="text-body-large">Arabic</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="wallet desctop">
                     <p class="text-body-large">EGP 0</p>
 
                     <div class="icon-wallet">
