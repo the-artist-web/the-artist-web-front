@@ -44,8 +44,6 @@
 
     <!-- custom js link -->
     <script type="module" src="./src/js/theme.js"></script>
-    <script type="module" src="./src/js/subject.js"></script>
-    <script type="module" src="./src/js/search.js"></script>
     <script type="module" src="./src/js/app.js"></script>
 
 </head>
@@ -144,7 +142,13 @@
                     </button>
 
                     <div class="menu-content extra-large end">
-                        gfgfd
+
+                        <div class="wrapper-between">
+                            <h5 class="title-menu text-title-medium">Shopping Card</h5>
+
+                            <p class="text-on-background-variant text-title-medium">2 Items</p>
+                        </div>
+
                     </div>
 
                 </div>
@@ -154,13 +158,145 @@
                     <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Shopping Cart">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
-                        <span class="badge warning text-label-small">1</span>
+                        <span class="badge warning text-label-small">2</span>
 
                         <div class="state-layer"></div>
                     </button>
 
-                    <div class="menu-content extra-large end">
-                        gfgfd
+                    <div class="menu-content extra-large end" onclick="event.stopPropagation()">
+
+                        <div class="wrapper-between">
+                            <h5 class="title-menu text-title-medium">Shopping Card</h5>
+
+                            <p class="text-on-background-variant text-title-medium">2 Items</p>
+                        </div>
+
+                        <div class="separator x"></div>
+
+                        <div class="list custom-scrollbar-hidden">
+
+                            <div class="item">
+                                <div class="img-item">
+                                    <button type="button" class="icon-btn error extra-small" data-tooltips="Delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                                        <div class="state-layer"></div>
+                                    </button>
+    
+                                    <a href="./pages/showcaseStore/show.html">
+                                        <img src="https://cdn.dribbble.com/userupload/44166747/file/original-491e084c963c4e74585440444cae8d92.png?resize=400x0" alt="name user" loading="lazy" class="img-item img-cover" />
+                                    </a>
+                                </div>
+    
+                                <div class="item-content">
+                                    <div class="review">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                    </div>
+
+                                    <a href="./pages/showcaseStore/show.html" class="hover text-title-medium line-clamp line-clamp-2">Samfund – AI-Driven Fintech Support Landing Page UI Design</a>
+    
+                                    <div class="wrapper-between">
+                                        <div class="wrapper-item">
+                                            <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="@theartistweb">@theartistweb</a>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+    
+                                            <a href="./pages/search.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="ecommarce">ecommarce</a>
+                                        </div>
+
+                                        <div class="wrapper-item">
+                                            <p class="off text-nowrap text-body-large">EGP400</p>
+                                            
+                                            <p class="text-nowrap text-body-large">2 x EGP186,99</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                            <div class="item">
+                                <div class="img-item">
+                                    <button type="button" class="icon-btn error extra-small" data-tooltips="Delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                                        <div class="state-layer"></div>
+                                    </button>
+    
+                                    <a href="./pages/showcaseStore/show.html">
+                                        <img src="https://cdn.dribbble.com/userupload/12603692/file/original-6f778b0a5d830d177722b817f5870226.png?resize=1024x745&vertical=center" alt="name user" loading="lazy" class="img-item img-cover" />
+                                    </a>
+                                </div>
+    
+                                <div class="item-content">
+                                    <div class="review">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                    </div>
+
+                                    <a href="./pages/showcaseStore/show.html" class="hover text-title-medium line-clamp line-clamp-2">Landing Page UI Design</a>
+    
+                                    <div class="wrapper-between">
+                                        <div class="wrapper-item">
+                                            <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="@theartistweb">@theartistweb</a>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+    
+                                            <a href="./pages/search.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="ecommarce">ecommarce</a>
+                                        </div>
+
+                                        <div class="wrapper-item">
+                                            <p class="text-nowrap text-body-large">1 x EGP100,50</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </div>
+ 
+                        <div class="separator x"></div>
+
+                        <div class="wrapper-block">
+
+                            <div class="wrapper-between">
+                                <h5 class="text-title-medium">Subtotal</h5>
+
+                                <div class="wrapper-item">
+                                    <p class="off text-body-large">EGP300.58</p>
+                                    
+                                    <h5 class="text-title-medium">EGP287.49</h5>
+                                </div>
+                            </div>
+
+                            <div class="wrapper-between">
+                                <a href="./pages/showcaseStore/store/shopping-cart.html" class="btn outline medium w-full">
+                                    <p class="text-body-large">View cart</p>
+
+                                    <div class="state-layer"></div>
+                                </a>
+
+                                <a href="./pages/showcaseStore/store/checkout.html" class="btn filled medium w-full">
+                                    <p class="text-body-large">Check Out</p>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -175,9 +311,9 @@
 
                     <div class="menu-content medium end" onclick="event.stopPropagation()">
                         <div class="wrapper-between">
-                            <p class="text-on-background-variant text-body-large">Appearance</p>
+                            <p class="text-uppercase text-on-background-variant text-body-large">Appearance</p>
 
-                            <button type="button" class="icon-btn outline extra-small" data-toggler-themes>
+                            <button type="button" class="icon-btn outline extra-small" data-toggler-themes data-tooltips="Theme Light">
                                 <div class="theme-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
                                 </div>
@@ -191,7 +327,7 @@
                         </div>
 
                         <div class="wrapper-between">
-                            <p class="text-on-background-variant text-body-large">Languages</p>
+                            <p class="text-uppercase text-on-background-variant text-body-large">Languages</p>
 
                             <button type="button" class="icon-btn outline extra-small" data-toggler-collapses="#collapses-languages">
                                 <div class="icon-btn extra-small" data-arrow>
@@ -545,7 +681,7 @@
                 </li>
 
                 <li>
-                    <a href="./pages/users/settings.html" class="menu-item">
+                    <a href="./pages/users/settings/index.html" class="menu-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
 
                         <p class="text-body-large">Settings</p>
