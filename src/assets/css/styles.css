@@ -1202,13 +1202,14 @@ html[dir="rtl"] .card-select .check {
  */
 .item {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: max-content 1fr;
   gap: var(--spacing-4) !important;
   padding: var(--spacing-4);
   --state-layer-bg: var(--on-background);
 }
 
 .item .img-item {
+  outline: 2px solid var(--outline);
   border-radius: var(--radius-extra-small);
   min-width: 100px;
   max-width: 100px;
@@ -1219,7 +1220,7 @@ html[dir="rtl"] .card-select .check {
 .item .item-content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: var(--spacing-1);
   margin-block-start: var(--spacing-05);
 }
 
@@ -1365,6 +1366,8 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
 .menu .menu-content.large { width: 350px; }
 
 .menu .menu-content.extra-large { width: 500px; }
+
+.menu .menu-content .icon-btn { background-color: var(--surface) !important; }
 
 .menu .menu-content .title-menu { font-weight: var(--fw-large); }
 
