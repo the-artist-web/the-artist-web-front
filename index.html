@@ -105,20 +105,20 @@
                         <div class="state-layer"></div>
                     </button>
 
-                    <!-- <ul class="searchbar">
+                    <ul class="searchbar">
 
                         <li>
                             gfdgfd
                         </li>
 
-                    </ul> -->
+                    </ul>
 
                 </form>
 
                 <a href="./pages/users/dashboard/notifications/index.html" class="icon-btn text medium mobile" data-tooltips="Notifications">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
 
-                    <span class="badge warning text-label-small">1</span>
+                    <span class="badge warning text-label-small">4</span>
 
                     <div class="state-layer"></div>
                 </a>
@@ -126,158 +126,746 @@
                 <a href="./pages/showcaseStore/store/shopping-cart.html" class="icon-btn text medium mobile" data-tooltips="Shopping Cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
-                    <span class="badge warning text-label-small">1</span>
+                    <span class="badge warning text-label-small">3</span>
 
                     <div class="state-layer"></div>
                 </a>
 
+                <!-- NOTIFICATIONS -->
                 <div class="menu desctop">
 
                     <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Notifications">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
 
-                        <span class="badge warning text-label-small">1</span>
+                        <span class="badge warning text-label-small">4</span>
 
                         <div class="state-layer"></div>
                     </button>
 
-                    <div class="menu-content extra-large end">
+                    <div class="notifications menu-content extra-large end" onclick="event.stopPropagation()" data-tabs>
 
-                        <div class="wrapper-between">
-                            <!-- <h5 class="title-menu text-title-medium">Shopping Card</h5>
+                        <div class="notifications-header">
 
-                            <p class="text-on-background-variant text-title-medium">2 Items</p> -->
+                            <div class="wrapper-between">
+                                <h5 class="title-menu text-title-large">Notifications</h5>
+
+                                <div class="wrapper-item">
+                                    <a href="./pages/users/dashboard/notifications/index.html" class="icon-btn text small" data-tooltips="View All Notifications">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+        
+                                        <div class="state-layer"></div>
+                                    </a>
+
+                                    <button type="button" class="icon-btn text small" data-tooltips="Mask all as read">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-checks"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12l5 5l10 -10" /><path d="M2 12l5 5m5 -5l5 -5" /></svg>
+    
+                                        <div class="state-layer"></div>
+                                    </button>
+        
+                                    <a href="./pages/users/settings/notifications.html" class="icon-btn text small" data-tooltips="Settings Notifications">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+        
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="notifications-wrapper custom-scrollbar-hidden">
+                                <button type="button" class="tab-btn medium active" data-btn-tabs="notifications-view-all">
+                                    <p class="text-body-large">View All</p>
+
+                                    <span class="badge inverse">
+                                        <p class="text-body-small">4</p>
+                                    </span>
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <button type="button" class="tab-btn medium" data-btn-tabs="notifications-messages">
+                                    <p class="text-body-large">Messages</p>
+
+                                    <!-- <span class="badge inverse">
+                                        <p class="text-body-small">0</p>
+                                    </span> -->
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <button type="button" class="tab-btn medium" data-btn-tabs="notifications-follow">
+                                    <p class="text-body-large">Follow</p>
+
+                                    <!-- <span class="badge inverse">
+                                        <p class="text-body-small">0</p>
+                                    </span> -->
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <button type="button" class="tab-btn medium" data-btn-tabs="notifications-liked">
+                                    <p class="text-body-large">Liked</p>
+
+                                    <!-- <span class="badge inverse">
+                                        <p class="text-body-small">0</p>
+                                    </span> -->
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <button type="button" class="tab-btn medium" data-btn-tabs="notifications-saved">
+                                    <p class="text-body-large">Saved</p>
+
+                                    <!-- <span class="badge inverse">
+                                        <p class="text-body-small">0</p>
+                                    </span> -->
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane active" data-tabs-id="notifications-view-all">
+                            <div class="list custom-scrollbar-hidden">
+    
+                                <div class="item">
+    
+                                    <a href="./pages/users/profile/index.html" class="avatar medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+    
+                                        <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" />
+                                        
+                                        <div class="icon-btn warning">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.821 4.91c3.899 -2.765 9.468 -2.539 13.073 .535c3.667 3.129 4.168 8.238 1.152 11.898c-2.841 3.447 -7.965 4.583 -12.231 2.805l-.233 -.101l-4.374 .931l-.04 .006l-.035 .007h-.018l-.022 .005h-.038l-.033 .004l-.021 -.001l-.023 .001l-.033 -.003h-.035l-.022 -.004l-.022 -.002l-.035 -.007l-.034 -.005l-.016 -.004l-.024 -.005l-.049 -.016l-.024 -.005l-.011 -.005l-.022 -.007l-.045 -.02l-.03 -.012l-.011 -.006l-.014 -.006l-.031 -.018l-.045 -.024l-.016 -.011l-.037 -.026l-.04 -.027l-.002 -.004l-.013 -.009l-.043 -.04l-.025 -.02l-.006 -.007l-.056 -.062l-.013 -.014l-.011 -.014l-.039 -.056l-.014 -.019l-.005 -.01l-.042 -.073l-.007 -.012l-.004 -.008l-.007 -.012l-.014 -.038l-.02 -.042l-.004 -.016l-.004 -.01l-.017 -.061l-.007 -.018l-.002 -.015l-.005 -.019l-.005 -.033l-.008 -.042l-.002 -.031l-.003 -.01v-.016l-.004 -.054l.001 -.036l.001 -.023l.002 -.053l.004 -.025v-.019l.008 -.035l.005 -.034l.005 -.02l.004 -.02l.018 -.06l.003 -.013l1.15 -3.45l-.022 -.037c-2.21 -3.747 -1.209 -8.391 2.413 -11.119z" /></svg>
+                                        </div>
+                                    </a>
+    
+                                    <div class="item-content">
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <a href="./pages/users/profile/index.html" class="wrapper-item hover">
+                                                    <p class="text-body-large line-clamp line-clamp-1">@theartistweb</p>
+    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 18px; max-width: 18px; min-height: 18px; max-height: 18px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" /></svg>
+                                                </a>
+                                            </div>
+    
+                                            <div class="circle warning">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <a href="./pages/users/messages/show.html" class="border-box line-clamp line-clamp-3 text-body-large text-on-background-variant">Please be kind, but with right person 😂</a>
+    
+                                        <a href="./pages/users/messages/show.html" class="wrapper-between">
+                                            <p class="text-body-large text-on-background-variant">Friday 2:20pm</p>
+    
+                                            <p class="text-body-large text-on-background-variant">Sep 20, 2024</p>
+                                        </a>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="item">
+    
+                                    <a href="./pages/users/profile/index.html" class="avatar medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+    
+                                        <!-- <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" /> -->
+                                        
+                                        <div class="icon-btn success">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>
+                                        </div>
+                                    </a>
+    
+                                    <div class="item-content">
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <a href="./pages/users/profile/index.html" class="wrapper-item hover">
+                                                    <p class="text-body-large line-clamp line-clamp-1">@ali</p>
+                                                </a>
+    
+                                                <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1">followed you</a>
+                                            </div>
+    
+                                            <div class="circle success">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="wrapper-between">
+                                            <p class="text-body-large text-on-background-variant">Friday 2:20pm</p>
+    
+                                            <p class="text-body-large text-on-background-variant">Sep 20, 2024</p>
+                                        </a>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="item">
+    
+                                    <a href="./pages/users/profile/index.html" class="avatar medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+    
+                                        <!-- <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" /> -->
+                                        
+                                        <div class="icon-btn error">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+                                        </div>
+                                    </a>
+    
+                                    <div class="item-content">
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <a href="./pages/users/profile/index.html" class="wrapper-item hover">
+                                                    <p class="text-body-large line-clamp line-clamp-1">@hamed</p>
+                                                </a>
+    
+                                                <a href="./pages/subjects/show.html" class="text-body-large text-on-background-variant">Liked</a>
+    
+                                                <a href="./pages/subjects/show.html" class="text-body-large line-clamp line-clamp-1">Your subject</a>
+                                            </div>
+    
+                                            <div class="circle error">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <a href="./pages/subjects/show.html" class="wrapper-between">
+                                            <p class="text-body-large text-on-background-variant">Friday 2:20pm</p>
+    
+                                            <p class="text-body-large text-on-background-variant">Sep 20, 2024</p>
+                                        </a>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="item">
+    
+                                    <a href="./pages/users/profile/index.html" class="avatar medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+    
+                                        <!-- <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" /> -->
+                                        
+                                        <div class="icon-btn inverse">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 2a5 5 0 0 1 5 5v14a1 1 0 0 1 -1.555 .832l-5.445 -3.63l-5.444 3.63a1 1 0 0 1 -1.55 -.72l-.006 -.112v-14a5 5 0 0 1 5 -5h4z" /></svg>
+                                        </div>
+                                    </a>
+    
+                                    <div class="item-content">
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <a href="./pages/users/profile/index.html" class="wrapper-item hover">
+                                                    <p class="text-body-large line-clamp line-clamp-1">@hamed</p>
+                                                </a>
+    
+                                                <a href="./pages/courses/show.html" class="text-body-large text-on-background-variant">Saved</a>
+    
+                                                <a href="./pages/courses/show.html" class="text-body-large line-clamp line-clamp-1">Your course</a>
+                                            </div>
+    
+                                            <div class="circle inverse">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <a href="./pages/courses/show.html" class="wrapper-between">
+                                            <p class="text-body-large text-on-background-variant">Friday 2:20pm</p>
+    
+                                            <p class="text-body-large text-on-background-variant">Sep 20, 2024</p>
+                                        </a>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <!-- <div class="empty">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.346 5.353c.21 -.129 .428 -.246 .654 -.353a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3m-1 3h-13a4 4 0 0 0 2 -3v-3a6.996 6.996 0 0 1 1.273 -3.707" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /><path d="M3 3l18 18" /></svg>
+                                    </div>
+    
+                                    <div class="empty-content">
+                                        <h4 class="text-title-medium">No notifications yet</h4>
+                                        <p class="text-on-background-variant text-body-large">You’ll get updates when people join your community, interact with your posts, and more</p>
+                                    </div>
+                                </div> -->
+    
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" data-tabs-id="notifications-messages">
+                            <div class="list custom-scrollbar-hidden">
+
+                                <div class="empty">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.346 5.353c.21 -.129 .428 -.246 .654 -.353a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3m-1 3h-13a4 4 0 0 0 2 -3v-3a6.996 6.996 0 0 1 1.273 -3.707" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /><path d="M3 3l18 18" /></svg>
+                                    </div>
+    
+                                    <div class="empty-content">
+                                        <h4 class="text-title-medium">No notifications yet</h4>
+                                        <p class="text-on-background-variant text-body-large">You’ll get updates when people join your community, interact with your posts, and more</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" data-tabs-id="notifications-follow">
+                            <div class="list custom-scrollbar-hidden">
+
+                                <div class="empty">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.346 5.353c.21 -.129 .428 -.246 .654 -.353a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3m-1 3h-13a4 4 0 0 0 2 -3v-3a6.996 6.996 0 0 1 1.273 -3.707" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /><path d="M3 3l18 18" /></svg>
+                                    </div>
+    
+                                    <div class="empty-content">
+                                        <h4 class="text-title-medium">No notifications yet</h4>
+                                        <p class="text-on-background-variant text-body-large">You’ll get updates when people join your community, interact with your posts, and more</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" data-tabs-id="notifications-liked">
+                            <div class="list custom-scrollbar-hidden">
+
+                                <div class="empty">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.346 5.353c.21 -.129 .428 -.246 .654 -.353a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3m-1 3h-13a4 4 0 0 0 2 -3v-3a6.996 6.996 0 0 1 1.273 -3.707" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /><path d="M3 3l18 18" /></svg>
+                                    </div>
+    
+                                    <div class="empty-content">
+                                        <h4 class="text-title-medium">No notifications yet</h4>
+                                        <p class="text-on-background-variant text-body-large">You’ll get updates when people join your community, interact with your posts, and more</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" data-tabs-id="notifications-saved">
+                            <div class="list custom-scrollbar-hidden">
+
+                                <div class="empty">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.346 5.353c.21 -.129 .428 -.246 .654 -.353a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3m-1 3h-13a4 4 0 0 0 2 -3v-3a6.996 6.996 0 0 1 1.273 -3.707" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /><path d="M3 3l18 18" /></svg>
+                                    </div>
+    
+                                    <div class="empty-content">
+                                        <h4 class="text-title-medium">No notifications yet</h4>
+                                        <p class="text-on-background-variant text-body-large">You’ll get updates when people join your community, interact with your posts, and more</p>
+                                    </div>
+                                </div>
+    
+                            </div>
                         </div>
 
                     </div>
 
                 </div>
 
+                <!-- SHOPPING CART -->
                 <div class="menu desctop">
 
                     <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Shopping Cart">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
-                        <span class="badge warning text-label-small">2</span>
+                        <span class="badge warning text-label-small">3</span>
 
                         <div class="state-layer"></div>
                     </button>
 
-                    <div class="menu-content extra-large end" onclick="event.stopPropagation()">
+                    <div class="shopping-card menu-content extra-large end" data-tabs onclick="event.stopPropagation()">
 
-                        <div class="wrapper-between">
-                            <h5 class="title-menu text-title-medium">Shopping Card</h5>
+                        <div class="shopping-card-header">
+                            <div class="wrapper-between">
+                                <h4 class="title-menu text-title-large">Shopping Cart</h4>
+    
+                                <button type="button" class="icon-btn text small" data-tooltips="delete all">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
 
-                            <p class="text-on-background-variant text-title-medium">2 Items</p>
+                                    <div class="state-layer"></div>
+                                </button>
+                            </div>
+
+                            <div class="shopping-card-wrapper custom-scrollbar-hidden">
+                                <button type="button" class="tab-btn medium active" data-btn-tabs="shopping-card-view-all">
+                                    <p class="text-body-large">View All</p>
+
+                                    <span class="badge inverse">
+                                        <p class="text-body-small">3</p>
+                                    </span>
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <button type="button" class="tab-btn medium" data-btn-tabs="shopping-card-themes">
+                                    <p class="text-body-large">Themes</p>
+
+                                    <!-- <span class="badge inverse">
+                                        <p class="text-body-small">0</p>
+                                    </span> -->
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <button type="button" class="tab-btn medium" data-btn-tabs="shopping-card-courses">
+                                    <p class="text-body-large">Courses</p>
+
+                                    <span class="badge inverse">
+                                        <p class="text-body-small">1</p>
+                                    </span>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </div>
+
                         </div>
 
-                        <div class="separator x"></div>
+                        <div class="tab-pane active" data-tabs-id="shopping-card-view-all">
 
-                        <div class="list custom-scrollbar-hidden">
+                            <div class="list custom-scrollbar-hidden">
 
-                            <div class="item">
-                                <a href="./pages/showcaseStore/show.html">
-                                    <img src="https://cdn.dribbble.com/userupload/44166747/file/original-491e084c963c4e74585440444cae8d92.png?resize=400x0" alt="name user" loading="lazy" class="img-item img-cover" />
-                                </a>
-    
-                                <div class="item-content">
-                                    <div class="wrapper-between">
-                                        <div class="review">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                <div class="item">
+                                    <a href="./pages/showcaseStore/show.html">
+                                        <img src="https://cdn.dribbble.com/userupload/44166747/file/original-491e084c963c4e74585440444cae8d92.png?resize=400x0" alt="name user" loading="lazy" class="img-item img-cover" />
+                                    </a>
+        
+                                    <div class="item-content">
+                                        <div class="wrapper-between">
+                                            <div class="review">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <p class="text-body-large text-on-background-variant">5.0</p>
+
+                                                <p class="text-body-medium text-on-background-variant">(314 ratings)</p>
+                                            </div>
+
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            
+                                                <div class="state-layer"></div>
+                                            </button>
                                         </div>
 
-                                        <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="alerts-dialog-shopping-card-1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-        
-                                            <div class="state-layer"></div>
-                                        </button>
-                                    </div>
-
-                                    <a href="./pages/showcaseStore/show.html" class="hover text-title-medium line-clamp line-clamp-2">Samfund – AI-Driven Fintech Support Landing Page UI Design</a>
+                                        <a href="./pages/showcaseStore/show.html" class="hover text-title-medium line-clamp line-clamp-2">Samfund – AI-Driven Fintech Support Landing Page UI Design</a>
     
-                                    <div class="wrapper-between">
                                         <div class="wrapper-item">
-                                            <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="@theartistweb">@theartistweb</a>
+                                            <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover">@ali</a>
     
                                             <div class="circle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
                                             </div>
     
-                                            <a href="./pages/search.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="ecommarce">ecommarce</a>
+                                            <a href="./pages/search.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover">bloggin</a>
                                         </div>
 
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <div class="chips filled">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+    
+                                                    <p class="text-body-small">Premium</p>
+                                                </div>
+
+                                                <div class="chips warning">
+                                                    <p class="text-body-small">Highest Rated</p>
+                                                </div>
+
+                                                <div class="chips success">
+                                                    <p class="text-body-small">New</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <p class="off text-nowrap text-body-large">EGP400</p>
+                                                
+                                                <p class="text-nowrap text-body-large">2 x EGP186,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="./pages/showcaseStore/show.html">
+                                        <img src="https://cdn.dribbble.com/userupload/12603692/file/original-6f778b0a5d830d177722b817f5870226.png?resize=1024x745&vertical=center" alt="name user" loading="lazy" class="img-item img-cover" />
+                                    </a>
+        
+                                    <div class="item-content">
+                                        <div class="wrapper-between">
+                                            <div class="review">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-outline-variant icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                                <p class="text-body-large text-on-background-variant">4.0</p>
+
+                                                <p class="text-body-medium text-on-background-variant">(215 ratings)</p>
+                                            </div>
+
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+
+                                        <a href="./pages/showcaseStore/show.html" class="hover text-title-medium line-clamp line-clamp-2">Landing Page UI Design</a>
+    
                                         <div class="wrapper-item">
-                                            <p class="off text-nowrap text-body-large">EGP400</p>
+                                            <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover">@theartistweb</a>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+    
+                                            <a href="./pages/search.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover">ecommarce</a>
+                                        </div>
+
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <div class="chips filled">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+    
+                                                    <p class="text-body-small">Premium</p>
+                                                </div>
+
+                                                <div class="chips success">
+                                                    <p class="text-body-small">New</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <p class="text-nowrap text-body-large">1 x EGP100,50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="./pages/courses/show.html">
+                                        <img src="https://img-c.udemycdn.com/course/240x135/3687702_5292_3.jpg" alt="name user" loading="lazy" class="img-item img-cover" />
+                                    </a>
+        
+                                    <div class="item-content">
+                                        <div class="wrapper-between-nowrap">
+                                            <a href="./pages/courses/show.html" class="hover text-title-medium line-clamp line-clamp-2">Short Programming intro in Python and C++</a>
+
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover">@theartistweb</a>
+
+                                        <div class="review">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
                                             
-                                            <p class="text-nowrap text-body-large">2 x EGP186,99</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <p class="text-body-large text-on-background-variant">5.0</p>
+
+                                            <p class="text-body-medium text-on-background-variant">(1,252 ratings)</p>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="state-layer"></div>
-                            </div>
-
-                            <div class="item">
-                                <a href="./pages/showcaseStore/show.html">
-                                    <img src="https://cdn.dribbble.com/userupload/12603692/file/original-6f778b0a5d830d177722b817f5870226.png?resize=1024x745&vertical=center" alt="name user" loading="lazy" class="img-item img-cover" />
-                                </a>
     
-                                <div class="item-content">
-                                    <div class="wrapper-between">
-                                        <div class="review">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                                        </div>
-
-                                        <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="alerts-dialog-shopping-card-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-        
-                                            <div class="state-layer"></div>
-                                        </button>
-                                    </div>
-
-                                    <a href="./pages/showcaseStore/show.html" class="hover text-title-medium line-clamp line-clamp-2">Landing Page UI Design</a>
-    
-                                    <div class="wrapper-between">
                                         <div class="wrapper-item">
-                                            <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="@theartistweb">@theartistweb</a>
+                                            <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">9 total hours</p>
     
                                             <div class="circle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
                                             </div>
+
+                                            <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">116 lectures</p>
     
-                                            <a href="./pages/search.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover" data-tooltips="ecommarce">ecommarce</a>
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+
+                                            <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">Beginner</p>
                                         </div>
 
-                                        <div class="wrapper-item">
-                                            <p class="text-nowrap text-body-large">1 x EGP100,50</p>
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <div class="chips filled">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+    
+                                                    <p class="text-body-small">Premium</p>
+                                                </div>
+
+                                                <div class="chips warning">
+                                                    <p class="text-body-small">Highest Rated</p>
+                                                </div>
+
+                                                <div class="chips success">
+                                                    <p class="text-body-small">Bestseller</p>
+                                                </div>
+
+                                                <div class="chips error">
+                                                    <p class="text-body-small">Hot & New</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <p class="off text-nowrap text-body-large">EGP400</p>
+                                                
+                                                <p class="text-nowrap text-body-large">2 x EGP186,99</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="state-layer"></div>
                             </div>
 
                         </div>
- 
-                        <div class="separator x"></div>
 
-                        <div class="wrapper-block">
+                        <div class="tab-pane" data-tabs-id="shopping-card-themes">
+
+                            <div class="list custom-scrollbar-hidden">
+
+                                <div class="empty">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M12.5 17h-6.5v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /><path d="M16 22l5 -5" /><path d="M21 21.5v-4.5h-4.5" /></svg>
+                                    </div>
+
+                                    <div class="empty-content">
+                                        <h4 class="text-title-medium">Shopping Cart Empty</h4>
+        
+                                        <p class="text-on-background-variant text-body-large">You haven't shopped yet, Start your first shopping spree</p>
+                                    </div>
+
+                                    <a href="./pages/showcaseStore/index.html" class="btn tonal small">
+                                        <p class="text-body-large">Showcase & Store</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" data-tabs-id="shopping-card-courses">
+
+                            <div class="list custom-scrollbar-hidden">
+
+                                <div class="item">
+                                    <a href="./pages/courses/show.html">
+                                        <img src="https://img-c.udemycdn.com/course/240x135/3687702_5292_3.jpg" alt="name user" loading="lazy" class="img-item img-cover" />
+                                    </a>
+        
+                                    <div class="item-content">
+                                        <div class="wrapper-between-nowrap">
+                                            <a href="./pages/courses/show.html" class="hover text-title-medium line-clamp line-clamp-2">Short Programming intro in Python and C++</a>
+
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-1 hover">@theartistweb</a>
+
+                                        <div class="review">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                                            <p class="text-body-large text-on-background-variant">5.0</p>
+
+                                            <p class="text-body-medium text-on-background-variant">(1,252 ratings)</p>
+                                        </div>
+    
+                                        <div class="wrapper-item">
+                                            <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">9 total hours</p>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+
+                                            <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">116 lectures</p>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+
+                                            <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">Beginner</p>
+                                        </div>
+
+                                        <div class="wrapper-between">
+                                            <div class="wrapper-item">
+                                                <div class="chips filled">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+    
+                                                    <p class="text-body-small">Premium</p>
+                                                </div>
+
+                                                <div class="chips warning">
+                                                    <p class="text-body-small">Highest Rated</p>
+                                                </div>
+
+                                                <div class="chips success">
+                                                    <p class="text-body-small">Bestseller</p>
+                                                </div>
+
+                                                <div class="chips error">
+                                                    <p class="text-body-small">Hot & New</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="wrapper-item">
+                                                <p class="off text-nowrap text-body-large">EGP400</p>
+                                                
+                                                <p class="text-nowrap text-body-large">2 x EGP186,99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shopping-card-footer">
 
                             <div class="wrapper-between">
                                 <h5 class="text-title-medium">Subtotal</h5>
 
                                 <div class="wrapper-item">
-                                    <p class="off text-body-large">EGP300.58</p>
+                                    <p class="off text-body-medium">EGP800</p>
                                     
-                                    <h5 class="text-title-medium">EGP287.49</h5>
+                                    <h5 class="text-title-medium">EGP474.48</h5>
                                 </div>
                             </div>
 
@@ -301,6 +889,7 @@
 
                 </div>
 
+                <!-- SETTINGS UI -->
                 <div class="menu">
 
                     <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Setting UI">
@@ -309,11 +898,11 @@
                         <div class="state-layer"></div>
                     </button>
 
-                    <div class="menu-content medium end" onclick="event.stopPropagation()">
+                    <div class="setting-ui menu-content medium end" onclick="event.stopPropagation()">
                         <div class="wrapper-between">
                             <p class="text-uppercase text-on-background-variant text-body-large">Appearance</p>
 
-                            <button type="button" class="icon-btn outline extra-small" data-toggler-themes data-tooltips="Theme Light">
+                            <button type="button" class="icon-btn text extra-small" data-toggler-themes data-tooltips="Theme Light">
                                 <div class="theme-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
                                 </div>
@@ -329,7 +918,7 @@
                         <div class="wrapper-between">
                             <p class="text-uppercase text-on-background-variant text-body-large">Languages</p>
 
-                            <button type="button" class="icon-btn outline extra-small" data-toggler-collapses="#collapses-languages">
+                            <button type="button" class="icon-btn text extra-small" data-toggler-collapses="#collapses-languages">
                                 <div class="icon-btn extra-small" data-arrow>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                                 </div>
@@ -633,7 +1222,7 @@
 
             <ul class="menu-content medium right down">
 
-                <a href="./pages/user/profile/index.html" class="user-wrapper">
+                <a href="./pages/users/profile/index.html" class="user-wrapper">
                     <div class="avatar medium">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                         
@@ -755,7 +1344,27 @@
     </aside>
 
     <!-- ALERTS DIALOG -->
-    
+    <div class="alerts-dialog" id="alerts-dialog-shopping-card">
+        <h5 class="text-title-medium">Are you sure you want to delete "Name Theme"?</h5>
+
+        <div class="alerts-dialog-footer">
+            <button type="button" class="btn text medium" data-dismiss>
+                <p class="text-body-large">Cancel</p>
+
+                <div class="state-layer"></div>
+            </button>
+
+            <form action="" method="POST">
+                <button type="submit" class="btn error medium">
+                    <p class="text-body-large">Delete</p>
+
+                    <div class="state-layer"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- DIALOG REVIEWS -->
 
     <main class="main" data-main>
 
@@ -779,13 +1388,23 @@
         <ul class="menu top right">
 
             <li class="fav-item">
-                <button type="button" class="btn tonal large" data-dialogs="#subject">
+                <a href="./pages/subjects/create.html" class="btn tonal large">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11.036 19.933a9.798 9.798 0 0 1 -3.336 -.933l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c2.128 1.815 3.053 4.361 2.694 6.81"></path><path d="M20 21l2 -2l-2 -2"></path><path d="M17 17l-2 2l2 2"></path></svg>
 
                     <p class="text-body-large">Subject</p>
 
                     <div class="state-layer"></div>
-                </button>
+                </a>
+            </li>
+
+            <li class="fav-item">
+                <a href="./pages/courses/create.html" class="btn tonal large">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 4v16l13 -8z" /></svg>
+
+                    <p class="text-body-large">Course</p>
+
+                    <div class="state-layer"></div>
+                </a>
             </li>
 
             <li class="fav-item">

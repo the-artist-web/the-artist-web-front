@@ -7,7 +7,7 @@ import { StartLoading } from "./components/StartLoading.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Tooltip } from "./components/Tooltip.js";
 import { Menu } from "./components/Menu.js";
-import { Dismiss } from "./components/Dismiss.js";
+import { DocumentDismiss } from "./components/DocumentDismiss.js";
 import { Select } from "./components/Select.js";
 import { Password } from "./components/Password.js";
 import { MinusTime } from "./components/MinusTime.js";
@@ -15,6 +15,10 @@ import { OTP } from "./components/Otp.js";
 import { Collapse } from "./components/Collapse.js";
 import { FabMenu } from "./components/FabMenu.js";
 import { NavigationRail } from "./components/NavigationRail.js";
+import { Overlay } from "./components/Overlay.js";
+import { AlertDialog } from "./components/AlertDialog.js";
+import { Dismiss } from "./components/Dismiss.js";
+import { Tab } from "./components/Tab.js";
 
 /**
  * Get Overlay & Body & Main
@@ -22,6 +26,11 @@ import { NavigationRail } from "./components/NavigationRail.js";
 const $overlay = document.querySelector("[data-overlay]");
 const $main = document.querySelector("[data-main]");
 const $body = document.body;
+
+/**
+ * Toggler Overlay
+ */
+$overlay.addEventListener("click", () => Overlay($overlay, $body));
 
 /**
  * Start Loading
@@ -45,7 +54,7 @@ if ($tooltips) $tooltips.forEach($elem => Tooltip($elem));
  * Menus
  */
 const $togglerMenus = document.querySelectorAll("[data-toggler-menus]");
-if ($togglerMenus) $togglerMenus.forEach($elem => Menu($elem, $body));
+if ($togglerMenus) $togglerMenus.forEach($elem => Menu($elem));
 
 /**
  * Select
@@ -81,7 +90,7 @@ if ($togglerCollapses) $togglerCollapses.forEach($elem => Collapse($elem));
  * Fab Menus
  */
 const $togglerFabsMenu = document.querySelectorAll("[data-toggler-fabs-menu]");
-if ($togglerFabsMenu) $togglerFabsMenu.forEach($elem => FabMenu($elem, $body));
+if ($togglerFabsMenu) $togglerFabsMenu.forEach($elem => FabMenu($elem));
 
 /**
  * Toggler Navigation Rail
@@ -92,6 +101,24 @@ const $navigationRail = document.querySelector("[data-navigation-rail]");
 if ($togglerNavigationRail, $navigationRail) NavigationRail($togglerNavigationRail, $navigationRail, $main);
 
 /**
- * Dismiss
+ * Alerts Dialog
  */
-document.addEventListener("click", () => Dismiss($body, $overlay));
+const $alertsDialog = document.querySelectorAll("[data-alerts-dialog]");
+$alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog($elem, $overlay, $body)));
+
+/**
+ * Tabs
+ */
+const $tabs = document.querySelectorAll("[data-tabs]");
+$tabs.forEach($elem => Tab($elem));
+
+/**
+ * Toggler Dismiss
+ */
+const $dismiss = document.querySelectorAll("[data-dismiss]");
+$dismiss.forEach($elem => $elem.addEventListener("click", () => Dismiss($overlay, $body)));
+
+/**
+ * Document Dismiss
+ */
+document.addEventListener("click", () => DocumentDismiss());

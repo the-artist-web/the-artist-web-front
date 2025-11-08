@@ -1,6 +1,6 @@
 "use strict";
 
-export const Dismiss = ($overlay, $body) => {
+export const Overlay = ($overlay, $body) => {
     $overlay.classList.remove("active");
     $body.classList.add("load");
 

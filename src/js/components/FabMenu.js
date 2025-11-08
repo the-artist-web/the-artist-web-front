@@ -1,6 +1,6 @@
 "use strict";
 
-export const FabMenu = ($element, $body) => {
+export const FabMenu = ($element) => {
     $element.addEventListener("click", (e) => {
         e.stopPropagation();
 
@@ -23,7 +23,6 @@ export const FabMenu = ($element, $body) => {
 
         $menu.classList.toggle("active");
         $element.classList.toggle("active");
-        $body.classList.toggle("load");
 
         if ($menu.classList.contains("active"))
             $element.innerHTML = `
