@@ -2467,6 +2467,9 @@ html[dir="rtl"] .floating-fab {
   /* Navigation rail */
   .navigation-rail { display: grid; }
 
+  /* Navigation bar */
+  .navigation-bar { display: none; }
+
   /* Search */
   .search { width: 300px; }
 
