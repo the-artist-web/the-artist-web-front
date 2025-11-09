@@ -20,6 +20,7 @@ import { AlertDialog } from "./components/AlertDialog.js";
 import { Dismiss } from "./components/Dismiss.js";
 import { Tab } from "./components/Tab.js";
 import { Search } from "./components/Search.js";
+import { BottomSheet } from "./components/BottomSheet.js";
 
 /**
  * Get Overlay & Body & Main
@@ -118,6 +119,12 @@ if ($tabs) $tabs.forEach($elem => Tab($elem));
  */
 const $search = document.querySelector("[data-search]");
 if ($search) Search($search);
+
+/**
+ * Bottom Sheets
+ */
+const $bottomSheets = document.querySelectorAll("[data-bottom-sheets]");
+if ($bottomSheets) $bottomSheets.forEach($elem => $elem.addEventListener("click", () => BottomSheet($elem, $overlay, $body)));
 
 /**
  * Toggler Dismiss

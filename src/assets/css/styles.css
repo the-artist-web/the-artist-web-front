@@ -1931,7 +1931,7 @@ html[dir="rtl"] .navigation-rail {
  */
 .bottom-sheet {
   position: fixed;
-  left: 0;
+  left: 50%;
   right: 0;
   bottom: 0;
   z-index: 60;
@@ -1940,14 +1940,18 @@ html[dir="rtl"] .navigation-rail {
   background-color: var(--surface-variant);
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 500px;
   height: auto;
-  transform: translateY(100%);
+  transform: translateY(100%) translateX(-50%);
   max-height: calc(100dvh - var(--spacing-4));
   transition-duration: var(--tr-duration-medium);
   transition-property: transform;
 }
 
-.bottom-sheet.active { transform: translateY(0%); }
+.bottom-sheet.active { transform: translateY(0%) translateX(-50%); }
+
+.bottom-sheet .separator { margin-block: var(--spacing-2); }
 
 .bottom-sheet .line-close {
   width: 100%;
@@ -1956,6 +1960,7 @@ html[dir="rtl"] .navigation-rail {
   border-radius: var(--radius-full);
   background-color: var(--outline-variant);
   margin-inline: auto; 
+  margin-block-end: var(--spacing-4);
   --state-layer-bg: var(--on-background);
 }
 
@@ -1963,12 +1968,27 @@ html[dir="rtl"] .navigation-rail {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-4);
+  padding: 0 var(--spacing-4) var(--spacing-4);
 }
 
 .bottom-sheet .sheet-list {
   display: flex;
   flex-direction: column;
+}
+
+.bottom-sheet .user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  --state-layer-bg: var(--on-background);
+}
+
+.bottom-sheet .user-wrapper .wrapper-block {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-05) !important;
 }
 
 .bottom-sheet .sheet-link {
@@ -1991,6 +2011,15 @@ html[dir="rtl"] .navigation-rail {
 }
 
 .bottom-sheet .sheet-link.active svg { color: var(--primary); }
+
+.bottom-sheet .sheet-link.red {
+  color: var(--error);
+  --state-layer-bg: var(--error);
+}
+
+.bottom-sheet .sheet-link.red svg { color: var(--error); }
+
+.bottom-sheet .sheet-link.red p { font-weight: var(--fw-large); }
 
 .bottom-sheet .sheet-link .wrapper-item {
   display: flex;
