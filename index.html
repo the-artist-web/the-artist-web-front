@@ -91,7 +91,13 @@
 
                 <form action="" method="GET" class="search" data-search>
 
-                    <button type="button" class="search-wrapper desctop" data-open>
+                    <button type="button" class="icon-btn text medium mobile" data-opens data-tooltips="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="button" class="search-wrapper desctop" data-opens>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
 
                         <p class="text-on-background-variant text-body-large">Search...</p>
@@ -99,19 +105,185 @@
                         <div class="state-layer"></div>
                     </button>
 
-                    <button type="button" class="icon-btn text medium mobile" data-open data-tooltips="Search">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                    <div class="searchbar" onclick="event.stopPropagation()" data-searchbar>
 
-                        <div class="state-layer"></div>
-                    </button>
+                        <div class="searchbar-wrapper">
 
-                    <ul class="searchbar">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                            </button>
 
-                        <li>
-                            gfdgfd
-                        </li>
+                            <input type="text" placeholder="Search..." name="search" value="" class="text-body-large" required data-field />
 
-                    </ul>
+                            <button type="button" class="icon-btn text extra-small mobile" data-close data-tooltips="Close Search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                        </div>
+
+                        <div class="list custom-scrollbar-hidden">
+
+                            <ul class="list-search" data-search-hidden>
+                                <li>
+                                    <a href="./pages/subjects/create.html" class="searchbar-item">
+                                        <div class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+    
+                                            <p class="text-body-large">Create Subject</p>
+                                        </div>
+
+                                        <div class="arrow-dir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="./pages/courses/create.html" class="searchbar-item">
+                                        <div class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 4v16l13 -8z" /></svg>
+    
+                                            <p class="text-body-large">Create Course</p>
+                                        </div>
+
+                                        <div class="arrow-dir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="./pages/showcaseStore/create.html" class="searchbar-item">
+                                        <div class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brush"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21v-4a4 4 0 1 1 4 4h-4" /><path d="M21 3a16 16 0 0 0 -12.8 10.2" /><path d="M21 3a16 16 0 0 1 -10.2 12.8" /><path d="M10.6 9a9 9 0 0 1 4.4 4.4" /></svg>
+    
+                                            <p class="text-body-large">Create Theme</p>
+                                        </div>
+
+                                        <div class="arrow-dir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="list-search" data-search-hidden>
+                                <li class="wrapper-between">
+                                    <p class="text-on-background-variant text-body-large">Recent Search</p>
+
+                                    <button type="button" class="text-on-background-variant hover">
+                                        <p class="text-body-large">Delete All</p>
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <div class="searchbar-item">
+                                        <a href="./pages/search.html" class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
+
+                                            <p class="line-clamp line-clamp-1 text-body-large">C++ Course</p>
+                                        </a>
+
+                                        <div class="wrapper-item">
+                                            <p class="text-on-background-variant text-body-large">Courses</p>
+                                            
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="searchbar-item">
+                                        <a href="./pages/search.html" class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
+    
+                                            <p class="line-clamp line-clamp-1 text-body-large">ali hamed</p>
+                                        </a>
+
+                                        <div class="wrapper-item">
+                                            <p class="text-on-background-variant text-body-large">Users</p>
+                                            
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="list-search" data-search-show>
+                                <li>
+                                    <div class="searchbar-item">
+                                        <a href="./pages/search.html" class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+
+                                            <p class="line-clamp line-clamp-1 text-body-large">Html Learning 2025</p>
+                                        </a>
+
+                                        <p class="text-on-background-variant text-body-large">Courses</p>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="searchbar-item">
+                                        <a href="./pages/search.html" class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
+
+                                            <p class="line-clamp line-clamp-1 text-body-large">C++ Course</p>
+                                        </a>
+
+                                        <div class="wrapper-item">
+                                            <p class="text-on-background-variant text-body-large">Courses</p>
+                                            
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="searchbar-item">
+                                        <a href="./pages/search.html" class="wrapper-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+    
+                                            <p class="line-clamp line-clamp-1 text-body-large">Build an AWESOME React JS Portfolio Website (Coding Bootcamp)</p>
+                                        </a>
+
+                                        <p class="text-on-background-variant text-body-large">Themes</p>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
 
                 </form>
 
@@ -552,7 +724,7 @@
                                                 <p class="text-body-medium text-on-background-variant">(314 ratings)</p>
                                             </div>
 
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
             
                                                 <div class="state-layer"></div>
@@ -620,7 +792,7 @@
                                                 <p class="text-body-medium text-on-background-variant">(215 ratings)</p>
                                             </div>
 
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
             
                                                 <div class="state-layer"></div>
@@ -668,7 +840,7 @@
                                         <div class="wrapper-between-nowrap">
                                             <a href="./pages/courses/show.html" class="hover text-title-medium line-clamp line-clamp-2">Short Programming intro in Python and C++</a>
 
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
             
                                                 <div class="state-layer"></div>
@@ -782,7 +954,7 @@
                                         <div class="wrapper-between-nowrap">
                                             <a href="./pages/courses/show.html" class="hover text-title-medium line-clamp line-clamp-2">Short Programming intro in Python and C++</a>
 
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog-shopping-card">
+                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
             
                                                 <div class="state-layer"></div>
@@ -1283,7 +1455,7 @@
 
                 <li>
                     <a href="./pages/users/dashboard/history/index.html" class="menu-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor" focusable="false" aria-hidden="true"><path d="M8.76 1.487a11 11 0 11-7.54 12.706 1 1 0 011.96-.4 9 9 0 0014.254 5.38A9 9 0 0016.79 4.38 9 9 0 004.518 7H7a1 1 0 010 2H1V3a1 1 0 012 0v2.678a11 11 0 015.76-4.192ZM12 6a1 1 0 00-1 1v5.58l.504.288 3.5 2a1 1 0 10.992-1.736L13 11.42V7a1 1 0 00-1-1Z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
 
                         <p class="text-body-large">History</p>
 
@@ -1343,9 +1515,52 @@
 
     </aside>
 
+    <!-- NAVIGATION BAR -->
+    <nav class="navigation-bar">
+
+        <a href="./index.html" class="nav-item active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+
+            <p class="text-body-medium">Home</p>
+
+            <div class="state-layer"></div>
+        </a>
+
+        <a href="./pages/docs/index.html" class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+
+            <p class="text-body-medium">Docs</p>
+
+            <div class="state-layer"></div>
+        </a>
+
+        <button type="button" class="nav-item" data-bottom-sheets="#bottom-sheet-explore">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-compass"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 16l2 -6l6 -2l-2 6l-6 2"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 3l0 2"></path><path d="M12 19l0 2"></path><path d="M3 12l2 0"></path><path d="M19 12l2 0"></path></svg>
+
+            <p class="text-body-medium">Explore</p>
+
+            <div class="state-layer"></div>
+        </button>
+
+        <button type="button" class="nav-item" data-bottom-sheets="#bottom-sheet-company">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 21l18 0"></path><path d="M5 21v-14l8 -4v18"></path><path d="M19 21v-10l-6 -4"></path><path d="M9 9l0 .01"></path><path d="M9 12l0 .01"></path><path d="M9 15l0 .01"></path><path d="M9 18l0 .01"></path></svg>
+
+            <p class="text-body-medium">Company</p>
+
+            <div class="state-layer"></div>
+        </button>
+
+        <button type="button" class="avatar medium" data-bottom-sheets="#bottom-sheet-user">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+            
+            <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" />
+        </button>
+
+    </nav>
+
     <!-- ALERTS DIALOG -->
-    <div class="alerts-dialog" id="alerts-dialog-shopping-card">
-        <h5 class="text-title-medium">Are you sure you want to delete "Name Theme"?</h5>
+    <div class="alerts-dialog" id="alerts-dialog">
+        <h5 class="text-title-medium">Are you sure you want to delete "Name"?</h5>
 
         <div class="alerts-dialog-footer">
             <button type="button" class="btn text medium" data-dismiss>
@@ -1365,6 +1580,7 @@
     </div>
 
     <!-- DIALOG REVIEWS -->
+    
 
     <main class="main" data-main>
 

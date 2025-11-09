@@ -19,6 +19,7 @@ import { Overlay } from "./components/Overlay.js";
 import { AlertDialog } from "./components/AlertDialog.js";
 import { Dismiss } from "./components/Dismiss.js";
 import { Tab } from "./components/Tab.js";
+import { Search } from "./components/Search.js";
 
 /**
  * Get Overlay & Body & Main
@@ -111,6 +112,12 @@ $alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog
  */
 const $tabs = document.querySelectorAll("[data-tabs]");
 $tabs.forEach($elem => Tab($elem));
+
+/**
+ * Search
+ */
+const $search = document.querySelector("[data-search]");
+Search($search);
 
 /**
  * Toggler Dismiss

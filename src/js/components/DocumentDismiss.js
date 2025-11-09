@@ -4,7 +4,14 @@ export const DocumentDismiss = () => {
     /**
      * Menus
      */
-    document.querySelectorAll(".menu-content.active").forEach($elem => $elem.classList.remove("active"));
+    const $menuContents = document.querySelectorAll(".menu-content.active");
+    if ($menuContents) $menuContents.forEach($elem => $elem.classList.remove("active"));
+    
+    /**
+     * Search
+     */
+    const $searchbars = document.querySelector(".searchbar.active");
+    if ($searchbars) $searchbars.classList.remove("active");
 
     /**
      * Fab Menu
