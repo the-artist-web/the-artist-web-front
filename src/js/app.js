@@ -44,55 +44,55 @@ if ($startLoading) window.addEventListener("load", () => StartLoading($startLoad
  * Fixed Scrolling
  */
 const $fixedScrolling = document.querySelectorAll("[data-fixed-scrolling]");
-if ($fixedScrolling) window.addEventListener("scroll", () => $fixedScrolling.forEach($elem => FixedScrolling($elem)));
+if ($fixedScrolling.length) $fixedScrolling.forEach($elem => FixedScrolling($elem));
 
 /**
  * Tooltip
  */
 const $tooltips = document.querySelectorAll("[data-tooltips]");
-if ($tooltips) $tooltips.forEach($elem => Tooltip($elem));
+if ($tooltips.length) $tooltips.forEach($elem => Tooltip($elem));
 
 /**
  * Menus
  */
 const $togglerMenus = document.querySelectorAll("[data-toggler-menus]");
-if ($togglerMenus) $togglerMenus.forEach($elem => Menu($elem));
+if ($togglerMenus.length) $togglerMenus.forEach($elem => Menu($elem));
 
 /**
  * Select
  */
 const $selects = document.querySelectorAll("[data-selects]");
-if ($selects) $selects.forEach($elem => Select($elem));
+if ($selects.length) $selects.forEach($elem => Select($elem));
 
 /**
  * Password
  */
 const $passwords = document.querySelectorAll("[data-passwords]");
-if ($passwords) $passwords.forEach($elem => Password($elem));
+if ($passwords.length) $passwords.forEach($elem => Password($elem));
 
 /**
  * Minus Time
  */
 const $minusTimes = document.querySelectorAll("[data-minus-times]");
-$minusTimes.forEach($elem => MinusTime($elem));
+if ($minusTimes.length) $minusTimes.forEach($elem => MinusTime($elem));
 
 /**
  * OTP
  */
 const $otps = document.querySelectorAll("[data-otps]");
-$otps.forEach($elem => OTP($elem));
+if ($otps.length) $otps.forEach($elem => OTP($elem));
 
 /**
  * Collapses
  */
 const $togglerCollapses = document.querySelectorAll("[data-toggler-collapses]");
-if ($togglerCollapses) $togglerCollapses.forEach($elem => Collapse($elem));
+if ($togglerCollapses.length) $togglerCollapses.forEach($elem => Collapse($elem));
 
 /**
  * Fab Menus
  */
 const $togglerFabsMenu = document.querySelectorAll("[data-toggler-fabs-menu]");
-if ($togglerFabsMenu) $togglerFabsMenu.forEach($elem => FabMenu($elem));
+if ($togglerFabsMenu.length) $togglerFabsMenu.forEach($elem => FabMenu($elem));
 
 /**
  * Toggler Navigation Rail
@@ -106,13 +106,13 @@ if ($togglerNavigationRail, $navigationRail) NavigationRail($togglerNavigationRa
  * Alerts Dialog
  */
 const $alertsDialog = document.querySelectorAll("[data-alerts-dialog]");
-if ($alertsDialog) $alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog($elem, $overlay, $body)));
+if ($alertsDialog.length) $alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog($elem, $overlay, $body)));
 
 /**
  * Tabs
  */
 const $tabs = document.querySelectorAll("[data-tabs]");
-if ($tabs) $tabs.forEach($elem => Tab($elem));
+if ($tabs.length) $tabs.forEach($elem => Tab($elem));
 
 /**
  * Search
@@ -124,13 +124,13 @@ if ($search) Search($search);
  * Bottom Sheets
  */
 const $bottomSheets = document.querySelectorAll("[data-bottom-sheets]");
-if ($bottomSheets) $bottomSheets.forEach($elem => $elem.addEventListener("click", () => BottomSheet($elem, $overlay, $body)));
+if ($bottomSheets.length) $bottomSheets.forEach($elem => $elem.addEventListener("click", () => BottomSheet($elem, $overlay, $body)));
 
 /**
  * Toggler Dismiss
  */
 const $dismiss = document.querySelectorAll("[data-dismiss]");
-if ($dismiss) $dismiss.forEach($elem => $elem.addEventListener("click", () => Dismiss($overlay, $body)));
+if ($dismiss.length) $dismiss.forEach($elem => $elem.addEventListener("click", () => Dismiss($overlay, $body)));
 
 /**
  * Document Dismiss
