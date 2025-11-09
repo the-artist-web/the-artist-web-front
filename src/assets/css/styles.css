@@ -24,7 +24,7 @@
   --light-background: #fafafa;
   --light-on-background: #1d1d1d;
   --light-on-background-variant: #5f6368;
-  --light-surface: #ecebea;
+  --light-surface: #f4f3f2;
   --light-surface-variant: #e8e9eb;
   --light-outline: #c8cbcf;
   --light-outline-variant: #dfe1e4;
@@ -738,7 +738,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .avatar {
   background-color: var(--surface);
   border-radius: var(--radius-full);
-  outline: 2px solid var(--outline);
+  border: 2px solid var(--outline);
   display: grid;
   place-items: center;
   position: relative;
@@ -1723,7 +1723,7 @@ html[dir="rtl"] .navigation-rail {
 
 .navigation-rail .nav-list .nav-link .icon-btn {
   transform: scale(0);
-  transition: transform var(--tr-duration-medium);
+  transition: transform var(--tr-duration-long);
 }
 
 .navigation-rail:hover .nav-list .nav-link .icon-btn { transform: scale(1); }
@@ -1750,11 +1750,11 @@ html[dir="rtl"] .navigation-rail {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-1);
-  transition-duration: var(--tr-duration-medium);
+  transition-duration: var(--tr-duration-long);
   transition-property: padding-inline-start, height;
 }
 
-.navigation-rail.active .nav-list .nav-item .collapse-content { padding-inline-start: var(--spacing-4); }
+.navigation-rail.active .nav-list .nav-item .collapse-content { padding-inline-start: var(--spacing-3); }
 
 .navigation-rail .nav-list .nav-item .nav-link {
   padding-inline: 14px;
@@ -1766,7 +1766,7 @@ html[dir="rtl"] .navigation-rail {
   width: 100%;
   min-width: var(--width-large);
   min-height: var(--height-large);
-  transition-duration: var(--tr-duration-short);
+  transition-duration: var(--tr-duration-long);
   transition-property: color, background-color;
   --state-layer-bg: var(--on-background);
 }
@@ -1808,7 +1808,7 @@ html[dir="rtl"] .navigation-rail {
   overflow: hidden;
   width: var(--width-large);
   max-width: calc(var(--width-base) - var(--spacing-8));
-  transition: width var(--tr-duration-medium);
+  transition: width var(--tr-duration-long);
 }
 
 .navigation-rail.active .user-card { width: calc(var(--width-base) - var(--spacing-8)); }
@@ -2420,7 +2420,7 @@ html[dir="rtl"] .navigation-rail {
 .footer .footer-top .column a {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2);
+  gap: var(--spacing-3);
 }
 
 .footer .footer-top .column a p,
@@ -2610,7 +2610,14 @@ html[dir="rtl"] .floating-fab {
 /**
  * Fit size: 568px
  */
-@media screen and (min-width: 568px) {}
+@media screen and (min-width: 568px) {
+  /**
+   * REUSED STYLE
+   */
+  .grid-2-base { grid-template-columns: repeat(2, 1fr); }
+
+  .grid-4-base { grid-template-columns: repeat(2, 1fr); }
+}
 
 /**
  * Fit size: 768px
@@ -2619,12 +2626,6 @@ html[dir="rtl"] .floating-fab {
   /**
    * REUSED STYLE
    */
-  .grid-2-base { grid-template-columns: repeat(2, 1fr); }
-
-  .grid-4-base { grid-template-columns: repeat(2, 1fr); }
-
-  .div-base { padding: var(--spacing-9); }
-
   .main {
     padding-block-start: var(--header-height);
     padding-inline-start: calc(var(--navigation-rail-width) + var(--spacing-4));
@@ -2632,6 +2633,8 @@ html[dir="rtl"] .floating-fab {
   }
 
   .main.active { padding-inline-start: calc(var(--width-base) + var(--spacing-4)); }
+
+  .div-base { padding: var(--spacing-8); }
 
   /**
    * COMPONENTS
