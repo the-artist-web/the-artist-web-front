@@ -518,7 +518,7 @@ svg {
 .title-sec { margin-block-end: var(--spacing-5); }
 
 .main {
-  padding-block: var(--header-height) var(--navigation-bar-height);
+  padding-block: calc(var(--header-height) + var(--spacing-4)) var(--navigation-bar-height);
   min-height: 100dvh;
 }
 
@@ -1649,7 +1649,7 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 40;
+  z-index: 30;
   width: 100%;
   height: var(--navigation-bar-height);
   display: grid;
@@ -1929,8 +1929,74 @@ html[dir="rtl"] .navigation-rail {
 /**
  * Bottom sheets
  */
+.bottom-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  padding-block: var(--spacing-6) var(--spacing-2);
+  border-radius: var(--radius-extra-large) var(--radius-extra-large) 0 0;
+  background-color: var(--surface-variant);
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  transform: translateY(100%);
+  max-height: calc(100dvh - var(--spacing-4));
+  transition-duration: var(--tr-duration-medium);
+  transition-property: transform;
+}
 
+.bottom-sheet.active { transform: translateY(0%); }
 
+.bottom-sheet .line-close {
+  width: 100%;
+  max-width: 100px;
+  height: var(--spacing-3);
+  border-radius: var(--radius-full);
+  background-color: var(--outline-variant);
+  margin-inline: auto; 
+  --state-layer-bg: var(--on-background);
+}
+
+.bottom-sheet .sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-4);
+}
+
+.bottom-sheet .sheet-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-sheet .sheet-link {
+  padding-inline: var(--spacing-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  width: 100%;
+  height: var(--height-large);
+  transition-duration: var(--tr-duration-short);
+  transition-property: color, background-color;
+  --state-layer-bg: var(--on-background);
+}
+
+.bottom-sheet .sheet-link.active {
+  color: var(--primary);
+  background-color: var(--soft-primary);
+  --state-layer-bg: var(--primary);
+}
+
+.bottom-sheet .sheet-link.active svg { color: var(--primary); }
+
+.bottom-sheet .sheet-link .wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
 
 /**
  * Side sheets
@@ -2453,7 +2519,7 @@ html[dir="rtl"] .floating-fab {
   .grid-2-base { grid-template-columns: repeat(2, 1fr); }
 
   .main {
-    padding-block: var(--header-height) var(--spacing-4);
+    padding-block: calc(var(--header-height) + var(--spacing-4)) var(--spacing-4);
     padding-inline-start: calc(var(--navigation-rail-width) + var(--spacing-4));
     transition: padding-inline-start var(--tr-duration-long);
   }

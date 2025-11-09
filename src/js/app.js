@@ -105,25 +105,25 @@ if ($togglerNavigationRail, $navigationRail) NavigationRail($togglerNavigationRa
  * Alerts Dialog
  */
 const $alertsDialog = document.querySelectorAll("[data-alerts-dialog]");
-$alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog($elem, $overlay, $body)));
+if ($alertsDialog) $alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog($elem, $overlay, $body)));
 
 /**
  * Tabs
  */
 const $tabs = document.querySelectorAll("[data-tabs]");
-$tabs.forEach($elem => Tab($elem));
+if ($tabs) $tabs.forEach($elem => Tab($elem));
 
 /**
  * Search
  */
 const $search = document.querySelector("[data-search]");
-Search($search);
+if ($search) Search($search);
 
 /**
  * Toggler Dismiss
  */
 const $dismiss = document.querySelectorAll("[data-dismiss]");
-$dismiss.forEach($elem => $elem.addEventListener("click", () => Dismiss($overlay, $body)));
+if ($dismiss) $dismiss.forEach($elem => $elem.addEventListener("click", () => Dismiss($overlay, $body)));
 
 /**
  * Document Dismiss
