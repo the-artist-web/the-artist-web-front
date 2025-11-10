@@ -17,10 +17,13 @@ import { FabMenu } from "./components/FabMenu.js";
 import { NavigationRail } from "./components/NavigationRail.js";
 import { Overlay } from "./components/Overlay.js";
 import { AlertDialog } from "./components/AlertDialog.js";
+import { Dialog } from "./components/Dialog.js";
 import { Dismiss } from "./components/Dismiss.js";
 import { Tab } from "./components/Tab.js";
 import { Search } from "./components/Search.js";
 import { BottomSheet } from "./components/BottomSheet.js";
+import { AppearanceOnce } from "./components/AppearanceOnce.js";
+import { StarRating } from "./components/StarRating.js";
 
 /**
  * Get Overlay & Body & Main
@@ -109,6 +112,12 @@ const $alertsDialog = document.querySelectorAll("[data-alerts-dialog]");
 if ($alertsDialog.length) $alertsDialog.forEach($elem => $elem.addEventListener("click", () => AlertDialog($elem, $overlay, $body)));
 
 /**
+ * Dialogs
+ */
+const $dialogs = document.querySelectorAll("[data-dialogs]");
+if ($dialogs.length) $dialogs.forEach($elem => $elem.addEventListener("click", () => Dialog($elem, $overlay, $body)));
+
+/**
  * Tabs
  */
 const $tabs = document.querySelectorAll("[data-tabs]");
@@ -125,6 +134,18 @@ if ($search) Search($search);
  */
 const $bottomSheets = document.querySelectorAll("[data-bottom-sheets]");
 if ($bottomSheets.length) $bottomSheets.forEach($elem => $elem.addEventListener("click", () => BottomSheet($elem, $overlay, $body)));
+
+/**
+ * Appearance Once 
+ */
+const $appearanceOnce = document.querySelectorAll("[data-appearance-once]");
+if ($appearanceOnce.length) $appearanceOnce.forEach($elem => AppearanceOnce($elem, $overlay, $body));
+
+/**
+ * Star Rating
+ */
+const $starRatings = document.querySelectorAll("[data-star-ratings]");
+if ($starRatings.length) $starRatings.forEach($elem => StarRating($elem));
 
 /**
  * Toggler Dismiss

@@ -63,7 +63,7 @@
     </div>
 
     <!-- HEADER -->
-    <header class="header" data-fixed-scrolling>
+    <header class="header">
 
         <div class="container container-xl">
 
@@ -879,6 +879,12 @@
                                             </div>
 
                                             <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">Beginner</p>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+
+                                            <a href="./pages/search.html" class="hover text-body-large text-on-background-variant line-clamp line-clamp-1">Developer</a>
                                         </div>
 
                                         <div class="wrapper-between">
@@ -993,6 +999,12 @@
                                             </div>
 
                                             <p class="text-body-large text-on-background-variant line-clamp line-clamp-1">Beginner</p>
+    
+                                            <div class="circle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
+                                            </div>
+
+                                            <a href="./pages/search.html" class="hover text-body-large text-on-background-variant line-clamp line-clamp-1">Developer</a>
                                         </div>
 
                                         <div class="wrapper-between">
@@ -1516,7 +1528,7 @@
     </aside>
 
     <!-- NAVIGATION BAR -->
-    <nav class="navigation-bar">
+    <nav class="navigation-bar" data-fixed-scrolling>
 
         <a href="./index.html" class="nav-item active">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
@@ -1904,15 +1916,91 @@
         </div>
     </div>
 
-    <!-- DIALOG BLOCK -->
-
     <!-- DIALOG REVIEWS -->
+    <div class="dialog-reviews dialog medium center" id="dialogs-reviews" data-appearance-once="5000">
 
+        <div class="body">
+            <div class="icon-reviews text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+            </div>
+
+            <h2 class="text-headline-medium">How are you feeling?</h2>
+    
+            <p class="text-body-large text-on-background-variant">Your input is valuable in helping us better understand your needs and tailor our service accordingly.</p>
+        </div>
+
+        <div class="star-ratings" data-star-ratings>
+            <label for="review-star-rating-1" class="star" data-star>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                <input type="radio" name="star-rating" value="1" id="review-star-rating-1" hidden />
+            </label>
+            
+            <label for="review-star-rating-2" class="star" data-star>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                <input type="radio" name="star-rating" value="2" id="review-star-rating-2" hidden />
+            </label>
+            
+            <label for="review-star-rating-3" class="star" data-star>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                <input type="radio" name="star-rating" value="3" id="review-star-rating-3" hidden />
+            </label>
+            
+            <label for="review-star-rating-4" class="star" data-star>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                <input type="radio" name="star-rating" value="4" id="review-star-rating-4" hidden />
+            </label>
+            
+            <label for="review-star-rating-5" class="star" data-star>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+
+                <input type="radio" name="star-rating" value="5" id="review-star-rating-5" hidden />
+            </label>
+        </div>
+
+        <div class="form-box">
+
+            <div class="textarea-wrapper outline medium">
+
+                <textarea placeholder="Add a comment..." name="" class="text-body-large" required></textarea>
+
+            </div>
+
+        </div>
+
+        <div class="dialog-footer">
+            <button type="button" class="btn filled medium w-full" data-dialogs="#dialogs-reviews-finish">
+                <p class="text-body-large">Submit a review</p>
+
+                <div class="state-layer"></div>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="dialog-reviews dialog small center" id="dialogs-reviews-finish">
+
+        <div class="body">
+            <div class="icon-reviews text-error">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+            </div>
+
+            <h2 class="text-headline-medium">Thank you for your feedback!</h2>
+
+            <p class="text-body-large text-on-background-variant">We really appreciate your input, as it helps us improve our service and better understand your needs.</p>
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
     <main class="main" data-main>
 
         <article>
             
-
+            
 
         </article>
 
@@ -1927,30 +2015,66 @@
                 
                 <div class="footer-top">
         
-                    <div class="grid-4-base">
+                    <div class="grid">
 
-                        <div class="column">
-                            <h5 class="title-footer text-title-medium">Company</h5>
+                        <div class="column-desc">
+                            <div class="column">
+                                
+                                <a href="../../index.html" class="logo large">
+                                    <img src="../../src/assets/images/logo-dark.png" alt="The Artist Web" loading="lazy" class="theme-light img-cover">
+    
+                                    <img src="../../src/assets/images/logo-light.png" alt="The Artist Web" loading="lazy" class="theme-dark img-cover">
+                                </a>
+    
+                                <h5 class="text-on-background-variant text-title-medium">Welcome to The Artist Web – Learn coding, design, and creativity interactively</h5>
+                                
+                            </div>
 
-                            <ul class="footer-list">
-
+                            <ul class="social-list">
+                                
                                 <li>
-                                    <a href="./pages/blogs/index.html" class="text-on-background-variant text-body-large hover">News & Blog</a>
+                                    <a href="#" target="_blank" class="icon-btn text medium" data-tooltips="Go To Discord">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-discord"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" /><path d="M7 16.5c3.5 1 6.5 1 10 0" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </a>
                                 </li>
-
+                                
                                 <li>
-                                    <a href="./pages/about-us.html" class="text-on-background-variant text-body-large hover">About Us</a>
+                                    <a href="#" target="_blank" class="icon-btn text medium" data-tooltips="Go To Github">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </a>
                                 </li>
-
+                                
                                 <li>
-                                    <a href="./pages/legal/faqs.html" class="text-on-background-variant text-body-large hover">FAQ</a>
+                                    <a href="#" target="_blank" class="icon-btn text medium" data-tooltips="Go To Twitter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </a>
                                 </li>
-
+                                
                                 <li>
-                                    <a href="./pages/contact-us.html" class="text-on-background-variant text-body-large hover">Contact Us</a>
+                                    <a href="#" target="_blank" class="icon-btn text medium" data-tooltips="Go To LinkedIn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" target="_blank" class="icon-btn text medium" data-tooltips="Go To Youtube">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </a>
                                 </li>
 
                             </ul>
+
+                            <p class="text-body-large text-on-background-variant">© 2025 <Strong>The Artist Web</Strong>, Inc.</p>
                         </div>
 
                         <div class="column">
@@ -1990,48 +2114,24 @@
                         </div>
 
                         <div class="column">
-                            <h5 class="title-footer text-title-medium">Social Media</h5>
+                            <h5 class="title-footer text-title-medium">Company</h5>
 
                             <ul class="footer-list">
-                                
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-discord"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" /><path d="M7 16.5c3.5 1 6.5 1 10 0" /></svg>
 
-                                        <p class="text-on-background-variant text-body-large">Discord</p>
-                                    </a>
+                                <li>
+                                    <a href="./pages/blogs/index.html" class="text-on-background-variant text-body-large hover">News & Blog</a>
                                 </li>
-                                
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
 
-                                        <p class="text-on-background-variant text-body-large">Github</p>
-                                    </a>
+                                <li>
+                                    <a href="./pages/about-us.html" class="text-on-background-variant text-body-large hover">About Us</a>
                                 </li>
-                                
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
 
-                                        <p class="text-on-background-variant text-body-large">X.com</p>
-                                    </a>
+                                <li>
+                                    <a href="./pages/legal/faqs.html" class="text-on-background-variant text-body-large hover">FAQ</a>
                                 </li>
-                                
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
 
-                                        <p class="text-on-background-variant text-body-large">Linkedin</p>
-                                    </a>
-                                </li>
-                                
                                 <li>
-                                    <a href="#" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
-
-                                        <p class="text-on-background-variant text-body-large">YouTube</p>
-                                    </a>
+                                    <a href="./pages/contact-us.html" class="text-on-background-variant text-body-large hover">Contact Us</a>
                                 </li>
 
                             </ul>
@@ -2063,58 +2163,6 @@
 
                     </div>
         
-                </div>
-
-                <div class="footer-bottom">
-    
-                    <p class="text-body-large text-on-background-variant">Copyright 2025 <Strong>The Artist Web</Strong></p>
-    
-                    <div class="wrapper">
-    
-                        <button type="button" class="icon-btn text medium" data-toggler-themes data-tooltips="Theme Dark" data-placement="top">
-                            <div class="theme-light">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
-                            </div>
-                            
-                            <div class="theme-dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
-                            </div>
-    
-                            <div class="state-layer"></div>
-                        </button>
-    
-                        <div class="menu">
-    
-                            <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Languages" data-placement="top">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
-    
-                                <div class="state-layer"></div>
-                            </button>
-    
-                            <ul class="menu-content small top end">
-    
-                                <li>
-                                    <a href="#" class="menu-item active">
-                                        <p class="text-body-large">English</p>
-    
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#" class="menu-item">
-                                        <p class="text-body-large">Arabic</p>
-    
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-    
-                            </ul>
-    
-                        </div>
-    
-                    </div>
-    
                 </div>
 
             </div>
