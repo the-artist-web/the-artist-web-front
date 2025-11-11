@@ -857,7 +857,18 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   gap: var(--spacing-3);
 }
 
-.star-ratings .star svg { color: var(--outline-variant); }
+.star-ratings .star svg {
+  color: var(--outline-variant);
+  transition-duration: var(--tr-duration-short);
+  transition-property: transform, color;
+}
+
+.star-ratings .star:hover svg  {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+.star-ratings .star:hover svg { color: var(--primary); }
 
 .star-ratings .star.active svg {
   color: var(--primary);
