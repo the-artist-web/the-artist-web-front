@@ -1404,7 +1404,7 @@
                 <div class="state-layer"></div>
             </button>
 
-            <ul class="menu-content medium right down">
+            <ul class="menu-content medium right down" onclick="event.stopPropagation()">
 
                 <a href="./pages/users/profile/index.html" class="user-wrapper">
                     <div class="avatar medium">
@@ -1420,6 +1420,49 @@
 
                     <div class="state-layer"></div>
                 </a>
+
+                <div class="separator x"></div>
+
+                <li>
+                    <button type="button" class="menu-item" data-toggler-collapses="#collapses-profiles">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="currentColor"><path d="M20 2H8a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2ZM8 16V4h12v12h-.365a.999.999 0 00-.059-.216 6 6 0 00-11.155.008 1 1 0 00-.058.208H8Zm6-11a3 3 0 100 6 3 3 0 000-6ZM4 20h15a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2v15ZM14 7a1 1 0 110 2 1 1 0 010-2Zm-.003 7a4 4 0 013.467 2h-6.927a4 4 0 013.46-2Z"></path></svg>
+
+                        <p class="text-body-large">Accounts</p>
+
+                        <div class="icon-btn extra-small" data-arrow>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <div class="collapse-content" id="collapses-profiles">
+                        <a href="./pages/users/profile/index.html" class="user-wrapper">
+                            <div class="avatar medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                
+                                <!-- <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" /> -->
+                            </div>
+
+                            <div class="wrapper-block">
+                                <p class="line-clamp line-clamp-1 text-body-large">The Artist Web</p>
+                                <p class="line-clamp line-clamp-1 text-on-background-variant text-body-large">@theartistweb</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="./pages/users/dashboard/accounts/create.html" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
+
+                        <p class="text-body-large">Add Account</p>
+
+                        <div class="state-layer"></div>
+                    </a>
+                </li>
 
                 <div class="separator x"></div>
 
@@ -1774,6 +1817,53 @@
 
                 <div class="state-layer"></div>
             </a>
+
+            <div class="separator x"></div>
+
+            <li>
+                <button type="button" class="sheet-link" data-toggler-collapses="#collapses-sheet-profiles">
+                    <div class="wrapper-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="currentColor"><path d="M20 2H8a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2ZM8 16V4h12v12h-.365a.999.999 0 00-.059-.216 6 6 0 00-11.155.008 1 1 0 00-.058.208H8Zm6-11a3 3 0 100 6 3 3 0 000-6ZM4 20h15a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2v15ZM14 7a1 1 0 110 2 1 1 0 010-2Zm-.003 7a4 4 0 013.467 2h-6.927a4 4 0 013.46-2Z"></path></svg>
+    
+                        <p class="text-body-large">Accounts</p>
+                    </div>
+
+                    <div class="icon-btn extra-small" data-arrow>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    </div>
+
+                    <div class="state-layer"></div>
+                </button>
+
+                <div class="collapse-content" id="collapses-sheet-profiles">
+                    <a href="./pages/users/profile/index.html" class="user-wrapper">
+                        <div class="avatar medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            
+                            <!-- <img src="./src/assets/images/the-artist-web.png" alt="user name" loading="lazy" class="img-avatar img-cover" /> -->
+                        </div>
+
+                        <div class="wrapper-block">
+                            <p class="line-clamp line-clamp-1 text-body-large">The Artist Web</p>
+                            <p class="line-clamp line-clamp-1 text-on-background-variant text-body-large">@theartistweb</p>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <a href="./pages/users/dashboard/accounts/create.html" class="sheet-link">
+                    <div class="wrapper-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
+    
+                        <p class="text-body-large">Add Account</p>
+                    </div>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
 
             <div class="separator x"></div>
 

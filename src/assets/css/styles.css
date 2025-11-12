@@ -1642,9 +1642,13 @@ html[dir="rtl"] .card-select .check {
   visibility: hidden;
   transform: scale(0.9);
   box-shadow: var(--shadow-1);
+  max-height: 90dvh;
+  overflow-y: auto;
   transition-duration: var(--tr-duration-medium);
   transition-property: opacity, visibility, transform, top, left, right, bottom;
 }
+
+.menu .menu-content::-webkit-scrollbar { display: none; }
 
 .menu .menu-content.active {
   top: calc(100% + var(--spacing-2));
@@ -2107,7 +2111,7 @@ html[dir="rtl"] .navigation-rail {
 .bottom-sheet .line-close {
   width: 100%;
   max-width: 100px;
-  height: var(--spacing-3);
+  height: var(--spacing-2);
   border-radius: var(--radius-full);
   background-color: var(--outline-variant);
   margin-inline: auto; 
