@@ -20,11 +20,11 @@
   --black: #000000;
 
   /* Theme Light */
-  --light-background-header: rgba(255, 255, 255, 0.85);
+  --light-background-header: rgba(255, 255, 255, 0.95);
   --light-background: #fafafa;
   --light-on-background: #1d1d1d;
   --light-on-background-variant: #5f6368;
-  --light-surface: #f4f3f2;
+  --light-surface: #eeeeee;
   --light-surface-variant: #e8e9eb;
   --light-outline: #c8cbcf;
   --light-outline-variant: #dfe1e4;
@@ -32,7 +32,7 @@
   --light-on-inverse: #f8f9fa;
 
   /* Theme Dark */
-  --dark-background-header: rgba(18, 18, 18, 0.85); 
+  --dark-background-header: rgba(18, 18, 18, 0.95); 
   --dark-background: #121212; 
   --dark-on-background: #e0e0e0; 
   --dark-on-background-variant: #a6a6a6; 
@@ -1850,6 +1850,12 @@ html[dir="rtl"] .navigation-rail {
 }
 
 .navigation-rail.active { width: var(--width-base); }
+
+.navigation-rail .toggler-navigation-rail {
+  position: absolute;
+  top: calc(var(--height-large) + var(--spacing-2));
+  right: -20px;
+}
 
 .navigation-rail .nav-list .nav-link .icon-btn {
   transform: scale(0);
