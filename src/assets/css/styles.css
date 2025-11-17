@@ -762,7 +762,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .avatar {
   background-color: var(--surface);
   border-radius: var(--radius-full);
-  border: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   display: grid;
   place-items: center;
   position: relative;
@@ -824,7 +824,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .wallet {
   display: flex;
   align-items: center;
-  border: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   border-radius: var(--radius-full);
   min-height: var(--height-medium);
   max-height: var(--height-medium);
@@ -1070,7 +1070,7 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .btn.tonal svg { color: var(--primary); }
 
 .btn.outline {
-  border: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   --state-layer-bg: var(--on-background);
 }
 
@@ -1191,7 +1191,7 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .fab.outline {
   background-color: var(--background);
-  border: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   --state-layer-bg: var(--on-background);
 }
 
@@ -1299,7 +1299,7 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .icon-btn.outline {
   background-color: var(--background);
-  outline: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   --state-layer-bg: var(--on-background);
 }
 
@@ -1329,7 +1329,7 @@ html[dir="rtl"] .fab-menu .menu.right {
 .card-select {
   position: relative;
   border-radius: var(--radius-extra-large);
-  border: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   padding: var(--spacing-5);
   display: flex;
   flex-direction: column;
@@ -1526,7 +1526,7 @@ html[dir="rtl"] .card-select .check {
 }
 
 .item .img-item {
-  outline: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   border-radius: var(--radius-extra-small);
   min-width: 100px;
   max-width: 100px;
@@ -1570,7 +1570,7 @@ html[dir="rtl"] .card-select .check {
 .item .item-content .border-box {
   padding: var(--spacing-2);
   border-radius: var(--radius-small);
-  border: 2px solid var(--outline);
+  border: 1px solid var(--outline);
 }
 
 .item .item-content .chips {
@@ -2362,7 +2362,7 @@ html[dir="rtl"] .navigation-rail {
 
 .form-box .input-wrapper.outline,
 .form-box .textarea-wrapper {
-  outline: 2px solid var(--outline);
+  border: 1px solid var(--outline);
   --state-layer-bg: var(--on-background);
 }
 
@@ -2690,6 +2690,7 @@ html[dir="rtl"] .floating-fab {
  * Btn Back To Up
  */
 .btn-back-to-up {
+  box-shadow: var(--shadow-05);
   position: fixed;
   right: var(--spacing-4);
   bottom: calc(var(--navigation-bar-height) + var(--spacing-4));
