@@ -181,12 +181,12 @@
   /**
    * Others
    */
-  --width-extra-small: 28px;
+  --width-extra-small: 30px;
   --width-small: 40px;
   --width-medium: 48px;
   --width-large: 56px;
   --width-extra-large: 68px;
-  --height-extra-small: 28px;
+  --height-extra-small: 30px;
   --height-small: 40px;
   --height-medium: 48px;
   --height-large: 56px;
@@ -492,7 +492,7 @@ svg {
  * REUSED STYLE
 \* ---------------------------------- */
 
-.section { padding-block-end: var(--spacing-4); }
+.section { padding-block-end: var(--spacing-18); }
 
 .container {
   padding-inline: var(--spacing-4);
@@ -679,25 +679,25 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .grid-base {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(322px, 1fr));
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
 }
 
 .grid-2-base {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
 }
 
 .grid-3-base {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
 }
 
 .grid-4-base {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
 }
 
 /* ---------------------------------- *\
@@ -759,6 +759,20 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 /**
  * Avatar
  */
+.avatar-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.avatar-group .avatar:nth-child(2) { margin-inline-start: -12px; }
+
+.avatar-group .avatar:nth-child(3) { margin-inline-start: -12px; }
+
+.avatar-group .avatar:nth-child(4) { margin-inline-start: -12px; }
+
+.avatar-group .avatar:nth-child(5) { margin-inline-start: -12px; }
+
 .avatar {
   background-color: var(--surface);
   border-radius: var(--radius-full);
@@ -796,7 +810,6 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
 }
 
 .avatar .icon-btn {
@@ -1025,6 +1038,22 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
   width: max-content;
 }
 
+.btn.extra-small {
+  padding-inline: var(--spacing-4);
+  min-height: var(--height-extra-small);
+  max-height: var(--height-extra-small);
+}
+
+.btn.extra-small svg,
+.btn.extra-small .arrow-dir,
+.btn.extra-small .theme-light,
+.btn.extra-small .theme-dark {
+  min-width: var(--spacing-5) !important;
+  max-width: var(--spacing-5) !important;
+  min-height: var(--spacing-5) !important;
+  max-height: var(--spacing-5) !important;
+}
+
 .btn.small {
   padding-inline: var(--spacing-4);
   min-height: var(--height-small);
@@ -1052,6 +1081,14 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 }
 
 .btn.filled svg { color: var(--black); }
+
+.btn.inverse {
+  background-color: var(--inverse);
+  color: var(--on-inverse);
+  --state-layer-bg: var(--on-inverse);
+}
+
+.btn.inverse svg { color: var(--on-inverse); }
 
 .btn.error {
   background-color: var(--error);
@@ -1326,6 +1363,29 @@ html[dir="rtl"] .fab-menu .menu.right {
 /**
  * Cards
  */
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--surface);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+}
+
+.card .card-body {
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  height: 100%;
+}
+
+.card .card-body .wrapper-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
 .card-select {
   position: relative;
   border-radius: var(--radius-extra-large);
@@ -1898,9 +1958,15 @@ html[dir="rtl"] .navigation-rail {
 .navigation-rail.active { width: var(--width-base); }
 
 .navigation-rail .toggler-navigation-rail {
+  background-color: var(--surface);
   position: absolute;
-  top: calc(var(--height-large) + var(--spacing-2));
-  right: -20px;
+  top: calc(var(--height-large) + var(--spacing-3));
+  right: -16px;
+}
+
+html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
+  right: auto;
+  left: -16px;
 }
 
 .navigation-rail .nav-list .nav-link .icon-btn {
@@ -2684,33 +2750,6 @@ html[dir="rtl"] .floating-fab {
   transform: scale(0);
   opacity: 0;
   visibility: hidden;
-}
-
-/**
- * Btn Back To Up
- */
-.btn-back-to-up {
-  box-shadow: var(--shadow-05);
-  position: fixed;
-  right: var(--spacing-4);
-  bottom: calc(var(--navigation-bar-height) + var(--spacing-4));
-  z-index: 30;
-  transform: scale(0);
-  opacity: 0;
-  visibility: hidden;
-  transition-duration: var(--tr-duration-medium);
-  transition-property: transform, opacity, visibility;
-}
-
-html[dir="rtl"] .btn-back-to-up {
-  right: auto;
-  left: var(--spacing-6);
-}
-
-.btn-back-to-up.fixed-scrolling {
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
 }
 
 /* ---------------------------------- *\
