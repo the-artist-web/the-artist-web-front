@@ -346,7 +346,6 @@ body {
 body.load { overflow-y: visible; }
 
 svg {
-  color: var(--on-background-variant);
   min-width: var(--spacing-7);
   max-width: var(--spacing-7);
   min-height: var(--spacing-7);
@@ -665,10 +664,10 @@ html[dir="rtl"] .arrow-dir { transform: rotate(180deg); }
 .circle svg {
   display: grid;
   place-items: center;
-  min-width: var(--spacing-2) !important;
-  max-width: var(--spacing-2) !important;
-  min-height: var(--spacing-2) !important;
-  max-height: var(--spacing-2) !important;
+  min-width: var(--spacing-1) !important;
+  max-width: var(--spacing-1) !important;
+  min-height: var(--spacing-1) !important;
+  max-height: var(--spacing-1) !important;
 }
 
 .circle.inverse svg { color: var(--inverse) !important; }
@@ -2951,11 +2950,6 @@ html[dir="rtl"] .floating-fab {
 
 .hero .container .grid-3-base { gap: var(--spacing-4); }
 
-/**
- * LANGUAGES HUB
- */
-
-
 /* ---------------------------------- *\
  * MEDIA QUERY
 \* ---------------------------------- */
@@ -2988,6 +2982,8 @@ html[dir="rtl"] .floating-fab {
   /**
    * REUSED STYLE
    */
+  .container { padding-inline: var(--spacing-6); }
+
   .main {
     padding-block-start: var(--header-height);
     padding-inline-start: calc(var(--navigation-rail-width) + var(--spacing-4));
