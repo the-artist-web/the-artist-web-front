@@ -685,6 +685,17 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   border-radius: var(--radius-extra-large);
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+
+.div-base[style]::before {
+  content: "";
+  background-color: var(--scrim);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 .grid-base {
@@ -1271,6 +1282,14 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .fab.filled svg { color: var(--black); }
 
+.fab.inverse {
+  background-color: var(--inverse);
+  color: var(--on-inverse);
+  --state-layer-bg: var(--on-inverse);
+}
+
+.fab.inverse svg { color: var(--on-inverse); }
+
 .fab.outline {
   background-color: var(--background);
   border: 1px solid var(--outline);
@@ -1413,7 +1432,7 @@ html[dir="rtl"] .fab-menu .menu.right {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: var(--radius-extra-large);
+  border-radius: var(--radius-large);
   position: relative;
   padding: var(--spacing-4);
   display: flex;
@@ -1448,9 +1467,9 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .card-select {
   position: relative;
-  border-radius: var(--radius-extra-large);
+  border-radius: var(--radius-large);
   border: 1px solid var(--outline);
-  padding: var(--spacing-5);
+  padding: var(--spacing-4);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
@@ -1473,8 +1492,8 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .card-select .check {
   position: absolute;
-  top: var(--spacing-5);
-  right: var(--spacing-5);
+  top: var(--spacing-4);
+  right: var(--spacing-4);
   width: var(--spacing-7);
   height: var(--spacing-7);
   display: grid;
@@ -1486,7 +1505,7 @@ html[dir="rtl"] .fab-menu .menu.right {
 }
 
 html[dir="rtl"] .card-select .check {
-  left: var(--spacing-5);
+  left: var(--spacing-4);
   right: auto;
 }
 
@@ -2958,12 +2977,132 @@ html[dir="rtl"] .floating-fab {
   gap: var(--spacing-1);
 }
 
+.user-occupation .container .user-content .title svg {
+  min-width: var(--spacing-6);
+  max-width: var(--spacing-6);
+  min-height: var(--spacing-6);
+  max-height: var(--spacing-6);
+}
+
 .user-occupation .container .wrapper-item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-2);
 }
+
+/**
+ * HERO
+ */
+.hero .container { padding-inline: 0; }
+
+.hero .banner-swipper {
+  display: flex;
+  align-items: center;
+  scroll-snap-type: inline mandatory;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding-block-end: var(--spacing-4);
+}
+
+.hero .banner-swipper::-webkit-scrollbar { height: var(--spacing-2); }
+
+.hero .banner-swipper::-webkit-scrollbar-track {
+  border-radius: var(--radius-full);
+  background-color: var(--outline);
+}
+
+.hero .banner-swipper::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-full);
+  background-color: var(--inverse);
+}
+
+.hero .banner-swipper::-webkit-scrollbar-button { width: calc(25% - 25px); }
+
+.hero .banner-swipper .div-base {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  border-radius: 0;
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-4);
+  scroll-snap-align: start;
+  height: 500px;
+}
+
+.hero .banner-swipper .div-base .banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  max-width: 700px;
+  color: white;
+}
+
+.hero .banner-swipper .div-base .banner-content .desc { opacity: 0.8; }
+
+.hero .banner-swipper .div-base .banner-content .swipper-tags {
+  margin-block-start: var(--spacing-4);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin-inline: -16px;
+  padding-inline: var(--spacing-4);
+  overflow-x: auto;
+}
+
+.hero .banner-swipper .div-base .btn.outline {
+  color: white;
+  border-color: white;
+  --state-layer-bg: white;
+}
+
+.hero .banner-swipper .div-base .icon-btn.outline,
+.hero .banner-swipper .div-base .avatar {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  --state-layer-bg: white;
+}
+
+.hero .banner-swipper .div-base .icon-btn.inverse {
+  background-color: white !important;
+  --state-layer-bg: #000000;
+}
+
+.hero .banner-swipper .div-base .icon-btn.inverse svg { color: #000000; }
+
+.hero .banner-swipper .div-base .banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-5);
+}
+
+.hero .banner-swipper .div-base .banner-container .wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  overflow-x: auto;
+  margin-inline-start: -16px;
+  padding-inline-start: var(--spacing-4);
+}
+
+.hero .banner-swipper .div-base .banner-container .wrapper .wrapper-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  min-width: max-content;
+  max-width: 90px;
+}
+
+.hero .banner-swipper .div-base .banner-container .wrapper .wrapper-item .avatar:has(img) { border-color: transparent; }
+
+.hero .banner-swipper .div-base .banner-container .wrapper .wrapper-item.center { text-align: center; }
+
+.hero .banner-swipper .div-base .banner-container .wrapper .wrapper-item p { color: white; }
 
 /* ---------------------------------- *\
  * MEDIA QUERY
@@ -3067,9 +3206,7 @@ html[dir="rtl"] .floating-fab {
 
   .header .desctop { display: flex; }
   
-  /**
-   * Footer
-   */
+  /* Footer */
   .footer {
     padding-inline-start: calc(var(--navigation-rail-width) + var(--spacing-4));
     transition: padding-inline-start var(--tr-duration-long);
@@ -3087,6 +3224,36 @@ html[dir="rtl"] .floating-fab {
   .btn-back-to-up {
     right: var(--spacing-6);
     bottom: var(--spacing-6);
+  }
+
+  /**
+   * MAIN
+   */
+  /* HERO */
+  .hero .container { padding-inline: var(--spacing-6); }
+
+  .hero .banner-swipper { gap: var(--spacing-4); }
+
+  .hero .banner-swipper .div-base {
+    border-radius: var(--radius-extra-large);
+    padding: var(--spacing-8);
+  }
+
+  .hero .banner-swipper .div-base .banner-content .swipper-tags {
+    margin-inline: 0;
+    padding-inline: 0;
+    flex-wrap: wrap;
+  }
+
+  .hero .banner-swipper .div-base .banner-container .wrapper {
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+  }
+
+  .hero .banner-swipper .div-base .banner-container .wrapper .wrapper-item {
+    flex-direction: row;
+    align-items: center;
+    max-width: max-content;
   }
 }
 
