@@ -24,6 +24,8 @@ import { Search } from "./components/Search.js";
 import { BottomSheet } from "./components/BottomSheet.js";
 import { AppearanceOnce } from "./components/AppearanceOnce.js";
 import { StarRating } from "./components/StarRating.js";
+import { Copied } from "./components/Copied.js";
+import { Swipper } from "./components/Swipper.js";
 
 /**
  * Get Overlay & Body & Main
@@ -146,6 +148,18 @@ if ($appearanceOnce.length) $appearanceOnce.forEach($elem => AppearanceOnce($ele
  */
 const $starRatings = document.querySelectorAll("[data-star-ratings]");
 if ($starRatings.length) $starRatings.forEach($elem => StarRating($elem));
+
+/**
+ * COPIED
+ */
+const $copied = document.querySelectorAll("[data-copied]");
+if ($copied.length) $copied.forEach($elem => Copied($elem));
+
+/**
+ * SWIPPER
+ */
+const $swippers = document.querySelectorAll("[data-swippers]");
+if ($swippers.length) $swippers.forEach($elem => Swipper($elem));
 
 /**
  * Toggler Dismiss
