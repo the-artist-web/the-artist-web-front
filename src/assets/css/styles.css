@@ -744,8 +744,6 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   grid-auto-columns: 100%;
   grid-auto-flow: column;
   gap: var(--spacing-6);
-  padding-inline: var(--spacing-4);
-  margin-inline: -16px;
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
   scroll-snap-stop: always;
@@ -3393,11 +3391,7 @@ html[dir="rtl"] .floating-fab {
 
   .grid-5-base { grid-template-columns: repeat(2, 1fr); }
 
-  .swipper-card-4-base {
-    grid-auto-columns: calc((100% - var(--spacing-6)) / 2);
-    padding-inline: 0;
-    margin-inline: 0;
-  }
+  .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-6)) / 2); }
 
   /**
    * OTHERS
