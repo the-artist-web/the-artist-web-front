@@ -1461,10 +1461,10 @@ html[dir="rtl"] .fab-menu .menu.right {
   background-repeat: no-repeat;
   border-radius: var(--radius-extra-large);
   position: relative;
-  padding: var(--spacing-4);
+  padding: var(--spacing-2);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
 }
 
 .card .desctop { display: none; }
@@ -1505,7 +1505,8 @@ html[dir="rtl"] .fab-menu .menu.right {
 .card .card-body {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-6);
+  gap: var(--spacing-5);
+  padding: var(--spacing-2);
 }
 
 .card .wrapper-block {
@@ -2334,7 +2335,7 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
 
 .search .searchbar .icon-btn { background-color: transparent !important; }
 
-.search .searchbar .list { max-height: calc(100dvh - 20dvh); }
+.search .searchbar .list { max-height: calc(100dvh - var(--height-medium)); }
 
 .search .searchbar .list-search {
   display: flex;
@@ -3447,6 +3448,8 @@ html[dir="rtl"] .floating-fab {
     background-color: var(--surface-variant);
     height: max-content;
   }
+
+  .search .searchbar .list { max-height: 400px; }
 
   /* Snackbar */
   .snackbar {
