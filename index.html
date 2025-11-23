@@ -2256,7 +2256,7 @@
             <h4 class="text-title-large">Share</h4>
 
             <div class="wrapper-item">
-                <button type="button" class="icon-btn outline small" disabled data-swipper-left data-tooltips="Prev">
+                <button type="button" class="icon-btn outline small" data-swipper-left data-tooltips="Prev">
                     <div class="arrow-dir">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                     </div>
@@ -2401,7 +2401,7 @@
                 <h4 class="text-title-large">Share</h4>
 
                 <div class="wrapper-item">
-                    <button type="button" class="icon-btn outline small" disabled data-swipper-left data-tooltips="Prev">
+                    <button type="button" class="icon-btn outline small" data-swipper-left data-tooltips="Prev">
                         <div class="arrow-dir">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                         </div>
@@ -2535,7 +2535,64 @@
         </div>
     </div>
 
-    <!-- SHEET SHARE -->
+    <!-- DIALOGS DOTS -->
+    <div class="dialog extra-small center" id="dialogs-dots">
+        <div class="dialog-list">
+            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
+    
+                <p class="text-body-large">Follow</p>
+
+                <div class="state-layer"></div>
+            </button>
+
+            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+    
+                <p class="text-body-large">Message</p>
+
+                <div class="state-layer"></div>
+            </button>
+    
+            <div class="separator x"></div>
+    
+            <button type="button" class="dialog-item" data-dialogs="#dialogs-share">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+
+                <p class="text-body-large">Share</p>
+
+                <div class="state-layer"></div>
+            </button>
+
+            <button type="button" class="dialog-item" data-copied="https://www.website.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
+
+                <p class="text-body-large">Copy Link</p>
+
+                <div class="state-layer"></div>
+            </button>
+    
+            <div class="separator x"></div>
+    
+            <a href="./pages/legal/report-content.html" class="dialog-item red">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
+
+                <p class="text-body-large">Report</p>
+
+                <div class="state-layer"></div>
+            </a>
+
+            <button type="button" class="dialog-item red">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.18 8.189a4.01 4.01 0 0 0 2.616 2.627m3.507 -.545a4 4 0 1 0 -5.59 -5.552" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4c.412 0 .81 .062 1.183 .178m2.633 2.618c.12 .38 .184 .785 .184 1.204v2" /><path d="M3 3l18 18" /></svg>
+
+                <p class="text-body-large">Block</p>
+
+                <div class="state-layer"></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- SHEET DOTS -->
     <div class="sheet-share bottom-sheet custom-scrollbar-hidden" id="bottom-sheet-dots">
         <button type="button" class="line-close" data-dismiss>
             <div class="state-layer"></div>
@@ -3142,151 +3199,462 @@
             </section>
 
             <!-- STUDENTS -->
-            <section class="students section">
+            <section class="students section" data-swippers>
 
                 <div class="container container-xl">
 
                     <div class="title-sec">
                         <h4 class="text-capitalize text-title-large">Students</h4>
 
-                        <a href="./pages/top/students.html" class="btn outline small">
-                            <p class="text-body-large">See All</p>
-
-                            <div class="arrow-dir">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
-                            </div>
-
-                            <div class="state-layer"></div>
-                        </a>
-                    </div>
-
-                    <div class="grid-4-base">
-                        
-                        <div class="card filled">
-                            <a href="./pages/users/profile/index.html" class="figure">
-                                <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                            </a>
-
-                            <div class="card-body">
-                                <div class="wrapper-block">
-                                    <div class="wrapper-justify" style="flex-wrap: nowrap;">
-                                        <a href="./pages/users/profile/index.html" class="wrapper-item">
-                                            <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
-        
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
-                                        </a>
-
-                                        <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </button>
-
-                                        <div class="menu desctop">
-                                            <button type="button" class="icon-btn text small" data-toggler-menus>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-
-                                                <div class="state-layer"></div>
-                                            </button>
-
-                                            <ul class="menu-content medium bottom end">
-                                                <li>
-                                                    <button type="button" class="menu-item" data-dialogs="#dialogs-auth">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-
-                                                        <p class="text-body-large">Follow</p>
-
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                                                </li>
-
-                                                <li>
-                                                    <button type="button" class="menu-item" data-dialogs="#dialogs-auth">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                        <p class="text-body-large">Message</p>
-
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                                                </li>
-
-                                                <li class="separator x"></li>
-
-                                                <li>
-                                                    <button type="button" class="menu-item" data-dialogs="#dialogs-share">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
-
-                                                        <p class="text-body-large">Share</p>
-
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                                                </li>
-
-                                                <li>
-                                                    <button type="button" class="menu-item" data-copied="https://www.website.com">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-
-                                                        <p class="text-body-large">Copy Link</p>
-
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                                                </li>
-
-                                                <li class="separator x"></li>
-
-                                                <li>
-                                                    <a href="./pages/legal/report-content.html" class="menu-item red">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
-
-                                                        <p class="text-body-large">Report</p>
-
-                                                        <div class="state-layer"></div>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <button type="button" class="menu-item red">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.18 8.189a4.01 4.01 0 0 0 2.616 2.627m3.507 -.545a4 4 0 1 0 -5.59 -5.552" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4c.412 0 .81 .062 1.183 .178m2.633 2.618c.12 .38 .184 .785 .184 1.204v2" /><path d="M3 3l18 18" /></svg>
-
-                                                        <p class="text-body-large">Block</p>
-
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                        <div class="wrapper">
+                            <a href="./pages/top/students.html" class="btn outline small">
+                                <p class="text-body-large">See All</p>
+    
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
                                 </div>
-
-                                <a href="./pages/users/profile/index.html" class="wrapper-justify">
-                                    <div class="wrapper-block">
-                                        <p class="text-body-large"><b>23,812</b></p>
     
-                                        <p class="text-body-large text-on-background-variant">Followers</p>
+                                <div class="state-layer"></div>
+                            </a>
+                            
+                            <div class="wrapper-item">
+                                <button type="button" class="icon-btn outline small" data-swipper-left data-tooltips="Prev">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                                     </div>
 
-                                    <div class="wrapper-block">
-                                        <p class="text-body-large"><b>3,810</b></p>
-    
-                                        <p class="text-body-large text-on-background-variant">Following</p>
+                                    <div class="state-layer"></div>
+                                </button>
+                                
+                                <button type="button" class="icon-btn outline small" data-swipper-right data-tooltips="Next">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
                                     </div>
 
-                                    <div class="wrapper-block">
-                                        <p class="text-body-large"><b>3.57M</b></p>
-    
-                                        <p class="text-body-large text-on-background-variant">Subjects</p>
-                                    </div>
-                                </a>
+                                    <div class="state-layer"></div>
+                                </button>
                             </div>
                         </div>
+                    </div>
 
+                    <ul class="swipper-card-4-base" data-swipper-container>
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
+                        <li class="swipper-item">
+
+                            <div class="card filled">
+                                <a href="./pages/users/profile/index.html" class="figure">
+                                    <img src="https://cdn.pixabay.com/photo/2025/07/05/18/55/rose-9698421_1280.jpg" alt="img student" loading="lazy" class="img-card img-cover" />
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+    
+                                <div class="card-body">
+                                    <div class="wrapper-block">
+                                        <div class="wrapper-justify" style="flex-wrap: nowrap;">
+                                            <a href="./pages/users/profile/index.html" class="wrapper-item">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">The Artist Web</h4>
+            
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-success icon icon-tabler icons-tabler-filled icon-tabler-rosette-discount-check" style="min-width: 20px; max-width: 20px; min-height: 20px; max-height: 20px;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12.01 2.011a3.2 3.2 0 0 1 2.113 .797l.154 .145l.698 .698a1.2 1.2 0 0 0 .71 .341l.135 .008h1a3.2 3.2 0 0 1 3.195 3.018l.005 .182v1c0 .27 .092 .533 .258 .743l.09 .1l.697 .698a3.2 3.2 0 0 1 .147 4.382l-.145 .154l-.698 .698a1.2 1.2 0 0 0 -.341 .71l-.008 .135v1a3.2 3.2 0 0 1 -3.018 3.195l-.182 .005h-1a1.2 1.2 0 0 0 -.743 .258l-.1 .09l-.698 .697a3.2 3.2 0 0 1 -4.382 .147l-.154 -.145l-.698 -.698a1.2 1.2 0 0 0 -.71 -.341l-.135 -.008h-1a3.2 3.2 0 0 1 -3.195 -3.018l-.005 -.182v-1a1.2 1.2 0 0 0 -.258 -.743l-.09 -.1l-.697 -.698a3.2 3.2 0 0 1 -.147 -4.382l.145 -.154l.698 -.698a1.2 1.2 0 0 0 .341 -.71l.008 -.135v-1l.005 -.182a3.2 3.2 0 0 1 3.013 -3.013l.182 -.005h1a1.2 1.2 0 0 0 .743 -.258l.1 -.09l.698 -.697a3.2 3.2 0 0 1 2.269 -.944zm3.697 7.282a1 1 0 0 0 -1.414 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"></path></svg>
+                                            </a>
+    
+                                            <button type="button" class="icon-btn text small mobile" data-bottom-sheets="#bottom-sheet-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+    
+                                            <button type="button" class="icon-btn text small desctop" data-dialogs="#dialogs-dots">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <a href="./pages/users/profile/index.html" class="text-body-large text-on-background-variant line-clamp line-clamp-2">Full Stack Engineering</a>
+                                    </div>
+    
+                                    <a href="./pages/users/profile/index.html" class="wrapper-justify">
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>23,812</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Followers</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3,810</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Following</p>
+                                        </div>
+    
+                                        <div class="wrapper-block">
+                                            <p class="text-body-large"><b>3.57M</b></p>
+        
+                                            <p class="text-body-large text-on-background-variant">Subjects</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </div>
+
+                        </li>
                         <!-- go to copy card & add data 8 card -->
 
-                    </div>
+                    </ul>
 
                 </div>
 

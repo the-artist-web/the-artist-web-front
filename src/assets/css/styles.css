@@ -738,6 +738,26 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   scroll-snap-stop: always;
 }
 
+.swipper-card-4-base {
+  display: grid;
+  align-items: center;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  gap: var(--spacing-6);
+  padding-inline: var(--spacing-4);
+  margin-inline: -16px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  scroll-snap-stop: always;
+}
+
+.swipper-card-4-base::-webkit-scrollbar { display: none; }
+
+.swipper-item {
+  width: 100%;
+  scroll-snap-align: start;
+}
+
 /* ---------------------------------- *\
  * COMPONENTS
 \* ---------------------------------- */
@@ -1318,8 +1338,6 @@ html[dir="rtl"] .fab-menu .menu.right {
   position: relative;
 }
 
-.icon-btn p { display: none; }
-
 .icon-btn .badge {
   position: absolute;
   top: var(--spacing-1);
@@ -1667,6 +1685,8 @@ html[dir="rtl"] .card-select .check {
 
 .dialog.center.active { transform: translate(-50%, -50%) scale(1); }
 
+.dialog.extra-small { max-width: 300px; }
+
 .dialog.small { max-width: 400px; }
 
 .dialog.medium { max-width: 500px; }
@@ -1674,6 +1694,52 @@ html[dir="rtl"] .card-select .check {
 .dialog.large { max-width: 798px; }
 
 .dialog.extra-large { max-width: 1138px; }
+
+.dialog .dialog-list {
+  display: flex;
+  flex-direction: column;
+  margin-block: -16px;
+  margin-inline: -24px;
+}
+
+.dialog .dialog-list .separator.x { margin-block: var(--spacing-2); }
+
+.dialog .dialog-list .dialog-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  height: var(--height-medium);
+  padding-inline: var(--spacing-4);
+  color: var(--on-background-variant);
+  width: 100%;
+  text-transform: capitalize;
+  transition: color var(--tr-duration-short);
+  --state-layer-bg: var(--on-background);
+}
+
+.dialog .dialog-list .dialog-item:hover { color: var(--on-background); }
+
+.dialog .dialog-list .dialog-item.active {
+  background-color: var(--soft-primary);
+  color: var(--primary);
+  --state-layer-bg: var(--primary);
+}
+
+.dialog .dialog-list .dialog-item.active svg { color: var(--primary); }
+
+.dialog .dialog-list .dialog-item p {
+  flex-grow: 1;
+  text-align: start;
+}
+
+.dialog .dialog-list .dialog-item.red {
+  color: var(--error);
+  --state-layer-bg: var(--error);
+}
+
+.dialog .dialog-list .dialog-item.red p { font-weight: var(--fw-large); }
+
+.dialog .dialog-list .dialog-item.red svg { color: var(--error); }
 
 .dialog .dialog-footer {
   display: flex;
@@ -2445,6 +2511,17 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
   padding-inline: var(--spacing-5);
   width: 100%;
   max-width: 300px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition-duration: var(--tr-duration-short);
+  transition-property: opacity, visibility, transform;
+}
+
+.snackbar.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
   animation: snackbar var(--tr-duration-short) linear alternate;
 }
 
@@ -3316,6 +3393,12 @@ html[dir="rtl"] .floating-fab {
 
   .grid-5-base { grid-template-columns: repeat(2, 1fr); }
 
+  .swipper-card-4-base {
+    grid-auto-columns: calc((100% - var(--spacing-6)) / 2);
+    padding-inline: 0;
+    margin-inline: 0;
+  }
+
   /**
    * OTHERS
    */
@@ -3474,6 +3557,8 @@ html[dir="rtl"] .floating-fab {
 
   .grid-5-base { grid-template-columns: repeat(3, 1fr); }
 
+  .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 3); }
+
   /**
    * OTHERS
    */
@@ -3495,6 +3580,8 @@ html[dir="rtl"] .floating-fab {
   .grid-4-base { grid-template-columns: repeat(4, 1fr); }
 
   .grid-5-base { grid-template-columns: repeat(4, 1fr); }
+
+  .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-18)) / 4); }
 
   /**
    * OTHERS
