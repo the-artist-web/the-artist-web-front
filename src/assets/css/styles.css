@@ -1487,10 +1487,10 @@ html[dir="rtl"] .fab-menu .menu.right {
   overflow: hidden;
   display: grid;
   place-items: center;
-  height: 210px;
+  height: 250px;
 }
 
-.card .figure .img-card { height: 210px; }
+.card .figure .img-card { height: 250px; }
 
 .card .figure:has(.img-card) { border-color: transparent; }
 
