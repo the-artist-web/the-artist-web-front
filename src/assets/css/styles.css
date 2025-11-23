@@ -214,11 +214,19 @@
 
   .theme-dark { display: none; }  
   
-  .theme-light { display: block; }
+  .theme-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .text-theme-dark { display: none; }  
   
-  .text-theme-light { display: block; }
+  .text-theme-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 [data-theme="dark"] {
@@ -235,11 +243,19 @@
   --inverse: var(--dark-inverse);
   --on-inverse: var(--dark-on-inverse);
 
-  .theme-dark { display: block; }  
+  .theme-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
   
   .theme-light { display: none; }
 
-  .text-theme-dark { display: block; }  
+  .text-theme-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
   
   .text-theme-light { display: none; }
 }
@@ -2895,6 +2911,8 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
 /**
  * DIALOG REVIEWS
  */
+.dialog-reviews { display: none; }
+
 .dialog-reviews .body {
   display: flex;
   flex-direction: column;
@@ -3041,6 +3059,43 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
   padding-inline: var(--spacing-4);
   margin-inline: -16px;
 }
+
+/**
+ * BOTTOM SHEET REVIEWS
+ */
+.bottom-sheet-reviews .bottom-sheet-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  padding: 0 var(--spacing-4) var(--spacing-2);
+}
+
+.bottom-sheet-reviews .bottom-sheet-body .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  text-align: center;
+}
+
+.bottom-sheet-reviews .star-ratings {
+  justify-content: center;
+  margin-block-start: var(--spacing-2);
+}
+
+.bottom-sheet-reviews .body .icon-reviews,
+.bottom-sheet-reviews .body .icon-reviews svg {
+  min-width: var(--spacing-20);
+  max-width: var(--spacing-20);
+  min-height: var(--spacing-20);
+  max-height: var(--spacing-20);
+  margin-block: 0 var(--spacing-4);
+}
+
+.bottom-sheet-reviews .body .icon-reviews.text-primary svg { color: var(--primary); }
+
+.bottom-sheet-reviews .body .icon-reviews.text-error svg { color: var(--error); }
 
 /**
  * Footer
@@ -3489,6 +3544,12 @@ html[dir="rtl"] .floating-fab {
   .header .mobile { display: none; }
 
   .header .desctop { display: flex; }
+
+  /* DIALOG REVIEWS */
+  .dialog-reviews { display: flex; }
+
+  /* BOTTOM SHEET REVIEWS */
+  .bottom-sheet-reviews { display: none; }
   
   /* Footer */
   .footer {
