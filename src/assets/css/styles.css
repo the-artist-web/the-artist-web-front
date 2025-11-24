@@ -26,8 +26,8 @@
   --light-on-background-variant: #5f6368;
   --light-surface: #eeeeee;
   --light-surface-variant: #e8e9eb;
-  --light-outline: #c8cbcf;
-  --light-outline-variant: #dfe1e4;
+  --light-outline: #b4b7bb;
+  --light-outline-variant: #d3d6da;
   --light-inverse: #202124;
   --light-on-inverse: #f8f9fa;
 
@@ -38,8 +38,8 @@
   --dark-on-background-variant: #a6a6a6; 
   --dark-surface: #1e1e1e; 
   --dark-surface-variant: #2a2a2a; 
-  --dark-outline: #3a3a3a; 
-  --dark-outline-variant: #4b4b4b; 
+  --dark-outline: #4a4a4a; 
+  --dark-outline-variant: #505050;
   --dark-inverse: #e9e9e9; 
   --dark-on-inverse: #1b1b1b;
 
@@ -380,38 +380,38 @@ svg {
 
 .text-display-large {
   font-size: var(--fs-display-large);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-large);
   line-height: var(--lh-display-large);
   letter-spacing: var(--ls-n-025);
 }
 
 .text-display-medium {
   font-size: var(--fs-display-medium);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-large);
   line-height: var(--lh-display-medium);
 }
 
 .text-display-small {
   font-size: var(--fs-display-small);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-large);
   line-height: var(--lh-display-small);
 }
 
 .text-headline-large {
   font-size: var(--fs-headline-large);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
   line-height: var(--lh-headline-large);
 }
 
 .text-headline-medium {
   font-size: var(--fs-headline-medium);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
   line-height: var(--lh-headline-medium);
 }
 
 .text-headline-small {
   font-size: var(--fs-headline-small);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
   line-height: var(--lh-headline-small);
 }
 
@@ -458,7 +458,7 @@ svg {
 
 .text-label-large {
   font-size: var(--fs-label-large);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
   line-height: var(--lh-label-large);
   letter-spacing: var(--ls-p-010);
 }
@@ -754,9 +754,20 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   scroll-snap-stop: always;
 }
 
+.swipper-card-3-base {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  gap: var(--spacing-6);
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  scroll-snap-stop: always;
+}
+
+.swipper-card-3-base::-webkit-scrollbar { display: none; }
+
 .swipper-card-4-base {
   display: grid;
-  align-items: center;
   grid-auto-columns: 100%;
   grid-auto-flow: column;
   gap: var(--spacing-6);
@@ -769,6 +780,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .swipper-item {
   width: 100%;
+  height: 100%;
   scroll-snap-align: start;
 }
 
@@ -1480,7 +1492,9 @@ html[dir="rtl"] .fab-menu .menu.right {
   padding: var(--spacing-2);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: var(--spacing-2);
+  height: 100%;
 }
 
 .card .desctop { display: none; }
@@ -1518,11 +1532,27 @@ html[dir="rtl"] .fab-menu .menu.right {
   max-height: var(--spacing-10);
 }
 
+.card .box-outline {
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-extra-large);
+  padding: var(--spacing-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-2);
+}
+
 .card .card-body {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
   padding: var(--spacing-2);
+}
+
+.card .wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
 }
 
 .card .wrapper-block {
@@ -1533,6 +1563,7 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .card .wrapper-item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-2);
 }
@@ -3447,6 +3478,8 @@ html[dir="rtl"] .floating-fab {
 
   .grid-5-base { grid-template-columns: repeat(2, 1fr); }
 
+  .swipper-card-3-base { grid-auto-columns: calc((100% - var(--spacing-6)) / 2); }
+
   .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-6)) / 2); }
 
   /**
@@ -3614,6 +3647,8 @@ html[dir="rtl"] .floating-fab {
   .grid-4-base { grid-template-columns: repeat(3, 1fr); }
 
   .grid-5-base { grid-template-columns: repeat(3, 1fr); }
+
+  .swipper-card-3-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 3); }
 
   .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 3); }
 
