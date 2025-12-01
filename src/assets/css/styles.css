@@ -1136,8 +1136,8 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .video-control:hover .center { opacity: 1; }
 
-.video-control [data-play],
-.video-control [data-audio] { display: none; }
+.video-control [data-stop],
+.video-control [data-muted] { display: none; }
 
 /**
  * App bars
