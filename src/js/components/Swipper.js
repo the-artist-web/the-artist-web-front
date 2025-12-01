@@ -5,8 +5,6 @@ export const Swipper = ($element) => {
     const $swipperRight = $element.querySelector("[data-swipper-right]");
     const $swipperContainer = $element.querySelector("[data-swipper-container]");
 
-    console.log($swipperLeft, $swipperRight, $swipperContainer)
-
     const amount = 500;
 
     const updateButtons = () => {

@@ -26,6 +26,8 @@ import { AppearanceOnce } from "./components/AppearanceOnce.js";
 import { StarRating } from "./components/StarRating.js";
 import { Copied } from "./components/Copied.js";
 import { Swipper } from "./components/Swipper.js";
+import { VideoControl } from "./components/Video.js";
+import { AutoPlayVideo } from "./components/AutoPlayVideo.js";
 
 /**
  * Get Overlay & Body & Main
@@ -160,6 +162,18 @@ if ($copied.length) $copied.forEach($elem => Copied($elem));
  */
 const $swippers = document.querySelectorAll("[data-swippers]");
 if ($swippers.length) $swippers.forEach($elem => Swipper($elem));
+
+/**
+ * Vidoe Control
+ */
+const $videosControl = document.querySelectorAll("[data-videos-control]");
+if ($videosControl.length) $videosControl.forEach($elem => VideoControl($elem));
+
+/**
+ * Auto Play Videos
+ */
+const $videos = document.querySelectorAll("[data-video]");
+if ($videos.length) $videos.forEach($elem => AutoPlayVideo($elem));
 
 /**
  * Toggler Dismiss
