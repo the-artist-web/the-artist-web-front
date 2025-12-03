@@ -793,6 +793,12 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   scroll-snap-align: start;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
 /* ---------------------------------- *\
  * COMPONENTS
 \* ---------------------------------- */
@@ -1212,6 +1218,16 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   max-height: var(--height-small);
 }
 
+.btn.small svg,
+.btn.small .arrow-dir,
+.btn.small .theme-light,
+.btn.small .theme-dark {
+  min-width: var(--spacing-6) !important;
+  max-width: var(--spacing-6) !important;
+  min-height: var(--spacing-6) !important;
+  max-height: var(--spacing-6) !important;
+}
+
 .btn.medium {
   padding-inline: var(--spacing-5);
   min-height: var(--height-medium);
@@ -1315,7 +1331,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   gap: var(--spacing-1);
   opacity: 0;
   visibility: hidden;
-  transition-duration: var(--tr-duration-short);
+  transition-duration: var(--tr-duration-medium);
   transition-property: opacity, visibility;
 }
 
@@ -1326,6 +1342,8 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .fab-menu .menu .fav-item {
   transform: rotate(90deg) translateX(-50%);
+  background-color: var(--background);
+  border-radius: var(--radius-full);
   transition: all var(--tr-duration-medium);
 }
 
@@ -1451,6 +1469,16 @@ html[dir="rtl"] .fab-menu .menu.right {
   max-width: var(--width-small);
   min-height: var(--height-small);
   max-height: var(--height-small);
+}
+
+.icon-btn.small svg,
+.icon-btn.small .arrow-dir,
+.icon-btn.small .theme-light,
+.icon-btn.small .theme-dark {
+  min-width: var(--spacing-6) !important;
+  max-width: var(--spacing-6) !important;
+  min-height: var(--spacing-6) !important;
+  max-height: var(--spacing-6) !important;
 }
 
 .icon-btn.medium {
@@ -1601,6 +1629,7 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .card .figure .wrapper-block .icon-btn {
   background-color: #ffffff35;
+  backdrop-filter: blur(30px);
   color: #ffffff;
 }
 
@@ -1639,8 +1668,9 @@ html[dir="rtl"] .fab-menu .menu.right {
 
 .card .wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: var(--spacing-3);
+  gap: var(--spacing-4);
 }
 
 .card .wrapper-block {
@@ -3246,7 +3276,7 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
 .footer .footer-top .column {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-5);
+  gap: var(--spacing-4);
 }
 
 .footer .footer-top .column .title-footer { text-transform: uppercase; }
