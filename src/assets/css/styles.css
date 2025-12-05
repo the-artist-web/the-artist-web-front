@@ -1173,19 +1173,19 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 .progress-container {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2);
+  gap: var(--spacing-3);
 }
 
 .progress-container .progress {
   width: 100%;
-  height: 5px;
+  height: 6px;
   border-radius: var(--radius-full);
   background-color: var(--outline);
 }
 
 .progress-container .progress .line {
   width: var(--w-progress);
-  height: 5px;
+  height: 6px;
   border-radius: var(--radius-full);
   background-color: var(--primary);
 }
