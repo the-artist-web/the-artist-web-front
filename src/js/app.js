@@ -28,6 +28,7 @@ import { Copied } from "./components/Copied.js";
 import { Swipper } from "./components/Swipper.js";
 import { VideoControl } from "./components/Video.js";
 import { AutoPlayVideo } from "./components/AutoPlayVideo.js";
+import { SideSheet } from "./components/SideSheet.js";
 
 /**
  * Get Overlay & Body & Main
@@ -174,6 +175,12 @@ if ($videosControl.length) $videosControl.forEach($elem => VideoControl($elem));
  */
 const $videos = document.querySelectorAll("[data-video]");
 if ($videos.length) $videos.forEach($elem => AutoPlayVideo($elem));
+
+/**
+ * Side Sheets
+ */
+const $sideSheets = document.querySelectorAll("[data-side-sheets]");
+if ($sideSheets.length) $sideSheets.forEach($elem => $elem.addEventListener("click", () => SideSheet($elem, $overlay, $body)));
 
 /**
  * Toggler Dismiss
