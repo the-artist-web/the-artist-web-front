@@ -3997,8 +3997,6 @@ html[dir="rtl"] .floating-fab {
   padding: 0;
 }
 
-.search-page .side-sheet .side-sheet-list { gap: var(--spacing-4); }
-
 /* ---------------------------------- *\
  * MEDIA QUERY
 \* ---------------------------------- */
@@ -4249,6 +4247,8 @@ html[dir="rtl"] .floating-fab {
     border-radius: var(--radius-extra-large);
     padding: var(--spacing-2) 0;
   }
+
+  .search-page .side-sheet .side-sheet-list { gap: var(--spacing-4); }
 }
 
 /**
