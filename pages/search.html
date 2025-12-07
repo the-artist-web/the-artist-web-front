@@ -2991,7 +2991,7 @@
 
                         <aside class="side-sheet left" id="side-sheet-filters">
 
-                            <div class="side-sheet-header">
+                            <div class="side-sheet-header mobile">
 
                                 <div class="flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" /></svg>
@@ -2999,7 +2999,7 @@
                                     <h5 class="text-title-medium">Filters</h5>
                                 </div>
 
-                                <button type="button" class="icon-btn text small mobile" data-dismiss>
+                                <button type="button" class="icon-btn text small" data-dismiss>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
 
                                     <div class="state-layer"></div>
@@ -3008,104 +3008,56 @@
                             </div>
 
                             <ul class="side-sheet-list custom-scrollbar-hidden">
-
-                                <li class="selector">
-
-                                    <button type="button" class="filter-btn" data-toggler-collapses="#collapses-filter-user-type">
+                                
+                                <li class="div-base">
+                                    
+                                    <button type="button" class="side-sheet-link" data-toggler-collapses="#collapses-filter-user-type" style="background-color: transparent; color: var(--on-background-color) !important;">
                                         <p class="text-body-large">User Type</p>
 
-                                        <span class="text-on-background-variant" data-arrow>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 9l6 6l6 -6"></path></svg>
+                                        <span class="icon-btn active" data-arrow>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                                         </span>
                                     </button>
 
-                                    <div class="collapse-content" id="collapses-filter-user-type">
+                                    <ul class="collapse-content show" id="collapses-filter-user-type" style="height: 144px;">
 
-                                        <ul class="collapse-body">
-
-                                            <li class="form-check">
-                                                <input type="radio" name="user_type" value="students" id="user-type-students" class="input-radio" />
+                                        <li>
+                                            <label for="user-type-students" class="side-sheet-link text-on-background-variant">
+                                                <div class="form-check">
+                                                    <input type="radio" name="user_type" value="students" id="user-type-students" class="input-radio" />
+        
+                                                    <p class="text-capitalize text-body-large">Students</p>
+                                                </div>
     
-                                                <label for="user-type-students" class="form-label text-body-large">Students</label>
-                                            </li>
+                                                <div class="state-layer"></div>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label for="user-type-teachers" class="side-sheet-link text-on-background-variant">
+                                                <div class="form-check">
+                                                    <input type="radio" name="user_type" value="teachers" id="user-type-teachers" class="input-radio" />
+        
+                                                    <p class="text-capitalize text-body-large">Teachers</p>
+                                                </div>
     
-                                            <li class="form-check">
-                                                <input type="radio" name="user_type" value="teachers" id="user-type-teachers" class="input-radio" />
+                                                <div class="state-layer"></div>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label for="user-type-sellers" class="side-sheet-link text-on-background-variant">
+                                                <div class="form-check">
+                                                    <input type="radio" name="user_type" value="sellers" id="user-type-sellers" class="input-radio" />
+        
+                                                    <p class="text-capitalize text-body-large">Sellers</p>
+                                                </div>
     
-                                                <label for="user-type-teachers" class="form-label text-body-large">Teachers</label>
-                                            </li>
-    
-                                            <li class="form-check">
-                                                <input type="radio" name="user_type" value="sellers" id="user-type-sellers" class="input-radio" />
-    
-                                                <label for="user-type-sellers" class="form-label text-body-large">Sellers</label>
-                                            </li>
+                                                <div class="state-layer"></div>
+                                            </label>
+                                        </li>
 
-                                        </ul>
-
-                                    </div>
-
-                                </li>
-
-                                <li class="selector">
-
-                                    <button type="button" class="filter-btn" data-toggler-collapses="#collapses-filter-content-type">
-                                        <p class="text-body-large">Content Type</p>
-
-                                        <span class="text-on-background-variant" data-arrow>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 9l6 6l6 -6"></path></svg>
-                                        </span>
-                                    </button>
-
-                                    <div class="collapse-content" id="collapses-filter-content-type">
-
-                                        <ul class="collapse-body">
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="roadmap" id="content-type-roadmap" class="input-check" />
-    
-                                                <label for="content-type-roadmap" class="form-label text-body-large">Roadmap</label>
-                                            </li>
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="subjects" id="content-type-subjects" class="input-check" />
-    
-                                                <label for="content-type-subjects" class="form-label text-body-large">Subjects</label>
-                                            </li>
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="courses" id="content-type-courses" class="input-check" />
-    
-                                                <label for="content-type-courses" class="form-label text-body-large">Courses</label>
-                                            </li>
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="themes" id="content-type-themes" class="input-check" />
-    
-                                                <label for="content-type-themes" class="form-label text-body-large">Themes</label>
-                                            </li>
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="progect-guide" id="content-type-progect-guide" class="input-check" />
-    
-                                                <label for="content-type-progect-guide" class="form-label text-body-large">Project Guide</label>
-                                            </li>
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="keyboard-shortcuts" id="content-type-keyboard-shortcuts" class="input-check" />
-    
-                                                <label for="content-type-keyboard-shortcuts" class="form-label text-body-large">Keyboard Shortcuts</label>
-                                            </li>
-
-                                            <li class="form-check">
-                                                <input type="checkbox" name="content_type" value="helper-website" id="content-type-helper-website" class="input-check" />
-    
-                                                <label for="content-type-helper-website" class="form-label text-body-large">Helper Website</label>
-                                            </li>
-
-                                        </ul>
-
-                                    </div>
+                                    </ul>
 
                                 </li>
 
@@ -3115,48 +3067,53 @@
 
                         <div class="column">
 
-                            <div class="wrapper-justify">
+                            <div class="div-base">
 
-                                <div class="form-check">
-                                    <input type="checkbox" name="verified" id="show_verified_accounts_first" class="input-check" />
-
-                                    <label for="show_verified_accounts_first" class="form-label text-body-large">Show Verified Accounts first</label>
-                                </div>
-
-                                <div class="flex">
-                                    <p class="text-body-large text-on-background-variant text-nowrap">Sort By:</p>
-
-                                    <div class="select-wrapper text small">
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-alt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4v4h-4z" /><path d="M6 4l0 4" /><path d="M6 12l0 8" /><path d="M10 14h4v4h-4z" /><path d="M12 4l0 10" /><path d="M12 18l0 2" /><path d="M16 5h4v4h-4z" /><path d="M18 4l0 1" /><path d="M18 9l0 11" /></svg>
+                                <div class="wrapper-justify">
     
-                                        <select name="sort-by">
-                                            <option value="latest" selected>Latest</option>
-                                            <option value="oldest">Oldest</option>
-                                            <option value="top-rated">Top Rated</option>
-                                            <option value="best-selling">Best Selling</option>
-                                            <option value="most-viewed">Most Viewed</option>
-                                            <option value="most-commented">Most Commented</option>
-                                            <option value="trending">Trending</option>
-                                            <option value="popular">Popular</option>
-                                            <option value="featured">Featured</option>
-                                            <option disabled>Price:</option>
-                                            <option value="price-low">Low</option>
-                                            <option value="price-high">High</option>
-                                        </select>
-
-                                        <div class="arrow-select">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                                        </div>
-
-                                        <div class="state-layer"></div>
+                                    <div class="form-check">
+                                        <input type="checkbox" name="verified" id="show_verified_accounts_first" class="input-check" />
     
+                                        <label for="show_verified_accounts_first" class="form-label text-body-large">Show Verified Accounts first</label>
                                     </div>
+    
+                                    <div class="flex">
+                                        <p class="text-body-large text-on-background-variant text-nowrap">Sort By:</p>
+    
+                                        <div class="select-wrapper text small">
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-alt"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4v4h-4z" /><path d="M6 4l0 4" /><path d="M6 12l0 8" /><path d="M10 14h4v4h-4z" /><path d="M12 4l0 10" /><path d="M12 18l0 2" /><path d="M16 5h4v4h-4z" /><path d="M18 4l0 1" /><path d="M18 9l0 11" /></svg>
+        
+                                            <select name="sort-by">
+                                                <option value="latest" selected>Latest</option>
+                                                <option value="oldest">Oldest</option>
+                                                <option value="top-rated">Top Rated</option>
+                                                <option value="best-selling">Best Selling</option>
+                                                <option value="most-viewed">Most Viewed</option>
+                                                <option value="most-commented">Most Commented</option>
+                                                <option value="trending">Trending</option>
+                                                <option value="popular">Popular</option>
+                                                <option value="featured">Featured</option>
+                                                <option disabled>Price:</option>
+                                                <option value="price-low">Low</option>
+                                                <option value="price-high">High</option>
+                                            </select>
+    
+                                            <div class="arrow-select">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                            </div>
+    
+                                            <div class="state-layer"></div>
+        
+                                        </div>
+                                    </div>
+    
                                 </div>
+    
+                                <div class="separator x"></div>
 
                             </div>
 
-                            <div class="separator x"></div>
 
                         </div>
 
