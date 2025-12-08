@@ -1843,8 +1843,10 @@ html[dir="rtl"] .card-select .check {
   border: 2px solid var(--outline-variant);
   accent-color: var(--primary);
   border-radius: var(--radius-extra-small);
-  width: var(--spacing-4);
-  height: var(--spacing-4);
+  min-width: var(--spacing-4);
+  min-height: var(--spacing-4);
+  max-width: var(--spacing-4);
+  max-height: var(--spacing-4);
   cursor: pointer;
   position: relative;
   transition-duration: var(--tr-duration-short);
@@ -1903,8 +1905,10 @@ html[dir="rtl"] .card-select .check {
   border: 2px solid var(--outline-variant);
   accent-color: var(--primary);
   border-radius: var(--radius-full);
-  width: var(--spacing-4);
-  height: var(--spacing-4);
+  min-width: var(--spacing-4);
+  min-height: var(--spacing-4);
+  max-width: var(--spacing-4);
+  max-height: var(--spacing-4);
   cursor: pointer;
   position: relative;
   transition-duration: var(--tr-duration-short);
@@ -2882,6 +2886,10 @@ html[dir="rtl"] .side-sheet.right {
   gap: var(--spacing-1);
 }
 
+.side-sheet .side-sheet-list .collapse-content .collapse-content .side-sheet-link { padding-inline-start: var(--spacing-8); }
+
+.side-sheet .side-sheet-list .collapse-content .collapse-content .collapse-content .side-sheet-link { padding-inline-start: var(--spacing-12); }
+
 .side-sheet .side-sheet-link {
   display: flex;
   align-items: center;
@@ -2896,9 +2904,8 @@ html[dir="rtl"] .side-sheet.right {
 }
 
 .side-sheet .side-sheet-link.show {
-  background-color: var(--inverse);
-  color: var(--on-inverse) !important;
-  --state-layer-bg: var(--on-inverse);
+  color: var(--primary) !important;
+  --state-layer-bg: var(--primary);
 }
 
 .side-sheet .side-sheet-link svg {
@@ -4233,7 +4240,7 @@ html[dir="rtl"] .floating-fab {
     background-color: transparent;
     border-radius: 0;
     position: relative;
-    transform: translate(0);
+    transform: translate(0%) !important;
     height: max-content;
     z-index: 10;
   }

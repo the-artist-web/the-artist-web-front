@@ -5,15 +5,16 @@ export const Collapse = ($element) => {
     const $arrow = $element.querySelector("[data-arrow]");
 
     const updateHeights = ($content) => {
-        if ($content.classList.contains("show"))
-            $content.style.height = $content.scrollHeight + "px";
-        else
-            $content.style.height = "0px";
+        $content.style.height = $content.classList.contains("show")
+            ? $content.scrollHeight + "px"
+            : "0px";
 
         let parent = $content.parentElement.closest(".collapse-content");
 
         while (parent) {
+            parent.style.height = "auto";
             parent.style.height = parent.scrollHeight + "px";
+
             parent = parent.parentElement.closest(".collapse-content");
         }
     };
