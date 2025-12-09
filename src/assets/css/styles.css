@@ -3997,6 +3997,7 @@ html[dir="rtl"] .floating-fab {
 }
 
 .search-page .side-sheet .div-base {
+  background-color: transparent;
   border-radius: 0;
   padding: 0;
 }
@@ -4256,6 +4257,7 @@ html[dir="rtl"] .floating-fab {
   .search-page .side-sheet .side-sheet-header { padding-block-end: var(--spacing-5) !important; }
 
   .search-page .side-sheet .div-base {
+    background-color: var(--surface);
     border-radius: var(--radius-extra-large);
     padding: var(--spacing-2) 0;
   }
@@ -4265,6 +4267,8 @@ html[dir="rtl"] .floating-fab {
     flex-direction: column;
     gap: var(--spacing-4);
   }
+
+  .search-page .side-sheet .price-group { padding: var(--spacing-4) var(--spacing-4) var(--spacing-2); }
 }
 
 /**
