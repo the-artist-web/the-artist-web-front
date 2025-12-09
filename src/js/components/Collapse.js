@@ -1,6 +1,8 @@
 "use strict";
 
 export const Collapse = ($element) => {
+    document.querySelectorAll(".collapse-content.show").forEach($elem => $elem.style.height = $elem.scrollHeight + "px");
+
     const $collapseContent = document.querySelector($element.dataset.togglerCollapses);
     const $arrow = $element.querySelector("[data-arrow]");
 
