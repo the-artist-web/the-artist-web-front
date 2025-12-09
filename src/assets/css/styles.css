@@ -2881,9 +2881,6 @@ html[dir="rtl"] .side-sheet.right {
 .side-sheet .side-sheet-list {
   overflow-y: scroll;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-1);
 }
 
 .side-sheet .side-sheet-list .collapse-content .collapse-content .side-sheet-link { padding-inline-start: var(--spacing-8); }
@@ -4004,6 +4001,14 @@ html[dir="rtl"] .floating-fab {
   padding: 0;
 }
 
+.search-page .side-sheet .price-group {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-4);
+}
+
 /* ---------------------------------- *\
  * MEDIA QUERY
 \* ---------------------------------- */
@@ -4255,7 +4260,11 @@ html[dir="rtl"] .floating-fab {
     padding: var(--spacing-2) 0;
   }
 
-  .search-page .side-sheet .side-sheet-list { gap: var(--spacing-4); }
+  .search-page .side-sheet .side-sheet-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
 }
 
 /**
