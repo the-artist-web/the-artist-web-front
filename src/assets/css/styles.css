@@ -2716,7 +2716,7 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
 .search .searchbar .wrapper-item {
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
 }
 
 /**
@@ -3936,6 +3936,8 @@ html[dir="rtl"] .floating-fab {
 /**
  * Search Page
  */
+.search-page .desctop { display: none; }
+
 .search-page .separator.x { margin-block: var(--spacing-4); }
 
 .search-page .title-search {
@@ -4239,6 +4241,8 @@ html[dir="rtl"] .floating-fab {
 
   /* Search Page */
   .search-page .mobile { display: none; }
+
+  .search-page .desctop { display: flex; }
 
   .search-page .grid { grid-template-columns: var(--width-base) 1fr; }
 

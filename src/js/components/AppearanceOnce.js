@@ -35,6 +35,16 @@ export const AppearanceOnce = ($element, $overlay, $body) => {
              * Bottom Sheet
              */
             document.querySelectorAll(".bottom-sheet.active").forEach($elem => $elem.classList.remove("active"));
+
+            /**
+             * Side Sheet
+             */
+            document.querySelectorAll(".side-sheet.active").forEach($elem => $elem.classList.remove("active"));
+
+            /**
+             * Menu Content
+             */
+            document.querySelectorAll(".menu-content.active").forEach($elem => $elem.classList.remove("active"));
         }, delay - 10);
     });
 };

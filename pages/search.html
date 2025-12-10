@@ -111,7 +111,7 @@
 
                             <input type="text" placeholder="Search..." name="search" value="" class="text-body-large" required data-field />
 
-                            <button type="button" class="icon-btn text extra-small mobile" data-close data-tooltips="Close Search">
+                            <button type="button" class="icon-btn text small mobile" data-close data-tooltips="Close Search">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
 
                                 <div class="state-layer"></div>
@@ -191,7 +191,7 @@
                                         <div class="wrapper-item">
                                             <p class="text-on-background-variant text-body-large">Courses</p>
                                             
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
+                                            <button type="button" class="icon-btn text small" data-tooltips="Delete">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
     
                                                 <div class="state-layer"></div>
@@ -213,7 +213,7 @@
                                         <div class="wrapper-item">
                                             <p class="text-on-background-variant text-body-large">Users</p>
                                             
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
+                                            <button type="button" class="icon-btn text small" data-tooltips="Delete">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
     
                                                 <div class="state-layer"></div>
@@ -251,7 +251,7 @@
                                         <div class="wrapper-item">
                                             <p class="text-on-background-variant text-body-large">Courses</p>
                                             
-                                            <button type="button" class="icon-btn text extra-small" data-tooltips="Delete" data-alerts-dialog="#alerts-dialog">
+                                            <button type="button" class="icon-btn text small" data-tooltips="Delete">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
     
                                                 <div class="state-layer"></div>
@@ -2004,27 +2004,6 @@
         </ul>
     </div>
 
-    <!-- ALERTS DIALOG -->
-    <div class="alerts-dialog" id="alerts-dialog">
-        <h5 class="text-title-medium">Are you sure you want to delete "Name"?</h5>
-
-        <div class="alerts-dialog-footer">
-            <button type="button" class="btn text medium" data-dismiss>
-                <p class="text-body-large">Cancel</p>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <form action="" method="POST">
-                <button type="submit" class="btn error medium">
-                    <p class="text-body-large">Delete</p>
-
-                    <div class="state-layer"></div>
-                </button>
-            </form>
-        </div>
-    </div>
-
     <!-- DIALOG REVIEWS -->
     <div class="dialog-reviews dialog medium center" id="dialogs-reviews" data-appearance-once="10000">
 
@@ -2929,7 +2908,15 @@
 
                         <div class="wrapper">
 
-                            <button type="button" class="btn outline medium" data-dialogs="#dialogs-share">
+                            <button type="button" class="btn outline medium mobile" data-dialogs="#bottom-sheet-share">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+
+                                <p class="text-body-large">Share</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <button type="button" class="btn outline medium desctop" data-dialogs="#dialogs-share">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
 
                                 <p class="text-body-large">Share</p>
