@@ -3860,7 +3860,7 @@ html[dir="rtl"] .floating-fab {
 .hero .banner-swipper .div-base .banner-content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: var(--spacing-4);
   max-width: 700px;
   color: white;
 }
@@ -3938,8 +3938,6 @@ html[dir="rtl"] .floating-fab {
  */
 .search-page .desctop { display: none; }
 
-.search-page .separator.x { margin-block: var(--spacing-4); }
-
 .search-page .title-search {
   display: flex;
   align-items: start;
@@ -4010,6 +4008,13 @@ html[dir="rtl"] .floating-fab {
   align-items: center;
   gap: var(--spacing-2);
   padding: var(--spacing-4);
+}
+
+.search-page .box-outline {
+  width: 100%;
+  border-radius: var(--radius-large);
+  border: 1px solid var(--outline);
+  margin-block: var(--spacing-4);
 }
 
 /* ---------------------------------- *\
