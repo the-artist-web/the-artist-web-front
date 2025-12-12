@@ -1547,7 +1547,7 @@
     <!-- NAVIGATION BAR -->
     <nav class="navigation-bar" data-fixed-scrolling>
 
-        <a href="../index.html" class="nav-item active">
+        <a href="../index.html" class="nav-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
 
             <p class="line-clamp line-clamp-1 text-body-medium">Home</p>
@@ -3067,9 +3067,9 @@
                                     <ul class="collapse-content" id="collapses-filter-content-type">
 
                                         <li>
-                                            <label for="user-type-roadmap" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-roadmap" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="roadmap" id="user-type-roadmap" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="roadmap" id="content-type-roadmap" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Roadmap</p>
                                                 </div>
@@ -3081,9 +3081,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-docs" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-docs" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="docs" id="user-type-docs" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="docs" id="content-type-docs" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Docs</p>
                                                 </div>
@@ -3095,9 +3095,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-subjects" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-subjects" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="subjects" id="user-type-subjects" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="subjects" id="content-type-subjects" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Subjects</p>
                                                 </div>
@@ -3109,9 +3109,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-courses" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-courses" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="courses" id="user-type-courses" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="courses" id="content-type-courses" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Courses</p>
                                                 </div>
@@ -3123,9 +3123,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-themes" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-themes" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="themes" id="user-type-themes" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="themes" id="content-type-themes" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Themes</p>
                                                 </div>
@@ -3137,9 +3137,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-services" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-services" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="services" id="user-type-services" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="services" id="content-type-services" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Services</p>
                                                 </div>
@@ -3151,9 +3151,23 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-helper-website" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-blogs" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="helper-website" id="user-type-helper-website" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="blogs" id="content-type-blogs" class="input-radio" />
+        
+                                                    <p class="text-capitalize text-body-large line-clamp line-clamp-1">Blogs</p>
+                                                </div>
+
+                                                <p class="text-body-large text-on-background-variant">35</p>
+    
+                                                <div class="state-layer"></div>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <label for="content-type-helper-website" class="side-sheet-link text-on-background-variant">
+                                                <div class="form-check">
+                                                    <input type="radio" name="content_type" value="helper-website" id="content-type-helper-website" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Helper Website</p>
                                                 </div>
@@ -3165,9 +3179,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-project-guide" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-project-guide" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="project-guide" id="user-type-project-guide" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="project-guide" id="content-type-project-guide" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Project Guide</p>
                                                 </div>
@@ -3179,9 +3193,9 @@
                                         </li>
 
                                         <li>
-                                            <label for="user-type-keyboard-shortcuts" class="side-sheet-link text-on-background-variant">
+                                            <label for="content-type-keyboard-shortcuts" class="side-sheet-link text-on-background-variant">
                                                 <div class="form-check">
-                                                    <input type="radio" name="content_type" value="keyboard-shortcuts" id="user-type-keyboard-shortcuts" class="input-radio" />
+                                                    <input type="radio" name="content_type" value="keyboard-shortcuts" id="content-type-keyboard-shortcuts" class="input-radio" />
         
                                                     <p class="text-capitalize text-body-large line-clamp line-clamp-1">Keyboard Shortcuts</p>
                                                 </div>
