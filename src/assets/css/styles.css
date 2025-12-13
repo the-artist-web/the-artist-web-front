@@ -1209,7 +1209,8 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-4);
+  column-gap: var(--spacing-4);
+  row-gap: var(--spacing-2);
   margin-block-start: 30px;
 }
 
