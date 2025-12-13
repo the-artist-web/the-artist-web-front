@@ -4141,6 +4141,11 @@ html[dir="rtl"] .floating-fab {
 
 .search-page .pagenation-container { margin-block-start: var(--spacing-4); }
 
+/**
+ * Docs Page
+ */
+
+
 /* ---------------------------------- *\
  * MEDIA QUERY
 \* ---------------------------------- */
