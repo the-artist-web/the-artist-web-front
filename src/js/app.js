@@ -40,7 +40,7 @@ const $body = document.body;
 /**
  * Toggler Overlay
  */
-$overlay.addEventListener("click", () => Overlay($overlay, $body));
+if ($overlay) $overlay.addEventListener("click", () => Overlay($overlay, $body));
 
 /**
  * Start Loading

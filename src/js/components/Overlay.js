@@ -23,4 +23,5 @@ export const Overlay = ($overlay, $body) => {
      * Side Sheet
      */
     document.querySelectorAll(".side-sheet.active").forEach($elem => $elem.classList.remove("active"));
+    document.querySelectorAll(".sidebar-docs.active").forEach($elem => $elem.classList.remove("active"));
 };
