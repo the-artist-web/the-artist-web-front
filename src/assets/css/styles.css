@@ -661,6 +661,8 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   border-radius: var(--radius-full);
 }
 
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: var(--outline-variant); }
+
 .custom-scrollbar::-webkit-scrollbar-thumb:active { background-color: var(--on-background-variant); }
 
 .overlay {
@@ -4250,8 +4252,6 @@ html[dir="rtl"] .docs-page .sidebar-docs {
   padding-block-end: var(--spacing-4);
   margin-block-end: -16px;
 }
-
-.docs-page .sidebar-docs .sidebar-list::-webkit-scrollbar { display: none; }
 
 .docs-page .sidebar-docs .group-documents {
   display: flex;
