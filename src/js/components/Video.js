@@ -7,6 +7,20 @@ export const VideoControl = ($element) => {
     const $audio = $element.querySelector("[data-audio]");
     const $muted = $element.querySelector("[data-muted]");
 
+    $video.addEventListener("click", () => {
+        if ($video.paused) {
+            $video.play();
+
+            $play.style.display = "none";
+            $stop.style.display = "flex";
+        } else {
+            $video.pause();
+            
+            $play.style.display = "flex";
+            $stop.style.display = "none";
+        }
+    });
+
     $play.addEventListener("click", () => {
         $video.play();
 

@@ -29,6 +29,7 @@ import { Swipper } from "./components/Swipper.js";
 import { VideoControl } from "./components/Video.js";
 import { AutoPlayVideo } from "./components/AutoPlayVideo.js";
 import { SideSheet } from "./components/SideSheet.js";
+import { MarkDown } from "./components/MarkDown.js";
 
 /**
  * Get Overlay & Body & Main
@@ -107,7 +108,6 @@ if ($togglerFabsMenu.length) $togglerFabsMenu.forEach($elem => FabMenu($elem));
  */
 const $togglerNavigationRail = document.querySelector("[data-toggler-navigation-rail]");
 const $navigationRail = document.querySelector("[data-navigation-rail]");
-
 if ($togglerNavigationRail, $navigationRail) NavigationRail($togglerNavigationRail, $navigationRail, $main);
 
 /**
@@ -181,6 +181,12 @@ if ($videos.length) $videos.forEach($elem => AutoPlayVideo($elem));
  */
 const $sideSheets = document.querySelectorAll("[data-side-sheets]");
 if ($sideSheets.length) $sideSheets.forEach($elem => $elem.addEventListener("click", () => SideSheet($elem, $overlay, $body)));
+
+/**
+ * Markdowns
+ */
+const $markdowns = document.querySelectorAll("[data-markdowns]");
+if ($markdowns.length) $markdowns.forEach($elem => MarkDown($elem));
 
 /**
  * Toggler Dismiss
