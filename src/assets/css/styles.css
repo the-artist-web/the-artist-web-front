@@ -1497,7 +1497,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
  * Code Blocks
  */
 pre {
-  background-color: var(--surface) !important;
+  background-color: var(--surface-variant) !important;
   border-radius: var(--radius-medium) !important;
   padding: var(--spacing-1) !important;
   position: relative;
@@ -1505,7 +1505,7 @@ pre {
 }
 
 pre code {
-  background-color: var(--surface-variant) !important;
+  background-color: var(--surface) !important;
   padding: var(--spacing-5) !important;
   padding-inline-end: 60px !important;
   border-radius: var(--radius-small) !important;
@@ -3420,7 +3420,15 @@ html[dir="rtl"] .side-sheet.right {
   border-radius: var(--radius-full);
 }
 
-.form-box .input-wrapper[data-passwords] { padding-inline-end: 0 !important; }
+.form-box .input-wrapper.p-start-0 {
+  padding-inline-start: 0 !important;
+  gap: 0 !important;
+}
+
+.form-box .input-wrapper.p-end-0 {
+  padding-inline-end: 0 !important;
+  gap: 0 !important;
+}
 
 .form-box .input-wrapper.small {
   padding-inline: var(--spacing-5);
@@ -3474,6 +3482,18 @@ html[dir="rtl"] .side-sheet.right {
   position: relative;
 }
 
+.select-wrapper.p-start-0,
+.select-wrapper.p-start-0 select {
+  padding-inline-start: 0 !important;
+  gap: 0 !important;
+}
+
+.select-wrapper.p-end-0,
+.select-wrapper.p-end-0 select {
+  padding-inline-end: 0 !important;
+  gap: 0 !important;
+}
+
 .select-wrapper svg,
 .select-wrapper .arrow-dir,
 .select-wrapper .theme-light,
@@ -3484,21 +3504,28 @@ html[dir="rtl"] .side-sheet.right {
   max-height: var(--spacing-6) !important;
 }
 
-.select-wrapper.small,
 .select-wrapper.small select {
   padding-inline-start: var(--spacing-5);
   min-height: var(--height-small);
   max-height: var(--height-small);
 }
 
-.select-wrapper.medium,
+.select-wrapper.small svg,
+.select-wrapper.small .arrow-dir,
+.select-wrapper.small .theme-light,
+.select-wrapper.small .theme-dark {
+  min-width: var(--spacing-5) !important;
+  max-width: var(--spacing-5) !important;
+  min-height: var(--spacing-5) !important;
+  max-height: var(--spacing-5) !important;
+}
+
 .select-wrapper.medium select {
   padding-inline-start: var(--spacing-6);
   min-height: var(--height-medium);
   max-height: var(--height-medium);
 }
 
-.select-wrapper.large,
 .select-wrapper.large select {
   padding-inline-start: var(--spacing-7);
   min-height: var(--height-large);
@@ -3518,11 +3545,11 @@ html[dir="rtl"] .side-sheet.right {
   --state-layer-bg: var(--on-background);
 }
 
-.select-wrapper.small select { padding-inline: 0 var(--width-small); }
+.select-wrapper.small select { padding-inline: var(--spacing-5) var(--width-small); }
 
-.select-wrapper.medium select { padding-inline: 0 var(--width-medium); }
+.select-wrapper.medium select { padding-inline: var(--spacing-6) var(--width-medium); }
 
-.select-wrapper.large select { padding-inline: 0 var(--width-large); }
+.select-wrapper.large select { padding-inline: var(--spacing-7) var(--width-large); }
 
 .select-wrapper .arrow-select {
   position: absolute;
@@ -3531,7 +3558,7 @@ html[dir="rtl"] .side-sheet.right {
   pointer-events: none;
 }
 
-.select-wrapper.small .arrow-select { right: calc((var(--width-small) / 2) - var(--spacing-3)); }
+.select-wrapper.small .arrow-select { right: calc((var(--width-small) / 2) - (var(--spacing-2) + var(--spacing-05))); }
 
 html[dir="rtl"] .select-wrapper.small .arrow-select {
   left: calc((var(--width-small) / 2) - var(--spacing-3));
