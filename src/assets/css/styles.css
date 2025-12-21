@@ -1380,10 +1380,13 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   letter-spacing: var(--ls-p-025);
   background-color: var(--surface-variant);
   padding: var(--spacing-05) var(--spacing-2);
-  color: var(--on-background-variant);
+  color: var(--on-background) !important;
   border-radius: var(--radius-extra-small);
   color: var(--on-background-variant);
   text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown .table-overflow { margin-block-end: var(--spacing-6); }
@@ -1426,6 +1429,8 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 }
 
 .markdown blockquote p { margin: 0 !important; }
+
+.markdown blockquote code { background-color: var(--soft-primary) !important; }
 
 .markdown hr {
   width: 100%;
@@ -1522,7 +1527,7 @@ pre code::-webkit-scrollbar {
 }
 
 pre code::-webkit-scrollbar-track {
-  background-color: var(--surface-variant);
+  background-color: var(--surface);
   border-radius: var(--radius-full);
 }
 
@@ -4790,6 +4795,11 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
 .docs-page .scrollspy .scrollspy-list ul li .scrollspy-item { padding-inline-start: var(--spacing-10); }
 
 .docs-page .scrollspy .scrollspy-list ul li ul li .scrollspy-item { padding-inline-start: var(--spacing-16); }
+
+/**
+ * Roadmap Page
+ */
+
 
 /* ---------------------------------- *\
  * MEDIA QUERY

@@ -3,7 +3,8 @@
 /**
  * Import Modules
  */
-import { Snackbar } from "./Snackbar.js";
+import { Copied } from "./Copied.js";
+import { Tooltip } from "./Tooltip.js";
 
 export const MarkDown = ($elem) => {
     // Table
@@ -47,10 +48,7 @@ export const MarkDown = ($elem) => {
 
         pre.appendChild(copyBtn);
 
-        copyBtn.addEventListener("click", () => {
-            Snackbar(document.documentElement.dir === "ltr" ? "Copied!" : "تم نسخها!");
-    
-            navigator.clipboard.writeText(copyBtn.dataset.copied);
-        });
+        Copied(copyBtn);
+        Tooltip(copyBtn);
     });
 };
