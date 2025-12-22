@@ -45,6 +45,7 @@
     <!-- custom js link -->
     <script type="module" src="../../src/js/theme.js"></script>
     <script type="module" src="../../src/js/app.js"></script>
+    <script type="module" src="../../pages/roadmap/roadmap.js"></script>
 
     <!-- custom prism -->
     <link href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-tomorrow.css" rel="stylesheet" />
@@ -2178,712 +2179,6 @@
         </div>
     </div>
 
-    <!-- DIALOG AUTH -->
-    <div class="dialog-auth dialog small center" id="dialogs-auth">
-        <div class="dialog-content">
-            <h4 class="text-headline-large">Let's get started!</h4>
-
-            <p class="text-on-background-variant text-body-large">Learn, teach, sell, buy — all in one vibrant community.</p>
-        </div>
-
-        <div class="wrapper">
-
-            <a href="#" class="btn outline large w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z"></path></svg>
-
-                <div class="state-layer"></div>
-            </a>
-
-            <a href="#" class="btn outline large w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
-
-                <div class="state-layer"></div>
-            </a>
-
-            <a href="#" class="btn outline large w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 2a1 1 0 0 1 .117 1.993l-.117 .007c-.693 0 -1.33 .694 -1.691 1.552a5.1 5.1 0 0 1 1.982 -.544l.265 -.008c2.982 0 5.444 3.053 5.444 6.32c0 3.547 -.606 5.862 -2.423 8.578c-1.692 2.251 -4.092 2.753 -6.41 1.234a.31 .31 0 0 0 -.317 -.01c-2.335 1.528 -4.735 1.027 -6.46 -1.27c-1.783 -2.668 -2.39 -4.984 -2.39 -8.532l.004 -.222c.108 -3.181 2.526 -6.098 5.44 -6.098c.94 0 1.852 .291 2.688 .792c.419 -1.95 1.818 -3.792 3.868 -3.792m-7.034 6.154c-1.36 .858 -1.966 2.06 -1.966 3.846a1 1 0 0 0 2 0c0 -1.125 .28 -1.678 1.034 -2.154a1 1 0 1 0 -1.068 -1.692"></path></svg>
-
-                <div class="state-layer"></div>
-            </a>
-
-        </div>
-
-        <div class="continue">
-            <div class="separator x"></div>
-
-            <p class="text-on-background-variant text-body-large">Or continue with</p>
-
-            <div class="separator x"></div>
-        </div>
-
-        <a href="../../pages/auth/determine-the-role.html" class="btn inverse medium w-full">
-            <p class="text-body-large">Log in with username instead</p>
-
-            <div class="state-layer"></div>
-        </a>
-    </div>
-
-    <!-- SHEET AUTH -->
-    <div class="sheet-auth bottom-sheet custom-scrollbar-hidden" id="bottom-sheet-auth">
-        <button type="button" class="line-close" data-dismiss>
-            <div class="state-layer"></div>
-        </button>
-
-        <div class="sheet-auth-body">
-            <div class="sheet-content">
-                <h4 class="text-headline-large">Let's get started!</h4>
-    
-                <p class="text-on-background-variant text-body-large">Learn, teach, sell, buy — all in one vibrant community.</p>
-            </div>
-    
-            <div class="wrapper">
-    
-                <a href="#" class="btn outline large w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z"></path></svg>
-    
-                    <div class="state-layer"></div>
-                </a>
-    
-                <a href="#" class="btn outline large w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
-    
-                    <div class="state-layer"></div>
-                </a>
-    
-                <a href="#" class="btn outline large w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 2a1 1 0 0 1 .117 1.993l-.117 .007c-.693 0 -1.33 .694 -1.691 1.552a5.1 5.1 0 0 1 1.982 -.544l.265 -.008c2.982 0 5.444 3.053 5.444 6.32c0 3.547 -.606 5.862 -2.423 8.578c-1.692 2.251 -4.092 2.753 -6.41 1.234a.31 .31 0 0 0 -.317 -.01c-2.335 1.528 -4.735 1.027 -6.46 -1.27c-1.783 -2.668 -2.39 -4.984 -2.39 -8.532l.004 -.222c.108 -3.181 2.526 -6.098 5.44 -6.098c.94 0 1.852 .291 2.688 .792c.419 -1.95 1.818 -3.792 3.868 -3.792m-7.034 6.154c-1.36 .858 -1.966 2.06 -1.966 3.846a1 1 0 0 0 2 0c0 -1.125 .28 -1.678 1.034 -2.154a1 1 0 1 0 -1.068 -1.692"></path></svg>
-    
-                    <div class="state-layer"></div>
-                </a>
-    
-            </div>
-    
-            <div class="continue">
-                <div class="separator x"></div>
-    
-                <p class="text-on-background-variant text-body-large">Or continue with</p>
-    
-                <div class="separator x"></div>
-            </div>
-    
-            <a href="../../pages/auth/determine-the-role.html" class="btn inverse medium w-full">
-                <p class="text-body-large">Log in with username instead</p>
-    
-                <div class="state-layer"></div>
-            </a>
-        </div>
-    </div>
-
-    <!-- DIALOG SHARE -->
-    <div class="dialog-share dialog medium center" id="dialogs-share" data-swippers>
-
-        <div class="wrapper-justify">
-            <h4 class="text-title-large">Share</h4>
-
-            <div class="wrapper-item">
-                <button type="button" class="icon-btn outline small" data-swipper-left data-tooltips="Prev">
-                    <div class="arrow-dir">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                    </div>
-
-                    <div class="state-layer"></div>
-                </button>
-
-                <button type="button" class="icon-btn outline small" data-swipper-right data-tooltips="Next">
-                    <div class="arrow-dir">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
-                    </div>
-
-                    <div class="state-layer"></div>
-                </button>
-            </div>
-        </div>
-
-        <ul class="swipper-base custom-scrollbar-hidden" data-swipper-container>
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Gmail</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Whatsapp</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Facebook</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">X.com</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Linkedin</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Telegram</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-reddit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" /><path d="M12 8l1 -5l6 1" /><path d="M19 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><circle cx="9" cy="13" r=".5" fill="currentColor" /><circle cx="15" cy="13" r=".5" fill="currentColor" /><path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Reddit</p>
-                </a>
-            </li> 
-            
-            <li>
-                <a href="#" class="wrapper-block">
-                    <div class="avatar large">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-pinterest"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 20l4 -9" /><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
-
-                        <div class="state-layer"></div>
-                    </div>
-
-                    <p class="text-body-large">Pintrest</p>
-                </a>
-            </li> 
-        </ul>
-
-        <div class="form-box">
-
-            <div class="input-wrapper filled large p-end-0">
-
-                <input type="url" value="https://www.website.com" class="text-body-large" disabled />
-
-                <button type="button" class="icon-btn text large" data-copied="https://www.website.com" data-tooltips="Copy">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-
-                    <div class="state-layer"></div>
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- SHEET SHARE -->
-    <div class="sheet-share bottom-sheet custom-scrollbar-hidden" id="bottom-sheet-share">
-        <button type="button" class="line-close" data-dismiss>
-            <div class="state-layer"></div>
-        </button>
-
-        <div class="sheet-share-body" data-swippers>
-            <div class="wrapper-justify">
-                <h4 class="text-title-large">Share</h4>
-
-                <div class="wrapper-item">
-                    <button type="button" class="icon-btn outline small" data-swipper-left data-tooltips="Prev">
-                        <div class="arrow-dir">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-                        </div>
-
-                        <div class="state-layer"></div>
-                    </button>
-
-                    <button type="button" class="icon-btn outline small" data-swipper-right data-tooltips="Next">
-                        <div class="arrow-dir">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
-                        </div>
-
-                        <div class="state-layer"></div>
-                    </button>
-                </div>
-            </div>
-
-            <ul class="swipper-base custom-scrollbar-hidden" data-swipper-container>
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Gmail</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Whatsapp</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Facebook</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">X.com</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Linkedin</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Telegram</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-reddit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" /><path d="M12 8l1 -5l6 1" /><path d="M19 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><circle cx="9" cy="13" r=".5" fill="currentColor" /><circle cx="15" cy="13" r=".5" fill="currentColor" /><path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Reddit</p>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="#" class="wrapper-block">
-                        <div class="avatar large">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-pinterest"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 20l4 -9" /><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
-
-                            <div class="state-layer"></div>
-                        </div>
-
-                        <p class="text-body-large">Pintrest</p>
-                    </a>
-                </li> 
-            </ul>
-
-            <div class="form-box">
-
-                <div class="input-wrapper filled large p-end-0">
-
-                    <input type="url" value="https://www.website.com" class="text-body-large" disabled />
-
-                    <button type="button" class="icon-btn text large" data-copied="https://www.website.com" data-tooltips="Copy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-
-                        <div class="state-layer"></div>
-                    </button>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- DIALOGS DOTS -->
-    <div class="dialog extra-small center" id="dialogs-dots">
-        <div class="dialog-list">
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-    
-                <p class="text-body-large">Follow</p>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-    
-                <p class="text-body-large">Message</p>
-
-                <div class="state-layer"></div>
-            </button>
-    
-            <div class="separator x"></div>
-
-            <button type="button" class="dialog-item" data-copied="https://www.website.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-
-                <p class="text-body-large">Copy Link</p>
-
-                <div class="state-layer"></div>
-            </button>
-    
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-share">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
-
-                <p class="text-body-large">Share</p>
-
-                <div class="state-layer"></div>
-            </button>
-    
-            <div class="separator x"></div>
-    
-            <a href="../../pages/legal/report-content.html" class="dialog-item red">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
-
-                <p class="text-body-large">Report</p>
-
-                <div class="state-layer"></div>
-            </a>
-
-            <button type="button" class="dialog-item red">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.18 8.189a4.01 4.01 0 0 0 2.616 2.627m3.507 -.545a4 4 0 1 0 -5.59 -5.552" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4c.412 0 .81 .062 1.183 .178m2.633 2.618c.12 .38 .184 .785 .184 1.204v2" /><path d="M3 3l18 18" /></svg>
-
-                <p class="text-body-large">Block</p>
-
-                <div class="state-layer"></div>
-            </button>
-        </div>
-    </div>
-
-    <!-- SHEET DOTS -->
-    <div class="bottom-sheet custom-scrollbar-hidden" id="bottom-sheet-dots">
-        <button type="button" class="line-close" data-dismiss>
-            <div class="state-layer"></div>
-        </button>
-
-        <ul class="sheet-list">
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-auth">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-        
-                        <p class="text-body-large">Follow</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-auth">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-        
-                        <p class="text-body-large">Message</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="separator x"></li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-copied="https://www.website.com">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-        
-                        <p class="text-body-large">Copy Link</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-share">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
-        
-                        <p class="text-body-large">Share</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="separator x"></li>
-    
-            <li class="sheet-item">
-                <a href="../../pages/legal/report-content.html" class="sheet-link red">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
-        
-                        <p class="text-body-large">Report</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </a>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link red">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.18 8.189a4.01 4.01 0 0 0 2.616 2.627m3.507 -.545a4 4 0 1 0 -5.59 -5.552" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4c.412 0 .81 .062 1.183 .178m2.633 2.618c.12 .38 .184 .785 .184 1.204v2" /><path d="M3 3l18 18" /></svg>
-        
-                        <p class="text-body-large">Block</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-        </ul>
-    </div>
-
-    <!-- DIALOGS DOTS ACTIONS -->
-    <div class="dialog extra-small center" id="dialogs-dots-actions">
-        <div class="dialog-list">
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-    
-                <p class="text-body-large">Follow</p>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-    
-                <p class="text-body-large">Message</p>
-
-                <div class="state-layer"></div>
-            </button>
-    
-            <div class="separator x"></div>
-
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-    
-                <p class="text-body-large">Like</p>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-auth">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
-    
-                <p class="text-body-large">Save</p>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <button type="button" class="dialog-item" data-copied="https://www.website.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-
-                <p class="text-body-large">Copy Link</p>
-
-                <div class="state-layer"></div>
-            </button>
-    
-            <button type="button" class="dialog-item" data-dialogs="#dialogs-share">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
-
-                <p class="text-body-large">Share</p>
-
-                <div class="state-layer"></div>
-            </button>
-    
-            <div class="separator x"></div>
-    
-            <a href="../../pages/legal/report-content.html" class="dialog-item red">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
-
-                <p class="text-body-large">Report</p>
-
-                <div class="state-layer"></div>
-            </a>
-
-            <button type="button" class="dialog-item red">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.18 8.189a4.01 4.01 0 0 0 2.616 2.627m3.507 -.545a4 4 0 1 0 -5.59 -5.552" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4c.412 0 .81 .062 1.183 .178m2.633 2.618c.12 .38 .184 .785 .184 1.204v2" /><path d="M3 3l18 18" /></svg>
-
-                <p class="text-body-large">Block</p>
-
-                <div class="state-layer"></div>
-            </button>
-        </div>
-    </div>
-
-    <!-- SHEET DOTS ACTIONS -->
-    <div class="bottom-sheet custom-scrollbar-hidden" id="bottom-sheet-dots-actions">
-        <button type="button" class="line-close" data-dismiss>
-            <div class="state-layer"></div>
-        </button>
-
-        <ul class="sheet-list">
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-auth">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-        
-                        <p class="text-body-large">Follow</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-auth">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-        
-                        <p class="text-body-large">Message</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="separator x"></li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-share">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-        
-                        <p class="text-body-large">Like</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-copied="https://www.website.com">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
-        
-                        <p class="text-body-large">Save</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-copied="https://www.website.com">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-        
-                        <p class="text-body-large">Copy Link</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link" data-bottom-sheets="#bottom-sheet-share">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
-        
-                        <p class="text-body-large">Share</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-    
-            <li class="separator x"></li>
-    
-            <li class="sheet-item">
-                <a href="../../pages/legal/report-content.html" class="sheet-link red">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
-        
-                        <p class="text-body-large">Report</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </a>
-            </li>
-    
-            <li class="sheet-item">
-                <button type="button" class="sheet-link red">
-                    <div class="wrapper-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.18 8.189a4.01 4.01 0 0 0 2.616 2.627m3.507 -.545a4 4 0 1 0 -5.59 -5.552" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4c.412 0 .81 .062 1.183 .178m2.633 2.618c.12 .38 .184 .785 .184 1.204v2" /><path d="M3 3l18 18" /></svg>
-        
-                        <p class="text-body-large">Block</p>
-                    </div>
-    
-                    <div class="state-layer"></div>
-                </button>
-            </li>
-        </ul>
-    </div>
-
     <!-- MAIN -->
     <main class="main" data-main>
 
@@ -2894,15 +2189,365 @@
 
                 <div class="container container-xl">
 
-                    <div class="div-base">
+                    <div class="div-base" data-swippers>
 
-                        <div class="swipper-card-4-base">
-                            <div class="swipper-item">swipper-item 1</div>
-                            <div class="swipper-item">swipper-item 2</div>
-                            <div class="swipper-item">swipper-item 3</div>
-                            <div class="swipper-item">swipper-item 4</div>
-                            <div class="swipper-item">swipper-item 4</div>
+                        <div class="roadmap-header">
+
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 4v13" /><path d="M15 7v13" /></svg>
+    
+                                <h5 class="text-title-large">Roadmap</h5>
+                            </div>
+
+                            <div class="wrapper">
+
+                                <form action="" method="GET" class="form-box">
+
+                                    <div class="input-wrapper outline small p-start-0">
+                                        <button type="submit" class="icon-btn small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                        </button>
+
+                                        <input type="text" placeholder="Search in roadmap" name="search" value="" class="text-body-medium" required />
+                                    </div>
+
+                                </form>
+
+                                <div class="flex">
+
+                                    <button type="button" class="icon-btn outline small" data-swipper-left data-tooltips="Prev">
+                                        <div class="arrow-dir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+
+                                    <button type="button" class="icon-btn outline small" data-swipper-right data-tooltips="Next">
+                                        <div class="arrow-dir">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                                        </div>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
+                        <ul class="swipper-card-4-base" data-swipper-container>
+                            
+                            <li class="swipper-item">
+
+                                <div class="roadmap-container">
+
+                                    <div class="wrapper-justify">
+                                        <p class="text-body-large line-clamp line-clamp-1">Role Based Roadmaps</p>
+
+                                        <p class="text-body-large text-on-background-variant">7</p>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Frontend</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Backend</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Full Stack</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">DevOps</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">DevSecOps</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Data Analyst</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">BI Analyst</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            
+                            <li class="swipper-item">
+
+                                <div class="roadmap-container">
+
+                                    <div class="wrapper-justify">
+                                        <p class="text-body-large line-clamp line-clamp-1">Skill Based Roadmaps</p>
+
+                                        <p class="text-body-large text-on-background-variant">6</p>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">SQL</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Computer Science</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">React</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Vue</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">JavaScript</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Angular</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            
+                            <li class="swipper-item">
+
+                                <div class="roadmap-container">
+
+                                    <div class="wrapper-justify">
+                                        <p class="text-body-large line-clamp line-clamp-1">Project Ideas</p>
+
+                                        <p class="text-body-large text-on-background-variant">3</p>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Frontend</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Backend</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">DevOps</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            
+                            <li class="swipper-item">
+
+                                <div class="roadmap-container">
+
+                                    <div class="wrapper-justify">
+                                        <p class="text-body-large line-clamp line-clamp-1">Best Practices</p>
+
+                                        <p class="text-body-large text-on-background-variant">5</p>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">AWS</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">API Security</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Backend Performance</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Frontend Performance</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <div class="card-roadmap">
+                                        <a href="../../pages/roadmap/show.html" class="text-body-large line-clamp line-clamp-1">Code Review</a>
+
+                                        <button type="button" class="icon-btn text small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                                            <div class="state-layer"></div>
+                                        </button>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
 
                     </div>
 
