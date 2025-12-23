@@ -1541,6 +1541,7 @@ pre code::-webkit-scrollbar-thumb:hover { background-color: var(--outline-varian
 pre code::-webkit-scrollbar-thumb:active { background-color: var(--on-background-variant); }
 
 pre .icon-btn {
+  backdrop-filter: blur(30px);
   position: absolute;
   top: var(--spacing-4);
   right: var(--spacing-4);
