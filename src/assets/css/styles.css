@@ -358,7 +358,7 @@ html {
   font-family: var(--font-family);
   font-size: var(--fs-base);
   line-height: var(--lh-base);
-  font-weight: var(--fw-regular);
+  font-weight: normal;
 }
 
 body {
