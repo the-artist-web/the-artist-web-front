@@ -460,6 +460,7 @@ svg {
   isolation: isolate;
   user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .state-layer {
