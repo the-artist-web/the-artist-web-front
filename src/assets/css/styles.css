@@ -5365,7 +5365,7 @@ html[dir="rtl"] .roadmap-show .roadmap-container .roadmap-header {
     border-radius: 0 !important;
   }
 
-  .roadmap-show .roadmap-container { padding: var(--header-height) var(--spacing-6) var(--spacing-6); }
+  .roadmap-show .roadmap-container { padding: var(--spacing-10) var(--spacing-6) var(--spacing-6); }
 }
 
 /**
