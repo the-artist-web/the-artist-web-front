@@ -4869,6 +4869,43 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
 
 .roadmap-page .roadmap-container .card-roadmap button .state-layer { opacity: 0; }
 
+.roadmap-show {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  height: 100dvh;
+}
+
+.roadmap-show .roadmap-container {
+  width: 100%;
+  height: 100dvh;
+  overflow: auto;
+  position: relative;
+  padding: var(--spacing-10) var(--spacing-4) var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.roadmap-show .roadmap-container::before {
+  content: "";
+  background-image: linear-gradient(to left, var(--outline) 1px, transparent 1px), linear-gradient(to bottom, var(--outline) 1px, transparent 1px);
+  background-size: var(--spacing-10) var(--spacing-10);
+  background-position: top left;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.roadmap-show .side-sheet {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 /* ---------------------------------- *\
  * MEDIA QUERY
 \* ---------------------------------- */
@@ -4880,8 +4917,6 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   /**
    * REUSED STYLE
    */
-  .div-base { padding: var(--spacing-5); }
-
   .grid-2-base { grid-template-columns: repeat(2, 1fr); }
 
   .grid-3-base { grid-template-columns: repeat(2, 1fr); }
@@ -4934,6 +4969,35 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   /**
    * REUSED STYLE
    */
+  .div-base { padding: var(--spacing-5); }
+
+  /**
+   * COMPONENTS
+   */
+
+  /* DIALOG REVIEWS */
+  .dialog-reviews { display: flex; }
+
+  /* BOTTOM SHEET REVIEWS */
+  .bottom-sheet-reviews { display: none; }
+
+  /**
+   * MAIN
+   */
+
+  /* Docs Page */
+  .docs-page .docs-body .docs-body-footer .grid { grid-template-columns: repeat(2, 1fr); }
+
+  .docs-page .docs-body .docs-body-footer .btn.start { display: flex; }
+}
+
+/**
+ * Fit size: 992px
+ */
+@media screen and (min-width: 992px) {
+  /**
+   * REUSED STYLE
+   */
   .container { padding-inline: var(--spacing-6); }
 
   .title-sec .swipper-base {
@@ -4949,7 +5013,15 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
 
   .main.active { padding-inline-start: calc(var(--width-base) + var(--spacing-4)); }
 
-  .div-base { padding: var(--spacing-6); }
+  .grid-3-base { grid-template-columns: repeat(3, 1fr); }
+
+  .grid-4-base { grid-template-columns: repeat(3, 1fr); }
+
+  .grid-5-base { grid-template-columns: repeat(3, 1fr); }
+
+  .swipper-card-3-base { grid-auto-columns: calc((100% - var(--spacing-10)) / 3); }
+
+  .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-10)) / 3); }
 
   /**
    * COMPONENTS
@@ -4960,11 +5032,11 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
 
   .card .desctop { display: flex; }
 
-  /* Navigation rail */
-  .navigation-rail { display: grid; }
-
-  /* Navigation bar */
-  .navigation-bar { display: none; }
+  /* Snackbar */
+  .snackbar {
+    right: var(--spacing-6);
+    bottom: var(--spacing-6);
+  }
 
   /* Search */
   .search { width: 100%; }
@@ -4982,11 +5054,11 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
 
   .search .searchbar .list { max-height: 400px; }
 
-  /* Snackbar */
-  .snackbar {
-    right: var(--spacing-6);
-    bottom: var(--spacing-6);
-  }
+  /* Navigation rail */
+  .navigation-rail { display: grid; }
+
+  /* Navigation bar */
+  .navigation-bar { display: none; }
 
   /**
    * OTHERS
@@ -5015,17 +5087,13 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
     left: auto;
   }
 
+  .header .text-logo { display: -webkit-box; }
+
   .header .container { gap: var(--spacing-6); }
 
   .header .mobile { display: none; }
 
   .header .desctop { display: flex; }
-
-  /* DIALOG REVIEWS */
-  .dialog-reviews { display: flex; }
-
-  /* BOTTOM SHEET REVIEWS */
-  .bottom-sheet-reviews { display: none; }
 
   /* SIDEBAR DOCS */
   .sidebar-docs {
@@ -5045,12 +5113,6 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
 
   /* Floating Fab */
   .floating-fab {
-    right: var(--spacing-6);
-    bottom: var(--spacing-6);
-  }
-
-  /* Btn Back To Up */
-  .btn-back-to-up {
     right: var(--spacing-6);
     bottom: var(--spacing-6);
   }
@@ -5087,9 +5149,9 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   }
 
   /* Search Page */
-  .search-page .card-search .mobile { display: none; }
+  .search-page .mobile { display: none; }
 
-  .search-page .card-search .desctop { display: flex; }
+  .search-page .desctop { display: flex; }
 
   .search-page .card-search {
     padding: var(--spacing-4);
@@ -5117,71 +5179,6 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   .search-page .card-search .wrapper-item { gap: var(--spacing-2); }
   
   .search-page .card-search .wrapper-between { gap: var(--spacing-4); }
-
-  /* Docs Page */
-  .docs-page .container { padding-inline-start: var(--spacing-12); }
-
-  .docs-page .docs-body .docs-body-footer .grid { grid-template-columns: repeat(2, 1fr); }
-
-  .docs-page .docs-body .docs-body-footer .btn.start { display: flex; }
-
-  /* Roadmap Page */
-  .roadmap-page .roadmap-header {
-    flex-direction: row;
-    align-items: center;
-    padding: var(--spacing-6) var(--spacing-6) 0;
-  }
-
-  .roadmap-page .swipper-card-4-base { padding: var(--spacing-6); }
-
-  .roadmap-page .roadmap-header .wrapper {
-    flex-wrap: nowrap;
-    width: 100%;
-    max-width: 349.82px;
-  }
-
-  .roadmap-page .roadmap-header .form-box { max-width: 320px; }
-}
-
-/**
- * Fit size: 992px
- */
-@media screen and (min-width: 992px) {
-  /**
-   * REUSED STYLE
-   */
-  .grid-3-base { grid-template-columns: repeat(3, 1fr); }
-
-  .grid-4-base { grid-template-columns: repeat(3, 1fr); }
-
-  .grid-5-base { grid-template-columns: repeat(3, 1fr); }
-
-  .swipper-card-3-base { grid-auto-columns: calc((100% - var(--spacing-10)) / 3); }
-
-  .swipper-card-4-base { grid-auto-columns: calc((100% - var(--spacing-10)) / 3); }
-
-  /**
-   * COMPONENTS
-   */
-
-  /**
-   * OTHERS
-   */
-
-  /* HEADER */
-  .header .text-logo { display: -webkit-box; }
-  
-  /* FOOTER */
-  .footer .footer-top .grid { grid-template-columns: repeat(3, 1fr); }
-
-  /**
-   * MAIN
-   */
-
-  /* Search Page */
-  .search-page .mobile { display: none; }
-
-  .search-page .desctop { display: flex; }
 
   .search-page .grid { grid-template-columns: var(--width-base) 1fr; }
 
@@ -5212,6 +5209,38 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   }
 
   .search-page .side-sheet .price-group { padding: var(--spacing-4) var(--spacing-4) var(--spacing-2); }
+
+  /* Docs Page */
+  .docs-page .container { padding-inline-start: var(--spacing-12); }
+
+  /* Roadmap Page */
+  .roadmap-page .roadmap-header {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-6) var(--spacing-6) 0;
+  }
+
+  .roadmap-page .swipper-card-4-base { padding: var(--spacing-6); }
+
+  .roadmap-page .roadmap-header .wrapper {
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 349.82px;
+  }
+
+  .roadmap-page .roadmap-header .form-box { max-width: 320px; }
+
+  .roadmap-show { grid-template-columns: 300px minmax(0, 1fr); }
+
+  .roadmap-show .side-sheet {
+    position: relative;
+    transform: translateX(0%) !important;
+    border-inline-end: 1px solid var(--outline);
+    border-radius: 0 !important;
+    grid-template-rows: 1fr;
+  }
+
+  .roadmap-show .roadmap-container { padding: var(--spacing-10) var(--spacing-6) var(--spacing-6); }
 }
 
 /**
@@ -5221,6 +5250,8 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   /**
    * REUSED STYLE
    */
+  .div-base { padding: var(--spacing-6); }
+
   .grid-4-base { grid-template-columns: repeat(4, 1fr); }
 
   .grid-5-base { grid-template-columns: repeat(4, 1fr); }
