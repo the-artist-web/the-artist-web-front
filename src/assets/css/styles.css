@@ -1564,7 +1564,7 @@ pre .icon-btn {
   flex-direction: column;
 }
 
-.accordion-group .accordion-box { border-bottom: 2px solid var(--outline); }
+.accordion-group .accordion-box { border-bottom: 1px solid var(--outline); }
 
 .accordion-group .accordion-box .accordion {
   padding: var(--spacing-4);
