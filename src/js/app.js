@@ -30,6 +30,7 @@ import { VideoControl } from "./components/Video.js";
 import { AutoPlayVideo } from "./components/AutoPlayVideo.js";
 import { SideSheet } from "./components/SideSheet.js";
 import { MarkDown } from "./components/MarkDown.js";
+import { Accordion } from "./components/Accordion.js";
 
 /**
  * Get Overlay & Body & Main
@@ -187,6 +188,12 @@ if ($sideSheets.length) $sideSheets.forEach($elem => $elem.addEventListener("cli
  */
 const $markdowns = document.querySelectorAll("[data-markdowns]");
 if ($markdowns.length) $markdowns.forEach($elem => MarkDown($elem));
+
+/**
+ * Accordions
+ */
+const $accordionGroups = document.querySelectorAll("[data-accordion-groups]");
+if ($accordionGroups.length) $accordionGroups.forEach($elem => Accordion($elem));
 
 /**
  * Toggler Dismiss

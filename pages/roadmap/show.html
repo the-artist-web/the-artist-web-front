@@ -526,15 +526,397 @@
     <!-- MAIN -->
     <main class="roadmap-show">
         
-        <aside class="side-sheet left small custom-scrollbar" id="roadmap-sheet">
+        <aside class="side-sheet left large" id="side-sheet-sidebar-roadmap" data-tabs>
             
-            Side sheets
+            <div class="wrapper-between">
+
+                <a href="../../index.html" class="logo medium">
+                    <img src="../../src/assets/images/logo-dark.png" alt="The Artist Web" loading="lazy" class="theme-light img-cover" />
+
+                    <img src="../../src/assets/images/logo-light.png" alt="The Artist Web" loading="lazy" class="theme-dark img-cover" />
+                </a>
+
+                <div class="wrapper-item">
+
+                    <button type="button" class="icon-btn text medium" data-tooltips="Save Roadmap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="button" class="icon-btn text medium mobile" data-bottom-sheets="#bottom-sheet-share" data-tooltips="Share">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="button" class="icon-btn text medium desctop" data-dialogs="#dialogs-share" data-tooltips="Share">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="button" class="icon-btn text medium mobile" data-dismiss data-tooltips="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                </div>
+                
+            </div>
+
+            <div class="side-sheet-content">
+
+                <h3 class="text-headline-small">Frontend Developer</h3>
+
+                <h5 class="text-on-background-variant text-title-medium">Step by step guide to becoming a modern frontend developer in 2025</h5>
+
+                <div class="roadmap-wrapper custom-scrollbar-hidden">
+
+                    <button type="button" class="tab-btn medium active" data-btn-tabs="roadmap-projects">
+                        <p class="text-body-large">Projects</p>
+
+                        <span class="badge inverse">
+                            <p class="text-body-small">3</p>
+                        </span>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="button" class="tab-btn medium" data-btn-tabs="roadmap-faqs">
+                        <p class="text-body-large">FAQS</p>
+
+                        <span class="badge inverse">
+                            <p class="text-body-small">3</p>
+                        </span>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <ul class="side-sheet-list custom-scrollbar-hidden">
+
+                <li class="tab-pane active" data-tabs-id="roadmap-projects">
+
+                    <div class="projects-list">
+
+                        <div class="flex">
+    
+                            <a href="#" class="btn outline extra-small active">
+                                <p class="text-body-small">beginner</p>
+    
+                                <div class="state-layer"></div>
+                            </a>
+    
+                            <a href="#" class="btn outline extra-small">
+                                <p class="text-body-small">intermediate</p>
+    
+                                <div class="state-layer"></div>
+                            </a>
+    
+                            <a href="#" class="btn outline extra-small">
+                                <p class="text-body-small">advanced</p>
+    
+                                <div class="state-layer"></div>
+                            </a>
+    
+                        </div>
+    
+                        <a href="../../pages/roadmap/projects/show.html" class="card outline">
+    
+                            <div class="card-body">
+    
+                                <div class="wrapper-between">
+                                    <span class="btn tonal extra-small">
+                                        <p class="text-body-small">beginner</p>
+                                    </span>
+    
+                                    <p class="text-body-large text-on-background-variant text-uppercase">HTML</p>
+                                </div>
+    
+                                <div class="wrapper-content">
+                                    <h5 class="text-title-medium line-clamp line-clamp-2">Single-Page CV</h5>
+        
+                                    <p class="text-body-large text-on-background-variant line-clamp line-clamp-3">Create a single-page HTML CV to showcase your career history</p>
+                                </div>
+    
+                                <div class="wrapper-between">
+    
+                                    <div class="flex">
+                                        <div class="icon-btn outline small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                                        </div>
+    
+                                        <p class="text-body-large text-capitalize">19K Started</p>
+                                    </div>
+    
+                                    <span class="btn tonal extra-small">
+                                        <p class="text-body-small">Started</p>
+                                    </span>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="state-layer"></div>
+    
+                        </a>
+    
+                        <a href="../../pages/roadmap/projects/show.html" class="card outline">
+    
+                            <div class="card-body">
+    
+                                <div class="wrapper-between">
+                                    <span class="btn tonal extra-small">
+                                        <p class="text-body-small">beginner</p>
+                                    </span>
+    
+                                    <p class="text-body-large text-on-background-variant text-uppercase">HTML</p>
+                                </div>
+    
+                                <div class="wrapper-content">
+                                    <h5 class="text-title-medium line-clamp line-clamp-2">Basic HTML Website</h5>
+        
+                                    <p class="text-body-large text-on-background-variant line-clamp line-clamp-3">Create simple HTML only website with multiple pages.</p>
+                                </div>
+    
+                                <div class="wrapper-between">
+    
+                                    <div class="flex">
+                                        <div class="icon-btn outline small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                                        </div>
+    
+                                        <p class="text-body-large text-capitalize">9,100 Started</p>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="state-layer"></div>
+    
+                        </a>
+    
+                        <a href="../../pages/roadmap/projects/show.html" class="card outline">
+    
+                            <div class="card-body">
+    
+                                <div class="wrapper-between">
+                                    <span class="btn tonal extra-small">
+                                        <p class="text-body-small">beginner</p>
+                                    </span>
+    
+                                    <p class="text-body-large text-on-background-variant text-uppercase">Css</p>
+                                </div>
+    
+                                <div class="wrapper-content">
+                                    <h5 class="text-title-medium line-clamp line-clamp-2">Personal Portfolio</h5>
+        
+                                    <p class="text-body-large text-on-background-variant line-clamp line-clamp-3">Convert the previous simple HTML website into a personal portfolio.</p>
+                                </div>
+    
+                                <div class="wrapper-between">
+    
+                                    <div class="flex">
+                                        <div class="icon-btn outline small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                                        </div>
+    
+                                        <p class="text-body-large text-capitalize">3,503 Started</p>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="state-layer"></div>
+    
+                        </a>
+
+                    </div>
+
+                </li>
+
+                <li class="tab-pane" data-tabs-id="roadmap-faqs">
+
+                    <ul class="accordion-group" data-accordion-groups>
+
+                        <li class="accordion-box" data-accordions>
+                            <button type="button" class="accordion" data-toggler-accordion>
+                                <p class="text-body-large">Is Frontend Development really coding?</p>
+
+                                <div class="icon-btn text small" data-arrow>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <div class="accordion-body" data-accordion-body>
+
+                                <div class="markdown">
+
+                                    <p>Do frontend developers really code? The answer is yes, absolutely.</p>
+
+                                    <p>The fact that frontend developers are full-time developers who produce an output that is visually appealing (thanks to the designs provided by others) sometimes confuses others, making them believe that frontend developers aren’t really coding. However, that couldn’t be further from the truth.</p>
+
+                                    <p>As a frontend developer, you’ll be coding all the time.</p>
+
+                                    <p>While in some companies, the frontend developer is also a skilled designer or UX engineer, those are not the typical profiles. As a frontend dev, your learning focus should be coding-related (i.e coding best practices, software design patterns, frontend architecture, etc).</p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="accordion-box" data-accordions>
+                            <button type="button" class="accordion" data-toggler-accordion>
+                                <p class="text-body-large">Is Frontend Developer a good career?</p>
+
+                                <div class="icon-btn text small" data-arrow>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <div class="accordion-body" data-accordion-body>
+
+                                <div class="markdown">
+
+                                    <p>As the web space and technology in general continue to evolve, the role of frontend developers becomes more relevant. In the end, providing a web version of an application has quite a lot of benefits, making it the obvious version (unless there is a specific requirement forcing for native development) for most systems, meaning that frontend developers have the potential to be involved in all types of projects and companies.</p>
+
+                                    <p>This renders the frontend developer career one of the most versatile and in-demand paths in the web tech industry.</p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="accordion-box" data-accordions>
+                            <button type="button" class="accordion" data-toggler-accordion>
+                                <p class="text-body-large">How to prepare for a frontend developer interview?</p>
+
+                                <div class="icon-btn text small" data-arrow>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <div class="accordion-body" data-accordion-body>
+
+                                <div class="markdown">
+                                    
+                                    <p>If you’re looking to prepare for a frontend developer interview, make sure you’ve tackled the fundamentals of the technologies you’ll work with.</p>
+
+                                    <p>And while that is one of the most impactful things you can do for your frontend career, consider focusing on the following points as well:</p>
+
+                                    <p>1. <strong>Master the Fundamentals</strong>: Ensure a solid understanding of HTML, CSS, and JavaScript, as they are crucial for the role of frontend developer.</p>
+
+                                    <p>2. <strong>Practice Coding</strong>: Improve your skills through mini-projects or coding challenges on platforms like LeetCode, especially those focused on front-end development. Using these skills to create a <a href="https://roadmap.sh/frontend/web-developer-portfolio" target="_blank">web developer portfolio</a> can help you in many ways.</p>
+
+                                    <p>3. <strong>Learn Modern Frameworks</strong>: Familiarize yourself with popular frameworks like React, Angular, or Vue.js.</p>
+
+                                    <p>4. <strong>Know Your Tools</strong>: Be comfortable with version control systems, testing, and build tools, which are vital for all types of development, including frontend.</p>
+
+                                    <p>5. <strong>Understand UI/UX Principles</strong>: Learn about accessibility, responsive design, and intuitive interfaces to stand out.</p>
+
+                                    <p>6. <strong>Research the Company</strong>: Show interest by learning about the company’s business and products.</p>
+
+                                    <p>7. <strong>Enhance Communication Skills</strong>: Good communication skills are essential for success in any role, so make sure to work on them.</p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
 
         </aside>
 
         <div class="roadmap-container custom-scrollbar" data-roadmap-container>
 
-            roadmap
+            <div class="roadmap-header">
+
+                <!-- SETTINGS UI -->
+                <div class="menu">
+
+                    <button type="button" class="icon-btn text medium" data-toggler-menus data-tooltips="Setting UI">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <div class="setting-ui menu-content medium end" onclick="event.stopPropagation()">
+                        <div class="wrapper-between">
+                            <p class="text-uppercase text-on-background-variant text-body-large">Appearance</p>
+
+                            <button type="button" class="icon-btn text small" data-toggler-themes data-tooltips="Theme Light">
+                                <div class="theme-light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                                </div>
+                                
+                                <div class="theme-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-between">
+                            <p class="text-uppercase text-on-background-variant text-body-large">Languages</p>
+
+                            <button type="button" class="icon-btn text small" data-toggler-collapses="#collapses-languages">
+                                <div class="icon-btn extra-small" data-arrow>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+
+                        <ul class="collapse-content" id="collapses-languages">
+                            <li>
+                                <a href="#" class="menu-item active">
+                                    <p class="text-body-large">English</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <p class="text-body-large">Arabic</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                
+                <button type="button" class="icon-btn text medium mobile" data-side-sheets="#side-sheet-sidebar-roadmap" data-tooltips="Open Sidebar Roadmap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
+
+                    <div class="state-layer"></div>
+                </button>
+
+            </div>
+
+            Roadmap
 
         </div>
 
