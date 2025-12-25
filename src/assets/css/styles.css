@@ -4924,7 +4924,7 @@ html[dir="rtl"] .docs-page .docs-body .section-docs .title-sec-link::before {
   height: 100dvh;
   overflow: auto;
   position: relative;
-  padding: var(--header-height) var(--spacing-4) var(--spacing-4);
+  padding: calc(var(--header-height) + var(--spacing-4)) var(--spacing-4) var(--spacing-4);
 }
 
 .roadmap-show .roadmap-container::before {
