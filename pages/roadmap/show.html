@@ -523,6 +523,46 @@
         </div>
     </div>
 
+    <!-- SIDE SHEET TIMELINE -->
+    <aside class="side-sheet large right side-sheet-timeline" id="side-sheet-timeline">
+        
+        <div class="side-sheet-header">
+            <div class="form-box">
+
+                <div class="select-wrapper outline small">
+                    <select name="condition">
+                        <option value="pending" selected>Pending</option>
+                        <option value="done">Done</option>
+                        <option value="in_progress">In Progress</option>
+                        <option value="skip">skip</option>
+                    </select>
+
+                    <div class="arrow-select">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    </div>
+
+                    <div class="state-layer"></div>
+                </div>
+
+            </div>
+
+            <button type="button" class="icon-btn text small" data-dismiss data-tooltips="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                
+                <div class="state-layer"></div>
+            </button>
+        </div>
+
+        <div class="div-base custom-scrollbar">
+            <h3 class="text-display-small">Internet</h3>
+
+            <div class="markdown">
+                <p>The Internet is a global network of interconnected computers using TCP/IP protocols, connecting billions of devices worldwide. Revolutionized communication, commerce, education, and entertainment. Enables web browsing, streaming, and diverse applications while presenting privacy and security challenges.</p>
+            </div>
+        </div>
+
+    </aside>
+
     <!-- MAIN -->
     <main class="roadmap-show">
         
@@ -922,7 +962,932 @@
 
             </div>
 
-            Roadmap
+            <div class="roadmap-timeline">
+
+                <div class="flex">
+
+                    <div class="icon-btn extra-large">
+                        <img src="../../src/assets/images/rocket.gif" alt="icon rocket" loading="lazy" class="img-cover" />
+                    </div>
+
+                    <h3 class="text-headline-medium">Front End</h3>
+                </div>
+
+                <ul class="timeline">
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Internet</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">How Does The Internet Work</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">What is HTTP?</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Domain Name</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Hosting</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">DNS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Browsers</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">HTML</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">CSS</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">JavaScript</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Version Control Systems</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Git</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Repo Hosting Services</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">GitHub</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">GitLab</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Package Managers</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">npm</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">pnpm</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+                        
+                        </ul>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Yarn</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Bun</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Modern CSS</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Tailwind CSS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="sign-item">
+                        <div class="sign">
+                            <p class="text-body-large">At this point, you should be able to build modern vanilla JS frontend applications.</p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Pick a Framework</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">React JS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Vue.js</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Angular JS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Svelte</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Solid JS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Linters formatters</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Biome</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Prettier</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">ESLint</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Module Bundlers</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Vite</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">SWC (Speedy Web Compiler)</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Rollup</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Rolldown</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Parcel</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Testing your apps</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Vitest</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Jest</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Playwright</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Cypress</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Authentication Strategies</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="sign-item">
+                        <div class="sign">
+                            <p class="text-body-large">At this point you should have the expertise of an intermediate level frontend developer. Keep practicing and sharpening your skills.</p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Web APIs</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Web Security Knowledge</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">OWASP Security Risks</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Content Security Policy</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">HTTPS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">CORS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Server-side rendering</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">React JS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <ul class="sub-sub-timeline">
+
+                                    <li class="sub-sub-timeline-item">
+                                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                            <p class="text-body-large">Next.js</p>
+                    
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </li>
+
+                                    <li class="sub-sub-timeline-item">
+                                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                            <p class="text-body-large">Tanstack Start</p>
+                    
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </li>
+
+                                    <li class="sub-sub-timeline-item">
+                                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                            <p class="text-body-large">Astro</p>
+                    
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </li>
+
+                                    <li class="sub-sub-timeline-item">
+                                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                            <p class="text-body-large">react-router</p>
+                    
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Angular JS</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Vue.js</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <ul class="sub-sub-timeline">
+
+                                    <li class="sub-sub-timeline-item">
+                                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                            <p class="text-body-large">Nuxt.js</p>
+                    
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Svelte Kit</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <ul class="sub-sub-timeline">
+
+                                    <li class="sub-sub-timeline-item">
+                                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                            <p class="text-body-large">Svelte</p>
+                    
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Static Site Generators</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Astro</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Next.js</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Vuepress</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Eleventy</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Nuxt.js</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Type Checkers</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Type Script</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Design Systems</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Deployment</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Railway</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Render</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Cloudflare</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Vercel</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Netlify</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">GitHub Pages</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Performance</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Lighthouse</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">DevTools Usage</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Service Workers</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Cache-Control</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Streamed Responses</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Accessibility</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Web Components</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">HTML Templates</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Custom Elements</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Shadow DOM</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Graphql</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Relay Modern</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Apollo</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Progressive Web Apps</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Mobile applications</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">React Native</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Flutter</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Ionic</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item">
+                        <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                            <p class="text-body-large">Desktop Applications in JavaScript</p>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="sub-timeline">
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Flutter</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Tauri</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="sub-timeline-item">
+                                <button type="button" class="btn-timeline" data-side-sheets="#side-sheet-timeline">
+                                    <p class="text-body-large">Electron</p>
+            
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="sign-item">
+                        <div class="sign">
+                            <p class="text-body-large">Continue Learning with following relevant tracks <i>Nodejs</i>, <i>Fullstack</i>, <i>Backend</i>, <i>Design System</i></p>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
