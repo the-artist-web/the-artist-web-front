@@ -570,7 +570,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .w-full {
   width: 100% !important;
-  min-width: 100% !important;
+  min-width: auto !important;
   max-width: 100% !important;
 }
 
@@ -932,10 +932,10 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 .avatar.extra-small .arrow-dir,
 .avatar.extra-small .theme-light,
 .avatar.extra-small .theme-dark {
-  min-width: var(--spacing-4) !important;
-  max-width: var(--spacing-4) !important;
-  min-height: var(--spacing-4) !important;
-  max-height: var(--spacing-4) !important;
+  min-width: 18px !important;
+  max-width: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
 }
 
 .avatar.small {
@@ -1730,10 +1730,10 @@ html[dir="rtl"] .btn-group .btn:last-child { border-radius: var(--radius-full) 0
 .btn.extra-small .arrow-dir,
 .btn.extra-small .theme-light,
 .btn.extra-small .theme-dark {
-  min-width: var(--spacing-4) !important;
-  max-width: var(--spacing-4) !important;
-  min-height: var(--spacing-4) !important;
-  max-height: var(--spacing-4) !important;
+  min-width: 18px !important;
+  max-width: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
 }
 
 .btn.small {
@@ -1982,10 +1982,10 @@ html[dir="rtl"] .fab-menu .menu.right {
 .icon-btn.extra-small .arrow-dir,
 .icon-btn.extra-small .theme-light,
 .icon-btn.extra-small .theme-dark {
-  min-width: var(--spacing-4) !important;
-  max-width: var(--spacing-4) !important;
-  min-height: var(--spacing-4) !important;
-  max-height: var(--spacing-4) !important;
+  min-width: 18px !important;
+  max-width: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
 }
 
 .icon-btn.small {
@@ -3164,10 +3164,10 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
 
 .search .searchbar .icon-btn.extra-small svg,
 .search .searchbar .icon-btn.extra-small .arrow-dir {
-  min-width: var(--spacing-4);
-  max-width: var(--spacing-4);
-  min-height: var(--spacing-4);
-  max-height: var(--spacing-4);
+  min-width: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
 }
 
 .search .searchbar .icon-btn { background-color: transparent !important; }
@@ -3180,7 +3180,7 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
 }
 
 .search .searchbar .searchbar-wrapper {
-  border-bottom: 2px solid var(--outline);
+  border-bottom: 1px solid var(--outline);
   display: flex;
   align-items: center;
   gap: var(--spacing-3);
@@ -3879,7 +3879,7 @@ html[dir="rtl"] .select-wrapper.large .arrow-select {
 .shopping-card .list .item:last-child { border-bottom: transparent; }
 
 .shopping-card .item {
-  border-bottom: 2px dashed var(--outline);
+  border-bottom: 1px dashed var(--outline);
   padding: var(--spacing-4) var(--spacing-5);
 }
 
@@ -3901,8 +3901,10 @@ html[dir="rtl"] .select-wrapper.large .arrow-select {
   flex-direction: column;
   gap: var(--spacing-5);
   padding: var(--spacing-5) var(--spacing-5) var(--spacing-3);
-  border-top: 2px solid var(--outline);
+  border-top: 1px solid var(--outline);
 }
+
+.shopping-card .shopping-card-footer .btn {}
 
 /**
  * Notifications
@@ -3918,7 +3920,7 @@ html[dir="rtl"] .select-wrapper.large .arrow-select {
 .notifications .list .item:last-child { border-bottom: transparent; }
 
 .notifications .item {
-  border-bottom: 2px dashed var(--outline);
+  border-bottom: 1px dashed var(--outline);
   padding: var(--spacing-4) var(--spacing-5);
 }
 
@@ -3950,7 +3952,7 @@ html[dir="rtl"] .select-wrapper.large .arrow-select {
   justify-content: space-between;
   gap: var(--spacing-5);
   padding: var(--spacing-5) var(--spacing-5) var(--spacing-3);
-  border-top: 2px solid var(--outline);
+  border-top: 1px solid var(--outline);
 }
 
 /**
@@ -5440,10 +5442,23 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   margin-block-end: var(--spacing-8);
 }
 
-.roadmap-project .container .form-body {
+.roadmap-project .container .solution-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-6);
+  gap: var(--spacing-4);
+}
+
+.roadmap-project .container .solution-list .item { padding: 0; }
+
+.roadmap-project .container .solution-list .item .btn.extra-small { padding-inline: var(--spacing-3); }
+
+.roadmap-project .container .solution-list .separator.x { border-style: dashed; }
+
+/**
+ * Subjects Page
+ */
+.subjects-page {
+  
 }
 
 /* ---------------------------------- *\
