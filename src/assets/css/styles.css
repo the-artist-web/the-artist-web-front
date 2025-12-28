@@ -28,7 +28,7 @@
   --light-on-background: #1a1a1a;
   --light-on-background-variant: #4a4a4a;
   --light-surface: #f4f4f4;
-  --light-surface-variant: #f1f1f1;
+  --light-surface-variant: #ededed;
   --light-outline: #c0c0c0;
   --light-outline-variant: #d9d9d9;
   --light-inverse: #1a1a1a;
@@ -570,6 +570,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .w-full {
   width: 100% !important;
+  min-width: 100% !important;
   max-width: 100% !important;
 }
 
@@ -2513,6 +2514,12 @@ html[dir="rtl"] .card-select .check {
 
 .dialog.extra-large { max-width: 1138px; }
 
+.dialog .wrapper-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
 .dialog .dialog-list {
   display: flex;
   flex-direction: column;
@@ -3510,12 +3517,20 @@ html[dir="rtl"] .side-sheet.right {
 /**
  * Text fields
  */
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
 .form-box {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
   width: 100%;
 }
+
+.form-box:has(.select-wrapper) { max-width: max-content; }
 
 .form-box .wrapper-justify {
   display: flex;
@@ -5422,7 +5437,13 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   display: flex;
   flex-direction: column;
   gap: var(--spacing-10);
-  margin-block-end: var(--spacing-6);
+  margin-block-end: var(--spacing-8);
+}
+
+.roadmap-project .container .form-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
 }
 
 /* ---------------------------------- *\

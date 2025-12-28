@@ -2884,6 +2884,123 @@
         </ul>
     </div>
 
+    <!-- DiALOGS SOLUTION -->
+    <form action="" method="POST" class="dialog medium center" id="dialogs-solution">
+        
+        <div class="wrapper-block">
+            <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path></svg>
+                
+                <h3 class="text-headline-small">Add the solution</h3>
+            </div>
+    
+            <p class="text-body-large text-on-background-variant">Submit the URL of your GitHub repository with the solution.</p>
+        </div>
+    
+        <div class="card-form">
+    
+            <div class="form-box">
+                <label for="url_repo" class="form-label text-body-large">Submit Solution URL</label>
+    
+                <div class="input-wrapper outline medium p-start-0">
+                    <div class="icon-btn medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                    </div>
+    
+                    <input type="url" placeholder="https://github.com/username/solution-repo-public" name="" value="" id="url_repo" class="text-body-large" required />
+    
+                    <div class="state-layer"></div>
+                </div>
+    
+                <!-- <p class="text-body-medium text-error"></p> -->
+            </div>
+    
+            <div class="form-box">
+                <label for="add_comment" class="form-label text-body-large">Add Comment</label>
+    
+                <div class="textarea-wrapper outline medium">
+                    <textarea placeholder="Enter your comment" name="" id="add_comment" class="text-body-large" required></textarea>
+    
+                    <div class="state-layer"></div>
+                </div>
+    
+                <!-- <p class="text-body-medium text-error"></p> -->
+            </div>
+    
+            <button type="submit" class="btn filled medium w-full">
+                <p class="text-body-large">Send</p>
+    
+                <div class="state-layer"></div>
+            </button>
+            
+        </div>
+
+    </form>
+
+    <!-- SHEET SOLUTION -->
+    <form action="" method="POST" class="bottom-sheet custom-scrollbar-hidden" id="bottom-sheet-solution">
+
+        <button type="button" class="line-close" data-dismiss>
+            <div class="state-layer"></div>
+        </button>
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <div class="wrapper-block">
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path></svg>
+                        
+                        <h3 class="text-headline-small">Add the solution</h3>
+                    </div>
+            
+                    <p class="text-body-large text-on-background-variant">Submit the URL of your GitHub repository with the solution.</p>
+                </div>
+            
+                <div class="card-form">
+            
+                    <div class="form-box">
+                        <label for="url_repo" class="form-label text-body-large">Submit Solution URL</label>
+            
+                        <div class="input-wrapper outline medium p-start-0">
+                            <div class="icon-btn medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                            </div>
+            
+                            <input type="url" placeholder="https://github.com/username/solution-repo-public" name="" value="" id="url_repo" class="text-body-large" required />
+            
+                            <div class="state-layer"></div>
+                        </div>
+            
+                        <!-- <p class="text-body-medium text-error"></p> -->
+                    </div>
+            
+                    <div class="form-box">
+                        <label for="add_comment" class="form-label text-body-large">Add Comment</label>
+            
+                        <div class="textarea-wrapper outline medium">
+                            <textarea placeholder="Enter your comment" name="" id="add_comment" class="text-body-large" required></textarea>
+            
+                            <div class="state-layer"></div>
+                        </div>
+            
+                        <!-- <p class="text-body-medium text-error"></p> -->
+                    </div>
+            
+                    <button type="submit" class="btn filled medium w-full">
+                        <p class="text-body-large">Send</p>
+            
+                        <div class="state-layer"></div>
+                    </button>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
     <!-- MAIN -->
     <main class="main" data-main>
 
@@ -2972,11 +3089,17 @@
                             </li>
 
                             <li class="step-item" disabled>
-                                <a href="#add-solution" class="icon-btn outline large">
+                                <button type="button" class="icon-btn outline large desctop" data-dialogs="#dialogs-solution">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-send"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 14l11 -11" /><path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" /></svg>
 
                                     <div class="state-layer"></div>
-                                </a>
+                                </button>
+
+                                <button type="button" class="icon-btn outline large mobile" data-bottom-sheets="#bottom-sheet-solution">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-send"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 14l11 -11" /><path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" /></svg>
+
+                                    <div class="state-layer"></div>
+                                </button>
 
                                 <div class="step-content">
                                     <h5 class="text-title-medium">Submit Solution</h5>
@@ -3042,10 +3165,6 @@
                     </div>
 
                 </div>
-
-                <!-- <div class="div-base" id="add-solution">
-                    go
-                </div> -->
 
             </div>
 
