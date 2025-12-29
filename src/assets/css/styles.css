@@ -3775,6 +3775,7 @@ html[dir="rtl"] .select-wrapper.large .arrow-select {
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
 }
 
 .line-clamp.line-clamp-1 { -webkit-line-clamp: 1; }
