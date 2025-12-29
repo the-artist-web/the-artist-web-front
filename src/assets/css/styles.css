@@ -322,6 +322,12 @@ textarea {
   width: 100%;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 textarea { resize: none; }
 
 form { width: 100%; }
@@ -345,12 +351,6 @@ form { width: 100%; }
 \* ---------------------------------- */
 
 :where(input, textarea)::placeholder { color: var(--on-background-variant); }
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 
 option {
   background-color: var(--surface);
