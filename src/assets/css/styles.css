@@ -5459,8 +5459,74 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
 /**
  * Subjects Page
  */
-.subjects-page {
-  
+.subjects-page { margin-block-end: var(--spacing-6); }
+
+.subjects-page .desctop { display: none !important; }
+
+.subjects-page .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.subjects-page .wrapper-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.subjects-page .wrapper-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.subjects-page .container {
+  display: grid;
+  gap: var(--spacing-6);
+}
+
+.subjects-page .subject-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.subjects-page .subject-group .div-cover {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--spacing-6);
+  height: 215px;
+}
+
+.subjects-page .subject-group .div-cover[style] { color: var(--dark-on-background); }
+
+.subjects-page .subject-group .div-cover[style] .div-cover-wrapper .text-on-background-variant {
+  color: var(--dark-on-background) !important;
+  opacity: 0.9;
+}
+
+.subjects-page .subject-group .div-cover .div-cover-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.subjects-page .subject-group .div-cover .div-cover-wrapper .wrapper-block { display: none; }
+
+.subjects-page .subject-group .div-cover .div-cover-wrapper .avatar.extra-large {
+  min-width: 167px;
+  max-width: 167px;
+  min-height: 167px;
+  max-height: 167px;
+}
+
+.subjects-page .subject-group .div-cover .card-post {
+  background-color: var(--background);
+  box-shadow: var(--shadow-05);
+  width: 100%;
 }
 
 /* ---------------------------------- *\
@@ -5816,6 +5882,15 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
     margin-inline: 0;
     padding-inline: 0;
   }
+
+  /* Subjects Page */
+  .subjects-page .mobile { display: none !important; }
+  
+  .subjects-page .desctop { display: flex !important; }
+  
+  .subjects-page .container { grid-template-columns: minmax(0, 1fr) var(--width-base); }
+
+  .subjects-page .subject-group .div-cover { display: grid !important; }
 }
 
 /**
@@ -5859,6 +5934,11 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   }
 
   .docs-page .scrollspy { display: flex !important; }
+
+  /* Subjects Page */
+  .subjects-page .subject-group .div-cover { grid-template-columns: 1fr 400px; }
+
+  .subjects-page .subject-group .div-cover .div-cover-wrapper .wrapper-block { display: flex; }
 }
 
 /**
