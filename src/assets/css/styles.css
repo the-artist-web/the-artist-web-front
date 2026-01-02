@@ -1134,7 +1134,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
   justify-content: center;
   text-align: center;
   gap: var(--spacing-4);
-  max-width: 500px;
+  max-width: var(--width-base);
   margin-inline: auto;
   padding: var(--spacing-15) var(--spacing-4);
 }
@@ -1924,16 +1924,16 @@ html[dir="rtl"] .fab-menu .menu.right {
 .fab.active { transform: rotate(180deg); }
 
 .fab.large {
-  padding-inline: 14px;
-  gap: calc(14px / 2);
+  padding-inline: 16px;
+  gap: calc(16px / 2);
   min-width: var(--width-large);
   min-height: var(--height-large);
   max-height: var(--height-large);
 }
 
 .fab.extra-large {
-  padding-inline: 20px;
-  gap: calc(20px / 2);
+  padding-inline: 22px;
+  gap: calc(22px / 2);
   min-width: var(--width-extra-large);
   min-height: var(--height-extra-large);
   max-height: var(--height-extra-large);
@@ -2883,7 +2883,7 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
-  height: var(--height-medium);
+  height: var(--height-small);
   padding-inline: var(--spacing-4);
   color: var(--on-background-variant);
   width: 100%;
@@ -2898,6 +2898,13 @@ html[dir="rtl"] .menu .menu-content.right.active { left: calc(100% + var(--spaci
   background-color: var(--soft-primary);
   color: var(--primary);
   --state-layer-bg: var(--primary);
+}
+
+.menu .menu-content .menu-item svg {
+  min-width: var(--spacing-5);
+  max-width: var(--spacing-5);
+  min-height: var(--spacing-5);
+  max-height: var(--spacing-5);
 }
 
 .menu .menu-content .menu-item.active svg { color: var(--primary); }
@@ -3307,7 +3314,7 @@ html[dir="rtl"] .navigation-rail .toggler-navigation-rail {
   justify-content: space-between;
   gap: var(--spacing-4);
   width: 100%;
-  height: var(--height-large);
+  height: var(--height-medium);
   transition-duration: var(--tr-duration-short);
   transition-property: color, background-color;
   --state-layer-bg: var(--on-background);
@@ -3427,6 +3434,7 @@ html[dir="rtl"] .side-sheet.right {
 .side-sheet .div-base {
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-2);
   padding: var(--spacing-5);
   overflow-y: auto;
   overflow-x: hidden;
@@ -4529,7 +4537,7 @@ html[dir="rtl"] .floating-fab {
   width: 100%;
   padding: var(--spacing-8) var(--spacing-4);
   scroll-snap-align: start;
-  height: 500px;
+  height: 550px;
 }
 
 .hero .banner-swipper .div-base .banner-content {
@@ -5546,8 +5554,6 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   gap: var(--spacing-4);
 }
 
-.subjects-page .subject-group .div-cover .div-cover-wrapper .wrapper-block { display: none; }
-
 .subjects-page .subject-group .div-cover .div-cover-wrapper .avatar.extra-large {
   border: 5px solid var(--background);
   background-color: var(--background);
@@ -5983,8 +5989,6 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
     display: grid !important;
     grid-template-columns: 1fr 400px;
   }
-  
-  .subjects-page .subject-group .div-cover .div-cover-wrapper .wrapper-block { display: flex; }
 }
 
 /**
