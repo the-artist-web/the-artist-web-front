@@ -6,7 +6,7 @@
   /**
    * Colors
    */
-  --scrim: #00000085;
+  --scrim: #00000090;
   --success: #1ec863;
   --soft-success: #1ec86335;
   --warning: #f6a723;
@@ -1720,7 +1720,7 @@ html[dir="rtl"] .btn-group .btn:last-child { border-radius: var(--radius-full) 0
   max-width: max-content;
 }
 
-.btn.active .state-layer { opacity: 0.08; }
+.btn.active .state-layer { opacity: 0.12; }
 
 .btn svg,
 .btn .arrow-dir,
@@ -5534,12 +5534,7 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   gap: var(--spacing-6);
 }
 
-.subjects-page .subject-group .div-cover {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: var(--spacing-6);
-  height: 215px;
-}
+.subjects-page .subject-group .div-cover { height: 215px; }
 
 .subjects-page .subject-group .div-cover[style] { color: var(--dark-on-background); }
 
@@ -5571,8 +5566,9 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 163px;
 }
+
+.subjects-page .card-form textarea { height: 90px; }
 
 .subjects-page .card-form .wrapper-block { gap: var(--spacing-4); }
 
@@ -5984,11 +5980,6 @@ html[dir="rtl"] .roadmap-show .roadmap-timeline .timeline .timeline-item .sub-ti
   .subjects-page .desctop { display: flex !important; }
 
   .subjects-page .grid-2-base { grid-template-columns: var(--width-base) minmax(0, 1fr); }
-  
-  .subjects-page .subject-group .div-cover {
-    display: grid !important;
-    grid-template-columns: 1fr 400px;
-  }
 }
 
 /**
