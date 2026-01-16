@@ -835,7 +835,7 @@
                     </button>
                 </span>
 
-                <ul class="dropdown-menu dropdown-menu-medium custom-scrollbar" onclick="event.stopPropagation()">
+                <ul class="dropdown-user dropdown-menu dropdown-menu-medium custom-scrollbar" onclick="event.stopPropagation()">
 
                     <li>
                         <a href="./pages/users/profile/index.html" class="dropdown-item">
@@ -845,7 +845,67 @@
                                 <img src="./src/assets/images/the-artist-web.png" alt="name user" loading="lazy" class="img-avatar img-cover" />
                             </div>
 
-                            <p class="text-on-background text-body-medium">The Artist Web</p>
+                            <p class="text-on-background text-body-medium line-clamp line-clamp-1">The Artist Web</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+                    
+                    <li class="collapse-select">
+                        <button type="button" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#collapse-accounts">
+                            <div class="wrapper-between">
+                                <div class="wrapper-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" fill="currentColor"><path d="M20 2H8a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2ZM8 16V4h12v12h-.365a.999.999 0 00-.059-.216 6 6 0 00-11.155.008 1 1 0 00-.058.208H8Zm6-11a3 3 0 100 6 3 3 0 000-6ZM4 20h15a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2v15ZM14 7a1 1 0 110 2 1 1 0 010-2Zm-.003 7a4 4 0 013.467 2h-6.927a4 4 0 013.46-2Z"></path></svg>
+
+                                    <p class="text-body-medium">Accounts</p>
+                                </div>
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 9l6 6l6 -6"></path></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="collapse" id="collapse-accounts">
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <div class="avatar small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <!-- <img src="" alt="name user" loading="lazy" class="img-avatar img-cover" /> -->
+                                    </div>
+
+                                    <p class="text-on-background text-body-medium line-clamp line-clamp-1">Hamed</p>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <div class="avatar small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        <!-- <img src="" alt="name user" loading="lazy" class="img-avatar img-cover" /> -->
+                                    </div>
+
+                                    <p class="text-on-background text-body-medium line-clamp line-clamp-1">Mohammed DX</p>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+                           
+                            <li class="separator x"></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="./pages/users/dashboard/accounts/create.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
+
+                            <p class="text-body-medium">Add Account</p>
 
                             <div class="state-layer"></div>
                         </a>
@@ -853,7 +913,113 @@
 
                     <li class="separator x"></li>
 
-                    <!-- go -->
+                    <li>
+                        <a href="./pages/users/dashboard/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /><path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
+
+                            <p class="text-body-medium">Dashboard</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/users/dashboard/wallet.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wallet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" /><path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" /></svg>
+                            
+                            <p class="text-body-medium">Wallet</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/users/profile/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            
+                            <p class="text-body-medium">Profile</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/users/messages/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+                            
+                            <p class="text-body-medium">Messages</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/users/settings/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                            
+                            <p class="text-body-medium">Settings</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="./pages/users/dashboard/history/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 12l3 2"></path><path d="M12 7v5"></path></svg>
+                            
+                            <p class="text-body-medium">History</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/users/dashboard/likes/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                            
+                            <p class="text-body-medium">Likes</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/users/dashboard/saved/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
+                            
+                            <p class="text-body-medium">Saved</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="./pages/legal/report-content.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
+                            
+                            <p class="text-body-medium">Report Contant</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <form action="" method="POST">
+                            <button type="submit" class="dropdown-item error">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" /><path d="M15 12h-12l3 -3" /><path d="M6 15l-3 -3" /></svg>
+                                </div>
+                                
+                                <p class="text-body-medium">Logout</p>
+    
+                                <div class="state-layer"></div>
+                            </button>
+                        </form>
+                    </li>
 
                 </ul>
 
@@ -955,6 +1121,10 @@
         </div>
 
     </div>
+
+    <nav class="navigation-bar">
+        <!-- go -->
+    </nav>
 
     <main class="main">
 

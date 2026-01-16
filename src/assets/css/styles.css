@@ -747,6 +747,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
+    width: 100%;
 }
 
 .wrapper-block {
@@ -1281,6 +1282,11 @@ html[dir="rtl"] .modal .modal-content .modal-header { padding: var(--spacing-4) 
     overflow-x: hidden;
 }
 
+.list::-webkit-scrollbar {
+    width: var(--spacing-1);
+    height: var(--spacing-1);
+}
+
 /**
  * Items
  */
@@ -1289,6 +1295,7 @@ html[dir="rtl"] .modal .modal-content .modal-header { padding: var(--spacing-4) 
     align-items: start;
     gap: var(--spacing-4);
     width: 100%;
+    min-height: max-content;
     --state-layer-bg: var(--on-background);
 }
 
@@ -1341,6 +1348,11 @@ html[dir="rtl"] .modal .modal-content .modal-header { padding: var(--spacing-4) 
     gap: var(--spacing-1);
 }
 
+.dropdown .dropdown-menu::-webkit-scrollbar {
+    width: var(--spacing-1);
+    height: var(--spacing-1);
+}
+
 .dropdown-menu.show { display: flex; }
 
 .dropdown .dropdown-menu.dropdown-menu-small { width: 150px; }
@@ -1372,11 +1384,20 @@ html[dir="rtl"] .modal .modal-content .modal-header { padding: var(--spacing-4) 
 
 .dropdown .dropdown-menu .dropdown-item.active .state-layer { opacity: 0.08; }
 
+.dropdown .dropdown-menu .dropdown-item[aria-expanded="true"] { color: var(--on-background) !important; }
+
+.dropdown .dropdown-menu .dropdown-item[aria-expanded="true"] .state-layer { opacity: 0.08; }
+
 .dropdown .dropdown-menu .dropdown-item svg {
     min-width: calc(var(--width-extra-small) / 2);
     max-width: calc(var(--width-extra-small) / 2);
     min-height: calc(var(--height-extra-small) / 2);
     max-height: calc(var(--height-extra-small) / 2);
+}
+
+.dropdown .dropdown-menu .dropdown-item.error {
+    color: var(--error) !important;
+    --state-layer-bg: var(--error);
 }
 
 /**
@@ -1773,6 +1794,17 @@ html[dir="rtl"] .navigation-rail {
 
 .dropdown-shopping-cart .item .wrapper-item,
 .dropdown-shopping-cart .item .wrapper-between { flex-wrap: nowrap; }
+
+/**
+ * Dropdown User
+ */
+.dropdown-user .collapse-select {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.dropdown-user .collapse-select li.separator { margin-block-start: var(--spacing-1); }
 
 /**
  * Footer
