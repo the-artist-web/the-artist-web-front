@@ -700,6 +700,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     color: var(--warning);
 }
 
+.offcanvas-backdrop,
 .modal-backdrop {
     opaicty: 0;
     background-color: var(--scrim);
@@ -707,6 +708,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     transition: opacity var(--tr-duration-short);
 }
 
+.offcanvas-backdrop.show,
 .modal-backdrop.show { opacity: 1; }
 
 .overlay {
@@ -1148,6 +1150,12 @@ html[dir="rtl"] .btn-link::before {
     --state-layer-bg: var(--on-background);
 }
 
+.icon-btn.filled {
+    background-color: var(--primary) !important;
+    color: var(--on-primary) !important;
+    --state-layer-bg: var(--on-primary);
+}
+
 /**
  * Segmented buttons
  */
@@ -1503,8 +1511,33 @@ html[dir="rtl"] .navigation-rail {
 /**
  * Bottom sheets
  */
+.bottom-sheet {
+    border-radius: var(--radius-extra-large) var(--radius-extra-large) 0 0;
+    background-color: var(--background);
+    color: var(--on-background);
+    box-shadow: var(--shadow-1);
+    height: auto !important;
+    max-height: 100dvh !important;
+    max-width: 568px;
+    margin-inline: auto;
+}
 
+.bottom-sheet .offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-5) var(--spacing-2) var(--spacing-2) var(--spacing-4);
+    border-color: transparent;
+}
 
+html[dir="rtl"] .bottom-sheet .offcanvas-header { padding: var(--spacing-5) var(--spacing-4) var(--spacing-2) var(--spacing-2); }
+
+.bottom-sheet .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: 0 var(--spacing-4) var(--spacing-4);
+}
 
 /**
  * Side sheets
@@ -1786,6 +1819,20 @@ html[dir="rtl"] .navigation-rail {
 }
 
 .dialog-create .grid-3-card .card .wrapper-block {
+    align-items: center;
+    gap: var(--spacing-3);
+}
+
+/**
+ * Bottom Sheet Create
+ */
+.bottom-sheet-create .grid-3-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2);
+}
+
+.bottom-sheet-create .grid-3-card .card .wrapper-block {
     align-items: center;
     gap: var(--spacing-3);
 }
