@@ -808,6 +808,20 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     border-radius: var(--radius-full);
 }
 
+.avatar.extra-small {
+    min-width: var(--width-extra-small);
+    max-width: var(--width-extra-small);
+    min-height: var(--height-extra-small);
+    max-height: var(--height-extra-small);
+}
+
+.avatar.extra-small svg {
+    min-width: calc(var(--width-extra-small) / 2);
+    max-width: calc(var(--width-extra-small) / 2);
+    min-height: calc(var(--height-extra-small) / 2);
+    max-height: calc(var(--height-extra-small) / 2);
+}
+
 .avatar.small {
     min-width: var(--width-small);
     max-width: var(--width-small);
@@ -1403,8 +1417,35 @@ html[dir="rtl"] .modal .modal-content .modal-header { padding: var(--spacing-4) 
 /**
  * Navigation bar
  */
+.navigation-bar {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--spacing-1);
+    padding-inline: var(--spacing-1);
+    width: 100%;
+    height: var(--navigation-bar-height);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    background-color: var(--background);
+    border-top: 1px solid var(--outline);
+}
 
+.navigation-bar .nav-link {
+    color: var(--on-background-variant) !important;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: color var(--tr-duration-short);
+}
 
+.navigation-bar .nav-link:hover { color: var(--on-background) !important; }
+
+.navigation-bar .nav-link.active { color: var(--on-background) !important; }
 
 /**
  * Navigation drawer
@@ -1737,14 +1778,14 @@ html[dir="rtl"] .navigation-rail {
 /**
  * Dialog Create
  */
-#dialog-create .grid-3-card {
+.dialog-create .grid-3-card {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-5);
+    gap: var(--spacing-2);
 }
 
-#dialog-create .grid-3-card .card .wrapper-block {
+.dialog-create .grid-3-card .card .wrapper-block {
     align-items: center;
     gap: var(--spacing-3);
 }
