@@ -4,8 +4,10 @@
  * Import Modules
  */
 import { FixedScrolling } from "./components/FixedScrolling.js";
+import { OneTimeAppearance } from "./components/OneTimeAppearance.js";
 import { Overlay } from "./components/Overlay.js";
 import { Password } from "./components/Password.js";
+import { Rating } from "./components/Rating.js";
 import { StartLoading } from "./components/StartLoading.js";
 import { Tooltip } from "./components/Tooltip.js";
 
@@ -43,3 +45,15 @@ if ($tooltips.length) $tooltips.forEach($elem => Tooltip($elem));
  */
 const $passwords = document.querySelectorAll("[data-passwords]");
 if ($passwords.length) $passwords.forEach($elem => Password($elem));
+
+/**
+ * One Time Appearance
+ */
+const $oneTimeAppearances = document.querySelectorAll("[data-one-time-appearances]");
+if ($oneTimeAppearances.length) $oneTimeAppearances.forEach($elem => OneTimeAppearance($elem));
+
+/**
+ * Rating
+ */
+const $ratings = document.querySelectorAll("[data-ratings]");
+if ($ratings.length) $ratings.forEach($elem => Rating($elem));
