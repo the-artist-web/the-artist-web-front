@@ -3,6 +3,7 @@
 /**
  * Import Modules
  */
+import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Overlay } from "./components/Overlay.js";
 import { Password } from "./components/Password.js";
 import { StartLoading } from "./components/StartLoading.js";
@@ -18,6 +19,12 @@ const $body = document.body;
  */
 const $overlay = document.querySelector("[data-overlay]");
 if ($overlay) $overlay.addEventListener("click", () => Overlay($overlay, $body));
+
+/**
+ * Fixed Scrolling
+ */
+const $fixedScrolling = document.querySelectorAll("[data-fixed-scrolling]");
+if ($fixedScrolling.length) $fixedScrolling.forEach($elem => FixedScrolling($elem));
 
 /**
  * Start Loading
