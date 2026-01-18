@@ -293,12 +293,6 @@ input[type="checkbox"],
 select,
 button { cursor: pointer; }
 
-label {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
 input,
 select,
 button,
@@ -316,6 +310,7 @@ textarea {
     width: 100%;
 }
 
+label,
 input,
 select {
     appearance: none;
