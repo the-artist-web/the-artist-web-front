@@ -9,6 +9,7 @@ import { Overlay } from "./components/Overlay.js";
 import { Password } from "./components/Password.js";
 import { Rating } from "./components/Rating.js";
 import { StartLoading } from "./components/StartLoading.js";
+import { Swipper } from "./components/Swipper.js";
 import { Tooltip } from "./components/Tooltip.js";
 
 /**
@@ -57,3 +58,9 @@ if ($oneTimeAppearances.length) $oneTimeAppearances.forEach($elem => OneTimeAppe
  */
 const $ratings = document.querySelectorAll("[data-ratings]");
 if ($ratings.length) $ratings.forEach($elem => Rating($elem));
+
+/**
+ * Swipper
+ */
+const $swippers = document.querySelectorAll("[data-swippers]");
+if ($swippers.length) $swippers.forEach($elem => Swipper($elem));
