@@ -1352,6 +1352,8 @@ html[dir="rtl"] .btn-link::before {
     transition: transform var(--tr-duration-medium);
 }
 
+.card:active { transform: scale(0.95); }
+
 .card.text { --state-layer-bg: var(--on-background); }
 
 .card.outline {
@@ -1419,11 +1421,39 @@ html[dir="rtl"] .card .role {
     right: auto;
 }
 
+.card .figure {
+    border-radius: var(--radius-extra-large);
+    background-color: var(--surface);
+    color: var(--on-background-variant);
+    display: grid;    
+    place-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 300px;
+}
+
+.card .figure svg {
+    min-width: var(--spacing-10);
+    max-width: var(--spacing-10);
+    min-height: var(--spacing-10);
+    max-height: var(--spacing-10);
+}
+
+.card .figure .img-card {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    transition: transform var(--tr-duration-medium);
+}
+
+.card .figure:hover .img-card { transform: scale(1.1); }
+
 .card .card-body {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-5);
-    padding: var(--spacing-5) !important;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4) !important;
     position: relative;
     width: 100%;
     max-height: max-content;
@@ -2634,10 +2664,6 @@ html[dir="rtl"] .blog-slider .container .carousel .carousel-indicators {
      * REUSED STYLE
      */
     .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-4)) / 2); }
-
-    .grid-2-base { grid-template-columns: repeat(2, 1fr); }
-
-    .grid-3-base { grid-template-columns: repeat(2, 1fr); }
 }
 
 /**
@@ -2647,9 +2673,9 @@ html[dir="rtl"] .blog-slider .container .carousel .carousel-indicators {
     /**
      * REUSED STYLE
      */
-    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
+    .grid-2-base { grid-template-columns: repeat(2, 1fr); }
 
-    .grid-3-base { grid-template-columns: repeat(3, 1fr); }
+    .grid-3-base { grid-template-columns: repeat(2, 1fr); }
 }
 
 /**
@@ -2704,8 +2730,10 @@ html[dir="rtl"] .blog-slider .container .carousel .carousel-indicators {
     .desctop { display: flex !important; }
 
     .mobile { display: none !important; }
-    
-    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
+
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
+
+    .grid-3-base { grid-template-columns: repeat(3, 1fr); }
 
     /**
      * COMPONENTS
@@ -2756,7 +2784,7 @@ html[dir="rtl"] .blog-slider .container .carousel .carousel-indicators {
     /**
      * REUSED STYLE
      */
-    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-16)) / 5); }
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
 }
 
 /**
@@ -2767,4 +2795,6 @@ html[dir="rtl"] .blog-slider .container .carousel .carousel-indicators {
      * REUSED STYLE
      */
     body:has(.main-navigation-drawer-end) .main { padding-inline-end: calc(var(--width-base) + var(--spacing-4)); }
+
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-16)) / 5); }
 }
