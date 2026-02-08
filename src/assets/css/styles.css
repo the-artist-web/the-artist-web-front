@@ -914,20 +914,8 @@ span,
  * OTHERS
 \* ----------------------------------------------------- */
 
-/**
- * Header
- */
-.header {
-    background-color: var(--background);
-    border-bottom: 1px solid var(--outline);
-    width: 100%;
-    height: var(--header-height);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 30;
-}
+
+
 
 
 
@@ -967,11 +955,13 @@ span,
     /**
      * REUSED STYLE
      */
+    body:has(.navigation-bar) .main { padding-block-end: 0; }
+
     body:has(.navigation-rail) .main { padding-inline-start: var(--navigation-rail-width); }
 
-    body:has(.navigation-rail):has(.main-navigation-drawer) .main { padding-inline-start: calc(var(--navigation-rail-width) + var(--width-base)); }
+    body:has(.main-navigation-drawer) .main { padding-inline-start: var(--width-base); }
 
-    body:has(.navigation-bar) .main { padding-block-end: 0; }
+    body:has(.navigation-rail):has(.main-navigation-drawer) .main { padding-inline-start: calc(var(--navigation-rail-width) + var(--width-base)); }
 
     body:has(.navigation-rail) .header,
     body:has(.navigation-rail) .app-bar {
@@ -982,6 +972,18 @@ span,
     html[dir="rtl"] body:has(.navigation-rail) .header,
     html[dir="rtl"] body:has(.navigation-rail) .app-bar {
         right: var(--navigation-rail-width);
+        left: auto;
+    }
+
+    body:has(.main-navigation-drawer) .header,
+    body:has(.main-navigation-drawer) .app-bar {
+        left: var(--width-base);
+        width: calc(100% - var(--width-base));
+    }
+
+    html[dir="rtl"] body:has(.main-navigation-drawer) .header,
+    html[dir="rtl"] body:has(.main-navigation-drawer) .app-bar {
+        right: var(--width-base);
         left: auto;
     }
 
