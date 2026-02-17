@@ -642,7 +642,10 @@ body:has(.navigation-bar) .main { padding-block-end: var(--navigation-bar-height
 
 .wrapper-content { gap: var(--spacing-1); }
 
-.wrapper-between { justify-content: space-between; }
+.wrapper-between {
+    width: 100%;
+    justify-content: space-between;
+}
 
 .desctop { display: none !important; }
 
