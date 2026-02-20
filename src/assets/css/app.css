@@ -209,7 +209,8 @@
 
     --header-height: 72px;
     --app-bar-height: 72px;
-    --navigation-rail-width: 72px;
+    --navigation-rail-width: 80px;
+    --navigation-drawer-width: 250px;
     --navigation-bar-height: 56px;
     --width-base: 300px;
 }
@@ -540,14 +541,194 @@ p {
  * REUSED STYLE
 \* ----------------------------------------------------- */
 
+.container {
+    padding-inline: var(--spacing-4);
+    margin-inline: auto;
+    width: 100%;
+    max-width: 100%;
+}
 
+.container.container-xs { max-width: 568px; }
 
+.container.container-sm { max-width: 768px; }
 
+.container.container-md { max-width: 992px; }
 
+.container.container-lg { max-width: 1200px; }
 
+.container.container-xl { max-width: 1440px; }
 
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
+.img-contain {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 
+.title-sec {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.main {
+    display: grid;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 568px;
+    min-height: 100dvh;
+}
+
+.main .main-body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-navigation-end {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    border-inline-start: 1px solid var(--outline);
+    padding: var(--spacing-5);
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.main .main-navigation-start {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    border-inline-end: 1px solid var(--outline);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body:has(.navigation-bar) .main { padding-block-end: var(--navigation-bar-height); }
+
+:has(> .state-layer) {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.state-layer {
+    background: var(--state-layer-bg);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity var(--tr-duration-short);
+}
+
+:has(> .state-layer):hover > .state-layer { opacity: 0.08; }
+
+:has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.12; }
+
+:has(> .state-layer):active > .state-layer { opacity: 0.16; }
+
+.custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: var(--spacing-1);
+    height: var(--spacing-1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track { background-color: inherit; }
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--outline);
+    border-radius: var(--radius-full);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: var(--on-background-variant); }
+
+.flex,
+.wrapper,
+.wrapper-item,
+.wrapper-between,
+.wrapper-block,
+.wrapper-content { display: flex; }
+
+.flex,
+.wrapper-item,
+.wrapper-block,
+.wrapper-content { gap: var(--spacing-2); }
+
+.flex,
+.wrapper,
+.wrapper-item { align-items: center; }
+
+.wrapper-block,
+.wrapper-content { flex-direction: column; }
+
+.wrapper,
+.wrapper-between { gap: var(--spacing-4); }
+
+.wrapper-between {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.div-base {
+    border: 1px solid var(--outline);
+    border-radius: var(--radius-medium);
+    padding: var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.div-base .div-list {
+    display: flex;
+    flex-direction: column;
+    margin-inline: -16px;
+    width: calc(100% + var(--spacing-8));
+}
+
+.div-base .div-list .div-item {
+    padding-inline: var(--spacing-4);
+    height: var(--height-small);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2);
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    --state-layer-bg: var(--on-background);
+}
+
+.desktop { display: none !important; }
+
+span,
+.arrow-dir,
+.theme-light,
+.theme-dark {
+    max-width: max-content;
+    max-height: max-content;
+}
 
 /* ----------------------------------------------------- *\
  * COMPONENTS
@@ -700,8 +881,20 @@ p {
 /**
  * Navigation bar
  */
-
-
+.navigation-rail {
+    border-inline-end: 1px solid var(--outline);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: var(--spacing-2) var(--spacing-4) var(--spacing-4);
+    display: none;
+    flex-direction: column;
+    gap: var(--spacing-1);
+    width: var(--navigation-rail-width);
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
 /**
  * Navigation drawer
@@ -812,24 +1005,88 @@ p {
 /**
  * Fit Size: 568PX
  */
-@media screen and (min-width: 568px) {}
+@media screen and (min-width: 568px) {
+    /**
+     * REUSED STYLE
+     */
+    .main {
+        grid-template-columns: var(--navigation-rail-width) 1fr;
+        border-inline: 1px solid var(--outline);
+    }
+
+    body:has(.navigation-bar) .main { padding-block-end: 0; }
+
+    /**
+     * COMPONENTS
+     */
+
+    /* Navigation bar */
+    .navigation-rail { display: flex; }
+}
 
 /**
  * Fit Size: 768PX
  */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    /**
+     * REUSED STYLE
+     */
+    .main { max-width: 768px; }
+}
 
 /**
  * Fit Size: 992PX
  */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    /**
+     * REUSED STYLE
+     */
+    .main { max-width: 992px; }
+
+    .main:has(.main-navigation-end) { grid-template-columns: var(--navigation-rail-width) 1fr 330px; }
+
+    .main:has(.main-navigation-start) { grid-template-columns: var(--navigation-rail-width) 395px 1fr; }
+
+    .mobile { display: none !important; }
+
+    .desktop { display: flex !important; }
+
+    /**
+     * COMPONENTS
+     */
+
+    /* Navigation bar */
+    .main:has(.main-navigation-start) .navigation-rail { width: var(--navigation-rail-width); }
+}
 
 /**
  * Fit Size: 1200PX
  */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    /**
+     * REUSED STYLE
+     */
+    .main {
+        grid-template-columns: var(--navigation-drawer-width) 1fr;
+        max-width: 1200px;
+    }
+
+    .main:has(.main-navigation-end) { grid-template-columns: var(--navigation-drawer-width) 1fr 330px; }
+
+    /**
+     * COMPONENTS
+     */
+
+    /* Navigation bar */
+    .navigation-rail { width: var(--navigation-drawer-width); }
+}
 
 /**
  * Fit Size: 1440PX
  */
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+    /**
+     * REUSED STYLE
+     */
+    .main { max-width: 1440px; }
+}
