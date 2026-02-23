@@ -50,13 +50,13 @@
     --dark-on-inverse: #0a0a0a;
 
     /* Theme Light */
-    --light-background: #ffffff;
-    --light-on-background: #121212;
-    --light-on-background-variant: #6f6f6f;
-    --light-surface: #f5f5f5;
-    --light-outline: #dcdcdc;
-    --light-inverse: #121212;
-    --light-on-inverse: #f5f5f5;
+    --light-background: #f6f8fa;
+    --light-on-background: #0e1216;
+    --light-on-background-variant: rgba(61, 71, 81, 1);
+    --light-surface: #e5e9ed;
+    --light-outline: #cad3df;
+    --light-inverse: #0a0a0a;
+    --light-on-inverse: #e0e0e0;
 
     /**
      * Typography
@@ -588,51 +588,7 @@ p {
     gap: var(--spacing-6);
 }
 
-.main {
-    display: grid;
-    margin-inline: auto;
-    width: 100%;
-    max-width: 568px;
-    min-height: 100dvh;
-}
-
-.main .main-body {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-inline-end: 1px solid var(--outline);
-}
-
-.main .main-navigation-end {
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    padding-block: var(--spacing-5);
-    padding-inline: var(--spacing-7) var(--spacing-4);
-    width: 100%;
-    height: 100dvh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-4);
-}
-
-.main .main-navigation-start {
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    border-inline-end: 1px solid var(--outline);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100dvh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-body:has(.navigation-bar) .main { padding-block-end: var(--navigation-bar-height); }
+.main {}
 
 :has(> .state-layer) {
     position: relative;
@@ -730,12 +686,6 @@ span,
 
 .p-end-0 { padding-inline-end: 0 !important; }
 
-.grid-2-base,
-.grid-3-base {
-    display: grid;
-    gap: var(--spacing-4);
-}
-
 /* ----------------------------------------------------- *\
  * COMPONENTS
 \* ----------------------------------------------------- */
@@ -743,30 +693,8 @@ span,
 /**
  * Logo
  */
-.logo .img-logo {
-    min-width: auto;
-    max-width: max-content;
-}
 
-.logo.small .img-logo {
-    min-height: 28px;
-    max-height: 28px;
-}
 
-.logo.medium .img-logo {
-    min-height: var(--height-medium);
-    max-height: var(--height-medium);
-}
-
-.logo.large .img-logo {
-    min-height: var(--height-large);
-    max-height: var(--height-large);
-}
-
-.logo.extra-large .img-logo {
-    min-height: var(--height-extra-large);
-    max-height: var(--height-extra-large);
-}
 
 /**
  * Avatars
@@ -777,19 +705,8 @@ span,
 /**
  * Progress Bar
  */
-.progress-bar {
-    background: var(--linear-gradient);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    width: 0;
-    height: var(--spacing-1);
-    transition: width var(--tr-duration-short);
-}
 
-.progress-bar.active { width: 100%; }
+
 
 /**
  * App bars
@@ -1126,20 +1043,8 @@ span,
 /**
  * Navigation bar
  */
-.navigation-rail {
-    border-inline-end: 1px solid var(--outline);
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    padding: var(--spacing-2) var(--spacing-4) var(--spacing-4);
-    display: none;
-    flex-direction: column;
-    gap: var(--spacing-1);
-    width: var(--navigation-rail-width);
-    height: 100dvh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+
+
 
 /**
  * Navigation drawer
@@ -1413,52 +1318,13 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * OTHERS
 \* ----------------------------------------------------- */
 
-/**
- * Start Loading
- */
-.start-loading {
-    background-color: var(--background);
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 100dvh;
-    display: grid;
-    place-items: center;
-    user-select: none;
-    transition-duration: var(--tr-duration-medium);
-    transition-property: opacity, visibility;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
 
-.start-loading.active {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.start-loading .logo { transition: transform var(--tr-duration-medium); }
-
-.start-loading.active .logo { transform: scale(1.5); }
 
 /* ----------------------------------------------------- *\
  * MAIN
 \* ----------------------------------------------------- */
 
-/**
- * Auth
- */
-.auth {
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr max-content;
-    gap: var(--spacing-10);
-    padding-block-start: var(--spacing-10);
-    width: 100%;
-    min-height: 100dvh;
-}
 
-.auth .form-card .select-wrapper { max-width: 100%; }
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
@@ -1467,91 +1333,24 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 /**
  * Fit Size: 568PX
  */
-@media screen and (min-width: 568px) {
-    /**
-     * REUSED STYLE
-     */
-    .main { grid-template-columns: var(--navigation-rail-width) 1fr; }
-
-    body:has(.navigation-bar) .main { padding-block-end: 0; }
-
-    /**
-     * COMPONENTS
-     */
-
-    /* Navigation bar */
-    .navigation-rail { display: flex; }
-}
+@media screen and (min-width: 568px) {}
 
 /**
  * Fit Size: 768PX
  */
-@media screen and (min-width: 768px) {
-    /**
-     * REUSED STYLE
-     */
-    .main { max-width: 768px; }
-
-    .grid-2-base { grid-template-columns: repeat(2, 1fr); }
-    
-    .grid-3-base { grid-template-columns: repeat(2, 1fr); }
-}
+@media screen and (min-width: 768px) {}
 
 /**
  * Fit Size: 992PX
  */
-@media screen and (min-width: 992px) {
-    /**
-     * REUSED STYLE
-     */
-    .main { max-width: 992px; }
-
-    .main:has(.main-navigation-end) { grid-template-columns: var(--navigation-rail-width) 1fr 330px; }
-
-    .main:has(.main-navigation-start) { grid-template-columns: var(--navigation-rail-width) 395px 1fr; }
-
-    .mobile { display: none !important; }
-
-    .desktop { display: flex !important; }
-    
-    .grid-3-base { grid-template-columns: repeat(3, 1fr); }
-
-    /**
-     * COMPONENTS
-     */
-
-    /* Navigation bar */
-    .main:has(.main-navigation-start) .navigation-rail { width: var(--navigation-rail-width); }
-}
+@media screen and (min-width: 992px) {}
 
 /**
  * Fit Size: 1200PX
  */
-@media screen and (min-width: 1200px) {
-    /**
-     * REUSED STYLE
-     */
-    .main {
-        grid-template-columns: var(--navigation-drawer-width) 1fr;
-        max-width: 1200px;
-    }
-
-    .main:has(.main-navigation-end) { grid-template-columns: var(--navigation-drawer-width) 1fr 330px; }
-
-    /**
-     * COMPONENTS
-     */
-
-    /* Navigation bar */
-    .navigation-rail { width: var(--navigation-drawer-width); }
-}
+@media screen and (min-width: 1200px) {}
 
 /**
  * Fit Size: 1440PX
  */
-@media screen and (min-width: 1440px) {
-    /**
-     * REUSED STYLE
-     */
-    .main { max-width: 1440px; }
-}
+@media screen and (min-width: 1440px) {}
