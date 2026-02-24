@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="URL This Page" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="../src/assets/images/favicon.svg" />
+
+    <!-- Meta Tags -->
+    <title>Login to The Artist Web</title>
+    <meta name="title" content="Login to The Artist Web" />
+    <meta name="description" content="Description This Page" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Login to The Artist Web" />
+    <meta property="og:description" content="Description This Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL This Page" />
+    <meta property="og:image" content="../src/assets/images/theartistweb.svg" />
+    <meta property="og:image:alt" content="The Artist Web" />
+    <meta property="og:site_name" content="The Artist Web" />
+    <meta property="og:locale" content="en" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Login to The Artist Web" />
+    <meta name="twitter:description" content="Description This Page" />
+    <meta name="twitter:image" content="../src/assets/images/theartistweb.svg" />
+    <meta name="twitter:image:alt" content="The Artist Web" />
+    <meta name="twitter:url" content="URL This Page" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Custom Bootstrap Link -->
+    <link rel="stylesheet" href="../src/assets/bootstrap/bootstrap.min.css" />
+    <script src="../src/assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="../src/assets/css/styles.css" />
+
+    <!-- Custom Js Link -->
+    <script type="module" src="../src/js/theme.js"></script>
+    <script type="module" src="../src/js/app.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Overlay & Progress Bar -->
+    <div class="overlay" data-overlay></div>
+    <div class="progress-bar" data-progress-bar></div>
+
+    <!-- Start Loading -->
+    <div class="start-loading" data-start-loading>
+        <div class="logo extra-large">
+            <img src="../src/assets/images/logo.svg" alt="The Artist Web" class="img-logo img-cover" />
+        </div>
+    </div>
+    
+    <!-- Auth -->
+    <article class="auth">
+        
+        <div class="auth-body">
+
+            <div class="logo large">
+                <img src="../src/assets/images/logo-dark.svg" alt="The Artist Web" class="img-logo theme-light img-cover" />
+
+                <img src="../src/assets/images/logo-light.svg" alt="The Artist Web" class="img-logo theme-dark img-cover" />
+            </div>
+
+            <form action="" method="POST" class="form-card">
+
+                <div class="wrapper-block text-center">
+                    <h3 class="text-headline-small">Login to The Artist Web</h3>
+
+                    <p class="text-body-large text-on-background-variant">Don't have an account? <a href="../auth/join.html" class="btn-link">Join The Artist Web</a></p>
+                </div>
+
+                <div class="grid-socials">
+                    <a href="#" class="btn inverse medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z" /></svg>
+    
+                        <p class="text-body-large">Google</p>
+    
+                        <div class="state-layer"></div>
+                    </a>
+    
+                    <a href="#" class="btn inverse medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+    
+                        <p class="text-body-large">Github</p>
+    
+                        <div class="state-layer"></div>
+                    </a>
+    
+                    <a href="#" class="btn inverse medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077" /><path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg>
+    
+                        <p class="text-body-large">Apple</p>
+    
+                        <div class="state-layer"></div>
+                    </a>
+    
+                    <a href="#" class="btn inverse medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+    
+                        <p class="text-body-large">Facebook</p>
+    
+                        <div class="state-layer"></div>
+                    </a>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="separator x"></div>
+
+                    <p class="text-body-medium text-on-background-variant text-nowrap">Or continue with</p>
+
+                    <div class="separator x"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <div class="input-wrapper outline medium">
+                        <input type="email" placeholder="Enter your email address" name="" value="" id="email" class="text-body-large" />
+                    </div>
+
+                    <!-- <p class="text-error text-body-medium"></p> -->
+                </div>
+
+                <div class="form-group">
+                    <div class="wrapper-between">
+                        <label for="password">Password</label>
+
+                        <a href="../auth/forget-password.html" class="text-body-medium text-on-background-variant hover">Forgot your password?</a>
+                    </div>
+
+                    <div class="input-wrapper outline medium p-end-0" data-passwords>
+                        <input type="password" placeholder="Enter your password" name="" value="" id="password" class="text-body-large" />
+
+                        <button type="button" class="icon-btn text medium" data-bs-toggle="tooltip" data-bs-title="Show Password" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                        </button>
+                    </div>
+
+                    <!-- <p class="text-error text-body-medium"></p> -->
+                </div>
+
+                <button type="submit" class="btn filled medium w-full">
+                    <p class="text-body-large">Login with an email</p>
+
+                    <div class="state-layer"></div>
+                </button>
+            </form>
+
+            <form action="#" method="POST" class="form-group">
+
+                <div class="select-wrapper text extra-small">
+                    <select name="languages" class="text-body-medium">
+                        <option value="english">English</option>
+                        <option value="arabic">Arabic</option>
+                    </select>
+
+                    <div class="icon-btn extra-small arrow-select">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    </div>
+
+                    <div class="state-layer"></div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="banner desktop">
+
+            <div class="slider left" style="--quantity: 10; --width: 344px; --height: 258px;">
+
+                <ul class="list">
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/36734261/file/original-822ee72523e5fd7b7d2d1e968054b218.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/43085589/file/original-7233e0738184340a841a96489e562dfe.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/43553706/file/original-2c3f5586170026c05487dc1fa6c1826c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/42569536/file/original-01cbb973c101fe19385ae1448acfa4a1.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/37535293/file/original-51086c4f8f759a6a782920c19f2b4849.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/44901191/file/888fa09cb43bc4eabc959e93b03004bf.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/16139768/file/original-8820917cb3a61e1b9b206e8d4547371c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/37535213/file/original-d938f4e19de0cd4760adf3e9eaf6892b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/43751088/file/original-2b7f290f6bdbf9d18356cab1fc2723ee.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/29997327/file/original-b44236f2401bd1af577d75116b6683f6.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/36734261/file/original-822ee72523e5fd7b7d2d1e968054b218.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/43085589/file/original-7233e0738184340a841a96489e562dfe.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/43553706/file/original-2c3f5586170026c05487dc1fa6c1826c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/42569536/file/original-01cbb973c101fe19385ae1448acfa4a1.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/37535293/file/original-51086c4f8f759a6a782920c19f2b4849.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/44901191/file/888fa09cb43bc4eabc959e93b03004bf.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/16139768/file/original-8820917cb3a61e1b9b206e8d4547371c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/37535213/file/original-d938f4e19de0cd4760adf3e9eaf6892b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/43751088/file/original-2b7f290f6bdbf9d18356cab1fc2723ee.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/29997327/file/original-b44236f2401bd1af577d75116b6683f6.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="slider right" style="--quantity: 10; --width: 344px; --height: 258px;">
+
+                <ul class="list">
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46788011/file/3c7c8df957ff9e43a59550ab283a6d19.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46785473/file/865b05a19b73b4a5c659564ad8f5f37d.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46785414/file/38e03750933fba67ef543b053673d88b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46686929/file/3b3bd841d170cefeb19a3976e768189a.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46648938/file/ac99f8168a6ff49436ff5c956e5547b9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46648882/file/4b20d4213f65fd937a55218c699bd891.png?resize=1504x1247&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46618191/file/737028c33411d89826610a4e9a6e0072.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46603404/file/a3be983944c5e05192da223e87bbd469.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46581738/file/89da6103f1078f60279615bdad9a63d7.png?resize=1504x846&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46581806/file/4558fb6adb73eb911725601563a3edb8.png?resize=1600x900&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46788011/file/3c7c8df957ff9e43a59550ab283a6d19.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46785473/file/865b05a19b73b4a5c659564ad8f5f37d.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46785414/file/38e03750933fba67ef543b053673d88b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46686929/file/3b3bd841d170cefeb19a3976e768189a.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46648938/file/ac99f8168a6ff49436ff5c956e5547b9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46648882/file/4b20d4213f65fd937a55218c699bd891.png?resize=1504x1247&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46618191/file/737028c33411d89826610a4e9a6e0072.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46603404/file/a3be983944c5e05192da223e87bbd469.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46581738/file/89da6103f1078f60279615bdad9a63d7.png?resize=1504x846&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46581806/file/4558fb6adb73eb911725601563a3edb8.png?resize=1600x900&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="slider left" style="--quantity: 10; --width: 344px; --height: 258px;">
+
+                <ul class="list">
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46581566/file/b08f1ed0e35b40c859de7dbbec2f696c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46581654/file/659b187f98d15b40957e2996c66cc150.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46581981/file/418c495a992455e86f07477e001e72c7.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46581996/file/d5f239a6160f1aedefe3130061d88472.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46532109/file/54911b7bcc111b06b5a25610e4a5a42f.png?resize=1504x1070&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46532577/file/856cbaad900cdfd92784b82bf91b9b1b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46532356/file/efbd73205f9f5c07cdabc5ce5bbb9168.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46532445/file/ff9fbdaabaa0941b69f4029c8ad509b5.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46532465/file/571f3f85a91c0a77fb89c3d35f1200a9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46532370/file/3f5cb16dd78da47b0de45e31d9aa685b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46581566/file/b08f1ed0e35b40c859de7dbbec2f696c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46581654/file/659b187f98d15b40957e2996c66cc150.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46581981/file/418c495a992455e86f07477e001e72c7.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46581996/file/d5f239a6160f1aedefe3130061d88472.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46532109/file/54911b7bcc111b06b5a25610e4a5a42f.png?resize=1504x1070&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46532577/file/856cbaad900cdfd92784b82bf91b9b1b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46532356/file/efbd73205f9f5c07cdabc5ce5bbb9168.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46532445/file/ff9fbdaabaa0941b69f4029c8ad509b5.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46532465/file/571f3f85a91c0a77fb89c3d35f1200a9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46532370/file/3f5cb16dd78da47b0de45e31d9aa685b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="slider right" style="--quantity: 10; --width: 344px; --height: 258px;">
+
+                <ul class="list">
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/36734261/file/original-822ee72523e5fd7b7d2d1e968054b218.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/43085589/file/original-7233e0738184340a841a96489e562dfe.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/43553706/file/original-2c3f5586170026c05487dc1fa6c1826c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/42569536/file/original-01cbb973c101fe19385ae1448acfa4a1.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/37535293/file/original-51086c4f8f759a6a782920c19f2b4849.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/44901191/file/888fa09cb43bc4eabc959e93b03004bf.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/16139768/file/original-8820917cb3a61e1b9b206e8d4547371c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/37535213/file/original-d938f4e19de0cd4760adf3e9eaf6892b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/43751088/file/original-2b7f290f6bdbf9d18356cab1fc2723ee.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/29997327/file/original-b44236f2401bd1af577d75116b6683f6.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/36734261/file/original-822ee72523e5fd7b7d2d1e968054b218.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/43085589/file/original-7233e0738184340a841a96489e562dfe.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/43553706/file/original-2c3f5586170026c05487dc1fa6c1826c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/42569536/file/original-01cbb973c101fe19385ae1448acfa4a1.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/37535293/file/original-51086c4f8f759a6a782920c19f2b4849.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/44901191/file/888fa09cb43bc4eabc959e93b03004bf.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/16139768/file/original-8820917cb3a61e1b9b206e8d4547371c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/37535213/file/original-d938f4e19de0cd4760adf3e9eaf6892b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/43751088/file/original-2b7f290f6bdbf9d18356cab1fc2723ee.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/29997327/file/original-b44236f2401bd1af577d75116b6683f6.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="slider left" style="--quantity: 10; --width: 344px; --height: 258px;">
+
+                <ul class="list">
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46788011/file/3c7c8df957ff9e43a59550ab283a6d19.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46785473/file/865b05a19b73b4a5c659564ad8f5f37d.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46785414/file/38e03750933fba67ef543b053673d88b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46686929/file/3b3bd841d170cefeb19a3976e768189a.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46648938/file/ac99f8168a6ff49436ff5c956e5547b9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46648882/file/4b20d4213f65fd937a55218c699bd891.png?resize=1504x1247&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46618191/file/737028c33411d89826610a4e9a6e0072.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46603404/file/a3be983944c5e05192da223e87bbd469.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46581738/file/89da6103f1078f60279615bdad9a63d7.png?resize=1504x846&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46581806/file/4558fb6adb73eb911725601563a3edb8.png?resize=1600x900&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46788011/file/3c7c8df957ff9e43a59550ab283a6d19.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46785473/file/865b05a19b73b4a5c659564ad8f5f37d.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46785414/file/38e03750933fba67ef543b053673d88b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46686929/file/3b3bd841d170cefeb19a3976e768189a.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46648938/file/ac99f8168a6ff49436ff5c956e5547b9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46648882/file/4b20d4213f65fd937a55218c699bd891.png?resize=1504x1247&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46618191/file/737028c33411d89826610a4e9a6e0072.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46603404/file/a3be983944c5e05192da223e87bbd469.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46581738/file/89da6103f1078f60279615bdad9a63d7.png?resize=1504x846&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46581806/file/4558fb6adb73eb911725601563a3edb8.png?resize=1600x900&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="slider right" style="--quantity: 10; --width: 344px; --height: 258px;">
+
+                <ul class="list">
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46581566/file/b08f1ed0e35b40c859de7dbbec2f696c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46581654/file/659b187f98d15b40957e2996c66cc150.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46581981/file/418c495a992455e86f07477e001e72c7.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46581996/file/d5f239a6160f1aedefe3130061d88472.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46532109/file/54911b7bcc111b06b5a25610e4a5a42f.png?resize=1504x1070&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46532577/file/856cbaad900cdfd92784b82bf91b9b1b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46532356/file/efbd73205f9f5c07cdabc5ce5bbb9168.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46532445/file/ff9fbdaabaa0941b69f4029c8ad509b5.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46532465/file/571f3f85a91c0a77fb89c3d35f1200a9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46532370/file/3f5cb16dd78da47b0de45e31d9aa685b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 1;">
+                        <img src="https://cdn.dribbble.com/userupload/46581566/file/b08f1ed0e35b40c859de7dbbec2f696c.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 2;">
+                        <img src="https://cdn.dribbble.com/userupload/46581654/file/659b187f98d15b40957e2996c66cc150.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 3;">
+                        <img src="https://cdn.dribbble.com/userupload/46581981/file/418c495a992455e86f07477e001e72c7.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 4;">
+                        <img src="https://cdn.dribbble.com/userupload/46581996/file/d5f239a6160f1aedefe3130061d88472.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 5;">
+                        <img src="https://cdn.dribbble.com/userupload/46532109/file/54911b7bcc111b06b5a25610e4a5a42f.png?resize=1504x1070&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 6;">
+                        <img src="https://cdn.dribbble.com/userupload/46532577/file/856cbaad900cdfd92784b82bf91b9b1b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 7;">
+                        <img src="https://cdn.dribbble.com/userupload/46532356/file/efbd73205f9f5c07cdabc5ce5bbb9168.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 8;">
+                        <img src="https://cdn.dribbble.com/userupload/46532445/file/ff9fbdaabaa0941b69f4029c8ad509b5.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 9;">
+                        <img src="https://cdn.dribbble.com/userupload/46532465/file/571f3f85a91c0a77fb89c3d35f1200a9.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                    <li class="item" style="--position: 10;">
+                        <img src="https://cdn.dribbble.com/userupload/46532370/file/3f5cb16dd78da47b0de45e31d9aa685b.png?resize=1504x1128&vertical=center" alt="title theme" loading="lazy" class="img-item img-cover" />
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</body>
+
+</html>
