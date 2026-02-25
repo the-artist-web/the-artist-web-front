@@ -6,6 +6,7 @@ import { Tooltip } from "./components/Tooltip.js";
 import { StartLoading } from "./components/StartLoading.js";
 import { ProgressBar } from "./components/ProgressBar.js";
 import { Password } from "./components/Password.js";
+import { FixedScrolling } from "./components/FixedScrolling.js";
 
 /**
  * Overlay & Body
@@ -18,6 +19,12 @@ const $body = document.body;
  */
 const $startLoading = document.querySelector("[data-start-loading]");
 if ($startLoading) window.addEventListener("load", () => StartLoading($startLoading, $body));
+
+/**
+ * Fixed Scrolling
+ */
+const $fixedScrolling = document.querySelectorAll("[data-fixed-scrolling]");
+if ($fixedScrolling.length) window.addEventListener("scroll", () => $fixedScrolling.forEach($elem => FixedScrolling($elem)));
 
 /**
  * Tooltip
