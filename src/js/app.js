@@ -17,7 +17,6 @@ const $body = document.body;
  * Start Loading
  */
 const $startLoading = document.querySelector("[data-start-loading]");
-console.log($startLoading)
 if ($startLoading) window.addEventListener("load", () => StartLoading($startLoading, $body));
 
 /**
