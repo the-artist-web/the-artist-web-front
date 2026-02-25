@@ -655,7 +655,8 @@ body:has(.header) .main { padding-block-start: var(--header-height); }
 
 .flex,
 .wrapper,
-.wrapper-item { align-items: center; }
+.wrapper-item,
+.wrapper-between { align-items: center; }
 
 .wrapper-block,
 .wrapper-content { flex-direction: column; }
@@ -1498,7 +1499,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     display: grid;
     place-items: center;
     grid-template-rows: max-content 1fr max-content;
-    padding: var(--spacing-8) var(--spacing-4);
+    padding: var(--spacing-8) var(--spacing-4) var(--spacing-4);
     gap: var(--spacing-10);
 }
 
@@ -1548,6 +1549,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     
     /* Auth */
     .auth:has(.banner) { grid-template-columns: repeat(2, 1fr); }
+
+    .auth .auth-body { padding: var(--spacing-8) var(--spacing-8) var(--spacing-4); }
 }
 
 /**
