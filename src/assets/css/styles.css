@@ -1145,8 +1145,51 @@ span,
 /**
  * Search
  */
+.search-container {
+    display: none;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
 
+.search-container.active { display: block; }
 
+.search-container .search {
+    display: flex;
+    align-items: center;
+    min-height: var(--height-small);
+    max-height: var(--height-small);
+    background-color: var(--surface);
+    border-radius: var(--radius-medium);
+    border: 2px solid var(--surface);
+    transition: border-color var(--tr-duration-short);
+}
+
+.search-container .search input {
+    min-height: var(--height-small);
+    max-height: var(--height-small);
+}
+
+.search-container .search:hover { border-color: var(--outline); }
+
+.search-container .search:is(:focus, :focus-visible, :focus-within) { border-color: var(--primary); }
+
+.search-container .search .icon-search {
+    color: var(--on-background-variant);
+    opacity: 0.7;
+    transition-duration: var(--tr-duration-short);
+    transition-property: border-color, opacity;
+}
+
+.search-container .search:hover .icon-search {
+    color: var(--on-background);
+    opacity: 1;
+}
+
+.search-container .search:is(:focus, :focus-visible, :focus-within) .icon-search {
+    color: var(--primary);
+    opacity: 1;
+}
 
 /**
  * Bottom sheets
@@ -1409,6 +1452,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     font-weight: var(--fw-regular);
     line-height: var(--lh-body-small);
     background-color: var(--inverse);
+    text-transform: capitalize;
+    text-wrap: nowrap;
     color: var(--on-inverse);
 }
 
@@ -1574,6 +1619,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     max-height: var(--spacing-5);
 }
 
+.header .icon-btn.text { color: var(--on-background) !important; }
+
 /* ----------------------------------------------------- *\
  * MAIN
 \* ----------------------------------------------------- */
@@ -1636,6 +1683,23 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     .main.main-2 { grid-template-columns: var(--width-base) minmax(0, 1fr); }
 
     .main.main-3 { grid-template-columns: var(--width-base) minmax(0, 1fr); }
+
+    /**
+     * COMPONENTS
+     */
+
+    /* Search */
+    .search-container { display: block; }
+
+    .search-container .search input { padding-inline-end: var(--spacing-4); }
+
+    /**
+     * OTHERS
+     */
+
+    /* Header */
+    .header [data-open-search],
+    .header [data-close-search] { display: none; }
 }
 
 /**
