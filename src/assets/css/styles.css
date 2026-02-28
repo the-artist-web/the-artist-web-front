@@ -410,7 +410,6 @@ p {
 \* ------------------------------------------------------------ */
 
 .text-display-large {
-    font-family: var(--font-family-newsreader);
     font-size: var(--fs-display-large);
     font-weight: var(--fw-large);
     line-height: var(--lh-display-large);
@@ -418,35 +417,30 @@ p {
 }
 
 .text-display-medium {
-    font-family: var(--font-family-newsreader);
     font-size: var(--fs-display-medium);
     font-weight: var(--fw-large);
     line-height: var(--lh-display-medium);
 }
 
 .text-display-small {
-    font-family: var(--font-family-newsreader);
     font-size: var(--fs-display-small);
     font-weight: var(--fw-large);
     line-height: var(--lh-display-small);
 }
 
 .text-headline-large {
-    font-family: var(--font-family-newsreader);
     font-size: var(--fs-headline-large);
     font-weight: var(--fw-medium);
     line-height: var(--lh-headline-large);
 }
 
 .text-headline-medium {
-    font-family: var(--font-family-newsreader);
     font-size: var(--fs-headline-medium);
     font-weight: var(--fw-medium);
     line-height: var(--lh-headline-medium);
 }
 
 .text-headline-small {
-    font-family: var(--font-family-newsreader);
     font-size: var(--fs-headline-small);
     font-weight: var(--fw-medium);
     line-height: var(--lh-headline-small);
