@@ -36,11 +36,8 @@ if ($tooltips.length) $tooltips.forEach($elem => Tooltip($elem));
  * Progress Bar
  */
 const $progressBar = document.querySelector("[data-progress-bar]");
-const $action = document.querySelectorAll("a, button[type='submit']");
-if ($action.length) $action.forEach($elem => $elem.addEventListener("click", () => {
-        if ($elem.target === "_blank") return;
-        ProgressBar($progressBar);
-    }));
+const $actions = document.querySelectorAll("a, button[type='submit']");
+if ($progressBar) ProgressBar($progressBar, $actions);
 
 /**
  * Password
