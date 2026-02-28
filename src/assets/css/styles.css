@@ -650,6 +650,8 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: var(--on-background-variant); }
 
+.custom-scrollbar::-webkit-scrollbar-thumb:active { background-color: var(--on-background); }
+
 .flex,
 .wrapper,
 .wrapper-item,
