@@ -1440,6 +1440,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 /**
  * Tooltips
  */
+.tooltip { display: none; }
+
 .tooltip .tooltip-inner {
     display: flex;
     align-items: center;
@@ -1690,6 +1692,9 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     .search-container { display: block; }
 
     .search-container .search input { padding-inline-end: var(--spacing-4); }
+
+    /* Tooltips */
+    .tooltip { display: flex; }
 
     /**
      * OTHERS
