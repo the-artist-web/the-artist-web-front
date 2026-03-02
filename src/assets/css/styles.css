@@ -400,6 +400,8 @@ p {
     margin: 0 !important;
 }
 
+svg { vertical-align: middle; }
+
 ::selection {
     background-color: var(--on-background);
     color: var(--background);
