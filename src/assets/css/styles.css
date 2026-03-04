@@ -821,8 +821,29 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 /**
  * Badges
  */
+.badge-container {
+    position: relative;
+    max-width: max-content;
+    max-height: max-content;
+}
 
+.badge-container .badge {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    z-index: 10;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    min-width: var(--spacing-5);
+    height: var(--spacing-5);
+    border-radius: var(--radius-full);
+    pointer-events: none;
+}
 
+html[dir="rtl"] .badge-container .badge {
+    right: 60%;
+    left: auto;
+}
 
 /**
  * Buttons
@@ -1218,6 +1239,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 .search-container .search-bar {
     background-color: var(--surface);
     border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-05);
     position: absolute;
     top: calc(var(--height-small) + var(--spacing-2));
     left: 0;
@@ -1242,12 +1264,33 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     --state-layer-bg: var(--on-background);
 }
 
+.search-container .search-bar .search-bar-link a {
+    margin-inline-start: -16px;
+    padding-inline-start: var(--spacing-4);
+}
+
+.search-container .search-bar .search-bar-link .flex {
+    width: 100%;
+    gap: var(--spacing-3);
+}
+
+.search-container .search-bar .search-bar-link p { flex-grow: 1; }
+
 .search-container .search-bar .search-bar-link svg {
     min-width: var(--spacing-5);
     max-width: var(--spacing-5);
     min-height: var(--spacing-5);
     max-height: var(--spacing-5);
 }
+
+.search-container .search-bar .search-bar-link .hover {
+    display: none;
+    color: var(--on-background-variant) !important;
+}
+
+.search-container .search-bar .search-bar-link .hover:hover { color: var(--on-background) !important; }
+
+.search-container .search-bar .search-bar-link:hover .hover { display: flex; }
 
 .search-container .search-bar .separator.x { margin-block: var(--spacing-2); }
 

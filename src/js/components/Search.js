@@ -15,13 +15,15 @@ export const Search = ($element) => {
         setTimeout(() => $inputSearch.focus(), 50);
     });
 
+    $inputSearch.addEventListener("focus", () => $searchBar.classList.add("active"));
+
     $inputSearch.addEventListener("input", (e) => {
-        if (e.target.value.length >= 2)
+        if (e.target.value.length >= 1)
             $searchBar.classList.add("active");
         else
             $searchBar.classList.remove("active");
     });
-
+    
     document.addEventListener("click", (e) => {
         const isOutside =  !$searchContainer.contains(e.target) && !$openSearch.contains(e.target);
 
