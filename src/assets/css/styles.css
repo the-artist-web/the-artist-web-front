@@ -945,7 +945,7 @@ html[dir="rtl"] .badge-container .badge {
     right: 0;
     bottom: 0;
     width: 0%;
-    height: var(--spacing-05);
+    height: 1px;
     border-radius: var(--radius-full);
     transition: width var(--tr-duration-short);
 }
