@@ -9,16 +9,16 @@
     --scrim: #00000075;
     --success: #1ec863;
     --on-success: #000000;
-    --soft-success: #1ec86335;
+    --soft-success: #1ec86320;
     --warning: #f6a723;
     --on-warning: #000000;
-    --soft-warning: #f6a72335;
+    --soft-warning: #f6a72320;
     --info: #2f80ed;
     --on-info: #ffffff;
-    --soft-info: #2f80ed35;
+    --soft-info: #2f80ed20;
     --error: #ed4956;
     --on-error: #ffffff;
-    --soft-error: #ed495635;
+    --soft-error: #ed495620;
     
     /* Primary */
     --linear-gradient: linear-gradient(135deg, #ffb347 0%, #ff9a3c 25%, #e03c31 55%, #8f1d2c 100%);
@@ -26,10 +26,10 @@
     --soft-linear-gradient: linear-gradient(135deg, #ffb34735 0%, #ff9a3c35 25%, #e03c3135 55%, #8f1d2c35 100%);
     --primary: #f8ac34;
     --on-primary: #000000;
-    --soft-primary: #f8ac3435;
+    --soft-primary: #f8ac3420;
     --secondary: #bc2636;
     --on-secondary: #000000;
-    --soft-secondary: #bc263635;
+    --soft-secondary: #bc263620;
 
     /* Theme Dim */
     --dim-background: #121212;
