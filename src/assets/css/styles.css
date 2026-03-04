@@ -828,6 +828,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 }
 
 .badge-container .badge {
+    display: none;
     position: absolute;
     top: 0;
     left: 60%;
