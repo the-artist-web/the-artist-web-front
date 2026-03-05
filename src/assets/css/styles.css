@@ -1400,6 +1400,7 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .form-group {
+    text-align: start;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2);
@@ -1781,6 +1782,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .auth .auth-body {
+    text-align: center;
     display: grid;
     place-items: center;
     grid-template-rows: max-content 1fr max-content;
