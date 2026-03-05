@@ -689,6 +689,8 @@ span,
 .arrow-dir,
 .theme-light,
 .theme-dark {
+    display: grid;
+    place-items: center;
     max-width: max-content;
     max-height: max-content;
 }
