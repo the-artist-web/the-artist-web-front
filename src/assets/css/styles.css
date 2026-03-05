@@ -791,7 +791,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1000000;
     width: 0;
     height: var(--spacing-1);
     transition: width var(--tr-duration-medium), opacity var(--tr-duration-short);
