@@ -104,7 +104,7 @@
                                     <p class="text-body-medium line-clamp line-clamp-1">Mockups</p>
                                 </a>
 
-                                <button type="button" class="hover">
+                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                                 </button>
 
@@ -122,7 +122,7 @@
                                     <p class="text-body-medium line-clamp line-clamp-1">No code Assets</p>
                                 </a>
 
-                                <button type="button" class="hover">
+                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                                 </button>
 
@@ -140,7 +140,7 @@
                                     <p class="text-body-medium line-clamp line-clamp-1">Themes & Templates</p>
                                 </a>
 
-                                <button type="button" class="hover">
+                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                                 </button>
 
@@ -189,7 +189,7 @@
                         <li>
                             <div class="search-bar-link">
                                 <div class="wrapper-between">
-                                    <p class="text-body-medium text-on-background text-uppercase">Creators</p>
+                                    <p class="text-body-medium text-on-background text-uppercase">Top Creators</p>
 
                                     <a href="./pages/creators.html" class="btn-link">
                                         <p class="text-body-medium">See All</p>
@@ -259,7 +259,13 @@
                     </ul>
                 </div>
 
-                <div class="wrapper-item flex-nowrap gap-2" data-header-items>
+                <div class="wrapper-item flex-nowrap" data-header-items>
+                    <a href="./web/pricing.html" target="_blank" class="btn linear-gradient extra-small">
+                        <p class="text-body-small">pro</p>
+
+                        <div class="state-layer"></div>
+                    </a>
+
                     <button type="button" class="icon-btn text small" data-open-search data-bs-toggle="tooltip" data-bs-title="Search" data-bs-placement="bottom">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
 
@@ -278,30 +284,37 @@
                         </div>
                     </span>
 
+                    <span class="badge-container" data-bs-toggle="offcanvas" data-bs-target="#side-sheet-notifications">
+                        <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Notifications" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <div class="badge">
+                            <p class="text-label-small"></p>
+                        </div>
+                    </span>
+
                     <div class="dropdown">
-                        <span class="badge-container" data-bs-toggle="dropdown">
-                            <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Notifications" data-bs-placement="bottom">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
-        
-                                <div class="state-layer"></div>
-                            </button>
+                        <button type="button" class="btn inverse small p-end-0" data-bs-toggle="dropdown">
+                            <p class="text-body-medium">New</p>
 
-                            <div class="badge">
-                                <p class="text-label-small"></p>
+                            <div class="icon-btn small">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0" /></svg>
                             </div>
-                        </span>
 
-                        <ul class="dropdown-menu dropdown-menu-end medium">
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu small">
 
                             <li>
-
                                 <!-- go -->
-
                             </li>
 
                         </ul>
                     </div>
-
                 </div>
 
             </div>
@@ -364,7 +377,7 @@
 
                 </ul>
 
-                <a href="./pages/feeds.html" class="nav-link desktop">
+                <a href="./pages/feeds.html" class="nav-link tablet">
                     <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-t99de4"><g fill="currentColor"><path d="M9 17.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM13 16a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7 3a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4H7Zm12 8V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v4h14ZM5 13h14v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-4Z"></path></g></svg>
 
                     <p class="text-body-medium">Feed</p>
@@ -377,6 +390,8 @@
     </header>
 
     <!-- side-sheet-shopping-cart -->
+
+    <!-- side-sheet-notifications -->
 
     <main class="main">
 
