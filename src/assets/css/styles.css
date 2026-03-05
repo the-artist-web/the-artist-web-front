@@ -714,6 +714,21 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .p-end-0 { padding-inline-end: 0 !important; }
 
+.off {
+    color: var(--on-background-variant);
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+
+.icon-big,
+.icon-big svg {
+    min-width: var(--spacing-15) !important;
+    max-width: var(--spacing-15) !important;
+    min-height: var(--spacing-15) !important;
+    max-height: var(--spacing-15) !important;
+    stroke-width: 1px;
+}
+
 /* ----------------------------------------------------- *\
  * COMPONENTS
 \* ----------------------------------------------------- */
