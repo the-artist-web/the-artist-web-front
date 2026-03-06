@@ -261,7 +261,7 @@
                             <div class="state-layer"></div>
                         </button>
     
-                        <span class="badge-container" data-bs-toggle="offcanvas" data-bs-target="#side-sheet-shopping-cart">
+                        <span class="badge-container" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shopping-cart">
                             <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Shopping Cart" data-bs-placement="bottom">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
         
@@ -273,7 +273,7 @@
                             </div>
                         </span>
     
-                        <span class="badge-container" data-bs-toggle="offcanvas" data-bs-target="#side-sheet-notifications">
+                        <span class="badge-container" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-notifications">
                             <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Notifications" data-bs-placement="bottom">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
         
@@ -286,7 +286,17 @@
                         </span>
                     </div>
 
-                    <div class="dropdown">
+                    <button type="button" class="btn inverse small p-end-0 mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-new">
+                        <p class="text-body-medium">New</p>
+
+                        <div class="icon-btn small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0" /></svg>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <div class="dropdown tablet">
                         <button type="button" class="btn inverse small p-end-0" data-bs-toggle="dropdown">
                             <p class="text-body-medium">New</p>
 
@@ -322,7 +332,17 @@
                         </ul>
                     </div>
 
-                    <div class="dropdown">
+                    <span class="mobile" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-user">
+                        <button type="button" class="avatar small" data-bs-toggle="tooltip" data-bs-title="The Artist Web" data-bs-placement="bottom">
+                            <!-- <img src="" alt="profile photo" loading="lazy" class="img-avatar img-cover" /> -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                            <div class="icon-btn success"></div>
+                        </button>
+                    </span>
+
+                    <div class="dropdown tablet">
                         <span data-bs-toggle="dropdown">
                             <button type="button" class="avatar small" data-bs-toggle="tooltip" data-bs-title="The Artist Web" data-bs-placement="bottom">
                                 <!-- <img src="" alt="profile photo" loading="lazy" class="img-avatar img-cover" /> -->
@@ -581,11 +601,13 @@
 
     </header>
 
-    <!-- side-sheet-shopping-cart -->
+    <!-- offcanvas-shopping-cart -->
 
-    <!-- side-sheet-notifications -->
+    <!-- offcanvas-notifications -->
 
-    <!-- bottom-sheet-user -->
+    <!-- offcanvas-new -->
+
+    <!-- offcanvas-user -->
 
     <main class="main">
 
