@@ -55,7 +55,7 @@
     --light-background: #f6f8fa;
     --light-soft-background: #f6f8fa75;
     --light-on-background: #0e1216;
-    --light-on-background-variant: rgba(61, 71, 81, 1);
+    --light-on-background-variant: rgb(109, 119, 130);
     --light-surface: #e5e9ed;
     --light-outline: #cad3df;
     --light-inverse: #0a0a0a;
@@ -87,8 +87,8 @@
     --fs-label-small: 1.1rem;
 
     /* Font weight */
-    --fw-regular: 500;
-    --fw-medium: 600;
+    --fw-regular: 400;
+    --fw-medium: 500;
     --fw-large: 700;
 
     /* Line height */
@@ -357,10 +357,7 @@ form { width: 100%; }
  * BASE
 \* ----------------------------------------------------- */
 
-:where(input, textarea)::placeholder {
-    color: var(--on-background-variant);
-    opacity: 0.7;
-}
+:where(input, textarea)::placeholder { color: var(--on-background-variant); }
 
 option {
     background-color: var(--background);
@@ -399,8 +396,6 @@ p {
     padding: 0 !important;
     margin: 0 !important;
 }
-
-svg { vertical-align: middle; }
 
 ::selection {
     background-color: var(--on-background);
@@ -688,6 +683,8 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
 span,
 .arrow-dir,
 .theme-light,
+.icon-big,
+.check,
 .theme-dark {
     display: inline-flex;
     align-items: center;
@@ -729,6 +726,17 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     stroke-width: 1px;
 }
 
+.check,
+.check svg {
+    min-width: var(--spacing-5) !important;
+    max-width: var(--spacing-5) !important;
+    min-height: var(--spacing-5) !important;
+    max-height: var(--spacing-5) !important;
+    color: var(--success);
+    vertical-align: middle;
+    margin-inline-start: var(--spacing-05);
+}
+
 /* ----------------------------------------------------- *\
  * COMPONENTS
 \* ----------------------------------------------------- */
@@ -737,7 +745,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
  * Logo
  */
 .logo .img-logo {
-    min-width: auto;
+    min-width: max-content;
     max-width: max-content;
 }
 
@@ -765,14 +773,15 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
  * Avatars
  */
 .avatar {
+    background-color: var(--surface) !important;
+    color: var(--on-background-variant) !important;
+    border: 1px solid var(--outline) !important;
     border-radius: var(--radius-full);
-    border: 1px solid var(--outline);
-    background-color: var(--surface);
-    overflow: hidden;
     position: relative;
     display: grid;
     place-items: center;
     color: var(--on-background-variant);
+    text-transform: uppercase;
     --state-layer-bg: var(--on-background);
 }
 
@@ -795,6 +804,20 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     inset: 0;
     z-index: 10;
     border-radius: var(--radius-full);
+}
+
+.avatar .icon-btn {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    z-index: 10;
+    width: var(--spacing-3);
+    height: var(--spacing-3);
+}
+
+html[dir="rtl"] .avatar .icon-btn {
+    left: -1px;
+    right: auto;
 }
 
 /**
@@ -820,7 +843,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
  * Separator
  */
 .separator {
-    border: 1px solid var(--outline);
+    background-color: var(--outline);
     width: 100%;
     height: 100%;
 }
@@ -830,7 +853,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     width: 1px;
 }
 
-.separator.x { height: 1px; }
+.separator.x { height: 0.5px; }
 
 /**
  * App bars
@@ -1091,11 +1114,17 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.text {
-    color: var(--on-background-variant) !important;
+    color: var(--on-background-variant);
     --state-layer-bg: var(--on-background);
 }
 
-.icon-btn.text:hover { color: var(--on-background) !important; }
+.icon-btn.text:hover { color: var(--on-background); }
+
+.icon-btn.success {
+    background-color: var(--success);
+    color: var(--on-success);
+    --state-layer-bg: var(--on-success);
+}
 
 /**
  * Segmented buttons
@@ -1213,8 +1242,51 @@ html[dir="rtl"] .badge-container .badge {
 /**
  * Menus
  */
+.dropdown .dropdown-menu {
+    background-color: var(--surface);
+    border: none;
+    box-shadow: var(--shadow-05);
+    border-radius: var(--radius-medium);
+    padding-block: var(--spacing-2) !important;
+    margin: var(--spacing-1) !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 85dvh;
+}
 
+.dropdown .dropdown-menu.small { width: 150px; }
 
+.dropdown .dropdown-menu.medium { width: 250px; }
+
+.dropdown .dropdown-menu .dropdown-item {
+    background-color: transparent !important;
+    color: var(--on-background-variant) !important;
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: var(--spacing-3);
+    text-transform: capitalize;
+    padding: var(--spacing-2) var(--spacing-4) !important;
+    text-align: start;
+    transition: color var(--tr-duration-short);
+    --state-layer-bg: var(--on-background);
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover { color: var(--on-background) !important; }
+
+.dropdown .dropdown-menu .dropdown-item.error {
+    color: var(--error) !important;
+    --state-layer-bg: var(--error);
+}
+
+.dropdown .dropdown-menu .dropdown-item svg {
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
+}
+
+.dropdown .dropdown-menu .separator.x { margin-block: var(--spacing-2) !important; }
 
 /**
  * Navigation bar
@@ -1270,15 +1342,11 @@ html[dir="rtl"] .badge-container .badge {
 
 .search-container .search .icon-search {
     color: var(--on-background-variant);
-    opacity: 0.7;
     transition-duration: var(--tr-duration-short);
     transition-property: border-color, opacity;
 }
 
-.search-container .search:is(:hover, :focus, :focus-visible, :focus-within) .icon-search {
-    color: var(--on-background);
-    opacity: 1;
-}
+.search-container .search:is(:hover, :focus, :focus-visible, :focus-within) .icon-search { color: var(--on-background); }
 
 .search-container .search-bar {
     background-color: var(--surface);
@@ -1703,7 +1771,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
 .header .header-top { height: var(--header-top-height); }
 
-.header .header-top .btn.inverse { padding-inline-start: var(--spacing-4) !important; }
+.header .header-top .btn { padding-inline-start: var(--spacing-4) !important; }
 
 .header .header-bottom {
     overflow: hidden;
