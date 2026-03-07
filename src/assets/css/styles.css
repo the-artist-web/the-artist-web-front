@@ -820,6 +820,8 @@ html[dir="rtl"] .avatar .icon-btn {
     right: auto;
 }
 
+.avatar svg { stroke-width: 1px; }
+
 /**
  * Progress Bar
  */
