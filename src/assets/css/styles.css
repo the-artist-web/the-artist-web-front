@@ -28,7 +28,7 @@
     --on-primary: #000000;
     --soft-primary: #f8ac3420;
     --secondary: #bc2636;
-    --on-secondary: #000000;
+    --on-secondary: #ffffff;
     --soft-secondary: #bc263620;
 
     /* Theme Dim */
@@ -199,12 +199,12 @@
     /**
      * Others
      */
-    --width-extra-small: 30px;
+    --width-extra-small: 36px;
     --width-small: 40px;
     --width-medium: 48px;
     --width-large: 56px;
     --width-extra-large: 100px;
-    --height-extra-small: 30px;
+    --height-extra-small: 36px;
     --height-small: 40px;
     --height-medium: 48px;
     --height-large: 56px;
@@ -628,11 +628,16 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
 .custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
 
 .custom-scrollbar::-webkit-scrollbar {
-    width: var(--spacing-1);
-    height: var(--spacing-1);
+    width: var(--spacing-2);
+    height: var(--spacing-2);
 }
 
-.custom-scrollbar::-webkit-scrollbar-track { background-color: inherit; }
+.custom-scrollbar::-webkit-scrollbar-track {
+    border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
+    background-color: inherit;
+}
+
+html[dir="rtl"] .custom-scrollbar::-webkit-scrollbar-track { border-radius: var(--radius-medium) 0 0 var(--radius-medium); }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background-color: var(--outline);
@@ -647,6 +652,7 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
 .wrapper,
 .wrapper-item,
 .wrapper-between,
+.wrapper-center,
 .wrapper-block,
 .wrapper-content { display: flex; }
 
@@ -658,9 +664,11 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
 
 .flex,
 .wrapper,
+.wrapper-center,
 .wrapper-item,
 .wrapper-between { align-items: center; }
 
+.wrapper-center,
 .wrapper-block,
 .wrapper-content { flex-direction: column; }
 
@@ -816,13 +824,37 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     right: -1px;
     bottom: -1px;
     z-index: 10;
-    width: var(--spacing-3);
-    height: var(--spacing-3);
+    min-width: var(--spacing-3);
+    max-width: var(--spacing-3);
+    min-height: var(--spacing-3);
+    max-height: var(--spacing-3);
 }
 
 html[dir="rtl"] .avatar .icon-btn {
     left: -1px;
     right: auto;
+}
+
+.avatar .icon-btn:has(svg) {
+    right: -3px;
+    bottom: -3px;
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
+}
+
+html[dir="rtl"] .avatar .icon-btn:has(svg) {
+    left: -3px;
+    right: auto;
+}
+
+.avatar .icon-btn:has(svg) svg {
+    stroke-width: 2px;
+    min-width: var(--spacing-3) !important;
+    max-width: var(--spacing-3) !important;
+    min-height: var(--spacing-3) !important;
+    max-height: var(--spacing-3) !important;
 }
 
 .avatar svg { stroke-width: 1px; }
@@ -1127,10 +1159,51 @@ html[dir="rtl"] .badge-container .badge {
 
 .icon-btn.text:hover { color: var(--on-background); }
 
+.icon-btn.outline {
+    border: 1px solid var(--outline);
+    --state-layer-bg: var(--on-background);
+}
+
+.icon-btn.success-tonal {
+    background-color: var(--soft-success);
+    color: var(--success);
+    --state-layer-bg: var(--success);
+}
+
+.icon-btn.filled {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    --state-layer-bg: var(--on-primary);
+}
+
+.icon-btn.secondary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    --state-layer-bg: var(--on-secondary);
+}
+
 .icon-btn.success {
     background-color: var(--success);
     color: var(--on-success);
     --state-layer-bg: var(--on-success);
+}
+
+.icon-btn.error {
+    background-color: var(--error);
+    color: var(--on-error);
+    --state-layer-bg: var(--on-error);
+}
+
+.icon-btn.info {
+    background-color: var(--info);
+    color: var(--on-info);
+    --state-layer-bg: var(--on-info);
+}
+
+.icon-btn.inverse {
+    background-color: var(--inverse);
+    color: var(--on-inverse);
+    --state-layer-bg: var(--on-inverse);
 }
 
 /**
@@ -1261,9 +1334,29 @@ html[dir="rtl"] .badge-container .badge {
     max-height: 85dvh;
 }
 
+.dropdown .dropdown-menu.extra-small { width: 100px; }
+
 .dropdown .dropdown-menu.small { width: 150px; }
 
 .dropdown .dropdown-menu.medium { width: 250px; }
+
+.dropdown .dropdown-menu.large { width: 350px; }
+
+.dropdown .dropdown-menu.extra-large { width: 500px; }
+
+.dropdown .dropdown-menu .dropdown-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4) var(--spacing-4);
+    color: var(--on-background);
+}
+
+.dropdown .dropdown-menu .dropdown-header .wrapper-between { flex-wrap: nowrap; }
+
+.dropdown .dropdown-menu .dropdown-header form { width: max-content; }
+
+.dropdown .dropdown-menu .wrapper-center { padding-block-start: var(--spacing-2); }
 
 .dropdown .dropdown-menu .dropdown-item {
     background-color: transparent !important;
@@ -1275,6 +1368,7 @@ html[dir="rtl"] .badge-container .badge {
     text-transform: capitalize;
     padding: var(--spacing-2) var(--spacing-4) !important;
     text-align: start;
+    text-wrap: wrap;
     transition: color var(--tr-duration-short);
     --state-layer-bg: var(--on-background);
 }
@@ -1476,8 +1570,30 @@ html[dir="rtl"] .badge-container .badge {
 /**
  * Tabs
  */
+.nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-2);
+    border: none;
+    margin: 0;
+}
 
+.nav-tabs .nav-link {
+    border: 1px solid var(--outline) !important;
+    background-color: inherit;
+    color: var(--on-background) !important;
+    border-radius: var(--radius-medium);
+    padding-inline: var(--spacing-4);
+    min-height: var(--height-extra-small);
+    max-height: var(--height-extra-small);
+    --state-layer-bg: var(--on-background);
+}
 
+.nav-tabs .nav-link.active {
+    background-color: var(--inverse) !important;
+    color: var(--on-inverse) !important;
+}
 
 /**
  * Text fields
