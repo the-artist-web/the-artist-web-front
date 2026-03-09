@@ -628,16 +628,11 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
 .custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
 
 .custom-scrollbar::-webkit-scrollbar {
-    width: var(--spacing-2);
-    height: var(--spacing-2);
+    width: var(--spacing-1);
+    height: var(--spacing-1);
 }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-    border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
-    background-color: inherit;
-}
-
-html[dir="rtl"] .custom-scrollbar::-webkit-scrollbar-track { border-radius: var(--radius-medium) 0 0 var(--radius-medium); }
+.custom-scrollbar::-webkit-scrollbar-track { background-color: inherit; }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background-color: var(--outline);
@@ -1304,8 +1299,13 @@ html[dir="rtl"] .badge-container .badge {
 /**
  * Lists
  */
-
-
+.list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 75dvh;
+}
 
 /**
  * Loading indicator
@@ -1388,6 +1388,11 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .dropdown .dropdown-menu .separator.x { margin-block: var(--spacing-2) !important; }
+
+.dropdown .dropdown-menu .list {
+    margin-block-end: -8px;
+    padding-block-end: var(--spacing-2);
+}
 
 /**
  * Navigation bar
