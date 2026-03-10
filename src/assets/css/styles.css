@@ -679,7 +679,7 @@ body:has(.header) .main { padding-block-start: calc(var(--header-top-height) + v
     justify-content: space-between;
 }
 
-.tablet { display: none !important; }
+.desctop { display: none !important; }
 
 .desktop { display: none !important; }
 
@@ -2031,7 +2031,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     
     .mobile { display: none !important; }
 
-    .tablet { display: flex !important; }
+    .desctop { display: flex !important; }
 
     /**
      * COMPONENTS
@@ -2057,11 +2057,6 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Fit Size: 992PX
  */
 @media screen and (min-width: 992px) {
-    /**
-     * REUSED STYLE
-     */
-    .desktop { display: flex !important; }
-
     /**
      * MAIN
      */
