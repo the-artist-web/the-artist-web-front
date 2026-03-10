@@ -8,6 +8,7 @@ import { ProgressBar } from "./components/ProgressBar.js";
 import { Password } from "./components/Password.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Search } from "./components/Search.js";
+import { Quantite } from "./components/Quantite.js";
 
 /**
  * Overlay & Body
@@ -51,3 +52,9 @@ if ($passwords.length) $passwords.forEach($elem => Password($elem));
  */
 const $search = document.querySelector("[data-search]");
 if ($search) Search($search);
+
+/**
+ *  Quantites
+ */
+const $quantites = document.querySelectorAll("[data-quantitys]");
+if ($quantites.length) $quantites.forEach($elem => Quantite($elem));

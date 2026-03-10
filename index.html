@@ -273,7 +273,7 @@
                             </div>
                         </span>
 
-                        <div class="dropdown desctop">
+                        <div class="dropdown desktop">
                             <span class="badge-container" data-bs-toggle="dropdown">
                                 <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Notifications" data-bs-placement="bottom">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
@@ -289,7 +289,7 @@
                             <ul class="dropdown-menu dropdown-menu-end extra-large custom-scrollbar-hidden" onclick="event.stopPropagation()">
                                 <li class="dropdown-header">
                                     <div class="wrapper-between">
-                                        <h6 class="text-title-small">Notifications</h6>
+                                        <h6 class="text-title-small"><strong>Notifications</strong></h6>
 
                                         <form action="#" method="POST">
                                             <button type="submit" class="text-on-background-variant hover">
@@ -591,7 +591,7 @@
                             </div>
                         </span>
 
-                        <div class="dropdown desctop">
+                        <div class="dropdown desktop">
                             <span class="badge-container" data-bs-toggle="dropdown">
                                 <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Shopping Cart" data-bs-placement="bottom">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
@@ -607,7 +607,7 @@
                             <div class="dropdown-menu dropdown-menu-end extra-large custom-scrollbar-hidden" onclick="event.stopPropagation()">
                                 <li class="dropdown-header">
                                     <div class="wrapper-between">
-                                        <h6 class="text-title-small">Shopping Cart</h6>
+                                        <h6 class="text-title-small"><strong>Shopping Cart</strong></h6>
 
                                         <form action="#" method="POST">
                                             <button type="submit" class="text-on-background-variant hover">
@@ -621,15 +621,113 @@
                                     <ul class="list custom-scrollbar">
                                         
                                         <li>
-                                            <a href="./pages/themes/show.html" class="dropdown-item">
-                                                <!-- go -->
+                                            <div class="dropdown-item align-items-start">
+                                                <a href="./pages/themes/show.html">
+                                                    <img src="https://images.ui8.net/uploads/01_1773051246935.png" alt="photo product" loading="lazy" class="ratio-21x9 rounded-4 img-cover" style="height: 80px;" />
+                                                </a>
 
-                                                <div class="state-layer"></div>
-                                            </a>
+                                                <div class="wrapper-between flex-column align-items-start" style="height: 100%;">
+                                                    <div class="wrapper-content w-full">
+                                                        <div class="wrapper-between flex-nowrap align-items-start">
+                                                            <a href="./pages/themes/show.html">
+                                                                <p class="text-on-background text-body-large line-clamp line-clamp-2 hover">DuoVid - AI Video Generator Dashboard (Light & Dark)</p>
+                                                            </a>
+
+                                                            <button type="button" class="icon-btn tonal-error extra-small" data-bs-toggle="tooltip" data-bs-title="Remove" data-bs-placement="bottom">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.707 5.293l5.293 5.292l5.293 -5.292a1 1 0 0 1 1.414 1.414l-5.292 5.293l5.292 5.293a1 1 0 0 1 -1.414 1.414l-5.293 -5.292l-5.293 5.292a1 1 0 1 1 -1.414 -1.414l5.292 -5.293l-5.292 -5.293a1 1 0 0 1 1.414 -1.414" /></svg>
+
+                                                                <div class="state-layer"></div>
+                                                            </button>
+                                                        </div>
+
+                                                        <a href="./pages/themes/show.html">
+                                                            <p class="text-body-small text-on-background-variant">Product by <strong>JMJ Studio</strong> • Standard license</p>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="wrapper-between">
+                                                        <div class="quantity" data-quantitys>
+                                                            <button type="button" class="icon-btn outline extra-small" data-minus data-bs-toggle="tooltip" data-bs-title="Minus" data-bs-placement="bottom">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-minus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg>
+
+                                                                <div class="state-layer"></div>
+                                                            </button>
+
+                                                            <input type="text" name="quantity" value="1" minlength="1" class="text-body-small" data-input />
+                                                            
+                                                            <button type="button" class="icon-btn outline extra-small" data-plus data-bs-toggle="tooltip" data-bs-title="Plus" data-bs-placement="bottom">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+
+                                                                <div class="state-layer"></div>
+                                                            </button>
+                                                        </div>
+
+                                                        <a href="./pages/themes/show.html" class="flex flex-nowrap">
+                                                            <p class="text-body-small off">EGP400</p>
+
+                                                            <p class="text-body-medium text-on-background"><strong>EGP186,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="dropdown-item align-items-start">
+                                                <a href="./pages/themes/show.html">
+                                                    <img src="https://images.ui8.net/uploads/screen-1_1726505034788.png" alt="photo product" loading="lazy" class="ratio-21x9 rounded-4 img-cover" style="height: 80px;" />
+                                                </a>
+
+                                                <div class="wrapper-between flex-column align-items-start" style="height: 100%;">
+                                                    <div class="wrapper-content w-full">
+                                                        <div class="wrapper-between flex-nowrap align-items-start">
+                                                            <a href="./pages/themes/show.html">
+                                                                <p class="text-on-background text-body-large line-clamp line-clamp-2 hover">BalancePro - Personal Spending Tracker App UI kit</p>
+                                                            </a>
+
+                                                            <button type="button" class="icon-btn tonal-error extra-small" data-bs-toggle="tooltip" data-bs-title="Remove" data-bs-placement="bottom">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.707 5.293l5.293 5.292l5.293 -5.292a1 1 0 0 1 1.414 1.414l-5.292 5.293l5.292 5.293a1 1 0 0 1 -1.414 1.414l-5.293 -5.292l-5.293 5.292a1 1 0 1 1 -1.414 -1.414l5.292 -5.293l-5.292 -5.293a1 1 0 0 1 1.414 -1.414" /></svg>
+
+                                                                <div class="state-layer"></div>
+                                                            </button>
+                                                        </div>
+
+                                                        <a href="./pages/themes/show.html">
+                                                            <p class="text-body-small text-on-background-variant">Product by <strong>kiwari.labs</strong> • Standard license</p>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="wrapper-between">
+                                                        <div class="quantity" data-quantitys>
+                                                            <button type="button" class="icon-btn outline extra-small" data-minus data-bs-toggle="tooltip" data-bs-title="Minus" data-bs-placement="bottom">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-minus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg>
+
+                                                                <div class="state-layer"></div>
+                                                            </button>
+
+                                                            <input type="text" name="quantity" value="1" minlength="1" class="text-body-small" data-input />
+                                                            
+                                                            <button type="button" class="icon-btn outline extra-small" data-plus data-bs-toggle="tooltip" data-bs-title="Plus" data-bs-placement="bottom">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+
+                                                                <div class="state-layer"></div>
+                                                            </button>
+                                                        </div>
+
+                                                        <a href="./pages/themes/show.html" class="flex flex-nowrap">
+                                                            <p class="text-body-small off">EGP400</p>
+
+                                                            <p class="text-body-medium text-on-background"><strong>EGP186,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
 
                                     </ul>
                                 </li>
+
+                                <!-- go footer dropdown -->
                             </div>
                         </div>
                     </div>
@@ -644,7 +742,7 @@
                         <div class="state-layer"></div>
                     </button>
 
-                    <div class="dropdown desctop">
+                    <div class="dropdown desktop">
                         <button type="button" class="btn inverse small p-end-0" data-bs-toggle="dropdown">
                             <p class="text-body-medium">New</p>
 
@@ -690,7 +788,7 @@
                         </button>
                     </span>
 
-                    <div class="dropdown desctop">
+                    <div class="dropdown desktop">
                         <span data-bs-toggle="dropdown" data-bs-display="static">
                             <button type="button" class="avatar small" data-bs-toggle="tooltip" data-bs-title="The Artist Web" data-bs-placement="bottom">
                                 <!-- <img src="" alt="profile photo" loading="lazy" class="img-avatar img-cover" /> -->
@@ -937,7 +1035,7 @@
 
                 </ul>
 
-                <a href="./pages/feeds.html" class="nav-link desctop">
+                <a href="./pages/feeds.html" class="nav-link desktop">
                     <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-t99de4"><g fill="currentColor"><path d="M9 17.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM13 16a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7 3a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4H7Zm12 8V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v4h14ZM5 13h14v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-4Z"></path></g></svg>
 
                     <p class="text-body-medium">Feed</p>
