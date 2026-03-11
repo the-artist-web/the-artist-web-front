@@ -1121,10 +1121,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.extra-small svg {
-    min-width: calc(var(--width-extra-small) / 2);
-    max-width: calc(var(--width-extra-small) / 2);
-    min-height: calc(var(--height-extra-small) / 2);
-    max-height: calc(var(--height-extra-small) / 2);
+    min-width: calc(var(--width-extra-small) / 2) !important;
+    max-width: calc(var(--width-extra-small) / 2) !important;
+    min-height: calc(var(--height-extra-small) / 2) !important;
+    max-height: calc(var(--height-extra-small) / 2) !important;
 }
 
 .icon-btn.small {
@@ -1135,10 +1135,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.small svg {
-    min-width: calc(var(--width-small) / 2);
-    max-width: calc(var(--width-small) / 2);
-    min-height: calc(var(--height-small) / 2);
-    max-height: calc(var(--height-small) / 2);
+    min-width: calc(var(--width-small) / 2) !important;
+    max-width: calc(var(--width-small) / 2) !important;
+    min-height: calc(var(--height-small) / 2) !important;
+    max-height: calc(var(--height-small) / 2) !important;
 }
 
 .icon-btn.medium {
@@ -1149,10 +1149,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.medium svg {
-    min-width: calc(var(--width-medium) / 2);
-    max-width: calc(var(--width-medium) / 2);
-    min-height: calc(var(--height-medium) / 2);
-    max-height: calc(var(--height-medium) / 2);
+    min-width: calc(var(--width-medium) / 2) !important;
+    max-width: calc(var(--width-medium) / 2) !important;
+    min-height: calc(var(--height-medium) / 2) !important;
+    max-height: calc(var(--height-medium) / 2) !important;
 }
 
 .icon-btn.large {
@@ -1163,10 +1163,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.large svg {
-    min-width: calc(var(--width-large) / 2);
-    max-width: calc(var(--width-large) / 2);
-    min-height: calc(var(--height-large) / 2);
-    max-height: calc(var(--height-large) / 2);
+    min-width: calc(var(--width-large) / 2) !important;
+    max-width: calc(var(--width-large) / 2) !important;
+    min-height: calc(var(--height-large) / 2) !important;
+    max-height: calc(var(--height-large) / 2) !important;
 }
 
 .icon-btn.text {
