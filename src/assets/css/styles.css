@@ -202,12 +202,12 @@
     /**
      * Others
      */
-    --width-extra-small: 30px;
+    --width-extra-small: 28px;
     --width-small: 40px;
     --width-medium: 48px;
     --width-large: 56px;
     --width-extra-large: 100px;
-    --height-extra-small: 30px;
+    --height-extra-small: 28px;
     --height-small: 40px;
     --height-medium: 48px;
     --height-large: 56px;
@@ -1175,6 +1175,11 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.text:hover { color: var(--on-background); }
+
+.icon-btn.text-error {
+    color: var(--error);
+    --state-layer-bg: var(--error);
+}
 
 .icon-btn.outline {
     border: 1px solid var(--outline);
