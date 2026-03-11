@@ -524,6 +524,10 @@ p {
 
 .text-on-info { color: var(--on-info) !important; }
 
+.text-purple { color: var(--purple) !important; }
+
+.text-on-purple { color: var(--on-purple) !important; }
+
 .text-error { color: var(--error) !important; }
 
 .text-on-error { color: var(--on-error) !important; }
