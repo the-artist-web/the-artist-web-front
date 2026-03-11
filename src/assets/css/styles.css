@@ -16,6 +16,9 @@
     --info: #2f80ed;
     --on-info: #ffffff;
     --soft-info: #2f80ed20;
+    --purple: #463be3;
+    --on-purple: #ffffff;
+    --soft-purple: #463be320;
     --error: #ed4956;
     --on-error: #ffffff;
     --soft-error: #ed495620;
@@ -1202,6 +1205,12 @@ html[dir="rtl"] .badge-container .badge {
     --state-layer-bg: var(--on-success);
 }
 
+.icon-btn.tonal-success {
+    background-color: var(--soft-success);
+    color: var(--success);
+    --state-layer-bg: var(--success);
+}
+
 .icon-btn.error {
     background-color: var(--error);
     color: var(--on-error);
@@ -1212,6 +1221,36 @@ html[dir="rtl"] .badge-container .badge {
     background-color: var(--info);
     color: var(--on-info);
     --state-layer-bg: var(--on-info);
+}
+
+.icon-btn.tonal-info {
+    background-color: var(--soft-info);
+    color: var(--info);
+    --state-layer-bg: var(--info);
+}
+
+.icon-btn.purple {
+    background-color: var(--purple);
+    color: var(--on-purple);
+    --state-layer-bg: var(--on-purple);
+}
+
+.icon-btn.tonal-purple {
+    background-color: var(--soft-purple);
+    color: var(--purple);
+    --state-layer-bg: var(--purple);
+}
+
+.icon-btn.warning {
+    background-color: var(--warning);
+    color: var(--on-warning);
+    --state-layer-bg: var(--on-warning);
+}
+
+.icon-btn.tonal-warning {
+    background-color: var(--soft-warning);
+    color: var(--warning);
+    --state-layer-bg: var(--warning);
 }
 
 .icon-btn.inverse {
@@ -1972,17 +2011,19 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
+    width: 0%;
     height: 1px;
-    display: none;
     border-radius: var(--radius-full);
+    transition: width var(--tr-duration-short);
 }
 
-.header .header-bottom .nav-link:hover { color: var(--on-background); }
+.header .header-bottom .nav-link:hover { color: var(--primary); }
+
+.header .header-bottom .nav-link:hover::before { width: 100%; }
 
 .header .header-bottom .nav-link.active { color: var(--primary); }
 
-.header .header-bottom .nav-link.active::before { display: block; }
+.header .header-bottom .nav-link.active::before { width: 100%; }
 
 .header .header-bottom .nav-link svg {
     min-width: var(--spacing-5);
