@@ -9,6 +9,7 @@ import { Password } from "./components/Password.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Search } from "./components/Search.js";
 import { Quantite } from "./components/Quantite.js";
+import { Follow } from "./components/Follow.js";
 
 /**
  * Overlay & Body
@@ -54,7 +55,13 @@ const $search = document.querySelector("[data-search]");
 if ($search) Search($search);
 
 /**
- *  Quantites
+ * Quantites
  */
 const $quantites = document.querySelectorAll("[data-quantitys]");
 if ($quantites.length) $quantites.forEach($elem => Quantite($elem));
+
+/**
+ * Followers
+ */
+const $followers = document.querySelectorAll("[data-followers]");
+if ($followers.length) $followers.forEach($elem => Follow($elem));

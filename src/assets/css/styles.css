@@ -35,33 +35,33 @@
     --soft-secondary: #bc263620;
 
     /* Theme Dim */
-    --dim-background: #121212;
-    --dim-soft-background: #12121275;
-    --dim-on-background: #d5d5d5;
-    --dim-on-background-variant: #bcbcbc;
-    --dim-surface: #1e1e1e;
-    --dim-outline: #292929;
-    --dim-inverse: #f5f5f5;
-    --dim-on-inverse: #121212;
+    --dim-background: #101318;
+    --dim-soft-background: #10131875;
+    --dim-on-background: #f1f2f4;
+    --dim-on-background-variant: #9da3af;
+    --dim-surface: #1a1d26;
+    --dim-outline: #2e3139;
+    --dim-inverse: #ffffff;
+    --dim-on-inverse: #0f0f0f;
 
     /* Theme Dark */
-    --dark-background: #0a0a0a;
-    --dark-soft-background: #0a0a0a75;
-    --dark-on-background: #c8c8c8;
-    --dark-on-background-variant: #a4a4a4;
-    --dark-surface: #121212;
-    --dark-outline: #2a2a2a;
-    --dark-inverse: #e0e0e0;
-    --dark-on-inverse: #0a0a0a;
+    --dark-background: #0f0f0f;
+    --dark-soft-background: #0f0f0f75;
+    --dark-on-background: #ffffff;
+    --dark-on-background-variant: #878787;
+    --dark-surface: #171717;
+    --dark-outline: #212121;
+    --dark-inverse: #ffffff;
+    --dark-on-inverse: #0f0f0f;
 
     /* Theme Light */
-    --light-background: #f6f8fa;
-    --light-soft-background: #f6f8fa75;
-    --light-on-background: #0e1216;
-    --light-on-background-variant: rgb(109, 119, 130);
-    --light-surface: #e5e9ed;
-    --light-outline: #cad3df;
-    --light-inverse: #0a0a0a;
+    --light-background: #ffffff;
+    --light-soft-background: #ffffff75;
+    --light-on-background: #0f0f0f;
+    --light-on-background-variant: #606060;
+    --light-surface: #f2f2f2;
+    --light-outline: #d3d3d3;
+    --light-inverse: #0f0f0f;
     --light-on-inverse: #ffffff;
 
     /**
@@ -892,7 +892,10 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
     width: 1px;
 }
 
-.separator.x { height: 0.5px; }
+.separator.x {
+    min-height: 0.5px;
+    max-height: 0.5px;
+}
 
 /**
  * Quantitys
@@ -973,7 +976,7 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .btn.extra-small {
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-small);
     padding-inline: var(--spacing-4);
     min-height: var(--height-extra-small);
     max-height: var(--height-extra-small);
@@ -1028,6 +1031,12 @@ html[dir="rtl"] .badge-container .badge {
     background-color: var(--primary) !important;
     color: var(--on-primary) !important;
     --state-layer-bg: var(--on-primary);
+}
+
+.btn.secondary {
+    background-color: var(--outline) !important;
+    color: var(--on-background) !important;
+    --state-layer-bg: var(--on-background);
 }
 
 .btn.inverse {
@@ -1111,13 +1120,14 @@ html[dir="rtl"] .badge-container .badge {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-2);
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-medium);
     overflow: hidden;
     position: relative;
     transition: color var(--tr-duration-short);
 }
 
 .icon-btn.extra-small {
+    border-radius: var(--radius-small);
     min-width: var(--width-extra-small);
     max-width: var(--width-extra-small);
     min-height: var(--height-extra-small);
@@ -1509,7 +1519,7 @@ html[dir="rtl"] .badge-container .badge {
     min-height: var(--height-small);
     max-height: var(--height-small);
     background-color: var(--surface);
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-medium);
     --state-layer-bg: var(--on-background-variant);
 }
 
