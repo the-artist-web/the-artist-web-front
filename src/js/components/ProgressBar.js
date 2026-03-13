@@ -9,6 +9,4 @@ export const ProgressBar = ($progressBar, $elements) => addEventOnElements($elem
         if ($elem.target === "_blank") return;
 
         $progressBar.classList.add("active");
-
-        setTimeout(() => $progressBar.classList.add("hide"), 1000);
     });

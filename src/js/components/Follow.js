@@ -5,7 +5,7 @@ export const Follow = ($element) => {
         if ($element.dataset.followers === "false") {
             $element.dataset.followers = "true";
 
-            $element.classList.remove("filled");
+            $element.classList.remove("inverse");
             $element.classList.add("secondary");
 
             $element.innerHTML = `
@@ -17,7 +17,7 @@ export const Follow = ($element) => {
             $element.dataset.followers = "false";
 
             $element.classList.remove("secondary");
-            $element.classList.add("filled");
+            $element.classList.add("inverse");
 
             $element.innerHTML = `
                 <p class="text-body-small">Follow Back</p>
