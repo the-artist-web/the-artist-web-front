@@ -36,7 +36,6 @@
 
     /* Theme Dim */
     --dim-background: #131316;
-    --dim-soft-background: #13131675;
     --dim-on-background: #e4e4e4;
     --dim-on-background-variant: #a2a2ac;
     --dim-surface: #19191b;
@@ -46,7 +45,6 @@
 
     /* Theme Dark */
     --dark-background: #0f0f0f;
-    --dark-soft-background: #0f0f0f75;
     --dark-on-background: #ffffff;
     --dark-on-background-variant: #878787;
     --dark-surface: #171717;
@@ -56,7 +54,6 @@
 
     /* Theme Light */
     --light-background: #ffffff;
-    --light-soft-background: #ffffff75;
     --light-on-background: #0f0f0f;
     --light-on-background-variant: #606060;
     --light-surface: #f4f4f4;
@@ -2080,7 +2077,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Header
  */
 .header {
-    background-color: var(--soft-background);
+    background-color: var(--background);
     backdrop-filter: blur(30px);
     position: fixed;
     top: 0;
@@ -2187,6 +2184,22 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     flex-direction: column;
     gap: var(--spacing-3);
     margin-top: var(--spacing-2);
+}
+
+/**
+ * Footer
+ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+.footer .footer-bottom { margin-block-start: 56px; }
+
+.footer .footer-bottom svg {
+    width: 100%;
+    height: max-content;
 }
 
 /* ----------------------------------------------------- *\
