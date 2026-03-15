@@ -1746,6 +1746,13 @@ html[dir="rtl"] .badge-container .badge {
     --state-layer-bg: var(--error);
 }
 
+.offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link svg {
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
+}
+
 .offcanvas.offcanvas-bottom .offcanvas-list .separator.x { margin-block: var(--spacing-2); }
 
 /**
