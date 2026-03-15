@@ -81,8 +81,8 @@
                     <img src="./src/assets/images/logo-light.svg" alt="The Artist Web" loading="lazy" class="img-logo theme-dark img-cover" />
                 </a>
 
-                <div class="search-container" data-search-container>
-                    <form action="#" method="GET" class="search">
+                <form action="#" method="GET" class="search-container" data-search-container>
+                    <div type="submit" class="search">
                         <button type="submit" class="icon-btn arrow-dir small icon-search">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
                         </button>
@@ -90,72 +90,92 @@
                         <input type="search" placeholder="Search all of the artist web" name="search" value="" class="text-body-medium" autocomplete="off" data-input-search />
 
                         <div class="state-layer"></div>
-                    </form>
+                    </div>
 
-                    <ul class="search-bar custom-scrollbar-hidden" data-searchbar>
-                        
+                    <ul class="search-bar custom-scrollbar-hidden" data-search-overlay>
+
+                        <li data-recent-searches>
+                            <ul>
+                                <li>
+                                    <div class="search-bar-link">
+                                        <p class="text-body-medium text-on-background text-capitalize text-on-background-variant">Recent Searches</p>
+        
+                                        <span></span>
+        
+                                        <button type="button" class="hover text-on-background-variant d-block" data-clear-all-recent-searches>
+                                            <p class="text-body-medium">Clear All</p>
+                                        </button>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="search-bar-link">
+                                        <a href="./pages/search.html" class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                                        </a>
+            
+                                        <a href="./pages/search.html">
+                                            <p class="text-body-medium line-clamp line-clamp-1">Mockups</p>
+                                        </a>
+        
+                                        <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                        </button>
+        
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="search-bar-link">
+                                        <a href="./pages/search.html" class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                                        </a>
+        
+                                        <a href="./pages/search.html">
+                                            <p class="text-body-medium line-clamp line-clamp-1">No code Assets</p>
+                                        </a>
+        
+                                        <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                        </button>
+        
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="search-bar-link">
+                                        <a href="./pages/search.html" class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                                        </a>
+        
+                                        <a href="./pages/search.html">
+                                            <p class="text-body-medium line-clamp line-clamp-1">Themes & Templates</p>
+                                        </a>
+        
+                                        <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                        </button>
+        
+                                        <div class="state-layer"></div>
+                                    </div>
+                                </li>
+        
+                                <li class="separator x"></li>
+                            </ul>
+                        </li>
+
                         <li>
                             <div class="search-bar-link">
-                                <a href="./pages/search.html" class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
-    
-                                    <p class="text-body-medium line-clamp line-clamp-1">Mockups</p>
-                                </a>
-
-                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                                </button>
-
-                                <div class="state-layer"></div>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class="search-bar-link">
-                                <a href="./pages/search.html" class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
-    
-                                    <p class="text-body-medium line-clamp line-clamp-1">No code Assets</p>
-                                </a>
-
-                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                                </button>
-
-                                <div class="state-layer"></div>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class="search-bar-link">
-                                <a href="./pages/search.html" class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
-
-                                    <p class="text-body-medium line-clamp line-clamp-1">Themes & Templates</p>
-                                </a>
-
-                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                                </button>
-
-                                <div class="state-layer"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="./pages/search.html" class="search-bar-link">
-                                <div class="arrow-dir">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                <div class="wrapper-between">
+                                    <p class="text-body-medium text-on-background text-capitalize text-on-background-variant">Most Searched</p>
                                 </div>
-
-                                <p class="text-body-medium line-clamp line-clamp-1">ecommerce</p>
-
-                                <div class="state-layer"></div>
-                            </a>
+                            </div>
                         </li>
-                        
+
                         <li>
-                            <a href="./pages/search.html" class="search-bar-link">
+                            <a href="./pages/search.html?q=ui+kits" class="search-bar-link">
                                 <div class="arrow-dir">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
                                 </div>
@@ -165,9 +185,81 @@
                                 <div class="state-layer"></div>
                             </a>
                         </li>
-                        
+
                         <li>
-                            <a href="./pages/search.html" class="search-bar-link">
+                            <a href="./pages/search.html?q=dashboard+ui" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Dashboard UI</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=landing+page" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Landing Page</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=mobile+app+ui" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Mobile App UI</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=ecommerce+ui" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Ecommerce UI</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=website+templates" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Website Templates</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=design+systems" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Design Systems</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=illustrations" class="search-bar-link">
                                 <div class="arrow-dir">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
                                 </div>
@@ -182,17 +274,17 @@
 
                         <li>
                             <div class="search-bar-link">
-                                <div class="wrapper-between">
-                                    <p class="text-body-medium text-on-background text-uppercase">Top Creators</p>
+                                <p class="text-body-medium text-on-background text-capitalize text-on-background-variant">Featured Creators</p>
 
-                                    <a href="./pages/creators.html" class="btn-link">
-                                        <p class="text-body-medium">See All</p>
+                                <span></span>
 
-                                        <div class="arrow-dir">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
-                                        </div>
-                                    </a>
-                                </div>
+                                <a href="./pages/creators.html" class="btn-link">
+                                    <p class="text-body-medium">See All</p>
+
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                    </div>
+                                </a>
                             </div>
                         </li>
 
@@ -251,7 +343,133 @@
                         </li>
 
                     </ul>
-                </div>
+
+                    <ul class="search-bar custom-scrollbar-hidden" data-searchbar>
+
+                        <li>
+                            <button type="submit" class="search-bar-link gap-2">
+                                <p class="text-body-medium text-on-background-variant">Search for</p>
+
+                                <p class="text-body-medium line-clamp line-clamp-1" data-search-for></p>
+                            </button>
+                        </li>
+
+                        <li>
+                            <div class="search-bar-link">
+                                <a href="./pages/search.html" class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                                </a>
+    
+                                <a href="./pages/search.html">
+                                    <p class="text-body-medium line-clamp line-clamp-1">Mockups</p>
+                                </a>
+
+                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </button>
+
+                                <div class="state-layer"></div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="search-bar-link">
+                                <a href="./pages/search.html" class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                                </a>
+
+                                <a href="./pages/search.html">
+                                    <p class="text-body-medium line-clamp line-clamp-1">No code Assets</p>
+                                </a>
+
+                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </button>
+
+                                <div class="state-layer"></div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="search-bar-link">
+                                <a href="./pages/search.html" class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-history"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+                                </a>
+
+                                <a href="./pages/search.html">
+                                    <p class="text-body-medium line-clamp line-clamp-1">Themes & Templates</p>
+                                </a>
+
+                                <button type="button" class="hover" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </button>
+
+                                <div class="state-layer"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=ui+kits" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">UI Kits</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=dashboard+ui" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Dashboard UI</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=landing+page" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Landing Page</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=mobile+app+ui" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Mobile App UI</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/search.html?q=ecommerce+ui" class="search-bar-link">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" fill="currentColor" aria-hidden="true"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </div>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Ecommerce UI</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </form>
 
                 <div class="wrapper flex-nowrap" data-header-items>
                     <div class="wrapper-item flex-nowrap gap-0 gap-md-3">
@@ -292,7 +510,7 @@
                                         <h6 class="text-title-small"><strong>Notifications</strong></h6>
 
                                         <form action="#" method="POST">
-                                            <button type="submit" class="btn-link">
+                                            <button type="submit" class="hover text-on-background-variant">
                                                 <p class="text-body-medium">Mark all as read</p>
                                             </button>
                                         </form>
@@ -301,6 +519,44 @@
 
                                 <li>
                                     <ul class="list wrapper-block custom-scrollbar">
+                                        <li>
+                                            <div class="dropdown-item align-items-start">
+                                                <div class="flex">
+                                                    <a href="./pages/challenges/show.html" class="icon-btn tonal-warning small">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-crown"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 19h-14c-.5 0 -.9 -.3 -1 -.8l-2 -10c0 -.4 .1 -.8 .5 -1.1c.4 -.2 .8 -.2 1.1 0l4.1 3.3l3.4 -5.1c.4 -.6 1.3 -.6 1.7 0l3.4 5.1l4.1 -3.3c.3 -.3 .8 -.3 1.1 0c.4 .2 .5 .6 .5 1.1l-2 10c0 .5 -.5 .8 -1 .8z" /></svg>
+                                                    </a>
+    
+                                                    <a href="./pages/users/profiles/index.html" class="avatar small">
+                                                        <img src="./src/assets/images/theartistweb.svg" alt="the artist web" loading="lazy" class="img-avatar img-cover" />
+            
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                                    </a>
+                                                </div>
+        
+                                                <div class="wrapper-content gap-0">
+                                                    <div class="wrapper-between flex-nowrap align-items-start">
+                                                        <p class="text-body-medium text-on-background-variant">
+                                                            <a href="./pages/users/profiles/index.html" class="hover text-on-background">
+                                                                <strong>The Artist Web</strong>
+                                                            </a>
+                                                            
+                                                            <a href="./pages/challenges/show.html" class="text-lowercase">1min ago</a>
+                                                            
+                                                            <a href="./pages/challenges/show.html" class="check">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                                            </a>
+                                                        </p>
+        
+                                                        <a href="./pages/challenges/show.html" class="text-body-large text-success">•</a>
+                                                    </div>
+        
+                                                    <a href="./pages/challenges/show.html">
+                                                        <p class="text-on-background-variant text-body-medium line-clamp line-clamp-2">I won <span class="text-on-background">1,000EGP</span> pounds in a <span class="text-on-background">Fitness App UI — Smart Workout Experience</span></p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+
                                         <li>
                                             <div class="dropdown-item align-items-start">
                                                 <div class="flex">
@@ -506,6 +762,10 @@
                                                             </a>
                                                             
                                                             <a href="./pages/themes/show.html" class="text-lowercase">1h ago</a>
+                                                            
+                                                            <a href="./pages/themes/show.html" class="check">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                                            </a>
                                                         </p>
         
                                                         <a href="./pages/themes/show.html" class="text-body-large text-on-background-variant">•</a>
@@ -643,7 +903,7 @@
                                         <h6 class="text-title-small"><strong>Shopping Cart</strong></h6>
 
                                         <form action="#" method="POST">
-                                            <button type="submit" class="btn-link">
+                                            <button type="submit" class="hover text-on-background-variant">
                                                 <p class="text-body-medium">Empty Cart</p>
                                             </button>
                                         </form>
@@ -673,9 +933,7 @@
                                                             </button>
                                                         </div>
 
-                                                        <a href="./pages/themes/show.html">
-                                                            <p class="text-body-small text-on-background-variant">by <strong>JMJ Studio</strong> • Standard license</p>
-                                                        </a>
+                                                        <p class="text-body-small text-on-background-variant">by <a href="./pages/users/profiles/index.html" class="hover"><strong>JMJ Studio</strong></a> • <a href="./pages/categories/show.html" class="hover">Dashboard</a> • <a href="./pages/themes/show.html">Standard license</a></p>
                                                     </div>
 
                                                     <div class="wrapper-between">
@@ -725,9 +983,7 @@
                                                             </button>
                                                         </div>
 
-                                                        <a href="./pages/themes/show.html">
-                                                            <p class="text-body-small text-on-background-variant">by <strong>kiwari.labs</strong> • Standard license</p>
-                                                        </a>
+                                                        <p class="text-body-small text-on-background-variant">by <a href="./pages/users/profiles/index.html" class="hover"><strong>kiwari.labs</strong></a> • <a href="./pages/categories/show.html" class="hover">UI Kit</a> • <a href="./pages/themes/show.html">Standard license</a></p>
                                                     </div>
 
                                                     <div class="wrapper-between">
@@ -817,6 +1073,16 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stack-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l8 4l8 -4l-8 -4l-8 4" /><path d="M12 16l-4 -2l-4 2l8 4l8 -4l-4 -2l-4 2" fill="currentColor" /><path d="M8 10l-4 2l4 2m8 0l4 -2l-4 -2" /></svg>
 
                                     <p class="text-body-medium">Project</p>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./pages/challenges/create.html" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+
+                                    <p class="text-body-medium">Challenge</p>
 
                                     <div class="state-layer"></div>
                                 </a>
@@ -959,10 +1225,20 @@
                             </li>
 
                             <li>
+                                <a href="./pages/users/profiles/my-challenges.html" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+
+                                    <p class="text-body-medium">My Challenges</p>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+
+                            <li>
                                 <a href="./pages/users/profiles/my-forums.html" class="dropdown-item">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
 
-                                    <p class="text-body-medium">My Forum</p>
+                                    <p class="text-body-medium">My Forums</p>
 
                                     <div class="state-layer"></div>
                                 </a>
@@ -1029,17 +1305,19 @@
                         </ul>
                     </div>
 
-                    <!-- <a href="./auth/login.html" class="btn text small">
-                        <p class="text-body-medium">Login</p>
-
-                        <div class="state-layer"></div>
-                    </a>
-
-                    <a href="./auth/join.html" class="btn inverse small">
-                        <p class="text-body-medium">Join</p>
-
-                        <div class="state-layer"></div>
-                    </a> -->
+                    <!-- <div class="wrapper-item flex-nowrap gap-2">
+                        <a href="./auth/login.html" class="btn text small">
+                            <p class="text-body-medium">Login</p>
+    
+                            <div class="state-layer"></div>
+                        </a>
+    
+                        <a href="./auth/join.html" class="btn inverse small">
+                            <p class="text-body-medium">Join</p>
+    
+                            <div class="state-layer"></div>
+                        </a>
+                    </div> -->
                 </div>
 
             </div>
@@ -1081,6 +1359,14 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
 
                             <p class="text-body-medium">Creators</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/challenges/index.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+
+                            <p class="text-body-medium">Challenges</p>
                         </a>
                     </li>
 
@@ -1136,6 +1422,16 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stack-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l8 4l8 -4l-8 -4l-8 4" /><path d="M12 16l-4 -2l-4 2l8 4l8 -4l-4 -2l-4 2" fill="currentColor" /><path d="M8 10l-4 2l4 2m8 0l4 -2l-4 -2" /></svg>
 
                     <p class="text-body-medium">Project</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
+                <a href="./pages/challenges/create.html" class="offcanvas-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+
+                    <p class="text-body-medium">Challenge</p>
 
                     <div class="state-layer"></div>
                 </a>
@@ -1272,10 +1568,20 @@
             </li>
 
             <li>
+                <a href="./pages/users/profiles/my-challenges.html" class="offcanvas-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+
+                    <p class="text-body-medium">My Challenges</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </li>
+
+            <li>
                 <a href="./pages/users/profiles/my-forums.html" class="offcanvas-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
 
-                    <p class="text-body-medium">My Forum</p>
+                    <p class="text-body-medium">My Forums</p>
 
                     <div class="state-layer"></div>
                 </a>
@@ -1352,7 +1658,49 @@
     <!-- Footer -->
     <footer class="footer">
 
-        <!-- go -->
+        <div class="container container-xl">
+
+            <div class="footer-banner">
+    
+                <div class="footer-content">
+
+                    <span class="mobile">
+                        <h3 class="text-headline-medium"><strong>Join 1,200+ creators, developers, and companies growing with us</strong></h3>
+                    </span>
+
+                    <span class="desktop">
+                        <h3 class="text-display-medium">Join 1,200+ creators, developers, and companies growing with us</h3>
+                    </span>
+
+                    <span class="mobile">
+                        <p class="text-body-large text-on-background-variant">Sell your templates, UI kits, and themes—reach thousands, get verified support, fast payouts, and grow your business with us.</p>
+                    </span>
+
+                    <span class="desktop">
+                        <p class="text-title-large text-on-background-variant">Sell your templates, UI kits, and themes—reach thousands, get verified support, fast payouts, and grow your business with us.</p>
+                    </span>
+
+                    <a href="./auth/becom-creator.html" class="btn inverse medium">
+                        <p class="text-body-large">Become a Creator</p>
+
+                        <div class="state-layer"></div>
+                    </a>
+
+                </div>
+    
+            </div>
+
+        </div>
+
+        <div class="footer-top">
+
+            <div class="container container-xl">
+
+                <!-- go -->
+
+            </div>
+
+        </div>
         
         <div class="footer-bottom">
 
