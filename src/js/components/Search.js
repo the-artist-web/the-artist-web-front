@@ -30,7 +30,7 @@ export const Search = ($element) => {
     });
 
     $inputSearch.addEventListener("input", (e) => {
-        $searchFor.innerHTML = `“ ${e.target.value} “`
+        $searchFor.innerHTML = `${e.target.value}`
 
         if (e.target.value.length >= 1) {
             $searchBar.classList.add("active");

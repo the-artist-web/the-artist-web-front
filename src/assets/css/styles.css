@@ -343,7 +343,7 @@ textarea { resize: none; }
 
 form { width: 100%; }
 
-[id] { scroll-margin-block-start: calc(var(--header-height) + var(--spacing-4)); }
+[id] { scroll-margin-block-start: calc(var(--header-top-height) + var(--header-bottom-height)); }
 
 [hidden] { display: none; }
 
@@ -2225,7 +2225,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .footer .footer-banner {
-    padding-block: var(--spacing-20);
+    padding-block: 100px;
     width: 100%;
 }
 
@@ -2241,6 +2241,64 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .footer .footer-banner .footer-content .btn { margin-block-start: var(--spacing-6); }
+
+.footer .footer-top .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+}
+
+.footer .footer-top .container .wrapper-between {
+    align-items: end;
+    gap: var(--spacing-8);
+}
+
+.footer .footer-top .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    max-width: 500px;
+}
+
+.footer .footer-top .incentivize-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: var(--spacing-10);
+    row-gap: var(--spacing-4);
+}
+
+.footer .footer-top .column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+}
+
+.footer .footer-top .grid {
+    display: grid;
+    gap: var(--spacing-8);
+}
+
+.footer .footer-top .grid-group,
+.footer .footer-top .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+}
+
+.footer .footer-top .wrapper-block { gap: var(--spacing-3); }
+
+.footer .footer-top .wrapper-block a { text-transform: capitalize; }
+
+.footer .footer-top a:hover svg { color: var(--on-background); }
+
+.footer .footer-top svg {
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
+    transition: color var(--tr-duration-short);
+}
 
 .footer .footer-bottom { margin-block-start: 56px; }
 
@@ -2336,12 +2394,24 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     /* Header */
     .header .container { gap: var(--spacing-6); }
+
+    /* Footer */
+    .footer .footer-top .grid-group { grid-template-columns: repeat(3, 1fr); }
 }
 
 /**
  * Fit Size: 992PX
  */
 @media screen and (min-width: 992px) {
+    /**
+     * OTHERS
+     */
+    
+    /* Footer */
+    .footer .footer-top .grid { grid-template-columns: 400px minmax(0, 1fr); }
+
+    .footer .footer-top .grid-group { grid-template-columns: repeat(4, 1fr); }
+
     /**
      * MAIN
      */
