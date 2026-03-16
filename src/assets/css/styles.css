@@ -2218,7 +2218,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Footer
  */
 .footer .footer-banner {
-    padding-block: var(--spacing-20);
+    padding-block-end: var(--spacing-20);
     width: 100%;
 }
 
