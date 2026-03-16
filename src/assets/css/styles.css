@@ -2225,7 +2225,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .footer .footer-banner {
-    padding-block: 100px;
+    padding-block-start: 100px;
     width: 100%;
 }
 
@@ -2241,6 +2241,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .footer .footer-banner .footer-content .btn { margin-block-start: var(--spacing-6); }
+
+.footer .footer-top { padding-block-start: var(--spacing-20); }
 
 .footer .footer-top .container {
     display: flex;
