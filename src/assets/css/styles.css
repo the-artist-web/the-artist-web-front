@@ -1405,6 +1405,15 @@ html[dir="rtl"] .badge-container .badge {
 /**
  * Checkbox
  */
+.form-check {
+    display: flex;
+    align-items: start;
+    gap: var(--spacing-3);
+    padding: 0;
+}
+
+.form-check label { margin-block-start: 1px; }
+
 .checkbox-btn {
     min-width: 25px;
     max-width: 25px;
@@ -1790,6 +1799,7 @@ html[dir="rtl"] .badge-container .badge {
     max-width: var(--width);
     height: var(--height);
     flex-shrink: 0;
+    position: relative;
 }
 
 @keyframes autoRunLeft {
@@ -1861,15 +1871,6 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .form-group:has(select) { max-width: max-content; }
-
-.form-check {
-    display: flex;
-    align-items: start;
-    gap: var(--spacing-3);
-    padding: 0;
-}
-
-.form-check label { margin-block-start: 1px; }
 
 .form-group label { text-transform: capitalize; }
 
@@ -2015,6 +2016,23 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .form-group .input-wrapper.error input::placeholder { color: var(--error); }
+
+.form-group .textarea-wrapper textarea {
+    border: none;
+    min-height: 150px;
+    border-radius: var(--radius-medium);
+    padding: var(--spacing-4);
+    transition: border-color var(--tr-duration-short);
+}
+
+.form-group .textarea-wrapper textarea::-webkit-scrollbar { display: none; }
+
+.form-group .textarea-wrapper.outline textarea {
+    border: 1px solid var(--outline);
+    --state-layer-bg: var(--on-background);
+}
+
+.form-group .textarea-wrapper.outline textarea:is(:hover, :focus, :focus-visible, :focus-within) { border-color: var(--on-background); }
 
 /**
  * Toolbars
