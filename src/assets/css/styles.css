@@ -2428,7 +2428,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     /**
      * REUSED STYLE
      */
-    .container { padding-inline: var(--spacing-9); }
+    .container { padding-inline: var(--spacing-6); }
 
     /**
      * MAIN
