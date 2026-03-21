@@ -4,7 +4,6 @@
  */
 import { Tooltip } from "./components/Tooltip.js";
 import { StartLoading } from "./components/StartLoading.js";
-import { ProgressBar } from "./components/ProgressBar.js";
 import { Password } from "./components/Password.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Search } from "./components/Search.js";
@@ -12,9 +11,8 @@ import { Quantite } from "./components/Quantite.js";
 import { Follow } from "./components/Follow.js";
 
 /**
- * Overlay & Body
+ * Body
  */
-const $overlay = document.querySelector("[data-overlay]");
 const $body = document.body;
 
 /**
@@ -34,13 +32,6 @@ if ($fixedScrolling.length) window.addEventListener("scroll", () => $fixedScroll
  */
 const $tooltips = document.querySelectorAll("[data-bs-toggle='tooltip']");
 if ($tooltips.length) $tooltips.forEach($elem => Tooltip($elem));
-
-/**
- * Progress Bar
- */
-const $progressBar = document.querySelector("[data-progress-bar]");
-const $actions = document.querySelectorAll("a, button[type='submit']");
-if ($progressBar) ProgressBar($progressBar, $actions);
 
 /**
  * Password
