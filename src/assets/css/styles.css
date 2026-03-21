@@ -619,7 +619,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
-    margin-block-end: var(--spacing-6);
+    margin-block-end: var(--spacing-10);
 }
 
 .main { min-height: 100dvh; }
@@ -1039,6 +1039,7 @@ html[dir="rtl"] .badge-container .badge {
     position: relative;
     overflow: hidden;
     padding-block: 0;
+    min-width: max-content;
     max-width: max-content;
     transition: color var(--tr-duration-short);
 }
@@ -2424,6 +2425,11 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Fit Size: 992PX
  */
 @media screen and (min-width: 992px) {
+    /**
+     * REUSED STYLE
+     */
+    .container { padding-inline: var(--spacing-9); }
+
     /**
      * MAIN
      */
