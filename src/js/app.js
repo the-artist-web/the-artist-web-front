@@ -9,6 +9,7 @@ import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Search } from "./components/Search.js";
 import { Quantite } from "./components/Quantite.js";
 import { Follow } from "./components/Follow.js";
+import { Favorit } from "./components/Favorits.js";
 
 /**
  * Body
@@ -56,3 +57,9 @@ if ($quantites.length) $quantites.forEach($elem => Quantite($elem));
  */
 const $followers = document.querySelectorAll("[data-followers]");
 if ($followers.length) $followers.forEach($elem => Follow($elem));
+
+/**
+ * Favorits
+ */
+const $favorits = document.querySelectorAll("[data-favorits]");
+if ($favorits.length) $favorits.forEach($elem => Favorit($elem));
