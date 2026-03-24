@@ -10,6 +10,7 @@ import { Search } from "./components/Search.js";
 import { Quantite } from "./components/Quantite.js";
 import { Follow } from "./components/Follow.js";
 import { Favorit } from "./components/Favorits.js";
+import { Swipper } from "./components/Swipper.js";
 
 /**
  * Body
@@ -63,3 +64,9 @@ if ($followers.length) $followers.forEach($elem => Follow($elem));
  */
 const $favorits = document.querySelectorAll("[data-favorits]");
 if ($favorits.length) $favorits.forEach($elem => Favorit($elem));
+
+/**
+ * Swippers
+ */
+const $swippers = document.querySelectorAll("[data-swippers]");
+if ($swippers.length) $swippers.forEach($elem => Swipper($elem));
