@@ -103,22 +103,37 @@
             <div class="wrapper-between">
                 <p class="text-body-medium text-on-background-variant">© 2026 The Artist Web, Inc.</p>
 
-                <form action="#" method="POST" class="form-group">
-    
-                    <div class="select-wrapper text extra-small">
-                        <select name="languages" class="text-body-medium">
-                            <option value="english">English</option>
-                            <option value="arabic">Arabic</option>
-                        </select>
-    
-                        <div class="icon-btn extra-small arrow-select">
+                <div class="dropdown">
+                    <button type="button" class="btn text extra-small p-end-0" data-bs-toggle="dropdown">
+                        <p class="text-body-medium">English</p>
+
+                        <div class="icon-btn extra-small">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                         </div>
-    
+
                         <div class="state-layer"></div>
-                    </div>
-    
-                </form>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end small">
+
+                        <li>
+                            <a href="#" class="dropdown-item active">
+                                <p class="text-body-medium">English</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-item">
+                                <p class="text-body-medium">Arabic</p>
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
         </div>
