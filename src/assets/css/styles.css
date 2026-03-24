@@ -554,7 +554,7 @@ p {
  * REUSED STYLE
 \* ----------------------------------------------------- */
 
-.section { padding-block-end: var(--spacing-7); }
+.section { padding-block-end: var(--spacing-14); }
 
 .container {
     padding-inline: var(--spacing-4);
@@ -623,7 +623,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
-    margin-block-end: var(--spacing-4);
+    margin-block-end: var(--spacing-6);
 }
 
 .main { min-height: 100dvh; }
@@ -639,6 +639,13 @@ body:has(.header-top):has(.header-bottom) .main { padding-block-start: calc(var(
 body:has(.header-top) .main { padding-block-start: var(--header-top-height); }
 
 .page { padding-block-start: var(--spacing-6); }
+
+.footer-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: var(--spacing-6);
+}
 
 :has(> .state-layer) {
     position: relative;
@@ -1028,6 +1035,17 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+}
+
+/**
+ * Spinners
+ */
+.spinner-border {
+    color: var(--primary);
+    min-width: var(--width-extra-small);
+    max-width: var(--width-extra-small);
+    min-height: var(--height-extra-small);
+    max-height: var(--height-extra-small);
 }
 
 /**
@@ -2573,7 +2591,6 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Footer
  */
 .footer .footer-top {
-    margin-block-start: var(--spacing-7);
     padding-block: var(--spacing-14) var(--spacing-20);
     border-top: 1px solid var(--outline);
 }
@@ -2695,7 +2712,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 /**
  * Hero
  */
-.hero { padding-block: var(--spacing-6) var(--spacing-4); }
+.hero { padding-block-end: var(--spacing-4); }
 
 .hero .grid-sec { gap: var(--spacing-4); }
 
