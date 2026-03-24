@@ -554,7 +554,7 @@ p {
  * REUSED STYLE
 \* ----------------------------------------------------- */
 
-.section { padding-block-end: var(--spacing-14); }
+.section { padding-block-end: var(--spacing-12); }
 
 .container {
     padding-inline: var(--spacing-4);
@@ -623,7 +623,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
-    margin-block-end: var(--spacing-5);
+    margin-block-end: var(--spacing-4);
 }
 
 .main { min-height: 100dvh; }
@@ -850,8 +850,32 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .swipper::-webkit-scrollbar { display: none; }
 
-.swipper-4-base,
-.swipper-5-base {
+.swipper-container { position: relative; }
+
+.swipper-container [data-swipper-prev],
+.swipper-container [data-swipper-next] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swipper-container [data-swipper-prev] { left: -16px; }
+
+html[dir="rtl"] .swipper-container [data-swipper-prev] {
+    right: -16px;
+    left: auto;
+}
+
+.swipper-container [data-swipper-next] { right: -16px; }
+
+html[dir="rtl"] .swipper-container [data-swipper-next] {
+    left: -16px;
+    right: auto;
+}
+
+.swipper-container .swipper-4-base,
+.swipper-container .swipper-5-base {
     display: grid;
     align-items: center;
     grid-auto-columns: 100%;
@@ -863,11 +887,13 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     overflow-x: auto;
 }
 
-.swipper-4-base::-webkit-scrollbar,
-.swipper-5-base::-webkit-scrollbar { display: none; }
+.swipper-container .swipper-4-base::-webkit-scrollbar,
+.swipper-container .swipper-5-base::-webkit-scrollbar { display: none; }
 
-.swipper-4-base .swipper-item,
-.swipper-5-base .swipper-item { scroll-snap-align: start; }
+.swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-4)) / 2); }
+
+.swipper-container .swipper-4-base .swipper-item,
+.swipper-container .swipper-5-base .swipper-item { scroll-snap-align: start; }
 
 /* ----------------------------------------------------- *\
  * COMPONENTS
@@ -2639,6 +2665,12 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  */
 .hero { padding-block-end: var(--spacing-4); }
 
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
 .hero .grid-sec { gap: var(--spacing-4); }
 
 /* ----------------------------------------------------- *\
@@ -2654,7 +2686,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
      */
     .grid-5-base { grid-template-columns: repeat(2, 1fr); }
 
-    .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-4)) / 2); }
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
 }
 
 /**
@@ -2672,9 +2704,9 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     
     .grid-5-base { grid-template-columns: repeat(3, 1fr); }
 
-    .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-4)) / 2); }
+    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-4)) / 2); }
 
-    .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
 
     /**
      * COMPONENTS
@@ -2706,9 +2738,9 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     .grid-5-base { grid-template-columns: repeat(4, 1fr); }
 
-    .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
-
-    .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
+    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
+    
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-16)) / 5); }
 
     /**
      * MAIN
@@ -2733,9 +2765,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     .grid-5-base { grid-template-columns: repeat(5, 1fr); }
 
-    .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
-    
-    .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-16)) / 5); }
+    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
 }
 
 /**

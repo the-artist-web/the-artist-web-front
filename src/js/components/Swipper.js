@@ -15,11 +15,11 @@ export const Swipper = ($element) => {
         const maxScroll = $swipperContainer.scrollWidth - $swipperContainer.clientWidth;
 
         if (!isRTL) {
-            $swipperPrev.disabled = scrollLeft <= 0;
-            $swipperNext.disabled = scrollLeft >= maxScroll - 1;
+            $swipperPrev.classList.toggle("d-none", scrollLeft <= 0);
+            $swipperNext.classList.toggle("d-none", scrollLeft >= maxScroll - 1);
         } else {
-            $swipperPrev.disabled = scrollLeft >= 0;
-            $swipperNext.disabled = Math.abs(scrollLeft) >= maxScroll - 1;
+            $swipperPrev.classList.toggle("d-none", scrollLeft >= 0);
+            $swipperNext.classList.toggle("d-none", Math.abs(scrollLeft) >= maxScroll - 1);
         }
     };
 
