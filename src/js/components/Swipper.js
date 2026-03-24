@@ -21,6 +21,35 @@ export const Swipper = ($element) => {
             $swipperPrev.classList.toggle("d-none", scrollLeft >= 0);
             $swipperNext.classList.toggle("d-none", Math.abs(scrollLeft) >= maxScroll - 1);
         }
+
+        const isAtStart = !isRTL
+            ? scrollLeft <= 0
+            : Math.abs(scrollLeft) <= 0;
+
+        const isAtEnd = !isRTL
+            ? scrollLeft >= maxScroll - 1
+            : Math.abs(scrollLeft) >= maxScroll - 1;
+
+        const fadeSize = 120;
+
+        if (isAtStart)
+            $swipperContainer.style.maskImage = isRTL
+                ? `linear-gradient(to left, var(--background) calc(100% - ${fadeSize}px), transparent)`
+                : `linear-gradient(to right, var(--background) calc(100% - ${fadeSize}px), transparent)`;
+        else if (isAtEnd)
+            $swipperContainer.style.maskImage = isRTL
+                ? `linear-gradient(to right, var(--background) calc(100% - ${fadeSize}px), transparent)`
+                : `linear-gradient(to left, var(--background) calc(100% - ${fadeSize}px), transparent)`;
+        else
+            $swipperContainer.style.maskImage = `
+                linear-gradient(
+                    to right,
+                    transparent 0px,
+                    var(--background) ${fadeSize}px,
+                    var(--background) calc(100% - ${fadeSize}px),
+                    transparent 100%
+                )
+            `;
     };
 
     const scroll = (direction) => {
