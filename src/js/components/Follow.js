@@ -3,6 +3,8 @@
 export const Follow = ($element) => {
     const $text = $element.querySelector("p");
 
+    if (!$element.dataset.originalText) $element.dataset.originalText = $text.textContent.trim();
+
     $element.addEventListener("click", () => {
         if ($element.dataset.followers === "false") {
             $element.dataset.followers = "true";
@@ -17,7 +19,7 @@ export const Follow = ($element) => {
             $element.classList.remove("secondary");
             $element.classList.add("inverse");
 
-            $text.textContent = "Follow";
+            $text.textContent = $element.dataset.originalText;
         }
     });
 };

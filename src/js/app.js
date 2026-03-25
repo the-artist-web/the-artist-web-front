@@ -6,7 +6,6 @@ import { Tooltip } from "./components/Tooltip.js";
 import { StartLoading } from "./components/StartLoading.js";
 import { Password } from "./components/Password.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
-import { Search } from "./components/Search.js";
 import { Quantite } from "./components/Quantite.js";
 import { Follow } from "./components/Follow.js";
 import { Favorit } from "./components/Favorits.js";
@@ -40,12 +39,6 @@ if ($tooltips.length) $tooltips.forEach($elem => Tooltip($elem));
  */
 const $passwords = document.querySelectorAll("[data-passwords]");
 if ($passwords.length) $passwords.forEach($elem => Password($elem));
-
-/**
- * Search
- */
-const $search = document.querySelector("[data-search]");
-if ($search) Search($search);
 
 /**
  * Quantites
