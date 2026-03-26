@@ -7,9 +7,10 @@ import { StartLoading } from "./components/StartLoading.js";
 import { Password } from "./components/Password.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
 import { Quantite } from "./components/Quantite.js";
-import { Follow } from "./components/Follow.js";
-import { Favorit } from "./components/Favorits.js";
+import { BtnFollow } from "./components/BtnFollow.js";
+import { IconBtnLike } from "./components/IconBtnLike.js";
 import { Swipper } from "./components/Swipper.js";
+import { Search } from "./components/Search.js";
 
 /**
  * Body
@@ -26,7 +27,7 @@ if ($startLoading) window.addEventListener("load", () => StartLoading($startLoad
  * Fixed Scrolling
  */
 const $fixedScrolling = document.querySelectorAll("[data-fixed-scrolling]");
-if ($fixedScrolling.length) window.addEventListener("scroll", () => $fixedScrolling.forEach($elem => FixedScrolling($elem)));
+if ($fixedScrolling.length) FixedScrolling($fixedScrolling);
 
 /**
  * Tooltip
@@ -41,6 +42,12 @@ const $passwords = document.querySelectorAll("[data-passwords]");
 if ($passwords.length) $passwords.forEach($elem => Password($elem));
 
 /**
+ * Search
+ */
+const $search = document.querySelector("[data-search]");
+if ($search) Search($search)
+
+/**
  * Quantites
  */
 const $quantites = document.querySelectorAll("[data-quantitys]");
@@ -49,14 +56,14 @@ if ($quantites.length) $quantites.forEach($elem => Quantite($elem));
 /**
  * Followers
  */
-const $followers = document.querySelectorAll("[data-followers]");
-if ($followers.length) $followers.forEach($elem => Follow($elem));
+const $followers = document.querySelectorAll("[data-btn-followers]");
+if ($followers.length) $followers.forEach($elem => BtnFollow($elem));
 
 /**
  * Favorits
  */
-const $favorits = document.querySelectorAll("[data-favorits]");
-if ($favorits.length) $favorits.forEach($elem => Favorit($elem));
+const $iconBtnlikes = document.querySelectorAll("[data-icon-btn-likes]");
+if ($iconBtnlikes.length) $iconBtnlikes.forEach($elem => IconBtnLike($elem));
 
 /**
  * Swippers
