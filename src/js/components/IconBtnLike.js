@@ -12,11 +12,11 @@ export const IconBtnLike = ($element) => {
         });
 
     $element.addEventListener("click", () => {
-        if ($element.dataset.iconBtnLikes === "false") {
-            $element.dataset.iconBtnLikes = "true";
+        if ($element.dataset.iconBtnsLike === "false") {
+            $element.dataset.iconBtnsLike = "true";
 
             $element.classList.remove("text");
-            $element.classList.add("error", "active");
+            $element.classList.add("error");
 
             $tooltip.setContent({ ".tooltip-inner": "I Dislike This" });
 
@@ -26,10 +26,10 @@ export const IconBtnLike = ($element) => {
                 <div class="state-layer"></div>
             `;
         } else {
-            $element.dataset.iconBtnLikes = "false";
+            $element.dataset.iconBtnsLike = "false";
 
             $element.classList.add("text");
-            $element.classList.remove("error", "active");
+            $element.classList.remove("error");
 
             $tooltip.setContent({ ".tooltip-inner": "I like This" });
 
