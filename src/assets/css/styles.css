@@ -212,7 +212,7 @@
 
     --header-height: 56px;
     --app-bar-height: 56px;
-    --footer-height: 44px;
+    --footer-height: 36px;
     --width-base: 300px;
 }
 
@@ -1644,11 +1644,6 @@ html[dir="rtl"] .card .figure .actions {
     transform: translateY(0);
 }
 
-.card .figure .actions .icon-btn.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .card .figure .actions .icon-btn.text {
     background-color: var(--dark-inverse);
     color: var(--dark-on-inverse);
@@ -2788,11 +2783,13 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     gap: var(--spacing-4);
 }
 
+.footer .container .flex { gap: var(--spacing-1); }
+
 .footer svg {
-    min-width: var(--spacing-5);
-    max-width: var(--spacing-5);
-    min-height: var(--spacing-5);
-    max-height: var(--spacing-5);
+    min-width: var(--spacing-4);
+    max-width: var(--spacing-4);
+    min-height: var(--spacing-4);
+    max-height: var(--spacing-4);
 }
 
 /* ----------------------------------------------------- *\
@@ -2851,11 +2848,13 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     min-height: var(--footer-height);
 }
 
+.auth .auth-body .auth-footer .flex { gap: var(--spacing-1); }
+
 .auth .auth-body .auth-footer svg {
-    min-width: var(--spacing-5);
-    max-width: var(--spacing-5);
-    min-height: var(--spacing-5);
-    max-height: var(--spacing-5);
+    min-width: var(--spacing-4);
+    max-width: var(--spacing-4);
+    min-height: var(--spacing-4);
+    max-height: var(--spacing-4);
 }
 
 /**
@@ -2930,7 +2929,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     align-items: center;
     gap: var(--spacing-4);
     text-align: center;
-    max-width: 800px;
+    max-width: 680px;
     margin-inline: auto;
 }
 

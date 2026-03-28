@@ -11,12 +11,9 @@ export const FixedScrolling = ($fixedScrolling) => {
                 const threshold = 5;
 
                 $fixedScrolling.forEach($element => {
-                    if (currentScrollY > lastScrollY + threshold) {
-                        $element.classList.add("fixed-scrolling");
-                    } 
-                    if (currentScrollY < lastScrollY - threshold) {
-                        $element.classList.remove("fixed-scrolling");
-                    }
+                    if (currentScrollY > lastScrollY + threshold) $element.classList.add("fixed-scrolling");
+
+                    if (currentScrollY < lastScrollY - threshold) $element.classList.remove("fixed-scrolling");
                 });
 
                 lastScrollY = currentScrollY;

@@ -3,7 +3,10 @@
 export const Tooltip = ($element) => {
     const $tooltip = new bootstrap.Tooltip($element, {
             trigger: "hover",
-            delay: { show: 600 }
+            delay: {
+                show: 600,
+                hide: 0
+            }
         });
 
     $element.addEventListener("click", () => $tooltip.hide());

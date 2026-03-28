@@ -6,16 +6,14 @@ export const IconBtnAddToCart = ($element, $badge) => {
     const p = $badge.querySelector("p");
 
     // Tooltip
-    const existing = bootstrap.Tooltip.getInstance($element);
-
-    if (existing) existing.dispose();
-
     const $tooltip = new bootstrap.Tooltip($element, {
             trigger: "hover focus",
             delay: 0
         });
 
     $element.addEventListener("click", () => {
+        $tooltip.hide();
+
         if ($element.dataset.iconBtnsAddToCart === "false") {
             count++;
             p.textContent = count;
@@ -24,8 +22,7 @@ export const IconBtnAddToCart = ($element, $badge) => {
 
             $element.dataset.iconBtnsAddToCart = "true";
 
-            $element.classList.remove("text");
-            $element.classList.add("secondary");
+            $element.classList.replace("text", "filled");
 
             $tooltip.setContent({ ".tooltip-inner": "Delete From Cart" });
 
@@ -44,8 +41,7 @@ export const IconBtnAddToCart = ($element, $badge) => {
 
             $element.dataset.iconBtnsAddToCart = "false";
 
-            $element.classList.remove("secondary");
-            $element.classList.add("text");
+            $element.classList.replace("filled", "text");
 
             $tooltip.setContent({ ".tooltip-inner": "Add To Cart" });
 

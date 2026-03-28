@@ -2,21 +2,18 @@
 
 export const IconBtnLike = ($element) => {
     // Tooltip
-    const existing = bootstrap.Tooltip.getInstance($element);
-
-    if (existing) existing.dispose();
-
     const $tooltip = new bootstrap.Tooltip($element, {
             trigger: "hover focus",
             delay: 0
         });
 
     $element.addEventListener("click", () => {
+        $tooltip.hide();
+        
         if ($element.dataset.iconBtnsLike === "false") {
             $element.dataset.iconBtnsLike = "true";
 
-            $element.classList.remove("text");
-            $element.classList.add("error");
+            $element.classList.replace("text", "error");
 
             $tooltip.setContent({ ".tooltip-inner": "I Dislike This" });
 
@@ -28,8 +25,7 @@ export const IconBtnLike = ($element) => {
         } else {
             $element.dataset.iconBtnsLike = "false";
 
-            $element.classList.add("text");
-            $element.classList.remove("error");
+            $element.classList.replace("error", "text");
 
             $tooltip.setContent({ ".tooltip-inner": "I like This" });
 

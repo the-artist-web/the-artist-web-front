@@ -5,16 +5,14 @@ export const Password = ($element) => {
     const $input = $element.querySelector("input");
 
     // Tooltip
-    const existing = bootstrap.Tooltip.getInstance($button);
-
-    if (existing) existing.dispose();
-
     const $tooltip = new bootstrap.Tooltip($button, {
             trigger: "hover focus",
             delay: 0
         });
 
     $button.addEventListener("click", () => {
+        $tooltip.hide();
+        
         if ($input.type === "password") {
             $input.type = "text";
 
