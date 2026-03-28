@@ -1621,7 +1621,7 @@ html[dir="rtl"] .badge-container .badge {
     top: var(--spacing-4);
     right: var(--spacing-4);
     z-index: 10;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: var(--spacing-2);
 }
@@ -1633,21 +1633,20 @@ html[dir="rtl"] .card .figure .actions {
 
 .card .figure .actions .icon-btn {
     backdrop-filter: blur(30px);
-    transform: translateY(10px);
-    opacity: 0;
+    transform: translateY(0);
+    opacity: 1;
     transition-duration: var(--tr-duration-short);
     transition-property: transform, opacity;
+}
+
+.card .figure .actions .icon-btn {
+    transform: translateY(10px);
+    opacity: 0;
 }
 
 .card .figure:hover .actions .icon-btn {
     opacity: 1;
     transform: translateY(0);
-}
-
-.card .figure .actions .icon-btn.text {
-    background-color: var(--dark-inverse);
-    color: var(--dark-on-inverse);
-    --state-layer-bg: var(--dark-on-inverse);
 }
 
 .card .figure .price {
@@ -1674,12 +1673,12 @@ html[dir="rtl"] .card .figure .price {
     bottom: 0;
     z-index: 10;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
     padding: var(--spacing-4);
     width: 100%;
-    pointer-events: none;
+    transform: translateY(100%);
     transition: transform var(--tr-duration-medium);
 }
 
@@ -1693,6 +1692,12 @@ html[dir="rtl"] .card .figure .product-purchase {
 .card .figure .product-content .wrapper-content { width: 100%; }
 
 .card .figure .product-purchase p { padding-inline-start: var(--spacing-1) !important; }
+
+.card .figure .icon-btn.text {
+    background-color: var(--dark-inverse);
+    color: var(--dark-on-inverse);
+    --state-layer-bg: var(--dark-on-inverse);
+}
 
 .card .figure .btn.white,
 .card .figure .icon-btn.white { box-shadow: 0 0 0 transparent; }
@@ -2975,11 +2980,6 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     /**
      * COMPONENTS
      */
-
-    /* Cards */
-    .card .figure .product-content { transform: translateY(100%); }
-
-    .card .figure .actions { display: flex; }
 
     /* Menu */
     .dropdown .dropdown-menu {
