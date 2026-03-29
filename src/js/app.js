@@ -14,6 +14,7 @@ import { Search } from "./components/Search.js";
 import { SharedBottomSheet } from "./components/SharedBottomSheet.js";
 import { DragDropSheet } from "./components/DragDropSheet.js";
 import { IconBtnAddToCart } from "./components/IconBtnAddToCart.js";
+import { Popover } from "./components/Popover.js";
 
 /**
  * Body
@@ -86,6 +87,12 @@ if ($iconBtnslike.length) $iconBtnslike.forEach($elem => IconBtnLike($elem));
 const $iconBtnsaddToCart = document.querySelectorAll("[data-icon-btns-add-to-cart]");
 const $badgeShoppingCart = document.querySelector("#badge-shopping-cart");
 if ($iconBtnsaddToCart.length) $iconBtnsaddToCart.forEach($elem => IconBtnAddToCart($elem, $badgeShoppingCart));
+
+/**
+ * Popover
+ */
+const $popovers = document.querySelectorAll("[data-bs-toggle='popover']");
+if ($popovers.length) $popovers.forEach($elem => Popover($elem));
 
 /**
  * Drag Drop Sheets
