@@ -1023,6 +1023,16 @@ html[dir="rtl"] .swipper-container:has(.swipper) [data-swipper-next] {
     max-height: calc(var(--height-large) / 2) !important;
 }
 
+.avatar.large .icon-btn {
+    right: 4px;
+    bottom: 4px;
+}
+
+html[dir="rtl"] .avatar.large .icon-btn {
+    left: 4px;
+    right: auto;
+}
+
 .avatar .img-avatar {
     position: absolute;
     inset: 0;
@@ -2824,7 +2834,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     background-size: cover;
     background-image: var(--bg-img);
     background-repeat: no-repeat;
-    aspect-ratio: 21 / 4;
+    aspect-ratio: 21 / 5;
     width: 100%;
     height: 100%;
 }
