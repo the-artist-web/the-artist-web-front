@@ -15,11 +15,15 @@ import { SharedBottomSheet } from "./components/SharedBottomSheet.js";
 import { DragDropSheet } from "./components/DragDropSheet.js";
 import { IconBtnAddToCart } from "./components/IconBtnAddToCart.js";
 import { Popover } from "./components/Popover.js";
+import { BtnLike } from "./components/BtnLike.js";
+import { BtnSave } from "./components/BtnSave.js";
+import { BtnAddToCart } from "./components/BtnAddToCart.js";
 
 /**
- * Body
+ * Get Body & Badge Shopping Cart
  */
 const $body = document.body;
+const $badgeShoppingCart = document.querySelector("#badge-shopping-cart");
 
 /**
  * Start Loading
@@ -82,11 +86,28 @@ const $iconBtnslike = document.querySelectorAll("[data-icon-btns-like]");
 if ($iconBtnslike.length) $iconBtnslike.forEach($elem => IconBtnLike($elem));
 
 /**
+ * Btns Like
+ */
+const $btnslike = document.querySelectorAll("[data-btns-like]");
+if ($btnslike.length) $btnslike.forEach($elem => BtnLike($elem));
+
+/**
+ * Btns Save
+ */
+const $btnsSave = document.querySelectorAll("[data-btns-save]");
+if ($btnsSave.length) $btnsSave.forEach($elem => BtnSave($elem));
+
+/**
  * Icon Btns Add To Cart
  */
-const $iconBtnsaddToCart = document.querySelectorAll("[data-icon-btns-add-to-cart]");
-const $badgeShoppingCart = document.querySelector("#badge-shopping-cart");
-if ($iconBtnsaddToCart.length) $iconBtnsaddToCart.forEach($elem => IconBtnAddToCart($elem, $badgeShoppingCart));
+const $iconBtnsAddToCart = document.querySelectorAll("[data-icon-btns-add-to-cart]");
+if ($iconBtnsAddToCart.length) $iconBtnsAddToCart.forEach($elem => IconBtnAddToCart($elem, $badgeShoppingCart));
+
+/**
+ * Btns Add To Cart
+ */
+const $btnsAddToCart = document.querySelectorAll("[data-btns-add-to-cart]");
+if ($btnsAddToCart.length) $btnsAddToCart.forEach($elem => BtnAddToCart($elem, $badgeShoppingCart));
 
 /**
  * Popover
