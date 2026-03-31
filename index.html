@@ -902,7 +902,7 @@
     </aside>
 
     <!-- Bottom Sheet Project Detail -->
-    <div class="offcanvas offcanvas-bottom project-detail" id="bottom-sheet-project-detail" style="--bg-project-img: url(https://cdn.dribbble.com/userupload/47174194/file/bb607d1a7faa038c5ece233e7631cc8f.jpg?resize=1504x1128&vertical=center);">
+    <div class="offcanvas offcanvas-bottom project-detail" id="bottom-sheet-project-detail">
 
         <div class="offcanvas-dismiss" data-bs-dismiss="offcanvas"></div>
 
@@ -953,21 +953,7 @@
                         </ul>
 
                         <div class="flex desktop">
-                            <a href="./pages/projects/live-preview.html" class="btn outline small p-start-0">
-                                <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
-                                </div>
 
-                                <p class="text-body-medium">Live Preview</p>
-
-                                <div class="state-layer"></div>
-                            </a>
-
-                            <button type="button" class="btn inverse small" data-btns-add-to-cart="false">
-                                <p class="text-body-medium">Add To Cart &nbsp; <strong>180£E</strong></p>
-
-                                <div class="state-layer"></div>
-                            </button>
                         </div>
                     </div>
     
@@ -977,10 +963,10 @@
                         </span>
 
                         <span class="desktop">
-                            <h1 class="text-display-large">UI elements for HealthOps – Healthcare Dashboard</h1>
+                            <h1 class="text-display-small">UI elements for HealthOps – Healthcare Dashboard</h1>
                         </span>
     
-                        <o class="text-title-medium text-on-background-variant">Today I’m focusing on the UI components behind my recent healthcare exploration.</o>
+                        <p class="text-body-large text-on-background-variant">Today I’m focusing on the UI components behind my recent healthcare exploration <a href="./pages/search.html" class="btn-link text-lowercase">#HealthOps</a> <a href="./pages/search.html" class="btn-link text-lowercase">#DigitalHealth</a> <a href="./pages/search.html" class="btn-link text-lowercase">#HealthTech</a> <a href="./pages/search.html" class="btn-link text-lowercase">#MedTechUI</a> <a href="./pages/search.html" class="btn-link text-lowercase">#HealthOps</a></p>
                     </div>
 
                     <div class="wrapper-between">
@@ -1118,18 +1104,6 @@
                             </li>
 
                             <li>
-                                <button type="button" class="btn outline small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-comments">
-                                    <div class="icon-btn small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 9h8"></path><path d="M8 13h6"></path><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12"></path></svg>
-                                    </div>
-
-                                    <p class="text-body-medium">107</p>
-
-                                    <div class="state-layer"></div>
-                                </button>
-                            </li>
-
-                            <li>
                                 <button type="button" class="btn outline small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-share">
                                     <div class="icon-btn small">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
@@ -1142,13 +1116,43 @@
                             </li>
 
                             <li>
-                                <button type="button" class="btn outline small p-start-0" data-btns-save="false">
+                                <button type="button" class="btn outline p-start-0" data-btns-save="false">
                                     <div class="icon-btn small">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
                                     </div>
 
                                     <p class="text-body-medium">Save</p>
 
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li>
+                                <button type="button" class="btn outline p-start-0">
+                                    <div class="icon-btn small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9" /><path d="M5 21v-7" /></svg>
+                                    </div>
+
+                                    <p class="text-body-medium">Report</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </li>
+
+                            <li class="flex desktop">
+                                <a href="./pages/projects/live-preview.html" class="btn outline small p-start-0">
+                                    <div class="icon-btn small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                    </div>
+    
+                                    <p class="text-body-medium">Live Preview</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+
+                                <button type="button" class="btn inverse small" data-btns-add-to-cart="false">
+                                    <p class="text-body-medium">Add To Cart &nbsp; <strong>180£E</strong></p>
+    
                                     <div class="state-layer"></div>
                                 </button>
                             </li>
@@ -1180,8 +1184,6 @@
         </div>
 
     </div>
-
-    <!-- dialog-comments -->
 
     <!-- dialog-share -->
 
