@@ -6,11 +6,12 @@ export const BtnAddToCart = ($element, $badge) => {
     const p = $badge.querySelector("p");
 
     $element.addEventListener("click", () => {
+        let currentCount = parseInt(p.textContent);
         let currentHTML = $element.innerHTML;
 
         if ($element.dataset.btnsAddToCart === "false") {
-            count++;
-            p.textContent = count;
+            currentCount++;
+            p.textContent = currentCount;
 
             $badge.classList.add("active");
 
@@ -20,12 +21,12 @@ export const BtnAddToCart = ($element, $badge) => {
 
             $element.innerHTML = currentHTML.replace("Add To Cart", "Added To Cart");
         } else {
-            if (count > 0) {
-                count--;
-                p.textContent = count;
+            if (currentCount > 0) {
+                currentCount--;
+                p.textContent = currentCount;
             }
 
-            if (count === 0) $badge.classList.remove("active");
+            if (currentCount === 0) $badge.classList.remove("active");
 
             $element.dataset.btnsAddToCart = "false";
 

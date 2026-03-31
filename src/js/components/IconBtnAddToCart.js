@@ -12,11 +12,12 @@ export const IconBtnAddToCart = ($element, $badge) => {
         });
 
     $element.addEventListener("click", () => {
+        let currentCount = parseInt(p.textContent);
         $tooltip.hide();
 
         if ($element.dataset.iconBtnsAddToCart === "false") {
-            count++;
-            p.textContent = count;
+            currentCount++;
+            p.textContent = currentCount;
 
             $badge.classList.add("active");
 
@@ -32,12 +33,12 @@ export const IconBtnAddToCart = ($element, $badge) => {
                 <div class="state-layer"></div>
             `;
         } else {
-            if (count > 0) {
-                count--;
-                p.textContent = count;
+            if (currentCount > 0) {
+                currentCount--;
+                p.textContent = currentCount;
             }
 
-            if (count === 0) $badge.classList.remove("active");
+            if (currentCount === 0) $badge.classList.remove("active");
 
             $element.dataset.iconBtnsAddToCart = "false";
 
