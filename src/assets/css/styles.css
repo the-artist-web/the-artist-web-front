@@ -1173,8 +1173,8 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
     top: 0;
     left: 60%;
     z-index: 10;
-    background-color: var(--inverse);
-    color: var(--on-inverse);
+    background-color: var(--primary);
+    color: var(--on-primary);
     min-width: var(--spacing-5);
     height: var(--spacing-5);
     border-radius: var(--radius-full);
@@ -1319,6 +1319,12 @@ html[dir="rtl"] .badge-container .badge {
     --state-layer-bg: var(--on-background);
 }
 
+.btn.tonal {
+    background-color: var(--soft-primary) !important;
+    color: var(--primary) !important;
+    --state-layer-bg: var(--primary);
+}
+
 .btn.filled {
     background-color: var(--primary) !important;
     color: var(--on-primary) !important;
@@ -1375,7 +1381,9 @@ html[dir="rtl"] .badge-container .badge {
     transition: opacity var(--tr-duration-short);
 }
 
-.btn-link:active { opacity: 0.7; }
+.btn-link:hover { opacity: 0.7; }
+
+.btn-link:active { opacity: 0.5; }
 
 .btn-link svg {
     min-width: var(--spacing-4);
@@ -1383,21 +1391,6 @@ html[dir="rtl"] .badge-container .badge {
     min-height: var(--spacing-4);
     max-height: var(--spacing-4);
 }
-
-.btn-link::before {
-    content: "";
-    background-color: var(--primary);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 0%;
-    height: 1px;
-    border-radius: var(--radius-full);
-    transition: width var(--tr-duration-short);
-}
-
-.btn-link:hover::before { width: 100%; }
 
 .btn.p-start-0:has(.avatar) p { padding-inline-start: var(--spacing-1) !important; }
 

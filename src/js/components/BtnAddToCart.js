@@ -17,7 +17,7 @@ export const BtnAddToCart = ($element, $badge) => {
 
             $element.dataset.btnsAddToCart = "true";
 
-            $element.classList.replace("inverse", "success");
+            $element.classList.replace("filled", "success");
 
             $element.innerHTML = currentHTML.replace("Add To Cart", "Added To Cart");
         } else {
@@ -30,7 +30,7 @@ export const BtnAddToCart = ($element, $badge) => {
 
             $element.dataset.btnsAddToCart = "false";
 
-            $element.classList.replace("success", "inverse");
+            $element.classList.replace("success", "filled");
 
             $element.innerHTML = currentHTML.replace("Added To Cart", "Add To Cart");
         }

@@ -9,13 +9,13 @@ export const BtnFollow = ($element) => {
         if ($element.dataset.btnFollowers === "false") {
             $element.dataset.btnFollowers = "true";
 
-            $element.classList.replace("inverse", "outline");
+            $element.classList.replace("filled", "secondary");
 
             $text.textContent = "Following";
         } else {
             $element.dataset.btnFollowers = "false";
 
-            $element.classList.replace("outline", "inverse");
+            $element.classList.replace("secondary", "filled");
 
             $text.textContent = $element.dataset.originalText;
         }
