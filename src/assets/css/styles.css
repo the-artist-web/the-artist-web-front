@@ -554,7 +554,7 @@ p {
  * REUSED STYLE
 \* ----------------------------------------------------- */
 
-.section { padding-block-end: var(--spacing-7); }
+.section { padding-block-end: var(--spacing-12); }
 
 .container {
     padding-inline: var(--spacing-4);
@@ -2996,7 +2996,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     top: var(--header-height);
     z-index: 25;
     width: 100%;
-    margin-block-end: var(--spacing-7);
+    margin-block-end: var(--spacing-6);
     padding-block: var(--spacing-6);
     transition: top var(--tr-duration-short);
 }
@@ -3071,8 +3071,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 .project-detail .container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-10);
-    padding-block-end: var(--spacing-10);
+    gap: var(--spacing-12);
+    padding-block-end: var(--spacing-12);
 }
 
 .project-detail .offcanvas-body {
