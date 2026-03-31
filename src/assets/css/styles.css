@@ -10,18 +10,18 @@
     --success: #1ec863;
     --on-success: #ffffff;
     --soft-success: #1ec86320;
-    --warning: #f6a723;
-    --on-warning: #000000;
-    --soft-warning: #f6a72320;
+    --warning: #f0b100;
+    --on-warning: #ffffff;
+    --soft-warning: #f0b10020;
     --info: #2f80ed;
     --on-info: #ffffff;
     --soft-info: #2f80ed20;
     --purple: #463be3;
     --on-purple: #ffffff;
     --soft-purple: #463be320;
-    --error: #ed4956;
+    --error: #ff2056;
     --on-error: #ffffff;
-    --soft-error: #ed495620;
+    --soft-error: #ff205620;
     
     /* Primary */
     --linear-gradient: linear-gradient(135deg, #ffb347 0%, #ff9a3c 25%, #e03c31 55%, #8f1d2c 100%);

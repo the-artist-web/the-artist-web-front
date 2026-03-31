@@ -18,7 +18,7 @@ export const BtnAddToCart = ($element, $badge) => {
 
             $element.classList.replace("inverse", "success");
 
-            $element.innerHTML = currentHTML.replace("Add To Cart", "Delete From Cart");
+            $element.innerHTML = currentHTML.replace("Add To Cart", "Added To Cart");
         } else {
             if (count > 0) {
                 count--;
@@ -31,7 +31,7 @@ export const BtnAddToCart = ($element, $badge) => {
 
             $element.classList.replace("success", "inverse");
 
-            $element.innerHTML = currentHTML.replace("Delete From Cart", "Add To Cart");
+            $element.innerHTML = currentHTML.replace("Added To Cart", "Add To Cart");
         }
     });
 };
