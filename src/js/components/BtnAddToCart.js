@@ -6,7 +6,7 @@ export const BtnAddToCart = ($element, $badge) => {
     const p = $badge.querySelector("p");
 
     $element.addEventListener("click", () => {
-        let currentCount = parseInt(p.textContent);
+        let currentCount = parseInt(p.textContent.trim()) || 0;
         let currentHTML = $element.innerHTML;
 
         if ($element.dataset.btnsAddToCart === "false") {

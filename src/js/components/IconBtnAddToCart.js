@@ -12,7 +12,7 @@ export const IconBtnAddToCart = ($element, $badge) => {
         });
 
     $element.addEventListener("click", () => {
-        let currentCount = parseInt(p.textContent);
+        let currentCount = parseInt(p.textContent.trim()) || 0;
         $tooltip.hide();
 
         if ($element.dataset.iconBtnsAddToCart === "false") {
