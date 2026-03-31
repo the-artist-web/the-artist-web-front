@@ -22,7 +22,7 @@ export const IconBtnAddToCart = ($element, $badge) => {
 
             $element.dataset.iconBtnsAddToCart = "true";
 
-            $element.classList.replace("text", "filled");
+            $element.classList.replace("text", "success");
 
             $tooltip.setContent({ ".tooltip-inner": "Delete From Cart" });
 
@@ -41,7 +41,7 @@ export const IconBtnAddToCart = ($element, $badge) => {
 
             $element.dataset.iconBtnsAddToCart = "false";
 
-            $element.classList.replace("filled", "text");
+            $element.classList.replace("success", "text");
 
             $tooltip.setContent({ ".tooltip-inner": "Add To Cart" });
 

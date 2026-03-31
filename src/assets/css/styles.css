@@ -8,7 +8,7 @@
      */
     --scrim: #00000075;
     --success: #1ec863;
-    --on-success: #000000;
+    --on-success: #ffffff;
     --soft-success: #1ec86320;
     --warning: #f6a723;
     --on-warning: #000000;
@@ -1323,6 +1323,12 @@ html[dir="rtl"] .badge-container .badge {
     background-color: var(--primary) !important;
     color: var(--on-primary) !important;
     --state-layer-bg: var(--on-primary);
+}
+
+.btn.success {
+    background-color: var(--success) !important;
+    color: var(--on-success) !important;
+    --state-layer-bg: var(--on-success);
 }
 
 .btn.secondary {
