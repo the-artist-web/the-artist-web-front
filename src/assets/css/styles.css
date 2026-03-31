@@ -1173,8 +1173,8 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
     top: 0;
     left: 60%;
     z-index: 10;
-    background-color: var(--primary);
-    color: var(--on-primary);
+    background-color: var(--inverse);
+    color: var(--on-inverse);
     min-width: var(--spacing-5);
     height: var(--spacing-5);
     border-radius: var(--radius-full);
