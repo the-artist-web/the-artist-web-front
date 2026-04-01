@@ -31,7 +31,7 @@ export const Popover = ($element) => {
         tip.addEventListener("mouseenter", () => clearTimeout(timeout));
         tip.addEventListener("mouseleave", () => hide());
 
-        const followBtn = tip.querySelector("[data-btn-followers]");
+        const followBtn = tip.querySelector("[data-btns-follow]");
 
         if (followBtn) BtnFollow(followBtn);
     });

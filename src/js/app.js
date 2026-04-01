@@ -64,8 +64,8 @@ if ($quantites.length) $quantites.forEach($elem => Quantite($elem));
 /**
  * Followers
  */
-const $followers = document.querySelectorAll("[data-btn-followers]");
-if ($followers.length) $followers.forEach($elem => BtnFollow($elem));
+const $btnsFollowe = document.querySelectorAll("[data-btns-follow]");
+if ($btnsFollowe.length) $btnsFollowe.forEach($elem => BtnFollow($elem));
 
 /**
  * Swippers
