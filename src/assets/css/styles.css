@@ -724,6 +724,7 @@ body:has(.header) .main { padding-block-start: var(--header-height); }
 .desktop { display: none !important; }
 
 .overlay,
+.modal-backdrop,
 .offcanvas-backdrop {
     position: fixed;
     inset: 0;
@@ -737,6 +738,7 @@ body:has(.header) .main { padding-block-start: var(--header-height); }
 }
 
 .overlay.show,
+.modal-backdrop.show,
 .offcanvas-backdrop.show {
     opacity: 1 !important;
     visibility: visible;
@@ -1937,8 +1939,44 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 /**
  * Dialogs
  */
+.modal .modal-dialog {
+    margin: var(--spacing-4) auto;
+    min-height: calc(100dvh - var(--spacing-8));
+    display: flex;
+    align-items: end;
+}
 
+.modal .modal-dialog .modal-content {
+    background-color: var(--surface) !important;
+    color: var(--on-background) !important;
+    border-radius: var(--radius-medium);
+    border: none !important;
+    max-width: calc(100% - var(--spacing-8));
+    min-height: max-content;
+    max-height: max-content;
+    margin-inline: auto;
+}
 
+.modal .modal-dialog .modal-content .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    width: 100%;
+    padding-block: var(--spacing-5) 0;
+    padding-inline: var(--spacing-5) var(--spacing-3);
+    border: none !important;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+    padding: var(--spacing-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.modal .modal-dialog .modal-content .swipper-container button[data-swipper-prev],
+.modal .modal-dialog .modal-content .swipper-container button[data-swipper-next] { margin-inline: var(--spacing-4); }
 
 /**
  * Divider
@@ -2268,7 +2306,7 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: var(--header-height);
+    min-height: 56px;
     border-bottom: 1px solid var(--outline);
 }
 
@@ -3178,6 +3216,11 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
         pointer-events: auto;
         opacity: 1;
     }
+
+    /* Dialogs */
+    .modal .modal-dialog { align-items: center; }
+
+    .modal .modal-dialog .modal-content { max-width: 100%; }
 
     /* Toolbars */
     .popover { display: block; }
