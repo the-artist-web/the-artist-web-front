@@ -609,7 +609,7 @@ p {
 
 .img-ratio-4x3,
 .img-ratio-16x9,
-.img-ratio-21x3 { border-radius: var(--radius-medium) !important; }
+.img-ratio-21x3 { border-radius: var(--radius-large) !important; }
 
 .img-ratio-16x9 { aspect-ratio: 16 / 9; }
 
@@ -1470,10 +1470,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.medium svg {
-    min-width: calc(var(--width-medium) / 2) !important;
-    max-width: calc(var(--width-medium) / 2) !important;
-    min-height: calc(var(--height-medium) / 2) !important;
-    max-height: calc(var(--height-medium) / 2) !important;
+    min-width: calc(var(--width-medium) / 2);
+    max-width: calc(var(--width-medium) / 2);
+    min-height: calc(var(--height-medium) / 2);
+    max-height: calc(var(--height-medium) / 2);
 }
 
 .icon-btn.large {
@@ -1606,6 +1606,8 @@ html[dir="rtl"] .badge-container .badge {
     --state-layer-bg: var(--dark-on-background);
 }
 
+.icon-btn.elevated { box-shadow: var(--shadow-05); }
+
 /**
  * Segmented buttons
  */
@@ -1627,7 +1629,7 @@ html[dir="rtl"] .badge-container .badge {
     border: none !important;
     display: flex;
     flex-direction: column;
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -1653,7 +1655,7 @@ html[dir="rtl"] .badge-container .badge {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     aspect-ratio: 4 / 3;
     display: grid;
     place-items: center;
@@ -1935,7 +1937,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 .modal .modal-dialog .modal-content {
     background-color: var(--surface) !important;
     color: var(--on-background) !important;
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     border: none !important;
     max-width: calc(100% - var(--spacing-8));
     min-height: max-content;
@@ -1947,22 +1949,19 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--spacing-4);
+    gap: var(--spacing-6);
     width: 100%;
-    padding-block: var(--spacing-4) 0;
-    padding-inline: var(--spacing-4) var(--spacing-2);
+    padding-block: var(--spacing-6) 0;
+    padding-inline: var(--spacing-6) var(--spacing-4);
     border: none !important;
 }
 
 .modal .modal-dialog .modal-content .modal-body {
-    padding: var(--spacing-4);
+    padding: var(--spacing-6);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
+    gap: var(--spacing-6);
 }
-
-.modal .modal-dialog .modal-content .swipper-container button[data-swipper-prev],
-.modal .modal-dialog .modal-content .swipper-container button[data-swipper-next] { margin-inline: var(--spacing-4); }
 
 /**
  * Divider
@@ -2000,7 +1999,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     background-color: var(--surface);
     border: none;
     box-shadow: var(--shadow-05);
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     padding-block: var(--spacing-2) !important;
     margin: var(--spacing-1) !important;
     overflow-y: auto;
@@ -2157,7 +2156,7 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
 .search-container {
     position: relative;
     width: 100%;
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     transition-duration: var(--tr-duration-short);
     transition-property: background-color, box-shadow;
 }
@@ -2194,7 +2193,7 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
     left: 0;
     right: 0;
     z-index: 15;
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     padding-block-start: calc(var(--height-small) + var(--spacing-1));
     transition-duration: var(--tr-duration-short);
     transition-property: background-color, box-shadow, transform, visibility, opacity;
@@ -2244,7 +2243,7 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
     background-color: var(--surface) !important;
     color: var(--on-background) !important;
     margin-inline: auto;
-    border-radius: var(--radius-medium) var(--radius-medium) 0 0;
+    border-radius: var(--radius-large) var(--radius-large) 0 0;
     height: max-content;
     max-height: calc(100dvh - var(--spacing-4));
     overflow-y: auto;
@@ -2461,22 +2460,28 @@ html[dir="rtl"] .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link.acti
     gap: var(--spacing-2);
     overflow-y: hidden;
     overflow-x: auto;
-    border: none;
-    margin: 0;
+    border: none !important;
+    margin-block: 0;
+    margin-inline: -16px;
+    padding-inline: var(--spacing-4);
+    width: calc(100% + var(--spacing-8));
 }
 
 .nav-tabs::-webkit-scrollbar { display: none; }
 
 .nav-tabs .nav-link {
-    border: 1px solid var(--outline) !important;
-    background-color: inherit;
-    color: var(--on-background) !important;
+    border: none !important;
+    background-color: var(--outline);
+    color: var(--on-background-variant) !important;
     border-radius: var(--radius-medium);
     padding-inline: var(--spacing-5);
     min-height: var(--height-small);
     max-height: var(--height-small);
+    transition: color var(--tr-duration-short);
     --state-layer-bg: var(--on-background);
 }
+
+.nav-tabs .nav-link:hover { color: var(--on-background) !important; }
 
 .nav-tabs .nav-link.active {
     background-color: var(--inverse) !important;
@@ -2656,6 +2661,12 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .form-group .input-wrapper.error input::placeholder { color: var(--error); }
+
+.form-group .select-wrapper.secondary,
+.form-group .input-wrapper.secondary {
+    background-color: var(--outline);
+    --state-layer-bg: var(--on-background);
+}
 
 .form-group .textarea-wrapper textarea {
     border: none;
@@ -3264,6 +3275,17 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-18)) / 3); }
     
     .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-24)) / 5); }
+
+    /**
+     * COMPONENTS
+     */
+
+    /* Tabs */
+    .nav-tabs {
+        margin-inline: -24px;
+        padding-inline: var(--spacing-6);
+        width: calc(100% + var(--spacing-12));
+    }
 
     /**
      * MAIN

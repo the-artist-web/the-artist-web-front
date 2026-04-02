@@ -18,6 +18,7 @@ import { Popover } from "./components/Popover.js";
 import { BtnLike } from "./components/BtnLike.js";
 import { BtnSave } from "./components/BtnSave.js";
 import { BtnAddToCart } from "./components/BtnAddToCart.js";
+import { IconBtnCopy } from "./components/IconBtnCopy.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -119,3 +120,9 @@ if ($popovers.length) $popovers.forEach($elem => Popover($elem));
  * Drag Drop Sheets
  */
 DragDropSheet();
+
+/**
+ * Copy
+ */
+const $iconBtnsCopy = document.querySelectorAll("[data-icon-btns-copy]");
+if ($iconBtnsCopy.length) $iconBtnsCopy.forEach($elem => IconBtnCopy($elem));

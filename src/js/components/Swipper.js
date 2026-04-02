@@ -7,71 +7,49 @@ export const Swipper = ($element) => {
     const isRTL = document.documentElement.dir === "rtl";
 
     const scrollAmount = 300;
+    const fadeSize = 200;
 
     if (!$swipperPrev || !$swipperNext || !$swipperContainer) return;
 
     const updateButtons = () => {
-        const scrollLeft = $swipperContainer.scrollLeft;
-        const maxScroll = $swipperContainer.scrollWidth - $swipperContainer.clientWidth;
+        const { scrollLeft, scrollWidth, clientWidth } = $swipperContainer;
+        const maxScroll = scrollWidth - clientWidth;
+        
+        const absScroll = Math.abs(scrollLeft);
+        
+        const isAtStart = absScroll <= 5; 
+        const isAtEnd = absScroll >= maxScroll - 5;
 
-        if (!isRTL) {
-            $swipperPrev.classList.toggle("d-none", scrollLeft <= 0);
-            $swipperNext.classList.toggle("d-none", scrollLeft >= maxScroll - 1);
+        $swipperPrev.classList.toggle("d-none", isAtStart);
+        $swipperNext.classList.toggle("d-none", isAtEnd);
+
+        if (isAtStart && isAtEnd) {
+            $swipperContainer.style.maskImage = "none";
+        } else if (isAtStart) {
+            $swipperContainer.style.maskImage = `linear-gradient(${isRTL ? 'to left' : 'to right'}, black calc(100% - ${fadeSize}px), transparent)`;
+        } else if (isAtEnd) {
+            $swipperContainer.style.maskImage = `linear-gradient(${isRTL ? 'to right' : 'to left'}, black calc(100% - ${fadeSize}px), transparent)`;
         } else {
-            $swipperPrev.classList.toggle("d-none", scrollLeft >= 0);
-            $swipperNext.classList.toggle("d-none", Math.abs(scrollLeft) >= maxScroll - 1);
+            $swipperContainer.style.maskImage = `linear-gradient(to right, transparent, black ${fadeSize}px, black calc(100% - ${fadeSize}px), transparent)`;
         }
-
-        const isAtStart = !isRTL
-            ? scrollLeft <= 0
-            : Math.abs(scrollLeft) <= 0;
-
-        const isAtEnd = !isRTL
-            ? scrollLeft >= maxScroll - 1
-            : Math.abs(scrollLeft) >= maxScroll - 1;
-
-        const fadeSize = 120;
-
-        if (isAtStart)
-            $swipperContainer.style.maskImage = isRTL
-                ? `linear-gradient(to left, var(--background) calc(100% - ${fadeSize}px), transparent)`
-                : `linear-gradient(to right, var(--background) calc(100% - ${fadeSize}px), transparent)`;
-        else if (isAtEnd)
-            $swipperContainer.style.maskImage = isRTL
-                ? `linear-gradient(to right, var(--background) calc(100% - ${fadeSize}px), transparent)`
-                : `linear-gradient(to left, var(--background) calc(100% - ${fadeSize}px), transparent)`;
-        else
-            $swipperContainer.style.maskImage = `
-                linear-gradient(
-                    to right,
-                    transparent 0px,
-                    var(--background) ${fadeSize}px,
-                    var(--background) calc(100% - ${fadeSize}px),
-                    transparent 100%
-                )
-            `;
     };
 
     const scroll = (direction) => {
-        const value = direction * scrollAmount;
-
-        if (!isRTL)
-            $swipperContainer.scrollBy({
-                left: value,
-                behavior: "smooth"
-            });
-        else 
-            $swipperContainer.scrollBy({
-                left: -value,
-                behavior: "smooth"
-            });
+        const multiplier = isRTL ? -1 : 1;
+        $swipperContainer.scrollBy({
+            left: direction * scrollAmount * multiplier,
+            behavior: "smooth"
+        });
     };
 
     $swipperPrev.addEventListener("click", () => scroll(-1));
-
     $swipperNext.addEventListener("click", () => scroll(1));
-
     $swipperContainer.addEventListener("scroll", updateButtons);
 
+    window.addEventListener("resize", updateButtons);
+
     updateButtons();
+
+    const resizeObserver = new ResizeObserver(() => updateButtons());
+    resizeObserver.observe($swipperContainer);
 };
