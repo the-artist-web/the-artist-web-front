@@ -120,6 +120,10 @@
 
                         <li>
                             <ul class="list wrapper-block custom-scrollbar">
+                                <li class="dropdown-item" style="padding-block: 0 !important;">
+                                    <p class="text-body-small text-on-background-variant text-uppercase">This month</p>
+                                </li>
+
                                 <li>
                                     <div class="dropdown-item align-items-start">
                                         <div class="flex">
@@ -179,17 +183,17 @@
                                                         <strong>Emma Wilson</strong>
                                                     </a>
 
-                                                    <a href="./pages/users/profiles/downloads/show.html" class="text-lowercase">1h ago</a>
+                                                    <a href="./pages/projects/show.html" class="text-lowercase">1h ago</a>
                                                     
-                                                    <a href="./pages/users/profiles/downloads/show.html" class="check">
+                                                    <a href="./pages/projects/show.html" class="check">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
                                                     </a>
                                                 </p>
 
-                                                <a href="./pages/users/profiles/downloads/show.html" class="text-body-large text-success">•</a>
+                                                <a href="./pages/projects/show.html" class="text-body-large text-success">•</a>
                                             </div>
 
-                                            <a href="./pages/users/profiles/downloads/show.html">
+                                            <a href="./pages/projects/show.html">
                                                 <p class="text-body-medium text-on-background-variant line-clamp line-clamp-2">purchased your <span class="text-on-background">Aurora Dashboard Pro</span> project</p>
                                             </a>
 
@@ -309,6 +313,12 @@
                                             </a>
                                         </div>
                                     </div>
+                                </li>
+
+                                <li class="separator x"></li>
+
+                                <li class="dropdown-item" style="padding-block: 0 !important;">
+                                    <p class="text-body-small text-on-background-variant text-uppercase">Earlier</p>
                                 </li>
 
                                 <li>
@@ -1724,7 +1734,96 @@
 
     </div>
 
-    <!-- dialog-report -->
+    <!-- Dialog Report -->
+    <div class="modal fade" id="dialog-report">
+
+        <div class="modal-dialog">
+
+            <form action="" method="POST" class="modal-content">
+
+                <div class="modal-header">
+                    <div class="wrapper-block">
+                        <p class="text-body-large"><strong>Report Project</strong></p>
+
+                        <p class="text-body-medium text-on-background-variant" style="padding-inline-end: var(--spacing-2) !important;">Please review our <a href="./legal/terms.html" target="_blank" class="btn-link">Community Guidelines</a> for additional information about what is and isn't permitted on The Artist Web.</p>
+                    </div>
+                </div>
+
+                <ul class="modal-list">
+
+                    <li>
+                        <label for="report-1" class="modal-link">
+                            <input type="radio" name="report_project" value="Spam" id="report-1" class="radio-btn">
+
+                            <p class="text-body-medium">Spam or misleading</p>
+
+                            <div class="state-layer"></div>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="report-2" class="modal-link">
+                            <input type="radio" name="report_project" value="Copyright" id="report-2" class="radio-btn">
+
+                            <p class="text-body-medium">Copyright violation</p>
+
+                            <div class="state-layer"></div>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="report-3" class="modal-link">
+                            <input type="radio" name="report_project" value="Low Quality" id="report-3" class="radio-btn">
+
+                            <p class="text-body-medium">Low quality or broken files</p>
+
+                            <div class="state-layer"></div>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="report-4" class="modal-link">
+                            <input type="radio" name="report_project" value="Inappropriate" id="report-4" class="radio-btn">
+
+                            <p class="text-body-medium">Inappropriate content</p>
+
+                            <div class="state-layer"></div>
+                        </label>
+                    </li>
+
+                    <li>
+                        <div class="modal-link" style="grid-template-columns: minmax(0, 1fr);">
+                            <div class="form-group">
+                                <div class="textarea-wrapper secondary">
+                                    <textarea placeholder="Tell us more..." name="other-content" class="text-body-large"></textarea>
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn secondary small" data-bs-dismiss="modal">
+                        <p class="text-body-medium">Cancel</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="submit" class="btn inverse small">
+                        <p class="text-body-medium">Send</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
 
     <main class="main">
 
@@ -1791,7 +1890,7 @@
                                 <ul class="flex gap-2 desktop">
 
                                     <li>
-                                        <a href="./index.html" class="btn text extra-small active">
+                                        <a href="./index.html" class="btn secondary extra-small">
                                             <p class="text-body-medium">Projects</p>
 
                                             <div class="state-layer"></div>
