@@ -860,30 +860,16 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     z-index: 10;
 }
 
-.swipper-container [data-swipper-prev] { left: -16px; }
-
-.swipper-container:has(.swipper) [data-swipper-prev] { left: 0; }
+.swipper-container [data-swipper-prev] { left: 0; }
 
 html[dir="rtl"] .swipper-container [data-swipper-prev] {
-    right: -16px;
-    left: auto;
-}
-
-html[dir="rtl"] .swipper-container:has(.swipper) [data-swipper-prev] {
     right: 0;
     left: auto;
 }
 
-.swipper-container [data-swipper-next] { right: -16px; }
-
-.swipper-container:has(.swipper) [data-swipper-next] { right: 0; }
+.swipper-container [data-swipper-next] { right: 0; }
 
 html[dir="rtl"] .swipper-container [data-swipper-next] {
-    left: -16px;
-    right: auto;
-}
-
-html[dir="rtl"] .swipper-container:has(.swipper) [data-swipper-next] {
     left: 0;
     right: auto;
 }
@@ -1768,7 +1754,7 @@ html[dir="rtl"] .card .figure .product-purchase {
 .card .figure .icon-btn.white { box-shadow: 0 0 0 transparent; }
 
 .card .card-body {
-    padding: var(--spacing-5);
+    padding: var(--spacing-4);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
@@ -1963,13 +1949,13 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     justify-content: space-between;
     gap: var(--spacing-4);
     width: 100%;
-    padding-block: var(--spacing-5) 0;
-    padding-inline: var(--spacing-5) var(--spacing-3);
+    padding-block: var(--spacing-4) 0;
+    padding-inline: var(--spacing-4) var(--spacing-2);
     border: none !important;
 }
 
 .modal .modal-dialog .modal-content .modal-body {
-    padding: var(--spacing-5);
+    padding: var(--spacing-4);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
@@ -2707,7 +2693,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .popover .hover-card-body {
-    padding: var(--spacing-4) !important;
+    padding: var(--spacing-6) !important;
     background-color: transparent !important;
     color: var(--on-background) !important;
     display: flex;

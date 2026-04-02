@@ -3,9 +3,6 @@
 export const DragDropSheet = () => {
     const types = [
         { selector: ".offcanvas-bottom", axis: "Y", dir: 1, prop: "translateY" },
-        { selector: ".offcanvas-top", axis: "Y", dir: -1, prop: "translateY" },
-        { selector: ".offcanvas-start", axis: "X", dir: -1, prop: "translateX" },
-        { selector: ".offcanvas-end", axis: "X", dir: 1, prop: "translateX" }
     ];
 
     types.forEach(type => {
@@ -18,61 +15,64 @@ export const DragDropSheet = () => {
         let currentPos = 0;
         let isDragging = false;
         let startTime = 0;
+        let isScrollingInside = false;
 
-        const scrollContainer = el.querySelector('.offcanvas-list') || el;
+        const scrollableArea = el.querySelector('.offcanvas-body') || el.querySelector('.offcanvas-list');
 
         el.addEventListener("touchstart", (e) => {
             startTime = Date.now();
             startPos = config.axis === "Y" ? e.touches[0].clientY : e.touches[0].clientX;
-            currentPos = startPos;
-            isDragging = false;
+            
+            isScrollingInside = false; 
+            el.style.transition = "none";
         }, { passive: true });
 
         el.addEventListener("touchmove", (e) => {
             currentPos = config.axis === "Y" ? e.touches[0].clientY : e.touches[0].clientX;
-            let diff = currentPos - startPos;
+            const diff = currentPos - startPos;
 
-            if (config.axis === "Y") {
-                if (config.dir === 1 && scrollContainer.scrollTop > 0) return;
-                if (config.dir === -1 && (scrollContainer.scrollTop + scrollContainer.offsetHeight < scrollContainer.scrollHeight)) return; // للأعلى
-            }
-
-            if (Math.abs(diff) > 5) {
-                isDragging = true;
+            if (scrollableArea) {
+                const scrollTop = scrollableArea.scrollTop;
                 
-                const isCorrectDirection = (config.dir === 1 && diff > 0) || (config.dir === -1 && diff < 0);
-                
-                if (isCorrectDirection) {
-                    el.style.transition = "none";
-                    el.style.transform = `${config.prop}(${diff}px)`;
+                if (diff < 0 || (diff > 0 && scrollTop > 0)) {
+                    isScrollingInside = true;
+                    return;
                 }
             }
-        }, { passive: true });
+
+            if (Math.abs(diff) > 10 && !isScrollingInside) {
+                isDragging = true;
+                
+                if (e.cancelable) e.preventDefault(); 
+
+                if (diff > 0) el.style.transform = `${config.prop}(${diff}px)`;
+            }
+        }, { passive: false });
 
         el.addEventListener("touchend", () => {
-            if (!isDragging) return;
+            if (!isDragging) {
+                isScrollingInside = false;
+                return;
+            }
 
-            let diff = currentPos - startPos;
-
-            const threshold = 100;
+            const diff = currentPos - startPos;
             const duration = Date.now() - startTime;
+            const velocity = Math.abs(diff) / duration;
 
-            el.style.transition = "transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)";
+            el.style.transition = "transform 0.4s cubic-bezier(0.32, 0.72, 0, 1)";
 
-            const isSwipeFast = Math.abs(diff) > 50 && duration < 250;
-            const isSwipeFar = Math.abs(diff) > threshold;
-            const isCorrectDirection = (config.dir === 1 && diff > 0) || (config.dir === -1 && diff < 0);
-
-            if (isCorrectDirection && (isSwipeFar || isSwipeFast)) {
-                el.style.transform = `${config.prop}(${config.dir * 100}%)`;
+            if (diff > 100 || (diff > 50 && velocity > 0.5)) {
+                el.style.transform = `${config.prop}(105%)`;
                 setTimeout(() => {
                     const instance = bootstrap.Offcanvas.getOrCreateInstance(el);
                     instance.hide();
-                }, 200);
-            } else
+                }, 150);
+            } else {
                 el.style.transform = "";
+            }
 
             isDragging = false;
+            isScrollingInside = false;
         });
 
         el.addEventListener("hidden.bs.offcanvas", () => {
