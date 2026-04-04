@@ -1256,10 +1256,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .btn.extra-small svg {
-    min-width: calc(var(--width-extra-small) / 2);
-    max-width: calc(var(--width-extra-small) / 2);
-    min-height: calc(var(--height-extra-small) / 2);
-    max-height: calc(var(--height-extra-small) / 2);
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
 }
 
 .btn.small {
@@ -1442,10 +1442,10 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.extra-small svg {
-    min-width: calc(var(--width-extra-small) / 2) !important;
-    max-width: calc(var(--width-extra-small) / 2) !important;
-    min-height: calc(var(--height-extra-small) / 2) !important;
-    max-height: calc(var(--height-extra-small) / 2) !important;
+    min-width: var(--spacing-5) !important;
+    max-width: var(--spacing-5) !important;
+    min-height: var(--spacing-5) !important;
+    max-height: var(--spacing-5) !important;
 }
 
 .icon-btn.small {
@@ -1500,9 +1500,12 @@ html[dir="rtl"] .badge-container .badge {
 .icon-btn.text.active { color: var(--on-background) !important; }
 
 .icon-btn.text-error {
-    color: var(--error);
+    color: var(--on-background-variant) !important;
+    transition: color var(--tr-duration-short);
     --state-layer-bg: var(--error);
 }
+
+.icon-btn.text-error:hover { color: var(--error) !important; }
 
 .icon-btn.outline {
     border: 1px solid var(--outline);
@@ -2013,7 +2016,6 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: 75dvh;
 }
 
 /**
@@ -2041,7 +2043,6 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 85dvh;
-    
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
@@ -2059,10 +2060,13 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 
 .dropdown .dropdown-menu .dropdown-header {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: var(--spacing-3);
-    padding: var(--spacing-2) var(--spacing-4) var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
     color: var(--on-background);
+    margin-block-start: -8px;
+    border-bottom: 1px solid var(--outline);
+    min-height: 56.8px;
 }
 
 .dropdown .dropdown-menu .dropdown-header .wrapper-between { flex-wrap: nowrap; }
@@ -2125,7 +2129,8 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
 
 .dropdown .dropdown-menu .list {
     margin-block-end: -8px;
-    padding-block-end: var(--spacing-2);
+    padding-block: var(--spacing-2);
+    max-height: calc(85dvh - 56.8px);
 }
 
 .dropdown .dropdown-menu:has(.shopping-cart-footer) { padding-block-end: 0 !important; }
@@ -2322,11 +2327,11 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
 }
 
 .offcanvas.offcanvas-bottom .offcanvas-header {
-    padding: var(--spacing-2) var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 56px;
+    min-height: 56.8px;
     border-bottom: 1px solid var(--outline);
 }
 
@@ -2931,7 +2936,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 /**
  * Dropdown Shopping Cart
  */
-.dropdown-shopping-cart .list { max-height: calc(75dvh - 108.8px); }
+.dropdown-shopping-cart .list { max-height: calc(85dvh - 165.6px) !important; }
 
 .dropdown-shopping-cart .shopping-cart-footer {
     border-top: 1px solid var(--outline);
@@ -3164,7 +3169,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
 .project-detail .project-description {
     background-color: var(--outline);
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     overflow: hidden;
     display: grid;
     grid-template-columns: minmax(0, 1fr);
