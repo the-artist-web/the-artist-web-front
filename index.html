@@ -1169,13 +1169,13 @@
                         <li class="separator x"></li>
 
                         <li>
-                            <a href="./legal/report-problem.html" target="_blank" class="dropdown-item">
+                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
 
                                 <p class="text-body-medium">Report a problem</p>
 
                                 <div class="state-layer"></div>
-                            </a>
+                            </button>
                         </li>
 
                         <li>
@@ -1252,7 +1252,7 @@
     </aside>
 
     <!-- Bottom Sheet Project Detail -->
-    <div class="offcanvas offcanvas-bottom project-detail" id="bottom-sheet-project-detail">
+    <div class="offcanvas offcanvas-bottom bottom-sheet-project-detail" id="bottom-sheet-project-detail">
 
         <div class="offcanvas-dismiss" data-bs-dismiss="offcanvas"></div>
 
@@ -1543,9 +1543,9 @@
 
                 <div class="project-description">
                     <button type="button" class="project-description-btn" data-bs-toggle="collapse" data-bs-target="#project-description">
-                        <p class="text-body-medium text-on-background-variant">109M views <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success">Recently Updated</span></p>
+                        <p class="text-body-medium text-on-background-variant">109M views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
 
-                        <p class="text-body-large line-clamp line-clamp-1">Today I’m sharing my latest exploration: HealthOps, a comprehensive healthcare operations dashboard <span class="text-info text-lowercase">#healthops</span> <span class="text-info text-lowercase">#healthopsdashboard</span> <span class="text-info text-lowercase">#uidesign</span></p>
+                        <p class="text-body-large line-clamp line-clamp-2">Today I’m sharing my latest exploration: HealthOps, a comprehensive healthcare operations dashboard <span class="text-info text-lowercase">#healthops</span> <span class="text-info text-lowercase">#healthopsdashboard</span> <span class="text-info text-lowercase">#uidesign</span></p>
 
                         <div class="state-layer"></div>
                     </button>
@@ -1553,14 +1553,14 @@
                     <div class="collapse" id="project-description">
                         <div class="project-description-body">
                             <div class="wrapper-content">
-                                <p class="text-body-medium text-on-background-variant">109M views <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success">Recently Updated</span></p>
+                                <p class="text-body-medium text-on-background-variant">109M views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
     
                                 <div class="content-box text-body-large">Today I’m sharing my latest exploration: HealthOps, a comprehensive healthcare operations dashboard. This interface is designed to bridge the gap between complex medical data and actionable clinical decisions. <a href="./pages/search.html" class="btn-link text-lowercase">#healthops</a> <a href="./pages/search.html" class="btn-link text-lowercase">#healthopsdashboard</a> <a href="./pages/search.html" class="btn-link text-lowercase">#uidesign</a> <br /><br /> Available for new projects<br /><br /> Feel free to reach out and let's get started!<br /> <a href="#" target="_blank" class="btn-link text-lowercase">https://www.website.com/</a></div>
                             </div>
 
                             <div>
                                 <div class="title-sec">
-                                    <h5 class="text-title-medium"><strong>More by One Week Wonders</strong></h5>
+                                    <h4 class="text-title-large"><strong>More by One Week Wonders</strong></h4>
 
                                     <a href="./pages/users/profiles/my-projects.html" class="btn text small rounded-pill p-end-0">
                                         <p class="text-body-medium">View All</p>
@@ -1678,7 +1678,7 @@
         
                                                         <div class="wrapper flex-nowrap opacity-50" style="gap: var(--spacing-3);">
                                                             <div class="flex gap-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-inverse icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-inverse icon-tabler-heart text-error"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
                                                                 
                                                                 <p class="text-body-medium">139</p>
                                                             </div>
@@ -1933,7 +1933,47 @@
                     <img src="https://cdn.dribbble.com/userupload/47227408/file/6121a8f0c901cabd33bee975f54d9235.jpg?resize=1504x1128&vertical=center" alt="title project" loading="lazy" class="img-cover img-ratio-4x3" />
                 </div>
 
-                <!-- Comments -->
+                <div class="comments">
+    
+                    <div class="title-sec">
+                        <h4 class="text-title-large"><strong>2,726 Comments</strong></h4>
+        
+                        <div class="dropdown">
+                            <button type="button" class="btn text small p-start-0" data-bs-toggle="dropdown">
+                                <div class="icon-btn small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
+                                </div>
+
+                                <p class="text-body-medium">Sort Comments</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end small">
+
+                                <li>
+                                    <a href="#" class="dropdown-item active">
+                                        <p class="text-body-medium">Top</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        <p class="text-body-medium">Newest</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- go -->
+    
+                </div>
 
             </div>
 
@@ -2105,7 +2145,7 @@
 
                 <div class="modal-header">
                     <div class="wrapper-block">
-                        <p class="text-body-large"><strong>Report Project</strong></p>
+                        <p class="text-body-large"><strong>Report</strong></p>
 
                         <p class="text-body-medium text-on-background-variant" style="padding-inline-end: var(--spacing-2) !important;">Please review our <a href="./legal/terms.html" target="_blank" class="btn-link">Community Guidelines</a> for additional information about what is and isn't permitted on The Artist Web.</p>
                     </div>
@@ -2717,7 +2757,7 @@
                         <div class="container container-xl">
 
                             <div class="title-sec">
-                                <h5 class="text-title-medium">Recommended For You</h5>
+                                <h4 class="text-title-large"><strong>Recommended For You</strong></h4>
                             </div>
 
                             <div class="grid-base">
@@ -2916,7 +2956,7 @@
                         <div class="container container-xl">
 
                             <div class="title-sec">
-                                <h5 class="text-title-medium">New Work From Creatives You Follow</h5>
+                                <h4 class="text-title-large"><strong>New Work From Creatives You Follow</strong></h4>
                             </div>
 
                             <div class="grid-base">
