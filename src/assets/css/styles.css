@@ -2038,7 +2038,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     border: none;
     box-shadow: var(--shadow-05);
     border-radius: var(--radius-large);
-    padding-block: var(--spacing-2) !important;
+    padding-block: var(--spacing-2);
     margin: var(--spacing-1) !important;
     overflow-y: auto;
     overflow-x: hidden;
@@ -2552,7 +2552,8 @@ html[dir="rtl"] .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link.acti
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2);
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 .form-group:has(select) { max-width: max-content; }
@@ -2564,7 +2565,7 @@ html[dir="rtl"] .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link.acti
     padding-inline: var(--spacing-4);
     border-radius: var(--radius-medium);
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: var(--spacing-2);
     transition: color var(--tr-duration-short);
 }
@@ -2769,13 +2770,14 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-extra-small);
-    padding-inline: var(--spacing-2);
+    padding: var(--spacing-1) var(--spacing-2);
     font-size: var(--fs-body-small);
     font-weight: var(--fw-regular);
     line-height: var(--lh-body-small);
     background-color: var(--inverse);
     text-transform: capitalize;
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    text-align: start;
     color: var(--on-inverse);
 }
 
@@ -2946,6 +2948,44 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     gap: var(--spacing-3);
     margin-top: var(--spacing-2);
 }
+
+/**
+ * Dropdown Emoji
+ */
+.dropdown-emoji {
+    padding: var(--spacing-4) !important;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    width: 330px;
+    max-height: 50dvh !important;
+}
+
+.dropdown-emoji.show { display: flex !important; }
+
+.dropdown-emoji .emoji-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: var(--spacing-3);
+    margin-block-end: var(--spacing-2);
+}
+
+.dropdown-emoji .emoji-list:last-child { margin-block-end: 0; }
+
+.dropdown-emoji button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-size: var(--fs-headline-medium);
+    transition: transform var(--tr-duration-short);
+}
+
+.dropdown-emoji button:hover { transform: scale(1.1); }
+
+.dropdown-emoji button:active { transform: scale(0.95); }
 
 /**
  * Banner User
@@ -3205,6 +3245,63 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .topic-section .container .btn { margin-block-start: var(--spacing-4); }
+
+/**
+ * Comments
+ */
+.comments .comment-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.comments .comment-container .comment-wrapper {
+    background-color: var(--outline);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    width: 100%;
+    max-width: 100%;
+    padding: var(--spacing-4);
+    border-radius: var(--radius-large);
+}
+
+.comments .comment-container .comment-wrapper textarea {
+    height: 48px;
+    max-height: 150px;
+}
+
+.comments .comment-container .comment-list .comment-reply {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.comments .comment-container .comment-list .comment-reply .comment-item {
+    display: flex;
+    align-items: start;
+    gap: var(--spacing-4);
+}
+
+.comments .comment-container .comment-list .comment-reply .comment-item .comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.comments .comment-container .comment-list .comment-reply .comment-item .comment-content .extra-small svg {
+    min-width: calc(var(--width-extra-small) / 2) !important;
+    max-width: calc(var(--width-extra-small) / 2) !important;
+    min-height: calc(var(--height-extra-small) / 2) !important;
+    max-height: calc(var(--height-extra-small) / 2) !important;
+}
+
+.comments .extra-extra-small {
+    border-radius: var(--radius-extra-small);
+    padding-inline: var(--spacing-2);
+    min-height: 23px;
+    max-height: 23px;
+}
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY

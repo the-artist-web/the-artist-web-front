@@ -19,6 +19,7 @@ import { BtnLike } from "./components/BtnLike.js";
 import { BtnSave } from "./components/BtnSave.js";
 import { BtnAddToCart } from "./components/BtnAddToCart.js";
 import { IconBtnCopy } from "./components/IconBtnCopy.js";
+import { AddComment } from "./components/AddComment.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -126,3 +127,9 @@ DragDropSheet();
  */
 const $iconBtnsCopy = document.querySelectorAll("[data-icon-btns-copy]");
 if ($iconBtnsCopy.length) $iconBtnsCopy.forEach($elem => IconBtnCopy($elem));
+
+/**
+ * Add Comments
+ */
+const $addComments = document.querySelectorAll("[data-add-comments]");
+if ($addComments.length) $addComments.forEach($elem => AddComment($elem));
