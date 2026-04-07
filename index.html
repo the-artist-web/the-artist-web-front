@@ -1973,7 +1973,7 @@
 
                     <div class="comment-container">
                         <form method="GET" action="" class="comment-wrapper" data-add-comments>
-                            <textarea placeholder="Add a comment..." name="comment" class="text-body-large" data-textarea></textarea>
+                            <textarea placeholder="Add a comment..." name="comment" class="text-body-medium" data-textarea></textarea>
 
                             <div class="wrapper-between flex-nowrap">
                                 <a href="./pages/users/profiles/index.html" class="avatar small" data-bs-toggle="tooltip" data-bs-title="The Artist Web" data-bs-placement="bottom">
@@ -2360,7 +2360,7 @@
 
                         <ul class="comment-list">
     
-                            <li class="comment-reply">
+                            <li class="reply-comment">
                                 <div class="comment-item">
                                     <a
                                         href="./pages/users/profiles/index.html"
@@ -2575,16 +2575,26 @@
     
                                         <div class="text-body-medium">Thank God, I've always made a promise to myself not to cheat or help others cheat, thanks to God. Today, during the practical exam, someone behind me called me over to ask for help cheating on a question at the back of the exam, and thank God I told him I don't cheat. May God keep us all steadfast. <a href="#" target="_blank" class="btn-link text-lowercase">https://www.website.com</a></div>
     
-                                        <div class="wrapper">
-                                            <div class="flex gap-0">
-                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                        <div class="flex flex-wrap gap-0">
+                                            <button type="button" class="btn text extra-small p-start-0 rounded-pill" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                                <div class="icon-btn extra-small">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                                                </div>
 
-                                                    <div class="state-layer"></div>
-                                                </button>
+                                                <p class="text-body-small">125</p>
 
-                                                <p class="text-body-small text-on-background-variant">125</p>
-                                            </div>
+                                                <div class="state-layer"></div>
+                                            </button>
+
+                                            <button type="button" class="btn text extra-small p-start-0 rounded-pill" data-bs-toggle="collapse" data-bs-target="#reply-comment-1">
+                                                <div class="icon-btn extra-small arrow-dir">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share-3"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M13 4v4c-6.575 1.028 -9.02 6.788 -10 12c-.037 .206 5.384 -5.962 10 -6v4l8 -7l-8 -7" /></svg>
+                                                </div>
+
+                                                <p class="text-body-small">Reply</p>
+
+                                                <div class="state-layer"></div>
+                                            </button>
                                         </div>
                                     </div>
     
@@ -2621,7 +2631,11 @@
                                     </div>
                                 </div>
 
-                                dsadsaddsa
+                                <div class="reply-comment-list">
+                                    <div class="collapse" id="reply-comment-1">
+                                        <!-- go -->
+                                    </div>
+                                </div>
                             </li>
     
                         </ul>

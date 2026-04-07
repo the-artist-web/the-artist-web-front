@@ -4,7 +4,7 @@ export const AddComment = ($element) => {
     const $textarea = $element.querySelector("[data-textarea]");
     const $submit = $element.querySelector("button[type='submit']");
     const $emojies = $element.querySelectorAll("[data-emoji]");
-
+    
     const updateTextarea = () => {
         $submit.disabled = $textarea.value.trim().length === 0;
         

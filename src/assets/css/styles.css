@@ -3259,41 +3259,49 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     background-color: var(--outline);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
     width: 100%;
     max-width: 100%;
-    padding: var(--spacing-4);
     border-radius: var(--radius-large);
 }
 
 .comments .comment-container .comment-wrapper textarea {
     height: 48px;
     max-height: 150px;
+    padding: var(--spacing-4) var(--spacing-4) 0;
 }
 
-.comments .comment-container .comment-list .comment-reply {
+.comments .comment-container .comment-wrapper .wrapper-between { padding: var(--spacing-4); }
+
+.comments .comment-container .comment-list .reply-comment {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
 }
 
-.comments .comment-container .comment-list .comment-reply .comment-item {
+.comments .comment-container .comment-list .reply-comment .comment-item {
     display: flex;
     align-items: start;
     gap: var(--spacing-4);
 }
 
-.comments .comment-container .comment-list .comment-reply .comment-item .comment-content {
+.comments .comment-container .comment-list .reply-comment .comment-item .comment-content {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2);
 }
 
-.comments .comment-container .comment-list .comment-reply .comment-item .comment-content .extra-small svg {
+.comments .comment-container .comment-list .reply-comment .comment-item .comment-content .extra-small svg {
     min-width: calc(var(--width-extra-small) / 2) !important;
     max-width: calc(var(--width-extra-small) / 2) !important;
     min-height: calc(var(--height-extra-small) / 2) !important;
     max-height: calc(var(--height-extra-small) / 2) !important;
+}
+
+.comments .comment-container .comment-list .reply-comment .reply-comment-list {
+    padding-inline-start: calc(var(--width-small) + var(--spacing-4));
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
 }
 
 .comments .extra-extra-small {
