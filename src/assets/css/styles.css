@@ -3281,7 +3281,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 .comments .comment-container .comment-list .reply-comment .comment-item {
     display: flex;
     align-items: start;
-    gap: var(--spacing-4);
+    gap: var(--spacing-3);
 }
 
 .comments .comment-container .comment-list .reply-comment .comment-item .comment-content {
