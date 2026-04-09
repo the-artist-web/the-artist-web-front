@@ -518,7 +518,7 @@
                                                 <p class="text-body-medium text-on-background-variant line-clamp line-clamp-2">started following you</p>
                                             </a>
 
-                                            <button type="button" class="btn inverse extra-small" data-btns-follow="false">
+                                            <button type="button" class="btn inverse extra-small">
                                                 <p class="text-body-medium">Follow Back</p>
 
                                                 <div class="state-layer"></div>
@@ -1397,7 +1397,7 @@
                                             <div class="state-layer"></div>
                                         </a>
     
-                                        <button type="button" class="btn inverse small w-full" data-btns-follow="false">
+                                        <button type="button" class="btn inverse small w-full">
                                             <p class="text-body-medium">Follow</p>
     
                                             <div class="state-layer"></div>
@@ -1425,7 +1425,7 @@
                             </div>
                         </a>
 
-                        <button type="button" class="btn inverse small" data-btns-follow="false">
+                        <button type="button" class="btn inverse small">
                             <p class="text-body-medium">Follow</p>
 
                             <div class="state-layer"></div>
@@ -1441,7 +1441,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                             </a>
 
-                            <button type="button" class="btn inverse small" data-btns-follow="false">
+                            <button type="button" class="btn inverse small">
                                 <p class="text-body-medium">Follow</p>
 
                                 <div class="state-layer"></div>
@@ -1449,7 +1449,7 @@
                         </li>
 
                         <li>
-                            <button type="button" class="btn secondary small p-start-0" data-btns-like="false" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
                                 <div class="icon-btn small">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
                                 </div>
@@ -1473,7 +1473,7 @@
                         </li>
 
                         <li>
-                            <button type="button" class="btn secondary small p-start-0" data-btns-save="false">
+                            <button type="button" class="btn secondary small p-start-0">
                                 <div class="icon-btn small">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
                                 </div>
@@ -1497,20 +1497,18 @@
                         </li>
 
                         <li class="flex desktop">
-                            <a href="./pages/projects/live-preview.html" class="btn secondary small p-start-0">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-preview">
                                 <div class="icon-btn small">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
                                 </div>
 
-                                <p class="text-body-medium">Live Preview</p>
+                                <p class="text-body-medium">Preview</p>
 
                                 <div class="state-layer"></div>
-                            </a>
+                            </button>
 
-                            <button type="button" class="btn inverse small p-start-0" data-btns-add-to-cart="false">
-                                <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
-                                </div>
+                            <button type="button" class="btn inverse small">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
                                 <p class="text-body-medium">Add To Cart &nbsp; <strong>180£E</strong> <span class="opacity-50 text-decoration-line-through text-body-small">200£E</span></p>
 
@@ -1530,10 +1528,8 @@
                         <div class="state-layer"></div>
                     </a>
 
-                    <button type="button" class="btn inverse small w-full p-start-0" data-btns-add-to-cart="false">
-                        <div class="icon-btn small">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
-                        </div>
+                    <button type="button" class="btn inverse small w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
                         <p class="text-body-medium">Add To Cart &nbsp; <strong>180£E</strong> <span class="opacity-50 text-decoration-line-through text-body-small">200£E</span></p>
 
@@ -1596,13 +1592,13 @@
                                             </div>
     
                                             <div class="actions">
-                                                <button type="button" class="icon-btn text small" data-icon-btns-like="false" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
     
                                                     <div class="state-layer"></div>
                                                 </button>
     
-                                                <button type="button" class="icon-btn text small" data-icon-btns-add-to-cart="false" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
     
                                                     <div class="state-layer"></div>
@@ -1716,13 +1712,13 @@
                                             </div>
     
                                             <div class="actions">
-                                                <button type="button" class="icon-btn text small" data-icon-btns-like="false" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
     
                                                     <div class="state-layer"></div>
                                                 </button>
     
-                                                <button type="button" class="icon-btn text small" data-icon-btns-add-to-cart="false" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
     
                                                     <div class="state-layer"></div>
@@ -1776,13 +1772,13 @@
                                             </div>
     
                                             <div class="actions">
-                                                <button type="button" class="icon-btn text small" data-icon-btns-like="false" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
     
                                                     <div class="state-layer"></div>
                                                 </button>
     
-                                                <button type="button" class="icon-btn text small" data-icon-btns-add-to-cart="false" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
     
                                                     <div class="state-layer"></div>
@@ -2449,7 +2445,7 @@
                                                         <div class="state-layer"></div>
                                                     </a>
     
-                                                    <button type="button" class="btn inverse small w-full" data-btns-follow="false">
+                                                    <button type="button" class="btn inverse small w-full">
                                                         <p class="text-body-medium">Follow</p>
     
                                                         <div class="state-layer"></div>
@@ -2552,7 +2548,7 @@
                                                                 <div class="state-layer"></div>
                                                             </a>
     
-                                                            <button type="button" class="btn inverse small w-full" data-btns-follow="false">
+                                                            <button type="button" class="btn inverse small w-full">
                                                                 <p class="text-body-medium">Follow</p>
     
                                                                 <div class="state-layer"></div>
@@ -2586,7 +2582,7 @@
                                                 <div class="state-layer"></div>
                                             </button>
 
-                                            <button type="button" class="btn text extra-small p-start-0 rounded-pill" data-bs-toggle="collapse" data-bs-target="#reply-comment-1">
+                                            <button type="button" class="btn text extra-small p-start-0 rounded-pill">
                                                 <div class="icon-btn extra-small arrow-dir">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share-3"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M13 4v4c-6.575 1.028 -9.02 6.788 -10 12c-.037 .206 5.384 -5.962 10 -6v4l8 -7l-8 -7" /></svg>
                                                 </div>
@@ -2882,6 +2878,19 @@
                 </div>
 
             </form>
+
+        </div>
+
+    </div>
+
+    <!-- Dialog Preview -->
+    <div class="modal fade dialog-preview" id="dialog-preview">
+
+        <div class="modal-dialog modal-xl">
+
+            <div class="modal-content">
+                <!-- go -->
+            </div>
 
         </div>
 
@@ -3448,13 +3457,13 @@
                                             </a>
 
                                             <div class="flex">
-                                                <button type="button" class="icon-btn text small" data-icon-btns-like="false" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
 
                                                     <div class="state-layer"></div>
                                                 </button>
 
-                                                <button type="button" class="icon-btn text small" data-icon-btns-add-to-cart="false" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
+                                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="bottom">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 
                                                     <div class="state-layer"></div>
@@ -3551,7 +3560,7 @@
                                                             <div class="state-layer"></div>
                                                         </a>
 
-                                                        <button type="button" class="btn inverse small w-full" data-btns-follow="false">
+                                                        <button type="button" class="btn inverse small w-full">
                                                             <p class="text-body-medium">Follow</p>
 
                                                             <div class="state-layer"></div>
@@ -3683,7 +3692,7 @@
                                 <p class="text-body-large text-on-background-variant">A UI Kit (User Interface Kit) is a collection of pre-designed interface components—such as buttons, forms, cards, and navigation elements—used to quickly build consistent and visually appealing user interfaces for websites and applications.</p>
                             </span>
                     
-                            <button type="button" class="btn inverse small" data-btns-follow="false">
+                            <button type="button" class="btn inverse small">
                                 <p class="text-body-medium">Follow UI Kit</p>
                     
                                 <div class="state-layer"></div>

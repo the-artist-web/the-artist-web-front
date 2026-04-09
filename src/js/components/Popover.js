@@ -1,10 +1,5 @@
 "use strict";
 
-/**
- * Import Modules
- */
-import { BtnFollow } from "./BtnFollow.js";
-
 export const Popover = ($element) => {
     const popover = new bootstrap.Popover($element, {
         html: true,
@@ -30,10 +25,6 @@ export const Popover = ($element) => {
 
         tip.addEventListener("mouseenter", () => clearTimeout(timeout));
         tip.addEventListener("mouseleave", () => hide());
-
-        const followBtn = tip.querySelector("[data-btns-follow]");
-
-        if (followBtn) BtnFollow(followBtn);
     });
 
     $element.addEventListener("mouseenter", show);

@@ -1205,7 +1205,7 @@ html[dir="rtl"] .badge-container .badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-2);
+    gap: var(--spacing-3);
     text-wrap: nowrap;
     text-transform: capitalize;
     border-radius: var(--radius-full);
@@ -1936,6 +1936,8 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     align-items: end;
 }
 
+.modal .modal-dialog.modal-fullscreen { margin-block: 0 !important; }
+
 .modal .modal-dialog .modal-content {
     background-color: var(--surface) !important;
     color: var(--on-background) !important;
@@ -2565,7 +2567,7 @@ html[dir="rtl"] .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link.acti
     padding-inline: var(--spacing-4);
     border-radius: var(--radius-medium);
     display: flex;
-    align-items: end;
+    align-items: center;
     gap: var(--spacing-2);
     transition: color var(--tr-duration-short);
 }
