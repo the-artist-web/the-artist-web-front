@@ -3406,6 +3406,38 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     gap: var(--spacing-1);
 }
 
+/**
+ * Live Preview
+ */
+.live-preview {
+    display: grid;
+    grid-template-columns: calc(0, 1fr);
+    grid-template-rows: max-content 1fr;
+    width: 100%;
+    height: 100dvh;
+}
+
+.live-preview .live-preview-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(var(--header-height) + var(--spacing-4));
+    border-bottom: 2px solid var(--outline);
+    box-shadow: var(--shadow-1);
+}
+
+.live-preview .live-preview-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+}
+
+.live-preview iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
 \* ----------------------------------------------------- */
