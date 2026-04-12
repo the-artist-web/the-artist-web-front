@@ -1201,7 +1201,6 @@ html[dir="rtl"] .badge-container .badge {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: blur(30px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1363,6 +1362,12 @@ html[dir="rtl"] .badge-container .badge {
     background: var(--linear-gradient) !important;
     color: var(--on-linear-gradient) !important;
     --state-layer-bg: var(--on-linear-gradient);
+}
+
+.btn.scrim {
+    background-color: var(--scrim) !important;
+    color: var(--dark-on-background) !important;
+    --state-layer-bg: var(--dark-on-background);
 }
 
 .btn-link {
@@ -1791,12 +1796,26 @@ html[dir="rtl"] .card .figure .product-purchase {
 }
 
 .carousel .carousel-inner .carousel-item {
+    background-image: var(--bg-img-carousel-item);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.carousel .carousel-inner .carousel-item[style]::before {
+    content: "";
+    background-color: var(--background);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
 }
 
 .carousel .carousel-inner .card,
@@ -1940,7 +1959,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 .modal .modal-dialog.modal-fullscreen { margin-block: 0 !important; }
 
 .modal .modal-dialog .modal-content {
-    background-color: var(--surface) !important;
+    background-color: var(--surface);
     color: var(--on-background) !important;
     border-radius: var(--radius-large);
     border: none !important;
@@ -2859,7 +2878,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Header
  */
 .header {
-    background-color: var(--background);
+    backdrop-filter: blur(30px);
     position: fixed;
     top: 0;
     left: 0;
@@ -2871,6 +2890,17 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     align-items: center;
     border-bottom: 1px solid var(--outline);
     transition: transform var(--tr-duration-short);
+}
+
+.header::before {
+    content: "";
+    background-color: var(--background);
+    opacity: 0.9;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .header.fixed-scrolling { transform: translateY(-100%); }
@@ -2999,10 +3029,45 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 /**
+ * Dialog Preview
+ */
+.dialog-preview .modal-dialog { align-items: center; }
+
+.dialog-preview .modal-dialog .modal-content { background-color: var(--scrim) !important; }
+
+.dialog-preview .modal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: end !important;
+    gap: var(--spacing-2) !important;
+}
+
+.dialog-preview .carousel {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+.dialog-preview img,
+.dialog-preview .carousel-inner {
+    border-radius: 0;
+    max-height: 100dvh;
+}
+
+.dialog-preview [data-bs-slide="prev"], 
+.dialog-preview [data-bs-slide="next"] { margin-inline: var(--spacing-6); }
+
+/**
  * Footer
  */
 .footer {
-    background-color: var(--background);
+    backdrop-filter: blur(30px);
     border-top: 1px solid var(--outline);
     padding-block: var(--spacing-4);
     width: 100%;
@@ -3010,6 +3075,17 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.footer::before {
+    content: "";
+    background-color: var(--background);
+    opacity: 0.9;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .footer .container {
@@ -3098,7 +3174,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
  * Explore Header
  */
 .explore-header {
-    background-color: var(--background);
+    backdrop-filter: blur(30px);
     position: sticky;
     top: var(--header-height);
     z-index: 25;
@@ -3106,6 +3182,17 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     margin-block-end: var(--spacing-6);
     padding-block: var(--spacing-6);
     transition: top var(--tr-duration-short);
+}
+
+.explore-header::before {
+    content: "";
+    background-color: var(--background);
+    opacity: 0.9;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .explore-header.fixed-scrolling { top: 0; }

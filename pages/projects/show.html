@@ -1495,7 +1495,89 @@
         <div class="modal-dialog modal-fullscreen">
 
             <div class="modal-content">
-                <!-- go -->
+
+                <div class="modal-header">
+                    <a href="../../pages/projects/live-preview.html" target="_blank" class="btn scrim small p-start-0">
+                        <div class="icon-btn small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                            </svg>
+                        </div>
+
+                        <p class="text-body-medium">Live Preview</p>
+
+                        <div class="state-layer"></div>
+                    </a>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn scrim small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+                
+                <div id="carousel-preview-photos" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-preview-photos" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-preview-photos" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-preview-photos" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel-preview-photos" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <a href="https://cdn.dribbble.com/userupload/47174194/file/bb607d1a7faa038c5ece233e7631cc8f.jpg?resize=1504x1128&vertical=center" target="_blank" class="img-contain">
+                                <img src="https://cdn.dribbble.com/userupload/47174194/file/bb607d1a7faa038c5ece233e7631cc8f.jpg?resize=1504x1128&vertical=center" alt="title project" loading="lazy" class="img-contain" />
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://cdn.dribbble.com/userupload/47227409/file/2e1aae2e8f808ad3827f769c4ea5cadb.jpg?resize=1504x1128&vertical=center" target="_blank" class="img-contain">
+                                <img src="https://cdn.dribbble.com/userupload/47227409/file/2e1aae2e8f808ad3827f769c4ea5cadb.jpg?resize=1504x1128&vertical=center" alt="title project" loading="lazy" class="img-contain" />
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://cdn.dribbble.com/userupload/47227410/file/ac5ff01b3389af90becef105eed77030.jpg?resize=1504x1128&vertical=center" target="_blank" class="img-contain">
+                                <img src="https://cdn.dribbble.com/userupload/47227410/file/ac5ff01b3389af90becef105eed77030.jpg?resize=1504x1128&vertical=center" alt="title project" loading="lazy" class="img-contain" />
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="https://cdn.dribbble.com/userupload/47227408/file/6121a8f0c901cabd33bee975f54d9235.jpg?resize=1504x1128&vertical=center" target="_blank" class="img-contain">
+                                <img src="https://cdn.dribbble.com/userupload/47227408/file/6121a8f0c901cabd33bee975f54d9235.jpg?resize=1504x1128&vertical=center" alt="title project" loading="lazy" class="img-contain" />
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel-preview-photos" data-bs-slide="prev"></button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#carousel-preview-photos" data-bs-slide="next"></button>
+
+                    <button type="button" class="icon-btn scrim small desktop" data-bs-target="#carousel-preview-photos" data-bs-slide="prev" data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                        <div class="arrow-dir">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="button" class="icon-btn scrim small desktop" data-bs-target="#carousel-preview-photos" data-bs-slide="next" data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                        <div class="arrow-dir">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </button>
+                </div>
+
             </div>
 
         </div>
@@ -1558,10 +1640,7 @@
 
                 <div class="wrapper-between">
                     <div class="wrapper flex-nowrap desktop">
-                        <a
-                            href="../../pages/users/profiles/index.html"
-                            class="creator-content"
-                            data-bs-toggle="popover"
+                        <a href="../../pages/users/profiles/index.html" class="creator-content" data-bs-toggle="popover"
                             data-bs-content='
                                 <a href="../../pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
 
@@ -1652,20 +1731,34 @@
                                         </button>
                                         </div>
                                     </div>
-                                '
-                        >
+                                '>
                             <div class="avatar small">
-                                <img src="https://cdn.dribbble.com/users/1667332/avatars/normal/9cc7db271826b8cf27dbbe06f78eb145.png?1749636342" alt="username" loading="lazy" class="img-avatar img-cover" />
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                <img src="https://cdn.dribbble.com/users/1667332/avatars/normal/9cc7db271826b8cf27dbbe06f78eb145.png?1749636342"
+                                    alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                </svg>
                             </div>
-    
+
                             <div class="wrapper-content gap-0">
                                 <p class="text-body-medium line-clamp line-clamp-1">
                                     One Week Wonders
-        
+
                                     <span class="check">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1">
+                                            </path>
+                                            <path d="M9 12l2 2l4 -4"></path>
+                                        </svg>
                                     </span>
                                 </p>
 
@@ -1679,14 +1772,21 @@
                             <div class="state-layer"></div>
                         </button>
                     </div>
-    
+
                     <ul class="swipper">
 
                         <li class="flex mobile">
                             <a href="../../pages/users/profiles/index.html" class="avatar small">
-                                <img src="https://cdn.dribbble.com/users/1667332/avatars/normal/9cc7db271826b8cf27dbbe06f78eb145.png?1749636342" alt="username" loading="lazy" class="img-avatar img-cover" />
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                <img src="https://cdn.dribbble.com/users/1667332/avatars/normal/9cc7db271826b8cf27dbbe06f78eb145.png?1749636342"
+                                    alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                </svg>
                             </a>
 
                             <button type="button" class="btn inverse small">
@@ -1697,9 +1797,15 @@
                         </li>
 
                         <li>
-                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="tooltip"
+                                data-bs-title="I Like This" data-bs-placement="bottom">
                                 <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                    </svg>
                                 </div>
 
                                 <p class="text-body-medium">187</p>
@@ -1709,9 +1815,19 @@
                         </li>
 
                         <li>
-                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal"
+                                data-bs-target="#dialog-share">
                                 <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-share">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path d="M8.7 10.7l6.6 -3.4" />
+                                        <path d="M8.7 13.3l6.6 3.4" />
+                                    </svg>
                                 </div>
 
                                 <p class="text-body-medium">Share</p>
@@ -1723,7 +1839,12 @@
                         <li>
                             <button type="button" class="btn secondary small p-start-0">
                                 <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" />
+                                    </svg>
                                 </div>
 
                                 <p class="text-body-medium">Save</p>
@@ -1733,9 +1854,16 @@
                         </li>
 
                         <li>
-                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal"
+                                data-bs-target="#dialog-report">
                                 <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9" /><path d="M5 21v-7" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-flag">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9" />
+                                        <path d="M5 21v-7" />
+                                    </svg>
                                 </div>
 
                                 <p class="text-body-medium">Report</p>
@@ -1745,9 +1873,16 @@
                         </li>
 
                         <li class="flex desktop">
-                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-preview">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal"
+                                data-bs-target="#dialog-preview">
                                 <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                        <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                    </svg>
                                 </div>
 
                                 <p class="text-body-medium">Preview</p>
@@ -1756,9 +1891,18 @@
                             </button>
 
                             <button type="button" class="btn inverse small">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M17 17h-11v-14h-2" />
+                                    <path d="M6 5l14 1l-1 7h-13" />
+                                </svg>
 
-                                <p class="text-body-medium">Add To Cart &nbsp; <strong>180£E</strong> <span class="opacity-50 text-decoration-line-through text-body-small">200£E</span></p>
+                                <p class="text-body-medium">Add To Cart &nbsp; <strong>180£E</strong> <span
+                                        class="opacity-50 text-decoration-line-through text-body-small">200£E</span></p>
 
                                 <div class="state-layer"></div>
                             </button>
