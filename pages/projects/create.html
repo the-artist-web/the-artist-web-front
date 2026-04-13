@@ -52,12 +52,564 @@
     <!-- Custom Js Link -->
     <script type="module" src="../../src/js/theme.js"></script>
     <script type="module" src="../../src/js/app.js"></script>
+    <script type="module" src="../../src/js/crud-project.js"></script>
 
 </head>
 
 <body>
+
+    <!-- Start Loading -->
+    <div class="start-loading" data-start-loading>
+        <div class="logo extra-large">
+            <img src="../../src/assets/images/logo.svg" alt="The Artist Web" class="img-logo img-cover" />
+        </div>
+    </div>
     
+    <!-- App Bar -->
+    <header class="header">
+
+        <div class="container container-xl">
+
+            <a href="../../index.html" class="icon-btn text small mobile" data-bs-toggle="tooltip" data-bs-title="Back To Page" data-bs-placement="bottom">
+                <div class="arrow-dir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg>
+                </div>
+
+                <div class="state-layer"></div>
+            </a>
+
+            <a href="../../index.html" class="btn text small p-start-0 desktop">
+                <div class="icon-btn small arrow-dir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg>
+                </div>
+
+                <p class="text-body-medium">Back To Page</p>
+
+                <div class="state-layer"></div>
+            </a>
+
+            <div class="dropdown">
+                <span data-bs-toggle="dropdown" data-bs-display="static">
+                    <button type="button" class="avatar small" data-bs-toggle="tooltip" data-bs-title="The Artist Web" data-bs-placement="bottom">
+                        <!-- <img src="" alt="profile photo" loading="lazy" class="img-avatar img-cover" /> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                        <div class="icon-btn success"></div>
+                    </button>
+                </span>
+
+                <ul class="dropdown-menu dropdown-menu-end medium custom-scrollbar-hidden">
+
+                    <li>
+                        <a href="../../pages/users/profiles/index.html" class="dropdown-item">
+                            <div class="avatar small">
+                                <!-- <img src="" alt="profile photo" loading="lazy" class="img-avatar img-cover" /> -->
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                <div class="icon-btn success"></div>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">
+                                    The Artist Web
+                                
+                                    <span class="check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+                                </p>
+
+                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1 text-lowercase">@theartistweb</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/analytics.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /><path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" /><path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" /></svg>
+
+                            <p class="text-body-medium">Dashboard</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                            <p class="text-body-medium">Profile</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/wallets/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wallet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" /><path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" /></svg>
+
+                            <p class="text-body-medium">Wallet</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/downloads/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" /><path d="M19 16v6" /><path d="M22 19l-3 3l-3 -3" /></svg>
+
+                            <p class="text-body-medium">Downloads</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/messages/index.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+
+                            <p class="text-body-medium">Messages</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/settings/edit-profile.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+
+                            <p class="text-body-medium">Settings</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/my-projects.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stack-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l8 4l8 -4l-8 -4l-8 4" /><path d="M12 16l-4 -2l-4 2l8 4l8 -4l-4 -2l-4 2" fill="currentColor" /><path d="M8 10l-4 2l4 2m8 0l4 -2l-4 -2" /></svg>
+
+                            <p class="text-body-medium">My Projects</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/my-challenges.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trophy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21l8 0" /><path d="M12 17l0 4" /><path d="M7 4l10 0" /><path d="M17 4v8a5 5 0 0 1 -10 0v-8" /><path d="M3 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 9a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /></svg>
+
+                            <p class="text-body-medium">My Challenges</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/my-forums.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+
+                            <p class="text-body-medium">My Forums</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/favorites.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+
+                            <p class="text-body-medium">Favorites</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/comments.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" /></svg>
+
+                            <p class="text-body-medium">Comments</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../pages/users/profiles/saved.html" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
+
+                            <p class="text-body-medium">Saved</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../legal/report-problem.html" target="_blank" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
+
+                            <p class="text-body-medium">Report a problem</p>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <form action="#" method="POST">
+                            <button type="submit" class="dropdown-item error">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" /><path d="M15 12h-12l3 -3" /><path d="M6 15l-3 -3" /></svg>
+                                </div>
+
+                                <p class="text-body-medium">Logout</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Create Project -->
+        <section class="crud-project section">
+
+            <div class="container container-lg">
+
+                <div class="title-sec">
+                    <div class="wrapper-block">
+                        <h1 class="text-title-large">Create Project</h1>
     
+                        <p class="text-body-medium text-on-background-variant">Fill in the details to publish your digital project</p>
+                    </div>
+                </div>
+
+                <form action="" method="POST" class="crud-project-wrapper">
+
+                    <div class="crud-project-body">
+
+                        <div class="wrapper-block">
+                            <label for="upload-image" class="upload-image img-ratio-4x3" data-upload-image>
+                                <div class="icon-big">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                </div>
+    
+                                <div class="wrapper-content">
+                                    <h5 class="text-title-medium text-capitalize"><strong>Click to upload Cover Image</strong></h5>
+    
+                                    <p class="text-body-medium text-on-background-variant">Aspect ratio 4:3 recommended. Max 10MB</p>
+                                </div>
+    
+                                <img src="" alt="" loading="lazy" class="upload-img img-cover" hidden data-img-project />
+    
+                                <input type="file" name="cover-image" id="upload-image" hidden />
+    
+                                <div class="state-layer"></div>
+                            </label>
+
+                            <!-- <p class="text-body-medium text-error"></p> -->
+                        </div>
+                        
+                        <div class="card filled" style="min-height: max-content;">
+                            <div class="card-body">
+                                <div class="form-card">
+                                    <h5 class="text-title-medium"><strong>Basic Info</strong></h5>
+        
+                                    <div class="form-group">
+                                        <label for="title-project">Project Title</label>
+
+                                        <div class="input-wrapper outline medium">
+                                            <input type="text" placeholder="e.g. Premium Dashboard UI Kit" name="title" value="" class="text-body-large" data-title-project />
+                                        </div>
+
+                                        <!-- <p class="text-body-medium text-error"></p> -->
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="category-project">Category</label>
+
+                                        <div class="grid-3-base">
+                                            <div class="select-wrapper outline medium">
+                                                <select name="category" id="category-project" class="text-body-large">
+                                                    <option value="">Select Category</option>
+                                                    <option value="UI Kit" selected>UI Kit</option>
+                                                    <option value="Icons">Icons</option>
+                                                    <option value="Templates">Templates</option>
+                                                    <option value="Fonts">Fonts</option>
+                                                    <option value="Illustrations">Illustrations</option>
+                                                    <option value="3D Assets">3D Assets</option>
+                                                    <option value="Mockups">Mockups</option>
+                                                </select>
+    
+                                                <div class="icon-btn medium arrow-select">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                                </div>
+                                            </div>
+
+                                            <div class="select-wrapper outline medium">
+                                                <select name="sub_category" class="text-body-large">
+                                                    <option value="">Select Sub Category</option>
+                                                    <option value="Web UI" selected>Web UI</option>
+                                                    <option value="Mobile UI">Mobile UI</option>
+                                                    <option value="Dashboard">Dashboard</option>
+                                                </select>
+    
+                                                <div class="icon-btn medium arrow-select">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                                </div>
+                                            </div>
+
+                                            <div class="select-wrapper outline medium">
+                                                <select name="sub_sub_category" class="text-body-large">
+                                                    <option value="">Select Sub Sub Category</option>
+                                                    <option value="Admin Dashboard" selected>Admin Dashboard</option>
+                                                    <option value="Analytics">Analytics</option>
+                                                    <option value="E-commerce">E-commerce</option>
+                                                </select>
+    
+                                                <div class="icon-btn medium arrow-select">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- <p class="text-body-medium text-error"></p> -->
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="description-prject">Description</label>
+
+                                        <div class="textarea-wrapper outline">
+                                            <textarea placeholder="Describe your project..." name="description" id="description-prject" class="text-body-large"></textarea>
+
+                                            <div class="action-desction-project">
+                                                <button type="button" class="hover text-on-background-variant flex gap-2" style="text-decoration: none !important;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-hash"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 9l14 0" /><path d="M5 15l14 0" /><path d="M11 4l-4 16" /><path d="M17 4l-4 16" /></svg>
+
+                                                    <p class="text-body-medium">Hashtags</p>
+                                                </button>
+                                                
+                                                <button type="button" class="hover text-on-background-variant flex gap-2" style="text-decoration: none !important;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-at"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" /></svg>
+
+                                                    <p class="text-body-medium">Mention</p>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- <p class="text-body-medium text-error"></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card filled" style="min-height: max-content;" data-uploader-media-gallery>
+                            <div class="card-body">
+                                <div class="form-card">
+                                    <h5 class="text-title-medium"><strong>Media Gallery</strong></h5>
+
+                                    <label for="uploader-media-gallery" class="upload-image">
+                                        <div class="icon-big">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-library-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 5.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667l0 -8.666" /><path d="M4.012 7.26a2.005 2.005 0 0 0 -1.012 1.737v10c0 1.1 .9 2 2 2h10c.75 0 1.158 -.385 1.5 -1" /><path d="M17 7h.01" /><path d="M7 13l3.644 -3.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" /><path d="M15 12l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l2.644 2.644" /></svg>
+                                        </div>
+            
+                                        <div class="wrapper-content">
+                                            <h5 class="text-title-medium"><strong>Browse files to upload</strong></h5>
+            
+                                            <p class="text-body-medium text-on-background-variant">Aspect ratio 4:3 recommended. Max 10MB</p>
+                                        </div>
+            
+                                        <input type="file" id="uploader-media-gallery" hidden multiple />
+            
+                                        <div class="state-layer"></div>
+                                    </label>
+                                    
+                                    <ul class="grid-3-base" hidden data-media-gallery-list></ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card filled" style="min-height: max-content;" data-uploader-media-gallery>
+                            <div class="card-body">
+                                <div class="form-card">
+                                    <h5 class="text-title-medium"><strong>Pricing</strong></h5>
+
+                                    <!-- go -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-between">
+                            <button type="submit" class="btn inverse small">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M14 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                                </div>
+    
+                                <p class="text-body-medium">Publish Project</p>
+    
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <div class="form-check">
+                                <input type="checkbox" name="publish" id="switch-publish" class="switch-btn" />
+
+                                <label for="switch-publish">Publish</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="crud-project-live-preview">
+
+                        <div class="content-wrapper">
+                            <p class="text-body-large">Live Preview</p>
+    
+                            <div class="card">
+                                <div class="figure">
+                                    <div class="icon-big">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                    </div>
+    
+                                    <img src="" alt="" loading="lazy" class="img-card img-cover" hidden data-img-card />
+    
+                                    <div class="btn white small p-start-0 price">
+                                        <div class="icon-btn small">
+                                            <div class="icon-btn success extra-small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3" /><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" /><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598" /><path d="M3 6v10c0 .888 .772 1.45 2 2" /><path d="M3 11c0 .888 .772 1.45 2 2" /></svg>
+                                            </div>
+                                        </div>
+    
+                                        <p class="text-body-medium"><strong><span data-price-card>0</span><span class="text-success">£E</span></strong> <span class="opacity-50 text-decoration-line-through text-body-small" hidden data-discount-card>0£E</span></p>
+                                    </div>
+    
+                                    <div class="product-content desktop" style="transform: translate(0);">
+                                        <p class="text-body-large line-clamp line-clamp-1"><strong data-title-cart>...</strong></p>
+    
+                                        <div class="flex">
+                                            <span class="icon-btn text small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                                            </span>
+    
+                                            <span class="icon-btn text small">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                            
+                                <div class="wrapper-between flex-nowrap align-items-start">
+                                    <div class="flex align-items-start">
+                                        <div class="avatar extra-small">
+                                            <img src="../../src/assets/images/theartistweb.svg" alt="profile photo" loading="lazy" class="img-avatar img-cover" />
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                        </div>
+    
+                                        <div class="wrapper-content gap-0">
+                                            <p class="text-body-medium line-clamp line-clamp-1">
+                                                The Artist Web
+    
+                                                <span class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                                </span>
+                                            </p>
+    
+                                            <p class="text-body-small text-on-background-variant">0 Selling</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="wrapper flex-nowrap text-on-background-variant" style="gap: var(--spacing-3);">
+                                        <div class="flex gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-inverse icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+                                            
+                                            <p class="text-body-medium">0</p>
+                                        </div>
+    
+                                        <div class="flex gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6" /></svg>
+                                            
+                                            <p class="text-body-medium">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-wrapper">
+                            <p class="text-body-large">Quick Stats</p>
+
+                            <div class="grid-2-base">
+
+                                <div class="card filled">
+                                    <div class="card-body">
+                                        <div class="wrapper-content align-items-center text-center">
+                                            <h5 class="text-title-medium text-info"><strong>1.2k</strong></h5>
+
+                                            <p class="text-label-small text-on-background-variant text-uppercase">Views</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card filled">
+                                    <div class="card-body">
+                                        <div class="wrapper-content align-items-center text-center">
+                                            <h5 class="text-title-medium text-error"><strong>128</strong></h5>
+
+                                            <p class="text-label-small text-on-background-variant text-uppercase">Likes</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card filled">
+                                    <div class="card-body">
+                                        <div class="wrapper-content align-items-center text-center">
+                                            <h5 class="text-title-medium text-success"><strong>34</strong></h5>
+
+                                            <p class="text-label-small text-on-background-variant text-uppercase">Selling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card filled">
+                                    <div class="card-body">
+                                        <div class="wrapper-content align-items-center text-center">
+                                            <h5 class="text-title-medium text-warning"><strong>1,666£E</strong></h5>
+
+                                            <p class="text-label-small text-on-background-variant text-uppercase">Revenue</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
     
 </body>
 

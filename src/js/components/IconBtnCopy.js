@@ -1,5 +1,7 @@
 "use strict";
 
+const $htmlLang = document.documentElement.lang;
+
 export const IconBtnCopy = ($element) => {
     // Tooltip
     const $tooltip = new bootstrap.Tooltip($element, {
@@ -24,7 +26,7 @@ export const IconBtnCopy = ($element) => {
                 <div class="state-layer"></div>
             `;
     
-            $tooltip.setContent({ ".tooltip-inner": "Copied" });
+            $tooltip.setContent({ ".tooltip-inner": $htmlLang === "en" ? "Copied" : "تم النسخ" });
         }, 500);
 
         setTimeout(() => {
@@ -39,7 +41,7 @@ export const IconBtnCopy = ($element) => {
                     <div class="state-layer"></div>
                 `;
     
-                $tooltip.setContent({ ".tooltip-inner": "Copy" });
+                $tooltip.setContent({ ".tooltip-inner": $htmlLang === "en" ? "Copy" : "نسخ" });
             }, 500);
         }, 2000);
     });

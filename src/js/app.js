@@ -13,6 +13,9 @@ import { DragDropSheet } from "./components/DragDropSheet.js";
 import { Popover } from "./components/Popover.js";
 import { IconBtnCopy } from "./components/IconBtnCopy.js";
 import { AddComment } from "./components/AddComment.js";
+import { UploadImage } from "./components/UploadImage.js";
+import { TextareaAutoExpanding } from "./components/TextareaAutoExpanding.js";
+import { UploaderMediaGallery } from "./components/UploaderMediaGallery.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -83,3 +86,21 @@ if ($iconBtnsCopy.length) $iconBtnsCopy.forEach($elem => IconBtnCopy($elem));
  */
 const $addComments = document.querySelectorAll("[data-add-comments]");
 if ($addComments.length) $addComments.forEach($elem => AddComment($elem));
+
+/**
+ * Upload Image
+ */
+const $uploadImage = document.querySelectorAll("[data-upload-image]");
+if ($uploadImage.length) $uploadImage.forEach($elem => UploadImage($elem));
+
+/**
+ * Textarea Auth Expanding
+ */
+const $textareaAll = document.querySelectorAll("textarea");
+if ($textareaAll.length) $textareaAll.forEach($elem => TextareaAutoExpanding($elem));
+
+/**
+ * Uploader Media Gallery
+ */
+const $uploaderMediaGallery = document.querySelectorAll("[data-uploader-media-gallery]");
+if ($uploaderMediaGallery.length) $uploaderMediaGallery.forEach($elem => UploaderMediaGallery($elem));
