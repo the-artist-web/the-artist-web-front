@@ -288,7 +288,7 @@
 
     <main class="main">
 
-        <!-- Create Project -->
+        <!-- Crud Project -->
         <section class="crud-project section">
 
             <div class="container container-lg">
@@ -301,23 +301,23 @@
                     </div>
                 </div>
 
-                <form action="" method="POST" class="crud-project-wrapper">
+                <form action="" method="POST" class="crud-project-wrapper" enctype="multipart/form-data">
 
                     <div class="crud-project-body">
 
-                        <div class="wrapper-block">
-                            <label for="upload-image" class="upload-image img-ratio-4x3" data-upload-image>
+                        <div class="form-group">
+                            <label for="upload-image" class="uploader img-ratio-4x3" data-upload-image>
                                 <div class="icon-big">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
                                 </div>
     
                                 <div class="wrapper-content">
-                                    <h5 class="text-title-medium text-capitalize"><strong>Click to upload Cover Image</strong></h5>
-    
-                                    <p class="text-body-medium text-on-background-variant">Aspect ratio 4:3 recommended. Max 10MB</p>
+                                    <h5 class="text-title-medium text-capitalize"><strong>Upload Main Cover Image</strong></h5>
+                                        
+                                    <p class="text-body-medium text-on-background-variant">Recommended aspect ratio 4:3.<br /> Max image size: 10MB</p>
                                 </div>
     
-                                <img src="" alt="" loading="lazy" class="upload-img img-cover" hidden data-img-project />
+                                <img src="" alt="" loading="lazy" class="upload-img img-cover" hidden />
     
                                 <input type="file" name="cover-image" id="upload-image" hidden />
     
@@ -426,33 +426,111 @@
                                 <div class="form-card">
                                     <h5 class="text-title-medium"><strong>Media Gallery</strong></h5>
 
-                                    <label for="uploader-media-gallery" class="upload-image">
+                                    <label for="uploader-media-gallery" class="uploader">
                                         <div class="icon-big">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-library-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 5.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667l0 -8.666" /><path d="M4.012 7.26a2.005 2.005 0 0 0 -1.012 1.737v10c0 1.1 .9 2 2 2h10c.75 0 1.158 -.385 1.5 -1" /><path d="M17 7h.01" /><path d="M7 13l3.644 -3.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" /><path d="M15 12l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l2.644 2.644" /></svg>
                                         </div>
             
                                         <div class="wrapper-content">
-                                            <h5 class="text-title-medium"><strong>Browse files to upload</strong></h5>
-            
-                                            <p class="text-body-medium text-on-background-variant">Aspect ratio 4:3 recommended. Max 10MB</p>
+                                            <h5 class="text-title-medium"><strong>Upload Media Gallery</strong></h5>
+
+                                            <p class="text-body-medium text-on-background-variant">Browse and choose the images you want to upload<br /> Maximum size of a single image: 10MB</p>
                                         </div>
             
                                         <input type="file" id="uploader-media-gallery" hidden multiple />
             
                                         <div class="state-layer"></div>
                                     </label>
-                                    
+
                                     <ul class="grid-3-base" hidden data-media-gallery-list></ul>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="card filled" style="min-height: max-content;" data-uploader-media-gallery>
+                        <div class="card filled" style="min-height: max-content;" data-price-amounts>
                             <div class="card-body">
                                 <div class="form-card">
                                     <h5 class="text-title-medium"><strong>Pricing</strong></h5>
+                                    
+                                    <div class="form-group">
+                                        <label for="price_project">Price (£E)</label>
 
-                                    <!-- go -->
+                                        <div class="input-wrapper outline medium p-start-0">
+                                            <div class="icon-btn medium">
+                                                <p class="text-body-large text-on-background-variant">£E</p>
+                                            </div>
+
+                                            <input type="number" placeholder="0.00" name="price" value="" id="price_project" class="text-body-large" data-price />
+                                        </div>
+
+                                        <!-- <p class="text-body-medium text-error"></p> -->
+                                    </div>
+
+                                    <div class="wrapper-between">
+                                        <p class="text-body-medium text-on-background-variant">Fixed Amount</p>
+
+                                        <input type="checkbox" class="switch-btn" data-bs-toggle="collapse" data-bs-target="#discount_collapse" />
+                                    </div>
+                                    
+                                    <div class="collapse" id="discount_collapse">
+                                        <div class="form-group">
+                                            <label for="discount_project">Discount (£E)</label>
+    
+                                            <div class="input-wrapper outline medium">
+                                                <input type="number" placeholder="0.00" name="discount" value="" id="discount_project" class="text-body-large" data-discount />
+                                            </div>
+    
+                                            <!-- <p class="text-body-medium text-error"></p> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="alert tonal-success">
+                                        <p class="text-body-large text-on-background">Final Price</p>
+
+                                        <h4 class="text-title-large"><strong><span data-final-price>0.00</span>£E</strong></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card filled" style="min-height: max-content;">
+                            <div class="card-body">
+                                <div class="form-card" data-upload-file>
+                                    <h5 class="text-title-medium"><strong>Link & File</strong></h5>
+                                    
+                                    <div class="form-group">
+                                        <label for="demo_url">Demo URL</label>
+
+                                        <div class="input-wrapper outline medium">
+                                            <input type="url" placeholder="https://your-demo-url" name="demo_url" value="" class="text-body-large" />
+                                        </div>
+
+                                        <!-- <p class="text-body-medium text-error"></p> -->
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="upload-file" class="uploader">
+                                            <div class="icon-big">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-upload"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 9l5 -5l5 5" /><path d="M12 4l0 12" /></svg>
+                                            </div>
+            
+                                            <div class="wrapper-content">
+                                                <h5 class="text-title-medium"><strong>Upload Project File</strong></h5>
+                                                    
+                                                <p class="text-body-medium text-on-background-variant">
+                                                    Browse and choose the file you want to upload
+                                                </p>
+                                            </div>
+                
+                                            <input type="file" id="upload-file" hidden />
+                
+                                            <div class="state-layer"></div>
+                                        </label>
+
+                                        <!-- <p class="text-body-medium text-error"></p> -->
+                                    </div>
+
+                                    <ul hidden data-live-preview-file></ul>
                                 </div>
                             </div>
                         </div>
@@ -497,7 +575,7 @@
                                             </div>
                                         </div>
     
-                                        <p class="text-body-medium"><strong><span data-price-card>0</span><span class="text-success">£E</span></strong> <span class="opacity-50 text-decoration-line-through text-body-small" hidden data-discount-card>0£E</span></p>
+                                        <p class="text-body-medium"><strong><span data-price-card>0.00</span><span class="text-success">£E</span></strong> <span class="opacity-50 text-decoration-line-through text-body-small" hidden data-discount-card></span></p>
                                     </div>
     
                                     <div class="product-content desktop" style="transform: translate(0);">
@@ -561,7 +639,7 @@
                                 <div class="card filled">
                                     <div class="card-body">
                                         <div class="wrapper-content align-items-center text-center">
-                                            <h5 class="text-title-medium text-info"><strong>1.2k</strong></h5>
+                                            <h5 class="text-title-medium text-info"><strong>0</strong></h5>
 
                                             <p class="text-label-small text-on-background-variant text-uppercase">Views</p>
                                         </div>
@@ -571,7 +649,7 @@
                                 <div class="card filled">
                                     <div class="card-body">
                                         <div class="wrapper-content align-items-center text-center">
-                                            <h5 class="text-title-medium text-error"><strong>128</strong></h5>
+                                            <h5 class="text-title-medium text-error"><strong>0</strong></h5>
 
                                             <p class="text-label-small text-on-background-variant text-uppercase">Likes</p>
                                         </div>
@@ -581,7 +659,7 @@
                                 <div class="card filled">
                                     <div class="card-body">
                                         <div class="wrapper-content align-items-center text-center">
-                                            <h5 class="text-title-medium text-success"><strong>34</strong></h5>
+                                            <h5 class="text-title-medium text-success"><strong>0</strong></h5>
 
                                             <p class="text-label-small text-on-background-variant text-uppercase">Selling</p>
                                         </div>
@@ -591,7 +669,7 @@
                                 <div class="card filled">
                                     <div class="card-body">
                                         <div class="wrapper-content align-items-center text-center">
-                                            <h5 class="text-title-medium text-warning"><strong>1,666£E</strong></h5>
+                                            <h5 class="text-title-medium text-warning"><strong>0.00£E</strong></h5>
 
                                             <p class="text-label-small text-on-background-variant text-uppercase">Revenue</p>
                                         </div>

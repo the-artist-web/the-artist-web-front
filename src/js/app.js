@@ -16,6 +16,8 @@ import { AddComment } from "./components/AddComment.js";
 import { UploadImage } from "./components/UploadImage.js";
 import { TextareaAutoExpanding } from "./components/TextareaAutoExpanding.js";
 import { UploaderMediaGallery } from "./components/UploaderMediaGallery.js";
+import { PriceAmount } from "./components/PriceAmount.js";
+import { UploadFile } from "./components/UploadFile.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -104,3 +106,15 @@ if ($textareaAll.length) $textareaAll.forEach($elem => TextareaAutoExpanding($el
  */
 const $uploaderMediaGallery = document.querySelectorAll("[data-uploader-media-gallery]");
 if ($uploaderMediaGallery.length) $uploaderMediaGallery.forEach($elem => UploaderMediaGallery($elem));
+
+/**
+ * Price Amounts
+ */
+const $priceAmounts = document.querySelectorAll("[data-price-amounts]");
+if ($priceAmounts.length) $priceAmounts.forEach($elem => PriceAmount($elem));
+
+/**
+ * Upload File
+ */
+const $uploadFile = document.querySelectorAll("[data-upload-file]");
+if ($uploadFile.length) $uploadFile.forEach($elem => UploadFile($elem));
