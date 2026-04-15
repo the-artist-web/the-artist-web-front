@@ -1008,7 +1008,7 @@
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
 
-                            <div class="icon-btn success"></div>
+                            
                         </button>
                     </span>
 
@@ -1021,7 +1021,7 @@
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
 
-                                    <div class="icon-btn success"></div>
+                                    
                                 </div>
 
                                 <div class="wrapper-content gap-0">
@@ -1251,11 +1251,1408 @@
 
     </aside>
 
+    <!-- Dialog Share -->
+    <div class="modal fade" id="dialog-share">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Share</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+                    
+                    <div class="swipper-container" data-swippers>
+                        <button type="button" class="icon-btn secondary elevated extra-small" data-swipper-prev data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                            <div class="arrow-dir">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <ul class="nav nav-tabs" id="exploreTabs" style="gap: var(--spacing-4);" data-swipper-container>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">E-Mail</p>
+                                </a>
+                            </li>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">WhatsApp</p>
+                                </a>
+                            </li>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">Facebook</p>
+                                </a>
+                            </li>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">X.com</p>
+                                </a>
+                            </li>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-reddit"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14l.999 0" /><path d="M12 8l1 -5l6 1" /><path d="M18 4a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M8.5 13a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0" fill="currentColor" /><path d="M14.5 13a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0" fill="currentColor" /><path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">Reddit</p>
+                                </a>
+                            </li>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-pinterest"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 20l4 -9" /><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">Pinterest</p>
+                                </a>
+                            </li>
+
+                            <li class="swipper-item">
+                                <a href="#" target="_blank" class="wrapper-block align-items-center">
+                                    <div class="icon-btn secondary medium">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </div>
+
+                                    <p class="text-body-small text-nowrap">Linked In</p>
+                                </a>
+                            </li>
+    
+                        </ul>
+                        
+                        <button type="button" class="icon-btn secondary elevated extra-small" data-swipper-next data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                            <div class="arrow-dir">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="input-wrapper secondary medium rounded-pill p-start-0 p-end-0">
+                            <div class="icon-btn medium text-on-background-variant">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                            </div>
+
+                            <input type="url" value="https://github.com/the-artist-web" class="text-body-large" disabled />
+
+                            <span class="icon-btn medium">
+                                <button type="button" class="icon-btn inverse small" data-icon-btns-copy="https://github.com/the-artist-web" data-bs-toggle="tooltip" data-bs-title="copy" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 9.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667l0 -8.666" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Dialog Report -->
+    <div class="modal fade" id="dialog-report">
+
+        <div class="modal-dialog">
+
+            <form action="" method="POST" class="modal-content">
+
+                <div class="modal-header">
+                    <div class="wrapper-block">
+                        <p class="text-body-large"><strong>Report</strong></p>
+
+                        <p class="text-body-medium text-on-background-variant" style="padding-inline-end: var(--spacing-2) !important;">Please review our <a href="../../legal/terms.html" target="_blank" class="btn-link">Community Guidelines</a> for additional information about what is and isn't permitted on The Artist Web.</p>
+                    </div>
+                </div>
+
+                <ul class="modal-list">
+
+                    <li>
+                        <label for="report-1" class="modal-link">
+                            <input type="radio" name="report_project" value="Spam" id="report-1" class="radio-btn">
+
+                            <p class="text-body-medium text-on-background">Spam or misleading</p>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="report-2" class="modal-link">
+                            <input type="radio" name="report_project" value="Copyright" id="report-2" class="radio-btn">
+
+                            <p class="text-body-medium text-on-background">Copyright violation</p>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="report-3" class="modal-link">
+                            <input type="radio" name="report_project" value="Low Quality" id="report-3" class="radio-btn">
+
+                            <p class="text-body-medium text-on-background">Low quality or broken files</p>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label for="report-4" class="modal-link">
+                            <input type="radio" name="report_project" value="Inappropriate" id="report-4" class="radio-btn">
+
+                            <p class="text-body-medium text-on-background">Inappropriate content</p>
+                        </label>
+                    </li>
+
+                    <li>
+                        <div class="modal-link" style="grid-template-columns: minmax(0, 1fr);">
+                            <div class="form-group">
+                                <div class="textarea-wrapper secondary">
+                                    <textarea placeholder="Tell us more..." name="other-content" class="text-body-large text-on-background"></textarea>
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn secondary small" data-bs-dismiss="modal">
+                        <p class="text-body-medium">Cancel</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="submit" class="btn inverse small">
+                        <p class="text-body-medium">Send</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
     <main class="main main-start">
         
         <aside>aside</aside>
 
-        body
+        <!-- Search Page -->
+        <section class="search-page section">
+
+            <!-- Explore Header -->
+            <header class="explore-header" data-fixed-scrolling>
+
+                <div class="container">
+
+                    <div class="search-body">
+
+                        <div class="search-container" data-search>
+
+                            <form action="#" method="POST" class="search">
+                                <button type="submit" class="icon-btn small">
+                                    <div class="arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                    </div>
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <input type="search" placeholder="Search The Artist Web" name="search" value="E-Commerce" class="text-body-medium" autocomplete="off" data-input-search />
+
+                                <div class="dropdown mobile">
+                                    <span data-bs-toggle="dropdown">
+                                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Type" data-bs-placement="bottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+        
+                                            <div class="state-layer"></div>
+                                        </button>
+                                    </span>
+
+                                    <ul class="dropdown-menu dropdown-meun-end small">
+
+                                        <li>
+                                            <a href="../pages/search.html" class="dropdown-item active">
+                                                <p class="text-body-medium">Projects</p>
+
+                                                <div class="state-layer"></div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../pages/creators.html" class="dropdown-item">
+                                                <p class="text-body-medium">Creators</p>
+
+                                                <div class="state-layer"></div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="../pages/challenges/index.html" class="dropdown-item">
+                                                <p class="text-body-medium">Challenges</p>
+
+                                                <div class="state-layer"></div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <ul class="flex gap-2 desktop">
+
+                                    <li>
+                                        <a href="../pages/search.html" class="btn secondary extra-small">
+                                            <p class="text-body-medium">Projects</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/creators.html" class="btn text extra-small">
+                                            <p class="text-body-medium">Creators</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/challenges/index.html" class="btn text extra-small">
+                                            <p class="text-body-medium">Challenges</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </form>
+
+                            <div class="searchbar" data-searchbar-focus>
+
+                                <ul class="searchbar-list custom-scrollbar-hidden">
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <p class="text-body-small text-uppercase text-on-background-variant">Recent Searches</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <a href="../pages/search.html" class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-reload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" /><path d="M20 4v5h-5" /></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">E-Commerce</p>
+                                            </a>
+
+                                            <button type="button" class="hover text-on-background-variant" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                            </button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <a href="../pages/search.html" class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-reload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" /><path d="M20 4v5h-5" /></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">Dashboard</p>
+                                            </a>
+
+                                            <button type="button" class="hover text-on-background-variant" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                            </button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <a href="../pages/search.html" class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-reload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" /><path d="M20 4v5h-5" /></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">Coded Templates</p>
+                                            </a>
+
+                                            <button type="button" class="hover text-on-background-variant" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                            </button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <p class="text-body-small text-uppercase text-on-background-variant">Suggested Searches</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="searchbar-link">
+                                            <div class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">UI Kit</p>
+                                            </div>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="searchbar-link">
+                                            <div class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">No Code</p>
+                                            </div>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="searchbar-link">
+                                            <div class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">Fonts</p>
+                                            </div>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="searchbar" hidden data-searchbar>
+
+                                <div class="searchbar-link">
+                                    <p class="text-body-medium flex gap-2"><span class="text-on-background-variant text-nowrap">Search Of</span> <span class="text-on-background line-clamp line-clamp-1" data-value></span></p>
+                                </div>
+
+                                <ul class="searchbar-list custom-scrollbar-hidden">
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <a href="../pages/search.html" class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-reload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" /><path d="M20 4v5h-5" /></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">E-Commerce</p>
+                                            </a>
+
+                                            <button type="button" class="hover text-on-background-variant" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                            </button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="searchbar-link">
+                                            <a href="../pages/search.html" class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-reload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" /><path d="M20 4v5h-5" /></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">Dashboard</p>
+                                            </a>
+
+                                            <button type="button" class="hover text-on-background-variant" data-bs-toggle="tooltip" data-bs-title="Delete" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                            </button>
+
+                                            <div class="state-layer"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="searchbar-link">
+                                            <div class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">UI Kit</p>
+                                            </div>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="searchbar-link">
+                                            <div class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">No Code</p>
+                                            </div>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="searchbar-link">
+                                            <div class="flex">
+                                                <div class="arrow-dir text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                                </div>
+
+                                                <p class="text-body-medium line-clamp line-clamp-1">Fonts</p>
+                                            </div>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dropdown">
+
+                            <span class="mobile" data-bs-toggle="dropdown">
+                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Sort By" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
+                    
+                                    <div class="state-layer"></div>
+                                </button>
+                            </span>
+
+                            <button type="button" class="btn text small p-start-0 p-end-0 desktop" data-bs-toggle="dropdown">
+                                <div class="icon-btn small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
+                                </div>
+
+                                <p class="text-body-medium">Recommended</p>
+
+                                <div class="icon-btn small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end medium" onclick="event.stopPropagation()">
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item active">
+                                        <p class="text-body-medium">Recommended</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item">
+                                        <p class="text-body-medium">Trending</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item">
+                                        <p class="text-body-medium">Popular</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item">
+                                        <p class="text-body-medium">Top Selling</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item">
+                                        <p class="text-body-medium">Newest</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li class="separator x"></li>
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item">
+                                        <p class="text-body-medium">Price: Low to High</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="../pages/search.html" class="dropdown-item">
+                                        <p class="text-body-medium">Price: High to Low</p>
+
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </header>
+
+            <div class="container container-lg">
+
+                <div class="title-sec">
+                    <h1 class="text-body-medium"><strong>E-Commerce</strong> <span class="text-on-background-variant">634.3k results</span></h1>
+                </div>
+                
+                <ul class="search-list">
+
+                    <li>
+                        <div class="card inline">
+                            <a href="../pages/projects/show.html" class="figure">
+                                <img src="https://images.ui8.net/uploads/detail-images_1720705795797.png" alt="img card" loading="lazy" class="img-card img-cover" />
+
+                                <div class="icon-big">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                </div>
+
+                                <div class="btn white small p-start-0 price">
+                                    <div class="icon-btn small">
+                                        <div class="icon-btn success extra-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3" /><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" /><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598" /><path d="M3 6v10c0 .888 .772 1.45 2 2" /><path d="M3 11c0 .888 .772 1.45 2 2" /></svg>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-body-medium"><strong>24<span class="text-success">£E</span></strong> <span class="opacity-50 text-decoration-line-through text-body-small">49£E</span></p>
+                                </div>
+                            </a>
+                                            
+                            <div class="wrapper-between flex-nowrap align-items-start mobile" style="margin-block-start: var(--spacing-3);">
+                                <a href="../pages/users/profiles/index.html" class="flex align-items-start">
+                                    <div class="avatar extra-small">
+                                        <img src="https://images.ui8.net/uploads/makora-studio-logo-light-2_1752677730242.png" alt="profile photo" loading="lazy" class="img-avatar img-cover" />
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                        
+                                    </div>
+
+                                    <div class="wrapper-content gap-0">
+                                        <p class="text-body-medium line-clamp line-clamp-1">
+                                            makorasupply
+
+                                            <span class="check">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                            </span>
+                                        </p>
+
+                                        <p class="text-body-small text-on-background-variant">3,114 Selling</p>
+                                    </div>
+                                </a>
+                                
+                                <div class="wrapper flex-nowrap text-on-background-variant" style="gap: var(--spacing-3);">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-inverse icon-tabler-heart text-error"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+                                        
+                                        <p class="text-body-medium">119</p>
+                                    </div>
+
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6" /></svg>
+                                        
+                                        <p class="text-body-medium">55</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body desktop">
+                                <div class="wrapper flex-column align-items-start">
+                                    <div class="wrapper-between align-items-start flex-nowrap">
+                                        <a href="../pages/projects/show.html" class="wrapper-block">
+                                            <p class="text-body-medium text-on-background-variant">No-code Assets</p>
+        
+                                            <div class="wrapper-content">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">Aura - Dark Personal Portfolio Framer Template</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant">119 views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
+                                            </div>
+                                        </a>
+    
+                                        <div class="dropdown">
+    
+                                            <span data-bs-toggle="dropdown">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+        
+                                                    <div class="state-layer"></div>
+                                                </button>
+                                            </span>
+    
+                                            <ul class="dropdown-menu dropdown-menu-end small">
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
+    
+                                                        <p class="text-body-medium">Save</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+    
+                                                        <p class="text-body-medium">Share</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                                <li class="separator x"></li>
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+    
+                                                        <p class="text-body-medium">Report</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                            </ul>
+    
+                                        </div>
+                                    </div>
+                                    
+                                    <a
+                                        href="../pages/users/profiles/index.html"
+                                        class="btn text extra-small p-start-0 rounded-pill"
+                                        data-bs-toggle="popover"
+                                        data-bs-content='
+                                            <a href="../pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+
+                                            <div class="hover-card-body">
+                                                <a href="../pages/users/profiles/index.html" class="wrapper flex-nowrap">
+                                                    <div class="avatar large">
+                                                        <img src="https://images.ui8.net/uploads/makora-studio-logo-light-2_1752677730242.png" alt="username" loading="lazy" class="img-avatar img-cover" />
+                                
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        
+                                                    </div>
+
+                                                    <div class="wrapper-content gap-0">
+                                                        <p class="line-clamp line-clamp-1 text-body-large hover">
+                                                            <strong>
+                                                                makorasupply
+
+                                                                <span class="check">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                                                </span>
+                                                            </strong>
+                                                        </p>
+
+                                                        <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@makorasupply</p>
+                                                    </div>
+                                                </a>
+                                
+                                                <a href="../pages/users/profiles/index.html" class="wrapper-between">
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>1,730</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
+                                                    </div>
+                                                    
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>36,329</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
+                                                    </div>
+                                                    
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>56</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
+                                                    </div>
+                                                </a>
+
+                                                <a href="../pages/users/profiles/index.html" class="flex">
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <div class="flex">
+                                                    <a href="../pages/users/messages/show.html" class="btn secondary small w-full">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+
+                                                        <p class="text-body-medium">Message</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </a>
+
+                                                    <button type="button" class="btn inverse small w-full">
+                                                        <p class="text-body-medium">Follow</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        '
+                                    >
+                                        <div class="avatar extra-small">
+                                            <img src="https://images.ui8.net/uploads/makora-studio-logo-light-2_1752677730242.png" alt="username" loading="lazy" class="img-avatar img-cover" />
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                        </div>
+    
+                                        <p class="text-body-medium line-clamp line-clamp-1" style="padding-inline-start: var(--spacing-2) !important;">
+                                            makorasupply
+                                        
+                                            <span class="check">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                            </span>
+                                        </p>
+                                    </a>
+    
+                                    <a href="../pages/projects/show.html">
+                                        <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">This Award Card UI features a <span class="text-info text-lowercase">#healthops</span> premium, high-contrast design using vibrant gradients and subtle shadows to celebrate user milestones. The layout prioritizes clarity, showcasing a bold <span class="text-info text-lowercase">#uidesign</span> achievement badge alongside a dynamic progress tracker that visualizes the journey toward the next reward. With its clean typography and a prominent call-to-action button, the <span class="text-info text-lowercase">#uxstrategy</span> interface ensures a seamless and motivating user experience. It’s the perfect blend of aesthetic appeal and functional <span class="text-info text-lowercase">#gamification</span> to keep users engaged and inspired.</p>
+                                    </a>
+                                </div>
+
+                                <div class="flex">
+                                    <button type="button" class="icon-btn tonal-error small" data-bs-toggle="tooltip" data-bs-title="I Dislike This" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+
+                                    <button type="button" class="btn inverse small w-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2" /></svg>
+
+                                        <p class="text-body-medium">Added To Cart</p>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card inline">
+                            <a href="../pages/projects/show.html" class="figure">
+                                <img src="https://images.ui8.net/uploads/thumbnail-1-2_1775756669274.png" alt="img card" loading="lazy" class="img-card img-cover" />
+
+                                <div class="icon-big">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                </div>
+
+                                <div class="btn white small p-start-0 price">
+                                    <div class="icon-btn small">
+                                        <div class="icon-btn success extra-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3" /><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" /><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598" /><path d="M3 6v10c0 .888 .772 1.45 2 2" /><path d="M3 11c0 .888 .772 1.45 2 2" /></svg>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-body-medium"><strong>49<span class="text-success">£E</span></strong></p>
+                                </div>
+                            </a>
+                                            
+                            <div class="wrapper-between flex-nowrap align-items-start mobile" style="margin-block-start: var(--spacing-3);">
+                                <a href="../pages/users/profiles/index.html" class="flex align-items-start">
+                                    <div class="avatar extra-small">
+                                        <img src="https://images.ui8.net/uploads/thumb_1771312564269.png" alt="profile photo" loading="lazy" class="img-avatar img-cover" />
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                    </div>
+
+                                    <div class="wrapper-content gap-0">
+                                        <p class="text-body-medium line-clamp line-clamp-1">
+                                            Huehaus Studio
+
+                                            <span class="check">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                            </span>
+                                        </p>
+
+                                        <p class="text-body-small text-on-background-variant">3,114 Selling</p>
+                                    </div>
+                                </a>
+                                
+                                <div class="wrapper flex-nowrap text-on-background-variant" style="gap: var(--spacing-3);">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-inverse icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+                                        
+                                        <p class="text-body-medium">27</p>
+                                    </div>
+
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6" /></svg>
+                                        
+                                        <p class="text-body-medium">631</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body desktop">
+                                <div class="wrapper flex-column align-items-start">
+                                    <div class="wrapper-between align-items-start flex-nowrap">
+                                        <a href="../pages/projects/show.html" class="wrapper-block">
+                                            <p class="text-body-medium text-on-background-variant">No-code Assets</p>
+        
+                                            <div class="wrapper-content">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">Nudge | Framer Portfolio Template</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant">27 views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago</p>
+                                            </div>
+                                        </a>
+    
+                                        <div class="dropdown">
+    
+                                            <span data-bs-toggle="dropdown">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+        
+                                                    <div class="state-layer"></div>
+                                                </button>
+                                            </span>
+    
+                                            <ul class="dropdown-menu dropdown-menu-end small">
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
+    
+                                                        <p class="text-body-medium">Save</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+    
+                                                        <p class="text-body-medium">Share</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                                <li class="separator x"></li>
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+    
+                                                        <p class="text-body-medium">Report</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                            </ul>
+    
+                                        </div>
+                                    </div>
+                                    
+                                    <a
+                                        href="../pages/users/profiles/index.html"
+                                        class="btn text extra-small p-start-0 rounded-pill"
+                                        data-bs-toggle="popover"
+                                        data-bs-content='
+                                            <a href="../pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+
+                                            <div class="hover-card-body">
+                                                <a href="../pages/users/profiles/index.html" class="wrapper flex-nowrap">
+                                                    <div class="avatar large">
+                                                        <img src="https://images.ui8.net/uploads/thumb_1771312564269.png" alt="username" loading="lazy" class="img-avatar img-cover" />
+                                
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        
+                                                    </div>
+
+                                                    <div class="wrapper-content gap-0">
+                                                        <p class="line-clamp line-clamp-1 text-body-large hover">
+                                                            <strong>
+                                                                Huehaus Studio
+                                                            </strong>
+                                                        </p>
+
+                                                        <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@makorasupply</p>
+                                                    </div>
+                                                </a>
+                                
+                                                <a href="../pages/users/profiles/index.html" class="wrapper-between">
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>1,730</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
+                                                    </div>
+                                                    
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>36,329</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
+                                                    </div>
+                                                    
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>56</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
+                                                    </div>
+                                                </a>
+
+                                                <a href="../pages/users/profiles/index.html" class="flex">
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <div class="flex">
+                                                    <a href="../pages/users/messages/show.html" class="btn secondary small w-full">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+
+                                                        <p class="text-body-medium">Message</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </a>
+
+                                                    <button type="button" class="btn inverse small w-full">
+                                                        <p class="text-body-medium">Follow</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        '
+                                    >
+                                        <div class="avatar extra-small">
+                                            <img src="https://images.ui8.net/uploads/thumb_1771312564269.png" alt="username" loading="lazy" class="img-avatar img-cover" />
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                        </div>
+    
+                                        <p class="text-body-medium line-clamp line-clamp-1" style="padding-inline-start: var(--spacing-2) !important;">
+                                            Huehaus Studio
+                                        </p>
+                                    </a>
+    
+                                    <a href="../pages/projects/show.html">
+                                        <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Nudge is a high-performance portfolio template that translates the visual language of design tools into a personal website that feels immediately familiar. Perfect for product designers and UX professionals who value structure, clarity, and intentional storytelling.</p>
+                                    </a>
+                                </div>
+
+                                <div class="flex">
+                                    <button type="button" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="I Like This" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+
+                                    <button type="button" class="btn inverse small w-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+
+                                        <p class="text-body-medium">Add To Cart</p>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card inline">
+                            <a href="../pages/projects/show.html" class="figure">
+                                <img src="https://images.ui8.net/uploads/preview-6_1775909479343.png" alt="img card" loading="lazy" class="img-card img-cover" />
+
+                                <div class="icon-big">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                </div>
+
+                                <div class="btn white small p-start-0 price">
+                                    <div class="icon-btn small">
+                                        <div class="icon-btn success extra-small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3" /><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" /><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598" /><path d="M3 6v10c0 .888 .772 1.45 2 2" /><path d="M3 11c0 .888 .772 1.45 2 2" /></svg>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-body-medium"><strong>29<span class="text-success">£E</span></strong></p>
+                                </div>
+                            </a>
+                                            
+                            <div class="wrapper-between flex-nowrap align-items-start mobile" style="margin-block-start: var(--spacing-3);">
+                                <a href="../pages/users/profiles/index.html" class="flex align-items-start">
+                                    <div class="avatar extra-small">
+                                        <img src="https://images.ui8.net/uploads/610f1c70-30bf-411d-9227-cc6fa0a553ea_1681599867511.jpeg" alt="profile photo" loading="lazy" class="img-avatar img-cover" />
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                    </div>
+
+                                    <div class="wrapper-content gap-0">
+                                        <p class="text-body-medium line-clamp line-clamp-1">
+                                            Onixlab
+
+                                            <span class="check">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path><path d="M9 12l2 2l4 -4"></path></svg>
+                                            </span>
+                                        </p>
+
+                                        <p class="text-body-small text-on-background-variant">3,114 Selling</p>
+                                    </div>
+                                </a>
+                                
+                                <div class="wrapper flex-nowrap text-on-background-variant" style="gap: var(--spacing-3);">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-inverse icon-tabler-heart text-error"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+                                        
+                                        <p class="text-body-medium">1</p>
+                                    </div>
+
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6" /></svg>
+                                        
+                                        <p class="text-body-medium">5</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body desktop">
+                                <div class="wrapper flex-column align-items-start">
+                                    <div class="wrapper-between align-items-start flex-nowrap">
+                                        <a href="../pages/projects/show.html" class="wrapper-block">
+                                            <p class="text-body-medium text-on-background-variant">Figma Resources</p>
+        
+                                            <div class="wrapper-content">
+                                                <h4 class="text-title-large line-clamp line-clamp-1">Formora - Portfolio & Agency Website</h4>
+        
+                                                <p class="text-body-medium text-on-background-variant">5 views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
+                                            </div>
+                                        </a>
+    
+                                        <div class="dropdown">
+    
+                                            <span data-bs-toggle="dropdown">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+        
+                                                    <div class="state-layer"></div>
+                                                </button>
+                                            </span>
+    
+                                            <ul class="dropdown-menu dropdown-menu-end small">
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4" /></svg>
+    
+                                                        <p class="text-body-medium">Save</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+    
+                                                        <p class="text-body-medium">Share</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                                <li class="separator x"></li>
+    
+                                                <li>
+                                                    <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+    
+                                                        <p class="text-body-medium">Report</p>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+    
+                                            </ul>
+    
+                                        </div>
+                                    </div>
+                                    
+                                    <a
+                                        href="../pages/users/profiles/index.html"
+                                        class="btn text extra-small p-start-0 rounded-pill"
+                                        data-bs-toggle="popover"
+                                        data-bs-content='
+                                            <a href="../pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+
+                                            <div class="hover-card-body">
+                                                <a href="../pages/users/profiles/index.html" class="wrapper flex-nowrap">
+                                                    <div class="avatar large">
+                                                        <img src="https://images.ui8.net/uploads/610f1c70-30bf-411d-9227-cc6fa0a553ea_1681599867511.jpeg" alt="username" loading="lazy" class="img-avatar img-cover" />
+                                
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                                        
+                                                    </div>
+
+                                                    <div class="wrapper-content gap-0">
+                                                        <p class="line-clamp line-clamp-1 text-body-large hover">
+                                                            <strong>
+                                                                Onixlab
+
+                                                                <span class="check">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                                                </span>
+                                                            </strong>
+                                                        </p>
+
+                                                        <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@makorasupply</p>
+                                                    </div>
+                                                </a>
+                                
+                                                <a href="../pages/users/profiles/index.html" class="wrapper-between">
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>1,730</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
+                                                    </div>
+                                                    
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>36,329</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
+                                                    </div>
+                                                    
+                                                    <div class="wrapper-content text-center">
+                                                        <p class="text-body-medium"><strong>56</strong></p>
+                                                        
+                                                        <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
+                                                    </div>
+                                                </a>
+
+                                                <a href="../pages/users/profiles/index.html" class="flex">
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card">
+                                                        <div class="figure">
+                                                            <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <div class="flex">
+                                                    <a href="../pages/users/messages/show.html" class="btn secondary small w-full">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
+
+                                                        <p class="text-body-medium">Message</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </a>
+
+                                                    <button type="button" class="btn inverse small w-full">
+                                                        <p class="text-body-medium">Follow</p>
+
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        '
+                                    >
+                                        <div class="avatar extra-small">
+                                            <img src="https://images.ui8.net/uploads/610f1c70-30bf-411d-9227-cc6fa0a553ea_1681599867511.jpeg" alt="username" loading="lazy" class="img-avatar img-cover" />
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                        </div>
+    
+                                        <p class="text-body-medium line-clamp line-clamp-1" style="padding-inline-start: var(--spacing-2) !important;">
+                                            Onixlab
+                                        
+                                            <span class="check">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                            </span>
+                                        </p>
+                                    </a>
+    
+                                    <a href="../pages/projects/show.html">
+                                        <p class="text-body-medium text-on-background-variant line-clamp line-clamp-4">Formora is a modern and high-converting portfolio and agency website design built in <span class="text-info text-lowercase">#figma</span>, crafted for creative studios, agencies, and freelancers. Designed to showcase work, services, and brand identity in a visually engaging and structured way <span class="text-info text-lowercase">@username</span>, Formora helps you present your portfolio with clarity, creativity, and impact.</p>
+                                    </a>
+                                </div>
+
+                                <div class="flex">
+                                    <button type="button" class="icon-btn tonal-error small" data-bs-toggle="tooltip" data-bs-title="I Dislike This" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" /></svg>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+
+                                    <button type="button" class="btn inverse small w-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+
+                                        <p class="text-body-medium">Add To Cart</p>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                
+                <!-- paginations -->
+
+            </div>
+
+        </section>
 
     </main>
 
