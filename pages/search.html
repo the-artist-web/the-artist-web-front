@@ -1491,7 +1491,32 @@
 
     <main class="main main-start">
         
-        <aside>aside</aside>
+        <!-- Bottom Sheet Filter -->
+        <aside class="offcanvas offcanvas-bottom bottom-sheet-filter" id="bottom-sheet-filter" data-fixed-scrolling>
+
+            <div class="offcanvas-dismiss" data-bs-dismiss="offcanvas"></div>
+
+            <div class="offcanvas-header">
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter" style="min-width: var(--spacing-5) !important; max-width: var(--spacing-5) !important; min-height: var(--spacing-5) !important; max-height: var(--spacing-5) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg>
+    
+                    <p class="text-body-large">Filters</p>
+                </div>
+            </div>
+
+            <div class="offcanvas-body custom-scrollbar">
+
+                <div class="title-filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter" style="min-width: var(--spacing-5) !important; max-width: var(--spacing-5) !important; min-height: var(--spacing-5) !important; max-height: var(--spacing-5) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg>
+    
+                    <p class="text-body-large">Filters</p>
+                </div>
+                
+                <!-- go -->
+
+            </div>
+            
+        </aside>
 
         <!-- Search Page -->
         <section class="search-page section">
@@ -1791,92 +1816,102 @@
 
                         </div>
 
-                        <div class="dropdown">
-
-                            <span class="mobile" data-bs-toggle="dropdown">
-                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Sort By" data-bs-placement="bottom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
-                    
+                        <div class="flex">
+                            <div class="dropdown">
+    
+                                <span class="mobile" data-bs-toggle="dropdown">
+                                    <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Sort By" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
+                        
+                                        <div class="state-layer"></div>
+                                    </button>
+                                </span>
+    
+                                <button type="button" class="btn text small p-start-0 p-end-0 desktop" data-bs-toggle="dropdown">
+                                    <div class="icon-btn small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
+                                    </div>
+    
+                                    <p class="text-body-medium">Recommended</p>
+    
+                                    <div class="icon-btn small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                    </div>
+    
+                                    <div class="state-layer"></div>
+                                </button>
+    
+                                <ul class="dropdown-menu dropdown-menu-end medium" onclick="event.stopPropagation()">
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item active">
+                                            <p class="text-body-medium">Recommended</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item">
+                                            <p class="text-body-medium">Trending</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item">
+                                            <p class="text-body-medium">Popular</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item">
+                                            <p class="text-body-medium">Top Selling</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item">
+                                            <p class="text-body-medium">Newest</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                    <li class="separator x"></li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item">
+                                            <p class="text-body-medium">Price: Low to High</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="dropdown-item">
+                                            <p class="text-body-medium">Price: High to Low</p>
+    
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+    
+                            <span class="toggle-filter" data-bs-toggle="offcanvas" data-bs-target="#bottom-sheet-filter">
+                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Filters" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg>
+    
                                     <div class="state-layer"></div>
                                 </button>
                             </span>
-
-                            <button type="button" class="btn text small p-start-0 p-end-0 desktop" data-bs-toggle="dropdown">
-                                <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M6 12h12" /><path d="M9 18h6" /></svg>
-                                </div>
-
-                                <p class="text-body-medium">Recommended</p>
-
-                                <div class="icon-btn small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
-                                </div>
-
-                                <div class="state-layer"></div>
-                            </button>
-
-                            <ul class="dropdown-menu dropdown-menu-end medium" onclick="event.stopPropagation()">
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item active">
-                                        <p class="text-body-medium">Recommended</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item">
-                                        <p class="text-body-medium">Trending</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item">
-                                        <p class="text-body-medium">Popular</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item">
-                                        <p class="text-body-medium">Top Selling</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item">
-                                        <p class="text-body-medium">Newest</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                                <li class="separator x"></li>
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item">
-                                        <p class="text-body-medium">Price: Low to High</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="../pages/search.html" class="dropdown-item">
-                                        <p class="text-body-medium">Price: High to Low</p>
-
-                                        <div class="state-layer"></div>
-                                    </a>
-                                </li>
-
-                            </ul>
-
                         </div>
                         
                     </div>
@@ -2648,7 +2683,37 @@
 
                 </ul>
                 
-                <!-- paginations -->
+                <div class="pagination">
+                    <a href="#" class="icon-btn text small" disabled data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                        <div class="arrow-dir">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </a>
+
+                    <div class="separator y"></div>
+
+                    <div class="form-group">
+                        
+                        <div class="input-wrapper small">
+                            <input type="nubmer" placeholder="Page" name="page" value="1" class="text-body-medium" required />
+
+                            <p class="text-body-medium text-on-background-variant text-nowrap">/ 44</p>
+                        </div>
+
+                    </div>
+
+                    <div class="separator y"></div>
+
+                    <a href="#" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                        <div class="arrow-dir">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </a>
+                </div>
 
             </div>
 
