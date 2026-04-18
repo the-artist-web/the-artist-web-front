@@ -354,6 +354,13 @@ form { width: 100%; }
     opacity: 0.7;
 }
 
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
 /* ----------------------------------------------------- *\
  * BASE
 \* ----------------------------------------------------- */
@@ -1218,6 +1225,57 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
 }
 
 /**
+ * Accordion
+ */
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion .accordion-item {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--on-background);
+}
+
+.accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    color: var(--on-background-variant);
+    padding: var(--spacing-3) var(--spacing-4);
+    box-shadow: 0 0 0 transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    transition: color var(--tr-duration-short);
+    --state-layer-bg: var(--on-background);
+}
+
+.accordion .accordion-item .accordion-button::after { display: none; }
+
+.accordion .accordion-item .accordion-button:hover { color: var(--on-background); }
+
+.accordion .accordion-item .accordion-button:not(.collapsed) { color: var(--on-background); }
+
+.accordion .accordion-item .accordion-button:not(.collapsed) .state-layer { opacity: 0.08; }
+
+.accordion .accordion-item .accordion-button .flex { gap: var(--spacing-3); }
+
+.accordion .accordion-item .accordion-button .arrow-accordion { transition: transform var(--tr-duration-short); }
+
+.accordion .accordion-item .accordion-button:not(.collapsed) .arrow-accordion { transform: rotate(180deg); }
+
+.accordion .accordion-item .accordion-button svg {
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
+}
+
+.accordion .accordion-item .accordion-body { padding: var(--spacing-4); }
+
+/**
  * App bars
  */
 .app-bar {
@@ -2040,7 +2098,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 .checkbox-btn::before {
     content: "";
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     width: 6px;
     height: 12px;
@@ -3230,10 +3288,11 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 /**
  * Bottom Sheet Filter
  */
-.bottom-sheet-filter .offcanvas-body .title-filter {
+.bottom-sheet-filter .title-filter {
     display: none;
     align-items: center;
     gap: var(--spacing-2);
+    padding: var(--spacing-6) var(--spacing-6) var(--spacing-3);
 }
 
 /**
@@ -3860,6 +3919,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     
     /* Bottom Sheet Filter */
     .bottom-sheet-filter {
+        border-inline-end: 1px solid var(--outline);
         position: sticky;
         top: var(--header-height);
         z-index: 10;
@@ -3871,7 +3931,6 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
         padding-block-start: 0 !important;
         border-radius: 0 !important;
         border-top: none !important;
-        border-inline-end: 1px solid var(--outline);
         height: calc(100dvh - (var(--header-height) + var(--footer-height))) !important;
         max-height: calc(100dvh - (var(--header-height) + var(--footer-height))) !important;
         transition-duration: var(--tr-duration-short);
@@ -3893,7 +3952,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     .bottom-sheet-filter .offcanvas-body,
     .bottom-sheet-filter .offcanvas-list {
-        padding-block-start: var(--spacing-6) !important;
+        padding: 0 !important;
         height: calc(100dvh - (var(--header-height) + var(--footer-height))) !important;
         max-height: calc(100dvh - (var(--header-height) + var(--footer-height))) !important;
     }
@@ -3904,7 +3963,11 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
         max-height: 100dvh !important;
     }
 
-    .bottom-sheet-filter .offcanvas-body .title-filter { display: flex; }
+    .bottom-sheet-filter .title-filter { display: flex; }
+
+    .bottom-sheet-filter .accordion .accordion-item .accordion-button { padding-inline-start: var(--spacing-6); }
+
+    .bottom-sheet-filter .accordion .accordion-item .accordion-body { padding-inline-start: var(--spacing-6); }
 
     /**
      * MAIN
@@ -3923,7 +3986,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     .crud-project .crud-project-wrapper .crud-project-live-preview { display: flex; }
 
     /* Search Page */
-    .search-page .toggle-filter { display: none; }
+    .search-page .toggle-filter { display: none !important; }
 }
 
 /**

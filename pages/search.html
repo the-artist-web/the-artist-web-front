@@ -1504,7 +1504,7 @@
                 </div>
             </div>
 
-            <div class="offcanvas-body custom-scrollbar">
+            <div class="offcanvas-list custom-scrollbar">
 
                 <div class="title-filter">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter" style="min-width: var(--spacing-5) !important; max-width: var(--spacing-5) !important; min-height: var(--spacing-5) !important; max-height: var(--spacing-5) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg>
@@ -1512,8 +1512,251 @@
                     <p class="text-body-large">Filters</p>
                 </div>
                 
-                <!-- go -->
+                <ul class="accordion" id="accordionExample">
 
+                    <li class="accordion-item">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-filter-categories">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-category"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4h6v6h-6l0 -6" /><path d="M14 4h6v6h-6l0 -6" /><path d="M4 14h6v6h-6l0 -6" /><path d="M14 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Category</p>
+                            </div>
+
+                            <div class="arrow-accordion">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <div class="accordion-collapse collapse" id="collapse-filter-categories">
+                            <div class="accordion-body">
+
+                                <ul class="wrapper-item">
+                                    
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small active" style="--bg-img: url(https://cdn.dribbble.com/userupload/42549517/file/original-0ac92b771b8ded6724134a04f2e9a49d.png?resize=1504x1128&vertical=center);" data-bs-toggle="tab" data-bs-target="#category_ui_kit">
+                                            <p class="text-body-medium">UI Kit</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/32333630/file/original-bf6ec8fd48378169f443e27b6a37d1a2.png?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">Coded Templates</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/18317555/file/original-8c6a9b096bcbd3dde310692a09a62f6a.jpg?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">No code Assets</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/16763188/file/original-3fb7e9e8d4341bce450935b1fbc50a20.png?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">Illustrations</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/44585216/file/693c67d6ace0640318053028646542a5.png?resize=1200x800&vertical=center);">
+                                            <p class="text-body-medium">Fonts</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/42045254/file/original-12bad5af8110173af76bdb1f853fb84c.png?resize=1000x750&vertical=center);">
+                                            <p class="text-body-medium">Wireframe Kits</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/13909590/file/original-7ac39ff8fc262e56a562dcc378df959a.png?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">Presentation</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/13030534/file/original-469df4f70d615c1483155853a48a4f25.jpg?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">Mockups</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/46851653/file/b6fe69065c7aa3cf871e10046e88c5b0.png?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">3D Assets</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/17896734/file/original-bdad720c1fac50c11a8d458ddb2fbdbb.jpg?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">Themes & Templates</p>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/42045254/file/original-12bad5af8110173af76bdb1f853fb84c.png?resize=1000x750&vertical=center);">
+                                            <p class="text-body-medium">Design Freebies</p>
+                                        </a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="../pages/search.html" class="btn extra-small" style="--bg-img: url(https://cdn.dribbble.com/userupload/46851653/file/b6fe69065c7aa3cf871e10046e88c5b0.png?resize=1504x1128&vertical=center);">
+                                            <p class="text-body-medium">Admin Dashboard</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="accordion-item">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-filter-price">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3"></path><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"></path><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598"></path><path d="M3 6v10c0 .888 .772 1.45 2 2"></path><path d="M3 11c0 .888 .772 1.45 2 2"></path></svg>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Price</p>
+                            </div>
+
+                            <div class="arrow-accordion">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <div class="accordion-collapse collapse" id="collapse-filter-price">
+                            <div class="accordion-body">
+                                <div class="flex">
+
+                                    <div class="form-group">
+                                        <div class="input-wrapper outline small p-start-0">
+                                            <div class="icon-btn small">
+                                                <p class="text-body-medium text-on-background-variant">£E</p>
+                                            </div>
+
+                                            <input type="number" placeholder="5,000" name="min_price" value="" class="text-body-medium" />
+                                        </div>
+                                    </div>
+
+                                    <div class="separator x" style="width: var(--spacing-6); min-height: var(--spacing-05); max-height: var(--spacing-05);"></div>
+
+                                    <div class="form-group">
+                                        <div class="input-wrapper outline small p-start-0">
+                                            <div class="icon-btn small">
+                                                <p class="text-body-medium text-on-background-variant">£E</p>
+                                            </div>
+
+                                            <input type="number" placeholder="500,000" name="max_price" value="" class="text-body-medium" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="accordion-item">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-filter-on-sale">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-tag"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3" /></svg>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">On Sale</p>
+                            </div>
+
+                            <div class="arrow-accordion">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <div class="accordion-collapse collapse" id="collapse-filter-on-sale">
+                            <div class="accordion-body">
+                                
+                                <div class="wrapper-between">
+                                    <div class="form-check">
+                                        <input type="checkbox" name="on_sale" class="checkbox-btn" id="checkbox-btn-on-sale" />
+
+                                        <label for="checkbox-btn-on-sale">Yes</label>
+                                    </div>
+
+                                    <p class="text-body-medium text-on-background-variant">152</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="accordion-item">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-filter-sales">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Sales</p>
+                            </div>
+
+                            <div class="arrow-accordion">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <div class="accordion-collapse collapse" id="collapse-filter-sales">
+                            <div class="accordion-body">
+                                
+                                <ul class="wrapper-item">
+
+                                    <li>
+                                        <a href="../pages/search.html" class="btn outline extra-small">
+                                            <p class="text-body-medium">No Sales</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="btn outline extra-small">
+                                            <p class="text-body-medium">Low</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="btn outline extra-small">
+                                            <p class="text-body-medium">Medium</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="btn outline extra-small">
+                                            <p class="text-body-medium">High</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="../pages/search.html" class="btn outline extra-small active">
+                                            <p class="text-body-medium">Top Sellers</p>
+
+                                            <div class="state-layer"></div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
             
         </aside>
@@ -1816,7 +2059,7 @@
 
                         </div>
 
-                        <div class="flex">
+                        <div class="flex gap-0">
                             <div class="dropdown">
     
                                 <span class="mobile" data-bs-toggle="dropdown">
@@ -1869,7 +2112,7 @@
     
                                     <li>
                                         <a href="../pages/search.html" class="dropdown-item">
-                                            <p class="text-body-medium">Top Selling</p>
+                                            <p class="text-body-medium">Top Sales</p>
     
                                             <div class="state-layer"></div>
                                         </a>
@@ -1904,14 +2147,24 @@
                                 </ul>
     
                             </div>
-    
-                            <span class="toggle-filter" data-bs-toggle="offcanvas" data-bs-target="#bottom-sheet-filter">
+
+                            <span class="mobile" data-bs-toggle="offcanvas" data-bs-target="#bottom-sheet-filter">
                                 <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Filters" data-bs-placement="bottom">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 6l8 0" /><path d="M16 6l4 0" /><path d="M6 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 12l2 0" /><path d="M10 12l10 0" /><path d="M15 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 18l11 0" /><path d="M19 18l1 0" /></svg>
     
                                     <div class="state-layer"></div>
                                 </button>
                             </span>
+
+                            <button type="button" class="btn text small p-start-0 desktop toggle-filter" data-bs-toggle="offcanvas" data-bs-target="#bottom-sheet-filter">
+                                <div class="icon-btn small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 6l8 0" /><path d="M16 6l4 0" /><path d="M6 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 12l2 0" /><path d="M10 12l10 0" /><path d="M15 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 18l11 0" /><path d="M19 18l1 0" /></svg>
+                                </div>
+
+                                <p class="text-body-medium">Filters</p>
+
+                                <div class="state-layer"></div>
+                            </button>
                         </div>
                         
                     </div>
@@ -1967,7 +2220,7 @@
                                             </span>
                                         </p>
 
-                                        <p class="text-body-small text-on-background-variant">3,114 Selling</p>
+                                        <p class="text-body-small text-on-background-variant">3,114 Sales</p>
                                     </div>
                                 </a>
                                 
@@ -1995,7 +2248,7 @@
                                             <div class="wrapper-content">
                                                 <h4 class="text-title-large line-clamp line-clamp-1">Aura - Dark Personal Portfolio Framer Template</h4>
         
-                                                <p class="text-body-medium text-on-background-variant">119 views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
+                                                <p class="text-body-medium text-on-background-variant">119 views <span class="text-label-small">•</span> 3,114 Sales <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
                                             </div>
                                         </a>
     
@@ -2220,7 +2473,7 @@
                                             </span>
                                         </p>
 
-                                        <p class="text-body-small text-on-background-variant">3,114 Selling</p>
+                                        <p class="text-body-small text-on-background-variant">3,114 Sales</p>
                                     </div>
                                 </a>
                                 
@@ -2248,7 +2501,7 @@
                                             <div class="wrapper-content">
                                                 <h4 class="text-title-large line-clamp line-clamp-1">Nudge | Framer Portfolio Template</h4>
         
-                                                <p class="text-body-medium text-on-background-variant">27 views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago</p>
+                                                <p class="text-body-medium text-on-background-variant">27 views <span class="text-label-small">•</span> 3,114 Sales <span class="text-label-small">•</span> 4 months ago</p>
                                             </div>
                                         </a>
     
@@ -2465,7 +2718,7 @@
                                             </span>
                                         </p>
 
-                                        <p class="text-body-small text-on-background-variant">3,114 Selling</p>
+                                        <p class="text-body-small text-on-background-variant">3,114 Sales</p>
                                     </div>
                                 </a>
                                 
@@ -2493,7 +2746,7 @@
                                             <div class="wrapper-content">
                                                 <h4 class="text-title-large line-clamp line-clamp-1">Formora - Portfolio & Agency Website</h4>
         
-                                                <p class="text-body-medium text-on-background-variant">5 views <span class="text-label-small">•</span> 3,114 selling <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
+                                                <p class="text-body-medium text-on-background-variant">5 views <span class="text-label-small">•</span> 3,114 Sales <span class="text-label-small">•</span> 4 months ago <span class="text-label-small">•</span> <span class="text-success text-capitalize">Recently Updated</span></p>
                                             </div>
                                         </a>
     
@@ -2697,7 +2950,7 @@
                     <div class="form-group">
                         
                         <div class="input-wrapper small">
-                            <input type="nubmer" placeholder="Page" name="page" value="1" class="text-body-medium" required />
+                            <input type="number" placeholder="Page" name="page" value="1" class="text-body-medium" required />
 
                             <p class="text-body-medium text-on-background-variant text-nowrap">/ 44</p>
                         </div>
