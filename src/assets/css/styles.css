@@ -202,12 +202,12 @@
     --width-extra-small: 32px;
     --width-small: 40px;
     --width-medium: 48px;
-    --width-large: 56px;
+    --width-large: 60px;
     --width-extra-large: 100px;
     --height-extra-small: 32px;
     --height-small: 40px;
     --height-medium: 48px;
-    --height-large: 56px;
+    --height-large: 60px;
     --height-extra-large: 100px;
 
     --header-height: 64px;
@@ -1620,6 +1620,13 @@ html[dir="rtl"] .badge-container .badge {
     max-height: var(--spacing-5) !important;
 }
 
+.icon-btn.extra-small img {
+    min-width: calc(var(--height-small) / 2) !important;
+    max-width: calc(var(--height-small) / 2) !important;
+    min-height: auto !important;
+    max-height: max-content !important;
+}
+
 .icon-btn.small {
     min-width: var(--width-small);
     max-width: var(--width-small);
@@ -1632,6 +1639,13 @@ html[dir="rtl"] .badge-container .badge {
     max-width: calc(var(--width-small) / 2) !important;
     min-height: calc(var(--height-small) / 2) !important;
     max-height: calc(var(--height-small) / 2) !important;
+}
+
+.icon-btn.small img {
+    min-width: calc(var(--height-small) / 2) !important;
+    max-width: calc(var(--height-small) / 2) !important;
+    min-height: auto !important;
+    max-height: max-content !important;
 }
 
 .icon-btn.medium {
