@@ -892,9 +892,10 @@ html[dir="rtl"] .swipper-container [data-swipper-next] {
     grid-auto-flow: column;
     scroll-snap-type: inline mandatory;
     scroll-snap-stop: always;
-    gap: var(--spacing-6);
+    gap: var(--spacing-4);
     overflow-y: hidden;
     overflow-x: auto;
+    width: 100%;
 }
 
 .swipper-container .swipper-4-base::-webkit-scrollbar,
@@ -1470,6 +1471,8 @@ html[dir="rtl"] .badge-container .badge {
 
 .btn.text:is(:hover, :focus, :focus-visible, :focus-within) { color: var(--on-background) !important; }
 
+.btn.text:is(:hover, :focus, :focus-visible, :focus-within) .state-layer { opacity: 0.08; }
+
 .btn.text.active { color: var(--on-background) !important; }
 
 .btn.outline {
@@ -1682,6 +1685,8 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.text:is(:hover, :focus, :focus-visible, :focus-within) { color: var(--on-background); }
+
+.icon-btn.text:is(:hover, :focus, :focus-visible, :focus-within) .state-layer { opacity: 0.08; }
 
 .icon-btn.text.active { color: var(--on-background) !important; }
 
@@ -3002,6 +3007,21 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     --state-layer-bg: var(--on-background);
 }
 
+.form-group .select-group {
+    border-radius: var(--radius-medium);
+    overflow: hidden;
+}
+
+.form-group .select-group.outline { border: 1px solid var(--outline); }
+
+.form-group .select-group .form-check {
+    padding-block: var(--spacing-3);
+    padding-inline: var(--spacing-3) var(--spacing-4);
+    --state-layer-bg: var(--on-background);
+}
+
+.form-group .select-group label { flex-grow: 1; }
+
 /**
  * Toolbars
  */
@@ -3779,7 +3799,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     /**
      * REUSED STYLE
      */
-    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 3); }
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
 }
 
 /**
@@ -3803,9 +3823,9 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     .grid-5-base { grid-template-columns: repeat(2, 1fr); }
 
-    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-6)) / 2); }
+    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-4)) / 2); }
 
-    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-18)) / 4); }
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
 
     /**
      * COMPONENTS
@@ -3920,9 +3940,9 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
         max-width: calc(100% + var(--spacing-12));
     }
 
-    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-18)) / 3); }
+    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 3); }
     
-    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-24)) / 5); }
+    .swipper-container .swipper-5-base { grid-auto-columns: calc((100% - var(--spacing-16)) / 5); }
 
     /**
      * COMPONENTS
@@ -4025,7 +4045,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     .grid-5-base { grid-template-columns: repeat(4, 1fr); }
 
-    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-8)) / 4); }
+    .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
 }
 
 /**
