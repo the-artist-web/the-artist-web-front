@@ -11,7 +11,7 @@
     --on-success: #ffffff;
     --soft-success: #1ec86320;
     --warning: #f0b100;
-    --on-warning: #ffffff;
+    --on-warning: #000000;
     --soft-warning: #f0b10020;
     --info: #3ea6ff;
     --on-info: #ffffff;
@@ -213,7 +213,7 @@
     --header-height: 64px;
     --app-bar-height: 64px;
     --footer-height: 36px;
-    --width-base: 300px;
+    --width-base: 354px;
     --spacing-section: 48px;
 }
 
@@ -3788,6 +3788,57 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     gap: var(--spacing-6);
 }
 
+.search-challenge {
+    padding-block: var(--spacing-6);
+    padding-inline: 0 var(--spacing-6);
+    width: 100%;
+    display: none;
+}
+
+.search-challenge .search-challenge-card {
+    border: 1px solid var(--outline);
+    border-radius: var(--radius-large);
+    width: 100%;
+    max-height: max-content;
+    padding-block: var(--spacing-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    overflow: hidden;
+}
+
+.search-challenge .search-challenge-card .title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-2) var(--spacing-4) 0;
+}
+
+.search-challenge .search-challenge-card .flex { gap: var(--spacing-3); }
+
+.search-challenge .search-challenge-card ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-challenge .search-challenge-card .card-item {
+    padding: var(--spacing-2) var(--spacing-4);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    width: 100%;
+    --state-layer-bg: var(--on-background);
+}
+
+.search-challenge .search-challenge-card .card-item svg {
+    min-width: var(--spacing-4);
+    max-width: var(--spacing-4);
+    min-height: var(--spacing-4);
+    max-height: var(--spacing-4);
+}
+
+.search-challenge .search-challenge-card .hover { text-decoration: none !important; }
+
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
 \* ----------------------------------------------------- */
@@ -3920,7 +3971,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
      */
     .container { padding-inline: var(--spacing-6); }
 
-    .main.main-start { grid-template-columns: calc(var(--width-base) + 30px) minmax(0, 1fr); }
+    .main.main-start { grid-template-columns: var(--width-base) minmax(0, 1fr); }
 
     .main.main-end { grid-template-columns: minmax(0, 1fr) var(--width-base); }
 
@@ -4046,6 +4097,13 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     .grid-5-base { grid-template-columns: repeat(4, 1fr); }
 
     .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
+
+    /**
+     * MAIN
+     */
+
+    /* Search Page */
+    .search-challenge { display: flex; }
 }
 
 /**
