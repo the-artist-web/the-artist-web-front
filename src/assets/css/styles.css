@@ -2488,8 +2488,6 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
 
 .search-container.active .search { outline-color: transparent; }
 
-.search-container .search input[type="search"] { padding-inline-end: var(--spacing-4); }
-
 .search-container .search button[type="submit"] {
     color: var(--on-background-variant);
     transition: color var(--tr-duration-short);
