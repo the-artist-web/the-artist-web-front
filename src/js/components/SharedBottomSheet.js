@@ -22,7 +22,7 @@ export const SharedBottomSheet = ($element) => {
     $sharedbottomSheet.appendChild($offcanvasDismiss);
 
     $element.addEventListener("click", (e) => {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 992) {
             e.preventDefault();
             e.stopPropagation();
 
