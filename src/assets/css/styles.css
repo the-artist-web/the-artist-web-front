@@ -644,7 +644,7 @@ body:has(.header) .main { padding-block-start: var(--header-height); }
 
 body:has(.app-bar) .main { padding-block-start: var(--app-bar-height); }
 
-.page { padding-block-start: var(--spacing-6); }
+.page { padding-block-start: var(--spacing-6) !important; }
 
 .footer-sec {
     display: flex;
@@ -961,12 +961,23 @@ html[dir="rtl"] .swipper-container [data-swipper-next] {
 /**
  * Avatars
  */
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+.avatar-group li:nth-child(1),
+.avatar-group .avatar:nth-child(1) { margin-inline-start: 0; }
+
+.avatar-group li,
+.avatar-group .avatar { margin-inline-start: -10px; }
+
 .avatar {
     background-color: var(--surface) !important;
     color: var(--on-background-variant) !important;
     border: 1px solid var(--outline) !important;
     border-radius: var(--radius-full);
     position: relative;
+    z-index: 10;
     display: grid;
     place-items: center;
     color: var(--on-background-variant);
@@ -1392,12 +1403,14 @@ html[dir="rtl"] .badge-container .badge {
 
 .btn.active .state-layer { opacity: 0.08; }
 
-.btn[style] { color: var(--on-linear-gradient) !important; }
+.btn:is(:focus, :focus-visible, :focus-within) .state-layer { opacity: 0.08; }
+
+.btn[style*="--bg-img"] { color: var(--on-linear-gradient) !important; }
 
 .btn:has(:checked) .state-layer { opacity: 0.08; }
 
-.btn[style]::before,
-.btn[style]::after {
+.btn[style*="--bg-img"]::before,
+.btn[style*="--bg-img"]::after {
     content: "";
     opacity: 0.7;
     position: absolute;
@@ -1409,16 +1422,16 @@ html[dir="rtl"] .badge-container .badge {
     transition-property: background, opacity;
 }
 
-.btn[style]::before { background: #000000; }
+.btn[style*="--bg-img"]::before { background: #000000; }
 
-.btn[style]::after {
+.btn[style*="--bg-img"]::after {
     background: var(--linear-gradient);
     opacity: 0;
 }
 
-.btn[style]:hover::after { opacity: 0.7; }
+.btn[style*="--bg-img"]:hover::after { opacity: 0.7; }
 
-.btn[style].active::after { opacity: 0.7; }
+.btn[style*="--bg-img"].active::after { opacity: 0.7; }
 
 .btn.extra-small {
     border-radius: var(--radius-small);
@@ -1481,9 +1494,11 @@ html[dir="rtl"] .badge-container .badge {
 
 .btn.text:is(:hover, :focus, :focus-visible, :focus-within) { color: var(--on-background) !important; }
 
-.btn.text:is(:hover, :focus, :focus-visible, :focus-within) .state-layer { opacity: 0.08; }
-
 .btn.text.active { color: var(--on-background) !important; }
+
+.btn.text-error { --state-layer-bg: var(--error); }
+
+.btn.text-error:hover { color: var(--error) !important; }
 
 .btn.outline {
     border: 1px solid var(--outline) !important;
@@ -1655,6 +1670,8 @@ html[dir="rtl"] .badge-container .badge {
 
 .icon-btn.active .state-layer { opacity: 0.08; }
 
+.icon-btn:is(:focus, :focus-visible, :focus-within) .state-layer { opacity: 0.08; }
+
 .icon-btn.extra-small {
     min-width: var(--width-extra-small);
     max-width: var(--width-extra-small);
@@ -1731,8 +1748,6 @@ html[dir="rtl"] .badge-container .badge {
 }
 
 .icon-btn.text:is(:hover, :focus, :focus-visible, :focus-within) { color: var(--on-background); }
-
-.icon-btn.text:is(:hover, :focus, :focus-visible, :focus-within) .state-layer { opacity: 0.08; }
 
 .icon-btn.text.active { color: var(--on-background) !important; }
 
@@ -3570,8 +3585,6 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 /**
  * Project Detail
  */
-.project-detail { padding-block-start: var(--spacing-6); }
-
 .project-detail .container {
     display: flex;
     flex-direction: column;
@@ -3832,6 +3845,84 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     gap: var(--spacing-6);
 }
 
+/**
+ * Forum Page
+ */
+.forum-page .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-8);
+}
+
+.forum-page .container .title-sec {
+    align-items: start;
+    flex-direction: column;
+}
+
+.forum-page .container .title-sec .wrapper-between { gap: var(--spacing-2); }
+
+.forum-page .container .title-sec .dropdown-menu { max-height: 50dvh; }
+
+.forum-page .container .forum-body .forum-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding-block: var(--spacing-6);
+}
+
+.forum-page .container .forum-body .forum-list .forum-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.forum-page .container .forum-body .forum-list .forum-card .replies-users {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    transition: opacity var(--tr-duration-short);
+}
+
+.forum-page .container .forum-body .forum-list .forum-card .replies-users:hover { opacity: 0.7; }
+
+.forum-page .container .forum-body .forum-list .forum-card .flex { gap: var(--spacing-3); }
+
+.forum-page .container .forum-body .forum-list .forum-card .btn.text {
+    min-height: calc(var(--height-extra-small) + 4px) !important;
+    max-height: calc(var(--height-extra-small) + 4px) !important;
+}
+
+.forum-page .container .forum-body .forum-list .forum-card .btn .icon-btn.extra-small {
+    min-width: calc(var(--width-extra-small) + 4px) !important;
+    max-width: calc(var(--width-extra-small) + 4px) !important;
+    min-height: calc(var(--height-extra-small) + 4px) !important;
+    max-height: calc(var(--height-extra-small) + 4px) !important;
+}
+
+.forum-page .container .forum-end {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.forum-page .container .forum-end .card:nth-child(2) {
+    position: sticky;
+    top: calc(var(--header-height) + var(--spacing-6));
+    transition: top var(--tr-duration-short);
+}
+
+.forum-page .container .forum-end .card.fixed-scrolling:nth-child(2) { top: var(--spacing-6); }
+
+.forum-page .container .forum-end .card .card-body .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    margin-block-end: var(--spacing-2);
+}
+
+.forum-page .container .forum-end .flex { gap: var(--spacing-3); }
+
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
 \* ----------------------------------------------------- */
@@ -4074,6 +4165,9 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
     /* Search Page */
     .search-page .toggle-filter { display: none !important; }
+
+    /* Forum Page */
+    .forum-page .container { grid-template-columns: minmax(0, 1fr) var(--width-base); }
 }
 
 /**
