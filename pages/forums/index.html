@@ -1450,7 +1450,7 @@
                         <h1 class="text-headline-large"><strong>All Threads</strong></h1>
 
                         <div class="wrapper-between">
-                            <div class="flex">
+                            <div class="wrapper-item">
                                 <div class="dropdown">
         
                                     <button type="button" class="btn secondary small p-end-0" data-bs-toggle="dropdown">
@@ -1650,7 +1650,7 @@
                                 </div>
                             </div>
 
-                            <a href="../../pages/forums/create.html" class="btn inverse small p-start-0">
+                            <a href="../../pages/forums/create.html" class="btn inverse small p-start-0 desktop">
                                 <div class="icon-btn small">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
                                 </div>
@@ -1663,6 +1663,8 @@
                     </div>
 
                     <ul class="forum-list">
+
+                        <li class="separator x"></li>
 
                         <li>
                             <div class="forum-card">
@@ -1905,504 +1907,34 @@
                                 <a href="../../pages/forums/show.html" class="replies-users">
                                     <ul class="avatar-group">
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F2244af71ad0c25f2cb0a8efa167491fb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F2244af71ad0c25f2cb0a8efa167491fb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F40687889cb61a06b242aafb9e02f5204.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F40687889cb61a06b242aafb9e02f5204.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F44198079c5211172a61405b5049f3bfb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F44198079c5211172a61405b5049f3bfb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1766864037565/e41c901c-2176-4a75-a959-8496dc57e7c5.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1766864037565/e41c901c-2176-4a75-a959-8496dc57e7c5.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1768534219172/aacfcc25-f6f1-4f53-9b95-719e37fb778d.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1768534219172/aacfcc25-f6f1-4f53-9b95-719e37fb778d.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
                                     </ul>
@@ -2648,504 +2180,34 @@
                                 <a href="../../pages/forums/show.html" class="replies-users">
                                     <ul class="avatar-group">
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F9854663aec5741bbbe84290b6edc0aed.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F2244af71ad0c25f2cb0a8efa167491fb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F44198079c5211172a61405b5049f3bfb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F40687889cb61a06b242aafb9e02f5204.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1766864037565/e41c901c-2176-4a75-a959-8496dc57e7c5.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F44198079c5211172a61405b5049f3bfb.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1769758992026/02007202-2e06-4b8b-a129-123286de1cb0.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1766864037565/e41c901c-2176-4a75-a959-8496dc57e7c5.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
-                                        <li>
-                                            <div
-                                                class="avatar extra-small"
-                                                data-bs-toggle="popover"
-                                                data-bs-content='
-                                                    <a href="./pages/users/profiles/index.html" class="banner-user" style="--bg-img: url(https://cdn.dribbble.com/users/1667332/profile/masthead/b1d81ab6-0cef-4678-b477-3190239b78bd/header-2.png);"></a>
+                                        <li class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2Ff135ea474f1320d13883e194685b4d8a.png&w=400&q=85&dpl=dpl_S4vYriuA9bsyL8zjWtFAamemB9fV" alt="username" loading="lazy" class="img-avatar img-cover" />
 
-                                                    <div class="hover-card-body">
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper flex-nowrap">
-                                                            <div class="avatar large">
-                                                                <img src="https://images.ui8.net/uploads/logo_trans_1655750386956.png" alt="username" loading="lazy" class="img-avatar img-cover" />
-                                        
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                            </div>
-
-                                                            <div class="wrapper-content gap-0">
-                                                                <p class="line-clamp line-clamp-1 text-body-large hover">
-                                                                    <strong>
-                                                                        WhiteUI.Store
-
-                                                                        <span class="check">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
-                                                                        </span>
-                                                                    </strong>
-                                                                </p>
-
-                                                                <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">@oneweekwonders</p>
-                                                            </div>
-                                                        </a>
-                                        
-                                                        <a href="./pages/users/profiles/index.html" class="wrapper-between">
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>1,730</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Projects</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>36,329</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Followers</p>
-                                                            </div>
-                                                            
-                                                            <div class="wrapper-content text-center">
-                                                                <p class="text-body-medium"><strong>56</strong></p>
-                                                                
-                                                                <p class="text-uppercase text-body-small text-on-background-variant">Following</p>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="./pages/users/profiles/index.html" class="flex">
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44373637/file/still-c54751ae16ba16ed826f5ea1f205eb23.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44554968/file/still-2527d58c6eb51425aa944d24aabb57af.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="card">
-                                                                <div class="figure">
-                                                                    <img src="https://cdn.dribbble.com/userupload/44652901/file/d6a82f0a840a411edfe36e2b4ac8d208.png?resize=400x300&vertical=center" alt="title project" loading="lazy" class="img-card img-cover" />
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-
-                                                        <div class="flex">
-                                                            <a href="./pages/users/messages/show.html" class="btn secondary small w-full">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                                                <p class="text-body-medium">Message</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </a>
-
-                                                            <button type="button" class="btn inverse small w-full">
-                                                                <p class="text-body-medium">Follow</p>
-
-                                                                <div class="state-layer"></div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                '
-                                            >
-                                                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1768534219172/aacfcc25-f6f1-4f53-9b95-719e37fb778d.png?w=64&h=64&fit=crop&crop=faces&w=500&h=500&fit=crop&crop=entropy&auto=compress,format&format=webp&auto=compress,format&format=webp" alt="username" loading="lazy" class="img-avatar img-cover" />
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </li>
 
                                     </ul>
@@ -5486,6 +4548,12 @@
         </div>
 
     </footer>
+
+    <a href="../../pages/forums/create.html" class="icon-btn inverse large mobile fab-fixed" data-fixed-scrolling>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1 -2 0v-6h-6a1 1 0 0 1 0 -2h6v-6a1 1 0 0 1 1 -1" /></svg>
+
+        <div class="state-layer"></div>
+    </a>
     
 </body>
 
