@@ -1984,11 +1984,9 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     padding: 1.5px;
     border-radius: var(--radius-large);
     background: var(--linear-gradient);
-    -webkit-mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude;
 }
 
 .card.outline {
