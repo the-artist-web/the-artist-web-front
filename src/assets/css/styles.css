@@ -1981,6 +1981,7 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 10;
     padding: 1.5px;
     border-radius: var(--radius-large);
     background: var(--linear-gradient);
