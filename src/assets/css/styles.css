@@ -2557,9 +2557,6 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
 
 .dropdown .dropdown-menu:has(.shopping-cart-footer) { padding-block-end: 0 !important; }
 
-.dropdown .dropdown-menu .text-on-background-variant.hover,
-.dropdown .dropdown-menu .text-on-background-variant .hover { text-decoration: none !important; }
-
 /**
  * Navigation bar
  */
@@ -2773,7 +2770,7 @@ html[dir="rtl"] .dropdown .dropdown-menu .dropdown-item.active::before {
 }
 
 .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link {
-    padding: var(--spacing-2) var(--spacing-4);
+    padding: 10px var(--spacing-4);
     display: flex;
     align-items: center;
     gap: var(--spacing-3);
@@ -2853,9 +2850,6 @@ html[dir="rtl"] .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link.acti
 }
 
 .offcanvas.offcanvas-bottom .flex { gap: var(--spacing-3); }
-
-.offcanvas.offcanvas-bottom .text-on-background-variant.hover,
-.offcanvas.offcanvas-bottom .text-on-background-variant .hover { text-decoration: none !important; }
 
 /**
  * Side sheets
@@ -3589,8 +3583,8 @@ html[dir="rtl"] .fab-fixed {
     display: grid;
     place-items: center;
     grid-template-rows: max-content 1fr max-content;
-    padding: var(--spacing-10) var(--spacing-4) 0;
-    gap: var(--spacing-10);
+    padding: var(--spacing-section) var(--spacing-4) 0;
+    gap: var(--spacing-section);
 }
 
 .auth .auth-body .form-card { max-width: 400px; }
@@ -3619,6 +3613,20 @@ html[dir="rtl"] .fab-fixed {
     max-width: var(--spacing-4);
     min-height: var(--spacing-4);
     max-height: var(--spacing-4);
+}
+
+.auth .auth-body .btn.small,
+.auth .auth-body .form-group .input-wrapper.small,
+.auth .auth-body .form-group .select-wrapper.small select {
+    min-height: calc(var(--height-small) + var(--spacing-1)) !important;
+    max-height: calc(var(--height-small) + var(--spacing-1)) !important;
+}
+
+.auth .auth-body .icon-btn.small {
+    min-width: calc(var(--width-small) + var(--spacing-1)) !important;
+    max-width: calc(var(--width-small) + var(--spacing-1)) !important;
+    min-height: calc(var(--height-small) + var(--spacing-1)) !important;
+    max-height: calc(var(--height-small) + var(--spacing-1)) !important;
 }
 
 /**
