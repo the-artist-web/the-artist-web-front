@@ -18,6 +18,7 @@ import { TextareaAutoExpanding } from "./components/TextareaAutoExpanding.js";
 import { UploaderMediaGallery } from "./components/UploaderMediaGallery.js";
 import { PriceAmount } from "./components/PriceAmount.js";
 import { UploadFile } from "./components/UploadFile.js";
+import { Markdown } from "./components/Markdown.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -118,3 +119,9 @@ if ($priceAmounts.length) $priceAmounts.forEach($elem => PriceAmount($elem));
  */
 const $uploadFile = document.querySelectorAll("[data-upload-file]");
 if ($uploadFile.length) $uploadFile.forEach($elem => UploadFile($elem));
+
+/**
+ * Markdowns
+ */
+const $markdowns = document.querySelectorAll("[data-markdowns]");
+if ($markdowns.length) $markdowns.forEach($elem => Markdown($elem));
