@@ -70,15 +70,15 @@
 
     /* Font size */
     --fs-base: 10px;
-    --fs-display-large: 6.5rem;
-    --fs-display-medium: 4.4rem;
+    --fs-display-large: 5.7rem;
+    --fs-display-medium: 4.5rem;
     --fs-display-small: 3.6rem;
     --fs-headline-large: 3.2rem;
     --fs-headline-medium: 2.8rem;
     --fs-headline-small: 2.4rem;
     --fs-title-large: 2.2rem;
-    --fs-title-medium: 1.8rem;
-    --fs-title-small: 1.7rem;
+    --fs-title-medium: 1.6rem;
+    --fs-title-small: 1.4rem;
     --fs-body-large: 1.6rem;
     --fs-body-medium: 1.4rem;
     --fs-body-small: 1.2rem;
@@ -93,20 +93,20 @@
 
     /* Line height */
     --lh-base: 1.6;
-    --lh-display-large: 1.2;
+    --lh-display-large: 6.4rem;
     --lh-display-medium: 5.2rem;
     --lh-display-small: 4.4rem;
-    --lh-headline-large: 4.4rem;
-    --lh-headline-medium: 5.2rem;
+    --lh-headline-large: 4.0rem;
+    --lh-headline-medium: 3.6rem;
     --lh-headline-small: 3.2rem;
-    --lh-title-large: 3.2rem;
-    --lh-title-medium: 2.8rem;
-    --lh-title-small: 2.8rem;
+    --lh-title-large: 2.8rem;
+    --lh-title-medium: 2.4rem;
+    --lh-title-small: 2.0rem;
     --lh-body-large: 2.4rem;
     --lh-body-medium: 2.0rem;
-    --lh-body-small: 2.1rem;
+    --lh-body-small: 1.6rem;
     --lh-label-large: 2.0rem;
-    --lh-label-medium: 1.8rem;
+    --lh-label-medium: 1.6rem;
     --lh-label-small: 1.6rem;
 
     /* Letter spacing */
@@ -384,9 +384,9 @@ body {
     font-family: var(--font-family);
     background-color: var(--background);
     color: var(--on-background);
-    font-size: var(--fs-body-medium);
+    font-size: var(--fs-body-large);
     font-weight: var(--fw-regular);
-    line-height: var(--lh-body-medium);
+    line-height: var(--lh-body-large);
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -416,22 +416,22 @@ p {
 \* ------------------------------------------------------------ */
 
 .text-display-large {
-    font-size: clamp(48px, 5vw, var(--fs-display-large));
+    font-size: clamp(3.2rem, 5vw, var(--fs-display-large));
     font-weight: var(--fw-large);
-    line-height: var(--lh-display-large);
+    line-height: clamp(4.0rem, 5vw, var(--lh-display-large));
     letter-spacing: var(--ls-n-025);
 }
 
 .text-display-medium {
-    font-size: var(--fs-display-medium);
+    font-size: clamp(2.8rem, 5vw, var(--fs-display-medium));
     font-weight: var(--fw-large);
-    line-height: var(--lh-display-medium);
+    line-height: clamp(3.6rem, 5vw, var(--lh-display-medium));
 }
 
 .text-display-small {
-    font-size: var(--fs-display-small);
+    font-size: clamp(2.4rem, 5vw, var(--fs-display-small));
     font-weight: var(--fw-large);
-    line-height: var(--lh-display-small);
+    line-height: clamp(3.2rem, 5vw, var(--lh-display-small));
 }
 
 .text-headline-large {
@@ -1435,9 +1435,11 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
 }
 
 .markdown a {
-    display: inline-block;
+    display: inline;
     width: max-content;
     color: var(--info);
+    overflow-wrap: break-word;
+    word-break: break-word;
     transition: opacity var(--tr-duration-short);
 }
 
@@ -1746,13 +1748,6 @@ html[dir="rtl"] .badge-container .badge {
     max-height: var(--height-large);
 }
 
-.btn.large svg {
-    min-width: calc(var(--width-large) / 2);
-    max-width: calc(var(--width-large) / 2);
-    min-height: calc(var(--height-large) / 2);
-    max-height: calc(var(--height-large) / 2);
-}
-
 .btn.text {
     background: none !important;
     color: var(--on-background-variant) !important;
@@ -2025,13 +2020,6 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     max-height: var(--height-large);
 }
 
-.icon-btn.large svg {
-    min-width: calc(var(--width-large) / 2) !important;
-    max-width: calc(var(--width-large) / 2) !important;
-    min-height: calc(var(--height-large) / 2) !important;
-    max-height: calc(var(--height-large) / 2) !important;
-}
-
 .icon-btn.text {
     color: var(--on-background-variant);
     --state-layer-bg: var(--on-background);
@@ -2227,10 +2215,10 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
 }
 
 .card svg {
-    min-width: var(--spacing-5) !important;
-    max-width: var(--spacing-5) !important;
-    min-height: var(--spacing-5) !important;
-    max-height: var(--spacing-5) !important;
+    min-width: 18px !important;
+    max-width: 18px !important;
+    min-height: 18px !important;
+    max-height: 18px !important;
 }
 
 .card .figure {
@@ -4031,7 +4019,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     gap: var(--spacing-2);
     text-align: start;
     width: 100%;
-    padding: var(--spacing-6);
+    padding: var(--spacing-5);
     --state-layer-bg: var(--on-background);
 }
 
@@ -4039,7 +4027,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 
 .project-detail .project-description .project-description-body {
     background-color: var(--surface);
-    padding: var(--spacing-6);
+    padding: var(--spacing-5);
     position: relative;
     z-index: 10;
     display: flex;
@@ -4556,7 +4544,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     margin-inline: -16px;
 }
 
-.blog-detail .title-sec { padding: var(--spacing-section) !important; }
+.blog-detail .title-sec { padding-block: var(--spacing-section) !important; }
 
 .blog-detail .user-create {
     display: flex;
