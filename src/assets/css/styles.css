@@ -1748,6 +1748,13 @@ html[dir="rtl"] .badge-container .badge {
     max-height: var(--height-large);
 }
 
+.btn.large svg {
+    min-width: calc(var(--width-large) / 2) !important;
+    max-width: calc(var(--width-large) / 2) !important;
+    min-height: calc(var(--height-large) / 2) !important;
+    max-height: calc(var(--height-large) / 2) !important;
+}
+
 .btn.text {
     background: none !important;
     color: var(--on-background-variant) !important;
@@ -2018,6 +2025,13 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     max-width: var(--width-large);
     min-height: var(--height-large);
     max-height: var(--height-large);
+}
+
+.icon-btn.large svg {
+    min-width: calc(var(--width-large) / 2) !important;
+    max-width: calc(var(--width-large) / 2) !important;
+    min-height: calc(var(--height-large) / 2) !important;
+    max-height: calc(var(--height-large) / 2) !important;
 }
 
 .icon-btn.text {
