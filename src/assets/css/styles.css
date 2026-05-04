@@ -3352,6 +3352,12 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
 .form-group .input-wrapper.error input::placeholder { color: var(--error); }
 
+.form-group .select-wrapper.filled,
+.form-group .input-wrapper.filled {
+    background-color: var(--surface);
+    --state-layer-bg: var(--on-background);
+}
+
 .form-group .select-wrapper.secondary,
 .form-group .input-wrapper.secondary {
     background-color: var(--outline);
@@ -3974,7 +3980,15 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     color: var(--on-background);
 }
 
- .legal-page .container .legal-body .legal-content .accordion .accordion-item .accordion-body { padding: 0 0 var(--spacing-6); }
+.legal-page .container .legal-body .legal-content .accordion .accordion-item .accordion-body { padding: 0 0 var(--spacing-6); }
+
+.legal-page .container .legal-body .legal-content .markdown a,
+.legal-page .container .legal-body .legal-content .markdown p,
+.legal-page .container .legal-body .legal-content .markdown li,
+.legal-page .container .legal-body .legal-content .markdown blockquote {
+    font-size: var(--fs-body-medium);
+    line-height: var(--lh-body-medium);
+}
 
 /**
  * Explore Header
@@ -4599,8 +4613,6 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     width: calc(100% + var(--spacing-8));
 }
 
-.blogs .card .figure { aspect-ratio: 16 / 9; }
-
 .blogs .card .card-body { padding: 0; }
 
 /**
@@ -4608,14 +4620,12 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
  */
 .blog-detail { border-bottom: 1px solid var(--outline); }
 
-.blog-detail .container { max-width: 1100px; }
-
 .blog-detail .img-blog-detail {
     border-bottom: 1px solid var(--outline);
     width: calc(100% + var(--spacing-8));
     border-radius: 0 !important;
     margin-inline: -16px;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
 }
 
 .blog-detail .title-sec { padding-block: var(--spacing-section) !important; }
@@ -4639,6 +4649,59 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     display: flex;
     flex-direction: column;
     gap: var(--spacing-6);
+}
+
+/**
+ * Messages
+ */
+.messages {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.messages .message-aside {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    width: 100%;
+    height: calc(100dvh - var(--header-height));
+    padding: var(--spacing-4) var(--spacing-4) 0;
+}
+
+.messages .message-aside .message-list {
+    display: flex;
+    flex-direction: column;
+    margin-inline: -16px;
+    width: calc(100% + var(--spacing-8));
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: calc(100dvh - (var(--header-height) + 116px)); 
+    max-height: calc(100dvh - (var(--header-height) + 116px)); 
+}
+
+.messages .message-aside .message-list .user-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content minmax(0, 1fr);
+    overflow: visible;
+    gap: var(--spacing-3);
+    padding: var(--spacing-3) var(--spacing-4);
+    --state-layer-bg: var(--on-background);
+}
+
+.messages .message-aside .message-list .user-item.active .state-layer { opacity: 0.08; }
+
+.messages .message-aside .message-list .user-item.active .dropdown .state-layer { opacity: 0; }
+
+.messages .message-aside .message-list .user-item .wrapper-between { gap: var(--spacing-3); }
+
+.messages .message-aside .message-list .user-item button:is(:focus, :focus-visible, :focus-within) { color: var(--on-background) !important; }
+
+.messages .message-aside .message-list .user-item svg {
+    min-width: var(--spacing-5); 
+    max-width: var(--spacing-5); 
+    min-height: var(--spacing-5); 
+    max-height: var(--spacing-5); 
 }
 
 /* ----------------------------------------------------- *\
@@ -5047,6 +5110,21 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
         width: 100%;
         margin: 0;
     }
+
+    /* Messages */
+    .messages { grid-template-columns: 400px minmax(0, 1fr); }
+
+    .messages .message-aside {
+        border-inline-end: 1px solid var(--outline);
+        padding-inline-start: var(--spacing-6);
+    }
+
+    .messages .message-aside .message-list {
+        margin-inline: -24px -16px;
+        width: calc(100% + var(--spacing-10));
+    }
+
+    .messages .message-aside .message-list .user-item { padding-inline-start: var(--spacing-6); }
 }
 
 /**
