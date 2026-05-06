@@ -750,7 +750,6 @@ body:has(.app-bar) .main { padding-block-start: var(--app-bar-height); }
 
 .desktop { display: none !important; }
 
-.overlay,
 .modal-backdrop,
 .offcanvas-backdrop {
     position: fixed;
@@ -764,14 +763,11 @@ body:has(.app-bar) .main { padding-block-start: var(--app-bar-height); }
     transition-property: opacity, visibility;
 }
 
-.overlay.show,
 .modal-backdrop.show,
 .offcanvas-backdrop.show {
     opacity: 1 !important;
     visibility: visible;
 }
-
-.overlay { z-index: 40; }
 
 span,
 .arrow-dir,
@@ -2230,6 +2226,12 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     --state-layer-bg: var(--on-background);
 }
 
+.card.inverse {
+    background-color: var(--inverse) !important;
+    color: var(--on-inverse) !important;
+    --state-layer-bg: var(--on-inverse);
+}
+
 .card svg {
     min-width: 18px !important;
     max-width: 18px !important;
@@ -2594,19 +2596,27 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     max-width: 100%;
 }
 
+.modal .modal-dialog.modal-dialog-scrollable { height: auto; }
+
+.modal .modal-dialog.modal-dialog-scrollable .modal-content {
+    height: auto;
+    min-height: auto;
+    max-height: calc(100dvh - var(--spacing-8));
+}
+
 .modal .modal-dialog .modal-content .modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
     width: 100%;
-    padding-block: var(--spacing-6) 0;
-    padding-inline: var(--spacing-6) var(--spacing-4);
+    padding-block: var(--spacing-4) 0;
+    padding-inline: var(--spacing-4) var(--spacing-4);
     border: none !important;
 }
 
 .modal .modal-dialog .modal-content .modal-body {
-    padding: var(--spacing-6);
+    padding: var(--spacing-4);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
@@ -2615,7 +2625,9 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 .modal .modal-dialog .modal-content .modal-list {
     display: flex;
     flex-direction: column;
-    padding-block: var(--spacing-3);
+    padding-block: var(--spacing-1);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .modal .modal-dialog .modal-content .modal-list  .modal-link {
@@ -2623,7 +2635,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
     align-items: center;
     grid-template-columns: max-content minmax(0, 1fr);
     gap: var(--spacing-3);
-    padding: var(--spacing-3) var(--spacing-6);
+    padding: var(--spacing-3) var(--spacing-4);
     color: var(--on-background-variant);
     text-align: start;
     text-wrap: wrap;
@@ -2641,7 +2653,7 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 }
 
 .modal .modal-dialog .modal-content .modal-footer {
-    padding: 0 var(--spacing-6) var(--spacing-6) !important;
+    padding: 0 var(--spacing-4) var(--spacing-4) !important;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -3393,6 +3405,8 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 
 .form-group .select-group.outline { border: 1px solid var(--outline); }
 
+.form-group .select-group.secondary { background-color: var(--outline); }
+
 .form-group .select-group .form-check {
     padding-block: var(--spacing-3);
     padding-inline: var(--spacing-3) var(--spacing-4);
@@ -3451,7 +3465,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
     color: var(--on-inverse);
 }
 
-.tooltip .tooltip-arrow { display: none; }
+.tooltip .tooltip-arrow { --bs-tooltip-bg: var(--inverse); }
 
 /**
  * Line Clamp
@@ -4705,11 +4719,13 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 .messages .message-aside .message-list .user-item button:is(:focus, :focus-visible, :focus-within) { color: var(--on-background) !important; }
 
 .messages .message-aside .message-list .user-item svg {
-    min-width: var(--spacing-5); 
-    max-width: var(--spacing-5); 
-    min-height: var(--spacing-5); 
-    max-height: var(--spacing-5); 
+    min-width: 18px; 
+    max-width: 18px; 
+    min-height: 18px; 
+    max-height: 18px; 
 }
+
+.messages .message-aside .footer-sec { margin-block-end: var(--spacing-6); }
 
 .messages .message-empty {
     display: flex;
@@ -4723,6 +4739,172 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     max-width: 600px;
     height: calc(100dvh - var(--header-height));
     margin-inline: auto;
+}
+
+.messages .message-username {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: minmax(0, 1fr);
+    height: calc(100dvh - var(--header-height));
+}
+
+.messages .message-username .message-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    width: 100%;
+    padding: var(--spacing-4);
+    border-bottom: 1px solid var(--outline);
+}
+
+.messages .message-username .message-body {
+    padding: var(--spacing-10) var(--spacing-4) var(--spacing-4);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-4);
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.messages .message-username .message-body .view-user { padding-block-end: var(--spacing-6); }
+
+.messages .message-username .message-body .message-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+    width: 100%;
+}
+
+.messages .message-username .message-body .message-card:has(.card.inverse) { align-items: end; }
+
+.messages .message-username .message-body .message-card:has(.card.inverse) .flex { justify-content: end; }
+
+.messages .message-username .message-body .typing-indicator {
+    background-color: var(--surface);
+    padding: var(--spacing-3);
+    border-radius: var(--radius-medium);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding-block: 14px;
+    max-width: max-content;
+}
+
+.messages .message-username .message-body .typing-indicator .dots-chat {
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    background: var(--on-background);
+    border-radius: var(--radius-full);
+    display: inline-block;
+    opacity: 0.3;
+    animation: typing 1.4s infinite;
+}
+
+.messages .message-username .message-body .typing-indicator .dots-chat:nth-child(1) { animation-delay: 0s; }
+
+.messages .message-username .message-body .typing-indicator .dots-chat:nth-child(2) { animation-delay: 0.2s; }
+
+.messages .message-username .message-body .typing-indicator .dots-chat:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+    0%, 80%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    40% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.messages .message-username .message-body .message-card svg {
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 18px;
+    max-height: 18px;
+}
+
+.messages .message-username .message-body .card {
+    border-radius: var(--radius-medium);
+    width: auto;
+    max-width: 80%;
+}
+
+.messages .message-username .message-body .card:has(img) { max-width: 336px; }
+
+.messages .message-username .message-body .card button:has(img) {
+    margin: -4px -8px 0;
+    width: calc(100% + var(--spacing-4));
+}
+
+.messages .message-username .message-body .card .figure { border-radius: 0; }
+
+.messages .message-username .message-body .card .card-body {
+    padding: var(--spacing-2) var(--spacing-3);
+    gap: var(--spacing-2);
+}
+
+.messages .message-username .crud-message-container {
+    padding: 0 var(--spacing-4) var(--spacing-4);
+    display: flex;
+    align-items: end;
+    gap: var(--spacing-2);
+}
+
+.messages .message-username .crud-message-container .input-chat-outline {
+    border-radius: var(--radius-extra-large);
+    border: 1px solid var(--outline);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    width: 100%;
+    transition: padding var(--tr-duration-short);
+}
+
+.messages .message-username .crud-message-container .input-chat-outline.active { padding: var(--spacing-2); }
+
+.messages .message-username .crud-message-container .input-chat-outline .swipper {
+    border-radius: var(--radius-extra-large) var(--radius-extra-large) 0 0;
+    margin: -8px -8px 0;
+    padding: var(--spacing-2) var(--spacing-2) 0;
+}
+
+.messages .message-username .crud-message-container .input-chat-outline .swipper .card {
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.messages .message-username .crud-message-container .input-chat-outline .input-chat-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.messages .message-username .crud-message-container .input-chat-outline .input-chat-container .input-chat {
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: none;
+    text-wrap: wrap;
+    word-break: break-all;
+    padding-inline: var(--spacing-4) var(--spacing-1);
+    padding-block: 10px !important;
+}
+
+.messages .message-username .crud-message-container .input-chat-outline .input-chat-container .input-chat:is(:hover, :focus, :focus-visible, :focus-within) { border-color: var(--on-background); }
+
+.messages .message-username .crud-message-container .input-chat-outline .input-chat-container .input-chat:empty::before {
+    content: attr(data-placeholder);
+    color: var(--on-background-variant);
+    pointer-events: none;
 }
 
 /* ----------------------------------------------------- *\
@@ -4764,6 +4946,21 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     .modal .modal-dialog { align-items: center; }
 
     .modal .modal-dialog .modal-content { max-width: 100%; }
+
+    .modal .modal-dialog .modal-content .modal-header {
+        padding-block: var(--spacing-6) 0;
+        padding-inline: var(--spacing-6) var(--spacing-4);
+    }
+
+    .modal .modal-dialog .modal-content .modal-header .form-group { padding-inline-end: var(--spacing-2); }
+
+    .modal .modal-dialog .modal-content .modal-body { padding: var(--spacing-6); }
+
+    .modal .modal-dialog .modal-content .modal-list { padding-block: var(--spacing-3); }
+
+    .modal .modal-dialog .modal-content .modal-list  .modal-link { padding: var(--spacing-3) var(--spacing-6); }
+
+    .modal .modal-dialog .modal-content .modal-footer { padding: 0 var(--spacing-6) var(--spacing-6) !important; }
 
     /* Toolbars */
     .popover { display: block; }
@@ -5146,6 +5343,20 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     }
 
     .messages .message-aside .message-list .user-item { padding-inline-start: var(--spacing-6); }
+
+    .messages .message-username .crud-message-container .input-chat-outline .input-chat-container .input-chat { padding-inline: var(--spacing-1) var(--spacing-2); }
+
+    .message-card .dropdown {
+        opacity: 0;
+        visibility: hidden;
+        transition-duration: var(--tr-duration-short);
+        transition-property: opacity, visibility;
+    }
+
+    .message-card:is(:hover, :focus, :focus-visible, :focus-within) .dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 /**

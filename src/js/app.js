@@ -12,6 +12,7 @@ import { SharedBottomSheet } from "./components/SharedBottomSheet.js";
 import { DragDropSheet } from "./components/DragDropSheet.js";
 import { Popover } from "./components/Popover.js";
 import { IconBtnCopy } from "./components/IconBtnCopy.js";
+import { Copied } from "./components/Copied.js";
 import { AddComment } from "./components/AddComment.js";
 import { UploadImage } from "./components/UploadImage.js";
 import { TextareaAutoExpanding } from "./components/TextareaAutoExpanding.js";
@@ -82,7 +83,9 @@ DragDropSheet();
  * Copy
  */
 const $iconBtnsCopy = document.querySelectorAll("[data-icon-btns-copy]");
+const $copied = document.querySelectorAll("[data-copied]");
 if ($iconBtnsCopy.length) $iconBtnsCopy.forEach($elem => IconBtnCopy($elem));
+if ($copied.length) $copied.forEach($elem => Copied($elem));
 
 /**
  * Add Comments

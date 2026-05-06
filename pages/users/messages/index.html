@@ -949,7 +949,7 @@
                                         </span>
                                     </p>
 
-                                    <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1 text-lowercase">@theartistweb</p>
+                                    <p class="text-body-small text-on-background-variant line-clamp line-clamp-1 text-lowercase">@theartistweb</p>
                                 </div>
 
                                 <div class="state-layer"></div>
@@ -1240,10 +1240,195 @@
 
     </div>
 
-    <!-- dialog-new-message -->
-    go
+    <!-- Dialog New Message -->
+    <div class="modal fade" id="dialog-new-message">
 
-    <!-- dialog-delete-chat -->
+        <div class="modal-dialog modal-dialog-scrollable">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="wrapper-block w-full">
+                        <div class="wrapper-between flex-nowrap">
+                            <p class="text-body-large"><strong>New Message</strong></p>
+        
+                            <span data-bs-dismiss="modal">
+                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+        
+                                    <div class="state-layer"></div>
+                                </button>
+                            </span>
+                        </div>
+
+                        <form action="#" method="GET" class="form-group">
+                            <div class="input-wrapper secondary small p-start-0 rounded-pill">
+                                <button type="submit" class="icon-btn small arrow-dir text-on-background-variant">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z"></path></svg>
+                                </button>
+
+                                <input type="text" placeholder="Search" name="search" value="" class="text-body-medium" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="modal-list custom-scrollbar">
+
+                    <li>
+                        <a href="../../../pages/users/messages/show.html" class="modal-link">
+                            <div class="avatar medium">
+                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F67b732b96785fd368415dd82951466c1.png&w=400&q=85&dpl=dpl_NnBEWG6Teu3wsStk3JYsPzGaWFtG" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">
+                                    Oleg Ivanov
+                                    
+                                    <span class="check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+                                </p>
+
+                                <p class="text-body-small text-on-background-variant text-lowercase line-clamp line-clamp-1">@olegivanov</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../pages/users/messages/show.html" class="modal-link">
+                            <div class="avatar medium">
+                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F119d9abaee7a1e987571f0fe776bd1a5.png&w=400&q=85&dpl=dpl_E6u4SS35mhB2yU5kR9UFrn6vpNtL" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">Prince Akachi</p>
+
+                                <p class="text-body-small text-on-background-variant text-lowercase line-clamp line-clamp-1">@princeakachi</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../pages/users/messages/show.html" class="modal-link">
+                            <div class="avatar medium">
+                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F9535671c739f5654f4cf849c7036473a.png&w=400&q=85&dpl=dpl_E6u4SS35mhB2yU5kR9UFrn6vpNtL" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">Taras Chernus</p>
+                                    
+                                <p class="text-body-small text-on-background-variant text-lowercase line-clamp line-clamp-1">@taraschernus</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../pages/users/messages/show.html" class="modal-link">
+                            <div class="avatar medium">
+                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F45ef7efa5f718ccd1cde4e2b934e8607.png&w=400&q=85&dpl=dpl_E6u4SS35mhB2yU5kR9UFrn6vpNtL" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">Tim Bernhard</p>
+
+                                <p class="text-body-small text-on-background-variant text-lowercase line-clamp line-clamp-1">@timbernhard</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../pages/users/messages/show.html" class="modal-link">
+                            <div class="avatar medium">
+                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F7ae3a0ffcf9eb41156244fbaa3588de7.png&w=400&q=85&dpl=dpl_E6u4SS35mhB2yU5kR9UFrn6vpNtL" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">Ludovic Migneault</p>
+
+                                <p class="text-body-small text-on-background-variant text-lowercase line-clamp line-clamp-1">@ludovicmigneault</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../../pages/users/messages/show.html" class="modal-link">
+                            <div class="avatar medium">
+                                <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2Fd366ab0ee2889749cbc48c21dbd7a842.png&w=400&q=85&dpl=dpl_E6u4SS35mhB2yU5kR9UFrn6vpNtL" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            </div>
+
+                            <div class="wrapper-content gap-0">
+                                <p class="text-body-medium text-on-background line-clamp line-clamp-1">
+                                    Ivan Aviles
+                                    
+                                    <span class="check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rosette-discount-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </span>
+                                </p>
+
+                                <p class="text-body-small text-on-background-variant text-lowercase line-clamp line-clamp-1">@ivanaviles</p>
+                            </div>
+
+                            <div class="state-layer"></div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Dialog Delete Chat -->
+    <div class="modal fade" id="dialog-delete-chat">
+
+        <div class="modal-dialog modal-sm">
+
+            <form action="#" method="POST" class="modal-content">
+                <div class="modal-body">
+                    <p class="text-body-large"><strong>Delete chat with username?</strong></p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn text small" data-bs-dismiss="modal">
+                        <p class="text-body-medium">Close</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+                    
+                    <button type="submit" class="btn error small">
+                        <p class="text-body-medium">Delete</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
 
     <!-- Messages -->
     <main class="main messages">
@@ -1406,7 +1591,7 @@
                             </div>
 
                             <div class="flex text-on-background-variant">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-stack-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 8l8 4l8 -4l-8 -4l-8 4"></path><path d="M12 16l-4 -2l-4 2l8 4l8 -4l-4 -2l-4 2" fill="currentColor"></path><path d="M8 10l-4 2l4 2m8 0l4 -2l-4 -2"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard-list"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2" /><path d="M9 12l.01 0" /><path d="M13 12l2 0" /><path d="M9 16l.01 0" /><path d="M13 16l2 0" /></svg>
 
                                 <p class="text-body-medium line-clamp line-clamp-1">Send a new project proposal</p>
                             </div>
@@ -1442,6 +1627,52 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="../../../pages/users/messages/show.html" class="user-item">
+                        <div class="avatar medium">
+                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2Fdf8746ea27b5bd87ceebb868e208056a.png&w=400&q=85&dpl=dpl_NnBEWG6Teu3wsStk3JYsPzGaWFtG" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                        </div>
+
+                        <div class="wrapper-content gap-0">
+                            <p class="text-body-large line-clamp line-clamp-1">Alamdar Manafov</p>
+
+                            <p class="text-body-medium text-on-background-variant line-clamp line-clamp-1">Click to chat</p>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../../../pages/users/messages/show.html" class="user-item">
+                        <div class="avatar medium">
+                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F26f68c6ec65ea11ccc871a41ffe91783.png&w=400&q=85&dpl=dpl_NnBEWG6Teu3wsStk3JYsPzGaWFtG" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                        </div>
+
+                        <div class="wrapper-content gap-0">
+                            <div class="wrapper-between flex-nowrap">
+                                <p class="text-body-large line-clamp line-clamp-1">Les Taylor</p>
+
+                                <p class="text-body-small text-on-background-variant text-uppercase">2:57PM</p>
+                            </div>
+
+                            <div class="flex text-on-background-variant">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-checks"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 12l5 5l10 -10" /><path d="M2 12l5 5m5 -5l5 -5" /></svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>
+
+                                <p class="text-body-medium line-clamp line-clamp-1">Image</p>
+                            </div>
+                        </div>
+
+                        <div class="state-layer"></div>
+                    </a>
+                </li>
+
                 <li class="footer-sec">
                     <div class="spinner-border">
                         <span class="visually-hidden">Loading...</span>
@@ -1464,7 +1695,7 @@
                 <p class="text-body-medium text-on-background-variant">Click the button below to start connecting with other creators. Explore collaboration opportunities and share ideas!</p>
             </div>
 
-            <button type="button" class="btn inverse small" data-bs-toggle="modal" data-bs-target="dialog-new-message">
+            <button type="button" class="btn inverse small" data-bs-toggle="modal" data-bs-target="#dialog-new-message">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12.007 19.98a9.869 9.869 0 0 1 -4.307 -.98l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.992 1.7 2.93 4.04 2.747 6.34" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
 
                 <p class="text-body-medium">New Message</p>
@@ -1477,7 +1708,7 @@
     </main>
 
     <!-- Fab Fixed -->
-    <span class="mobile fab-fixed" data-fixed-scrolling data-bs-toggle="modal" data-bs-target="dialog-new-message">
+    <span class="mobile fab-fixed" data-fixed-scrolling data-bs-toggle="modal" data-bs-target="#dialog-new-message">
          <button type="button" class="icon-btn inverse large" data-bs-toggle="tooltip" data-bs-title="New Message" data-bs-placement="bottom">
              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12.007 19.98a9.869 9.869 0 0 1 -4.307 -.98l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.992 1.7 2.93 4.04 2.747 6.34" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
      
