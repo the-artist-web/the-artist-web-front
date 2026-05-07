@@ -559,6 +559,10 @@ p {
 
 .text-on-background-variant { color: var(--on-background-variant) !important; }
 
+.text-inverse { color: var(--inverse) !important; }
+
+.text-on-inverse { color: var(--on-inverse) !important; }
+
 /* ----------------------------------------------------- *\
  * REUSED STYLE
 \* ----------------------------------------------------- */
@@ -2145,6 +2149,12 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     --state-layer-bg: var(--dark-on-inverse);
 }
 
+.icon-btn.dark {
+    background-color: var(--background);
+    color: var(--on-background);
+    --state-layer-bg: var(--on-background);
+}
+
 .icon-btn.tonal-error {
     background-color: var(--soft-error);
     color: var(--error);
@@ -3450,6 +3460,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 .tooltip { display: none; }
 
 .tooltip .tooltip-inner {
+    box-shadow: var(--shadow-05);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4760,13 +4771,12 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 
 .messages .message-username .message-body {
     padding: var(--spacing-10) var(--spacing-4) var(--spacing-4);
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-4);
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-
 }
 
 .messages .message-username .message-body .view-user { padding-block-end: var(--spacing-6); }
@@ -4779,6 +4789,8 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 }
 
 .messages .message-username .message-body .message-card:has(.card.inverse) { align-items: end; }
+
+.messages .message-username .message-body .message-card:has(.card.card-project-request) { gap: var(--spacing-2); }
 
 .messages .message-username .message-body .message-card:has(.card.inverse) .flex { justify-content: end; }
 
@@ -4834,6 +4846,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     border-radius: var(--radius-medium);
     width: auto;
     max-width: 80%;
+    min-height: max-content;
 }
 
 .messages .message-username .message-body .card:has(img) { max-width: 336px; }
@@ -4848,6 +4861,20 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 .messages .message-username .message-body .card .card-body {
     padding: var(--spacing-2) var(--spacing-3);
     gap: var(--spacing-2);
+}
+
+.messages .message-username .message-body .card-project-request {
+    width: 100%;
+    max-width: 400px;
+    text-align: start;
+    border-radius: var(--radius-extra-large);
+}
+
+.messages .message-username .message-body .card-project-request .flex { max-width: max-content; }
+
+.messages .message-username .message-body .card-project-request .card-body {
+    padding: var(--spacing-6);
+    gap: var(--spacing-4);
 }
 
 .messages .message-username .crud-message-container {
@@ -4896,7 +4923,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     text-wrap: wrap;
     word-break: break-all;
     padding-inline: var(--spacing-4) var(--spacing-1);
-    padding-block: 10px !important;
+    padding-block: var(--spacing-3) !important;
 }
 
 .messages .message-username .crud-message-container .input-chat-outline .input-chat-container .input-chat:is(:hover, :focus, :focus-visible, :focus-within) { border-color: var(--on-background); }
@@ -4905,6 +4932,13 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     content: attr(data-placeholder);
     color: var(--on-background-variant);
     pointer-events: none;
+}
+
+.messages .message-username .crud-message-container .input-chat-outline .input-chat-container .icon-btn.small {
+    min-width: calc(var(--width-small) + var(--spacing-1)) !important;
+    max-width: calc(var(--width-small) + var(--spacing-1)) !important;
+    min-height: calc(var(--height-small) + var(--spacing-1)) !important;
+    max-height: calc(var(--height-small) + var(--spacing-1)) !important;
 }
 
 /* ----------------------------------------------------- *\
