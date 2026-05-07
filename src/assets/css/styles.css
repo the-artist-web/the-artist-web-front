@@ -5009,6 +5009,13 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     max-width: 600px;
 }
 
+.not-found .btn.outline {
+    margin-block-start: var(--spacing-4);
+    border-color: var(--on-error) !important;
+    color: var(--on-error) !important;
+    --state-layer-bg: var(--on-error);
+}
+
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
 \* ----------------------------------------------------- */
