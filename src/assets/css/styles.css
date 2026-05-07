@@ -1536,8 +1536,6 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
     border-radius: var(--radius-medium);
 }
 
-.markdown pre { margin-block: var(--spacing-6) !important; }
-
 .markdown iframe {
     width: 100%;
     object-fit: cover;
@@ -1559,6 +1557,52 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
 
 .markdown blockquote p { margin: 0 !important; }
 
+.markdown .card.filled { margin-block: var(--spacing-6) !important; } 
+
+.markdown .card.filled .icon-btn.text {
+    position: absolute;
+    top: var(--spacing-3);
+    right: var(--spacing-3);
+    z-index: 10;
+}
+
+html[dir="rtl"] .markdown .card.filled .icon-btn.text {
+    left: var(--spacing-3);
+    right: auto;
+}
+
+.markdown pre {
+    padding: var(--spacing-4);
+    position: relative;
+    max-height: calc(100dvh - (var(--header-height) + var(--footer-height) + var(--spacing-8)));
+    overflow: auto;
+}
+
+.markdown pre::-webkit-scrollbar {
+    width: var(--spacing-1);
+    height: var(--spacing-1);
+}
+
+.markdown pre::-webkit-scrollbar-track { background-color: inherit; }
+
+.markdown pre::-webkit-scrollbar-thumb {
+    background-color: var(--outline);
+    border-radius: var(--radius-full);
+}
+
+.markdown pre::-webkit-scrollbar-thumb:hover { background-color: var(--on-background-variant); }
+
+.markdown pre::-webkit-scrollbar-thumb:active { background-color: var(--on-background); }
+
+.markdown pre code {
+    font-family: "Fira Code", monospace;
+    background-color: transparent !important;
+    color: var(--on-background) !important;
+    text-wrap: nowrap;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 .markdown .table-overflow:last-child,
 .markdown p:last-child,
 .markdown ul:last-child,
@@ -1566,6 +1610,7 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) {
 .markdown hr:last-child,
 .markdown img:last-child,
 .markdown pre:last-child,
+.markdown .card.filled:last-child,
 .markdown blockquote:last-child { margin-block-end: 0 !important; }
 
 /**
@@ -5075,6 +5120,9 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
         padding: var(--spacing-section);
         gap: var(--spacing-4);
     }
+
+    /* Markdown */
+    .markdown pre { padding: var(--spacing-6); }
 
     /* Button groups */
     .btn-groups { width: max-content; }

@@ -1075,13 +1075,13 @@
                         <li class="separator x"></li>
 
                         <li>
-                            <a href="../../legal/report-problem.html" target="_blank" class="dropdown-item">
+                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
 
                                 <p class="text-body-medium">Report a problem</p>
 
                                 <div class="state-layer"></div>
-                            </a>
+                            </button>
                         </li>
 
                         <li>
@@ -1575,20 +1575,167 @@
                             </div>
                         </div>
 
-                        <h1 class="text-display-large"><strong><span class="text-success">✓ Solved</span> What was your first operating system?</strong></h1>
+                        <h1 class="text-display-large" style="margin-block-end: var(--spacing-2) !important;"><strong><span class="text-success">✓ Solved</span> What was your first operating system?</strong></h1>
 
-                        <div class="text-body-large text-on-background-variant">
-                            Alright, I've been using Laracasts for a few weeks now and would like to take the opportunity here to briefly describe my experience and offer constructive criticism to improve the site even further.<br /><br />
+                        <div class="markdown" data-markdowns>
+                            <p>Alright, I've been using Laracasts for a few weeks now and would like to take the opportunity here to briefly describe my experience and offer constructive criticism to improve the site even further.</p>
 
-                            A few weeks ago I started with the "Getting Started with Laravel" course and right after the first few hours I was just thrilled. It's incredible how compact and yet comprehensive Jeffrey managed to bring me closer to Laravel, so that I understood the framework without any problems and could now implement any software with it. I would like to thank and praise him for the lessons and the effort he put in.<br /><br />
+                            <p>A few weeks ago I started with the "Getting Started with Laravel" course and right after the first few hours I was just thrilled. It's incredible how compact and yet comprehensive Jeffrey managed to bring me closer to Laravel, so that I understood the framework without any problems and could now implement any software with it. I would like to thank and praise him for the lessons and the effort he put in.</p>
 
-                            <a href="#" target="_blank" class="btn-link">@theartistweb</a>
+                            <p><a href="#" target="_blank" class="btn-link text-lowercase">@theartistweb</a></p>
 
-                            But what I noticed after the first course is that there is an incredible amount of choice and you don't really know where to start next. I would really like to see a function in Laracasts called "Paths", for example, where clearly defined courses sorted by sequence are offered, especially for newcomers to programming, so that they can find their way around better.<br /><br />
+                            <p>But what I noticed after the first course is that there is an incredible amount of choice and you don't really know where to start next. I would really like to see a function in Laracasts called "Paths", for example, where clearly defined courses sorted by sequence are offered, especially for newcomers to programming, so that they can find their way around better.</p>
 
-                            I hope I could explain the whole thing well and thanks for reading my feedback! :)
+                            <p>I hope I could explain the whole thing well and thanks for reading my feedback! :)</p>
 
-                            <a href="#" target="_blank" class="btn-link text-lowercase">https://www.website.com</a>
+                            <p><a href="#" target="_blank" class="btn-link text-lowercase">https://www.website.com</a></p>
+                                    
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Genre</th>
+                                        <th>Platforms</th>
+                                        <th>Status</th>
+                                        <th>Game Mode</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>THE LAST MEADOW</td>
+                                        <td>Action Adventure</td>
+                                        <td>PC, PS5, Xbox Series X|S</td>
+                                        <td>Playable Now</td>
+                                        <td>Online Multiplayer</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>THE LAST MEADOW: REBORN</td>
+                                        <td>Survival RPG</td>
+                                        <td>PC, PS5</td>
+                                        <td>Coming Soon</td>
+                                        <td>Co-op Multiplayer</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>THE LAST MEADOW: ORIGINS</td>
+                                        <td>Open World</td>
+                                        <td>Xbox Series X|S</td>
+                                        <td>In Development</td>
+                                        <td>Singleplayer</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>THE LAST MEADOW ONLINE</td>
+                                        <td>MMO Adventure</td>
+                                        <td>PC</td>
+                                        <td>Early Access</td>
+                                        <td>Massive Online Multiplayer</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>THE LAST MEADOW: LEGACY</td>
+                                        <td>Fantasy Action</td>
+                                        <td>PC, PS5, Xbox</td>
+                                        <td>Playable Now</td>
+                                        <td>PvP & Co-op</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+<pre><code>const enhanced = Recompose.compose(
+    Recompose.withReducer(
+        "count",
+        "dispatch",
+        (state, action) => {
+            switch (action.type) {
+                case "INCREMENT":
+                return state + 1;
+                case "DECREMENT":
+                return state - 1;
+                default:
+                return state;
+            }
+        },
+        0
+    ),
+        Recompose.withHandlers({
+            incrementCounter: ({ dispatch }) => e => dispatch({ type: "INCREMENT" }),
+            decrementCounter: ({ dispatch }) => e => dispatch({ type: "DECREMENT" })
+        })
+    );
+
+    const CounterOne = enhanced(({ count, incrementCounter, decrementCounter }) => {
+    return (
+        &lt;div className="box">
+            &lt;h1 className="title">withReducer Counter&lt;/h1>
+
+            &lt;h3 className="subtitle">{count}&lt;/h3>
+
+            &lt;button
+                onClick={incrementCounter}
+                className="button is-light"
+            >
+                Increment
+            &lt;/button>
+
+            &lt;button
+                onClick={decrementCounter}
+                className="button is-light"
+            >
+                Decrement
+            &lt;/button>
+        &lt;/div>
+    );
+});
+
+const enhancedTwo = Recompose.compose(
+    Recompose.withState("count", "handleCounter", 0),
+    Recompose.withHandlers({
+        incrementCounter: props => event => {
+            event.preventDefault();
+            props.handleCounter(props.count + 1);
+        },
+        decrementCounter: props => event => {
+            event.preventDefault();
+            props.handleCounter(props.count - 1);
+        }
+    })
+);
+
+const CounterTwo = enhancedTwo(({ count, incrementCounter, decrementCounter }) => {
+    return (
+        &lt;div className="box">
+            &lt;h1 className="title">withState & withHandlers Counter&lt;/h1>
+
+            &lt;h3 className="subtitle">{count}&lt;/h3>
+
+            &lt;button
+                onClick={incrementCounter}
+                className="button is-dark"
+            >
+                Increment
+            &lt;/button>
+
+            &lt;button
+                onClick={decrementCounter}
+                className="button is-dark"
+            >
+                Decrement
+            &lt;/button>
+        &lt;/div>
+    );
+});
+
+const App = () => (
+    &lt;div>
+        &lt;CounterOne />
+        &lt;CounterTwo />
+    &lt;/div>
+)
+
+ReactDOM.render(&lt;App />, document.getElementById("root"));</code></pre>
                         </div>
 
                         <div class="wrapper-between flex-nowrap">
@@ -3825,10 +3972,6 @@
 
             <a href="../../legal/terms.html" target="_blank" class="hover text-on-background-variant">
                 <p class="text-body-small">Terms</p>
-            </a>
-
-            <a href="../../legal/report-problem.html" target="_blank" class="hover text-on-background-variant">
-                <p class="text-body-small">Report a problem</p>
             </a>
 
             <div class="dropdown">
