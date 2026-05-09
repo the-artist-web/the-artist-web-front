@@ -2906,35 +2906,51 @@
                                         </div>
 
                                         <div class="dropdown">
-                                            <button type="button" class="icon-btn text extra-small" data-bs-toggle="dropdown">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-        
-                                                <div class="state-layer"></div>
-                                            </button>
-        
+            
+                                            <span data-bs-toggle="dropdown">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+            
+                                                    <div class="state-layer"></div>
+                                                </button>
+                                            </span>
+            
                                             <ul class="dropdown-menu dropdown-menu-end small">
-        
+            
                                                 <li>
                                                     <button type="button" class="dropdown-item">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-        
+            
                                                         <p class="text-body-medium">Follow</p>
-        
+            
                                                         <div class="state-layer"></div>
                                                     </button>
                                                 </li>
-        
+            
                                                 <li>
-                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
-        
-                                                        <p class="text-body-medium">Report</p>
-        
+                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+            
+                                                        <p class="text-body-medium">Share</p>
+            
                                                         <div class="state-layer"></div>
                                                     </button>
                                                 </li>
-        
+            
+                                                <li class="separator x w-full"></li>
+            
+                                                <li>
+                                                    <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+            
+                                                        <p class="text-body-medium">Report</p>
+            
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+            
                                             </ul>
+            
                                         </div>
                                     </div>
 
@@ -3186,37 +3202,53 @@
                                                     
                                                     <p class="text-body-medium text-on-background-variant text-nowrap">6 hours ago</p>
                                                 </div>
-        
+
                                                 <div class="dropdown">
-                                                    <button type="button" class="icon-btn text extra-small" data-bs-toggle="dropdown">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-                
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                
+                    
+                                                    <span data-bs-toggle="dropdown">
+                                                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                    
+                                                            <div class="state-layer"></div>
+                                                        </button>
+                                                    </span>
+                    
                                                     <ul class="dropdown-menu dropdown-menu-end small">
-                
+                    
                                                         <li>
                                                             <button type="button" class="dropdown-item">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-                
+                    
                                                                 <p class="text-body-medium">Follow</p>
-                
+                    
                                                                 <div class="state-layer"></div>
                                                             </button>
                                                         </li>
-                
+                    
                                                         <li>
-                                                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
-                
-                                                                <p class="text-body-medium">Report</p>
-                
+                                                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+                    
+                                                                <p class="text-body-medium">Share</p>
+                    
                                                                 <div class="state-layer"></div>
                                                             </button>
                                                         </li>
-                
+                    
+                                                        <li class="separator x w-full"></li>
+                    
+                                                        <li>
+                                                            <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+                    
+                                                                <p class="text-body-medium">Report</p>
+                    
+                                                                <div class="state-layer"></div>
+                                                            </button>
+                                                        </li>
+                    
                                                     </ul>
+                    
                                                 </div>
                                             </div>
         
@@ -3483,37 +3515,53 @@
                                                         <p class="text-body-small">Creator</p>
                                                     </div>
                                                 </div>
-        
+
                                                 <div class="dropdown">
-                                                    <button type="button" class="icon-btn text extra-small" data-bs-toggle="dropdown">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-                
-                                                        <div class="state-layer"></div>
-                                                    </button>
-                
+                    
+                                                    <span data-bs-toggle="dropdown">
+                                                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                    
+                                                            <div class="state-layer"></div>
+                                                        </button>
+                                                    </span>
+                    
                                                     <ul class="dropdown-menu dropdown-menu-end small">
-                
+                    
                                                         <li>
                                                             <button type="button" class="dropdown-item">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-                
+                    
                                                                 <p class="text-body-medium">Follow</p>
-                
+                    
                                                                 <div class="state-layer"></div>
                                                             </button>
                                                         </li>
-                
+                    
                                                         <li>
-                                                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
-                
-                                                                <p class="text-body-medium">Report</p>
-                
+                                                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+                    
+                                                                <p class="text-body-medium">Share</p>
+                    
                                                                 <div class="state-layer"></div>
                                                             </button>
                                                         </li>
-                
+                    
+                                                        <li class="separator x w-full"></li>
+                    
+                                                        <li>
+                                                            <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+                    
+                                                                <p class="text-body-medium">Report</p>
+                    
+                                                                <div class="state-layer"></div>
+                                                            </button>
+                                                        </li>
+                    
                                                     </ul>
+                    
                                                 </div>
                                             </div>
         
@@ -3765,35 +3813,51 @@
                                         </div>
 
                                         <div class="dropdown">
-                                            <button type="button" class="icon-btn text extra-small" data-bs-toggle="dropdown">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-        
-                                                <div class="state-layer"></div>
-                                            </button>
-        
+            
+                                            <span data-bs-toggle="dropdown">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+            
+                                                    <div class="state-layer"></div>
+                                                </button>
+                                            </span>
+            
                                             <ul class="dropdown-menu dropdown-menu-end small">
-        
+            
                                                 <li>
                                                     <button type="button" class="dropdown-item">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-        
+            
                                                         <p class="text-body-medium">Follow</p>
-        
+            
                                                         <div class="state-layer"></div>
                                                     </button>
                                                 </li>
-        
+            
                                                 <li>
-                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
-        
-                                                        <p class="text-body-medium">Report</p>
-        
+                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+            
+                                                        <p class="text-body-medium">Share</p>
+            
                                                         <div class="state-layer"></div>
                                                     </button>
                                                 </li>
-        
+            
+                                                <li class="separator x w-full"></li>
+            
+                                                <li>
+                                                    <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+            
+                                                        <p class="text-body-medium">Report</p>
+            
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+            
                                             </ul>
+            
                                         </div>
                                     </div>
 
@@ -4051,35 +4115,51 @@
                                         </div>
 
                                         <div class="dropdown">
-                                            <button type="button" class="icon-btn text extra-small" data-bs-toggle="dropdown">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-        
-                                                <div class="state-layer"></div>
-                                            </button>
-        
+            
+                                            <span data-bs-toggle="dropdown">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="More" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+            
+                                                    <div class="state-layer"></div>
+                                                </button>
+                                            </span>
+            
                                             <ul class="dropdown-menu dropdown-menu-end small">
-        
+            
                                                 <li>
                                                     <button type="button" class="dropdown-item">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>
-        
+            
                                                         <p class="text-body-medium">Follow</p>
-        
+            
                                                         <div class="state-layer"></div>
                                                     </button>
                                                 </li>
-        
+            
                                                 <li>
-                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-report">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
-        
-                                                        <p class="text-body-medium">Report</p>
-        
+                                                    <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+            
+                                                        <p class="text-body-medium">Share</p>
+            
                                                         <div class="state-layer"></div>
                                                     </button>
                                                 </li>
-        
+            
+                                                <li class="separator x w-full"></li>
+            
+                                                <li>
+                                                    <button type="button" class="dropdown-item error" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+            
+                                                        <p class="text-body-medium">Report</p>
+            
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </li>
+            
                                             </ul>
+            
                                         </div>
                                     </div>
 
