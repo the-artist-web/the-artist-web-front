@@ -11,7 +11,7 @@
     --on-success: #ffffff;
     --soft-success: #1ec86320;
     --warning: #f0b100;
-    --on-warning: #000000;
+    --on-warning: #ffffff;
     --soft-warning: #f0b10020;
     --info: #3ea6ff;
     --on-info: #ffffff;
@@ -848,7 +848,7 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 .grid-sec {
     display: grid;
-    gap: var(--spacing-8);
+    gap: var(--spacing-10);
 }
 
 .grid-base,
@@ -1619,6 +1619,30 @@ html[dir="rtl"] .markdown .card.filled .icon-btn.text {
 .markdown blockquote:last-child { margin-block: 0 !important; }
 
 /**
+ * Reviews Stars
+ */
+.reviews-stars {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+}
+
+.reviews-stars svg {
+    min-width: var(--spacing-4);
+    max-width: var(--spacing-4);
+    min-height: var(--spacing-4);
+    max-height: var(--spacing-4);
+}
+
+/**
+ * Text Outline
+ */
+.text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+/**
  * App bars
  */
 .app-bar {
@@ -2132,10 +2156,16 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     --state-layer-bg: var(--on-background);
 }
 
-.icon-btn.success-tonal {
-    background-color: var(--soft-success);
-    color: var(--success);
-    --state-layer-bg: var(--success);
+.icon-btn.tonal {
+    background-color: var(--soft-primary);
+    color: var(--primary);
+    --state-layer-bg: var(--primary);
+}
+
+.icon-btn.tonal-secondary {
+    background-color: var(--soft-secondary);
+    color: var(--secondary);
+    --state-layer-bg: var(--secondary);
 }
 
 .icon-btn.filled {
@@ -5184,29 +5214,49 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     max-height: 100% !important;
 }
 
-.analytics .card.tonal-info .chart svg { stroke: var(--info); }
-.analytics .card.tonal-info .chart svg .recharts-layer path:first-child { fill: var(--soft-info); }
+.analytics .card.analytics-info { --state-layer-bg: var(--info); }
+.analytics .card.analytics-info .chart svg { stroke: var(--info); }
+.analytics .card.analytics-info .chart svg .recharts-layer path:first-child { fill: var(--soft-info); }
 
-.analytics .card.tonal-error .chart svg { stroke: var(--error); }
-.analytics .card.tonal-error .chart svg .recharts-layer path:first-child { fill: var(--soft-error); }
+.analytics .card.analytics-error { --state-layer-bg: var(--error); }
+.analytics .card.analytics-error .chart svg { stroke: var(--error); }
+.analytics .card.analytics-error .chart svg .recharts-layer path:first-child { fill: var(--soft-error); }
 
-.analytics .card.tonal-success .chart svg { stroke: var(--success); }
-.analytics .card.tonal-success .chart svg .recharts-layer path:first-child { fill: var(--soft-success); }
+.analytics .card.analytics-success { --state-layer-bg: var(--success); }
+.analytics .card.analytics-success .chart svg { stroke: var(--success); }
+.analytics .card.analytics-success .chart svg .recharts-layer path:first-child { fill: var(--soft-success); }
 
-.analytics .card.tonal-purple .chart svg { stroke: var(--purple); }
-.analytics .card.tonal-purple .chart svg .recharts-layer path:first-child { fill: var(--soft-purple); }
+.analytics .card.analytics-warning { --state-layer-bg: var(--warning); }
+.analytics .card.analytics-warning .chart svg { stroke: var(--warning); }
+.analytics .card.analytics-warning .chart svg .recharts-layer path:first-child { fill: var(--soft-warning); }
 
-.analytics .card.tonal-warning .chart svg { stroke: var(--warning); }
-.analytics .card.tonal-warning .chart svg .recharts-layer path:first-child { fill: var(--soft-warning); }
+.analytics .card.analytics-purple { --state-layer-bg: var(--purple); }
+.analytics .card.analytics-purple .chart svg { stroke: var(--purple); }
+.analytics .card.analytics-purple .chart svg .recharts-layer path:first-child { fill: var(--soft-purple); }
 
-.analytics .card.tonal-rosy .chart svg { stroke: var(--rosy); }
-.analytics .card.tonal-rosy .chart svg .recharts-layer path:first-child { fill: var(--soft-rosy); }
+.analytics .card.analytics-rosy { --state-layer-bg: var(--rosy); }
+.analytics .card.analytics-rosy .chart svg { stroke: var(--rosy); }
+.analytics .card.analytics-rosy .chart svg .recharts-layer path:first-child { fill: var(--soft-rosy); }
 
-.analytics .card-chart { min-height: max-content; }
+.analytics .card {
+    height: max-content;
+    min-height: max-content;
+}
+
+.analytics .card .grid-3-base { gap: var(--spacing-4); }
+
+.analytics .card .grid-sec { gap: var(--spacing-4); }
+
+.analytics .card .card .card-body { padding: var(--spacing-6); }
+
+.analytics .card-chart {
+    min-height: max-content;
+    margin-block-end: var(--spacing-6);
+}
 
 .analytics .card-chart .card-body {
     padding: var(--spacing-6);
-    padding-inline-end: 0 !important;
+    gap: calc(var(--spacing-section) / 2);
 }
 
 .analytics .card-chart .card-chart-wrapper {
@@ -5216,6 +5266,14 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     aspect-ratio: 4 / 3;
     max-height: 450px;
 }
+
+.analytics .reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.analytics .reviews-list a { max-width: max-content; }
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
@@ -5672,6 +5730,9 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
         opacity: 1;
         visibility: visible;
     }
+
+    /* Analytics */
+    .analytics .card-chart .card-body { padding: var(--spacing-8); }
 }
 
 /**
@@ -5688,13 +5749,6 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     .grid-5-base { grid-template-columns: repeat(4, 1fr); }
 
     .swipper-container .swipper-4-base { grid-auto-columns: calc((100% - var(--spacing-12)) / 4); }
-
-    /**
-     * MAIN
-     */
-
-    /* Analytics */
-    .analytics .container .grid-sec { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /**
