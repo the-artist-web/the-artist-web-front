@@ -1643,6 +1643,36 @@ html[dir="rtl"] .markdown .card.filled .icon-btn.text {
 }
 
 /**
+ * Progress
+ */
+.progress {
+    width: 100%;
+    background-color: var(--outline);
+    border-radius: var(--radius-full);
+    min-height: var(--spacing-2);
+    max-height: var(--spacing-2);
+}
+
+.progress .progress-bar {
+    border-radius: var(--radius-full);
+    background-color: var(--warning);
+    width: 100%;
+    max-width: var(--progress-width);
+}
+
+/**
+ * Rating Breakdown
+ */
+.rating-breakdown .flex { gap: var(--spacing-3); }
+
+.rating-breakdown .wrapper-between {
+    flex-direction: column;
+    height: 122px;
+}
+
+.rating-breakdown .card-body { gap: var(--spacing-6); }
+
+/**
  * App bars
  */
 .app-bar {
@@ -5203,7 +5233,8 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 /**
  * Analytics
  */
-.analytics .grid-3-base { margin-block-end: var(--spacing-6); }
+.analytics .grid-3-base,
+.analytics .grid-4-base { margin-block-end: var(--spacing-6); }
 
 .analytics .card .chart { margin: 0 -48px -24px; }
 
@@ -5245,7 +5276,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 
 .analytics .card .grid-3-base { gap: var(--spacing-4); }
 
-.analytics .card .grid-sec { gap: var(--spacing-4); }
+.analytics .card .grid-sec { gap: var(--spacing-6); }
 
 .analytics .card .card .card-body { padding: var(--spacing-6); }
 
@@ -5414,6 +5445,12 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     .markdown pre { padding: var(--spacing-6); }
 
     .markdown blockquote { padding-inline-start: var(--spacing-6) !important; }
+
+    /* Rating Breakdown */
+    .rating-breakdown .card-body {
+        flex-direction: row;
+        align-items: start;
+    }
 
     /* Button groups */
     .btn-groups { width: max-content; }
