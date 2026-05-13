@@ -1031,7 +1031,7 @@
                         </li>
 
                         <li>
-                            <a href="../../../../pages/users/profiles/my-forums.html" class="dropdown-item">
+                            <a href="../../../../pages/users/profiles/my-threads.html" class="dropdown-item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
 
                                 <p class="text-body-medium">My Threads</p>
@@ -1943,7 +1943,7 @@
                             <ul class="wrapper-item">
         
                                 <li>
-                                    <a href="../../../pages/projects/index.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Figma" data-bs-placement="bottom">
+                                    <a href="../../../pages/creators.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Figma" data-bs-placement="bottom">
                                         <img src="https://ui8.net/img/app-icons/figma-prog.svg" alt="Title Software" loading="lazy" class="img-cover">
         
                                         <div class="state-layer"></div>
@@ -1951,7 +1951,7 @@
                                 </li>
         
                                 <li>
-                                    <a href="../../../pages/projects/index.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Photo Shop" data-bs-placement="bottom">
+                                    <a href="../../../pages/creators.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Photo Shop" data-bs-placement="bottom">
                                         <img src="https://ui8.net/img/app-icons/ps-prog.svg" alt="Title Software" loading="lazy" class="img-cover">
         
                                         <div class="state-layer"></div>
@@ -1959,7 +1959,7 @@
                                 </li>
         
                                 <li>
-                                    <a href="../../../pages/projects/index.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Swift" data-bs-placement="bottom">
+                                    <a href="../../../pages/creators.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Swift" data-bs-placement="bottom">
                                         <img src="https://ui8.net/img/app-icons/swift-prog.svg" alt="Title Software" loading="lazy" class="img-cover">
         
                                         <div class="state-layer"></div>
@@ -1969,7 +1969,339 @@
                             </ul>
                         </div>
 
-                        go
+                        <div class="swipper-container swipper-container-tabs" data-swippers>
+                            <button type="button" class="icon-btn secondary extra-small" data-swipper-prev data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <ul class="nav nav-tabs" id="profilesTabs" data-swipper-container>
+
+                                <li class="swipper-item mobile">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#info-tab">
+                                        <p class="text-body-medium">Info</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#home-tab">
+                                        <p class="text-body-medium">Home</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#projects-tab">
+                                        <p class="text-body-medium">Projects</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#threads-tab">
+                                        <p class="text-body-medium">Threads</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews-tab">
+                                        <p class="text-body-medium">Reviews</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#liked-projects-tab">
+                                        <p class="text-body-medium">Liked Projects</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#comments-tab">
+                                        <p class="text-body-medium">Comments</p>
+                                    </button>
+                                </li>
+
+                                <li class="swipper-item">
+                                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#saved-tab">
+                                        <p class="text-body-medium">Saved</p>
+                                    </button>
+                                </li>
+
+                            </ul>
+                        
+                            <button type="button" class="icon-btn secondary extra-small" data-swipper-next data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                                <div class="arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                                </div>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade mobile" id="info-tab">
+                                <div class="column p-0">
+                                    <div class="wrapper flex-column align-items-start">
+                                        <p class="text-body-small text-uppercase text-on-background-variant">Creator Analytics</p>
+    
+                                        <ul class="wrapper-block w-full" style="gap: var(--spacing-3);">
+    
+                                            <li class="wrapper-between flex-nowrap">
+                                                <div class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                                                    
+                                                    <p class="text-body-medium">Total Likes</p>
+                                                </div>
+    
+                                                <p class="text-body-medium">48,210</p>
+                                            </li>
+    
+                                            <li class="wrapper-between flex-nowrap">
+                                                <div class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                                    
+                                                    <p class="text-body-medium">Total Views</p>
+                                                </div>
+    
+                                                <p class="text-body-medium">312,540</p>
+                                            </li>
+    
+                                            <li class="wrapper-between flex-nowrap">
+                                                <div class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                                                    
+                                                    <p class="text-body-medium">Total Sales</p>
+                                                </div>
+    
+                                                <p class="text-body-medium">12,231</p>
+                                            </li>
+    
+                                            <li class="wrapper-between flex-nowrap">
+                                                <div class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-folder-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5" /><path d="M19 16v6" /><path d="M22 19l-3 3l-3 -3" /></svg>
+                                                    
+                                                    <p class="text-body-medium">Total Downloads</p>
+                                                </div>
+    
+                                                <p class="text-body-medium">9,820</p>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+    
+                                    <div class="separator x"></div>
+    
+                                    <div class="wrapper flex-column align-items-start">
+                                        <p class="text-body-small text-uppercase text-on-background-variant">Links</p>
+    
+                                        <ul class="wrapper-block w-full" style="gap: var(--spacing-3);">
+    
+                                            <li>
+                                                <a href="#" target="_blank" class="profile-link">
+                                                    <div class="flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                                                        
+                                                        <p class="text-body-medium">Portfolio</p>
+                                                    </div>
+                
+                                                    <p class="text-body-medium text-on-background-variant text-lowercase">myasser.design</p>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="#" target="_blank" class="profile-link">
+                                                    <div class="flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link h-4 w-4" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                                                        
+                                                        <p class="text-body-medium">Website</p>
+                                                    </div>
+                
+                                                    <p class="text-body-medium text-on-background-variant text-lowercase">myasser.com</p>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="#" target="_blank" class="profile-link">
+                                                    <div class="flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                                                        
+                                                        <p class="text-body-medium">GitHub</p>
+                                                    </div>
+                
+                                                    <p class="text-body-medium text-on-background-variant text-lowercase">@myasser</p>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="#" target="_blank" class="profile-link">
+                                                    <div class="flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+                                                        
+                                                        <p class="text-body-medium">Twitter / X</p>
+                                                    </div>
+                
+                                                    <p class="text-body-medium text-on-background-variant text-lowercase">@myasser</p>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="#" target="_blank" class="profile-link">
+                                                    <div class="flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-dribbble"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 3.6c5 6 7 10.5 7.5 16.2" /><path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" /><path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" /></svg>
+                                                        
+                                                        <p class="text-body-medium">Dribbble</p>
+                                                    </div>
+                
+                                                    <p class="text-body-medium text-on-background-variant text-lowercase">@myasser</p>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="#" target="_blank" class="profile-link">
+                                                    <div class="flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-behance"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" /><path d="M3 12l4.5 0" /><path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" /><path d="M16 6l3 0" /></svg>
+                                                        
+                                                        <p class="text-body-medium">Behance</p>
+                                                    </div>
+                
+                                                    <p class="text-body-medium text-on-background-variant text-lowercase">@myasser</p>
+                                                </a>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+    
+                                    <div class="separator x"></div>
+    
+                                    <div class="wrapper flex-column align-items-start">
+                                        <p class="text-body-small text-uppercase text-on-background-variant">Skills</p>
+    
+                                        <ul class="wrapper-item">
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">mobile app design</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">web design</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">digital product design</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">b2b design</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">startup design</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">calligraphy</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">brand identity</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">branding</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">typography</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="../../../pages/creators.html" class="btn outline extra-small">
+                                                    <p class="text-body-medium">logo</p>
+    
+                                                    <div class="state-layer"></div>
+                                                </a>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+    
+                                    <div class="separator x"></div>
+    
+                                    <div class="wrapper flex-column align-items-start">
+                                        <ul class="wrapper">
+    
+                                            <li>
+                                                <button type="button" class="flex hover text-on-background-variant" data-bs-toggle="modal" data-bs-target="#dialog-share">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+    
+                                                    <p class="text-body-medium">Share Profile</p>
+                                                </button>
+                                            </li>
+    
+                                            <li></li>
+    
+                                            <li>
+                                                <button type="button" class="flex hover-error text-on-background-variant" data-bs-toggle="modal" data-bs-target="#dialog-report">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flag"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1 -7 0a5 5 0 0 0 -7 0v-9"></path><path d="M5 21v-7"></path></svg>
+    
+                                                    <p class="text-body-medium">Report User</p>
+                                                </button>
+                                            </li>
+    
+                                        </ul>
+    
+                                        <p class="text-body-medium text-on-background-variant">Member since March 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="home-tab">home</div>
+                            <div class="tab-pane fade" id="projects-tab">projects</div>
+                            <div class="tab-pane fade" id="threads-tab">threads</div>
+                            <div class="tab-pane fade" id="reviews-tab">reviews</div>
+                            <div class="tab-pane fade" id="liked-projects-tab">liked-projects</div>
+                            <div class="tab-pane fade" id="comments-tab">comments</div>
+                            <div class="tab-pane fade" id="saved-tab">saved</div>
+
+                        </div>
                     </div>
 
                 </div>
