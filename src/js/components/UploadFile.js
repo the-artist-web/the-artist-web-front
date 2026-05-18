@@ -29,21 +29,21 @@ export const UploadFile = ($element) => {
             const { deleteLabel } = getTranslation();
 
             const previewHtml = `
-                <li class="card outline">
+                <li class="card outline" style="border-radius: var(--radius-medium);">
                     <div class="card-body p-4">
                         <div class="wrapper-between flex-nowrap">
                             <div class="flex" style="gap: var(--spacing-3);">
-                                <div class="icon-btn tonal-success medium">
+                                <div class="icon-btn tonal-success small" style="border-radius: var(--radius-medium);">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-zip"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M16 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" /><path d="M12 15v6" /><path d="M5 15h3l-3 6h3" /></svg>
                                 </div>
 
-                                <div class="wrapper-content">
-                                    <p class="text-body-large line-clamp line-clamp-1">${fileName}</p>
-                                    <p class="text-body-medium text-on-background-variant">${fileSize}</p>
+                                <div class="wrapper-content gap-0">
+                                    <p class="text-body-medium line-clamp line-clamp-1">${fileName}</p>
+                                    <p class="text-body-small text-on-background-variant">${fileSize}</p>
                                 </div>
                             </div>
 
-                            <button type="button" class="icon-btn text-error extra-small" 
+                            <button type="button" class="icon-btn text-error small" 
                                     data-bs-toggle="tooltip" 
                                     data-bs-title="${deleteLabel}" 
                                     data-bs-placement="bottom" 

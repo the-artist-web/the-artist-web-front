@@ -1240,6 +1240,85 @@
 
     </div>
 
+    <!-- Dialog Download File -->
+    <div class="modal fade" id="dialog-download-file">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Project Handoff</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-card">
+                        <div class="card secondary" style="border-radius: var(--radius-medium);">
+                            <div class="card-body p-4">
+                                <div class="wrapper-between flex-nowrap">
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="icon-btn tonal-success small" style="border-radius: var(--radius-medium);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-zip"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"></path><path d="M16 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6"></path><path d="M12 15v6"></path><path d="M5 15h3l-3 6h3"></path></svg>
+                                        </div>
+    
+                                        <div class="wrapper-content gap-0">
+                                            <p class="text-body-medium line-clamp line-clamp-1">landing-page.zip</p>
+    
+                                            <p class="text-body-small text-on-background-variant">187.3KB</p>
+                                        </div>
+                                    </div>
+    
+                                    <a href="path-file.zip" download class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Download File" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                                        
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label>Demo URL</label>
+    
+                            <div class="flex">
+                                <div class="input-wrapper secondary small p-start-0">
+                                    <div class="icon-btn small text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 15l6 -6"></path><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"></path></svg>
+                                    </div>
+        
+                                    <input type="url" value="https://github.com/the-artist-web" class="text-body-large text-on-background-variant">
+                                </div>
+
+                                <a href="https://github.com/the-artist-web" target="_blank" class="btn info small p-end-0" style="border-radius: var(--radius-medium);">
+                                    <p class="text-body-medium">Open</p>
+
+                                    <div class="icon-btn small arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                    </div>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <main class="main">
         
         <!-- Orders -->
@@ -1247,15 +1326,25 @@
 
             <div class="container container-lg">
 
-                <div class="title-sec align-items-end">
-                    <div class="wrapper-content">
-                        <h1 class="text-headline-large"><strong><span class="text-on-background-variant">Order</span> #3001</strong></h1>
+                <div class="title-sec align-items-start">
+                    <div class="wrapper flex-column align-items-start">
+                        <a href="../../../../pages/users/profiles/orders/index.html" class="hover flex text-on-background-variant" style="text-decoration: none !important;">
+                            <div class="arrow-dir">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                            </div>
 
-                        <p class="text-body-large text-on-background-variant">May 16, 2026</p>
+                            <p class="text-body-medium">My Orders</p>
+                        </a>
+
+                        <div class="wrapper-content">
+                            <h1 class="text-headline-large"><strong>Order #3001</strong></h1>
+    
+                            <p class="text-body-large text-on-background-variant">May 16, 2026</p>
+                        </div>
                     </div>
 
                     <div class="wrapper-item">
-                        <a href="path-file.zip" download class="btn outline small p-start-0">
+                        <button type="button" class="btn outline small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-download-file">
                             <div class="icon-btn small">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
                             </div>
@@ -1263,17 +1352,13 @@
                             <p class="text-body-medium">Download Files</p>
 
                             <div class="state-layer"></div>
-                        </a>
-                        
-                        <a href="../../../../pages/users/messages/show.html" class="btn inverse small p-start-0">
-                            <div class="icon-btn small">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-                            </div>
+                        </button>
 
-                            <p class="text-body-medium">Message Creator</p>
+                        <button type="button" class="btn error small">
+                            <p class="text-body-medium">Cancel Order</p>
 
                             <div class="state-layer"></div>
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -1281,46 +1366,172 @@
 
                     <div class="card outline">
                         <div class="card-body">
-                            <p class="text-body-small text-on-background-variant text-uppercase">Order Status</p>
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Order Status</p>
 
-                            <div class="btn tonal-success extra-small rounded-pill">
-                                <p class="text-body-small">Completed</p>
+                                <h3 class="text-title-large text-success"><strong>Completed</strong></h3>
                             </div>
                         </div>
                     </div>
 
                     <div class="card outline">
                         <div class="card-body">
-                            <p class="text-body-small text-on-background-variant text-uppercase">Total Amount</p>
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Total Amount</p>
 
-                            <h3 class="text-title-large"><strong>1,200.00EGP</strong></h3>
+                                <h3 class="text-title-large"><strong>1,200EGP</strong></h3>
+                            </div>
                         </div>
                     </div>
 
                     <div class="card outline">
                         <div class="card-body">
-                            <p class="text-body-small text-on-background-variant text-uppercase">Platform Fee</p>
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Platform Fee</p>
 
-                            <h3 class="text-title-large text-error"><strong>-30%</strong></h3>
+                                <h3 class="text-title-large text-error"><strong>-30%</strong></h3>
+                            </div>
                         </div>
                     </div>
 
                     <div class="card outline">
                         <div class="card-body">
-                            <p class="text-body-small text-on-background-variant text-uppercase">Payment Method</p>
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Net</p>
 
-                            <h3 class="text-title-large"><strong>PayPal</strong></h3>
+                                <h3 class="text-title-large text-success"><strong>840EGP</strong></h3>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                
-                <div class="order-grid">
-                    
-                    <span>Left</span>
 
-                    <span>right</span>
+                <div class="card outline" style="margin-block: var(--spacing-6);">
+                    <div class="card-body gap-0">
+                        <div class="title-sec">
+                            <h2 class="text-title-large"><strong>Summary</strong></h2>
+                        </div>
 
+                        <ul class="wrapper flex-column align-items-start w-full">
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Order ID</p>
+
+                                    <p class="text-body-medium">#ORD-3001</p>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Project</p>
+
+                                    <a href="../../../../pages/projects/show.html" class="hover">
+                                        <p class="text-body-medium line-clamp line-clamp-1">E-commerce App Template</p>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Creator</p>
+
+                                    <a href="../../../../pages/users/profiles/index.html" class="flex">
+                                        <div class="avatar extra-small">
+                                            <img src="https://catalyst-demo.tailwindui.com/events/we-all-look-the-same.jpg" alt="username" loading="lazy" class="img-avatar img-cover" />
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                        </div>
+
+                                        <p class="text-body-medium hover line-clamp line-clamp-1">We All Look The Same</p>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Amount</p>
+
+                                    <p class="text-body-medium">1,200EGP</p>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Platform Fee (-30%)</p>
+
+                                    <p class="text-body-medium text-error">-360.00EGP</p>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Net</p>
+
+                                    <p class="text-body-medium text-success">840.00EGP</p>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Delivery Date</p>
+
+                                    <p class="text-body-medium">May 16, 2026</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card outline">
+                    <div class="card-body gap-0">
+                        <div class="title-sec">
+                            <h2 class="text-title-large"><strong>Payment method</strong></h2>
+                        </div>
+
+                        <ul class="wrapper flex-column align-items-start w-full">
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Method</p>
+
+                                    <p class="text-body-medium">PayPal</p>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">PayPal Email</p>
+                                    
+                                    <p class="text-body-medium">ludovic@example.com</p>
+                                </div>
+                            </li>
+
+                            <li class="separator x"></li>
+                            
+                            <li>
+                                <div class="grid-2-base">
+                                    <p class="text-body-medium text-on-background-variant">Status</p>
+
+                                    <span class="btn tonal-success extra-small rounded-pill">
+                                        <p class="text-body-small">Completed</p>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>

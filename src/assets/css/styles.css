@@ -1416,6 +1416,13 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) { left: -1px !important; }
 .table-overflow table th .flex,
 .table-overflow table td .flex { max-width: max-content; }
 
+.table-overflow table svg {
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
+}
+
 /**
  * Timeline
  */
@@ -2066,10 +2073,10 @@ html[dir="rtl"] .badge-container .badge {
 .btn-link:active { opacity: 0.5; }
 
 .btn-link svg {
-    min-width: var(--spacing-4);
-    max-width: var(--spacing-4);
-    min-height: var(--spacing-4);
-    max-height: var(--spacing-4);
+    min-width: var(--spacing-5);
+    max-width: var(--spacing-5);
+    min-height: var(--spacing-5);
+    max-height: var(--spacing-5);
 }
 
 .btn.p-start-0:has(.avatar) p { padding-inline-start: var(--spacing-1) !important; }
@@ -5644,6 +5651,8 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
 /**
  * Orders
  */
+.orders .title-sec .flex.hover { margin-block-end: var(--spacing-2); }
+
 .orders .grid-4-base {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--spacing-4);
@@ -5678,11 +5687,13 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     margin-block-start: var(--spacing-4);
 }
 
-.orders .order-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--spacing-10);
-    margin-block-start: var(--spacing-6);
+.orders .card .card-body { gap: 0; }
+
+.orders .card li { width: 100%; }
+
+.orders .card .grid-2-base {
+    align-items: center;
+    gap: var(--spacing-2);
 }
 
 /* ----------------------------------------------------- *\
@@ -6181,7 +6192,10 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     .profiles .grid-profiles .replies-list .replies-card .replies-content { padding: var(--spacing-6); }
 
     /* Orders */
-    .orders .grid-4-base { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .orders .grid-4-base {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: var(--spacing-6);
+    }
 
     .orders .orders-search { flex-wrap: nowrap; }
 
@@ -6189,7 +6203,7 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     .orders .orders-search .flex .dropdown,
     .orders .orders-search .flex .btn { width: max-content; }
 
-    .orders .order-grid { grid-template-columns: minmax(0, 1fr) 350px; }
+    .orders .card .grid-2-base { grid-template-columns: 320px 1fr; }
 }
 
 /**

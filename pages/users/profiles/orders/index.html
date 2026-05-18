@@ -1240,6 +1240,85 @@
 
     </div>
 
+    <!-- Dialog Download File -->
+    <div class="modal fade" id="dialog-download-file">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Project Handoff</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-card">
+                        <div class="card secondary" style="border-radius: var(--radius-medium);">
+                            <div class="card-body p-4">
+                                <div class="wrapper-between flex-nowrap">
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="icon-btn tonal-success small" style="border-radius: var(--radius-medium);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-zip"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"></path><path d="M16 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6"></path><path d="M12 15v6"></path><path d="M5 15h3l-3 6h3"></path></svg>
+                                        </div>
+    
+                                        <div class="wrapper-content gap-0">
+                                            <p class="text-body-medium line-clamp line-clamp-1">landing-page.zip</p>
+    
+                                            <p class="text-body-small text-on-background-variant">187.3KB</p>
+                                        </div>
+                                    </div>
+    
+                                    <a href="path-file.zip" download class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Download File" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                                        
+                                        <div class="state-layer"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label>Demo URL</label>
+    
+                            <div class="flex">
+                                <div class="input-wrapper secondary small p-start-0">
+                                    <div class="icon-btn small text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 15l6 -6"></path><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"></path><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"></path></svg>
+                                    </div>
+        
+                                    <input type="url" value="https://github.com/the-artist-web" class="text-body-large text-on-background-variant">
+                                </div>
+
+                                <a href="https://github.com/the-artist-web" target="_blank" class="btn info small p-end-0" style="border-radius: var(--radius-medium);">
+                                    <p class="text-body-medium">Open</p>
+
+                                    <div class="icon-btn small arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                    </div>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <main class="main">
         
         <!-- Orders -->
@@ -1266,16 +1345,6 @@
                     <div class="card outline">
                         <div class="card-body">
                             <div class="wrapper-block">
-                                <p class="text-body-small text-on-background-variant text-uppercase">Delivery</p>
-
-                                <h3 class="text-title-large"><strong>20</strong></h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card outline">
-                        <div class="card-body">
-                            <div class="wrapper-block">
                                 <p class="text-body-small text-on-background-variant text-uppercase">Completed</p>
 
                                 <h3 class="text-title-large"><strong>2005</strong></h3>
@@ -1286,9 +1355,19 @@
                     <div class="card outline">
                         <div class="card-body">
                             <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Cancelled</p>
+
+                                <h3 class="text-title-large"><strong>1</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card outline">
+                        <div class="card-body">
+                            <div class="wrapper-block">
                                 <p class="text-body-small text-on-background-variant text-uppercase">Total Spent</p>
 
-                                <h3 class="text-title-large"><strong>4,234.00EGP</strong></h3>
+                                <h3 class="text-title-large"><strong>4,234EGP</strong></h3>
                             </div>
                         </div>
                     </div>
@@ -1336,15 +1415,7 @@
                                             <div class="state-layer"></div>
                                         </a>
                                     </li>
-        
-                                    <li>
-                                        <a href="../../../users/profiles/orders/index.html" class="dropdown-item">
-                                            <p class="text-body-medium">Delivery</p>
-        
-                                            <div class="state-layer"></div>
-                                        </a>
-                                    </li>
-        
+
                                     <li>
                                         <a href="../../../users/profiles/orders/index.html" class="dropdown-item">
                                             <p class="text-body-medium">Completed</p>
@@ -1352,7 +1423,7 @@
                                             <div class="state-layer"></div>
                                         </a>
                                     </li>
-        
+
                                     <li>
                                         <a href="../../../users/profiles/orders/index.html" class="dropdown-item">
                                             <p class="text-body-medium">Cancelled</p>
@@ -1432,50 +1503,40 @@
         
                         <tbody>
                             <tr>
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">1</a>
-                                </td>
+                                <td>1</td>
+        
+                                <td>Oct 04, 2024</td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        Oct 04, 2024
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="btn tonal-warning extra-small rounded-pill">
+                                    <span class="btn tonal-warning extra-small rounded-pill">
                                         <p class="text-body-small">Pending</p>
-                                    </a>
+                                    </span>
+                                </td>
+        
+                                <td>Vodafone Cash</td>
+        
+                                <td>
+                                    <p class="text-body-medium line-clamp line-clamp-1">DuoVid - AI Video Generator Dashboard (Light & Dark)</p>
                                 </td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">Vodafone Cash</a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        <p class="text-body-medium line-clamp line-clamp-1">DuoVid - AI Video Generator Dashboard (Light & Dark)</p>
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="flex" style="gap: var(--spacing-3);">
-                                        <div class="avatar small">
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="avatar extra-small">
                                             <img src="https://catalyst-demo.tailwindui.com/events/bear-hug.jpg" alt="username" loading="lazy" class="img-avatar img-cover" />
         
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </div>
         
                                         <p class="text-body-medium text-on-background line-clamp line-clamp-1">Bear Hug: Live in Concert</p>
-                                    </a>
+                                    </div>
                                 </td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="wrapper-content gap-0">
+                                    <div class="wrapper-content gap-0">
                                         <span class="text-on-background">320.00EGP</span>
                                         
                                         <p class="text-body-small">Platform fee -30%</p>
-                                    </a>
+                                    </div>
                                 </td>
 
                                 <td>
@@ -1486,66 +1547,50 @@
                                             <div class="state-layer"></div>
                                         </a>
                                         
-                                        <a href="path-file.zip" download class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
-
-                                        <a href="../../../../pages/users/messages/show.html" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Message Creator" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
+                                        <span data-bs-toggle="modal" data-bs-target="#dialog-download-file">
+                                            <button type="button" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </span>
                                     </div>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">2</a>
-                                </td>
+                                <td>2</td>
+        
+                                <td>Nov 02, 2024</td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        Nov 02, 2024
-                                    </a>
+                                    <span class="btn tonal-warning extra-small rounded-pill">
+                                        <p class="text-body-small">Pending</p>
+                                    </span>
                                 </td>
         
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="btn tonal-info extra-small rounded-pill">
-                                        <p class="text-body-small">Delivery</p>
-                                    </a>
-                                </td>
+                                <td>PayPal</td>
+        
+                                <td><p class="text-body-medium line-clamp line-clamp-1">Landing Page</p></td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">PayPal</a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        <p class="text-body-medium line-clamp line-clamp-1">E-commerce App Template</p>
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="flex" style="gap: var(--spacing-3);">
-                                        <div class="avatar small">
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="avatar extra-small">
                                             <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F7ae3a0ffcf9eb41156244fbaa3588de7.png&w=400&q=85&dpl=dpl_9JaJYBCsB7jvskRkx4cu4Ej8B29z" alt="username" loading="lazy" class="img-avatar img-cover" />
         
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </div>
         
                                         <p class="text-body-medium text-on-background line-clamp line-clamp-1">Ludovic Migneault</p>
-                                    </a>
+                                    </div>
                                 </td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="wrapper-content gap-0">
+                                    <div class="wrapper-content gap-0">
                                         <span class="text-on-background">1,200.00EGP</span>
                                         
                                         <p class="text-body-small">Platform fee -30%</p>
-                                    </a>
+                                    </div>
                                 </td>
 
                                 <td>
@@ -1556,66 +1601,50 @@
                                             <div class="state-layer"></div>
                                         </a>
                                         
-                                        <a href="path-file.zip" download class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
-
-                                        <a href="../../../../pages/users/messages/show.html" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Message Creator" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
+                                        <span data-bs-toggle="modal" data-bs-target="#dialog-download-file">
+                                            <button type="button" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </span>
                                     </div>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">3</a>
-                                </td>
+                                <td>3</td>
+        
+                                <td>Nov 02, 2024</td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        Nov 02, 2024
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="btn tonal-success extra-small rounded-pill">
+                                    <span class="btn tonal-success extra-small rounded-pill">
                                         <p class="text-body-small">Completed</p>
-                                    </a>
+                                    </span>
                                 </td>
         
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">PayPal</a>
-                                </td>
+                                <td>PayPal</td>
+        
+                                <td><p class="text-body-medium line-clamp line-clamp-1">Solaris Dashboard Kit</p></td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        <p class="text-body-medium line-clamp line-clamp-1">Solaris Dashboard Kit</p>
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="flex" style="gap: var(--spacing-3);">
-                                        <div class="avatar small">
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="avatar extra-small">
                                             <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2Fdf8746ea27b5bd87ceebb868e208056a.png&w=400&q=85&dpl=dpl_9JaJYBCsB7jvskRkx4cu4Ej8B29z" alt="username" loading="lazy" class="img-avatar img-cover" />
         
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </div>
         
                                         <p class="text-body-medium text-on-background line-clamp line-clamp-1">Alamdar Manafov</p>
-                                    </a>
+                                    </div>
                                 </td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="wrapper-content gap-0">
+                                    <div class="wrapper-content gap-0">
                                         <span class="text-on-background">45.00EGP</span>
                                         
                                         <p class="text-body-small">Platform fee -30%</p>
-                                    </a>
+                                    </div>
                                 </td>
 
                                 <td>
@@ -1626,66 +1655,50 @@
                                             <div class="state-layer"></div>
                                         </a>
                                         
-                                        <a href="path-file.zip" download class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
-
-                                        <a href="../../../../pages/users/messages/show.html" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Message Creator" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
+                                        <span data-bs-toggle="modal" data-bs-target="#dialog-download-file">
+                                            <button type="button" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </span>
                                     </div>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">4</a>
-                                </td>
+                                <td>4</td>
+        
+                                <td>Oct 30, 2024</td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        Oct 30, 2024
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="btn tonal-success extra-small rounded-pill">
+                                    <span class="btn tonal-success extra-small rounded-pill">
                                         <p class="text-body-small">Completed</p>
-                                    </a>
+                                    </span>
                                 </td>
         
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">PayPal</a>
-                                </td>
+                                <td>PayPal</td>
+        
+                                <td><p class="text-body-medium line-clamp line-clamp-1">Mobile Banking UI</p></td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        <p class="text-body-medium line-clamp line-clamp-1">Mobile Banking UI</p>
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="flex" style="gap: var(--spacing-3);">
-                                        <div class="avatar small">
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="avatar extra-small">
                                             <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2Fdf8746ea27b5bd87ceebb868e208056a.png&w=400&q=85&dpl=dpl_9JaJYBCsB7jvskRkx4cu4Ej8B29z" alt="username" loading="lazy" class="img-avatar img-cover" />
         
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </div>
         
                                         <p class="text-body-medium text-on-background line-clamp line-clamp-1">Alamdar Manafov</p>
-                                    </a>
+                                    </div>
                                 </td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="wrapper-content gap-0">
+                                    <div class="wrapper-content gap-0">
                                         <span class="text-on-background">320.00EGP</span>
                                         
                                         <p class="text-body-small">Platform fee -30%</p>
-                                    </a>
+                                    </div>
                                 </td>
 
                                 <td>
@@ -1696,66 +1709,50 @@
                                             <div class="state-layer"></div>
                                         </a>
                                         
-                                        <a href="path-file.zip" download class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
-
-                                        <a href="../../../../pages/users/messages/show.html" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Message Creator" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
+                                        <span data-bs-toggle="modal" data-bs-target="#dialog-download-file">
+                                            <button type="button" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </span>
                                     </div>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">5</a>
-                                </td>
+                                <td>5</td>
+        
+                                <td>Oct 30, 2024</td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        Oct 20, 2024
-                                    </a>
+                                    <span class="btn tonal-error extra-small rounded-pill">
+                                        <p class="text-body-small">Cancelled</p>
+                                    </span>
                                 </td>
         
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="btn tonal-error extra-small rounded-pill">
-                                        <p class="text-body-small">Canselled</p>
-                                    </a>
-                                </td>
+                                <td>Credit Card</td>
+        
+                                <td><p class="text-body-medium line-clamp line-clamp-1">Mobile Banking UI</p></td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">Credit Card</a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html">
-                                        <p class="text-body-medium line-clamp line-clamp-1">Iconography Pro Set</p>
-                                    </a>
-                                </td>
-        
-                                <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="flex" style="gap: var(--spacing-3);">
-                                        <div class="avatar small">
-                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2F17c21fc15d4f9bee986197c1a4cc3a14.png&w=400&q=85&dpl=dpl_9JaJYBCsB7jvskRkx4cu4Ej8B29z" alt="username" loading="lazy" class="img-avatar img-cover" />
+                                    <div class="flex" style="gap: var(--spacing-3);">
+                                        <div class="avatar extra-small">
+                                            <img src="https://tabler.io/_next/image?url=%2Favatars%2Fdefault%2Fdf8746ea27b5bd87ceebb868e208056a.png&w=400&q=85&dpl=dpl_9JaJYBCsB7jvskRkx4cu4Ej8B29z" alt="username" loading="lazy" class="img-avatar img-cover" />
         
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
                                         </div>
         
-                                        <p class="text-body-medium text-on-background line-clamp line-clamp-1">Miguel Hernández</p>
-                                    </a>
+                                        <p class="text-body-medium text-on-background line-clamp line-clamp-1">Alamdar Manafov</p>
+                                    </div>
                                 </td>
         
                                 <td>
-                                    <a href="../../../../pages/users/profiles/orders/show.html" class="wrapper-content gap-0">
-                                        <span class="text-on-background">499.00EGP</span>
+                                    <div class="wrapper-content gap-0">
+                                        <span class="text-on-background">320.00EGP</span>
                                         
-                                        <p class="text-body-small">Platform fee -30%</p>
-                                    </a>
+                                        <!-- <p class="text-body-small">Platform fee -30%</p> -->
+                                    </div>
                                 </td>
 
                                 <td>
@@ -1766,17 +1763,13 @@
                                             <div class="state-layer"></div>
                                         </a>
                                         
-                                        <a href="path-file.zip" download class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
-
-                                        <a href="../../../../pages/users/messages/show.html" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Message Creator" data-bs-placement="bottom">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1" /></svg>
-
-                                            <div class="state-layer"></div>
-                                        </a>
+                                        <!-- <span data-bs-toggle="modal" data-bs-target="#dialog-download-file">
+                                            <button type="button" class="icon-btn text small p-0" data-bs-toggle="tooltip" data-bs-title="Download Files" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+    
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </span> -->
                                     </div>
                                 </td>
                             </tr>
