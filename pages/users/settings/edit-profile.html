@@ -1166,7 +1166,7 @@
 
                 <div class="modal-header">
                     <div class="wrapper-block">
-                        <p class="text-body-large"><strong>Report</strong></p>
+                        <p class="text-body-large" style="font-size: 1.8rem;"><strong>Report</strong></p>
 
                         <p class="text-body-medium text-on-background-variant" style="padding-inline-end: var(--spacing-2) !important;">Please review our <a href="../../../../legal/terms.html" target="_blank" class="btn-link">Community Guidelines</a> for additional information about what is and isn't permitted on The Artist Web.</p>
                     </div>
@@ -1209,7 +1209,7 @@
                     <li>
                         <div class="modal-link" style="grid-template-columns: minmax(0, 1fr);">
                             <div class="form-group">
-                                <div class="textarea-wrapper secondary">
+                                <div class="textarea-wrapper outline">
                                     <textarea placeholder="Tell us more..." name="other-content" class="text-body-medium text-on-background"></textarea>
                                 </div>
 
@@ -1235,6 +1235,93 @@
                 </div>
 
             </form>
+
+        </div>
+
+    </div>
+
+    <!-- Dialog Change Password -->
+    <div class="modal fade" id="dialog-change-password">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Update your password</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+                    <form action="" method="POST" class="form-card">
+
+                        <div class="form-group">
+                            <label for="current_password">Current Password</label>
+
+                            <div class="input-wrapper outline small p-end-0" data-passwords>
+                                <input type="password" placeholder="Your current password" name="" value="" id="current_password" class="text-body-medium" />
+
+                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Show Password" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                </button>
+                            </div>
+
+                            <!-- <p class="text-error text-body-medium"></p> -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="new_password">New Password</label>
+
+                            <div class="input-wrapper outline small p-end-0" data-passwords>
+                                <input type="password" placeholder="Your new password" name="" value="" id="new_password" class="text-body-medium" />
+
+                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Show Password" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                </button>
+                            </div>
+
+                            <!-- <p class="text-error text-body-medium"></p> -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm_new_password">Confirm New Password</label>
+
+                            <div class="input-wrapper outline small p-end-0" data-passwords>
+                                <input type="password" placeholder="Your confirm new password" name="" value="" id="confirm_new_password" class="text-body-medium" />
+
+                                <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Show Password" data-bs-placement="bottom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                </button>
+                            </div>
+
+                            <!-- <p class="text-error text-body-medium"></p> -->
+                        </div>
+
+                        <div class="flex w-full">
+                            <button type="button" class="btn secondary small w-full" data-bs-dismiss="modal">
+                                <p class="text-body-medium">Cancel</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <button type="submit" class="btn inverse small w-full">
+                                <p class="text-body-medium">Save Change</p>
+    
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
 
         </div>
 
@@ -1274,36 +1361,12 @@
                             </li>
     
                             <li>
-                                <a href="../../../pages/users/settings/security.html" class="btn text extra-small rounded-pill p-start-0">
-                                    <div class="icon-btn small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shield-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" /><path d="M11 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12l0 2.5" /></svg>
-                                    </div>
-    
-                                    <p class="text-body-medium">Security</p>
-    
-                                    <div class="state-layer"></div>
-                                </a>
-                            </li>
-    
-                            <li>
                                 <a href="../../../pages/users/settings/notifications.html" class="btn text extra-small rounded-pill p-start-0">
                                     <div class="icon-btn small">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
                                     </div>
     
                                     <p class="text-body-medium">Notifications</p>
-    
-                                    <div class="state-layer"></div>
-                                </a>
-                            </li>
-    
-                            <li>
-                                <a href="../../../pages/users/settings/appearance.html" class="btn text extra-small rounded-pill p-start-0">
-                                    <div class="icon-btn small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-palette"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" /><path d="M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-                                    </div>
-    
-                                    <p class="text-body-medium">Appearance</p>
     
                                     <div class="state-layer"></div>
                                 </a>
@@ -1322,12 +1385,22 @@
                             </li>
     
                             <li>
-                                <a href="../../../pages/users/settings/messages-&-replies.html" class="btn text extra-small rounded-pill p-start-0">
+                                <a href="../../../pages/users/settings/appearance.html" class="btn text extra-small rounded-pill p-start-0">
                                     <div class="icon-btn small">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-send"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 14l11 -11" /><path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-palette"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" /><path d="M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
                                     </div>
     
-                                    <p class="text-body-medium">Messages and Replies</p>
+                                    <p class="text-body-medium">Appearance</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="../../../pages/users/settings/languages.html" class="btn text extra-small rounded-pill p-start-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-language"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6.371c0 4.418 -2.239 6.629 -5 6.629" /><path d="M4 6.371h7" /><path d="M5 9c0 2.144 2.252 3.908 6 4" /><path d="M12 20l4 -9l4 9" /><path d="M19.1 18h-6.2" /><path d="M6.694 3l.793 .582" /></svg>
+    
+                                    <p class="text-body-medium">Languages</p>
     
                                     <div class="state-layer"></div>
                                 </a>
@@ -1339,7 +1412,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-at"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" /></svg>
                                     </div>
     
-                                    <p class="text-body-medium">Tags and Mentions</p>
+                                    <p class="text-body-medium">Tags & Mentions</p>
     
                                     <div class="state-layer"></div>
                                 </a>
@@ -1438,30 +1511,10 @@
                             </li>
     
                             <li>
-                                <a href="../../../pages/users/settings/security.html" class="settings-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shield-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" /><path d="M11 11a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12l0 2.5" /></svg>
-    
-                                    <p class="text-body-medium">Security</p>
-    
-                                    <div class="state-layer"></div>
-                                </a>
-                            </li>
-    
-                            <li>
                                 <a href="../../../pages/users/settings/notifications.html" class="settings-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bell"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
     
                                     <p class="text-body-medium">Notifications</p>
-    
-                                    <div class="state-layer"></div>
-                                </a>
-                            </li>
-    
-                            <li>
-                                <a href="../../../pages/users/settings/appearance.html" class="settings-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-palette"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" /><path d="M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
-    
-                                    <p class="text-body-medium">Appearance</p>
     
                                     <div class="state-layer"></div>
                                 </a>
@@ -1482,24 +1535,42 @@
                         <ul class="settings-list">
     
                             <li class="title-list">
-                                <p class="text-body-small text-on-background-variant text-uppercase">Privacy</p>
+                                <p class="text-body-small text-on-background-variant text-uppercase">Preferences</p>
                             </li>
     
                             <li>
-                                <a href="../../../pages/users/settings/messages-&-replies.html" class="settings-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-send"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 14l11 -11" /><path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" /></svg>
+                                <a href="../../../pages/users/settings/appearance.html" class="settings-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-palette"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" /><path d="M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
     
-                                    <p class="text-body-medium">Messages and Replies</p>
+                                    <p class="text-body-medium">Appearance</p>
     
                                     <div class="state-layer"></div>
                                 </a>
                             </li>
     
                             <li>
+                                <a href="../../../pages/users/settings/languages.html" class="settings-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-language"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6.371c0 4.418 -2.239 6.629 -5 6.629" /><path d="M4 6.371h7" /><path d="M5 9c0 2.144 2.252 3.908 6 4" /><path d="M12 20l4 -9l4 9" /><path d="M19.1 18h-6.2" /><path d="M6.694 3l.793 .582" /></svg>
+    
+                                    <p class="text-body-medium">Languages</p>
+    
+                                    <div class="state-layer"></div>
+                                </a>
+                            </li>
+
+                        </ul>
+    
+                        <ul class="settings-list">
+    
+                            <li class="title-list">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Privacy</p>
+                            </li>
+    
+                            <li>
                                 <a href="../../../pages/users/settings/tags-&-mentions.html" class="settings-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-at"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" /></svg>
     
-                                    <p class="text-body-medium">Tags and Mentions</p>
+                                    <p class="text-body-medium">Tags & Mentions</p>
     
                                     <div class="state-layer"></div>
                                 </a>
@@ -1568,11 +1639,243 @@
                     </aside>
 
                     <div class="setting-body">
-                        <div class="title-sec">
-                            <h1 class="text-title-large"><strong>Edit Profile</strong></h1>
+                        <h1 class="text-title-large"><strong>Edit Profile</strong></h1>
+
+                        <div class="banner-avatar-container">
+                            <div class="banner-pattern" data-upload-image>
+                                <img src="" alt="banner pattern" loading="lazy" class="img-banner img-cover" hidden />
+
+                                <label for="upload-banner" class="btn scrim extra-small">
+                                    <input type="file" name="banner" id="upload-banner" hidden />
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-camera"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" /><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+
+                                    <p class="text-body-medium">Change Banner</p>
+
+                                    <div class="state-layer"></div>
+                                </label>
+                            </div>
+
+                            <div class="avatar extra-large" data-upload-image>
+                                <img src="" alt="avatar" loading="lazy" class="img-avatar img-cover" hidden />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+
+                                <label for="upload-avatar" class="icon-btn inverse" data-bs-toggle="tooltip" data-bs-title="Change Profile Photo" data-bs-placement="bottom">
+                                    <input type="file" name="profile_user" id="upload-avatar" hidden />
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
+
+                                    <div class="state-layer"></div>
+                                </label>
+                            </div>
                         </div>
 
-                        <!-- Go -->
+                        <form action="" method="POST" class="form-card">
+                            
+                            <div class="grid-2-base">
+                                <div class="form-group">
+                                    <label for="full_name">Full Name</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your full name" name="full_name" value="The Artist Web" id="full_name" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Username" name="username" value="theartistweb" id="username" class="text-body-medium text-lowercase" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                            </div>
+                            
+                            <div class="grid-2-base">
+                                <div class="form-group">
+                                    <label for="email_address">Email Address</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="email" placeholder="Your email address" name="email" value="teamtheartistweb@gmail.com" id="email_address" class="text-body-medium text-lowercase" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+    
+                                    <div class="select-wrapper outline small w-full">
+                                        <select name="gender" id="gender" class="text-body-medium">
+                                            <option value="" selected>Select Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="prefer_not_to_say">Prefer not to say</option>
+                                        </select>
+                                        
+                                        <div class="icon-btn small arrow-select">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18.707 8.293a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1 -1.414 0l-6 -6a1 1 0 0 1 1.414 -1.414l5.293 5.293l5.293 -5.293a1 1 0 0 1 1.414 0" /></svg>
+                                        </div>
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                            </div>
+
+                            <div class="grid-2-base">
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+    
+                                    <div class="input-wrapper outline small p-start-0">
+                                        <div class="icon-btn small text-on-background-variant">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg>
+                                        </div>
+    
+                                        <input type="text" placeholder="City, Country" name="location" value="Alexandria, Egypt" id="location" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="company_name">Company / Organization</label>
+    
+                                    <div class="input-wrapper outline small p-start-0">
+                                        <div class="icon-btn small text-on-background-variant">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 21l18 0"></path><path d="M5 21v-14l8 -4v18"></path><path d="M19 21v-10l-6 -4"></path><path d="M9 9l0 .01"></path><path d="M9 12l0 .01"></path><path d="M9 15l0 .01"></path><path d="M9 18l0 .01"></path></svg>
+                                        </div>
+    
+                                        <input type="text" placeholder="e.g. Acme Inc." name="company_name" value="The Artist Web" id="company_name" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+
+                                <div class="textarea-wrapper outline medium">
+                                    <textarea placeholder="Your Bio" name="bio" maxlength="1024" id="bio" class="text-body-medium"></textarea>
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="local_time">Local Time</label>
+
+                                <div class="select-wrapper outline small w-full">
+                                    <select name="local_time" id="local_time" class="text-body-medium">
+                                        <option value="Cairo" selected>(GMT+02:00) Cairo</option>
+                                        <option value="American Samoa">(GMT-11:00) American Samoa</option>
+                                        <option value="Midway Island">(GMT-11:00) Midway Island</option>
+                                        <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                        <option value="Alaska">(GMT-09:00) Alaska</option>
+                                        <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                        <option value="Tijuana">(GMT-08:00) Tijuana</option>
+                                        <option value="Arizona">(GMT-07:00) Arizona</option>
+                                        <option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+                                        <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                                        <option value="Central America">(GMT-06:00) Central America</option>
+                                        <option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                        <option value="Chihuahua">(GMT-06:00) Chihuahua</option>
+                                        <option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+                                        <option value="Mexico City">(GMT-06:00) Mexico City</option>
+                                        <option value="Monterrey">(GMT-06:00) Monterrey</option>
+                                        <option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                        <option value="Bogota">(GMT-05:00) Bogota</option>
+                                        <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                        <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                    </select>
+
+                                    <div class="icon-btn small arrow-select">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                    </div>
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+
+                            <div class="separator x"></div>
+
+                            <div class="wrapper-content">
+                                <h2 class="text-body-large"><strong>Password</strong></h2>
+
+                                <p class="text-body-small text-on-background-variant">You can update your password below.</p>
+                            </div>
+
+                            <button type="button" class="btn secondary extra-small" data-bs-toggle="modal" data-bs-target="#dialog-change-password">
+                                <p class="text-body-medium">Change Password</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <div class="separator x"></div>
+
+                            <div class="wrapper flex-column align-items-start">
+                                <h2 class="text-body-large"><strong>Skills & Technologies</strong></h2>
+    
+                                <div class="form-group">
+                                    <div class="skills-fields" data-add-skills>
+                                        <ul class="skills-list" hidden data-skills-list></ul>
+                                        
+                                        <input type="text" placeholder="Add a Skill..." class="text-body-medium" data-input-add-skills />
+                                    </div>
+
+                                    <p class="text-body-small text-on-background-variant">Press <code>Enter</code> to add a skill</p>
+                                </div>
+                            </div>
+
+                            <div class="separator x"></div>
+
+                            <div class="wrapper flex-column align-items-start">
+                                <h2 class="text-body-large"><strong>Sign-in methods</strong></h2>
+    
+                                <ul class="wrapper-item">
+
+                                    <li>
+                                        <div class="btn outline small p-end-0">
+                                            <p class="text-body-medium">Google</p>
+
+                                            <div class="icon-btn small">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Remove This Connection" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x" style="min-width: var(--spacing-4) !important; max-width: var(--spacing-4) !important; min-height: var(--spacing-4) !important; max-height: var(--spacing-4) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="btn outline small p-end-0">
+                                            <p class="text-body-medium">Github</p>
+
+                                            <div class="icon-btn small">
+                                                <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Remove This Connection" data-bs-placement="bottom">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x" style="min-width: var(--spacing-4) !important; max-width: var(--spacing-4) !important; min-height: var(--spacing-4) !important; max-height: var(--spacing-4) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="wrapper-between">
+                                <span></span>
+
+                                <button type="submit" class="btn inverse small">
+                                    <p class="text-body-medium">Save Change</p>
+
+                                    <div class="state-layer"></div>
+                                </button>
+                            </div>
+
+                        </form>
                     </div>
 
                 </div>

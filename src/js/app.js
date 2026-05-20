@@ -20,6 +20,7 @@ import { UploaderMediaGallery } from "./components/UploaderMediaGallery.js";
 import { PriceAmount } from "./components/PriceAmount.js";
 import { UploadFile } from "./components/UploadFile.js";
 import { Markdown } from "./components/Markdown.js";
+import { AddSkills } from "./components/AddSkills.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -128,3 +129,9 @@ if ($uploadFile.length) $uploadFile.forEach($elem => UploadFile($elem));
  */
 const $markdowns = document.querySelectorAll("[data-markdowns]");
 if ($markdowns.length) $markdowns.forEach($elem => Markdown($elem));
+
+/**
+ * Add Skills
+ */
+const $addSkills = document.querySelectorAll("[data-add-skills]");
+if ($addSkills.length) $addSkills.forEach($elem => AddSkills($elem));
