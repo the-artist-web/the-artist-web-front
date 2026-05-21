@@ -1319,6 +1319,39 @@
 
     </div>
 
+    <!-- Dialog Confirm Cancel Orders -->
+    <div class="modal fade" id="dialog-confirm-cancel-orders">
+
+        <div class="modal-dialog modal-sm">
+
+            <div class="modal-content">
+                <form action="" method="POST" class="modal-body">
+                    <div class="wrapper-block">
+                        <p class="text-body-large" style="font-size: 1.8rem;"><strong>Cancel Order?</strong></p>
+
+                        <p class="text-body-medium text-on-background-variant">Are you sure you want to cancel order #12345? This action cannot be undone.</p>
+                    </div>
+
+                    <div class="flex w-full">
+                        <button type="button" class="btn secondary small w-full" data-bs-dismiss="modal">
+                            <p class="text-body-medium">Keep Order</p>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <button type="submit" class="btn error small w-full">
+                            <p class="text-body-medium">Cancel Order</p>
+
+                            <div class="state-layer"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
     <main class="main">
         
         <!-- Orders -->
@@ -1354,7 +1387,7 @@
                             <div class="state-layer"></div>
                         </button>
 
-                        <button type="button" class="btn error small">
+                        <button type="button" class="btn error small" data-bs-toggle="modal" data-bs-target="#dialog-confirm-cancel-orders">
                             <p class="text-body-medium">Cancel Order</p>
 
                             <div class="state-layer"></div>
@@ -1389,7 +1422,7 @@
                             <div class="wrapper-block">
                                 <p class="text-body-small text-on-background-variant text-uppercase">Platform Fee</p>
 
-                                <h3 class="text-title-large text-error"><strong>-30%</strong></h3>
+                                <h3 class="text-title-large text-error"><strong>-360.00EGP</strong></h3>
                             </div>
                         </div>
                     </div>
