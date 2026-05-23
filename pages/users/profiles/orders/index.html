@@ -2,7 +2,15 @@
 <html lang="en" dir="ltr" data-theme="dim">
 
 <head>
+    <script>
+        (function () {
+            const saved = localStorage.getItem("theme") || "system";
+            const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.dataset.theme = saved === "system" ? system : saved;
+        })();
+    </script>
 
+    <!-- Meta Main -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -1783,7 +1791,7 @@
                     <ul class="flex gap-0">
 
                         <li>
-                            <a href="../../../../pages/users/profiles/orders/index.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
+                            <a href="../../../../pages/users/profiles/orders/index.html" class="icon-btn outline extra-small" data-bs-toggle="tooltip" data-bs-title="Prev" data-bs-placement="bottom">
                                 <div class="arrow-dir">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg>
                                 </div>
@@ -1792,10 +1800,10 @@
                             </a>
                         </li>
 
-                        <input type="number" placeholder="Page" name="page" value="1" class="icon-btn small text-center text-body-medium" />
+                        <input type="number" placeholder="Page" name="page" value="1" class="icon-btn extra-small text-center text-body-medium" />
 
                         <li>
-                            <a href="../../../../pages/users/profiles/orders/index.html" class="icon-btn outline small" data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
+                            <a href="../../../../pages/users/profiles/orders/index.html" class="icon-btn outline extra-small" data-bs-toggle="tooltip" data-bs-title="Next" data-bs-placement="bottom">
                                 <div class="arrow-dir">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
                                 </div>

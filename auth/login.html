@@ -2,7 +2,15 @@
 <html lang="en" dir="ltr" data-theme="dim">
 
 <head>
+    <script>
+        (function () {
+            const saved = localStorage.getItem("theme") || "system";
+            const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.dataset.theme = saved === "system" ? system : saved;
+        })();
+    </script>
 
+    <!-- Meta Main -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -129,7 +137,7 @@
                     <label for="email">Email Address</label>
 
                     <div class="input-wrapper outline small">
-                        <input type="email" placeholder="Enter your email address" name="" value="" id="email" class="text-body-medium" />
+                        <input type="email" placeholder="Your email address" name="" value="" id="email" class="text-body-medium" />
                     </div>
 
                     <!-- <p class="text-error text-body-medium"></p> -->
@@ -145,7 +153,7 @@
                     </div>
 
                     <div class="input-wrapper outline small p-end-0" data-passwords>
-                        <input type="password" placeholder="Enter your password" name="" value="" id="password" class="text-body-medium" />
+                        <input type="password" placeholder="Your password" name="" value="" id="password" class="text-body-medium" />
 
                         <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Show Password" data-bs-placement="bottom">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>

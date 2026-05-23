@@ -21,6 +21,7 @@ import { PriceAmount } from "./components/PriceAmount.js";
 import { UploadFile } from "./components/UploadFile.js";
 import { Markdown } from "./components/Markdown.js";
 import { AddSkills } from "./components/AddSkills.js";
+import { CreditCardInputNumber } from "./components/CreditCardInputNumber.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -135,3 +136,9 @@ if ($markdowns.length) $markdowns.forEach($elem => Markdown($elem));
  */
 const $addSkills = document.querySelectorAll("[data-add-skills]");
 if ($addSkills.length) $addSkills.forEach($elem => AddSkills($elem));
+
+/**
+ * Credit Card Inputs Number
+ */
+const $creditCardInputsNumber = document.querySelectorAll("[data-credit-card-inputs-number]");
+if ($creditCardInputsNumber.length) $creditCardInputsNumber.forEach($elem => CreditCardInputNumber($elem));
