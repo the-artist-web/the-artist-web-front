@@ -6087,6 +6087,11 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     padding: var(--spacing-4);
 }
 
+/**
+ * Wallet
+ */
+.wallet .current-balance { padding: var(--spacing-6); }
+
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
 \* ----------------------------------------------------- */
@@ -6609,6 +6614,9 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     }
 
     .settings .setting-body .banner-avatar-container .avatar { margin: -53px var(--spacing-6) 0; }
+
+    /* Wallet */
+    .wallet .current-balance { padding: var(--spacing-10); }
 }
 
 /**
