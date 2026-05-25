@@ -1248,36 +1248,465 @@
 
     </div>
 
+    <!-- Dialog Deposit -->
+    <div class="modal fade" id="dialog-deposit">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Deposit</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+                    <form action="" method="POST" class="form-card">
+                        fdsfdsf
+
+                        <div class="flex w-full">
+                            <button type="button" class="btn secondary small w-full" data-bs-dismiss="modal">
+                                <p class="text-body-medium">Cancel</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+                            
+                            <button type="submit" class="btn inverse small w-full">
+                                <p class="text-body-medium">Confirm Deposit</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Dialog Withdraw -->
+    <div class="modal fade" id="dialog-withdraw">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Withdraw</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+                    <form action="" method="POST" class="form-card">
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+
+                            <div class="input-wrapper outline small p-start-0">
+                                <div class="icon-btn small text-on-background-variant">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-currency-pound"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M17 18.5a6 6 0 0 1 -5 0a6 6 0 0 0 -5 .5a3 3 0 0 0 2 -2.5v-7.5a4 4 0 0 1 7.45 -2m-2.55 6h-7"></path></svg>
+                                </div>
+
+                                <input type="text" placeholder="0.00" name="amount" value="" id="amount" class="text-body-medium" />
+                            </div>
+
+                            <!-- <p class="text-body-medium text-error"></p> -->
+                        </div>
+
+                        <div class="wrapper-block" style="gap: var(--spacing-3);">
+                            <p class="text-body-small text-on-background-variant text-uppercase">Payment Method</p>
+
+                            <label for="vodafone_cash" class="card outline">
+                                <div class="card-body">
+                                    <div class="wrapper-between">
+                                        <div class="wrapper-content">
+                                            <p class="text-body-medium line-clamp line-clamp-1">Vodafone Cash</p>
+    
+                                            <p class="text-body-small text-on-background-variant line-clamp line-clamp-1">+20 100 •••• 321</p>
+                                        </div>
+                                        
+                                        <div class="wrapper">
+                                            <span class="btn secondary extra-small rounded-pill">
+                                                <p class="text-body-small">Default</p>
+                                            </span>
+
+                                            <input type="radio" name="payment_method" value="vodafone_cash" id="vodafone_cash" class="radio-btn" checked />
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label for="paypal" class="card outline">
+                                <div class="card-body">
+                                    <div class="wrapper-between">
+                                        <div class="wrapper-content">
+                                            <p class="text-body-medium line-clamp line-clamp-1">PayPal</p>
+    
+                                            <p class="text-body-small text-on-background-variant line-clamp line-clamp-1">gmail@gmail.com</p>
+                                        </div>
+                                        
+                                        <div class="wrapper">
+                                            <!-- <span class="btn secondary extra-small rounded-pill">
+                                                <p class="text-body-small">Default</p>
+                                            </span> -->
+
+                                            <input type="radio" name="payment_method" value="paypal" id="paypal" class="radio-btn" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label for="credit_card" class="card outline">
+                                <div class="card-body">
+                                    <div class="wrapper-between">
+                                        <div class="wrapper-content">
+                                            <p class="text-body-medium line-clamp line-clamp-1">Credit Card</p>
+    
+                                            <p class="text-body-small text-on-background-variant line-clamp line-clamp-1">•••• •••• •••• 4242</p>
+                                        </div>
+                                        
+                                        <div class="wrapper">
+                                            <!-- <span class="btn secondary extra-small rounded-pill">
+                                                <p class="text-body-small">Default</p>
+                                            </span> -->
+
+                                            <input type="radio" name="payment_method" value="credit_card" id="credit_card" class="radio-btn" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="flex w-full">
+                            <button type="button" class="btn secondary small w-full" data-bs-dismiss="modal">
+                                <p class="text-body-medium">Cancel</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+                            
+                            <button type="submit" class="btn inverse small w-full">
+                                <p class="text-body-medium">Confirm Withdraw</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
     <main class="main">
         
         <!-- Wallet -->
         <section class="wallet section page">
 
-            <div class="container container-md">
+            <div class="container container-sm">
 
-                <div class="card outline current-balance">
-                    <div class="wrapper-between align-items-end">
-                        <div class="wrapper flex-column align-items-start">
-                            <div class="wrapper-block">
-                                <p class="text-body-small text-on-background-variant text-uppercase">Current Balance</p>
+                <div class="card filled current-balance">
+                    <div class="card-body">
+                        <div class="wrapper-block">
+                            <div class="flex text-on-background-variant">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wallet"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" /><path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" /></svg>
 
-                                <h3 class="text-display-large"><strong>2,840</strong>EGP</h3>
+                                <p class="text-body-small text-uppercase">Current Balance</p>
                             </div>
 
-                            <div class="flex">
-                                <span class="text-warning">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle" style="min-width: var(--spacing-3) !important; max-width: var(--spacing-3) !important; min-height: var(--spacing-3) !important; max-height: var(--spacing-3) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" /></svg>
-                                </span>
-
-                                <p class="text-body-medium text-on-background-variant">124.50 pending earnings</p>
-                            </div>
+                            <h3 class="text-display-small"><strong>2,840</strong>EGP</h3>
                         </div>
 
+                        <div class="flex" style="gap: var(--spacing-3);">
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-deposit">
+                                <div class="icon-btn small arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                </div>
 
+                                <p class="text-body-medium">Deposit</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+
+                            <button type="button" class="btn secondary small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-withdraw">
+                                <div class="icon-btn small arrow-dir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M16 17l-9 0l0 -9" /></svg>
+                                </div>
+
+                                <p class="text-body-medium">Withdraw</p>
+
+                                <div class="state-layer"></div>
+                            </button>
+                        </div>
                     </div>
-                        
+                </div>
+
+                <div class="grid-2-base">
+
+                    <div class="card outline">
+                        <div class="card-body">
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Total Deposited</p>
+
+                                <h3 class="text-title-large text-info"><strong>800EGP</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card outline">
+                        <div class="card-body">
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Total Withdrawn</p>
+
+                                <h3 class="text-title-large text-error"><strong>350EGP</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card outline">
+                        <div class="card-body">
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Pending Earnings</p>
+
+                                <h3 class="text-title-large text-warning"><strong>124.50EGP</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card outline">
+                        <div class="card-body">
+                            <div class="wrapper-block">
+                                <p class="text-body-small text-on-background-variant text-uppercase">Total Earnings</p>
+
+                                <h3 class="text-title-large text-success"><strong>350EGP</strong></h3>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
+            </div>
+
+        </section>
+        
+        <!-- Transactions -->
+        <section class="transactions section">
+
+            <div class="container container-sm">
+
+                <div class="title-sec">
+                    <h2 class="text-title-large"><strong>Transactions</strong></h2>
+
+                    <a href="../../../pages/users/wallets/transactions/index.html" class="wrapper-item flex-nowrap hover text-on-background-variant" style="text-decoration: none !important;">
+                        <p class="text-body-medium">View All</p>
+                    </a>
+                </div>
+
+                <ul class="transactions-list">
+
+                    <li>
+                        <a href="../../../pages/users/wallets/transactions/show.html" class="card text">
+                            <div class="card-body">
+                                <div class="wrapper flex-nowrap">
+                                    <div class="icon-btn tonal-success small arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                    </div>
+
+                                    <div class="wrapper-content">
+                                        <p class="text-body-medium line-clamp line-clamp-1">Deposit — <span class="text-success">Completed</span></p>
+
+                                        <p class="text-body-small text-on-background-variant">24 May 2026 · 14:22</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper flex-nowrap">
+                                    <p class="text-body-medium text-success">+300EGP</p>
+
+                                    <div class="arrow-dir text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div> 
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../../pages/users/wallets/transactions/show.html" class="card text">
+                            <div class="card-body">
+                                <div class="wrapper flex-nowrap">
+                                    <div class="icon-btn tonal-error small arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M16 17l-9 0l0 -9" /></svg>
+                                    </div>
+
+                                    <div class="wrapper-content">
+                                        <p class="text-body-medium line-clamp line-clamp-1">Withdrawal — <span class="text-warning">Pending</span></p>
+
+                                        <p class="text-body-small text-on-background-variant">22 May 2026 · 09:10</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper flex-nowrap">
+                                    <p class="text-body-medium text-error">-150EGP</p>
+
+                                    <div class="arrow-dir text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div> 
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../../pages/users/wallets/transactions/show.html" class="card text">
+                            <div class="card-body">
+                                <div class="wrapper flex-nowrap">
+                                    <div class="icon-btn tonal-info small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3"></path><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"></path><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598"></path><path d="M3 6v10c0 .888 .772 1.45 2 2"></path><path d="M3 11c0 .888 .772 1.45 2 2"></path></svg>
+                                    </div>
+
+                                    <div class="wrapper-content">
+                                        <p class="text-body-medium line-clamp line-clamp-1">Earnings — <span class="text-success">Transferred</span></p>
+
+                                        <p class="text-body-small text-on-background-variant">20 May 2026 · 18:45</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper flex-nowrap">
+                                    <p class="text-body-medium text-success">+85EGP</p>
+
+                                    <div class="arrow-dir text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div> 
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../../pages/users/wallets/transactions/show.html" class="card text">
+                            <div class="card-body">
+                                <div class="wrapper flex-nowrap">
+                                    <div class="icon-btn tonal-error small arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down-left"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M16 17l-9 0l0 -9" /></svg>
+                                    </div>
+
+                                    <div class="wrapper-content">
+                                        <p class="text-body-medium line-clamp line-clamp-1">Withdrawal — <span class="text-error">Rejected</span></p>
+
+                                        <p class="text-body-small text-on-background-variant">20 May 2026 · 18:45</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper flex-nowrap">
+                                    <p class="text-body-medium text-error">-200EGP</p>
+
+                                    <div class="arrow-dir text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div> 
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../../pages/users/wallets/transactions/show.html" class="card text">
+                            <div class="card-body">
+                                <div class="wrapper flex-nowrap">
+                                    <div class="icon-btn tonal-success small arrow-dir">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                                    </div>
+
+                                    <div class="wrapper-content">
+                                        <p class="text-body-medium line-clamp line-clamp-1">Deposit — <span class="text-success">Completed</span></p>
+
+                                        <p class="text-body-small text-on-background-variant">15 May 2026 · 20:30</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper flex-nowrap">
+                                    <p class="text-body-medium text-success">+500EGP</p>
+
+                                    <div class="arrow-dir text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div> 
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="separator x"></li>
+
+                    <li>
+                        <a href="../../../pages/users/wallets/transactions/show.html" class="card text">
+                            <div class="card-body">
+                                <div class="wrapper flex-nowrap">
+                                    <div class="icon-btn tonal-info small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3"></path><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"></path><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598"></path><path d="M3 6v10c0 .888 .772 1.45 2 2"></path><path d="M3 11c0 .888 .772 1.45 2 2"></path></svg>
+                                    </div>
+
+                                    <div class="wrapper-content">
+                                        <p class="text-body-medium line-clamp line-clamp-1">Earnings — <span class="text-warning">Pending</span></p>
+
+                                        <p class="text-body-small text-on-background-variant">12 May 2026 · 08:15</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper flex-nowrap">
+                                    <p class="text-body-medium text-success">+40EGP</p>
+
+                                    <div class="arrow-dir text-on-background-variant">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg>
+                                    </div>
+                                </div>
+
+                                <div class="state-layer"></div> 
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="../../../pages/users/settings/payouts-methods.html" target="_blank" class="btn-link">
+                    <p class="text-body-medium">Manage payout methods</p>
+
+                    <div class="arrow-dir">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                    </div>
+                </a>
 
             </div>
 
@@ -1345,6 +1774,127 @@
         </div>
 
     </footer>
+
+    <!-- Custom Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Revenue JS -->
+    <script>
+        const styles = getComputedStyle(document.documentElement);
+
+        const colors = {
+            outline: styles.getPropertyValue("--outline").trim(),
+            surface: styles.getPropertyValue("--surface").trim(),
+            inverse: styles.getPropertyValue("--inverse").trim(),
+            success: styles.getPropertyValue("--success").trim(),
+            onBackground: styles.getPropertyValue("--on-background").trim(),
+            onBackgroundVariant: styles.getPropertyValue("--on-background-variant").trim(),
+        };
+
+        const ctx = document.getElementById("revenueChart").getContext("2d");
+
+        /**
+        * Gradient helper
+        */
+        function createGradient(ctx, color) {
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+
+            gradient.addColorStop(0, color + "66");
+            gradient.addColorStop(1, color + "00");
+
+            return gradient;
+        }
+
+        /**
+        * Crosshair plugin (vertical hover line)
+        */
+        const crosshairPlugin = {
+            id: "crosshair",
+
+            afterDatasetsDraw(chart) {
+                const { ctx, tooltip, chartArea } = chart;
+
+                if (!tooltip || tooltip.opacity === 0) return;
+
+                const x = tooltip.caretX;
+
+                ctx.save();
+
+                ctx.beginPath();
+                ctx.moveTo(x, chartArea.top);
+                ctx.lineTo(x, chartArea.bottom);
+
+                ctx.lineWidth = 1;
+                ctx.strokeStyle = colors.inverse;
+                ctx.stroke();
+
+                ctx.restore();
+            }
+        };
+
+        new Chart(ctx, {
+            type: "line",
+
+            data: {
+                labels: ["Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu"],
+
+                datasets: [
+                    {
+                        label: "Revenue",
+
+                        data: [0, 900, 1500, 800, 1000, 950, 1500],
+
+                        borderColor: colors.success,
+                        backgroundColor: createGradient(ctx, colors.success),
+
+                        fill: true,
+
+                        tension: 0.4,
+                        borderWidth: 3,
+
+                        pointRadius: 0,
+                        pointHoverRadius: 0,
+
+                        pointBackgroundColor: colors.surface,
+                        pointBorderColor: colors.success,
+                        pointBorderWidth: 2,
+                    },
+                ]
+            },
+
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+
+                interaction: {
+                    mode: "index",
+                    intersect: false,
+                },
+
+                plugins: {
+                    legend: { display: false },
+                },
+
+                scales: {
+                    x: { display: false },
+                    y: { display: false },
+                },
+                
+                animation: {
+                    duration: 900,
+                    easing: "easeOutQuart",
+                },
+
+                elements: {
+                    line: {
+                        capBezierPoints: true,
+                    },
+                },
+            },
+
+            plugins: [crosshairPlugin],
+        });
+    </script>
     
 </body>
 

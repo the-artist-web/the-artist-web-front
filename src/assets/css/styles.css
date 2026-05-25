@@ -2501,6 +2501,18 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     -webkit-mask-composite: xor;
 }
 
+.card.linear-gradient {
+    background: var(--linear-gradient) !important;
+    color: var(--on-linear-gradient) !important;
+    --state-layer-bg: var(--on-linear-gradient);
+}
+
+.card.success {
+    background: var(--success) !important;
+    color: var(--on-success) !important;
+    --state-layer-bg: var(--on-success);
+}
+
 .card.outline {
     border: 1px solid var(--outline) !important;
     --state-layer-bg: var(--on-background);
@@ -3011,6 +3023,10 @@ html[dir="rtl"] .carousel [data-bs-slide="next"] {
 .modal .modal-dialog .modal-content .nav-tabs .nav-link { padding-block-start: 0; }
 
 .modal .modal-dialog .modal-content .tab-content { margin-block-start: var(--spacing-2); }
+
+.modal .modal-dialog .modal-content .card { border-radius: var(--radius-medium); }
+
+.modal .modal-dialog .modal-content .card .card-body { padding: var(--spacing-4); }
 
 /**
  * Divider
@@ -6090,7 +6106,52 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 /**
  * Wallet
  */
-.wallet .current-balance { padding: var(--spacing-6); }
+.wallet .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.wallet .grid-sec { gap: var(--spacing-6); }
+
+.wallet .current-balance .card-body {
+    padding: var(--spacing-8);
+    gap: var(--spacing-6);
+}
+
+.wallet .card-chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 8px;
+    z-index: -1;
+}
+
+/**
+ * Transactions
+ */
+.transactions .transactions-list {
+    border: 1px solid var(--outline);
+    border-radius: var(--radius-extra-large);
+    overflow: hidden;
+}
+
+.transactions .transactions-list .card.text {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.transactions .transactions-list .card.text .card-body {
+    padding: var(--spacing-4);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.transactions .btn-link { margin-top: var(--spacing-4); }
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
@@ -6614,9 +6675,6 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     }
 
     .settings .setting-body .banner-avatar-container .avatar { margin: -53px var(--spacing-6) 0; }
-
-    /* Wallet */
-    .wallet .current-balance { padding: var(--spacing-10); }
 }
 
 /**

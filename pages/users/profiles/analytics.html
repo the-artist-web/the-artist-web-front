@@ -1496,7 +1496,7 @@
                         </div>
 
                         <div class="card-chart-wrapper">
-                            <canvas id="revenueDownloadChart"></canvas>
+                            <canvas id="revenueSalesChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -2946,7 +2946,7 @@
     <!-- Custom Chart JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Revenue & Download JS -->
+    <!-- Revenue & Sales JS -->
     <script>
         const styles = getComputedStyle(document.documentElement);
 
@@ -2960,7 +2960,7 @@
             onBackgroundVariant: styles.getPropertyValue("--on-background-variant").trim(),
         };
 
-        const ctx = document.getElementById("revenueDownloadChart").getContext("2d");
+        const ctx = document.getElementById("revenueSalesChart").getContext("2d");
 
         /**
         * Gradient helper
