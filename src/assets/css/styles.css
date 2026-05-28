@@ -754,6 +754,7 @@ body:has(.app-bar) .main { padding-block-start: var(--app-bar-height); }
 .wrapper-around { gap: var(--spacing-4); }
 
 .wrapper-between,
+.wrapper-center,
 .wrapper-around { width: 100%; }
 
 .wrapper-between { justify-content: space-between; }
@@ -1805,6 +1806,48 @@ code {
 }
 
 /**
+ * Form Methods
+ */
+.form-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.form-methods .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    width: 100%;
+}
+
+.form-methods .accordion .accordion-item {
+    border: 1px solid var(--outline);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-large);
+    transition-duration: var(--tr-duration-short);
+    transition-property: border, padding;
+}
+
+.form-methods .accordion .accordion-item:has(input[type="radio"]:checked) {
+    border-color: var(--inverse);
+    padding: var(--spacing-6);
+}
+
+.form-methods .accordion .accordion-item:has(.accordion-collapse.show[hidden]) { padding: var(--spacing-4); }
+
+.form-methods .accordion .accordion-item .accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    width: 100%;
+    padding: 0;
+}
+
+.form-methods .accordion .accordion-item .form-card { padding-block-start: var(--spacing-6); }
+
+/**
  * App bars
  */
 .app-bar {
@@ -2294,6 +2337,20 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     max-width: calc(var(--width-large) / 2) !important;
     min-height: calc(var(--height-large) / 2) !important;
     max-height: calc(var(--height-large) / 2) !important;
+}
+
+.icon-btn.extra-large {
+    min-width: var(--width-extra-large);
+    max-width: var(--width-extra-large);
+    min-height: var(--height-extra-large);
+    max-height: var(--height-extra-large);
+}
+
+.icon-btn.extra-large svg {
+    min-width: calc(var(--width-extra-large) / 2) !important;
+    max-width: calc(var(--width-extra-large) / 2) !important;
+    min-height: calc(var(--height-extra-large) / 2) !important;
+    max-height: calc(var(--height-extra-large) / 2) !important;
 }
 
 .icon-btn.text {
@@ -3614,6 +3671,7 @@ html[dir="rtl"] .offcanvas.offcanvas-bottom .offcanvas-list .offcanvas-link.acti
     align-items: center;
     gap: var(--spacing-3);
     width: 100%;
+    overflow: hidden;
     transition: color var(--tr-duration-short);
 }
 
@@ -5805,6 +5863,11 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     margin-block: var(--spacing-section) var(--spacing-6);
 }
 
+.orders .title-orders .btn p {
+    width: 100%;
+    text-align: start;
+}
+
 .orders .orders-search {
     display: flex;
     flex-wrap: wrap;
@@ -6114,6 +6177,11 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 
 .wallet .grid-sec { gap: var(--spacing-6); }
 
+.wallet .grid-2-base {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-4);
+}
+
 .wallet .current-balance .card-body {
     padding: var(--spacing-8);
     gap: var(--spacing-6);
@@ -6131,6 +6199,17 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 /**
  * Transactions
  */
+.transactions .title-sec .grid-4-base {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2);
+    width: 100%;
+}
+
+.transactions .title-sec .grid-4-base .btn p {
+    width: 100%;
+    text-align: start;
+}
+
 .transactions .transactions-list {
     border: 1px solid var(--outline);
     border-radius: var(--radius-extra-large);
@@ -6152,6 +6231,14 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 }
 
 .transactions .btn-link { margin-top: var(--spacing-4); }
+
+.transactions .card-transactions { margin-top: var(--spacing-section); }
+
+.transactions .card-transactions .grid-2-base { gap: var(--spacing-2); }
+
+.transactions .payment-proof { margin-top: var(--spacing-6); }
+
+.transactions .payment-proof img { border-radius: var(--radius-large); }
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
@@ -6675,6 +6762,12 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     }
 
     .settings .setting-body .banner-avatar-container .avatar { margin: -53px var(--spacing-6) 0; }
+
+    /* Wallet */
+    .wallet .grid-2-base { gap: var(--spacing-6); }
+
+    /* Transactions */
+    .transactions .title-sec .grid-4-base { grid-template-columns: repeat(4, 1fr); }
 }
 
 /**
