@@ -5946,6 +5946,8 @@ html[dir="rtl"] .bottom-navigation .dropdown .dropdown-menu .dropdown-item.activ
     max-height: calc((var(--width-small) + var(--spacing-1)) / 2);
 }
 
+.settings .setting-body .wrapper-block p { max-width: 600px !important; }
+
 .settings .setting-body {
     display: flex;
     flex-direction: column;
@@ -6239,6 +6241,40 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 .transactions .payment-proof { margin-top: var(--spacing-6); }
 
 .transactions .payment-proof img { border-radius: var(--radius-large); }
+
+/**
+ * Notifications Page
+ */
+.notifications-page .container { max-width: 650px; }
+
+.notifications-page .notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.notifications-page .notifications-list .notification-item {
+    display: grid;
+    align-items: start;
+    grid-template-columns: max-content 1fr max-content;
+    gap: var(--spacing-4); 
+}
+
+.notifications-page .notifications-list .notification-item .icon-btn.small,
+.notifications-page .notifications-list .notification-item .avatar.small {
+    min-width: calc(var(--width-small) + var(--spacing-1));
+    max-width: calc(var(--width-small) + var(--spacing-1));
+    min-height: calc(var(--height-small) + var(--spacing-1));
+    max-height: calc(var(--height-small) + var(--spacing-1));
+}
+
+.notifications-page .notifications-list .notification-item .icon-btn.small svg,
+.notifications-page .notifications-list .notification-item .avatar.small  svg {
+    min-width: calc((var(--width-small) + var(--spacing-1)) / 2) !important;
+    max-width: calc((var(--width-small) + var(--spacing-1)) / 2) !important;
+    min-height: calc((var(--height-small) + var(--spacing-1)) / 2) !important;
+    max-height: calc((var(--height-small) + var(--spacing-1)) / 2) !important;
+}
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
