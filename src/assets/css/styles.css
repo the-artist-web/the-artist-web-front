@@ -2603,6 +2603,12 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     --state-layer-bg: var(--error);
 }
 
+.card.tonal-success {
+    background-color: var(--soft-success) !important;
+    color: var(--success) !important;
+    --state-layer-bg: var(--success);
+}
+
 .card.tonal-purple {
     background-color: var(--soft-purple) !important;
     color: var(--purple) !important;
@@ -2613,12 +2619,6 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
     background-color: var(--soft-warning) !important;
     color: var(--warning) !important;
     --state-layer-bg: var(--warning);
-}
-
-.card.tonal-success {
-    background-color: var(--soft-success) !important;
-    color: var(--success) !important;
-    --state-layer-bg: var(--success);
 }
 
 .card.tonal-rosy {
@@ -6250,14 +6250,14 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 .notifications-page .notifications-list {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
+    gap: var(--spacing-6);
 }
 
 .notifications-page .notifications-list .notification-item {
     display: grid;
     align-items: start;
     grid-template-columns: max-content 1fr max-content;
-    gap: var(--spacing-4); 
+    gap: var(--spacing-3); 
 }
 
 .notifications-page .notifications-list .notification-item .icon-btn.small,
@@ -6275,6 +6275,14 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     min-height: calc((var(--height-small) + var(--spacing-1)) / 2) !important;
     max-height: calc((var(--height-small) + var(--spacing-1)) / 2) !important;
 }
+
+.notifications-page .flex { gap: var(--spacing-3); }
+
+.notifications-page .text-body-small.text-on-background-variant.text-uppercase { margin-block-end: -8px !important; }
+
+.notifications-page .card .card-body { padding: var(--spacing-4); }
+
+.notifications-page .card .card-body .notification-item { grid-template-columns: max-content 1fr; }
 
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
