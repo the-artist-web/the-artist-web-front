@@ -1011,8 +1011,9 @@ html[dir="rtl"] .swipper-container [data-swipper-next] {
     border-radius: var(--radius-full);
     position: relative;
     z-index: 10;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--on-background-variant);
     text-transform: uppercase;
     --state-layer-bg: var(--on-background);
@@ -1393,6 +1394,7 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) { left: -1px !important; }
     text-wrap: nowrap;
     color: var(--on-background-variant);
     vertical-align: middle;
+    width: 100%;
     max-width: 300px;
 }
 
@@ -6284,6 +6286,92 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 
 .notifications-page .card .card-body .notification-item { grid-template-columns: max-content 1fr; }
 
+.notifications-page .card .card-body .wrapper-item { align-items: start; }
+
+.notifications-page .card .card-body .wrapper-between {
+    align-items: start;
+    gap: var(--spacing-2);
+}
+
+/**
+ * Shopping Cart Page
+ */
+.shopping-cart-page .shopping-cart-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-10);
+}
+
+.shopping-cart-page .shopping-cart-grid .card-order-summary { max-height: max-content; }
+
+.shopping-cart-page .shopping-cart-grid .card-order-summary .card-body { gap: var(--spacing-5); }
+
+.shopping-cart-page .shopping-cart-grid .card-order-summary .card-body .title-card { margin-bottom: var(--spacing-2); }
+
+.shopping-cart-page .shopping-cart-grid .table-overflow {
+    border-radius: 0;
+    border: none;
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table thead { background-color: transparent; }
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr:last-child td {
+    border: none;
+    padding-block-end: 0;
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table thead tr th:first-child { padding-inline-start: 0; }
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table thead tr th { padding: 0 var(--spacing-4) var(--spacing-4); }
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td:first-child {
+    padding-inline-start: 0;
+    padding-inline-end: var(--spacing-6);
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td a:first-child {
+    padding-inline-start: 0;
+    padding-inline-end: var(--spacing-6);
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td:last-child {
+    padding-inline-start: var(--spacing-6);
+    padding-inline-end: 0;
+    min-width: max-content;
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td a:last-child {
+    padding-inline-start: var(--spacing-6);
+    padding-inline-end: 0;
+    min-width: max-content;
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tr th,
+.shopping-cart-page .shopping-cart-grid .table-overflow table tr td {
+    font-size: var(--fs-body-large);
+    text-transform: capitalize;
+    color: var(--on-background);
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td {
+    border-bottom: 1px solid var(--outline);
+    padding: var(--spacing-5) var(--spacing-6);
+    max-width: max-content;
+    min-width: 150px;
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td a { padding-block: 0; }
+
+.shopping-cart-page .shopping-cart-grid .table-overflow table tbody tr td a p {
+    max-width: 300px;
+    text-wrap: wrap;
+}
+
+.shopping-cart-page .shopping-cart-grid .table-overflow .card {
+    min-width: 120px;
+    max-width: 120px;
+}
+
 /* ----------------------------------------------------- *\
  * MEDIA QUERY
 \* ----------------------------------------------------- */
@@ -6812,6 +6900,17 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
 
     /* Transactions */
     .transactions .title-sec .grid-4-base { grid-template-columns: repeat(4, 1fr); }
+
+    /* Shopping Cart Page */
+    .shopping-cart-page .shopping-cart-grid { grid-template-columns: minmax(0, 1fr) var(--width-base); }
+
+    .shopping-cart-page .shopping-cart-grid .card-order-summary {
+        position: sticky;
+        top: calc(var(--header-height) + var(--spacing-6));
+        transition: top var(--tr-duration-short);
+    }
+
+    .shopping-cart-page .shopping-cart-grid .card-order-summary.fixed-scrolling { top: var(--spacing-6); }
 }
 
 /**
