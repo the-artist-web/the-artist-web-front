@@ -11,27 +11,39 @@ export const Swipper = ($element) => {
 
     if (!$swipperPrev || !$swipperNext || !$swipperContainer) return;
 
+    const isDesktop = () => window.innerWidth >= 768;
+
     const updateButtons = () => {
         const { scrollLeft, scrollWidth, clientWidth } = $swipperContainer;
         const maxScroll = scrollWidth - clientWidth;
-        
+
         const absScroll = Math.abs(scrollLeft);
-        
-        const isAtStart = absScroll <= 5; 
+
+        const isAtStart = absScroll <= 5;
         const isAtEnd = absScroll >= maxScroll - 5;
 
-        $swipperPrev.classList.toggle("d-none", isAtStart);
-        $swipperNext.classList.toggle("d-none", isAtEnd);
+        const hideStart = isAtStart || !isDesktop();
+        const hideEnd = isAtEnd || !isDesktop();
 
-        if (isAtStart && isAtEnd) {
+        $swipperPrev.classList.toggle("d-none", hideStart);
+        $swipperPrev.toggleAttribute("disabled", hideStart);
+
+        $swipperNext.classList.toggle("d-none", hideEnd);
+        $swipperNext.toggleAttribute("disabled", hideEnd);
+
+        if (!isDesktop()) {
             $swipperContainer.style.maskImage = "none";
-        } else if (isAtStart) {
-            $swipperContainer.style.maskImage = `linear-gradient(${isRTL ? 'to left' : 'to right'}, black calc(100% - ${fadeSize}px), transparent)`;
-        } else if (isAtEnd) {
-            $swipperContainer.style.maskImage = `linear-gradient(${isRTL ? 'to right' : 'to left'}, black calc(100% - ${fadeSize}px), transparent)`;
-        } else {
-            $swipperContainer.style.maskImage = `linear-gradient(to right, transparent, black ${fadeSize}px, black calc(100% - ${fadeSize}px), transparent)`;
+            return;
         }
+
+        if (isAtStart && isAtEnd) 
+            $swipperContainer.style.maskImage = "none";
+        else if (isAtStart) 
+            $swipperContainer.style.maskImage = `linear-gradient(${isRTL ? 'to left' : 'to right'}, black calc(100% - ${fadeSize}px), transparent)`;
+        else if (isAtEnd) 
+            $swipperContainer.style.maskImage = `linear-gradient(${isRTL ? 'to right' : 'to left'}, black calc(100% - ${fadeSize}px), transparent)`;
+        else 
+            $swipperContainer.style.maskImage = `linear-gradient(to right, transparent, black ${fadeSize}px, black calc(100% - ${fadeSize}px), transparent)`;
     };
 
     const scroll = (direction) => {
