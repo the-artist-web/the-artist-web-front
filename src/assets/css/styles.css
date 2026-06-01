@@ -6394,7 +6394,7 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     gap: var(--spacing-8);
 }
 
-.checkout .column:first-child { padding-block: var(--spacing-8) var(--spacing-section); }
+.checkout .column:first-child { padding-block: var(--spacing-4) var(--spacing-section); }
 
 .checkout .column:first-child::before {
     content: "";
