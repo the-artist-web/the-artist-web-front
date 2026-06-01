@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dim">
+
+<head>
+    <script>
+        (function () {
+            const saved = localStorage.getItem("theme") || "system";
+            const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.dataset.theme = saved === "system" ? system : saved;
+        })();
+    </script>
+
+    <!-- Meta Main -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="URL This Page" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="../../src/assets/images/favicon.svg" />
+
+    <!-- Meta Tags -->
+    <title>Checkout | The Artist Web</title>
+    <meta name="title" content="Checkout | The Artist Web" />
+    <meta name="description" content="Description This Page" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Checkout | The Artist Web" />
+    <meta property="og:description" content="Description This Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL This Page" />
+    <meta property="og:image" content="../../src/assets/images/theartistweb.svg" />
+    <meta property="og:image:alt" content="The Artist Web" />
+    <meta property="og:site_name" content="The Artist Web" />
+    <meta property="og:locale" content="en" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Checkout | The Artist Web" />
+    <meta name="twitter:description" content="Description This Page" />
+    <meta name="twitter:image" content="../../src/assets/images/theartistweb.svg" />
+    <meta name="twitter:image:alt" content="The Artist Web" />
+    <meta name="twitter:url" content="URL This Page" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Custom Bootstrap Link -->
+    <link rel="stylesheet" href="../../src/assets/bootstrap/bootstrap.min.css" />
+    <script src="../../src/assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="../../src/assets/css/styles.css" />
+
+    <!-- Custom Js Link -->
+    <script type="module" src="../../src/js/theme.js"></script>
+    <script type="module" src="../../src/js/app.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start Loading -->
+    <div class="start-loading" data-start-loading>
+        <div class="logo extra-large">
+            <img src="../../src/assets/images/logo.svg" alt="The Artist Web" class="img-logo img-cover" />
+        </div>
+    </div>
+
+    <!-- Dialog Billing Information -->
+    <div class="modal fade" id="dialog-billing-information">
+
+        <div class="modal-dialog modal-lg">
+
+            <form action="#" method="POST" class="modal-content">
+
+                <div class="modal-header">
+                    <p class="text-body-large"><strong>Billing Information</strong></p>
+
+                    <span data-bs-dismiss="modal">
+                        <button type="button" class="icon-btn text extra-small" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+    
+                            <div class="state-layer"></div>
+                        </button>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-card">
+                        <div class="grid-2-base">
+                            <div class="form-group">
+                                <label for="first_name">First Name</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your first name" name="" value="" id="first_name" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="last_name">Last Name</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your last name" name="" value="" id="last_name" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                        </div>
+
+                        <div class="grid-2-base">
+                            <div class="form-group">
+                                <label for="email_address">Email Address</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="email" placeholder="Your email address" name="" value="" id="email_address" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone_number">Phone Number</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="number" placeholder="Your phone number" name="" value="" id="phone_number" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company_name">Company Name</label>
+
+                            <div class="input-wrapper outline small">
+                                <input type="text" placeholder="Your company name" name="" value="" id="company_name" class="text-body-medium" />
+                            </div>
+
+                            <p class="text-body-medium text-on-background-variant">If you want your invoices addressed to a company. Leave blank to use your full name.</p>
+
+                            <!-- <p class="text-body-medium text-error"></p> -->
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company_no">Company No</label>
+
+                            <div class="input-wrapper outline small">
+                                <input type="text" placeholder="Your company no" name="" value="" id="company_no" class="text-body-medium" />
+                            </div>
+
+                            <p class="text-body-medium text-on-background-variant">Your Company Number will appear on your invoices if you fill in this field.</p>
+
+                            <!-- <p class="text-body-medium text-error"></p> -->
+                        </div>
+
+                        <div class="grid-2-base">
+                            <div class="form-group">
+                                <label for="country">Select Country</label>
+                                
+                                <div class="select-wrapper outline small w-full">
+                                    <select name="" id="country" class="text-body-medium">
+                                        <option value="" selected>Country</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="FR">France</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                    </select>
+
+                                    <div class="icon-btn small arrow-select">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                    </div>
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                
+                                <div class="select-wrapper outline small w-full">
+                                    <select name="" id="city" class="text-body-medium">
+                                        <option value="" selected>Select City</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="FR">France</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                    </select>
+
+                                    <div class="icon-btn small arrow-select">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                    </div>
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address_line_1">Address Line 1</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your address line 1" name="" value="" id="address_line_1" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address_line_2">Address Line 2</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your address line 2" name="" value="" id="address_line_2" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="state_province_region">State / Province / Region</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your State / Province / Region" name="" value="" id="state_province_region" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="zip_postal_code">Zip / Postal Code</label>
+
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your Zip / Postal Code" name="" value="" id="zip_postal_code" class="text-body-medium" />
+                                </div>
+
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn secondary small" data-bs-dismiss="modal">
+                        <p class="text-body-medium">Cancel</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+
+                    <button type="submit" class="btn inverse small">
+                        <p class="text-body-medium">Save Changes</p>
+
+                        <div class="state-layer"></div>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Checkout -->
+    <div class="checkout">
+
+        <div class="container container-lg">
+            <div class="column">
+                <a href="../../index.html" class="logo extra-small" data-bs-toggle="tooltip" data-bs-title="The Artist Web" data-bs-placement="bottom">
+                    <img src="../../src/assets/images/logo-dark.svg" alt="The Artist Web" loading="lazy" class="img-logo theme-light img-cover" />
+
+                    <img src="../../src/assets/images/logo-light.svg" alt="The Artist Web" loading="lazy" class="img-logo theme-dark img-cover" />
+                </a>
+
+                <div>
+                    <div class="title-sec">
+                        <h1 class="text-headline-large"><strong>Checkout</strong></h1>
+                    </div>
+        
+                    <div class="card outline">
+                        <div class="card-body">
+                            <form action="#" method="POST" class="form-card">
+                                <p class="text-body-medium text-on-background-variant">Don't have an account? <a href="../../auth/join.html" target="_blank" class="btn-link">Join The Artist Web</a></p>
+            
+                                <div class="grid-2-base">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+            
+                                        <div class="input-wrapper outline small">
+                                            <input type="email" placeholder="Your email address" name="" value="" id="email" class="text-body-medium" />
+                                        </div>
+            
+                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+            
+                                        <div class="input-wrapper outline small p-end-0" data-passwords>
+                                            <input type="password" placeholder="Your password" name="" value="" id="password" class="text-body-medium" />
+            
+                                            <button type="button" class="icon-btn text small" data-bs-toggle="tooltip" data-bs-title="Show Password" data-bs-placement="bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                                            </button>
+                                        </div>
+            
+                                        <!-- <p class="text-error text-body-medium"></p> -->
+                                    </div>
+                                </div>
+        
+                                <button type="button" class="btn inverse small w-full">
+                                    <p class="text-body-medium">Login</p>
+        
+                                    <div class="state-layer"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- <div class="card outline">
+                        <div class="card-body" style="padding: var(--spacing-4);">
+                            <div class="wrapper-between flex-nowrap">
+                                <div class="flex" style="gap: var(--spacing-3);">
+                                    <div class="avatar small">
+                                        <img src="../../src/assets/images/theartistweb.svg" alt="username" loading="lazy" class="img-avatar img-cover" />
+    
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                    </div>
+    
+                                    <div class="wrapper-content gap-0">
+                                        <p class="text-body-medium line-clamp line-clamp-1"><strong>The Artist Web</strong></p>
+
+                                        <p class="text-body-medium text-on-background-variant text-lowercase line-clamp line-clamp-1">teamtheartistweb@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <span class="btn tonal-success extra-small p-start-0 rounded-pill">
+                                    <div class="icon-btn extra-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check" style="min-width: var(--spacing-4) !important; max-width: var(--spacing-4) !important; min-height: var(--spacing-4) !important; max-height: var(--spacing-4) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 12l2 2l4 -4" /></svg>
+                                    </div>
+
+                                    <p class="text-body-small">Logged in</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <form action="#" method="POST" class="column">
+                    <div>
+                        <div class="title-sec">
+                            <div class="wrapper-block">
+                                <h2 class="text-title-large"><strong>Billing Information</strong></h2>
+        
+                                <p class="text-body-medium text-on-background-variant">We do not sell or share your details without your permission. Find out more in our <a href="../../legal/privacy-policy.html" target="_blank" class="btn-link">Privacy Policy</a>.</p>
+                            </div>
+                        </div>
+    
+                        <div class="form-card">
+                            <div class="grid-2-base">
+                                <div class="form-group">
+                                    <label for="first_name">First Name</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your first name" name="" value="" id="first_name" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="last_name">Last Name</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your last name" name="" value="" id="last_name" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                            </div>
+    
+                            <div class="grid-2-base">
+                                <div class="form-group">
+                                    <label for="email_address">Email Address</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="email" placeholder="Your email address" name="" value="" id="email_address" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="phone_number">Phone Number</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="number" placeholder="Your phone number" name="" value="" id="phone_number" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company_name">Company Name</label>
+    
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your company name" name="" value="" id="company_name" class="text-body-medium" />
+                                </div>
+    
+                                <p class="text-body-medium text-on-background-variant">If you want your invoices addressed to a company. Leave blank to use your full name.</p>
+    
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company_no">Company No</label>
+    
+                                <div class="input-wrapper outline small">
+                                    <input type="text" placeholder="Your company no" name="" value="" id="company_no" class="text-body-medium" />
+                                </div>
+    
+                                <p class="text-body-medium text-on-background-variant">Your Company Number will appear on your invoices if you fill in this field.</p>
+    
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+    
+                            <div class="grid-2-base">
+                                <div class="form-group">
+                                    <label for="country">Select Country</label>
+                                    
+                                    <div class="select-wrapper outline small w-full">
+                                        <select name="" id="country" class="text-body-medium">
+                                            <option value="" selected>Country</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="FR">France</option>
+                                            <option value="DE">Germany</option>
+                                            <option value="IT">Italy</option>
+                                            <option value="NL">Netherlands</option>
+                                            <option value="ES">Spain</option>
+                                            <option value="GB">United Kingdom</option>
+                                            <option value="US">United States</option>
+                                        </select>
+    
+                                        <div class="icon-btn small arrow-select">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                        </div>
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    
+                                    <div class="select-wrapper outline small w-full">
+                                        <select name="" id="city" class="text-body-medium">
+                                            <option value="" selected>Select City</option>
+                                            <option value="AU">Australia</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="FR">France</option>
+                                            <option value="DE">Germany</option>
+                                            <option value="IT">Italy</option>
+                                            <option value="NL">Netherlands</option>
+                                            <option value="ES">Spain</option>
+                                            <option value="GB">United Kingdom</option>
+                                            <option value="US">United States</option>
+                                        </select>
+    
+                                        <div class="icon-btn small arrow-select">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M6 9l6 6l6 -6" /></svg>
+                                        </div>
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address_line_1">Address Line 1</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your address line 1" name="" value="" id="address_line_1" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address_line_2">Address Line 2</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your address line 2" name="" value="" id="address_line_2" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="state_province_region">State / Province / Region</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your State / Province / Region" name="" value="" id="state_province_region" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="zip_postal_code">Zip / Postal Code</label>
+    
+                                    <div class="input-wrapper outline small">
+                                        <input type="text" placeholder="Your Zip / Postal Code" name="" value="" id="zip_postal_code" class="text-body-medium" />
+                                    </div>
+    
+                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- <div class="card outline">
+                            <div class="card-body">
+                                <div class="form-card">
+                                    <div class="wrapper flex-column align-items-start w-full">
+                                        <div class="wrapper-between">
+                                            <h2 class="text-title-large"><strong>Billing Information</strong></h2>
+        
+                                            <button type="button" class="btn outline small p-start-0" data-bs-toggle="modal" data-bs-target="#dialog-billing-information">
+                                                <div class="icon-btn small">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415" /><path d="M16 5l3 3" /></svg>
+                                                </div>
+        
+                                                <p class="text-body-medium">Edit</p>
+        
+                                                <div class="state-layer"></div>
+                                            </button>
+                                        </div>
+    
+                                        <p class="text-body-medium text-on-background-variant text-uppercase">Personal</p>
+    
+                                        <div class="grid-2-base w-full" style="grid-template-columns: repeat(2, 1fr);">
+    
+                                            <div class="wrapper-block" style="gap: var(--spacing-3);">
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">First name</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1">Ahmed</p>
+                                                </div>
+    
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Email address</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">ahmed@example.com</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="wrapper-block" style="gap: var(--spacing-3);">
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Last name</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1">Mohamed</p>
+                                                </div>
+    
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Phone number</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">+20 100 000 0000</p>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="separator x"></div>
+    
+                                    <div class="wrapper flex-column align-items-start w-full">
+                                        <p class="text-body-medium text-on-background-variant text-uppercase">Company</p>
+    
+                                        <div class="grid-2-base w-full" style="grid-template-columns: repeat(2, 1fr);">
+                                            <div class="wrapper-content gap-0">
+                                                <p class="text-label-small text-on-background-variant text-uppercase">Company name</p>
+    
+                                                <p class="text-body-medium line-clamp line-clamp-1">The Artist Web</p>
+                                            </div>
+    
+                                            <div class="wrapper-content gap-0">
+                                                <p class="text-label-small text-on-background-variant text-uppercase">Company no</p>
+    
+                                                <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">123456789</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="separator x"></div>
+    
+                                    <div class="wrapper flex-column align-items-start w-full">
+                                        <p class="text-body-medium text-on-background-variant text-uppercase">Address</p>
+    
+                                        <div class="grid-2-base w-full" style="grid-template-columns: repeat(2, 1fr);">
+    
+                                            <div class="wrapper-block" style="gap: var(--spacing-3);">
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Country</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1">Egypt</p>
+                                                </div>
+    
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Address line 1</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">123 Tahrir Square</p>
+                                                </div>
+    
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">State / Province</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">Cairo Governorate</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="wrapper-block" style="gap: var(--spacing-3);">
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">City</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1">Cairo</p>
+                                                </div>
+    
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Address line 2</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">Apt 4B</p>
+                                                </div>
+    
+                                                <div class="wrapper-content gap-0">
+                                                    <p class="text-label-small text-on-background-variant text-uppercase">Zip / Postal code</p>
+        
+                                                    <p class="text-body-medium line-clamp line-clamp-1 text-lowercase">11511</p>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+    
+                    <div>
+                        <div class="title-sec">
+                            <h2 class="text-title-large"><strong>Payment Method</strong></h2>
+                        </div>
+    
+                        <div class="form-methods">
+                            <ul class="accordion" id="accordionMethods">
+    
+                                <!-- <li class="accordion-item">
+                                    <label for="accordion-methods-credit-card-defualt" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-methods-defualt">
+                                        <div class="flex">
+                                            <span class="text-on-background">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-credit-card"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 10v6a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-6h20zm-14.99 4h-.01a1 1 0 1 0 .01 2a1 1 0 0 0 0 -2m5.99 0h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0 -2zm5 -10a4 4 0 0 1 4 4h-20a4 4 0 0 1 4 -4h12z"></path></svg>
+                                            </span>
+    
+                                            <p class="text-body-medium">Credit Card</p>
+                                        </div>
+    
+                                        <div class="flex">
+                                            <span class="btn secondary extra-small rounded-pill">
+                                                <p class="text-body-small">Default</p>
+                                            </span>
+    
+                                            <input type="radio" name="payment_methods" id="accordion-methods-credit-card-defualt" class="radio-btn" checked>
+                                        </div>
+                                    </label>
+    
+                                    <div class="accordion-collapse collapse show" id="accordion-methods-defualt" hidden data-bs-parent="#accordionMethods"></div>
+                                </li> -->
+    
+                                <li class="accordion-item">
+                                    <label for="accordion-methods-credit-card" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-methods-1">
+                                        <div class="flex">
+                                            <span class="text-on-background">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-credit-card"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 10v6a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-6h20zm-14.99 4h-.01a1 1 0 1 0 .01 2a1 1 0 0 0 0 -2m5.99 0h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0 -2zm5 -10a4 4 0 0 1 4 4h-20a4 4 0 0 1 4 -4h12z"></path></svg>
+                                            </span>
+    
+                                            <p class="text-body-medium">Credit Card</p>
+                                        </div>
+    
+                                        <input type="radio" name="payment_methods" id="accordion-methods-credit-card" class="radio-btn" checked="">
+                                    </label>
+    
+                                    <div class="accordion-collapse collapse show" id="accordion-methods-1" data-bs-parent="#accordionMethods">
+                                        <div class="form-card">
+    
+                                            <div class="form-group">
+                                                <label for="cardholder_name">Cardholder Name</label>
+                
+                                                <div class="input-wrapper outline small">
+                                                    <input type="text" placeholder="e.g. Mostafa Tamer" name="" value="" id="cardholder_name" class="text-body-medium">
+                                                </div>
+                
+                                                <!-- <p class="text-body-medium text-error"></p> -->
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="card_numbar">Card Number</label>
+                
+                                                <div class="input-wrapper outline small">
+                                                    <input type="text" placeholder="e.g. 1234 5678 9123 0000" name="" value="" id="card_numbar" class="text-body-medium" maxlength="19" inputmode="numeric" data-credit-card-inputs-number="">
+                                                </div>
+                
+                                                <!-- <p class="text-body-medium text-error"></p> -->
+                                            </div>
+                                            
+                                            <div class="grid-2-base">
+                                                <div class="form-group">
+                                                    <label for="exp">EXP. DATE (MM/YY)</label>
+                    
+                                                    <div class="flex">
+                                                        <div class="input-wrapper outline small">
+                                                            <input type="number" placeholder="MM" name="" value="" id="exp" class="text-body-medium">
+                                                        </div>
+                        
+                                                        <div class="input-wrapper outline small">
+                                                            <input type="number" placeholder="YY" name="" value="" id="exp" class="text-body-medium">
+                                                        </div>
+                                                    </div>
+                    
+                                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                                </div>
+    
+                                                <div class="form-group">
+                                                    <label for="cvc">CVC</label>
+                    
+                                                    <div class="input-wrapper outline small">
+                                                        <input type="number" placeholder="e.g. 123" name="" value="" id="cvc" class="text-body-medium">
+                                                    </div>
+                    
+                                                    <!-- <p class="text-body-medium text-error"></p> -->
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li class="accordion-item">
+                                    <label for="accordion-methods-vodafone-cash" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-methods-2">
+                                        <div class="flex">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.4 122.88" style="enable-background:new 0 0 122.4 122.88" xml:space="preserve"><style type="text/css">.st0{fill:#E63329;} .st1{fill:#FFFFFF;}</style><g><path class="st0" d="M122.4,61.44c0,33.92-27.5,61.44-61.43,61.44c-31.34,0-57.2-23.47-60.97-53.79v-15.3 C3.74,23.7,29.24,0.35,60.26,0h1.41C95.28,0.38,122.4,27.74,122.4,61.44L122.4,61.44z"></path><path class="st1" d="M61.45,95.69c-16.87,0.06-34.44-14.34-34.52-37.48c-0.05-15.3,8.21-30.03,18.76-38.76 C55.98,10.94,70.07,5.46,82.85,5.41c1.65,0,3.38,0.14,4.44,0.49C76.11,8.23,67.21,18.64,67.24,30.43c0,0.39,0.04,0.81,0.09,1 c18.7,4.56,27.19,15.85,27.25,31.46C94.62,78.52,82.29,95.63,61.45,95.69L61.45,95.69z"></path></g></svg>
+    
+                                            <p class="text-body-medium">Vodafone Cash</p>
+                                        </div>
+    
+                                        <input type="radio" name="payment_methods" id="accordion-methods-vodafone-cash" class="radio-btn">
+                                    </label>
+    
+                                    <div class="accordion-collapse collapse" id="accordion-methods-2" data-bs-parent="#accordionMethods">
+                                        <div class="form-card">
+                                            
+                                            <div class="form-group">
+                                                <label for="vodafone_cash_number">Transfer the transfer to a Vodafone Cash number:</label>
+    
+                                                <div class="input-wrapper filled outline small p-end-0" style="border-color: var(--outline) !important;">
+                                                    <input type="tel" placeholder="010X-XXX-XXXX" value="+201064710784" id="vodafone_cash_number" class="text-body-medium">
+    
+                                                    <button type="button" class="icon-btn text small rounded-0" style="opacity: 1 !important;" data-icon-btns-copy="+201064710784" data-bs-toggle="tooltip" data-bs-title="copy" data-bs-placement="bottom">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 9.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667l0 -8.666"></path><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path></svg>
+    
+                                                        <div class="state-layer"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="wrapper-block">
+    
+                                                <li class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-number-1"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M10 10l2 -2v8"></path></svg>
+    
+                                                    <p class="text-body-medium">Open the Vodafone Cash app or dial *9#</p>
+                                                </li>
+    
+                                                <li class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-number-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3"></path></svg>
+    
+                                                    <p class="text-body-medium">Select "Money Transfer" and enter the number above</p>
+                                                </li>
+    
+                                                <li class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-number-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1"></path></svg>
+    
+                                                    <p class="text-body-medium">Enter the amount: 320.00 Egyptian pounds</p>
+                                                </li>
+    
+                                                <li class="flex text-on-background-variant">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-number-4"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M10 8v3a1 1 0 0 0 1 1h3"></path><path d="M14 8v8"></path></svg>
+    
+                                                    <p class="text-body-medium">Upload a photo of the receipt here and wait for confirmation</p>
+                                                </li>
+    
+                                            </ul>
+    
+                                            <div class="form-group">
+                                                <label for="upload-image" class="uploader" data-upload-image="">
+                                                    <div class="wrapper flex-column align-items-center">
+                                                        <span class="text-on-background-variant">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-photo-up" style="min-width: var(--spacing-10) !important; max-width: var(--spacing-10) !important; min-height: var(--spacing-10) !important; max-height: var(--spacing-10) !important;"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 8h.01"></path><path d="M12.5 21h-6.5a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v6.5"></path><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l3.5 3.5"></path><path d="M14 14l1 -1c.679 -.653 1.473 -.829 2.214 -.526"></path><path d="M19 22v-6"></path><path d="M22 19l-3 -3l-3 3"></path></svg>
+                                                        </span>
+                            
+                                                        <p class="text-body-medium">Upload a photo of the receipt (click to select)</p>
+                                                    </div>
+                        
+                                                    <img src="" alt="" loading="lazy" class="upload-img img-cover" hidden="">
+                        
+                                                    <input type="file" name="cover-image" id="upload-image" hidden="">
+                        
+                                                    <div class="state-layer"></div>
+                                                </label>
+    
+                                                <!-- <p class="text-body-medium text-error"></p> -->
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li class="accordion-item">
+                                    <label for="accordion-methods-paypal" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-methods-3">
+                                        <div class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"><path fill="#1565C0" d="M18.7,13.767l0.005,0.002C18.809,13.326,19.187,13,19.66,13h13.472c0.017,0,0.034-0.007,0.051-0.006C32.896,8.215,28.887,6,25.35,6H11.878c-0.474,0-0.852,0.335-0.955,0.777l-0.005-0.002L5.029,33.813l0.013,0.001c-0.014,0.064-0.039,0.125-0.039,0.194c0,0.553,0.447,0.991,1,0.991h8.071L18.7,13.767z"></path><path fill="#039BE5" d="M33.183,12.994c0.053,0.876-0.005,1.829-0.229,2.882c-1.281,5.995-5.912,9.115-11.635,9.115c0,0-3.47,0-4.313,0c-0.521,0-0.767,0.306-0.88,0.54l-1.74,8.049l-0.305,1.429h-0.006l-1.263,5.796l0.013,0.001c-0.014,0.064-0.039,0.125-0.039,0.194c0,0.553,0.447,1,1,1h7.333l0.013-0.01c0.472-0.007,0.847-0.344,0.945-0.788l0.018-0.015l1.812-8.416c0,0,0.126-0.803,0.97-0.803s4.178,0,4.178,0c5.723,0,10.401-3.106,11.683-9.102C42.18,16.106,37.358,13.019,33.183,12.994z"></path><path fill="#283593" d="M19.66,13c-0.474,0-0.852,0.326-0.955,0.769L18.7,13.767l-2.575,11.765c0.113-0.234,0.359-0.54,0.88-0.54c0.844,0,4.235,0,4.235,0c5.723,0,10.432-3.12,11.713-9.115c0.225-1.053,0.282-2.006,0.229-2.882C33.166,12.993,33.148,13,33.132,13H19.66z"></path></svg>
+    
+                                            <p class="text-body-medium">PayPal</p>
+                                        </div>
+    
+                                        <input type="radio" name="payment_methods" id="accordion-methods-paypal" class="radio-btn">
+                                    </label>
+    
+                                    <div class="accordion-collapse collapse" id="accordion-methods-3" data-bs-parent="#accordionMethods" hidden=""></div>
+                                </li>
+    
+                                <li class="accordion-item">
+                                    <label for="accordion-methods-wallet" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-methods-4">
+                                        <div class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-wallet"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" /><path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" /></svg>
+    
+                                            <p class="text-body-medium">My Wallet</p>
+                                        </div>
+    
+                                        <div class="flex">
+                                            <p class="text-body-medium text-on-background"><strong>2,840EGP</strong></p>
+
+                                            <input type="radio" name="payment_methods" id="accordion-methods-wallet" class="radio-btn">
+                                        </div>
+                                    </label>
+    
+                                    <div class="accordion-collapse collapse" id="accordion-methods-4" hidden data-bs-parent="#accordionMethods"></div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="btn inverse small w-full">
+                        <p class="text-body-medium">Payment</p>
+    
+                        <div class="state-layer"></div>
+                    </button>
+                </form>
+            </div>
+    
+            <div class="column" data-fixed-scrolling>
+                <div>
+                    <div class="title-sec">
+                        <h2 class="text-title-large"><strong>Shopping Cart</strong></h2>
+                    </div>
+
+                    <ul class="wrapper flex-column align-items-start w-full">
+    
+                        <li class="w-full">
+                            <div class="wrapper-between flex-nowrap">
+                                <div class="wrapper flex-nowrap">
+                                    <a href="../../pages/projects/show.html" class="card outline p-0">
+                                        <div class="figure">
+                                            <img src="https://images.ui8.net/uploads/thumbnail-1-2_1775756669274.png" alt="title project" loading="lazy" class="img-card img-cover" />
+    
+                                            <div class="icon-big">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+                                        </div>
+                                    </a>
+    
+                                    <div class="wrapper-content">
+                                        <a href="../../pages/projects/show.html">
+                                            <p class="text-body-large hover line-clamp line-clamp-1"><strong>Nudge | Framer Portfolio Template</strong></p>
+                                        </a>
+    
+                                        <div class="wrapper-item text-on-background-variant">
+                                            <p class="text-body-medium">by <a href="../../pages/users/profiles/index.html" class="hover"><strong>Huehaus Studio</strong></a></p>
+                                            
+                                            <span class="text-label-small">•</span>
+
+                                            <p class="text-body-medium">Standard license</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="wrapper-content gap-0">
+                                    <!-- <p class="text-body-medium off"></p> -->
+    
+                                    <p class="text-body-large">49EGP</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="w-full">
+                            <div class="wrapper-between flex-nowrap">
+                                <div class="wrapper flex-nowrap">
+                                    <a href="../../pages/projects/show.html" class="card outline p-0">
+                                        <div class="figure">
+                                            <img src="https://images.ui8.net/uploads/01_1773051246935.png" alt="title project" loading="lazy" class="img-card img-cover" />
+    
+                                            <div class="icon-big">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+                                        </div>
+                                    </a>
+    
+                                    <div class="wrapper-content">
+                                        <a href="../../pages/projects/show.html">
+                                            <p class="text-body-large hover line-clamp line-clamp-1"><strong>DuoVid - AI Video Generator Dashboard (Light & Dark)</strong></p>
+                                        </a>
+    
+                                        <div class="wrapper-item text-on-background-variant">
+                                            <p class="text-body-medium">by <a href="../../pages/users/profiles/index.html" class="hover"><strong>JMJ Studio</strong></a></p>
+                                            
+                                            <span class="text-label-small">•</span>
+
+                                            <p class="text-body-medium">Standard license</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="wrapper-content gap-0">
+                                    <p class="text-body-medium off">1000EGP</p>
+
+                                    <p class="text-body-large">610EGP</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="w-full">
+                            <div class="wrapper-between flex-nowrap">
+                                <div class="wrapper flex-nowrap">
+                                    <a href="../../pages/projects/show.html" class="card outline p-0">
+                                        <div class="figure">
+                                            <img src="https://images.ui8.net/uploads/screen-1_1726505034788.png" alt="title project" loading="lazy" class="img-card img-cover" />
+    
+                                            <div class="icon-big">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                                            </div>
+                                        </div>
+                                    </a>
+    
+                                    <div class="wrapper-content">
+                                        <a href="../../pages/projects/show.html">
+                                            <p class="text-body-large hover line-clamp line-clamp-1"><strong>BalancePro - Personal Spending Tracker App UI kit</strong></p>
+                                        </a>
+    
+                                        <div class="wrapper-item text-on-background-variant">
+                                            <p class="text-body-medium">by <a href="../../pages/users/profiles/index.html" class="hover"><strong>kiwari.labs</strong></a></p>
+                                            
+                                            <span class="text-label-small">•</span>
+
+                                            <p class="text-body-medium">Standard license</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="wrapper-content gap-0">
+                                    <!-- <p class="text-body-medium off"></p> -->
+
+                                    <p class="text-body-large">1000EGP</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="title-sec">
+                        <h2 class="text-title-large"><strong>Order Summary</strong></h2>
+                    </div>
+
+                    <ul class="wrapper flex-column align-items-start">
+                        <li class="wrapper-between text-on-background-variant">
+                            <p class="text-body-medium">Subtotal (3 items)</p>
+        
+                            <p class="text-body-medium">2,049EGP</p>
+                        </li>
+        
+                        <li class="separator x"></li>
+        
+                        <li class="wrapper-between text-on-background-variant">
+                            <p class="text-body-medium">Discounts</p>
+        
+                            <p class="text-body-medium">-390EGP</p>
+                        </li>
+        
+                        <li class="separator x"></li>
+        
+                        <li class="wrapper-between text-on-background-variant">
+                            <p class="text-body-medium">Shipping</p>
+        
+                            <p class="text-body-medium">Free</p>
+                        </li>
+        
+                        <li class="separator x"></li>
+        
+                        <li class="wrapper-between">
+                            <div class="text-title-large"><strong>Total</strong></div>
+        
+                            <div class="text-title-large"><strong>1,659EGP</strong></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
