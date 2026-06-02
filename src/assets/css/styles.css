@@ -1277,12 +1277,13 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) { left: -1px !important; }
  * Alerts
  */
 .alert {
+    margin: 0 !important;
     padding: var(--spacing-3) var(--spacing-4);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-4);
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
 }
 
 .alert.tonal-success {
@@ -1291,17 +1292,29 @@ html[dir="rtl"] .avatar .icon-btn:has(svg) { left: -1px !important; }
     color: var(--success);
 }
 
+.alert.tonal-warning {
+    border: 1px solid var(--warning);
+    background-color: var(--soft-warning);
+    color: var(--warning);
+}
+
 .alert.tonal-info {
     border: 1px solid var(--info);
     background-color: var(--soft-info);
     color: var(--info);
 }
 
+.alert.tonal-error {
+    border: 1px solid var(--error);
+    background-color: var(--soft-error);
+    color: var(--error);
+}
+
 .alert svg {
-    min-width: var(--spacing-5) !important;
-    max-width: var(--spacing-5) !important;
-    min-height: var(--spacing-5) !important;
-    max-height: var(--spacing-5) !important;
+    min-width: var(--spacing-6) !important;
+    max-width: var(--spacing-6) !important;
+    min-height: var(--spacing-6) !important;
+    max-height: var(--spacing-6) !important;
 }
 
 /**
@@ -1855,6 +1868,49 @@ code {
 }
 
 .form-methods .accordion .accordion-item .form-card { padding-block-start: var(--spacing-6); }
+
+/**
+ * Select Stars
+ */
+.select-stars {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    max-width: max-content;
+}
+
+.select-stars .label-star {
+    color: var(--on-background-variant);
+    transition-duration: var(--tr-duration-short);
+    transition-property: color, transform;
+}
+
+.select-stars .label-star:hover {
+    color: var(--warning);
+    transform: scale(1.1);
+}
+
+.select-stars .label-star:active { transform: scale(0.95); }
+
+.select-stars .label-star.active {
+    color: var(--warning);
+    animation: label_star_fade var(--tr-duration-medium) linear alternate;
+}
+
+@keyframes label_star_fade {
+    0% { transform: scale(0.5); }
+
+    50% { transform: scale(1.1); }
+
+    100% { transform: scale(1); }
+}
+
+.select-stars .label-star svg {
+    min-width: var(--spacing-7) !important;
+    max-width: var(--spacing-7) !important;
+    min-height: var(--spacing-7) !important;
+    max-height: var(--spacing-7) !important;
+}
 
 /**
  * App bars
@@ -2637,10 +2693,10 @@ html[dir="rtl"] .btn-groups li:last-child .btn { border-radius: var(--radius-ful
 }
 
 .card svg {
-    min-width: 18px !important;
-    max-width: 18px !important;
-    min-height: 18px !important;
-    max-height: 18px !important;
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 18px;
+    max-height: 18px;
 }
 
 .card .figure {
@@ -3832,7 +3888,7 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 .form-group .textarea-wrapper textarea {
     border: none;
     min-height: 150px;
-    border-radius: var(--radius-medium);
+    border-radius: var(--radius-large);
     padding: var(--spacing-4);
     transition: border-color var(--tr-duration-short);
 }
@@ -3845,6 +3901,11 @@ html[dir="rtl"] .form-group .select-wrapper .arrow-select {
 }
 
 .form-group .textarea-wrapper.outline textarea:is(:hover, :focus, :focus-visible, :focus-within) { border-color: var(--on-background); }
+
+.form-group .textarea-wrapper.filled textarea {
+    background-color: var(--surface);
+    --state-layer-bg: var(--on-background);
+}
 
 .form-group .textarea-wrapper.secondary textarea {
     background-color: var(--outline) !important;
@@ -6442,6 +6503,26 @@ html[dir="rtl"] .settings .setting-body .banner-avatar-container .banner-pattern
     max-width: calc(var(--width-small) + var(--spacing-1)) !important;
     min-height: calc(var(--height-small) + var(--spacing-1)) !important;
     max-height: calc(var(--height-small) + var(--spacing-1)) !important;
+}
+
+/**
+ * Payment Store
+ */
+.payment-store {
+    display: flex;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.payment-store .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.payment-store .grid-2-base {
+    width: 100%;
+    gap: var(--spacing-2);
 }
 
 /* ----------------------------------------------------- *\

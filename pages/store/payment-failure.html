@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dim">
+
+<head>
+    <script>
+        (function () {
+            const saved = localStorage.getItem("theme") || "system";
+            const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            document.documentElement.dataset.theme = saved === "system" ? system : saved;
+        })();
+    </script>
+
+    <!-- Meta Main -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="URL This Page" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="../../src/assets/images/favicon.svg" />
+
+    <!-- Meta Tags -->
+    <title>Payment Failure | The Artist Web</title>
+    <meta name="title" content="Payment Failure | The Artist Web" />
+    <meta name="description" content="Description This Page" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Payment Failure | The Artist Web" />
+    <meta property="og:description" content="Description This Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL This Page" />
+    <meta property="og:image" content="../../src/assets/images/theartistweb.svg" />
+    <meta property="og:image:alt" content="The Artist Web" />
+    <meta property="og:site_name" content="The Artist Web" />
+    <meta property="og:locale" content="en" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Payment Failure | The Artist Web" />
+    <meta name="twitter:description" content="Description This Page" />
+    <meta name="twitter:image" content="../../src/assets/images/theartistweb.svg" />
+    <meta name="twitter:image:alt" content="The Artist Web" />
+    <meta name="twitter:url" content="URL This Page" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Custom Bootstrap Link -->
+    <link rel="stylesheet" href="../../src/assets/bootstrap/bootstrap.min.css" />
+    <script src="../../src/assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="../../src/assets/css/styles.css" />
+
+    <!-- Custom Js Link -->
+    <script type="module" src="../../src/js/theme.js"></script>
+    <script type="module" src="../../src/js/app.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start Loading -->
+    <div class="start-loading" data-start-loading>
+        <div class="logo extra-large">
+            <img src="../../src/assets/images/logo.svg" alt="The Artist Web" class="img-logo img-cover" />
+        </div>
+    </div>
+    
+    <!-- Payment Store -->
+    <section class="payment-store section page">
+
+        <div class="container container-xs">
+
+            <div class="wrapper-center">
+                <div class="icon-btn tonal-error extra-large">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                </div>
+            </div>
+
+            <div class="wrapper-content text-center">
+                <h1 class="text-headline-large"><strong>Payment Failed</strong></h1>
+
+                <p class="text-body-large text-on-background-variant">Don't worry — your order wasn't placed and you weren't charged.</p>
+            </div>
+
+            <div class="alert tonal-error w-full">
+                <div class="wrapper flex-nowrap w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-exclamation-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
+
+                    <p class="text-body-medium">Reason for rejection: <strong>Insufficient balance</strong></p>
+                </div>
+            </div>
+
+            <div class="card outline">
+                <div class="card-body gap-0">
+                    <div class="title-sec">
+                        <h2 class="text-title-large"><strong>Order Summary</strong></h2>
+                    </div>
+
+                    <ul class="wrapper flex-column align-items-start w-full">
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Order ID</p>
+
+                            <p class="text-body-medium">#ORD-20489</p>
+                        </li>
+
+                        <il class="separator x"></il>
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Date & time</p>
+
+                            <p class="text-body-medium">June 1, 2026 — 14:32</p>
+                        </li>
+
+                        <il class="separator x"></il>
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Payment Method</p>
+
+                            <p class="text-body-medium">Visa •••• 4242</p>
+                        </li>
+
+                        <il class="separator x"></il>
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Total</p>
+
+                            <p class="text-body-medium text-error"><strong>EGP 124.99</strong></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wrapper-block">
+                <a href="../../pages/store/checkout.html" class="btn outline small w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-refresh"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" /><path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" /></svg>
+
+                    <p class="text-body-medium">Try again</p>
+
+                    <div class="state-layer"></div>
+                </a>
+
+                <a href="../../pages/users/shopping-cart.html" class="btn outline small w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card-hand"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M2 4h9.914a3 3 0 0 1 1.92 .695l5.166 4.305" /><path d="M11.15 9h8.85a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-13a2 2 0 0 1 -2 -2v-8.7" /><path d="M3 8l7.2 4.7a1.803 1.803 0 0 0 2 -3l-4.2 -2.7" /><path d="M5 16h17" /></svg>
+
+                    <p class="text-body-medium">Use another payment method</p>
+
+                    <div class="state-layer"></div>
+                </a>
+            </div>
+
+            <p class="text-body-medium text-on-background-variant text-center">Still having trouble? <a href="#" class="btn-link">Contact support</a></p>
+
+        </div>
+
+    </section>
+    
+</body>
+
+</html>

@@ -22,6 +22,7 @@ import { UploadFile } from "./components/UploadFile.js";
 import { Markdown } from "./components/Markdown.js";
 import { AddSkills } from "./components/AddSkills.js";
 import { CreditCardInputNumber } from "./components/CreditCardInputNumber.js";
+import { SelectStar } from "./components/SelectStar.js";
 
 /**
  * Get Body & Badge Shopping Cart
@@ -142,3 +143,9 @@ if ($addSkills.length) $addSkills.forEach($elem => AddSkills($elem));
  */
 const $creditCardInputsNumber = document.querySelectorAll("[data-credit-card-inputs-number]");
 if ($creditCardInputsNumber.length) $creditCardInputsNumber.forEach($elem => CreditCardInputNumber($elem));
+
+/**
+ * Select Stars
+ */
+const $selectStars = document.querySelectorAll("[data-select-stars]");
+if ($selectStars.length) $selectStars.forEach($elem => SelectStar($elem));

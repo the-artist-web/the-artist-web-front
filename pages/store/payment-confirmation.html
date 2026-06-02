@@ -72,7 +72,168 @@
         </div>
     </div>
     
-    <!-- GO -->
+    <!-- Payment Store -->
+    <section class="payment-store section page">
+
+        <div class="container container-xs">
+
+            <div class="wrapper-center">
+                <div class="icon-btn tonal-success extra-large">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l5 5l10 -10" /></svg>
+                </div>
+            </div>
+
+            <div class="wrapper-content text-center">
+                <h1 class="text-headline-large"><strong>Payment Successful</strong></h1>
+
+                <p class="text-body-large text-on-background-variant">Thank you! Your order has been placed.</p>
+            </div>
+
+            <div class="wrapper flex-column align-items-start w-full">
+                <div class="alert tonal-warning w-full">
+                    <div class="wrapper flex-nowrap w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
+    
+                        <p class="text-body-medium">Your order is under review — confirmation within 24 hours</p>
+                    </div>
+                </div>
+    
+                <div class="alert tonal-info w-full">
+                    <div class="wrapper flex-nowrap w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+    
+                        <p class="text-body-medium">A confirmation email has been sent to <strong>your@email.com</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card outline">
+                <div class="card-body gap-0">
+                    <div class="title-sec">
+                        <h2 class="text-title-large"><strong>Order Summary</strong></h2>
+                    </div>
+
+                    <ul class="wrapper flex-column align-items-start w-full">
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Order ID</p>
+
+                            <p class="text-body-medium">#ORD-20489</p>
+                        </li>
+
+                        <il class="separator x"></il>
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Date & time</p>
+
+                            <p class="text-body-medium">June 1, 2026 — 14:32</p>
+                        </li>
+
+                        <il class="separator x"></il>
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Payment Method</p>
+
+                            <p class="text-body-medium">Visa •••• 4242</p>
+                        </li>
+
+                        <il class="separator x"></il>
+
+                        <li class="grid-2-base">
+                            <p class="text-body-medium text-on-background-variant">Total</p>
+
+                            <p class="text-body-medium text-success"><strong>EGP 124.99</strong></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <form action="#" method="POST" class="card outline">
+                <div class="card-body">
+                    <div class="form-card">
+                        <div class="wrapper-content">
+                            <h2 class="text-title-large"><strong>How was your experience?</strong></h2>
+
+                            <p class="text-body-medium text-on-background-variant">Rate your purchase experience</p>
+                        </div>
+
+                        <div class="wrapper-center">
+                            <ul class="select-stars" data-select-stars>
+
+                                <li>
+                                    <label for="star-1" class="label-star" data-stars data-bs-toggle="tooltip" data-bs-title="Very bad 😕" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        
+                                        <input type="radio" name="stars" value="star-1" id="star-1" hidden />
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="star-2" class="label-star" data-stars data-bs-toggle="tooltip" data-bs-title="Bad 😞" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        
+                                        <input type="radio" name="stars" value="star-2" id="star-2" hidden />
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="star-3" class="label-star" data-stars data-bs-toggle="tooltip" data-bs-title="Acceptable 😐" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        
+                                        <input type="radio" name="stars" value="star-3" id="star-3" hidden />
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="star-4" class="label-star" data-stars data-bs-toggle="tooltip" data-bs-title="Good 😊" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        
+                                        <input type="radio" name="stars" value="star-4" id="star-4" hidden />
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="star-5" class="label-star" data-stars data-bs-toggle="tooltip" data-bs-title="Excellent! 🎉" data-bs-placement="bottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                                        
+                                        <input type="radio" name="stars" value="star-5" id="star-5" hidden />
+                                    </label>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="wrapper flex-column align-items-start w-full">
+                            <div class="form-group">
+                                <div class="textarea-wrapper filled">
+                                    <textarea placeholder="Write your review here (optional)" name="" class="text-body-medium"></textarea>
+                                </div>
+    
+                                <!-- <p class="text-body-medium text-error"></p> -->
+                            </div>
+    
+                            <div class="flex w-full">
+                                <button type="button" class="btn secondary small w-full">
+                                    <p class="text-body-medium">skip</p>
+    
+                                    <div class="state-layer"></div>
+                                </button>
+                                
+                                <button type="submit" class="btn inverse small w-full">
+                                    <p class="text-body-medium">Send evaluation</p>
+    
+                                    <div class="state-layer"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
     
 </body>
 
